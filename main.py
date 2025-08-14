@@ -8,19 +8,24 @@ from openai import OpenAI  # 火山引擎的客户端基于 OpenAI 库
 from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
+from dotenv import load_dotenv
+
+# 加载环境变量
+load_dotenv()
 
 # --- 配置部分 ---
 # 替换为您的谷歌快讯RSS源链接
 RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/14816707195864267476"
 
-# 请确保您已将 API Key 存储在环境变量 ARK_API_KEY 中，例如：
-# export ARK_API_KEY="sk-..."
-# 或者直接在这里赋值（不推荐，出于安全考虑）
-# VOLCENGINE_API_KEY = os.environ.get("ARK_API_KEY")
-VOLCENGINE_API_KEY = "bf027b0a-f1ad-42d1-a3f1-30295a401ece"
+# 请确保您已将 API Key 存储在环境变量 ARK_API_KEY 中
+VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
+PUSHPLUS_TOKEN = os.getenv('PUSHPLUS_TOKEN')
 
-# pushplus的token，用于推送微信消息
-PUSHPLUS_TOKEN = "eb18ea921a7649cfae51c6cb66367a2a"
+# 如果环境变量未设置，给出明确的错误提示
+if not VOLCENGINE_API_KEY:
+    raise ValueError("请设置 VOLCENGINE_API_KEY 环境变量")
+if not PUSHPLUS_TOKEN:
+    raise ValueError("请设置 PUSHPLUS_TOKEN 环境变量")
 
 # VPN 代理配置
 PROXIES = {
