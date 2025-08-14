@@ -1,0 +1,9 @@
+feedparser
+requests
+aiofiles
+playwright
+readability-lxml
+html2text
+openai
+schedule
+crawl4ai

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加密货币周报 - 6.1~6.7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #2563eb;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: #64748b;
+            font-size: 16px;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid #2563eb;
+        }
+        .summary-card h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .summary-card p {
+            color: #475569;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 22px;
+            color: #1e40af;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dbeafe;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 22px;
+            background: #2563eb;
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+        }
+        .news-title {
+            font-size: 18px;
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .news-content {
+            color: #475569;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .news-date {
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 10px;
+            display: block;
+            text-align: right;
+        }
+        .footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 14px;
+            padding: 30px 0 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .news-card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>加密货币周报：监管博弈升级与市场震荡调整</h1>
+        <div class="date">2025年6月1日 - 6月7日</div>
+    </div>
+    
+    <div class="summary-card">
+        <h2>核心事件提要</h2>
+        <h4>过去一周全球加密市场在多重监管政策调整中呈现高波动性。</h4>
+        <p>美国SEC推迟比特币/以太坊现货ETF决策，香港通过稳定币立法，韩国大选牵动加密税改进程；特朗普与马斯克公开冲突引发比特币单日波动超5%，Circle成为首个上市的稳定币发行商；安全领域Bitopro遭千万级黑客攻击，中国强化加密洗钱打击。</p>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">监管政策动态</h2>
+        
+        <div class="news-card">
+            <div class="news-title">美国推迟ETF关键决策</div>
+            <div class="news-content">SEC于6月3日宣布延期审批WisdomTree与VanEck的比特币及以太坊现货ETF实物赎回方案，最终决定推迟至第三季度。</div>
+            <span class="news-date">6月3日</span>
+        </div>
+        
+        <div class="news-card">
+            <div class="news-title">香港《稳定币条例》生效</div>
+            <div class="news-content">6月5日正式立法支持离岸人民币稳定币发行，明确要求稳定币储备资产100%存于香港持牌银行。</div>
+            <span class="news-date">6月5日</span>
+        </div>
+        
+        <div class="news-card">
+            <div class="news-title">韩国大选影响加密税改</div>
+            <div class="news-content">6月3日总统选举中，超1600万加密资产持有者的政策诉求成为关键议题，新总统表态将推进交易所合规化改革。</div>
+            <span class="news-date">6月3日</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">市场重大变动</h2>
+        
+        <div class="news-card">
+            <div class="news-title">政治人物冲突引发波动</div>
+            <div class="news-content">特朗普与马斯克6月5日公开对立言论导致比特币急跌至99,780美元（24小时振幅达5.2%），衍生品市场爆仓9.83亿美元。</div>
+            <span class="news-date">6月5日</span>
+        </div>
+        
+        <div class="news-card">
+            <div class="news-title">Circle上市首日表现</div>
+            <div class="news-content">USDC发行商Circle（CRCL）纽交所上市首日收报82.88美元，较45美元发行价上涨84%，市值突破183亿美元。</div>
+            <span class="news-date">6月5日</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">项目及安全动态</h2>
+        
+        <div class="news-card">
+            <div class="news-title">ApeCoin治理权争议</div>
+            <div class="news-content">Yuga Labs提议将ApeCoin DAO资产移交新实体ApeCo，若通过将取消APE持有者投票权，社区投票将于6月15日启动。</div>
+            <span class="news-date">6月5日</span>
+        </div>
+        
+        <div class="news-card">
+            <div class="news-title">交易所安全事件</div>
+            <div class="news-content">新加坡Bitopro交易所6月6日遭攻击损失1150万美元，黑客通过跨链转移至比特币网络实施洗钱。</div>
+            <span class="news-date">6月6日</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">企业及技术进展</h2>
+        
+        <div class="news-card">
+            <div class="news-title">支付企业布局稳定币</div>
+            <div class="news-content">Uber确认测试稳定币支付方案，跨境转账成本预计下降30%；Robinhood斥资3.2亿美元收购Bitstamp拓展欧洲市场。</div>
+            <span class="news-date">6月3日</span>
+        </div>
+    </div>
+    
+    <div class="footer">
+        数据来源：SEC官网文件、香港立法会公报、CoinGecko交易所数据<br>
+        市场波动信息经3家行情平台交叉验证<br>
+        <br>
+        © 2025 加密货币周报 | 本文不构成任何投资建议
+    </div>
+</body>
+</html>
