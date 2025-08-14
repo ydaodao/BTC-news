@@ -7,3 +7,4 @@ html2text
 openai
 schedule
 crawl4ai
+python-dotenv

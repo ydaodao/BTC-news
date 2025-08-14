@@ -27,11 +27,13 @@ if not VOLCENGINE_API_KEY:
 if not PUSHPLUS_TOKEN:
     raise ValueError("请设置 PUSHPLUS_TOKEN 环境变量")
 
-# VPN 代理配置
-PROXIES = {
-    'http': 'http://127.0.0.1:7890',
-    'https': 'http://127.0.0.1:7890'
-}
+# VPN 代理配置：本地开发时使用代理，GitHub Actions 中不使用
+PROXIES = None
+if os.getenv('LOCAL_DEV'):  # 本地开发环境标志
+    PROXIES = {
+        'http': 'http://127.0.0.1:7890',
+        'https': 'http://127.0.0.1:7890'
+    }
 
 # --- 数据库函数 ---
 def open_or_create_db():
@@ -170,14 +172,13 @@ def update_news_content(conn, cursor, link: str, content: str, real_url: str):
     conn.commit()
 
 async def fetch_rss_news():
-    """
-    从 RSS 源抓取新闻并存储到数据库
-    """
+    """从 RSS 源抓取新闻并存储到数据库"""
     print("开始抓取谷歌快讯...")
     conn, cursor = open_or_create_db()
     
     try:
-        response = requests.get(RSS_URL, proxies=PROXIES)
+        # 根据环境决定是否使用代理
+        response = requests.get(RSS_URL, proxies=PROXIES if PROXIES else None)
         response.raise_for_status()
         feed = feedparser.parse(response.text)
         
@@ -277,8 +278,10 @@ async def generate_news_summary(start_date: str, end_date: str):
 
     print("开始调用火山引擎API生成摘要...")
     try:
-        # os.environ['HTTP_PROXY'] = PROXIES['http']
-        # os.environ['HTTPS_PROXY'] = PROXIES['https']
+        # # 根据环境设置代理
+        # if PROXIES:
+        #     os.environ['HTTP_PROXY'] = PROXIES['http']
+        #     os.environ['HTTPS_PROXY'] = PROXIES['https']
 
         client = OpenAI(
             base_url="https://ark.cn-beijing.volces.com/api/v3",
@@ -311,6 +314,7 @@ async def generate_news_summary(start_date: str, end_date: str):
         print(f"调用火山引擎API失败：{e}")
         return None
     finally:
+        # 清理代理环境变量
         if 'HTTP_PROXY' in os.environ:
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
@@ -364,7 +368,7 @@ async def push_to_wechat(content=None):
             url, 
             json=data,
             headers={'Content-Type': 'application/json'}, 
-            proxies=PROXIES,
+            # proxies=PROXIES if PROXIES else None,  # 根据环境决定是否使用代理
             timeout=10
         )
         response.raise_for_status()
