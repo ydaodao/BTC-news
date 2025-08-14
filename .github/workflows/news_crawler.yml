@@ -12,14 +12,15 @@ on:
 
 jobs:
   rss-crawler:
-    if: github.event.schedule != '0 13 * * *'  # 不是21:00的定时任务才执行
+    # 不是21:00的定时任务才执行
+    if: github.event.schedule != '0 13 * * *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python
+      - name: Set up Python 3.13.4
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13'
+          python-version: '3.13.4'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -28,17 +29,31 @@ jobs:
       - name: Run RSS crawler
         env:
           VOLCENGINE_API_KEY: ${{ secrets.VOLCENGINE_API_KEY }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: python main.py --mode rss
-
+      
+      # 新增：使用 git 命令提交并推送文件
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add ssr_list.db latest_prompt.txt latest_summary.md
+          git commit -m "Update workflow data files" || exit 0
+          git push
+  
   news-summary:
-    if: github.event.schedule == '0 13 * * *'  # 只在21:00的定时任务执行
+    # 这个任务需要依赖 rss-crawler 任务的完成，因为它需要获取最新的文件
+    needs: rss-crawler
+    # 只在21:00的定时任务执行
+    if: github.event.schedule == '0 13 * * *'
     runs-on: ubuntu-latest
     steps:
+      # 在此任务开始时，checkout 会自动获取 rss-crawler 任务提交的最新文件
       - uses: actions/checkout@v2
-      - name: Set up Python
+      - name: Set up Python 3.13.4
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13'
+          python-version: '3.13.4'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
