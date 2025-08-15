@@ -3,17 +3,17 @@ name: BTC News Crawler
 on:
   schedule:
     # RSS抓取任务 (UTC时间，比北京时间晚8小时)
-    - cron: '0 16,4,22,11 * * *'  # 对应北京时间 0:00,12:00,6:00,19:00
+    - cron: '0 10,2,18 * * *'  # 对应北京时间 18:00,10:00,2:00
     
     # 摘要生成任务
-    - cron: '0 13 * * *'  # 对应北京时间 21:00
+    - cron: '0 15 * * *'  # 对应北京时间 20:00
   
   workflow_dispatch:  # 允许手动触发
 
 jobs:
   rss-crawler:
-    # 不是21:00的定时任务才执行
-    if: github.event.schedule != '0 13 * * *'
+    # 不是20:00的定时任务才执行
+    if: github.event.schedule != '0 15 * * *'
     runs-on: windows-latest  # 修改为Windows环境
     
     # 新增：为任务授予写入权限
@@ -48,10 +48,10 @@ jobs:
           git push
   
   news-summary:
-    # 这个任务需要依赖 rss-crawler 任务的完成，因为它需要获取最新的文件
-    needs: rss-crawler
-    # 只在21:00的定时任务执行
-    if: github.event.schedule == '0 13 * * *'
+    # 不再依赖rss-crawler任务，独立执行
+    # needs: rss-crawler
+    # 只在20:00的定时任务执行
+    if: github.event.schedule == '0 15 * * *'
     runs-on: ubuntu-latest
     steps:
       # 在此任务开始时，checkout 会自动获取 rss-crawler 任务提交的最新文件
