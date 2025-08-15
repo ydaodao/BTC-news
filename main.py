@@ -121,7 +121,7 @@ def fetch_news_by_date_range(start_date: str, end_date: str):
     try:
         conn = sqlite3.connect('ssr_list.db')
         cursor = conn.cursor()
-        query = "SELECT link, title FROM ssr_list WHERE published BETWEEN ? AND ? AND (content IS NULL OR content = '')"
+        query = "SELECT link, title FROM ssr_list WHERE published BETWEEN ? AND ? AND (content IS NULL OR content = '') ORDER BY id ASC"
         cursor.execute(query, (start_date, end_date))
         
         results = cursor.fetchall()
@@ -147,6 +147,7 @@ def fetch_news_with_content(start_date: str, end_date: str):
             FROM ssr_list 
             WHERE published BETWEEN ? AND ?
             AND content IS NOT NULL
+            ORDER BY id ASC
         """
         cursor.execute(query, (start_date, end_date))
         
@@ -168,10 +169,17 @@ def fetch_news_with_content(start_date: str, end_date: str):
 def update_news_content(conn, cursor, link: str, content: str, real_url: str):
     """
     更新指定新闻链接的正文内容和真实URL
+    返回：被更新记录的id
     """
     update_sql = "UPDATE ssr_list SET content = ?, real_url = ? WHERE link = ?"
     cursor.execute(update_sql, (content, real_url, link))
     conn.commit()
+    
+    # 查询被更新记录的id
+    query_id_sql = "SELECT id FROM ssr_list WHERE link = ?"
+    cursor.execute(query_id_sql, (link,))
+    result = cursor.fetchone()
+    return result[0] if result else None
 
 async def fetch_rss_news():
     """从 RSS 源抓取新闻并存储到数据库"""
@@ -223,11 +231,12 @@ async def fetch_news_content(start_date: str, end_date: str):
             if result:
                 md_text, real_url = result
                 # 无论是否抓取到内容，只要有 real_url 就更新数据库
-                update_news_content(conn, cursor, item['link'], md_text, real_url)
+                news_id = update_news_content(conn, cursor, item['link'], md_text, real_url)
                 if md_text:
-                    print(f"已更新新闻内容：{item['title']}")
+                    print(f"已更新新闻内容：(ID: {news_id}) Title：{item['title']}")
                 if real_url:
-                    print(f"已更新真实URL：{real_url}")
+                    print(f"已更新真实URL：(ID: {news_id}) Real_URL：{real_url}")
+
             else:
                 print(f"无法抓取新闻内容：{item['title']}")
 

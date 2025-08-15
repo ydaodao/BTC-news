@@ -91,15 +91,9 @@ async def try_playwright(url, headless=True, debug_mode=False):
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
                 viewport={"width": 1920, "height": 1080},
                 # 添加持久化 Cookie 存储
+                # 不预设特定网站的cookie，改为在访问页面后处理cookie同意
                 storage_state={
-                    "cookies": [
-                        {
-                            "name": "cookie_consent",
-                            "value": "accepted",
-                            "domain": ".binance.com",
-                            "path": "/"
-                        }
-                    ]
+                    "cookies": []
                 }
             )
             
@@ -115,20 +109,46 @@ async def try_playwright(url, headless=True, debug_mode=False):
             
             # 等待页面加载
             await page.wait_for_load_state("domcontentloaded")
-            
-            # 尝试自动点击 Cookie 同意按钮
+            print("页面加载完成")
+
+            # 尝试自动点击各种常见的 Cookie 同意按钮
             try:
-                # 等待并点击 Cookie 同意按钮（根据实际按钮选择器调整）
-                accept_button = await page.wait_for_selector('button[id="onetrust-accept-btn-handler"]', timeout=5000)
-                if accept_button:
-                    await accept_button.click()
-                    # 等待页面重新加载
-                    await page.wait_for_load_state("networkidle")
-            except Exception:
-                print("未找到 Cookie 同意按钮或已经同意")
+                # 常见的 Cookie 同意按钮选择器列表
+                cookie_button_selectors = [
+                    'button[id="onetrust-accept-btn-handler"]',  # OneTrust
+                    'button[id*="cookie-accept"]',            # 通用命名
+                    'button[id*="cookie-consent"]',           # 通用命名
+                    'button[class*="cookie-accept"]',         # 通用类名
+                    'button[class*="cookie-consent"]',        # 通用类名
+                    'button[class*="accept-cookies"]',        # 通用类名
+                    'a[class*="accept-cookies"]',             # 链接形式
+                    'div[class*="cookie-banner"] button',     # 通用容器内按钮
+                    'div[id*="cookie-banner"] button',        # 通用容器内按钮
+                    'div[class*="cookie-policy"] button',     # 通用容器内按钮
+                    'div[id*="gdpr"] button',                 # GDPR相关
+                    '.cc-accept',                              # 常见类名
+                    '.accept-cookies'                          # 常见类名
+                ]
+                
+                # 尝试点击每一个可能的按钮
+                for selector in cookie_button_selectors:
+                    try:
+                        accept_button = await page.wait_for_selector(selector, timeout=1000)
+                        if accept_button:
+                            await accept_button.click()
+                            print(f"已点击 Cookie 同意按钮: {selector}")
+                            # 等待页面重新加载
+                            await page.wait_for_load_state("networkidle", timeout=5000)
+                            break
+                    except Exception:
+                        continue
+            except Exception as e:
+                print(f"处理 Cookie 同意按钮时出错: {e}")
             
             # 等待主要内容加载
             await page.wait_for_load_state("load")
+            print("页面加载完成")
+
             await asyncio.sleep(5)
             
             content = await page.content()
