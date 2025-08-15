@@ -359,6 +359,8 @@ async def push_to_wechat(content=None):
             first_line = lines[0].strip()
             if first_line.startswith('# '):
                 title = first_line[2:].strip()
+                # 将第一行从content中移除
+                content = '\n'.join(lines[1:]).strip()
     print(f"使用标题: {title}")
 
     url = "http://www.pushplus.plus/send"
