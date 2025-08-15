@@ -15,6 +15,11 @@ jobs:
     # 不是21:00的定时任务才执行
     if: github.event.schedule != '0 13 * * *'
     runs-on: ubuntu-latest
+    
+    # 新增：为任务授予写入权限
+    permissions:
+      contents: write
+      
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.13.4
@@ -32,7 +37,7 @@ jobs:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: python main.py --mode rss
       
-      # 新增：使用 git 命令提交并推送文件
+      # 使用 git 命令提交并推送文件
       - name: Commit and push if changed
         run: |
           git config --global user.email "actions@github.com"
