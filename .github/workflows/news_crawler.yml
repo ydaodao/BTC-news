@@ -36,6 +36,7 @@ jobs:
           VOLCENGINE_API_KEY: ${{ secrets.VOLCENGINE_API_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           DEBUG: "true"
+          PYTHONUTF8: "1"
         run: python main.py --mode rss
       
       # 使用 git 命令提交并推送文件
