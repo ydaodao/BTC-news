@@ -150,7 +150,7 @@ async def multi_cralwer(target_url, save_files=False, debug_mode=True):
     url_input = target_url.strip()
     if not url_input.startswith(("http://", "https://")):
         print("❌ 无效的 URL，请确保以 http:// 或 https:// 开头。")
-        return
+        return None, None
     real_url = resolve_google_redirect(url_input)
     if real_url != url_input:
         print(f"已解析真实地址: {real_url}")
@@ -184,6 +184,10 @@ async def multi_cralwer(target_url, save_files=False, debug_mode=True):
             return md_text, real_url
         else:
             print("❌ 仍然无法抓取该页面")
+    
+    # 即使所有抓取方法都失败，仍然返回 real_url
+    print("⚠️ 所有抓取方法都失败，但仍返回解析后的 URL")
+    return None, real_url
 
 
 if __name__ == "__main__":

@@ -222,8 +222,15 @@ async def fetch_news_content(start_date: str, end_date: str):
             result = await multi_cralwer(item['link'])
             if result:
                 md_text, real_url = result
+                # 无论是否抓取到内容，只要有 real_url 就更新数据库
                 update_news_content(conn, cursor, item['link'], md_text, real_url)
-                print(f"已更新新闻内容：{item['title']}")
+                if md_text:
+                    print(f"已更新新闻内容：{item['title']}")
+                if real_url:
+                    print(f"已更新真实URL：{real_url}")
+            else:
+                print(f"无法抓取新闻内容：{item['title']}")
+
     finally:
         cursor.close()
         conn.close()
