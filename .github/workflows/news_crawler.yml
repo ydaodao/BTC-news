@@ -14,7 +14,7 @@ jobs:
   rss-crawler:
     # 不是21:00的定时任务才执行
     if: github.event.schedule != '0 13 * * *'
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # 修改为Windows环境
     
     # 新增：为任务授予写入权限
     permissions:
@@ -35,6 +35,7 @@ jobs:
         env:
           VOLCENGINE_API_KEY: ${{ secrets.VOLCENGINE_API_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          DEBUG: "true"
         run: python main.py --mode rss
       
       # 使用 git 命令提交并推送文件

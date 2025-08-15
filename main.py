@@ -399,7 +399,7 @@ async def main(mode="all"):
         return
 
     now = datetime.now()
-    yesterday = now - timedelta(days=2)
+    yesterday = now - timedelta(days=1)
     start_date = yesterday.strftime('%Y-%m-%d %H:%M:%S')
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     summary = None
