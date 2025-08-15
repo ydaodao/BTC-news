@@ -146,7 +146,7 @@ async def try_playwright(url, headless=True, debug_mode=False):
             return None
 
 
-async def multi_cralwer(target_url, save_files=False, debug_mode=False):
+async def multi_cralwer(target_url, save_files=False, debug_mode=True):
     url_input = target_url.strip()
     if not url_input.startswith(("http://", "https://")):
         print("❌ 无效的 URL，请确保以 http:// 或 https:// 开头。")

@@ -22,10 +22,10 @@ jobs:
       
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.13.4
+      - name: Set up Python 3.13
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13.4'
+          python-version: '3.13'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -35,7 +35,6 @@ jobs:
         env:
           VOLCENGINE_API_KEY: ${{ secrets.VOLCENGINE_API_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-          DEBUG: "true"
           PYTHONUTF8: "1"
         run: python main.py --mode rss
       
@@ -57,10 +56,10 @@ jobs:
     steps:
       # 在此任务开始时，checkout 会自动获取 rss-crawler 任务提交的最新文件
       - uses: actions/checkout@v2
-      - name: Set up Python 3.13.4
+      - name: Set up Python 3.13
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13.4'
+          python-version: '3.13'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
