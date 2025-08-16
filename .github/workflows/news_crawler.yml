@@ -68,5 +68,6 @@ jobs:
         env:
           VOLCENGINE_API_KEY: ${{ secrets.VOLCENGINE_API_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           PYTHONUTF8: "1"
         run: python main.py --mode summary_push
