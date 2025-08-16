@@ -3,6 +3,7 @@ import aiofiles
 import os
 from urllib.parse import urlparse, parse_qs
 from crawl4ai import AsyncWebCrawler
+from numpy import True_
 from playwright.async_api import async_playwright
 from readability import Document
 import html2text
@@ -40,15 +41,18 @@ def is_challenge_page(html):
 
 
 def extract_readable_content(html):
-    """用 Readability 提取正文并转 Markdown"""
-    doc = Document(html)
-    title = doc.short_title()
-    content_html = doc.summary(html_partial=True)
+    if html:
+        """用 Readability 提取正文并转 Markdown"""
+        doc = Document(html)
+        title = doc.short_title()
+        content_html = doc.summary(html_partial=True)
 
-    md_converter = html2text.HTML2Text()
-    md_converter.ignore_links = False
-    md_text = md_converter.handle(content_html)
-    return title, content_html, md_text
+        md_converter = html2text.HTML2Text()
+        md_converter.ignore_links = False
+        md_text = md_converter.handle(content_html)
+        return title, content_html, md_text
+    else:
+        return None, None, ''
 
 
 async def save_result(title, html, md_text, save_files=False):
@@ -75,7 +79,7 @@ async def try_crawl4ai(url):
     return None
 
 
-async def try_playwright(url, headless=True, debug_mode=False):
+async def try_playwright(url, headless=True):
     """第二阶段：使用 Playwright 抓取"""
     async with async_playwright() as p:
         try:
@@ -154,7 +158,7 @@ async def try_playwright(url, headless=True, debug_mode=False):
             content = await page.content()
             
             # 调试用：保存页面截图
-            if debug_mode and (not content or "cookie" in content.lower()):
+            if (not content or "cookie" in content.lower()):
                 await page.screenshot(path=SH_PICTURE_FILE)
                 print("已保存调试截图到 debug_screenshot.png")
             
@@ -166,7 +170,7 @@ async def try_playwright(url, headless=True, debug_mode=False):
             return None
 
 
-async def multi_cralwer(target_url, save_files=False, debug_mode=True):
+async def multi_cralwer(target_url, save_files=False):
     url_input = target_url.strip()
     if not url_input.startswith(("http://", "https://")):
         print("❌ 无效的 URL，请确保以 http:// 或 https:// 开头。")
@@ -178,32 +182,31 @@ async def multi_cralwer(target_url, save_files=False, debug_mode=True):
     # 第一阶段：crawl4ai
     print("🚀 第一阶段：尝试 crawl4ai 抓取...")
     html = await try_crawl4ai(real_url)
-    if html:
-        print("✅ crawl4ai 抓取成功")
-        title, clean_html, md_text = extract_readable_content(html)
+    title, clean_html, md_text = extract_readable_content(html)
+    if md_text and len(md_text) > 0:
         await save_result(title, clean_html, md_text, save_files)
+        print("✅ crawl4ai 抓取成功")
         return md_text, real_url
 
     # 第二阶段：Playwright 无头模式
     print("⚠️ 第二阶段：crawl4ai 抓取失败，尝试 Playwright 无头模式...")
-    html = await try_playwright(real_url, headless=True, debug_mode=debug_mode)
-    if html:
+    html = await try_playwright(real_url, headless=True)
+    title, clean_html, md_text = extract_readable_content(html)
+    if md_text and len(md_text) > 0:
         print("✅ Playwright 无头模式抓取成功")
-        title, clean_html, md_text = extract_readable_content(html)
         await save_result(title, clean_html, md_text, save_files)
         return md_text, real_url
 
     # 第三阶段：如果无头模式失败，尝试可见浏览器
-    if debug_mode:
-        print("⚠️ 第三阶段：无头模式失败，启动可见浏览器，请手动过验证...")
-        html = await try_playwright(real_url, headless=False, debug_mode=debug_mode)
-        if html:
-            print("✅ 手动操作后抓取成功")
-            title, clean_html, md_text = extract_readable_content(html)
-            await save_result(title, clean_html, md_text, save_files)
-            return md_text, real_url
-        else:
-            print("❌ 仍然无法抓取该页面")
+    print("⚠️ 第三阶段：无头模式失败，启动可见浏览器，请手动过验证...")
+    html = await try_playwright(real_url, headless=False)
+    title, clean_html, md_text = extract_readable_content(html)
+    if md_text and len(md_text) > 0:
+        print("✅ 手动操作后抓取成功")
+        await save_result(title, clean_html, md_text, save_files)
+        return md_text, real_url
+    else:
+        print("❌ 仍然无法抓取该页面")
     
     # 即使所有抓取方法都失败，仍然返回 real_url
     print("⚠️ 所有抓取方法都失败，但仍返回解析后的 URL")
@@ -213,5 +216,5 @@ async def multi_cralwer(target_url, save_files=False, debug_mode=True):
 if __name__ == "__main__":
     BASE_DIR = os.path.join(os.path.dirname(__file__), "test")
 
-    url = 'https://www.google.com/url?rct=j&sa=t&url=https://www.fx168news.com/article/%25E6%25AF%2594%25E7%2589%25B9%25E5%25B8%2581-930071&ct=ga&cd=CAIyIGQ0OGVkZDFmZDIyYTgzMGU6Y29tLmhrOnpoLUNOOkhL&usg=AOvVaw1pY9U2l1FepoUqeYekeLDE'
-    asyncio.run(multi_cralwer(url, save_files=True, debug_mode=True))
+    url = 'https://www.google.com/url?rct=j&sa=t&url=https://www.binance.com/zh-CN/square/post/08-16-2025-btc-15-66-28404131337498&ct=ga&cd=CAIyIGQ0OGVkZDFmZDIyYTgzMGU6Y29tLmhrOnpoLUNOOkhL&usg=AOvVaw11XXR3l1oZ070UwQ3QtGFi'
+    asyncio.run(multi_cralwer(url, save_files=True))
