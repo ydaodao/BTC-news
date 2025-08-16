@@ -115,7 +115,7 @@ def save_to_db(conn, cursor, entry):
     if cursor.rowcount == 0:
         print(f"新闻已存在: {entry.title}")
     else:
-        print(f"新闻已保存: {entry.title} (ID: {cursor.lastrowid})")
+        print(f"新闻已保存 (ID: {cursor.lastrowid}): {entry.title}")
     
     conn.commit()
 
@@ -513,7 +513,9 @@ async def main(mode="all"):
         print("错误：请先设置环境变量 'ARK_API_KEY' 或在代码中配置您的密钥。")
         return
 
-    now = datetime.now()
+    # 使用东八区时间，确保与数据库存储的时间一致
+    beijing_tz = timezone(timedelta(hours=8))
+    now = datetime.now(beijing_tz)
     yesterday = now - timedelta(days=1)
     start_date = yesterday.strftime('%Y-%m-%d %H:%M:%S')
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
