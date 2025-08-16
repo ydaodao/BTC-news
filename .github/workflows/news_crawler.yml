@@ -6,14 +6,14 @@ on:
     - cron: '0 10,2,18 * * *'  # 对应北京时间 18:00,10:00,2:00
     
     # 摘要生成任务
-    - cron: '0 15 * * *'  # 对应北京时间 20:00
+    - cron: '0 12 * * *'  # 对应北京时间 20:00
   
   workflow_dispatch:  # 允许手动触发
 
 jobs:
   rss-crawler:
     # 不是20:00的定时任务才执行
-    if: github.event.schedule != '0 15 * * *'
+    if: github.event.schedule != '0 12 * * *'
     runs-on: windows-latest  # 修改为Windows环境
     
     # 新增：为任务授予写入权限
@@ -51,7 +51,7 @@ jobs:
     # 不再依赖rss-crawler任务，独立执行
     # needs: rss-crawler
     # 只在20:00的定时任务执行
-    if: github.event.schedule == '0 15 * * *'
+    if: github.event.schedule == '0 12 * * *'
     runs-on: ubuntu-latest
     steps:
       # 在此任务开始时，checkout 会自动获取 rss-crawler 任务提交的最新文件

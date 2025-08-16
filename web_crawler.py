@@ -147,7 +147,7 @@ async def try_playwright(url, headless=True, debug_mode=False):
             
             # 等待主要内容加载
             await page.wait_for_load_state("load")
-            print("页面加载完成")
+            print("主要内容加载完成")
 
             await asyncio.sleep(5)
             

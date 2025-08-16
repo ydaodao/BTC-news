@@ -57,10 +57,19 @@ def open_or_create_db():
         summary TEXT,
         published TEXT,
         updated TEXT,
-        content TEXT
+        content TEXT,
+        content_updated TEXT
     )
     '''
     cursor.execute(create_table_sql)
+    
+    # 为已存在的表添加content_updated字段（如果不存在）
+    try:
+        cursor.execute('ALTER TABLE ssr_list ADD COLUMN content_updated TEXT')
+        conn.commit()
+    except sqlite3.OperationalError:
+        # 字段已存在，忽略错误
+        pass
     
     # 分别创建每个索引
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_published ON ssr_list(published)')
@@ -145,7 +154,7 @@ def fetch_news_with_content(start_date: str, end_date: str):
         query = """
             SELECT link, real_url, title, content 
             FROM ssr_list 
-            WHERE published BETWEEN ? AND ?
+            WHERE content_updated BETWEEN ? AND ?
             AND content IS NOT NULL
             ORDER BY id ASC
         """
@@ -171,8 +180,12 @@ def update_news_content(conn, cursor, link: str, content: str, real_url: str):
     更新指定新闻链接的正文内容和真实URL
     返回：被更新记录的id
     """
-    update_sql = "UPDATE ssr_list SET content = ?, real_url = ? WHERE link = ?"
-    cursor.execute(update_sql, (content, real_url, link))
+    # 获取当前UTC北京时区时间
+    beijing_tz = timezone(timedelta(hours=8))
+    current_time = datetime.now(beijing_tz).strftime('%Y-%m-%d %H:%M:%S')
+    
+    update_sql = "UPDATE ssr_list SET content = ?, real_url = ?, content_updated = ? WHERE link = ?"
+    cursor.execute(update_sql, (content, real_url, current_time, link))
     conn.commit()
     
     # 查询被更新记录的id
@@ -420,6 +433,12 @@ async def main(mode="all"):
     yesterday = now - timedelta(days=1)
     start_date = yesterday.strftime('%Y-%m-%d %H:%M:%S')
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    
+    # 为摘要生成设置1天的时间范围
+    one_day_ago = now - timedelta(days=1)
+    summary_start_date = one_day_ago.strftime('%Y-%m-%d %H:%M:%S')
+    summary_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    
     summary = None
 
     if mode in ["rss", "all"]:
@@ -432,7 +451,7 @@ async def main(mode="all"):
     if mode in ["summary_push", "all"]:
         print("\n=== 执行摘要生成和推送任务 ===")
         # 1. 生成摘要
-        summary = await generate_news_summary(start_date, end_date)
+        summary = await generate_news_summary(summary_start_date, summary_end_date)
         if summary:
             # 2. 推送到微信
             await push_to_wechat(summary)
