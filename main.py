@@ -281,10 +281,10 @@ async def generate_news_summary(start_date: str, end_date: str):
     prompt_text = f"""你是一名资深的新闻编辑，请对以下新闻进行处理。你的任务是：
 
     1. 全文以markdown格式输出
-    2. 将所有新闻进行主题聚类，每个聚类需要一个简洁的主题标题。
-    3. 对每个聚类中的新闻，提取3-5个核心关键词，作为摘要。
-    4. 总结每个聚类的主旨，风格要求公正、客观、简洁。
-    5. 在每个聚类下，列出原始新闻的标题和链接，符合markdown格式[标题](url)
+    2. 将所有新闻进行主题聚类，每个聚类需要一个简洁的主题标题。要求：用###开头，聚类之间用 --- 分隔开
+    3. 对每个聚类中的新闻，提取3-5个核心关键词，作为摘要。要求：用 **关键词** 开头
+    4. 总结每个聚类的主旨，风格要求公正、客观、简洁。要求：用 **主旨** 开头
+    5. 在每个聚类下，列出原始新闻的标题和链接，符合markdown格式[标题](url)。要求：用 **参考** 开头，用有序列表展示
     6. 最后输出一个总标题，放在第一行，要求：内容仅与BTC有关。举例：BTC监管收紧，稳定币重塑市场格局
 
     以下是新闻内容：
@@ -350,7 +350,85 @@ async def generate_news_summary(start_date: str, end_date: str):
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
 
-async def push_to_wechat(content=None):
+async def push_to_feishu_direct(content=None, webhook_url=None):
+    """
+    直接推送内容到飞书机器人（不依赖pushplus）
+    如果 content 为空，则尝试从本地文件读取
+    """
+    if not webhook_url:
+        webhook_url = os.getenv('FEISHU_WEBHOOK_URL')
+        if not webhook_url:
+            print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
+            return
+    
+    if not content:
+        # 尝试从本地文件读取内容
+        summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
+        try:
+            with open(summary_file, "r", encoding="utf-8") as f:
+                content = f.read()
+            print(f"已从本地文件读取内容: {summary_file}")
+        except Exception as e:
+            print(f"读取本地文件失败: {e}")
+            return
+
+    if not content:
+        print("错误：没有可推送的内容")
+        return
+
+    print("开始直接推送消息到飞书机器人...")
+    
+    # 从内容中提取第一行作为标题
+    title = "每日新闻摘要"  # 默认标题
+    message_content = content
+    if content:
+        # 按行分割内容
+        lines = content.strip().split('\n')
+        if lines:
+            # 获取第一行并去掉 Markdown 标题符号
+            first_line = lines[0].strip()
+            if first_line.startswith('# '):
+                title = first_line[2:].strip()
+                # 将第一行从content中移除
+                message_content = '\n'.join(lines[1:]).strip()
+    print(f"使用标题: {title}")
+
+    # 飞书机器人富文本消息格式
+    # 读取飞书消息模板
+    template_path = os.path.join(os.path.dirname(__file__), 'feishu_message_template.json')
+    with open(template_path, 'r', encoding='utf-8') as f:
+        template_content = f.read()
+    
+    # 对内容进行JSON转义处理
+    import json as json_module
+    title_escaped = json_module.dumps(title)[1:-1]  # 去掉首尾引号
+    message_content_escaped = json_module.dumps(message_content)[1:-1]  # 去掉首尾引号
+    
+    # 替换模板中的占位符
+    data_str = template_content.replace('{title}', title_escaped).replace('{message_content}', message_content_escaped)
+    data = json.loads(data_str)
+    
+    try:
+        response = requests.post(
+            webhook_url, 
+            json=data,
+            headers={'Content-Type': 'application/json'}, 
+            timeout=10
+        )
+        response.raise_for_status()
+
+        # 打印详细的响应信息
+        result = response.json()
+        print(f"飞书推送响应: {result}")
+        
+        if result.get('StatusCode') == 0:
+            print("消息直接推送到飞书成功！")
+        else:
+            print(f"推送失败: {result.get('msg', '未知错误')}")
+    except requests.exceptions.RequestException as e:
+        print(f"消息直接推送到飞书失败：{e}")
+
+async def push_to_wechat(content=None, feishu_mode=True):
     """
     使用 pushplus 服务将内容推送到微信
     如果 content 为空，则尝试从本地文件读取
@@ -386,15 +464,21 @@ async def push_to_wechat(content=None):
     print(f"使用标题: {title}")
 
     url = "http://www.pushplus.plus/send"
+    
     data = {
         "token": PUSHPLUS_TOKEN,
         "title": title,
         "content": content,
         "template": "markdown"
-
-        # "channel": "webhook",
-        # "webhook": "feishu001"
     }
+    
+    # 通过pushplus推送到飞书
+    if feishu_mode:
+        data["channel"] = "webhook"
+        data["webhook"] = "feishu001"
+        print("将通过pushplus推送到飞书机器人")
+    else:
+        print("将通过pushplus推送到微信")
     
     try:
         response = requests.post(
@@ -452,9 +536,9 @@ async def main(mode="all"):
         print("\n=== 执行摘要生成和推送任务 ===")
         # 1. 生成摘要
         summary = await generate_news_summary(summary_start_date, summary_end_date)
-        if summary:
-            # 2. 推送到微信
-            await push_to_wechat(summary)
+        # 2. 推送消息（自动根据环境变量选择推送到微信或飞书）
+        # await push_to_wechat(summary)
+        await push_to_feishu_direct(summary)
             
 # --- 主程序入口 ---
 if __name__ == "__main__":
