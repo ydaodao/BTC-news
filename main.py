@@ -251,8 +251,7 @@ async def fetch_news_content(start_date: str, end_date: str):
                     print(f"已更新真实URL：(ID: {news_id}) Real_URL：{real_url}")
 
             else:
-                print(f"无法抓取新闻内容：{item['title']}")
-
+                print(f"无法抓取新闻内容：{item['id']} {item['title']}")
     finally:
         cursor.close()
         conn.close()
