@@ -130,11 +130,11 @@ def fetch_news_by_date_range(start_date: str, end_date: str):
     try:
         conn = sqlite3.connect('ssr_list.db')
         cursor = conn.cursor()
-        query = "SELECT link, title FROM ssr_list WHERE published BETWEEN ? AND ? AND (content IS NULL OR content = '') ORDER BY id ASC"
+        query = "SELECT id, link, title FROM ssr_list WHERE published BETWEEN ? AND ? AND (content IS NULL OR content = '') ORDER BY id ASC"
         cursor.execute(query, (start_date, end_date))
         
         results = cursor.fetchall()
-        news_list = [{"link": row[0], "title": row[1]} for row in results]
+        news_list = [{"id": row[0], "link": row[1], "title": row[2]} for row in results]
         return news_list
     except sqlite3.Error as e:
         print(f"数据库查询失败: {e}")
@@ -239,7 +239,7 @@ async def fetch_news_content(start_date: str, end_date: str):
     conn, cursor = open_or_create_db()
     try:
         for item in news_list:
-            print(f"正在处理新闻：{item['title']}")
+            print(f"正在处理新闻：{item['id']} {item['title']}")
             result = await multi_cralwer(item['link'])
             if result:
                 md_text, real_url = result

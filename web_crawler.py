@@ -7,7 +7,7 @@ from numpy import True_
 from playwright.async_api import async_playwright
 from readability import Document
 import html2text
-
+import sqlite3
 
 # === 配置 ===
 BASE_DIR = os.path.dirname(__file__)
@@ -221,5 +221,27 @@ async def multi_cralwer(target_url, save_files=False):
 if __name__ == "__main__":
     BASE_DIR = os.path.join(os.path.dirname(__file__), "test")
 
-    url = 'https://www.google.com/url?rct=j&sa=t&url=https://www.binance.com/zh-CN/square/post/08-16-2025-btc-15-66-28404131337498&ct=ga&cd=CAIyIGQ0OGVkZDFmZDIyYTgzMGU6Y29tLmhrOnpoLUNOOkhL&usg=AOvVaw11XXR3l1oZ070UwQ3QtGFi'
+    id = 283
+    conn = None
+    url = None
+    try:
+        conn = sqlite3.connect('ssr_list.db')
+        cursor = conn.cursor()
+        query = "SELECT id, link, title FROM ssr_list WHERE id = ?"
+        cursor.execute(query, (id,))
+        
+        result = cursor.fetchone()
+        if result:
+            id, link, title = result
+            url = link
+            print(f"ID: {id}, 链接: {link}, 标题: {title}")
+        else:
+            print("未找到匹配的记录")
+    except sqlite3.Error as e:
+        print(f"数据库查询失败: {e}")
+    finally:
+        if conn:
+            conn.close()
+
+    # url = 'https://www.google.com/url?rct=j&sa=t&url=https://www.binance.com/zh-CN/square/post/08-16-2025-btc-15-66-28404131337498&ct=ga&cd=CAIyIGQ0OGVkZDFmZDIyYTgzMGU6Y29tLmhrOnpoLUNOOkhL&usg=AOvVaw11XXR3l1oZ070UwQ3QtGFi'
     asyncio.run(multi_cralwer(url, save_files=True))
