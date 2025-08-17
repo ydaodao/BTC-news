@@ -16,10 +16,13 @@ MD_FILE = os.path.join(BASE_DIR, "test/output.md")
 SH_PICTURE_FILE = os.path.join(BASE_DIR, "test/debug_screenshot.png")
 WAIT_TIME = 15  # 可视化模式手动操作等待时间
 # VPN 代理配置
-PROXIES = {
-    'http': 'http://127.0.0.1:7890',
-    'https': 'http://127.0.0.1:7890'
-}
+# 代理配置：仅在本地开发环境使用
+PROXIES = None
+if os.getenv('LOCAL_DEV'):  # 本地开发环境标志
+    PROXIES = {
+        'http': 'http://127.0.0.1:7890',
+        'https': 'http://127.0.0.1:7890'
+    }
 
 
 def resolve_google_redirect(url):
@@ -83,13 +86,15 @@ async def try_playwright(url, headless=True):
     """第二阶段：使用 Playwright 抓取"""
     async with async_playwright() as p:
         try:
-            browser = await p.chromium.launch(
-                headless=headless, 
-                slow_mo=100,
-                proxy={
-                    "server": PROXIES['http'],
-                }
-            )
+            # 根据环境决定是否使用代理
+            launch_options = {
+                "headless": headless,
+                "slow_mo": 100
+            }
+            if PROXIES:
+                launch_options["proxy"] = {"server": PROXIES['http']}
+            
+            browser = await p.chromium.launch(**launch_options)
             
             context = await browser.new_context(
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
