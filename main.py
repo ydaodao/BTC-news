@@ -15,7 +15,7 @@ load_dotenv()
 
 # --- 配置部分 ---
 # 替换为您的谷歌快讯RSS源链接
-RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/14816707195864267476"
+RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/15612175713557613633"
 
 # 请确保您已将 API Key 存储在环境变量 ARK_API_KEY 中
 VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
