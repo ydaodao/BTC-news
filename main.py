@@ -519,7 +519,7 @@ async def main(mode="all"):
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     
     # 为摘要生成设置1天的时间范围
-    one_day_ago = now - timedelta(days=1)
+    one_day_ago = now - timedelta(days=2)
     summary_start_date = one_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     summary_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     
