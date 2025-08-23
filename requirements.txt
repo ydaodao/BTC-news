@@ -8,3 +8,4 @@ openai
 schedule
 crawl4ai
 python-dotenv
+lark-oapi

@@ -20,8 +20,6 @@ RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/148167071
 # 请确保您已将 API Key 存储在环境变量 ARK_API_KEY 中
 VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
 PUSHPLUS_TOKEN = os.getenv('PUSHPLUS_TOKEN')
-print(VOLCENGINE_API_KEY)
-print(PUSHPLUS_TOKEN)
 
 # 如果环境变量未设置，给出明确的错误提示
 if not VOLCENGINE_API_KEY:
@@ -410,7 +408,7 @@ async def push_to_feishu_direct(content=None, webhook_url=None):
         response = requests.post(
             webhook_url, 
             json=data,
-            headers={'Content-Type': 'application/json'}, 
+            headers={'Content-Type': 'application/json'},
             timeout=10
         )
         response.raise_for_status()
