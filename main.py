@@ -9,6 +9,8 @@ from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
 from dotenv import load_dotenv
+# 删除第12行的导入
+# from write_to_feishu import write_to_docx
 
 # 加载环境变量
 load_dotenv()
@@ -281,7 +283,7 @@ async def generate_news_summary(start_date: str, end_date: str):
     2. 将所有新闻进行主题聚类，每个聚类需要一个简洁的主题标题。要求：用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
     3. 总结每个聚类的主旨，风格要求公正、客观、简洁。要求：用 **总结** 开头，内容用有序列表呈现
     4. 在每个聚类下，用无序列表列出原始新闻的标题和链接，符合markdown格式[标题](url)。要求：用 **参考** 开头
-    5. 最后输出一个总标题，放在第一行，要求：内容仅与BTC有关。举例：BTC监管收紧，稳定币重塑市场格局
+    5. 在第一行输出一级总标题，用#开头。要求：不能只是几个关键词，要有实质内容，不超过30个字。正向举例：BTC监管收紧，稳定币重塑市场格局；负向举例：价格、巨鲸行为与生态发展
 
     以下是新闻内容：
 
@@ -302,7 +304,7 @@ async def generate_news_summary(start_date: str, end_date: str):
     except Exception as e:
         print(f"保存 Prompt 失败: {e}")
 
-
+    return
     print("开始调用火山引擎API生成摘要...")
     try:
         # # 根据环境设置代理
@@ -324,7 +326,7 @@ async def generate_news_summary(start_date: str, end_date: str):
         summary_content = response.choices[0].message.content
 
         # 保存响应内容到文件
-        summary_file = os.path.join(os.path.dirname(__file__), f"latest_summary.md")
+        summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
         try:
             with open(summary_file, "w", encoding="utf-8") as f:
                 f.write(summary_content)
@@ -346,17 +348,11 @@ async def generate_news_summary(start_date: str, end_date: str):
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
 
-async def push_to_feishu_direct(content=None, webhook_url=None):
+def generate_title_and_content(content=None, escape_json=True):
     """
-    直接推送内容到飞书机器人（不依赖pushplus）
-    如果 content 为空，则尝试从本地文件读取
+    从内容中提取标题和主体内容
+    :param escape_json: 是否进行JSON转义处理，默认True（用于飞书机器人推送）
     """
-    if not webhook_url:
-        webhook_url = os.getenv('FEISHU_WEBHOOK_URL')
-        if not webhook_url:
-            print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
-            return
-    
     if not content:
         # 尝试从本地文件读取内容
         summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
@@ -366,16 +362,10 @@ async def push_to_feishu_direct(content=None, webhook_url=None):
             print(f"已从本地文件读取内容: {summary_file}")
         except Exception as e:
             print(f"读取本地文件失败: {e}")
-            return
-
-    if not content:
-        print("错误：没有可推送的内容")
-        return
-
-    print("开始直接推送消息到飞书机器人...")
+            return None, None
     
     # 从内容中提取第一行作为标题
-    title = "每日新闻摘要"  # 默认标题
+    title = "BTC新闻摘要（默认标题）"  # 默认标题
     message_content = content
     if content:
         # 按行分割内容
@@ -389,16 +379,38 @@ async def push_to_feishu_direct(content=None, webhook_url=None):
                 message_content = '\n'.join(lines[1:]).strip()
     print(f"使用标题: {title}")
 
+    if escape_json:
+        # 对内容进行JSON转义处理
+        import json as json_module
+        title_escaped = json_module.dumps(title)[1:-1]  # 去掉首尾引号
+        message_content_escaped = json_module.dumps(message_content)[1:-1]  # 去掉首尾引号
+        return title_escaped, message_content_escaped
+    else:
+        return title, message_content
+
+async def push_to_feishu_direct(content=None, webhook_url=None):
+    """
+    直接推送内容到飞书机器人（不依赖pushplus）
+    """
+    if not webhook_url:
+        webhook_url = os.getenv('FEISHU_WEBHOOK_URL')
+        if not webhook_url:
+            print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
+            return
+    
+    # 从内容中提取标题和主体内容
+    title_escaped, message_content_escaped = generate_title_and_content(content, escape_json=True)
+
+    if not title_escaped or not message_content_escaped:
+        print("错误：提取标题或内容失败")
+        return
+
+    print("开始直接推送消息到飞书机器人...")
     # 飞书机器人富文本消息格式
     # 读取飞书消息模板
     template_path = os.path.join(os.path.dirname(__file__), 'feishu_message_template.json')
     with open(template_path, 'r', encoding='utf-8') as f:
         template_content = f.read()
-    
-    # 对内容进行JSON转义处理
-    import json as json_module
-    title_escaped = json_module.dumps(title)[1:-1]  # 去掉首尾引号
-    message_content_escaped = json_module.dumps(message_content)[1:-1]  # 去掉首尾引号
     
     # 替换模板中的占位符
     data_str = template_content.replace('{title}', title_escaped).replace('{message_content}', message_content_escaped)
@@ -516,10 +528,15 @@ async def main(mode="all"):
     start_date = yesterday.strftime('%Y-%m-%d %H:%M:%S')
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     
-    # 为摘要生成设置1天的时间范围
+    # 为摘要生成设置2天的时间范围
     one_day_ago = now - timedelta(days=2)
     summary_start_date = one_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     summary_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
+
+    # 为摘要生成设置2天的时间范围
+    week_day_ago = now - timedelta(days=7)
+    week_start_date = week_day_ago.strftime('%Y-%m-%d %H:%M:%S')
+    week_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     
     summary = None
 
@@ -537,15 +554,23 @@ async def main(mode="all"):
         # 2. 推送消息（自动根据环境变量选择推送到微信或飞书）
         # await push_to_wechat(summary)
         await push_to_feishu_direct(summary)
+    
+    if mode in ["summary_write", "all"]:
+        print("\n=== 执行摘要写入文档任务 ===")
+        # 1. 生成摘要
+        summary = await generate_news_summary(week_start_date, week_end_date)
+        # 延迟导入，避免循环依赖
+        from write_to_feishu import write_to_docx
+        await write_to_docx(summary)
             
 # --- 主程序入口 ---
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='新闻处理工具')
     parser.add_argument('--mode', 
-                      choices=['rss', 'summary_push', 'all'],
+                      choices=['rss', 'summary_push', 'summary_write', 'all'],
                       default='all',
-                      help='执行模式: rss=RSS抓取, summary_push=摘要推送, all=全部')
+                      help='执行模式: rss=RSS抓取, summary_push=摘要推送, summary_write=摘要写入文档, all=全部')
     args = parser.parse_args()
     
     asyncio.run(main(args.mode))

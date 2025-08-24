@@ -7,12 +7,15 @@ from dotenv import load_dotenv
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 
+from main import generate_title_and_content
+
 # 加载环境变量
 load_dotenv()
 
 FEISHU_APP_ID = os.getenv('FEISHU_APP_ID')
 FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
+FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg'
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -79,7 +82,7 @@ def convert_markdown_to_blocks(app_id, app_secret, markdown_content):
     
     if LOCAL_DEV:
         # 将result['data']内容写入到test目录下的文件中
-        output_file = os.path.join(os.path.dirname(__file__), "test", "test_blocks_output.json")
+        output_file = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_blocks_output.json")
 
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
@@ -264,19 +267,30 @@ def preprocess_markdown_content(content):
     
     processed_content = replace_dollar_in_links(content)
 
-    # 保存处理后的markdown内容到同级目录
-    processed_file_path = "d:/Study2/BTC-news/test/test_latest_summary_processed.md"
-    try:
-        with open(processed_file_path, 'w', encoding='utf-8') as f:
-            f.write(processed_content)
-        lark.logger.info(f"Processed markdown saved to: {processed_file_path}")
-    except Exception as e:
-        lark.logger.error(f"Failed to save processed markdown: {e}")
-        return
+    if LOCAL_DEV:
+        # 保存处理后的markdown内容到同级目录
+        processed_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary_processed.md")
+        try:
+            with open(processed_file_path, 'w', encoding='utf-8') as f:
+                f.write(processed_content)
+            lark.logger.info(f"Processed markdown saved to: {processed_file_path}")
+        except Exception as e:
+            lark.logger.error(f"Failed to save processed markdown: {e}")
+            return
 
     return processed_content
 
-def write_to_docx():
+async def write_to_docx(markdown_content=None):
+    """
+    写入文档到飞书文档库
+    """
+    if not markdown_content:
+        lark.logger.error("Markdown content is None")
+        return
+
+    from main import generate_title_and_content
+    title, content = generate_title_and_content(markdown_content, escape_json=False)
+
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
     app_secret = FEISHU_APP_SECRET
@@ -291,8 +305,8 @@ def write_to_docx():
     # 构造请求对象
     request: CreateDocumentRequest = CreateDocumentRequest.builder() \
         .request_body(CreateDocumentRequestBody.builder()
-            .folder_token("RS3DfGQETlGxpXdK3ZdcJHaVnRg")
-            .title("BTC市场动态全景报告")
+            .folder_token(FEISHU_FOLDER)
+            .title(title)
             .build()) \
         .build()
 
@@ -308,19 +322,10 @@ def write_to_docx():
     # 获取文档ID
     document_id = response.data.document.document_id
     lark.logger.info(f"Document created successfully, document_id: {document_id}")
-    
-    # 读取markdown文件内容
-    markdown_file_path = "d:/Study2/BTC-news/test/test_latest_summary.md"
+        
 
-    try:
-        with open(markdown_file_path, 'r', encoding='utf-8') as f:
-            markdown_content = f.read()
-    except Exception as e:
-        lark.logger.error(f"Failed to read markdown file: {e}")
-        return
-
-    # 预处理markdown内容并保存
-    processed_markdown_content = preprocess_markdown_content(markdown_content)
+    # 预处理markdown内容
+    processed_markdown_content = preprocess_markdown_content(content)
     
     # 调用convert接口将markdown转换为文档块
     try:
@@ -348,9 +353,21 @@ def write_to_docx():
     lark.logger.info("Markdown content inserted into document successfully!")
     lark.logger.info(f"Document URL: https://bj058omdwg.feishu.cn/docx/{document_id}")
 
-    # 在浏览器打开链接
-    webbrowser.open(f"https://bj058omdwg.feishu.cn/docx/{document_id}")
+    if LOCAL_DEV:
+        # 在浏览器打开链接
+        webbrowser.open(f"https://bj058omdwg.feishu.cn/docx/{document_id}")
 
 
 if __name__ == "__main__":
-    write_to_docx()
+    # 读取markdown文件内容
+    markdown_content = ''
+    # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
+    markdown_file_path = os.path.join(os.path.dirname(__file__), "latest_summary.md")
+
+    try:
+        with open(markdown_file_path, 'r', encoding='utf-8') as f:
+            markdown_content = f.read()
+    except Exception as e:
+        lark.logger.error(f"Failed to read markdown file: {e}")    
+
+    write_to_docx(markdown_content)
