@@ -304,7 +304,6 @@ async def generate_news_summary(start_date: str, end_date: str):
     except Exception as e:
         print(f"保存 Prompt 失败: {e}")
 
-    return
     print("开始调用火山引擎API生成摘要...")
     try:
         # # 根据环境设置代理
