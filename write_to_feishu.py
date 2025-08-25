@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 
-from main import generate_title_and_content
+from main import generate_title_and_summary_and_content
 
 # 加载环境变量
 load_dotenv()
@@ -280,16 +280,13 @@ def preprocess_markdown_content(content):
 
     return processed_content
 
-async def write_to_docx(markdown_content=None):
+async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_md='01.07'):
     """
     写入文档到飞书文档库
     """
-    if not markdown_content:
-        lark.logger.error("Markdown content is None")
-        return
-
-    from main import generate_title_and_content
-    title, content = generate_title_and_content(markdown_content, escape_json=False)
+    from main import generate_title_and_summary_and_content
+    title, content = generate_title_and_summary_and_content(markdown_content, escape_json=False)
+    title = '加密货币周报:'.replace("加密货币周报:", f"加密货币周报({week_start_md}-{week_end_md})：")
 
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID

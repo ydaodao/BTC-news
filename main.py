@@ -9,6 +9,7 @@ from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
 from dotenv import load_dotenv
+from llm_ali import generate_title_and_summary
 
 # 加载环境变量
 load_dotenv()
@@ -20,6 +21,7 @@ RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/148167071
 # 请确保您已将 API Key 存储在环境变量 ARK_API_KEY 中
 VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
 PUSHPLUS_TOKEN = os.getenv('PUSHPLUS_TOKEN')
+LOCAL_DEV = os.getenv('LOCAL_DEV')
 
 # 如果环境变量未设置，给出明确的错误提示
 if not VOLCENGINE_API_KEY:
@@ -281,7 +283,6 @@ async def generate_news_summary(start_date: str, end_date: str):
     2. 将所有新闻进行主题聚类，每个聚类需要一个简洁的主题标题。要求：用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
     3. 总结每个聚类的主旨，风格要求公正、客观、简洁。要求：用 **总结** 开头，内容用有序列表呈现
     4. 在每个聚类下，用无序列表列出原始新闻的标题和链接，符合markdown格式[标题](url)。要求：用 **参考** 开头
-    5. 在第一行输出一级总标题，用#开头。要求：不能只是几个关键词，要有实质内容，不超过30个字。正向举例：BTC监管收紧，稳定币重塑市场格局；负向举例：价格、巨鲸行为与生态发展
 
     以下是新闻内容：
 
@@ -419,12 +420,11 @@ async def generate_news_summary_chunked(start_date: str, end_date: str):
 
         要求：
         1. 全文以markdown格式输出
-        2. 在第一行输出一级总标题，用#开头（不能只是几个关键词，要有实质内容，不超过30个字）
-        3. 将所有内容重新整理和聚类，每个聚类用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
-        4. 每个聚类包含：
+        2. 将所有内容重新整理和聚类，每个聚类用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
+        3. 每个聚类包含：
         - **总结**：用有序列表呈现主旨
         - **参考**：用无序列表列出相关新闻标题和链接，格式为[标题](url)
-        5. 去除重复内容，确保逻辑清晰、结构完整
+        4. 去除重复内容，确保逻辑清晰、结构完整
         """
         
         try:
@@ -465,12 +465,13 @@ async def generate_news_summary_chunked(start_date: str, end_date: str):
     print("没有成功处理任何内容块")
     return None
 
-def generate_title_and_content(content=None, escape_json=True):
+def generate_title_and_summary_and_content(content=None, escape_json=True):
     """
     从内容中提取标题和主体内容
+    :param content: 新闻内容
     :param escape_json: 是否进行JSON转义处理，默认True（用于飞书机器人推送）
     """
-    if not content:
+    if not content and LOCAL_DEV:
         # 尝试从本地文件读取内容
         summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
         try:
@@ -481,20 +482,31 @@ def generate_title_and_content(content=None, escape_json=True):
             print(f"读取本地文件失败: {e}")
             return None, None
     
+    if not content:
+        lark.logger.error("Markdown content is None")
+        return None, None
+    
+    title, summary = generate_title_and_summary(content)
+    if not title or not summary:
+        print("错误：生成标题或摘要失败")
+        return None, None
+    
+    message_content = f"{summary}\n---\n{content}"
+
     # 从内容中提取第一行作为标题
-    title = "BTC新闻摘要（默认标题）"  # 默认标题
-    message_content = content
-    if content:
-        # 按行分割内容
-        lines = content.strip().split('\n')
-        if lines:
-            # 获取第一行并去掉 Markdown 标题符号
-            first_line = lines[0].strip()
-            if first_line.startswith('# '):
-                title = first_line[2:].strip()
-                # 将第一行从content中移除
-                message_content = '\n'.join(lines[1:]).strip()
-    print(f"使用标题: {title}")
+    # title = "BTC新闻摘要（默认标题）"  # 默认标题
+    # message_content = content
+    # if content:
+    #     # 按行分割内容
+    #     lines = content.strip().split('\n')
+    #     if lines:
+    #         # 获取第一行并去掉 Markdown 标题符号
+    #         first_line = lines[0].strip()
+    #         if first_line.startswith('# '):
+    #             title = first_line[2:].strip()
+    #             # 将第一行从content中移除
+    #             message_content = '\n'.join(lines[1:]).strip()
+    # print(f"使用标题: {title}")
 
     if escape_json:
         # 对内容进行JSON转义处理
@@ -516,7 +528,7 @@ async def push_to_feishu_direct(content=None, webhook_url=None):
             return
     
     # 从内容中提取标题和主体内容
-    title_escaped, message_content_escaped = generate_title_and_content(content, escape_json=True)
+    title_escaped, message_content_escaped = generate_title_and_summary_and_content(content, escape_json=True)
 
     if not title_escaped or not message_content_escaped:
         print("错误：提取标题或内容失败")
@@ -650,10 +662,12 @@ async def main(mode="all"):
     summary_start_date = one_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     summary_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
 
-    # 为摘要生成设置2天的时间范围
+    # 为摘要生成设置7天的时间范围
     week_day_ago = now - timedelta(days=7)
     week_start_date = week_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     week_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
+    week_start_md = week_day_ago.strftime('%m.%d')
+    week_end_md = now.strftime('%m.%d')
     
     summary = None
 
@@ -675,10 +689,10 @@ async def main(mode="all"):
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")
         # 1. 生成摘要（使用分块处理版本）
-        summary = await generate_news_summary_chunked(week_start_date, week_end_date)
+        # summary = await generate_news_summary_chunked(week_start_date, week_end_date)
         # 延迟导入，避免循环依赖
         from write_to_feishu import write_to_docx
-        await write_to_docx(summary)
+        await write_to_docx(summary, week_start_md, week_end_md)
             
 # --- 主程序入口 ---
 if __name__ == "__main__":
