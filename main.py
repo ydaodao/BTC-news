@@ -689,7 +689,7 @@ async def main(mode="all"):
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")
         # 1. 生成摘要（使用分块处理版本）
-        # summary = await generate_news_summary_chunked(week_start_date, week_end_date)
+        summary = await generate_news_summary_chunked(week_start_date, week_end_date)
         # 延迟导入，避免循环依赖
         from write_to_feishu import write_to_docx
         await write_to_docx(summary, week_start_md, week_end_md)
