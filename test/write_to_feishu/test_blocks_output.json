@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "c2d4bade-6f6e-42ad-b529-29f4eacee3fb",
+    "block_id": "2e47be14-3e81-4301-973b-8e2456c6b725",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "一、比特币价格波动与短期支撑位分析",
+            "content": "一、BTC价格走势与技术分析",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -25,7 +25,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "5e3a5c2c-a151-403b-982a-833da486ba3a",
+    "block_id": "83aee891-d732-4b5a-9a14-6f6a57324f45",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -62,13 +62,13 @@
     }
   },
   {
-    "block_id": "2163f3ff-400d-48d3-8781-907b06c1942c",
+    "block_id": "b4cbf8fc-b5aa-4f40-b668-930c2ac35bd7",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "市场对美联储主席鲍威尔讲话的担忧导致比特币在讲话前回调至112,000美元，该价位是持有时间小于3个月的比特币平均换手成本，成为短期支撑。",
+            "content": "近期BTC从8月14日历史高点12.43万美元回落约10%，暂守11.2万美元关键支撑；美联储鸽派讲话后反弹至11.5万美元附近，但动能出现动摇。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -88,13 +88,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "26bda224-36c0-4166-966d-07752541911c",
+    "block_id": "773ce17d-fb65-416c-a488-08ddfdebde14",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "持有小于3个月的BTC是短期最活跃筹码，价格跌破成本线使市场情绪从乐观转为悲观，但未引发恐慌，抛压有所减少。",
+            "content": "技术指标显示短期趋势不确定（RSI中性、MACD看跌背离），但长期仍处看涨通道（100日/200日均线提供支撑）；若突破11.7万美元则延续涨势，跌破11.1万美元或引发进一步回调。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -114,13 +114,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "f6e7f076-b3b9-4cb7-8824-32fed1c90093",
+    "block_id": "417f66b8-0716-465a-bd2b-bdefd457585d",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "分析师指出，112,000美元的成本线有效缓解了短期抛压，投资者情绪焦虑但不恐慌，支撑位作用明显。",
+            "content": "美国现货BTC ETF出现四个多月来最长连续资金流出（过去五日累计流出约11.7亿美元），反映投资者短期减持，但未平仓合约下降表明回调更多是去杠杆而非新空头入场。\n",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -129,22 +129,7 @@
               "underline": false
             }
           }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "b19d0563-0454-4cab-b58c-bdd6db3754bf",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
+        },
         {
           "text_run": {
             "content": "参考",
@@ -172,24 +157,26 @@
       ],
       "style": {
         "align": 1,
-        "folded": false
+        "folded": false,
+        "sequence": "auto"
       }
-    }
+    },
+    "parent_id": ""
   },
   {
-    "block_id": "98b8d52f-0fd9-461c-889f-e1cee50bf42b",
+    "block_id": "ecd6f5ee-846d-4420-bde0-23b6b485d941",
     "block_type": 12,
     "bullet": {
       "elements": [
         {
           "text_run": {
-            "content": "分析师：「持有BTC小于3个月」的平均换手成本价再次成为比特币回调时的支撑位 - Binance",
+            "content": "比特币价格观察：价格走势受到挤压——下次突破是偏向多头还是空头？",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
               "italic": false,
               "link": {
-                "url": "https%3A%2F%2Fwww.binance.com%2Fcn%2Fsquare%2Fpost%2F28689521772657"
+                "url": "https%3A%2F%2Fnews.bitcoin.com%2Fzh%2Fbi-te-bi-ji-ge-guan-cha-jia-ge-zou-shi-shou-dao-ji-ya-xia-ci-tu-po-shi-pian-xiang-duo-tou-hai-shi-kong-tou%2F"
               },
               "strikethrough": false,
               "underline": false
@@ -205,13 +192,75 @@
     "parent_id": ""
   },
   {
-    "block_id": "da783775-cd96-4758-96bd-99648d5f430a",
+    "block_id": "f8db9797-d975-4cfe-a9a7-d5cb262fdd22",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "交易员关注美联储信号和期权到期，比特币持稳于113 万美元",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Ffinancefeeds.com%2Fzh-CN%2F%25E4%25BA%25A4%25E6%2598%2593%25E5%2591%2598%25E5%2585%25B3%25E6%25B3%25A8%25E7%25BE%258E%25E8%2581%2594%25E5%2582%25A8%25E4%25BF%25A1%25E5%258F%25B7%25E5%2592%258C%25E6%259C%259F%25E6%259D%2583%25E5%2588%25B0%25E6%259C%259F%25EF%25BC%258C%25E6%25AF%2594%25E7%2589%25B9%25E5%25B8%2581%25E6%258C%2581%25E6%259C%2589-113-%25E4%25B8%2587%2F"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "61f5ab0a-769e-4f35-b83d-4a482c8c2a35",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "比特币价格观察：动能在115K美元处动摇—接下来会怎样？",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fnews.bitcoin.com%2Fzh%2Fbitebi-jiage-guancha-dongneng-zai-115k-meiyuan-chu-dongyao-jielaihui-zenyang%2F"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "4fe06ad6-afa1-4dff-99e9-c9358183a5fc",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "405fef5a-e46f-4551-a645-902d65b1802a",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "二、比特币远古巨鲸大规模换仓ETH及浮盈情况",
+            "content": "二、宏观政策与市场反应",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -230,7 +279,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "b57b59a2-b548-4b5d-8636-f62b941fc073",
+    "block_id": "f04d7a11-484b-4b6b-9ced-377ce4a94ce5",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -267,13 +316,13 @@
     }
   },
   {
-    "block_id": "d2e6eb22-1c8e-42f2-8d4d-4fb50787a361",
+    "block_id": "0a566e5a-75c9-4163-84b0-d9e04eb9f769",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "多位比特币OG巨鲸近期通过Hyperliquid等平台卖出BTC买入ETH，一周内换仓超7万枚ETH，价值约3亿美元。",
+            "content": "美联储主席鲍威尔在杰克逊霍尔研讨会发表鸽派讲话，提及就业下行风险加剧、关税对通胀影响短暂，暗示可能调整政策立场，推动9月降息概率升至90%。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -293,13 +342,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "2bb28128-5ede-463f-a917-fee1a57f708d",
+    "block_id": "71d98a3a-33df-440c-bace-6dccde8aa0d5",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "部分巨鲸3天内浮盈超8400万美元：持有135,265枚ETH多头头寸（浮盈4900万美元），现货买入100,979枚ETH（浮盈3500万美元）。",
+            "content": "鸽派政策引发加密货币（BTC、ETH）及股市大幅上涨，分析师预计ETH将突破5000美元、BTC有望创历史新高；资金流向加密资产的意愿增强，去中心化交易平台XBIT因用户自主管理特性受关注。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -319,13 +368,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "fa0db217-d648-45e5-a759-e791a5bb822e",
+    "block_id": "088ca36a-516b-45f9-bf81-3b96ed4c2625",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "部分巨鲸累计持有超15万枚ETH，价值约7亿美元，浮盈达数千万美元。",
+            "content": "宏观层面，特朗普施压美联储、FOMC纪要显示经济放缓及美元走弱等因素叠加，虽短期引发市场波动，但长期支撑加密资产处于上升通道。\n",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -334,22 +383,7 @@
               "underline": false
             }
           }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "ab721970-8eb4-45f9-8e04-2c21767d1b22",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
+        },
         {
           "text_run": {
             "content": "参考",
@@ -377,230 +411,6 @@
       ],
       "style": {
         "align": 1,
-        "folded": false
-      }
-    }
-  },
-  {
-    "block_id": "8f73a2cf-f3ee-4fcb-ac80-db0583b866e2",
-    "block_type": 12,
-    "bullet": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "某比特币远古巨鲸再将2520枚BTC换仓至ETH，累计持有超15.3万枚ETH - BlockWeeks",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "link": {
-                "url": "https%3A%2F%2Fblockweeks.com%2Fnewsflash%2F160320.html"
-              },
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "b160cd1b-90a2-467c-8658-d63b7df6629e",
-    "block_type": 12,
-    "bullet": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "比特币OG再次出售300枚BTC购买ETH，3天内浮盈8400万美元 - BlockWeeks",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "link": {
-                "url": "https%3A%2F%2Fblockweeks.com%2Fnewsflash%2F160302.html"
-              },
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "f8b8d82a-ca29-4fba-b4d6-4fc909f6b716",
-    "block_type": 12,
-    "bullet": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "沉睡七年的BTC 远古巨鲸一周内换仓超7 万枚ETH，价值约3 亿美元 - Binance",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "link": {
-                "url": "https%3A%2F%2Fwww.binance.com%2Fcn%2Fsquare%2Fpost%2F28658712336666"
-              },
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "326a8cbc-8daf-4f23-9459-2f2fb80c98ff",
-    "block_type": 12,
-    "bullet": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "做多ETH 的比特币OG 鲸鱼浮盈已超4000 万美元 - 新浪财经",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "link": {
-                "url": "https%3A%2F%2Fcj.sina.cn%2Farticles%2Fview%2F5952915720%2F162d2490806702by7i%3Ffroms%3Dggmp"
-              },
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "dba795e7-1764-4cb1-a513-fe576d5c1ff5",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "三、BTC生态L2技术路径对比与发展现状",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "29befd1c-3827-4db0-9791-50ab36d15369",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "总结",
-            "text_element_style": {
-              "bold": true,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "：",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    }
-  },
-  {
-    "block_id": "5ba30c41-369b-45a3-ba2b-83c83816500f",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "BTC生态L2解决方案呈现多极竞争格局，涵盖闪电网络（支付效率）、RGB（资产安全）、ZK-Rollup（EVM兼容）、BitVM（图灵完备）等。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "a7154071-1e6e-4041-a04d-f249b7b8a61f",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "各方案侧重不同：闪电网络适合微支付和链下结算；RGB利用客户端验证保障资产状态；ZK-Rollup具备可组合性与跨链能力；BitVM追求极致原生性，不改动BTC共识实现智能合约。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
         "folded": false,
         "sequence": "auto"
       }
@@ -608,82 +418,19 @@
     "parent_id": ""
   },
   {
-    "block_id": "1727cc6a-aa2d-4b34-bd33-0d55cb0fcbef",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "未来不同方案将服务于支付、合约、资产等场景，分工协作支撑BTC生态繁荣，胜者需满足原生兼容、安全可验证、支持上层应用三点。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "a11ea4c9-f7bb-44a0-8282-2c05c0a82039",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "参考",
-            "text_element_style": {
-              "bold": true,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "：",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    }
-  },
-  {
-    "block_id": "24037bd2-e8eb-4c50-bfee-8b8a54defc04",
+    "block_id": "982ccc4f-5db8-4ef5-88ed-0fa44235ae48",
     "block_type": 12,
     "bullet": {
       "elements": [
         {
           "text_run": {
-            "content": "BTC生态竞逐下半场：谁是价值承载的最优解？ - BlockBeats",
+            "content": "Bitcoin和以太坊在美联储降息信号中飙升至日内高点",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
               "italic": false,
               "link": {
-                "url": "https%3A%2F%2Fwww.theblockbeats.info%2Fnews%2F59405"
+                "url": "https%3A%2F%2Fnews.bitcoin.com%2Fzh%2Fbitcoin-he-yi-ta-fang-zai-mei-lian-chu-jiang-xi-xin-hao-zhong-biao-sheng-zhi-ri-nei-gao-dian%2F"
               },
               "strikethrough": false,
               "underline": false
@@ -699,190 +446,41 @@
     "parent_id": ""
   },
   {
-    "block_id": "fff77d47-673b-4d6d-b7ca-c9e83e27ae19",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "四、宏观政策推动加密上涨与机构采用加速",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "141b1634-444a-49f4-9f81-38bfabe10d2f",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "总结",
-            "text_element_style": {
-              "bold": true,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "：",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    }
-  },
-  {
-    "block_id": "02fd0825-68a4-457a-9911-f656f5b36535",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "美联储鲍威尔鸽派讲话推动加密货币大幅上涨，以太坊突破4800美元历史新高，比特币涨至117,400美元。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "3dd5fa66-4b73-4e65-afa1-a439dad1cf6f",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "Q3估值报告指出机构采用加速：美国401(k)开放BTC投资，潜在8.9万亿美元资金池；美国现货ETF持有130万枚BTC，Strategy持有629,376枚BTC，机构买盘提供坚实支撑。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "bcc2f380-d9ec-4ade-b341-bdeef3745ec7",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "分析师预计ETH表现优于BTC，五大主力币（BTC、ETH、BNB、SOL、LINK）将出色；需关注ETF资金流向、企业采纳风险及宏观地缘政治冲击。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "c540e6b0-815b-4647-a152-3863a7214390",
-    "block_type": 2,
-    "parent_id": "",
-    "text": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "参考",
-            "text_element_style": {
-              "bold": true,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "：",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    }
-  },
-  {
-    "block_id": "125fdb60-f90f-48ad-b660-0c13c55e0bbf",
+    "block_id": "b33ce9ba-7672-418f-9541-4f0e501eca1c",
     "block_type": 12,
     "bullet": {
       "elements": [
         {
           "text_run": {
-            "content": "今日比特币新闻：以太坊（ETH）有望突破5000美元，随着鲍威尔引发市场反弹 - CoinDesk",
+            "content": "关注杰罗姆·鲍威尔在杰克逊霍尔的演讲以获取比特币和以太坊指引：加密日报美洲版",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.coindesk.com%2Fzh%2Fdaybook-us%2F2025%2F08%2F22%2Fall-eyes-on-powell-as-bitcoin-holds-below-usd113k-crypto-daybook-americas%2F"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "2ccf90d0-f837-48b9-8222-fa6a5f2b4f80",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "今日比特币新闻：以太坊（ETH）有望突破5000美元，随着鲍威尔引发市场反弹",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -904,19 +502,1289 @@
     "parent_id": ""
   },
   {
-    "block_id": "4eaa9227-b752-49e7-88f9-f817af337bd9",
+    "block_id": "ede9e76f-16e1-4294-ae67-c43479a5b682",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "8f7befa3-727a-492d-9f6c-afcdd66db357",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "三、机构与巨鲸资产配置动向",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "82f0c13d-9727-42b4-abae-98b36a3fcd29",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "总结",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "e4672352-6797-4a39-9dce-fe7115bcfebe",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "机构增持BTC：Bitdeer本周挖矿产出91.1枚BTC，总持仓量突破1800枚（达1818.2枚）；持有BTC的公共实体达297家（含169家上市公司、57家私营企业等），共持有367万枚（占总供应量17%）。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "0e79c4c3-5952-4895-ac0c-7208b4c6294d",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "巨鲸换仓行为：多位BTC远古巨鲸近期持续出售BTC买入ETH——一位3天内出售300枚BTC浮盈8400万美元，另一位6小时内出售2520枚BTC买入ETH，累计持有超15.3万枚ETH；部分巨鲸通过Hyperliquid平台批量转换BTC至ETH。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "d8e361a7-036e-4d05-9cc1-704c1523a5ee",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "机构预测：Q3 BTC估值报告指出全球流动性扩张、机构采用加速（ETF持有130万枚BTC）、监管利好（401(k)开放比特币投资）三大驱动力，目标价19万美元（当前价基础上有67%上涨潜力）。\n",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "1e2e6880-cf54-4fc1-913f-552aba369a81",
     "block_type": 12,
     "bullet": {
       "elements": [
         {
           "text_run": {
-            "content": "Q3比特币（BTC）估值报告：三大驱动力推动上涨，机构预测目标价19万美元 - Cointelegraph中文",
+            "content": "Bitdeer本周挖矿产出91.1枚BTC，比特币总持仓量突破1800枚",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fblockweeks.com%2Fnewsflash%2F160385.html"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "fbad2b66-723e-40f0-9b1e-2d2687e3f162",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "沉睡七年的BTC 远古巨鲸一周内换仓超7 万枚ETH，价值约3 亿美元",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.binance.com%2Fcn%2Fsquare%2Fpost%2F28658712336666"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "f6c7afdc-fddc-4751-82e9-3b8efda0502a",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "某比特币远古巨鲸再将2520枚BTC换仓至ETH，累计持有超15.3万枚ETH",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fblockweeks.com%2Fnewsflash%2F160320.html"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "7eb8d9c0-54d0-4212-ac81-7058e2dd8e78",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "Q3比特币（BTC）估值报告：三大驱动力推动上涨，机构预测目标价19万美元",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
               "italic": false,
               "link": {
                 "url": "https%3A%2F%2Fcn.cointelegraph.com%2Fnews%2Fq3-bitcoin-valuation-report-three-key-drivers-fuel-rally-institutions-target-19k"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "335b853a-6b78-4daa-99ac-0c8c135202b2",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "162ebe89-4cea-4af4-8ee1-48a39a49a9d1",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "四、BTC生态与技术进展",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "0a827d61-9ef7-4203-91b0-27c756f7e8ed",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "总结",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "159c0dc6-0fbf-43de-8221-8811e39dcf78",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "L2技术路径竞争：BTC生态从1.0（TVL优先、安全不足）进入2.0（原生兼容、安全可验证、支持应用）阶段，当前L2方案涵盖闪电网络（支付场景）、ZK-Rollup（EVM兼容、DeFi场景）、BitVM（原生智能合约）等，各方案侧重不同场景，未来将形成多极竞争格局。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "bbac17eb-07ff-4c1c-936d-c505fbc86f74",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "流动质押进展：Lombard Finance推出BARD代币及Liquid Bitcoin基金会，其LBTC占据BTC流动质押市场约40%份额（约14亿美元），旨在激活BTC休眠流动性并接入多链DeFi生态。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "b098ce66-3b24-4124-b319-3cbcb7f46aaa",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "开发者社区冲突：Bitcoin Core开发者与Knots节点的“OP_RETURN之战”升级，Core开发者称反对派为“Knotzis”并嘲讽其软件漏洞；Knots节点今年从不足400个增至近4000个，双方从技术分歧演变为人身攻击。\n",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "43d42d6f-bc0d-42ba-aff6-e3640e70584c",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "BTC生态竞逐下半场：谁是价值承载的最优解？",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.theblockbeats.info%2Fnews%2F59405"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "d76a354e-fc90-4f0c-960e-46559a7b4e8c",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "随着隆巴德推出BARD代币及其基金会，比特币液态质押获得动力",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.coindesk.com%2Fzh%2Ftech%2F2025%2F08%2F23%2Fbitcoin-liquid-staking-gains-momentum-as-lombard-launches-bard-token-and-foundation"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "f3996fee-5e30-40d0-a265-d2c5995fab7b",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "比特币Core 开发者称反对派为“Knotzis”，并指出其软件漏洞",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fcj.sina.cn%2Farticles%2Fview%2F5952915720%2F162d2490806702byei%3Ffroms%3Dggmp"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "7a927223-ae8d-43de-8bcf-0228b0c3752d",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "a52a1371-ba93-4839-a0a5-761464dbd6b4",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "五、其他加密资产动态（以ETH为主）",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "4ad0e8e5-e87c-422b-924a-759b538740de",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "总结",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "c125e0b9-dbf2-4da2-8421-962d62a38c7d",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "ETH价格表现：近期ETH从4800美元回落至4200美元附近，受美联储鸽派讲话推动反弹，技术指标看涨（MACD显上涨动能，50日/200日EMA提供支撑）；ETH/BTC比率上升显示资本转向其相对强势。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "1ba43b6f-8c3d-4d87-86a6-9c33dcad8efb",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "机构兴趣：Peter Thiel的创始人基金等机构增持ETH，机构持ETH总量超410万枚（占供应量3.39%）；近期贝莱德出售部分ETH持仓，但Bitmain等机构加仓。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "b332ac03-4f3d-430b-971b-9c28db0a3cd2",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "价格预期：BitMEX联合创始人Arthur Hayes上调ETH价格预期，认为美国大规模信贷扩张将推动其在本轮周期结束前升至1万-2万美元。\n",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "434ebb69-961c-48ed-9aa7-82fc6894e50c",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "以太坊在可能的九月降息预期推动下飙升至历史新高",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.coindesk.com%2Fzh%2Fmarkets%2F2025%2F08%2F22%2Fethereum-surges-to-new-all-time-high-amid-likely-september-rate-cut"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "126d4e78-444a-4f72-82cd-6803b6dec37a",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "Arthur Hayes：信贷扩张将推动以太坊冲向2 万美元",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fcryptonews.com%2Fcn%2Fnews%2Farthur-hayes-credit-expansion-ethereum-20000%2F"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "0a6594ca-f02d-4029-8692-40ef4b0db6b9",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "某远古巨鲸已卖出3100枚BTC并买入50,522枚ETH，5倍杠杆做多13.5万枚ETH",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.theblockbeats.info%2Fflash%2F308572"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "56e4c090-8f23-425d-a0b7-86c27ed0b02a",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "5e163071-fb1d-49c9-9877-6b8fcaa5aa84",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "六、市场风险与清算事件",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "8cbc577c-e01d-4223-8275-da429d9b75f6",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "总结",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "b85da16a-c03e-4a75-a06a-ea808f21d02b",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "市场波动：本周加密市场先经历抛售再反弹，总市值从3.86万亿美元升至近4.1万亿美元；ETH、BNB创历史新高，BTC周跌1.7%后跌破11.5万USDT。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "d14b7872-905b-4c88-a945-40035f369668",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "清算风险：24小时内超16万人爆仓，总金额6.94亿美元；BTC突破12.08万美元或跌破10.99万美元将分别引发26.23亿空单、21.52亿多单清算。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "10818848-a9b6-4a33-ad01-d71a6b105d21",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "ETF资金流动：美国现货BTC ETF连续五日净流出（累计约11.7亿美元），反映投资者短期风险偏好下降；同期ETH ETF也出现短期资金流出，但机构长期信心未减。\n",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "bf8ea091-2ef0-4352-b050-7db1cfa03bde",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "加密市场剧震：24小时超16万人爆仓总金额达6.94亿美元",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.fx168news.com%2Farticle%2F%25E5%258A%25A0%25E5%25AF%2586%25E8%25B4%25A7%25E5%25B8%2581-935741"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "c368d817-ce63-4263-8176-533b11921089",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "BTC价格突破120835美元或跌破109979美元将引发清算",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.binance.com%2Fzh-CN%2Fsquare%2Fpost%2F08-23-2025-btc-120-835-109-979-28713788304610"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "d0617b33-fcec-476d-8e68-f21f0d892c5b",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "8 月21 日比特币现货ETF 总净流出1.94 亿美元",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.wublock123.com%2Farticle%2F6%2F47536"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "49899fc5-6b0d-4ad2-ac76-9ff4686b8e6a",
+    "block_type": 22,
+    "divider": {},
+    "parent_id": ""
+  },
+  {
+    "block_id": "2fff772d-ff3d-4a4b-8370-cf1091bd3d12",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "七、行业数据与持有情况",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "25c39370-e1a1-4b57-8622-23e600af546b",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "总结",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "1588f174-c589-409e-8235-10274f0a533e",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "链上数据：BTC网络日交易费用（14日SMA）降至2011年末以来低点3.5 BTC；持有BTC小于3个月的平均换手成本价（11.2万美元）成为回调时的关键支撑位。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "a23bf1da-dd38-4e2b-bf43-865bb51f5b52",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "市场持有：加密货币总市值超4.00万亿美元，比特币占有率达57.6%；香港明成集团计划购买4250枚BTC（价值约4.83亿美元），将成为香港最大BTC持有者。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "c9b6bc04-2cda-4772-83db-39af72476674",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "流动性复苏：BTC市场链上流动性正复苏，过往流动性复苏均先于持续上涨行情，暗示市场可能即将进入新的上升周期。\n",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "：",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "bd482382-2e47-42b8-a192-f35eb0f809be",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "BTC网络日交易费用降至2011年以来低点3.5 BTC",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.binance.com%2Fzh-CN%2Fsquare%2Fpost%2F08-24-2025-btc-2011-3-5-btc-28737886196962"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "c5f80bb3-06f7-47e0-a805-92f68c23c608",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "加密货币总市值逾4.00万亿美元，比特币占有率为57.6%",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.binance.com%2Fzh-CN%2Fsquare%2Fpost%2F08-23-2025-4-00-57-6-28698648805090"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "24a9017d-04d8-44e9-bb53-3563928af2b8",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "分析：比特币市场链上流动性正复苏",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.bitpush.news%2Farticles%2F7565005"
               },
               "strikethrough": false,
               "underline": false

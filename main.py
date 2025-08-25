@@ -9,8 +9,6 @@ from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
 from dotenv import load_dotenv
-# 删除第12行的导入
-# from write_to_feishu import write_to_docx
 
 # 加载环境变量
 load_dotenv()
@@ -347,6 +345,126 @@ async def generate_news_summary(start_date: str, end_date: str):
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
 
+# 在 generate_news_summary 函数后添加新函数
+async def generate_news_summary_chunked(start_date: str, end_date: str):
+    """
+    生成新闻摘要（分块处理版本，用于处理大量内容）
+    """
+    processed_news = fetch_news_with_content(start_date, end_date)
+    if not processed_news:
+        print("没有找到包含正文内容的新闻。")
+        return None
+
+    print(f"成功读取 {len(processed_news)} 条新闻内容。")
+    print("使用分块处理方式构建大模型API的Prompt...")
+    
+    # 将新闻数据分成较小的块
+    chunk_size = 25  # 每块处理25条新闻
+    chunks = [processed_news[i:i + chunk_size] for i in range(0, len(processed_news), chunk_size)]
+    
+    summaries = []
+    
+    client = OpenAI(
+        base_url="https://ark.cn-beijing.volces.com/api/v3",
+        api_key=VOLCENGINE_API_KEY,
+    )
+    
+    for i, chunk in enumerate(chunks):
+        print(f"处理第 {i+1}/{len(chunks)} 块内容...")
+        
+        # 为每个块生成内容
+        chunk_content = "\n\n-----\n\n".join([
+            f"标题: {n['title']}\n"
+            f"真实链接: {n['real_url']}\n"
+            f"正文: {n['content']}" 
+            for n in chunk
+        ])
+        
+        prompt_text = f"""你是一名资深的新闻编辑，请对以下BTC和加密货币新闻进行分析和总结（第{i+1}部分，共{len(chunks)}部分）：
+
+        要求：
+        1. 以markdown格式输出
+        2. 将新闻进行主题聚类，每个聚类需要一个简洁的主题标题（用###开头）
+        3. 总结每个聚类的主旨，风格要求公正、客观、简洁（用 **总结** 开头）
+        4. 在每个聚类下，用无序列表列出原始新闻的标题和链接（用 **参考** 开头）
+
+        以下是新闻内容：
+
+        -----
+
+        {chunk_content}
+        """
+        
+        try:
+            response = client.chat.completions.create(
+                model="doubao-seed-1-6-thinking-250715",
+                messages=[{"role": "user", "content": prompt_text}],
+                temperature=0.3,
+            )
+            
+            chunk_summary = response.choices[0].message.content
+            summaries.append(chunk_summary)
+            print(f"第 {i+1} 块处理完成")
+            
+        except Exception as e:
+            print(f"处理第 {i+1} 块时出错: {e}")
+            continue
+    
+    # 合并所有摘要
+    if summaries:
+        print("合并所有分块摘要...")
+        final_prompt = f"""你是一名资深的新闻编辑，请将以下分块摘要合并成一份完整的BTC和加密货币市场周报：
+
+        {"".join([f"=== 第{i+1}部分摘要 ===\n{summary}\n\n" for i, summary in enumerate(summaries)])}
+
+        要求：
+        1. 全文以markdown格式输出
+        2. 在第一行输出一级总标题，用#开头（不能只是几个关键词，要有实质内容，不超过30个字）
+        3. 将所有内容重新整理和聚类，每个聚类用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
+        4. 每个聚类包含：
+        - **总结**：用有序列表呈现主旨
+        - **参考**：用无序列表列出相关新闻标题和链接，格式为[标题](url)
+        5. 去除重复内容，确保逻辑清晰、结构完整
+        """
+        
+        try:
+            response = client.chat.completions.create(
+                model="doubao-seed-1-6-thinking-250715",
+                messages=[{"role": "user", "content": final_prompt}],
+                temperature=0.3,
+            )
+            
+            final_summary = response.choices[0].message.content
+            
+            # 保存最终摘要
+            summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
+            try:
+                with open(summary_file, "w", encoding="utf-8") as f:
+                    f.write(final_summary)
+                print(f"最终摘要已保存到: {summary_file}")
+            except Exception as e:
+                print(f"保存摘要失败: {e}")
+            
+            # 同时保存合并前的分块摘要（用于调试）
+            chunks_file = os.path.join(os.path.dirname(__file__), "latest_summary_chunks.md")
+            try:
+                with open(chunks_file, "w", encoding="utf-8") as f:
+                    f.write("\n\n=== 分块摘要合集 ===\n\n")
+                    for i, summary in enumerate(summaries):
+                        f.write(f"## 第{i+1}部分摘要\n\n{summary}\n\n---\n\n")
+                print(f"分块摘要已保存到: {chunks_file}")
+            except Exception as e:
+                print(f"保存分块摘要失败: {e}")
+            
+            return final_summary
+            
+        except Exception as e:
+            print(f"生成最终摘要时出错: {e}")
+            return None
+    
+    print("没有成功处理任何内容块")
+    return None
+
 def generate_title_and_content(content=None, escape_json=True):
     """
     从内容中提取标题和主体内容
@@ -556,8 +674,8 @@ async def main(mode="all"):
     
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")
-        # 1. 生成摘要
-        summary = await generate_news_summary(week_start_date, week_end_date)
+        # 1. 生成摘要（使用分块处理版本）
+        summary = await generate_news_summary_chunked(week_start_date, week_end_date)
         # 延迟导入，避免循环依赖
         from write_to_feishu import write_to_docx
         await write_to_docx(summary)
