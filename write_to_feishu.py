@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 
-from main import generate_title_and_summary_and_content
-
 # 加载环境变量
 load_dotenv()
 
@@ -285,8 +283,8 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     写入文档到飞书文档库
     """
     from main import generate_title_and_summary_and_content
-    title, content = generate_title_and_summary_and_content(markdown_content, escape_json=False)
-    title = '加密货币周报:'.replace("加密货币周报:", f"加密货币周报({week_start_md}-{week_end_md})：")
+    title, summary= generate_title_and_summary_and_content(markdown_content)
+    title = f"加密货币周报（{week_start_md}-{week_end_md}）：{title}"
 
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
@@ -322,7 +320,7 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
         
 
     # 预处理markdown内容
-    processed_markdown_content = preprocess_markdown_content(content)
+    processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{markdown_content}")
     
     # 调用convert接口将markdown转换为文档块
     try:

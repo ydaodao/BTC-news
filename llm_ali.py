@@ -53,7 +53,7 @@ def generate_title_and_summary(content):
 
     # 从生成的文本中提取标题和总结
     lines = generated_text.split("\n")
-    title = lines[0].replace("#", "").strip()
+    title = lines[0].replace("# ", "").replace("加密货币周报：", "").strip('【】 ')
     summary = '\n'.join(lines[1:]).strip()
 
     return title, summary

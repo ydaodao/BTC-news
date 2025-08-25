@@ -8,6 +8,6 @@ week_day_ago = now - timedelta(days=7)
 week_start_md = week_day_ago.strftime('%m.%d')
 week_end_md = now.strftime('%m.%d')
 
-title = '加密货币周报:'.replace("加密货币周报:", f"加密货币周报({week_start_md}-{week_end_md})：")
+title = '【加密货币周报:xxxxx】'.replace("加密货币周报:", f"加密货币周报({week_start_md}-{week_end_md})：").strip('【】')
 
 print(title)
