@@ -24,7 +24,6 @@ RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/148167071
 VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
 PUSHPLUS_TOKEN = os.getenv('PUSHPLUS_TOKEN')
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-DOUBAO_MODEL = "doubao-seed-1-6-flash-250715"
 
 # 如果环境变量未设置，给出明确的错误提示
 if not VOLCENGINE_API_KEY:
@@ -411,7 +410,7 @@ async def main(mode="all"):
     daily_end_md = now.strftime('%m.%d')
 
     # 为摘要生成设置7天的时间范围
-    week_day_ago = now - timedelta(days=14)
+    week_day_ago = now - timedelta(days=7)
     week_start_date = week_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     week_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     week_start_md = week_day_ago.strftime('%m.%d')
@@ -429,7 +428,7 @@ async def main(mode="all"):
     if mode in ["summary_push", "all"]:
         print("\n=== 执行摘要生成和推送任务 ===")
         # 1. 生成摘要
-        summary = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY, DOUBAO_MODEL)
+        summary = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 2. 推送消息（自动根据环境变量选择推送到微信或飞书）
         # await push_to_wechat(summary)
         await push_to_feishu_direct(summary, daily_end_md)
@@ -437,7 +436,7 @@ async def main(mode="all"):
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")
         # 1. 生成摘要（使用分块处理版本）
-        summary = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY, DOUBAO_MODEL)
+        summary = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 延迟导入，避免循环依赖
         from write_to_feishu import write_to_docx
         await write_to_docx(summary, week_start_md, week_end_md)

@@ -1,128 +1,160 @@
-1. 比特币价格在112,000至115,000美元区间震荡，技术面动能减弱，市场受美联储降息预期及杰克逊霍尔会议影响显著，短期面临关键支撑与阻力考验。
+1. 多国推进比特币相关政策，印度成立比特币政策研究所，美国财长称将保留比特币资产，巴西提议外汇储备配置5%比特币但央行存疑。
 
-2. 比特币和以太坊ETF连续多日资金净流出，累计达19亿美元，反映短期获利了结情绪，但以太坊因机构与巨鲸增持表现强于比特币。
+2. 美联储降息预期升温至91.1%，流动性宽松预期增强，叠加特朗普施压货币政策，避险情绪上升，利好数字资产市场。
 
-3. 以太坊突破4,890美元历史新高，部分分析师预期将进一步上涨至5,200–5,500美元，资金加速向ETH及主流山寨币轮动，BNB等同步创高。
+3. 机构持续增持比特币，挪威银行、微策略、KindlyMD等企业扩大持仓，上市公司合计持有超85万枚BTC，长期持有者积累趋势明显。
 
-4. 巨鲸与机构持仓出现分化，部分比特币巨鲸大规模换仓ETH，同时也有鲸鱼逢低增持BTC，MicroStrategy创始人暗示可能继续增持。
+4. 部分比特币巨鲸大规模抛售BTC并转向以太坊，单体换仓达数千枚BTC，推动ETH多头仓位增长，市场出现“比特币疲惫、以太坊活跃”现象。
 
-5. 宏观方面，市场对美联储9月降息25个基点的预期升至91.1%，流动性宽松预期支撑风险资产上涨，但高杠杆导致超6.9亿美元爆仓，风险上升。
+5. 比特币价格在112,000-113,000美元区间震荡，技术面呈现头肩顶风险，关键支撑位112,000美元，市场面临大规模清算压力。
 
-6. 安全与技术层面，两大矿池合计控制51%哈希算力引发攻击担忧，比特币网络交易费降至2011年以来最低；Starknet和Lombard推进比特币质押创新。
+6. 交易费用降至多年低点，矿工收入承压，算力集中度引发51%攻击担忧；Starknet等新项目拓展比特币质押功能，探索生态扩展。
+
+7. 稳定币仍是主流支付工具，USDT增发10亿美元，美国推进《稳定币监管法案》，比特币因波动性大在支付场景中应用受限。
 ---
-### 一、比特币价格动态与技术面分析  
-**总结**：  
-1. 比特币近期价格震荡回落，围绕112,000-115,000美元区间波动，面临关键支撑位（如112,000美元）和阻力位（如117,000美元）考验。  
-2. 技术指标显示短期动能减弱，隐含波动率显著反弹，本周近50亿美元BTC和ETH期权交割，市场对短期走势存在分歧。  
-3. 美联储政策（如鲍威尔在杰克逊霍尔年会的讲话）及降息预期变化对价格影响显著，市场关注能否守住关键支撑以避免更深回调。  
-4. 部分分析师指出市场可能存在操纵行为，且比特币四年周期是否终结引发讨论，当前估值报告显示市值增速放缓。  
+# 各国政策与监管变化  
 
-**参考**：  
-- [比特币分析师指出「市场操纵」致BTC价格跌至17日新低](https://cn.cointelegraph.com/news/bitcoin-analysts-point-to-manipulation-as-btc-price-falls-to-17-day-low)  
-- [比特币（BTC）今日新闻：随着鲍威尔杰克逊演讲临近，两项指标暗示看跌格局转换](https://www.coindesk.com/zh/markets/2025/08/21/key-bitcoin-indicators-hint-at-bearish-regime-shift-as-jackson-hole-nears)  
-- [周四纽约尾盘，比特币期货跌1.63%](https://finance.sina.cn/stock/jdts/2025-08-22/detail-infmuxsp5440540.d.html?vt=4&cid=76993&node_id=76993)  
-- [Glassnode：比特币（BTC）的四年周期可能并未终结](https://cn.cointelegraph.com/news/bitcoin-price-4-year-old-cycle-not-dead-crypto-analysts)  
-- [本周近50亿美元BTC和ETH期权交割，隐含波动率显著反弹](https://www.binance.com/zh-CN/square/post/08-22-2025-50-btc-eth-28650027348594)  
-- [比特币的杰克逊霍尔考验：鲍威尔演讲将对比特币价格造成多大冲击？](https://www.coindesk.com/zh/markets/2025/08/22/bitcoin-s-jackson-hole-test-how-hard-could-powell-s-address-hit-btc-prices)  
-- [比特币徘徊于11.3万美元，ETF资金持续流出，ETH、XRP、SOL的下一步走势如何](https://www.coindesk.com/zh/markets/2025/08/22/what-next-for-eth-xrp-sol-as-bitcoin-stalls-at-usd113k-and-etf-outflows-mount)  
-- [比特币（BTC）138亿美元期权到期在即，多头面临关键考验](https://cn.cointelegraph.com/news/bitcoin-s-13-8b-options-expiry-puts-bulls-on-edge-ahead-of-key-test)  
-- [25年第三季度比特币估值报告](https://reports.tiger-research.com/p/tvm-25q3-bitcoin-chn)  
-- [【比特日报】小心鲍威尔今日突然放鹰！比特币震荡回落暂守11.2万，这一迹象惹人忧](https://www.fx168news.com/article/%E6%AF%94%E7%89%B9%E5%B8%81-935031)  
-- [比特币价格预测：8 月份大幅回调后，BTC 维持在112,000 美元上方](https://tradersunion.com/zh/news/cryptocurrency-news/show/452608-bitcoin-price-prediction-btc-holds/)  
-- [BTC 突破113000 USDT，24 小时跌幅收窄至0.21%](https://www.binance.com/cn/square/post/28661784584762)  
-- [比特币价格观察：动能在115K美元处动摇—接下来会怎样？](https://news.bitcoin.com/zh/bitebi-jiage-guancha-dongneng-zai-115k-meiyuan-chu-dongyao-jielaihui-zenyang/)  
-- [BTC价格突破120835美元或跌破109979美元将引发清算](https://www.binance.com/zh-CN/square/post/08-23-2025-btc-120-835-109-979-28713788304610)  
-- [BTC跌破115,000 USDT，24小时跌幅0.74%](https://www.binance.com/zh-CN/square/post/08-24-2025-btc-115-000-usdt-24-0-74-28730010895529)  
-- [比特币在8月接近114,000美元，此前因美联储主席鲍威尔暗示9月恢复降息推动风险资产上涨，但随后出现回调至112,900美元，幅度约-9.2%](https://www.cryptopolitan.com/zh-cn/whats-next-for-bitcoin-after-114k-dip/)  
+### 美国、印度等政策动态  
+**总结**  
+1. 印度成立本国比特币政策研究所，推动相关政策制定。  
+2. 美国财长贝森特表示比特币储备价值约150至200亿美元，将停止出售比特币资产，保留黄金作为价值储存手段。  
+3. 美国《稳定币监管法案》和SEC的“加密计划”等政策推进，为华尔街进入数位金融时代提供支持。  
+4. 有观点建议美国政府利用关税盈余为比特币战略储备提供资金，每月将部分关税盈余以冷存储方式增持比特币，资金用途限于储备。  
+
+**参考**  
+- [印度成立本国比特币政策研究所 - Bitget](https://www.bitget.com/zh-CN/news/detail/12560604913598)  
+- [贝森特：比特币储备价值约150至200亿美元 - Odaily](https://www.odaily.news/zh-CN/newsflash/443436)  
+- [观点：美国应利用关税盈余为比特币（BTC）战略储备提供资金](https://cn.cointelegraph.com/news/us-fund-bitcoin-strategic-reserve-tariff-surplus)  
 
 
-### 二、市场资金流动与ETF动态  
-**总结**：  
-1. 比特币和以太坊相关ETF近期呈现资金流出态势，4天内累计净流出19亿美元，美国现货ETF连续5天净流出，反映市场短期获利了结情绪。  
-2. 以太坊因ETF资金流入和企业买盘加速表现强劲，部分以太坊相关ETF（如ProShares Ultra Ether ETF）单日涨幅超10%，跑赢比特币。  
-3. 市场关注资金流向对加密货币价格的影响，ETF资金持续流出可能加剧短期波动，而机构资金轮动至高风险资产（如ETH）。  
+### 巴西加密储备政策提议  
+**总结**  
+1. 巴西立法者提议将5%外汇储备配置于比特币，引发央行对风险的担忧。  
 
-**参考**：  
-- [以太坊因ETF资金流入和企业买盘加速而跑赢比特币：摩根大通](https://www.coindesk.com/zh/markets/2025/08/21/ether-outpaces-bitcoin-as-etf-inflows-corporate-buying-accelerate-jpmorgan)  
-- [4天内比特币和以太坊ETF资金流出19亿美元，资金流出潮影响严重](https://news.bitcoin.com/zh/4tianneibitebiheyi-taifangetijijingjinliuchu19yimeiyuanjijinliuchuchayinyingxiangyanzhong/)  
-- [加密货币日内走强ProShares Ultra Ether ETF涨超10%](https://wap.eastmoney.com/a/202508213489856075.html)  
-- [今日美国比特币ETF净流出3600枚BTC](https://www.odaily.news/zh-CN/newsflash/444433)  
-- [美联储9月降息机率下降！比特币ETF连续5天净流出！](https://cryptonews.com/cn/news/the-federal-rate-cut-in-september-haze-bitcoin-etf-experiences-outflow-for-five-consecutive-days/)  
-- [8 月21 日比特币现货ETF 总净流出1.94 亿美元](https://www.wublock123.com/article/6/47536)  
+**参考**  
+- [巴西立法者提议将5% 外汇储备配置于比特币，央行表示担忧](https://www.bitget.com/zh-CN/news/detail/12560604922610)  
 
 
-### 三、以太坊及主流加密货币动态  
-**总结**：  
-1. 以太坊表现突出，突破历史高点（4,890美元），部分分析师预测若周收盘价超4,600美元，可能进一步上涨至5,200-5,500美元。  
-2. 比特币巨鲸及OG鲸鱼大量抛售BTC换仓ETH，单笔交易涉及超2500枚BTC（价值约2.9亿美元），资深持有者将400枚BTC换仓为ETH，反映资金轮动。  
-3. 以太坊未平仓合约占比升至43.3%，永续合约成交量主导率达67%，市场投机情绪浓厚，进入“山寨季”。  
+### 美联储政策转向与流动性预期  
+**总结**  
+1. 美联储降息预期显著升温，鲍威尔在杰克逊霍尔的鸽派讲话引发市场对9月降息的高概率预期（91.1%），叠加10月降息预期，流动性宽松环境利好比特币等数字资产。  
+2. 美联储政策压力（如特朗普施压）增强贵金属避险需求，间接影响加密市场情绪。  
 
-**参考**：  
-- [资深比特币持有者将400枚比特币换仓为以太坊](https://www.binance.com/cn/square/post/28602586636513)  
-- [巨鲸持有者卖出3100枚BTC并买入50522枚ETH](https://www.binance.com/zh-CN/square/post/08-22-2025-3-100-btc-50-522-eth-28636993280337)  
-- [以太坊在可能的九月降息预期推动下飙升至历史新高](https://www.coindesk.com/zh/markets/2025/08/22/ethereum-surges-to-new-all-time-high-amid-likely-september-rate-cut/)  
-- [加密过山车 : ETH和BNB创新高，BTC收低](https://news.bitcoin.com/zh/jiami-guoshanche-eth-he-bnb-chuangxingaobtcshoudi/)  
-- [数据：某比特币OG鲸鱼过去6小时内已向Hyperliquid存入2520枚BTC换仓ETH](https://m.marsbit.co/flash/20250823170301396947.html)  
-- [某比特币巨鲸正将1020枚BTC换仓至ETH，仍剩余777枚BTC待转换](https://blockweeks.com/newsflash/160361.html)  
-- [ETH周五突破4,800美元历史新高](https://www.coindesk.com/zh/markets/2025/08/22/ethereum-surges-to-new-all-time-high-amid-likely-september-rate-cut/)  
+**参考**  
+- [关注杰罗姆·鲍威尔在杰克逊霍尔的演讲以获取比特币和以太坊指引：加密日报美洲版](https://www.coindesk.com/zh/daybook-us/2025/08/22/all-eyes-on-powell-as-bitcoin-holds-below-usd113k-crypto-daybook-americas)  
+- [金丰来：政压美联储金价上扬 - 和讯网](http://m.hexun.com/forex/2025-08-22/221062106.html)  
 
 
-### 四、机构与巨鲸市场行为  
-**总结**：  
-1. 机构持续增持比特币，如Michael Saylor（MicroStrategy创始人）发布“比特币在打折出售”言论，暗示可能增持；矿商Bitdeer本周挖矿产出91.1枚BTC，总持仓量突破1800枚。  
-2. 比特币巨鲸及早期持有者（OG）频繁调整持仓，大量抛售BTC换仓ETH（如某OG鲸鱼将6,000枚BTC换仓为ETH，累计持有278,490枚ETH），同时部分鲸鱼逢低增持BTC（过去7日累计增持超1.6万枚）。  
+# 企业与机构的活动  
 
-**参考**：  
-- [某比特币远古巨鲸减仓6.8万枚ETH（约2.95亿美元）多单并转为买入现货](https://www.coindesk.com/zh/markets/2025/08/21/bitcoin-whale-flips-ethereum-for-btc-after-100k-dip)  
-- [巨鲸地址两周内增持537.66枚比特币，总价值6085万美元](https://www.binance.com/cn/square/post/28643444306833)  
-- [CryptoQuant分析师：比特币鲸鱼在逢低买入，过去7日累计增持超1.6万枚BTC](https://www.theblockbeats.info/flash/308542)  
-- [机构与巨鲸动向：矿商持仓增加，大额BTC换仓ETH](https://www.coindesk.com/zh/business/2025/08/23/kpmg-sees-strong-second-half-for-canadian-fintechs-after-crypto-ai-raked-in-billions)  
-- [Michael Saylor（MicroStrategy创始人）发布“比特币在打折出售”的言论，暗示可能增持](https://www.coindesk.com/zh/markets/2025/08/22/michael-saylor-says-bitcoin-is-on-sale-as-microstrategy-reports-100m-loss)  
-- [Bitdeer本周挖矿产出91.1枚BTC，比特币总持仓量突破1800枚](https://blockweeks.com/newsflash/160385.html)  
+### 企业与机构比特币增持及储备  
+**总结**  
+1. 比特币长期持有者（持有6个月至2年）供应量从4月的355.1万枚增至519.1万枚，积累趋势主导市场。  
+2. 挪威银行将比特币敞口从6200枚增至11400枚，Bullish跻身比特币储备上市公司前五名。  
+3. 台湾上市公司Top Win International完成1000万美元融资用于购买比特币，成为台湾首个比特币财库。  
+4. Adam Back领导的Bitcoin Standard Treasury（BSTR）计划通过SPAC上市并将持仓增至5万枚以上。  
+5. 微策略（MicroStrategy）增持430枚BTC，Bitdeer挖矿产出80.4枚BTC并出售34.3枚，总持仓突破1800枚。  
+6. 美国上市公司KindlyMD以均价约118,204.88美元购入5,743.91枚比特币，总投入约6.79亿美元。  
+7. 华尔街十大公开上市企业合计持有855,156 BTC（市值超970亿美元）和2,955,200 ETH（市值约142亿美元）。  
 
-
-### 五、宏观经济与政策影响  
-**总结**：  
-1. 美联储降息预期显著升温，CME“美联储观察”显示9月降息25个基点概率达91.1%，市场对流动性扩张预期增强，推动风险资产（如比特币、以太坊）短期上涨。  
-2. 杰克逊霍尔全球央行年会引发对货币政策方向的关注，鲍威尔讲话暗示降息可能性，宏观经济数据（如美国经济增速放缓）增强贵金属避险需求，间接影响加密货币市场情绪。  
-
-**参考**：  
-- [美联储降息预期升温，流动性宽松推动市场乐观情绪](https://cj.sina.cn/articles/view/5953190046/162d6789e06701yh68?froms=ggmp)  
-- [美联储降息预期升温及杰克逊霍尔全球央行年会引发市场对货币政策方向的高度关注](https://www.coindesk.com/zh/markets/2025/08/22/all-eyes-on-powell-as-bitcoin-holds-below-usd113k-crypto-daybook-americas)  
-- [比特币和以太坊在美联储降息信号中飙升至日内高点](https://news.bitcoin.com/zh/bitcoin-he-yi-ta-fang-zai-mei-lian-chu-jiang-xi-xinhao-zhong-biao-sheng-zhi-ri-nei-gao-dian/)  
-- [以太坊在可能的九月降息预期推动下飙升至历史新高](https://www.coindesk.com/zh/markets/2025/08/22/ethereum-surges-to-new-all-time-high-amid-likely-september-rate-cut/)  
+**参考**  
+- [CryptoQuant：比特币长期持有者获利了结低于以往，积累趋势占据市场主导](https://www.bitpush.news/articles/7562900)  
+- [挪威银行第二季度将其比特币等值敞口从6,200枚BTC增至11,400枚](https://www.bitget.com/zh-CN/news/detail/12560604915109)  
+- [Top Win International完成1000万美元融资以购买比特币](https://www.bitget.com/zh-CN/news/detail/12560604913988)  
+- [Bitcoin Standard Treasury：将把比特币持仓量增至5万枚以上 - PANews](https://www.panewslab.com/zh/articles/942e064d-a566-4ae3-8a7d-1c8777fd0cc3)  
+- [Bitdeer 比特币持有量增至1764.2枚，出售34.3枚BTC - Binance](https://www.binance.com/zh-CN/square/post/08-16-2025-bitdeer-1-764-2-34-3-btc-28393076605097)  
+- [KindlyMD买入5744枚比特币，均价118204.88美元](https://m.techflowpost.com/newsletter/detail_95594.html)  
+- [华尔街的加密巨头：比特币和以太坊囤积数十亿 - 滨海新闻](https://www.bihainews.com/bhn-info/Crypto/2025089654.html)  
 
 
-### 六、市场风险与安全事件  
-**总结**：  
-1. 比特币价格波动剧烈，突破120,835美元或跌破109,979美元将分别引发26.23亿美元和21.52亿美元的清算，过去24小时加密市场超16万人爆仓，总金额达6.94亿美元，高杠杆交易风险显著。  
-2. 安全事件频发，包括社交工程诈骗导致受害者损失9100万美元比特币，以及两大比特币矿池控制51%哈希算力，引发51%攻击担忧；比特币网络日交易费用降至3.5 BTC，为2011年末以来最低。  
+### 机构与巨鲸转向以太坊  
+**总结**  
+1. 某远古巨鲸于Hyperliquid平台抛售550枚BTC（价值6200万美元），并用所得资金开2.3万枚ETH（约9900万美元）的多单。  
+2. 两比特币远古巨鲸累计抛售超1.8万枚BTC（价值约20.4亿美元），转向持有超55万枚ETH敞口（价值约26.2亿美元），包括质押和永续合约多仓。  
+3. 某比特币OG鲸鱼向Hyperliquid存入2520枚BTC换仓ETH，某巨鲸转换1020枚BTC，剩余777枚待转换。  
 
-**参考**：  
-- [比特币价格波动剧烈，清算风险与爆仓数据显现](https://www.binance.com/zh-CN/square/post/08-23-2025-btc-120-835-109-979-28713788304610)  
-- [加密市场剧震：24小时超16万人爆仓总金额达6.94亿美元](https://www.fx168news.com/article/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81-935741)  
-- [受害者因社交工程诈骗损失9100万美元比特币：ZachXBT](https://www.coindesk.com/zh/business/2025/08/21/victim-loses-usd91m-in-bitcoin-after-social-engineering-scam-zachxbt)  
-- [两大Bitcoin 矿池目前控制着51% 的哈希算力：BTC 面临风险吗？](https://www.cryptopolitan.com/zh-cn/2-bitcoin-pools-now-control-51-of-the-hash-power/)  
-- [BTC网络日交易费用降至2011年以来低点3.5 BTC](https://www.binance.com/zh-CN/square/post/08-24-2025-btc-2011-3-5-btc-28737886196962)  
-
-
-### 七、山寨币与其他加密货币动态  
-**总结**：  
-1. 以太坊引领“山寨季”，部分主流山寨币（如BNB）同步创历史新高（899.77美元），市场资金从BTC向ETH及高风险资产轮动。  
-2. 特定山寨币受关注，如Merlin Chain（MERL）发布最新动态，分析师推荐下跌期间值得关注的山寨币机会，市场轮动特征明显。  
-
-**参考**：  
-- [Merlin Chain 最新动态- (MERL) 未来展望、趋势和市场洞察分析](https://coinmarketcap.com/zh/cmc-ai/merlin-chain/latest-updates/)  
-- [Bitcoin（BTC）下跌期间最值得购买的山寨币- Cryptopolitan](https://www.cryptopolitan.com/zh-cn/best-altcoin-to-buy-now-during-bitcoin-btc-dip/)  
-- [加密过山车 : ETH和BNB创新高，BTC收低](https://news.bitcoin.com/zh/jiami-guoshanche-eth-he-bnb-chuangxingaobtcshoudi/)  
-- [以太坊（ETH）表现突出，引领“山寨季”](https://www.coindesk.com/zh/markets/2025/08/22/ethereum-outperforms-bitcoin-as-altseason-begins)  
+**参考**  
+- [“某远古巨鲸于Hyperliquid 抛售比特币，并开设2.3 万枚以太坊多单”](https://www.bitpush.news/articles/7564086)  
+- [两比特币远古巨鲸累计抛售超1.8万枚BTC，现持有超55万枚ETH敞口](https://blockweeks.com/newsflash/160656.html)  
+- [某比特币OG鲸鱼过去6小时内已向Hyperliquid存入2520枚BTC换仓ETH - MarsBit](https://m.marsbit.co/flash/20250825080501146594.html)  
 
 
-### 八、技术协议更新与创新  
-**总结**：  
-1. 以太坊Layer2协议Starknet宣布即将上线比特币质押功能，允许特定封装代币参与质押，增强网络功能，拓展比特币在链上资本市场的应用。  
-2. 比特币流动性质押领域获新进展，Lombard Finance推出BARD代币及Liquid Bitcoin基金会，通过将比特币质押生成流动性代币LBTC，激活“休眠流动性”。  
+### 加密相关企业融资与业务扩展  
+**总结**  
+1. 澳大利亚加密借贷平台Block Earner完成800万美元融资，用于推出比特币支持的住房贷款存款产品。  
+2. 比特币财库公司KindlyMD完成2亿美元可转换票据发行，用于增持BTC，由Anchorage Digital提供托管。  
+3. 招银国际上线虚拟资产交易服务，支持BTC、ETH、USDT交易。  
+4. Lombard Finance推出BARD代币及Liquid Bitcoin基金会，推动比特币流动性质押，LBTC占比特币LST市场40%。  
 
-**参考**：  
-- [Starknet 宣布即将上线比特币质押功能](https://www.bitpush.news/articles/7564296)  
-- [随着隆巴德推出BARD代币及其基金会，比特币液态质押获得动力](https://
+**参考**  
+- [Block Earner 完成800 万美元融资以推出比特币支持的贷款产品](https://www.binance.com/cn/square/post/28572475182306)  
+- [比特币财库公司KindlyMD完成2亿美元可转换票据发行，将用于增持BTC](https://blockweeks.com/newsflash/157925.html)  
+- [招银国际宣布上线虚拟资产交易服务，支持BTC、ETH、USDT](https://www.wublock123.com/article/6/47310)  
+- [随着隆巴德推出BARD代币及其基金会，比特币液态质押获得动力 - CoinDesk](https://www.coindesk.com/zh/tech/2025/08/23/bitcoin-liquid-staking-gains-momentum-as-lombard-launches-bard-token-and-foundation)  
+
+
+# 价格波动与市场风险  
+
+### 比特币价格波动与技术分析  
+**总结**  
+1. 比特币从历史高点（124,517美元）回调，在112,000-113,000美元区间震荡，关键支撑位112,000美元，阻力位114,800美元。  
+2. 价格波动受通胀预期、美联储政策、ETF资金流出、鲸鱼抛售等因素影响，如从124K被拒引发短期看跌，鲸鱼抛售24,000枚BTC引发闪崩至112,546美元。  
+3. 技术面显示比特币上升三角形破位，50日均线转为阻力位，日线图现头肩顶风险，颈线支撑112,000美元，跌破或下探108,000美元。  
+4. MVRV指标升至21%显示获利了结风险，ETF资金流出和未平仓合约下降反映短期去杠杆。  
+
+**参考**  
+- [比特币价格观察：从&#36;124K被拒引发短期看跌前景 - Bitcoin.com News](https://news.bitcoin.com/zh/bi-te-bi-ji-ge-guan-cha-cong-124k-bei-ju-yin-fa-duan-qi-kan-die-qian-jing/)  
+- [加密货币市场回顾：通胀担忧导致比特币跌至11.7 万美元 - Traders Union](https://tradersunion.com/zh/news/cryptocurrency-news/show/439555-crypto-market-recap-bitcoin-dips/)  
+- [比特币价格预测：8月份大幅回调后，BTC 维持在112,000 美元上方](https://tradersunion.com/zh/news/cryptocurrency-news/show/452608-bitcoin-price-prediction-btc-holds/)  
+- [比特币在期权市场暗示紧张情绪之际，迅速回落以逆转鲍威尔引发的上涨 - CoinDesk](https://www.coindesk.com/zh/markets/2025/08/25/bitcoin-reverses-powell-spike-with-a-flash-crash-as-options-market-signals-jitters-ahead)  
+
+
+### 价格风险与清算事件  
+**总结**  
+1. 比特币突破119,076美元或跌破107,796美元，将分别引发28.84亿美元空单和11.49亿美元多单清算；突破120,835美元或跌破109,979美元将引发26.23亿美元空单和21.52亿美元多单清算。  
+2. 市场剧烈波动导致24小时超16万人爆仓，总金额6.94亿美元，某比特币多头被强平亏损1249万美元。  
+3. 以太坊突破历史新高（4900美元），市场资金转向ETH，比特币相对“疲惫”。  
+
+**参考**  
+- [BTC 突破119076 美元或跌破107796 美元将引发大规模清算 - Binance](https://www.binance.com/zh-CN/square/post/08-25-2025-btc-119-076-107-796-28769090197906)  
+- [加密市场剧震：24小时超16万人爆仓总金额达6.94亿美元 - FX168](https://www.fx168news.com/article/%E6%AF%94%E7%89%B9%E5%B8%81-934343)  
+- [数据：某比特币多头被强平亏损1249 万美元，或为“换仓ETH 的BTC 远古巨鲸”抛售所致](https://m.marsbit.co/flash/20250825080501146594.html)  
+- [随着以太坊突破4900美元，分析师总结加密市场：“比特币已疲惫 - CoinDesk](https://www.coindesk.com/zh/markets/2025/08/24/as-eth-breaks-above-usd4-900-analyst-sums-up-crypto-market-btc-is-exhausted-eth-isn-t)  
+
+
+# 其他相关事件  
+
+### 比特币网络与技术动态  
+**总结**  
+1. 比特币网络日交易费用降至3.5 BTC（2011年末以来低点），矿工因区块奖励减半及手续费不足承压，开始多元化发展。  
+2. 比特币网络算力8月前两周上涨4%，提升网络安全性。  
+3. 两大矿池Foundry和AntPool控制超51%算力，引发51%攻击担忧，但风险较低。  
+4. Starknet即将上线比特币质押功能，允许多种比特币封装代币质押。  
+
+**参考**  
+- [BTC网络日交易费用降至2011年以来低点3.5 BTC - Binance](https://www.binance.com/zh-CN/square/post/28770741905122)  
+- [摩根大通：比特币（BTC）网络算力在八月前两周上涨了4%](https://www.coindesk.com/zh/markets/2025/08/18/bitcoin-network-hashrate-rose-4-in-first-two-weeks-of-august-jpmorgan)  
+- [两大Bitcoin 矿池目前控制着51% 的哈希算力：BTC 面临风险吗？ - Cryptopolitan](https://www.cryptopolitan.com/zh-cn/2-bitcoin-pools-now-control-51-of-the-hash-power/)  
+- [Starknet 宣布即将上线比特币质押功能 - 比推](https://www.bitpush.news/articles/7564296)  
+
+
+### 加密项目与山寨币动态  
+**总结**  
+1. Layer2协议Bitlayer的YBTC项目进军Solana生态，与Kamino Finance及Orca合作，结合比特币安全性与Solana性能。  
+2. 新Layer Brett（LBRETT）项目基于以太坊Layer2，主打低Gas费和高交易速度，预售阶段吸引大量资金，专家预测可能实现500倍收益。  
+3. 分析师预测Solana（SOL）突破上升三角形或翻倍，XRP发出看涨信号，SEI突破0.37美元或涨198%。  
+
+**参考**  
+- [Bitlayer 的YBTC 进军Solana，作为DeFi 项目与Kamino Finance 及Orca 建立合作伙伴关系](https://www.coindesk.com/zh/markets/2025/08/19/bitlayer-s-ybtc-enters-solana-as-the-defi-project-partners-with-kamino-finance-orca)  
+- [这款比特币钱包在7年后售出，收益高达16倍。专家预测Layer Brett将实现500倍收益](https://financefeeds.com/zh-CN/%E8%BF%99%E6%AC%BE%E6%AF%94%E7%89%B9%E5%B8%81%E9%92%B1%E5%8C%85%E5%9C%A8-7-%E5%B9%B4%E5%90%8E%E4%BB%A5-16-%E5%80%8D%E6%94%B6%E7%9B%8A%E5%87%BA%E5%94%AE%EF%BC%8C%E4%B8%93%E5%AE%B6%E7%A7%B0-Layer-Brett-%E5%B0%86%E5%AE%9E%E7%8E%B0-500-%E5%80%8D%E6%94%B6%E7%9B%8A/)  
+- [随着交易员将目标锁定在BTC、XRP 和SEI，Solana 加密货币可能暴涨 - PortalCripto](https://portalcripto.com.br/zh-CN/Solana-%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E5%8F%AF%E8%83%BD%E7%88%86%E5%8F%91%EF%BC%8C%E5%9B%A0%E4%B8%BA%E4%BA%A4%E6%98%93%E5%91%98%E9%A2%84%E6%B5%8B-BTC%E3%80%81XRP-%E5%92%8C-Sei-%E5%B0%86%E6%88%90%E4%B8%BA%E7%9B%AE%E6%A0%87/)  
+
+
+### 稳定币与支付场景  
+**总结**  
+1. 比特币在日常支付中应用有限，消费者和商家更倾向于稳定币（如USDC、USDT），USDT近期增发10亿美元，或推动BTC和ETH交易成交量增加。  
+2. 美国《稳定币监管法案》推进，巩固稳定币支付地位，比特币支付面临波动性、税制和用户体验挑战。  
+
+**参考**  
+- [BTC 飙创新高，但没人用它付款 - NAI500](https://nai500.com/zh-hans/blog/2025/08/btc/)  
+- [USDT增发10亿美元报道：验证方法与对BTC、ETH流动性的交易影响](https://block

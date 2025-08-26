@@ -282,8 +282,8 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     """
     写入文档到飞书文档库
     """
-    from main import generate_title_and_summary_and_content
-    title, summary= generate_title_and_summary_and_content(markdown_content)
+    from llm_doubao import generate_title_and_summary_and_content
+    title, summary= generate_title_and_summary_and_content(markdown_content, LOCAL_DEV=LOCAL_DEV)
     title = f"加密货币周报（{week_start_md}-{week_end_md}）：{title}"
 
     # 使用环境变量替代硬编码

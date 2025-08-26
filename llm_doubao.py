@@ -4,10 +4,13 @@ import my_utils
 import lark
 from llm_ali import generate_title_and_summary
 
-# 需要从main.py导入的配置变量
-# VOLCENGINE_API_KEY, DOUBAO_MODEL, LOCAL_DEV等需要在调用时传入或从配置文件读取
 
-async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY, DOUBAO_MODEL):
+DOUBAO_MODEL_FLASH = "doubao-seed-1-6-flash-250715"
+DOUBAO_MODEL_THINKING = "doubao-seed-1-6-thinking-250715"
+# 需要从main.py导入的配置变量
+# VOLCENGINE_API_KEY, LOCAL_DEV等需要在调用时传入或从配置文件读取
+
+async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY):
     """
     生成新闻摘要并调用大模型处理
     """
@@ -66,7 +69,7 @@ async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_
         )
 
         response = client.chat.completions.create(
-            model=DOUBAO_MODEL,
+            model=DOUBAO_MODEL_FLASH,
             messages=[{"role": "user", "content": prompt_text}],
             temperature=0.3,
         )
@@ -96,7 +99,7 @@ async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
 
-async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY, DOUBAO_MODEL):
+async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY):
     """
     生成新闻摘要（分块处理版本，用于处理大量内容）
     """
@@ -146,7 +149,7 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_ne
         
         try:
             response = client.chat.completions.create(
-                model=DOUBAO_MODEL,
+                model=DOUBAO_MODEL_FLASH,
                 messages=[{"role": "user", "content": prompt_text}],
                 temperature=0.3,
             )
@@ -168,17 +171,36 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_ne
 
         要求：
         1. 全文以markdown格式输出
-        2. 将所有内容重新整理和聚类，每个聚类用###开头，序号用一、二、三……来标注，聚类之间用 --- 分隔开
-        3. 每个聚类包含：
-        - **总结**：用有序列表呈现主旨
-        - **参考**：用无序列表列出相关新闻标题和链接，格式为[标题](url)
-        4. 去除重复内容，确保逻辑清晰、结构完整
-        5. 不要输出全文的标题，只输出所有的聚类即可
+		2. 结构为：
+        2. 将所有内容重新整理和聚类，每个聚类的标题用 ###开头：内容包括
+            - **总结**：用有序列表呈现聚类后的主旨
+            - **参考**：用无序列表列出相关新闻标题和链接，格式为[标题](url)
+        3. 将上述聚类的内容（标题、总结、参考），基于标题，归类到下述的一级主题中：
+            # 各国政策与监管变化
+            # 企业与机构的活动
+            # 价格波动与市场风险
+            # 其他相关事件
+		4. 最终全文的输出结构为：
+			# 各国政策与监管变化
+			### 聚类三
+			**总结**
+			**参考**
+			### 聚类四
+			**总结**
+			**参考**
+            # 企业与机构的活动
+			（同上结构）
+            # 价格波动与市场风险
+			（同上结构）
+            # 其他相关事件
+			（同上结构）
         """
+        if LOCAL_DEV:
+            my_utils.copy_to_clipboard(final_prompt)
         
         try:
             response = client.chat.completions.create(
-                model=DOUBAO_MODEL,
+                model=DOUBAO_MODEL_THINKING,
                 messages=[{"role": "user", "content": final_prompt}],
                 temperature=0.3,
             )
@@ -218,7 +240,6 @@ def generate_title_and_summary_and_content(content=None, LOCAL_DEV=False):
     """
     从内容中提取标题和主体内容
     :param content: 新闻内容
-    :param escape_json: 是否进行JSON转义处理，默认True（用于飞书机器人推送）
     """
     if not content and LOCAL_DEV:
         # 尝试从本地文件读取内容
