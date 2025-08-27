@@ -283,7 +283,7 @@ async def push_to_feishu_direct(content=None, daily_end_md=None):
     print("开始直接推送消息到飞书机器人...")
     # 飞书机器人富文本消息格式
     # 读取飞书消息模板
-    template_path = os.path.join(os.path.dirname(__file__), 'feishu_message_template.json')
+    template_path = os.path.join(os.path.dirname(__file__), 'config','feishu_message_template.json')
     with open(template_path, 'r', encoding='utf-8') as f:
         template_content = f.read()
     

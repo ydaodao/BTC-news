@@ -9,6 +9,7 @@ DOUBAO_MODEL_FLASH = "doubao-seed-1-6-flash-250715"
 DOUBAO_MODEL_THINKING = "doubao-seed-1-6-thinking-250715"
 # 需要从main.py导入的配置变量
 # VOLCENGINE_API_KEY, LOCAL_DEV等需要在调用时传入或从配置文件读取
+LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 
 async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY):
     """
