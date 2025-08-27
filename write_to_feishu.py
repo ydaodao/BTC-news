@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
+from lark_oapi.api.drive.v1 import *
 
 # 加载环境变量
 load_dotenv()
@@ -92,7 +93,7 @@ def convert_markdown_to_blocks(app_id, app_secret, markdown_content):
     return ordered_blocks
 
 
-def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret, start_index=0):
+def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
     tenant_access_token = get_tenant_access_token(app_id, app_secret)
     
     # 为每个块生成临时ID并构建 descendants 数组
@@ -216,33 +217,27 @@ def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret, s
         
         descendants.append(descendant)
     
-    # 调用创建嵌套块接口 - 尝试逐个插入而不是批量插入
+    # 调用创建嵌套块接口 - 批量插入所有块
     url = f"https://open.feishu.cn/open-apis/docx/v1/documents/{document_id}/blocks/{document_id}/descendant?document_revision_id=-1"
     headers = {
         "Authorization": f"Bearer {tenant_access_token}",
         "Content-Type": "application/json; charset=utf-8"
     }
     
-    import time
+    # 批量插入所有块，保持 children_id 和 descendants 的顺序一致
+    data = {
+        "index": -1,
+        "children_id": children_ids,  # 所有子块ID的列表
+        "descendants": descendants    # 所有后代块的列表
+    }
     
-    # 逐个插入块以保持顺序
-    for i, (child_id, descendant) in enumerate(zip(children_ids, descendants)):
-        data = {
-            "index": start_index + i,  # 使用全局递增的索引
-            "children_id": [child_id],
-            "descendants": [descendant]
-        }
-        
-        response = requests.post(url, headers=headers, json=data)
-        result = response.json()
-        
-        if result.get('code') != 0:
-            raise Exception(f"Insert block {start_index + i} failed: {result.get('msg')} - {result}")
-        
-        print(f"Successfully inserted block {start_index + i + 1}")
-        
-        # 控制API调用频率：每秒最多2次，即每次调用间隔0.5秒
-        time.sleep(0.5)
+    response = requests.post(url, headers=headers, json=data)
+    result = response.json()
+    
+    if result.get('code') != 0:
+        raise Exception(f"Batch insert blocks failed: {result.get('msg')} - {result}")
+    
+    print(f"Successfully inserted {len(children_ids)} blocks in batch")
     
     return True
 
@@ -278,18 +273,19 @@ def preprocess_markdown_content(content):
 
     return processed_content
 
-async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_md='01.07'):
+def create_feishu_document(title, app_id, app_secret, folder_token):
     """
-    写入文档到飞书文档库
-    """
-    from llm_doubao import generate_title_and_summary_and_content
-    title, summary= generate_title_and_summary_and_content(markdown_content, LOCAL_DEV=LOCAL_DEV)
-    title = f"加密货币周报（{week_start_md}-{week_end_md}）：{title}"
-
-    # 使用环境变量替代硬编码
-    app_id = FEISHU_APP_ID
-    app_secret = FEISHU_APP_SECRET
+    创建飞书文档
     
+    Args:
+        title (str): 文档标题
+        app_id (str): 飞书应用ID
+        app_secret (str): 飞书应用密钥
+        folder_token (str): 飞书文件夹token
+    
+    Returns:
+        str: 文档ID，如果创建失败返回None
+    """
     # 创建client
     client = lark.Client.builder() \
         .app_id(app_id) \
@@ -300,7 +296,7 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     # 构造请求对象
     request: CreateDocumentRequest = CreateDocumentRequest.builder() \
         .request_body(CreateDocumentRequestBody.builder()
-            .folder_token(FEISHU_FOLDER)
+            .folder_token(folder_token)
             .title(title)
             .build()) \
         .build()
@@ -312,13 +308,84 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     if not response.success():
         lark.logger.error(
             f"client.docx.v1.document.create failed, code: {response.code}, msg: {response.msg}, log_id: {response.get_log_id()}, resp: \n{json.dumps(json.loads(response.raw.content), indent=4, ensure_ascii=False)}")
-        return
+        return None
 
     # 获取文档ID
     document_id = response.data.document.document_id
     lark.logger.info(f"Document created successfully, document_id: {document_id}")
-        
+    return document_id
 
+def copy_feishu_document(title, app_id, app_secret, folder_token, original_document_id):
+    """
+    复制飞书文档
+    
+    Args:
+        title (str): 新文档标题
+        app_id (str): 飞书应用ID
+        app_secret (str): 飞书应用密钥
+        folder_token (str): 飞书文件夹token
+        original_document_id (str): 原始文档ID
+    
+    Returns:
+        str: 新文档ID，如果复制失败返回None
+    """
+    # 创建client
+    client = lark.Client.builder() \
+        .app_id(app_id) \
+        .app_secret(app_secret) \
+        .log_level(lark.LogLevel.DEBUG) \
+        .build()
+
+    # 构造请求对象
+    request: CopyFileRequest = CopyFileRequest.builder() \
+        .file_token(original_document_id) \
+        .user_id_type("open_id") \
+        .request_body(CopyFileRequestBody.builder()
+            .name(title)
+            .type("docx")
+            .folder_token(folder_token)
+            .build()) \
+        .build()
+
+    # 发起请求
+    response: CopyFileResponse = client.drive.v1.file.copy(request)
+
+    # 处理失败返回
+    if not response.success():
+        lark.logger.error(
+            f"client.drive.v1.file.copy failed, code: {response.code}, msg: {response.msg}, log_id: {response.get_log_id()}, resp: \n{json.dumps(json.loads(response.raw.content), indent=4, ensure_ascii=False)}")
+        return
+
+    # 获取文档ID
+    document_id = response.data.file.token
+    lark.logger.info(f"Document copied successfully, document_id: {document_id}")
+    return document_id
+
+async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_md='01.07'):
+    """
+    写入文档到飞书文档库
+    """
+    from llm_doubao import generate_title_and_summary_and_content
+    title, summary= generate_title_and_summary_and_content(markdown_content, LOCAL_DEV=LOCAL_DEV)
+    title = f"加密货币周报（{week_start_md}-{week_end_md}）：{title}"
+
+    # 使用环境变量替代硬编码
+    app_id = FEISHU_APP_ID
+    app_secret = FEISHU_APP_SECRET
+    folder_token = "RS3DfGQETlGxpXdK3ZdcJHaVnRg"
+    original_document_id = "FIqsdVXJfozn3ixLAfycCG8xnUc"
+    
+    # # 创建飞书文档
+    # document_id = create_feishu_document(title, app_id, app_secret, folder_token)
+    # if not document_id:
+    #     lark.logger.error("Failed to create Feishu document")
+    #     return
+    # 复制飞书文档
+    document_id = copy_feishu_document(title, app_id, app_secret, folder_token, original_document_id)
+    if not document_id:
+        lark.logger.error("Failed to copy Feishu document")
+        return
+        
     # 预处理markdown内容
     processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{markdown_content}")
     
@@ -331,15 +398,13 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
         return
     
     # 插入文档块到文档中（分批处理，每次最多5个块）
-    batch_size = 5
-    total_inserted = 0  # 跟踪已插入的块数量
+    batch_size = 10
     
     for i in range(0, len(ordered_blocks), batch_size):
         batch_blocks = ordered_blocks[i:i + batch_size]
         
         try:
-            result = insert_blocks_to_document(document_id, batch_blocks, app_id, app_secret, total_inserted)
-            total_inserted += len(batch_blocks)  # 更新已插入的块数量
+            result = insert_blocks_to_document(document_id, batch_blocks, app_id, app_secret)
             lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(batch_blocks)} blocks)")
         except Exception as e:
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
@@ -363,6 +428,8 @@ if __name__ == "__main__":
         with open(markdown_file_path, 'r', encoding='utf-8') as f:
             markdown_content = f.read()
     except Exception as e:
-        lark.logger.error(f"Failed to read markdown file: {e}")    
+        lark.logger.error(f"Failed to read markdown file: {e}")
 
-    write_to_docx(markdown_content)
+    # 修复异步函数调用
+    import asyncio
+    asyncio.run(write_to_docx(markdown_content))
