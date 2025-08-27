@@ -373,7 +373,7 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
     app_secret = FEISHU_APP_SECRET
-    folder_token = "RS3DfGQETlGxpXdK3ZdcJHaVnRg"
+    folder_token = FEISHU_FOLDER
     original_document_id = "FIqsdVXJfozn3ixLAfycCG8xnUc"
     
     # # 创建飞书文档

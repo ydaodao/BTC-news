@@ -9,7 +9,7 @@ on:
     - cron: '0 0 * * 1,3,5'  # 对应北京时间 8:00，每周一、三、五、六执行
     
     # 新增：周六summary_write任务
-    - cron: '0 0 * * 6'  # 对应北京时间 10:00，每周六执行summary_write
+    - cron: '0 0 * * 6'  # 对应北京时间 8:00，每周六执行summary_write
   
   workflow_dispatch:  # 允许手动触发
 
