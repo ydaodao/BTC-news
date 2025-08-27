@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "7f6110d3-3c51-41ca-937d-a1e4abc3ce5c",
+    "block_id": "c8fd17f4-e064-4031-bd80-19abfcf3244a",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币价格回落至七周低点附近，技术面关注关键支撑区有效性，市场情绪受Schiff看跌言论影响趋于谨慎。",
+            "content": "比特币价格回落至七周低点附近，技术面处于关键支撑区，市场情绪受Schiff看跌言论影响，短期走势存不确定性。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -26,13 +26,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "809ab4e3-8a06-4001-ac6a-d4ec582438fe",
+    "block_id": "e80bd731-b9f8-486d-be12-c70dc73ad8ab",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "阿联酋政府通过矿企持有约6,300枚比特币，成为全球第四大持币政府；同时美国ETF数据显示比特币净流入1673枚，而以太坊ETF净流入显著更高，达104,498枚ETH。",
+            "content": "阿联酋政府通过矿企持有约6,300枚比特币，成为全球第四大持币政府；同时美国ETF数据显示比特币净流入1673枚，而以太坊ETF净流入达104498枚，显示机构资金更倾向以太坊。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -52,13 +52,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "9a80b84b-0282-40f0-9010-4b5cd4d3a0c2",
+    "block_id": "18b66e0c-9837-4bd8-81b0-3c6792cfd3ae",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "一远古比特币巨鲸持续向Hyperliquid存入BTC并卖出BTC增持ETH，采用高杠杆做多约9.6万枚ETH，显示大额资金正从比特币向以太坊转移。",
+            "content": "某比特币远古巨鲸频繁操作，多次向Hyperliquid存入BTC并卖出1000枚BTC后以5倍杠杆增持逾9.6万枚ETH，反映巨鲸级资金调仓至以太坊的趋势。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -78,13 +78,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "c8ac6125-e1b5-47bd-bb80-db223b551247",
+    "block_id": "e43fd90e-61b8-448b-a6e8-6617f44c948d",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币矿企Hut 8宣布扩展1.5吉瓦产能，股价应声上涨10%，反映矿工对长期发展的信心；同期衍生品市场规模升至1357.6亿美元。",
+            "content": "比特币矿企Hut 8计划扩展1.5吉瓦产能，股价应声上涨10%，表明矿工对长期发展保持信心；同期衍生品市场规模升至1357.6亿美元，参与度持续提升。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -104,13 +104,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "f2561fb4-22d4-497b-b765-7fbd19641799",
+    "block_id": "9edf7e31-0639-4a6c-afbd-0a063e341d36",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "特定币种中，比特币现金（BCH）在CoinDesk 20指数中下跌2.8%，表现疲软，拖累整体指数下行。",
+            "content": "在主流币种中，比特币现金（BCH）下跌2.8%，拖累CoinDesk 20指数表现，凸显部分特定币种市场疲软。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -130,13 +130,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "81f7cd01-fa33-44ad-a8e1-a3d1b9773b7d",
+    "block_id": "10097f79-7375-4cef-b50c-3f02865512b3",
     "block_type": 22,
     "divider": {},
     "parent_id": ""
   },
   {
-    "block_id": "806fd677-3f0e-40d9-b485-1daeeed447e6",
+    "block_id": "2415e0ce-ad36-4537-ac0b-1fe5d40eca32",
     "block_type": 5,
     "heading3": {
       "elements": [
@@ -161,7 +161,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "2f5f2359-b8c6-4cc0-a3c9-bfca9b2b7d44",
+    "block_id": "e0968bc6-5d54-4e9b-aaaa-2b6e22b0e423",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -198,7 +198,7 @@
     }
   },
   {
-    "block_id": "c7ecd63e-44a0-4cc2-bee6-6b136a99c509",
+    "block_id": "f81cecfe-6327-4ebe-a81c-7701137af340",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -223,7 +223,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "8bddf864-bc1f-4432-b6e4-7abe089d4d22",
+    "block_id": "a310ea4b-6180-4486-8056-af037d81ae79",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -248,7 +248,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "a9370eac-137d-403c-afd4-ab45c60dbb50",
+    "block_id": "d378049d-7352-4ac6-b2c9-e08619d73873",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -273,7 +273,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "f17f28f6-12aa-45b5-b770-cdab528274d4",
+    "block_id": "e70d996b-8f57-4c98-a0f5-c957c1a43f26",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -310,7 +310,7 @@
     }
   },
   {
-    "block_id": "00b913ea-e066-4292-a3bb-0ceb1f04346b",
+    "block_id": "11129ac6-bdff-4583-9ede-cfc4fd016256",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -338,7 +338,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "8ad22723-0162-4572-9a12-670d96a5bef4",
+    "block_id": "49d4fdf6-cfd6-4b97-a9e1-69ed71dc07d2",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -366,7 +366,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "c7b7b13b-f15f-40c5-a6b3-ae99c78f8018",
+    "block_id": "eb20e848-2ec0-4160-a036-686ed354a7f7",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -394,7 +394,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "01babb50-38bf-4fc5-a3be-1c15a6d075e9",
+    "block_id": "05b9f547-7f7c-47de-93df-9a66af743f26",
     "block_type": 5,
     "heading3": {
       "elements": [
@@ -419,7 +419,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "c8e7a54d-7f6f-4930-adfa-bb606a1a6f93",
+    "block_id": "21a52fda-f01d-4088-b577-26b41a93207f",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -456,7 +456,7 @@
     }
   },
   {
-    "block_id": "105813e8-9f38-4f35-9a0b-20946b96fb01",
+    "block_id": "ae6584ec-089e-44d2-b811-83eaf32eedce",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -481,7 +481,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "9f8378c7-50db-4ef6-a108-9629222f56c3",
+    "block_id": "9bea0c2f-fd65-4721-88d4-a0eeaa32e4de",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -506,7 +506,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "68c8d56b-aaae-465a-9962-f49b5adec959",
+    "block_id": "42f36f19-9cf1-49e5-b84c-bc8892eda01f",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -531,7 +531,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "f497fc83-11e6-4cba-a827-d3683646f2b9",
+    "block_id": "eedb2537-4b8b-4297-b937-1ea01ad0cd4c",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -568,7 +568,7 @@
     }
   },
   {
-    "block_id": "54e364d9-e4f0-454e-85ae-c6f62222a146",
+    "block_id": "3c0bbadc-8829-4045-aa5a-c28ba92b2da6",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -596,7 +596,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "46a057d0-b6cd-4eb0-8b85-02fa33ad41ec",
+    "block_id": "2da9c4ba-060d-4872-8f04-aadc1c1aa558",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -624,7 +624,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "822b569e-1798-475c-89a7-e66c13abc1a9",
+    "block_id": "c1232394-9bda-4c07-b9e4-ceab08d29429",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -652,7 +652,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "a402340b-ad03-481b-b536-52a993a51bd2",
+    "block_id": "0f3d5b03-f8c0-4889-975b-1d4c0fe65965",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -680,7 +680,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "77748d8b-65c5-4121-9788-ac787cdc404d",
+    "block_id": "d3741a24-521c-445f-b5b3-5bc13b7ab8ff",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -708,7 +708,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "d0173271-0354-4a41-98e6-355e4d941db9",
+    "block_id": "7a60e54e-896e-46c3-b6db-da4ba6f98dfd",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -736,7 +736,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "13a41af0-f613-4d60-b39c-c6052c89acd7",
+    "block_id": "82238403-2137-4228-9a16-2c2d1f3fadc7",
     "block_type": 5,
     "heading3": {
       "elements": [
@@ -761,7 +761,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "211071cc-a318-4273-86dd-11ea165b0105",
+    "block_id": "23b827df-2787-4ff3-ae67-bee58b51ee34",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -798,7 +798,7 @@
     }
   },
   {
-    "block_id": "94b19a10-5a21-45aa-bf60-e892dc2fb1c5",
+    "block_id": "7d57be32-aad1-4f1d-a8f4-f75ce32825a6",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -823,7 +823,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "0de200d4-3561-4d58-b87e-6105109874ac",
+    "block_id": "df23975a-ac93-45b7-98dd-dd7e3f4e7cab",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -848,7 +848,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "75148902-80b7-4efa-ac7b-d40e5cbe9b14",
+    "block_id": "b6c51a21-34c5-41d4-92c2-3c8f314944f9",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -885,7 +885,7 @@
     }
   },
   {
-    "block_id": "96c6f3e7-e004-4190-b0af-c1b10bc52283",
+    "block_id": "45692af9-ea51-48d6-82c8-1b37eb45e164",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -913,7 +913,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "da85c2ae-ff13-4056-92f2-5d7456b85aa8",
+    "block_id": "1cf0cd12-ea9e-4989-944f-dfc1ea2acbef",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -941,7 +941,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "d5ddd45d-4e28-4efc-adfa-63d6b9f5d36e",
+    "block_id": "9463b03a-f4d2-4691-8400-52956d8ee906",
     "block_type": 5,
     "heading3": {
       "elements": [
@@ -966,7 +966,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "18c54c61-0c88-436b-82b7-b8410df98058",
+    "block_id": "d7304cca-5d6a-40a9-a5be-847c20f3aa79",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -1003,7 +1003,7 @@
     }
   },
   {
-    "block_id": "a9425530-7f8d-42d6-af18-6c452f63e2df",
+    "block_id": "aeb51281-cb65-4de2-9f0c-3efcd3d4a7d4",
     "block_type": 12,
     "bullet": {
       "elements": [
@@ -1028,7 +1028,7 @@
     "parent_id": ""
   },
   {
-    "block_id": "b2ae9351-a45c-4963-ab50-6a2704351fa9",
+    "block_id": "a6760092-af44-4e09-9682-039949c5e35f",
     "block_type": 2,
     "parent_id": "",
     "text": {
@@ -1065,7 +1065,7 @@
     }
   },
   {
-    "block_id": "f5d314c0-750d-495a-b923-292f5f19d2bd",
+    "block_id": "ac8866d6-c07e-4825-9525-1b759ef32573",
     "block_type": 12,
     "bullet": {
       "elements": [

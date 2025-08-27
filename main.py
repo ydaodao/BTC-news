@@ -260,7 +260,7 @@ async def fetch_news_content(start_date: str, end_date: str):
     
     return True
 
-async def push_to_feishu_direct(content=None, daily_end_md=None):
+async def push_interactive_to_feishu(content=None, daily_end_md=None):
     """
     直接推送内容到飞书机器人（不依赖pushplus）
     """
@@ -283,7 +283,7 @@ async def push_to_feishu_direct(content=None, daily_end_md=None):
     print("开始直接推送消息到飞书机器人...")
     # 飞书机器人富文本消息格式
     # 读取飞书消息模板
-    template_path = os.path.join(os.path.dirname(__file__), 'config','feishu_message_template.json')
+    template_path = os.path.join(os.path.dirname(__file__), 'config','feishu_interactive_template.json')
     with open(template_path, 'r', encoding='utf-8') as f:
         template_content = f.read()
     
@@ -431,7 +431,7 @@ async def main(mode="all"):
         summary = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 2. 推送消息（自动根据环境变量选择推送到微信或飞书）
         # await push_to_wechat(summary)
-        await push_to_feishu_direct(summary, daily_end_md)
+        await push_interactive_to_feishu(summary, daily_end_md)
     
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")

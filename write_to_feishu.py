@@ -3,6 +3,7 @@ import os
 import requests
 import webbrowser
 from dotenv import load_dotenv
+from push_to_feishu_robot import push_richtext_to_feishu
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
@@ -410,12 +411,15 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
             return
     
+    docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
+    await push_richtext_to_feishu(title, docs_url)
+
     lark.logger.info("Markdown content inserted into document successfully!")
-    lark.logger.info(f"Document URL: https://bj058omdwg.feishu.cn/docx/{document_id}")
+    lark.logger.info(f"Document URL: {docs_url}")
 
     if LOCAL_DEV:
         # 在浏览器打开链接
-        webbrowser.open(f"https://bj058omdwg.feishu.cn/docx/{document_id}")
+        webbrowser.open(docs_url)
 
 
 if __name__ == "__main__":
