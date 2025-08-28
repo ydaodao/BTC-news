@@ -15,7 +15,9 @@ load_dotenv()
 FEISHU_APP_ID = os.getenv('FEISHU_APP_ID')
 FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
-FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg'
+FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # BTC-周报
+if LOCAL_DEV:
+    FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # BTC-API-Test
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
