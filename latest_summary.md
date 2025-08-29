@@ -1,43 +1,39 @@
-### 一、比特币市场价格与技术分析  
+### 一、比特币价格与技术分析  
 **总结**：  
-- 比特币价格从历史高位回落，近期徘徊在七周低点附近，市场焦点转向以太坊。  
-- 分析师Schiff警告比特币跌破109,000美元后可能进一步下跌，市场情绪存在不确定性。  
-- 比特币触及关键支撑区，技术面需关注交易信号，机构资金流动与链上指标对支撑有效性形成关键影响。  
-
-**参考**：  
-- [比特币批评者Schiff警告称BTC跌破$109K后将进一步下跌 - Bitcoin.com News](https://news.bitcoin.com/zh/bitebi-pipingzhe-schiff-jinggao-cheng-btc-dipo-109k-hou-jiang-jinyibu-xiadie/)  
-- [市场焦点转向以太币 比特币徘徊在七周低点附近 - Yahoo 財經](https://hk.finance.yahoo.com/news/%E5%B8%82%E5%9C%BA%E7%84%A6%E7%82%B9%E8%BD%AC%E5%90%91%E4%BB%A5%E5%A4%AA%E5%B8%81-%E6%AF%94%E7%89%B9%E5%B8%81%E5%BE%98%E5%BE%8A%E5%9C%A8%E4%B8%83%E5%91%A8%E4%BD%8E%E7%82%B9%E9%99%84%E8%BF%91-122807645.html)  
-- [比特币（BTC）触及关键支撑区：当前需关注的交易信号 - Blockchain News](https://blockchain.news/zh/flashnews/bitcoin-btc-hits-key-support-zone-trading-signals-to-watch-now-zh)  
+- 比特币近期价格在112,000美元附近震荡，短期面临整固，技术指标显示中性偏强，100日EMA（110,850美元）成为关键支撑位，若守住或推动价格上冲至116,000-117,000美元区间。  
+- 4小时图呈现“更高的高点和更高的低点”形态，动量指标（如RSI 46、MACD -1,183）显示不确定性，长期200日EMA（103,939美元）提供支撑，暗示中期看涨趋势仍存。  
+- 交易员预测若突破113,500美元阻力位，目标看向117,000美元，反之跌破111,500美元或下探108,000美元。  
 
 
-### 二、机构与巨鲸资金动向  
+### 二、企业与机构加密货币投资动态  
 **总结**：  
-- 阿联酋政府通过控股矿企Citadel Mining持有约6,300枚比特币，市值约7.4亿美元，成为全球第4大持币政府。  
-- 美国比特币ETF与以太坊ETF资金流动分化，比特币ETF净流入1673枚BTC，以太坊ETF净流入104498枚ETH，反映机构资金向以太坊倾斜。  
-- 某比特币远古巨鲸多次向Hyperliquid存入BTC（如968枚、1000枚），并卖出BTC增持ETH（如卖出1000枚BTC后以5倍杠杆做多9.6万枚ETH），显示资金从比特币转向以太坊的调仓趋势。  
-
-**参考**：  
-- [阿联酋政府持有超7.4 亿美元比特币，成为全球第4 大持币政府 - 新浪财经](https://finance.sina.cn/blockchain/2025-08-26/detail-infnfpnu2127179.d.html?vt=4)  
-- [某比特币OG 巨鲸再次向Hyperliquid 存入968 枚BTC_亿欧快讯](https://www.iyiou.com/briefing/202508261815801)  
-- [某比特币远古巨鲸卖出1000枚BTC，并以5倍杠杆做多逾9.6万枚ETH - Binance](https://www.binance.com/zh-CN/square/post/28837880195353)  
-- [某比特币远古巨鲸卖出1000枚BTC，并以5倍杠杆做多逾9.6万枚ETH - MarsBit](https://m.marsbit.co/flash/20250826212701452511.html)  
-- [今日美国比特币ETF 净流入1673 枚BTC，以太坊ETF 净流入104498 枚ETH - MarsBit](https://m.marsbit.co/flash/20250826215901624932.html)  
-- [高调换仓ETH的比特币远古巨鲸向Hyperliquid存入1000枚BTC，或用于增持ETH - MarsBit](https://m.marsbit.co/flash/20250826185001224878.html)  
+- 港股上市公司顺泰控股计划将BTC、ETH、BNB、FIL及稳定币纳入投资组合，拟调配7000万港元资金，部分已用于购买FIL，同时考虑接受加密货币支付，稳定币占比不低于5%。  
+- 金融机构国泰君安国际推出加密货币交易服务，支持BTC、ETH、AVAX、LINK、SOL等币种，专业投资者可交易XRP、USDT、USDC等进阶标的。  
+- 伦敦上市科技企业The Smarter Web Company增持45枚比特币，总持仓达2440枚，平均成本约11.11万美元，计划将剩余60万英镑现金投入比特币资产。  
 
 
-### 三、矿工与衍生品市场  
+### 三、机构对加密货币市场的看法  
 **总结**：  
-- 比特币矿工Hut 8计划扩展1.5吉瓦产能，受此消息影响股价上涨10%，显示矿工对长期产能扩张的信心。  
-- 比特币衍生品市场规模扩大，当前衍生品堆积量增至1357.6亿美元，反映市场对加密衍生品的参与度提升。  
-
-**参考**：  
-- [比特币矿工Hut 8因计划扩展1.5吉瓦产能股价上涨10% - CoinDesk](https://www.coindesk.com/zh/business/2025/08/26/bitcoin-miner-hut-8-surges-10-on-1-5gw-expansion-plans)  
-- [比特币衍生品堆积增至1357.6亿美元 - Bitcoin.com News](https://news.bitcoin.com/zh/bitebi-yanshengpin-duiji-zengzhi-1357-6-yi-meiyuan/)  
+- 摩根大通分析指出，比特币相较于黄金被低估，其波动性近期显著下降，机构对其作为另类资产的配置兴趣提升。  
+- 肖风在Bitcoin Asia 2025演讲中提出，DAT（数字资产金库）比ETF更适合加密资产，因其具备更好的流动性（交易即时性优于申购赎回）、价格弹性（市值波动空间更大）、杠杆适配性及下跌保护机制。  
 
 
-### 四、特定币种表现  
+### 四、市场整体动态与山寨币表现  
 **总结**：  
-- 在CoinDesk 20指数中，比特币现金（BCH）下跌2.8%，拖累整体指数走低，反映特定币种市场表现疲软。  
+- 加密市场整体动态显示，BTC涨势缺乏衍生品交易者支持，未平仓合约及期权市场偏向观望，部分山寨币表现疲软，如YZY领跌。  
+- 市场情绪存在分歧，恐惧与贪婪指数处于“贪婪”区间，但BTC在112,000美元关键支撑位的争夺将主导短期走势，若跌破或引发进一步回调。  
 
-**参考**：  
-- [CoinDesk 20 绩效更新：比特币现金（BCH）下跌2.8%，拖累指数走低 - CoinDesk](https://www.coindesk.com/zh/coindesk-indices/2025/08/26/coindesk-20-performance-update-bitcoin-cash-bch-drops-2-8-leading-index-lower)
+
+---
+
+### **参考**  
+- [比特币价格观察：在价格紧缩后，交易者准备应对波动](https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-zai-jia-ge-jin-suo-hou-jiao-yi-zhe-zhun-bei-ying-dui-bo-dong/)  
+- [比特币交易员预计BTC将升至117,000美元，价格重回关键趋势线](https://cn.cointelegraph.com/news/bitcoin-trader-sees-117k-coming-btc-price-reclaims-key-trend-line)  
+- [比特币BTC重返区间：112000美元关键支撑成焦点，或推动上涨延续——Michaël van de Poppe](https://blockchain.news/zh/flashnews/bitcoin-btc-reclaims-range-112k-key-support-to-watch-for-breakout-continuation-micha-l-van-de-poppe-zh)  
+- [港股上市公司顺泰控股计划将BTC、ETH、BNB、FIL以及稳定币纳入其加密货币投资组合](https://www.theblockbeats.info/flash/309650)  
+- [国泰君安国际宣布推出BTC、ETH、AVAX、LINK、SOL交易服务](https://www.wublock123.com/article/6/47849)  
+- [顺泰控股将BTC、ETH、BNB、FIL等纳入投资组合，已购入FIL并考虑接受数字支付](https://www.wublock123.com/article/6/47843)  
+- [The Smarter Web Company增持45枚比特币，目前持有2440枚BTC](https://blockweeks.com/newsflash/162528.html)  
+- [摩根大通表示，比特币相较于黄金被低估，波动性骤降](https://www.coindesk.com/zh/markets/2025/08/28/bitcoin-undervalued-versus-gold-as-volatility-collapses-jpmorgan-says)  
+- [肖风Bitcoin Asia 2025演讲全文：DAT比ETF更适合加密资产](https://www.theblockbeats.info/news/59469)  
+- [加密市场今日动态：BTC涨势缺乏衍生品交易者支持；YZY领跌](https://www.coindesk.com/zh/markets/2025/08/28/crypto-markets-today-btc-s-gain-lacks-derivative-traders-support-yzy-leads-to-losses)
