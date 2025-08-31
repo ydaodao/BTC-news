@@ -9,14 +9,14 @@ on:
     - cron: '10 23 * * 0,1,2,3,4'  # 对应北京时间 7:10，每周一到周五执行
     
     # 新增：周六summary_write任务
-    - cron: '0 0 * * 6'  # 对应北京时间 8:00，每周六执行summary_write
+    - cron: '0 0 * * 0'  # 对应北京时间 8:00，每周日执行summary_write
   
   workflow_dispatch:  # 允许手动触发
 
 jobs:
   rss-crawler:
     # 不是XX:XX的定时任务才执行
-    if: github.event.schedule != '10 23 * * 0,1,2,3,4' && github.event.schedule != '0 0 * * 6'
+    if: github.event.schedule != '10 23 * * 0,1,2,3,4' && github.event.schedule != '0 0 * * 0'
     runs-on: windows-latest  # 修改为Windows环境
     
     # 新增：为任务授予写入权限
@@ -92,7 +92,7 @@ jobs:
   # 新增：周六summary_write任务
   summary-write:
     # 只在周六10:00的定时任务执行
-    if: github.event.schedule == '0 0 * * 6'
+    if: github.event.schedule == '0 0 * * 0'
     runs-on: ubuntu-latest
 
     # 新增：为任务授予写入权限

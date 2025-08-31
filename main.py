@@ -410,11 +410,11 @@ async def main(mode="all"):
     daily_end_md = now.strftime('%m.%d')
 
     # 为摘要生成设置7天的时间范围
-    week_day_ago = now - timedelta(days=7)
+    week_day_ago = now - timedelta(days=8)
     week_start_date = week_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     week_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
-    week_start_md = week_day_ago.strftime('%m.%d')
-    week_end_md = now.strftime('%m.%d')
+    week_start_md = f"{week_day_ago.month}.{week_day_ago.day}"
+    week_end_md = f"{now.month}.{now.day}"
     
     summary = None
 
@@ -438,9 +438,9 @@ async def main(mode="all"):
         # 1. 生成摘要（使用分块处理版本）
         summary = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 延迟导入，避免循环依赖
-        from write_to_feishu import write_to_docx
+        from to_feishu_docx import write_to_docx
         await write_to_docx(summary, week_start_md, week_end_md)
-            
+        
 # --- 主程序入口 ---
 if __name__ == "__main__":
     import argparse

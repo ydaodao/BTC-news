@@ -3,11 +3,12 @@ import os
 import requests
 import webbrowser
 from dotenv import load_dotenv
-from push_to_feishu_robot import push_richtext_to_feishu
+from to_feishu_robot import push_richtext_to_feishu
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
+from utils.feishu_utils import extract_block_content_by_type, replace_block_text_by_text_and_type
 
 # 加载环境变量
 load_dotenv()
@@ -15,9 +16,7 @@ load_dotenv()
 FEISHU_APP_ID = os.getenv('FEISHU_APP_ID')
 FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
-FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # BTC-周报
-if LOCAL_DEV:
-    FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # BTC-API-Test
+FEISHU_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -115,105 +114,13 @@ def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
             "children": []
         }
         
-        # 根据块类型添加相应的内容 - 根据官方文档修正块类型映射
-        if block.get('block_type') == 2:  # 文本块
-            descendant["text"] = block.get('text', {})
-        elif block.get('block_type') == 3:  # 标题1块
-            descendant["heading1"] = block.get('heading1', {})
-        elif block.get('block_type') == 4:  # 标题2块
-            descendant["heading2"] = block.get('heading2', {})
-        elif block.get('block_type') == 5:  # 标题3块
-            descendant["heading3"] = block.get('heading3', {})
-        elif block.get('block_type') == 6:  # 标题4块
-            descendant["heading4"] = block.get('heading4', {})
-        elif block.get('block_type') == 7:  # 标题5块
-            descendant["heading5"] = block.get('heading5', {})
-        elif block.get('block_type') == 8:  # 标题6块
-            descendant["heading6"] = block.get('heading6', {})
-        elif block.get('block_type') == 9:  # 标题7块
-            descendant["heading7"] = block.get('heading7', {})
-        elif block.get('block_type') == 10:  # 标题8块
-            descendant["heading8"] = block.get('heading8', {})
-        elif block.get('block_type') == 11:  # 标题9块
-            descendant["heading9"] = block.get('heading9', {})
-        elif block.get('block_type') == 12:  # 无序列表块
-            descendant["bullet"] = block.get('bullet', {})
-        elif block.get('block_type') == 13:  # 有序列表块
-            descendant["ordered"] = block.get('ordered', {})
-        elif block.get('block_type') == 14:  # 代码块
-            descendant["code"] = block.get('code', {})
-        elif block.get('block_type') == 15:  # 引用块
-            descendant["quote"] = block.get('quote', {})
-        elif block.get('block_type') == 17:  # 待办事项块
-            descendant["todo"] = block.get('todo', {})
-        elif block.get('block_type') == 18:  # 多维表格块
-            descendant["bitable"] = block.get('bitable', {})
-        elif block.get('block_type') == 19:  # 高亮块
-            descendant["callout"] = block.get('callout', {})
-        elif block.get('block_type') == 20:  # 会话卡片块
-            descendant["chat_card"] = block.get('chat_card', {})
-        elif block.get('block_type') == 21:  # 流程图 & UML块
-            descendant["diagram"] = block.get('diagram', {})
-        elif block.get('block_type') == 22:  # 分割线块
-            descendant["divider"] = {}
-        elif block.get('block_type') == 23:  # 文件块
-            descendant["file"] = block.get('file', {})
-        elif block.get('block_type') == 24:  # 分栏块
-            descendant["grid"] = block.get('grid', {})
-        elif block.get('block_type') == 25:  # 分栏列块
-            descendant["grid_column"] = block.get('grid_column', {})
-        elif block.get('block_type') == 26:  # 内嵌网页块
-            descendant["iframe"] = block.get('iframe', {})
-        elif block.get('block_type') == 27:  # 图片块
-            descendant["image"] = block.get('image', {})
-        elif block.get('block_type') == 28:  # 开放平台小组件块
-            descendant["isv"] = block.get('isv', {})
-        elif block.get('block_type') == 29:  # 思维笔记块
-            descendant["mindnote"] = block.get('mindnote', {})
-        elif block.get('block_type') == 30:  # 电子表格块
-            descendant["sheet"] = block.get('sheet', {})
-        elif block.get('block_type') == 31:  # 表格块
-            table_data = block.get('table', {})
-            # 移除只读字段
-            if 'merge_info' in table_data:
-                del table_data['merge_info']
-            descendant["table"] = table_data
-        elif block.get('block_type') == 32:  # 表格单元格块
-            descendant["table_cell"] = block.get('table_cell', {})
-        elif block.get('block_type') == 33:  # 视图块
-            descendant["view"] = block.get('view', {})
-        elif block.get('block_type') == 34:  # 引用容器块
-            descendant["quote_container"] = {}
-        elif block.get('block_type') == 35:  # 任务块
-            descendant["task"] = block.get('task', {})
-        elif block.get('block_type') == 36:  # OKR块
-            descendant["okr"] = block.get('okr', {})
-        elif block.get('block_type') == 37:  # OKR Objective块
-            descendant["okr_objective"] = block.get('okr_objective', {})
-        elif block.get('block_type') == 38:  # OKR Key Result块
-            descendant["okr_key_result"] = block.get('okr_key_result', {})
-        elif block.get('block_type') == 39:  # OKR进展块
-            descendant["okr_progress"] = block.get('okr_progress', {})
-        elif block.get('block_type') == 40:  # 文档小组件块
-            descendant["add_ons"] = block.get('add_ons', {})
-        elif block.get('block_type') == 41:  # Jira问题块
-            descendant["jira_issue"] = block.get('jira_issue', {})
-        elif block.get('block_type') == 42:  # Wiki子目录块
-            descendant["wiki_catalog"] = block.get('wiki_catalog', {})
-        elif block.get('block_type') == 43:  # 画板块
-            descendant["board"] = block.get('board', {})
-        elif block.get('block_type') == 44:  # 议程块
-            descendant["agenda"] = block.get('agenda', {})
-        elif block.get('block_type') == 45:  # 议程项块
-            descendant["agenda_item"] = block.get('agenda_item', {})
-        elif block.get('block_type') == 46:  # 议程项标题块
-            descendant["agenda_item_title"] = block.get('agenda_item_title', {})
-        elif block.get('block_type') == 47:  # 议程项内容块
-            descendant["agenda_item_content"] = block.get('agenda_item_content', {})
-        elif block.get('block_type') == 48:  # 链接预览块
-            descendant["link_preview"] = block.get('link_preview', {})
+        # 使用 feishu_utils 中的通用函数处理块类型映射
+        block_content = extract_block_content_by_type(block)
+        # 直接使用提取的内容，无需额外特殊处理
+        if block_content['type_name'] != 'unknown':
+            descendant[block_content['type_name']] = block_content['content']
         else:
-            # 对于其他类型，直接复制所有字段（除了 block_id）
+            # 对于未知类型，直接复制所有字段（除了 block_id）
             for key, value in block.items():
                 if key not in ['block_id', 'block_type', 'children', 'parent_id']:
                     descendant[key] = value
@@ -364,7 +271,7 @@ def copy_feishu_document(title, app_id, app_secret, folder_token, original_docum
     lark.logger.info(f"Document copied successfully, document_id: {document_id}")
     return document_id
 
-async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_md='01.07'):
+async def write_to_docx(markdown_content=None, week_start_md='1.1', week_end_md='1.7'):
     """
     写入文档到飞书文档库
     """
@@ -388,7 +295,10 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     if not document_id:
         lark.logger.error("Failed to copy Feishu document")
         return
-        
+    
+    # 替换辅助内容
+    replace_block_text_by_text_and_type(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
+    
     # 预处理markdown内容
     processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{markdown_content}")
     
@@ -419,6 +329,12 @@ async def write_to_docx(markdown_content=None, week_start_md='01.01', week_end_m
     lark.logger.info("Markdown content inserted into document successfully!")
     lark.logger.info(f"Document URL: {docs_url}")
 
+    # 更新一级标题，并加颜色
+    replace_block_text_by_text_and_type(document_id, "各国政策与监管变化", "一、政策与监管", "heading1", 5)
+    replace_block_text_by_text_and_type(document_id, "企业与机构的活动", "二、企业与机构", "heading1", 5)
+    replace_block_text_by_text_and_type(document_id, "价格波动与市场风险", "三、市场与风险", "heading1", 5)
+    replace_block_text_by_text_and_type(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
+
     if LOCAL_DEV:
         # 在浏览器打开链接
         webbrowser.open(docs_url)
@@ -435,6 +351,8 @@ if __name__ == "__main__":
             markdown_content = f.read()
     except Exception as e:
         lark.logger.error(f"Failed to read markdown file: {e}")
+    
+    FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
 
     # 修复异步函数调用
     import asyncio

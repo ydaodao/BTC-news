@@ -192,12 +192,12 @@ if __name__ == "__main__":
     news_files = [
         {
             "name": "豆包BTC新闻",
-            "path": os.path.join(os.path.dirname(__file__), "doubao_btc_news.md"),
+            "path": os.path.join(os.path.dirname(__file__), "btc_news_from_doubao.md"),
             "source": "豆包AI"
         },
         {
             "name": "OpenAI BTC新闻", 
-            "path": os.path.join(os.path.dirname(__file__), "openai_btc_news.md"),
+            "path": os.path.join(os.path.dirname(__file__), "btc_news_from_openai.md"),
             "source": "OpenAI"
         }
     ]
