@@ -183,18 +183,18 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_ne
             # 其它相关事件
 		4. 最终全文的输出结构为：
 			# 各国政策与监管变化
-			    ### 聚类标题
-			        **总结**
-			        **参考**
-			    ### 聚类标题
-			        **总结**
-			        **参考**
+            ### 聚类标题
+            **总结**
+            **参考**
+            ### 聚类标题
+            **总结**
+            **参考**
             # 企业与机构的活动
-			    （同上结构）
+			（同上结构）
             # 价格波动与市场风险
-			    （同上结构）
+			（同上结构）
             # 其它相关事件
-			    （同上结构）
+			（同上结构）
         """
         if LOCAL_DEV:
             my_utils.copy_to_clipboard(final_prompt)
