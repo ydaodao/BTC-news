@@ -1,79 +1,98 @@
 # 加密货币新闻聚合报告
 
-**聚合时间**: combine_all_news.py 执行时间
+**聚合时间**: 2025-08-31 14:20:11
 **数据源**: 豆包AI, OpenAI
 
 ## 1. 豆包BTC新闻 (豆包AI)
 
-以下是8月11日至8月25日加密货币领域的热点新闻：
-- **新加坡交易所拟年底推出加密货币永续期货**：8月11日，新加坡交易所（SGX）股票市场运营总裁Michael Syn透露，SGX最快将在2025年底前推出加密货币永续期货，产品仅面向机构投资者。Michael Syn强调加密货币不适合零售投资者，新产品旨在满足机构的套期保值等需求。
-- **Bitmine转型为全球最大以太币储备公司**：截至8月11日，在Fundstrat分析师Tom Lee的推动下，Bitmine Immersion Technologies已从一家专注于比特币挖矿的企业转型为全球领先的以太币储备公司。Bitmine单周增持316,863枚以太币，总持仓从833,137枚飙升至115万枚，成为全球最大以太币储备机构。
-- **加密市场突发回调风暴**：8月19日，加密市场突发回调风暴，比特币失守11.3万美元，以太坊暴跌5%。此次调整发生在美联储于怀俄明州杰克逊霍尔举行年度经济研讨会前夕，投资者普遍预期政策信号将影响未来流动性环境。
-- **比特币ETF持仓再创新高**：8月20日，比特币ETF的总持仓价值突破1550亿美元，占比特币流通量的6.6%，创下历史新高。机构资金的流入显示出对比特币作为长期资产的坚定信心。
-- **加密货币市场大幅跳水，超16万人爆仓**：8月25日，加密货币市场大幅跳水，比特币跌破11.1万美元/枚关口，24小时内跌幅超过3.3%；以太坊、狗狗币、Solana币、艾达币跌超3%。CoinGlass数据显示，过去24小时内，全球加密货币爆仓超8.4亿美元，爆仓人数超过16.6万人。
-- **摩根士丹利调查显示加密货币采用仍处早期**：8月25日消息，摩根士丹利最近对金融专业人士的调查显示，只有18%的实习生拥有或使用加密货币，高于去年的13%，对数字资产感兴趣的实习生比例从23%上升到26%，但仍有55%的人不关心数字资产。
+以下是8月23日至8月31日之间加密货币领域的热点新闻：
+- **加密货币市场普涨，以太坊创历史新高**：8月23日，加密市场迎来普涨，加密货币总市值突破4.1万亿美元，24小时涨幅达5.4%，交易量接近1950亿美元。以太坊表现极为强势，最高触及4,881.50美元，创下历史新高，24小时涨幅5.45%。比特币最高触及117,302.3美元，24小时涨幅0.36%。
+- **鲍威尔鸽派讲话引发加密货币市场集体上攻，超16万人爆仓**：美联储主席鲍威尔在杰克逊霍尔全球央行年会发表“鸽派”讲话后，8月22日晚间至23日，加密货币市场集体走高。以太坊强势拉升，比特币等也随之上涨。据Coinglass数据显示，过去24小时加密货币市场共有超16万人被爆仓，爆仓总金额为6.94亿美元。
+- **SEC加密行动组开展巡回活动**：8月23日消息，美国证券交易委员会（SEC）的加密货币特别工作组正在全国各地开展巡回活动，举办一系列圆桌会议，以听取那些此前无法前往华盛顿参加圆桌会议的群体以及在其他政策制定过程中可能历来代表性不足的声音。
+- **菲律宾提出法案拟建立战略性比特币储备**：8月23日消息，菲律宾提出了一项法案，旨在建立一个战略性比特币储备。
+- **韩国顶级银行探讨与Tether和Circle合作稳定币业务**：8月23日消息，新韩银行、韩亚银行、KB金融和友利银行的高管将探讨与美元和韩元挂钩的稳定币在韩国的作用。
+- **多家公司和机构增持比特币**：港股上市公司瑞和数智计划通过比特大陆提供的服务开展比特币云挖矿业务；博雅互动在8月5日至8月25日期间，以总对价约2.57亿港元购买了总计约290枚比特币；法国上市公司Sequans推出2亿美元ATM股票计划，以支持其比特币长期储备战略。
+- **Mind Network与蚂蚁数科成为技术伙伴**：全同态加密基础设施项目Mind Network宣布与蚂蚁集团旗下蚂蚁数科成为技术伙伴，双方将共同聚焦加密RWA、链上隐私数据传输、端到端自动加密等领域，致力于打造全新的数据安全体验。
 
 ---
 
 ## 2. OpenAI BTC新闻 (OpenAI)
 
-* [The Economic Times](https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/blackrocks-crypto-holdings-top-100-billion-bitcoin-dominates-portfolio/articleshow/123305083.cms?utm_source=chatgpt.com)
-* [巴伦周刊](https://www.barrons.com/articles/fed-bowman-crypto-blockchain-ai-1fcd77b6?utm_source=chatgpt.com)
-* [市场观察](https://www.marketwatch.com/story/bitcoins-bull-run-could-defy-history-and-last-until-2027-bernstein-analyst-says-why-that-may-be-too-optimistic-b14df756?utm_source=chatgpt.com)
+* [Reuters](https://www.reuters.com/legal/government/trump-media-cryptocom-launch-crypto-treasury-firm-via-spac-deal-2025-08-26/?utm_source=chatgpt.com)
+* [AP News](https://apnews.com/article/cfb8da95070cad9678ff9597f1900791?utm_source=chatgpt.com)
+* [投资者网站](https://www.investors.com/news/trump-media-cro-6-4-billion-crypto-com-crypto-empire-metaplanet-bitcoin/?utm_source=chatgpt.com)
+* [Politico](https://www.politico.com/news/2025/08/27/gavin-newsom-launching-own-memecoin-00533122?utm_source=chatgpt.com)
 
-以下是 **2025 年 8 月 11 日至 8 月 25 日** 期间，加密货币领域的一些重要热点新闻（按时间顺序排列，并附上具体日期）：
-
----
-
-### 8 月 14 日 — BlackRock 加仓加密资产
-
-* **新闻亮点**：截至 2025 年 8 月 14 日，资产管理巨头 BlackRock 的加密货币持仓总额已突破 1,000 亿美元，主要以比特币为主，这反映出其在数字资产领域的战略加码。([The Economic Times][1])
-
-### 8 月 19 日 — 美联储官员呼吁审慎态度转变
-
-* **新闻亮点**：美联储理事 Michelle Bowman 在怀俄明区块链研讨会上表示，监管应“少一些谨慎，多一些接受”，鼓励与机构合作共同拥抱加密、区块链与 AI 的融合。她支持取消银行审查中的声誉风险考量，与近期签署的 GENIUS Act 和行政令趋势一致。([巴伦周刊][2])
-
-### 8 月 21 日 — 伯恩斯坦预测比特币上涨周期将延续至 2027 年
-
-* **新闻亮点**：Bernstein 分析师指出，比特币本轮牛市可能持续至 2027 年，并认为比特币可能在未来 6–12 个月内攀升至 200,000 美元，尽管部分专家对此持怀疑态度，预计其峰值或为 140,000–150,000 美元。([市场观察][3])
-
-### 8 月 24–25 日 — 市场波动加剧：比特币闪崩与崛起回调交替
-
-* **闪崩回暖**：8 月 25 日，比特币曾因抛售巨鲸抛出 24,000 BTC（约 27 亿美元）而引发“闪崩”跌幅达 4,000 美元，但随后有所回弹；以太坊价格一度突破 4,900 美元。([Cryptonews][4])
-* **随后回调**：同日，比特币跌至低于 110,000 美元，以太坊暴跌约 8%。([CoinDesk][5])
-* **市场整体表现**：8 月 25 日，BTC 和 ETH 同跌 2–3%，加密市值下滑至 3.96 万亿美元，交易情绪趋谨慎。([Cryptonews][6], [雅虎财经][7])
-* **8 月 26 日持续承压**：大多数加密资产继续下行，总市值已降至约 3.87 万亿美元。([Cryptonews][8])
-
-### 8 月 26 日 — 巨额期权合约到期引发市场关注
-
-* **新闻亮点**：预计将在周五到期的比特币与以太坊期权合约规模高达 146 亿美元，其中看跌期权需求显著偏重，反映出投资者在寻求下行保护的倾向。([CoinDesk][9])
-
-### Presales 热度提升（数日时间）
-
-* **新闻亮点**：8 月中下旬加密预售项目引发投资者兴趣，其中包括 “Bitcoin Hyper (HYPER)” 和 “Remittix (RTX)”，预期回报高达 10–100 倍。([AInvest][10])
+以下是2025年8月23日至8月31日期间，加密货币领域的几大热点新闻汇总，涵盖政策动向、市场趋势、新项目崛起等多个维度：
 
 ---
 
-**总结一下这段时间的主要趋势：**
+## 1. 特朗普家族与 Crypto.com 建立亿级加密资产财库
 
-| 时间范围   | 主要趋势                         |
-| ------ | ---------------------------- |
-| 8 月中旬  | 机构大举入场（如 BlackRock）；监管信号调整   |
-| 8 月中下旬 | 市场大幅波动，频繁出现“闪崩与反弹”交替的剧烈表现    |
-| 整体趋势   | 牛市周期或持续延展；投资者设立防守仓位；预售项目快速涌现 |
+* **特朗普媒体集团（Trump Media Group）携手 Crypto.com** 将成立“Trump Media Group CRO Strategy”数字资产资金公司，计划通过 SPAC 与 Yorkville Acquisition Corp 合并，并在纳斯达克上市，代码为 “MCGA”。([Reuters][1], [AP News][2], [投资者网站][3])
 
-如果你希望进一步了解某个话题，我可以帮你深入分析或提供更多资料！
+  * 该公司将管理约 **10 亿美元的 CRO 代币**、2 亿美元现金，以及 **50 亿美元的股权抵押额度**。([投资者网站][3])
+  * 同时，Truth Social 将整合 Crypto.com 的钱包基础设施，并推出以 CRO 代币为基础的用户奖励体系。([AP News][2])
+* 这次合作不仅体现出特朗普家族在加密领域的持续发力，也进一步巩固了其在数字资产上的布局。([Reuters][1], [AP News][2])
 
-[1]: https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/blackrocks-crypto-holdings-top-100-billion-bitcoin-dominates-portfolio/articleshow/123305083.cms?utm_source=chatgpt.com "BlackRock's crypto holdings top $100 billion; Bitcoin dominates portfolio"
-[2]: https://www.barrons.com/articles/fed-bowman-crypto-blockchain-ai-1fcd77b6?utm_source=chatgpt.com "Fed's Bowman Urges Less 'Cautious Mindset' on Crypto"
-[3]: https://www.marketwatch.com/story/bitcoins-bull-run-could-defy-history-and-last-until-2027-bernstein-analyst-says-why-that-may-be-too-optimistic-b14df756?utm_source=chatgpt.com "Bitcoin's bull run could defy history and last until 2027, Bernstein analyst says. Why that may be too optimistic."
-[4]: https://cryptonews.com/news/live-crypto-news-today-latest-updates-for-august-25-2025/?utm_source=chatgpt.com "[LIVE] Crypto News Today: Latest Updates for August 25, 2025"
-[5]: https://www.coindesk.com/markets/2025/08/25/bitcoin-tumbles-back-to-usd110k-as-crypto-bounce-fails-ether-plunges-8?utm_source=chatgpt.com "Bitcoin Tumbles Back Below $110K as Crypto Bounce Fails, Ether ..."
-[6]: https://cryptonews.com/news/why-is-crypto-down-today-august-25-2025/?utm_source=chatgpt.com "Why Is Crypto Down Today? – August 25, 2025"
-[7]: https://finance.yahoo.com/news/why-crypto-down-today-august-114019271.html?utm_source=chatgpt.com "Why Is Crypto Down Today? – August 25, 2025 - Yahoo Finance"
-[8]: https://cryptonews.com/news/why-is-crypto-down-today-august-26-2025/?utm_source=chatgpt.com "Why Is Crypto Down Today? – August 26, 2025"
-[9]: https://www.coindesk.com/markets/2025/08/26/massive-usd14-6b-btc-and-eth-options-expiry-shows-bias-for-bitcoin-protection?utm_source=chatgpt.com "Massive $14.6B Bitcoin and Ether Options Expiry Shows ... - CoinDesk"
-[10]: https://www.ainvest.com/news/top-crypto-presales-august-2025-high-potential-entry-points-explosive-returns-2508/?utm_source=chatgpt.com "Top Crypto Presales in August 2025: High-Potential Entry Points for Explosive Returns"
+---
+
+## 2. 新 altcoin 项目层出不穷：Remittix 与 Layer Brett 成焦点
+
+* **Remittix（RTX）**：一个以实用性为导向的支付型 altcoin，支持跨 30 多个国家的即时加密货币—法币兑换。已筹资 2220 万美元，计划在 9 月 15 日发布 Beta 钱包，并获得了主要交易所 BitMart 和 LBank 上架支持。([Indiatimes][4])
+
+  * 市场看空比特币，短期预期跌破 10 万美元的背景下，Remittix 借助 XRP 鲸鱼支持和实际应用场景，受到关注。([Indiatimes][4])
+* **Layer Brett (LBRETT)**：一个 Ethereum Layer-2 Meme 币型项目，目前仍在预售阶段，已接近筹集 200 万美元，拥有超过 5000 名持有者。该项目提供高达 3900% 的质押奖励，还规划了 NFT 功能和社区激励机制。([Indiatimes][5])
+
+  * 专家预计这一项目的早期阶段定价极具吸引力，极有可能成为下一个“100x Meme 币”。([Indiatimes][6])
+
+---
+
+## 3. 政治涂梗：加州州长宣布“反特朗普” Meme 币
+
+加州州长加文·纽森（Gavin Newsom）以讽刺嘲笑的方式，宣布计划推出自己的 Meme 币“Trump corruption coin”，作为对特朗普加密行动的政治回应。([Politico][7])
+
+---
+
+## 4. 加密衍生品市场：8月底期权大清算引发市场波动
+
+* **截至 8 月 29 日，价值约 150 亿美元的比特币与以太坊期权合约到期**，其中包括比特币 117 亿美元、以太坊 32 亿美元。这一清算事件对衍生品市场造成显著影响。([AInvest][8])
+
+  * 当天，市场动向显示比特币偏空（put/call 比率约 1.31），以太坊偏多（call/put 比率约 0.76），反映出不同市场情绪。([AInvest][8])
+
+---
+
+## 5. 巩固多头趋势：BTC 与 ETH 市场结构稳固
+
+* **加密融资趋于缓和**，市场进入整固阶段，BTC 下滑至约 11.2 万美元，资金逐步向以太坊和其他具实用价值的山寨币转移。([AInvest][9])
+
+  * 以太坊因 DeFi 和 Staking 活动，吸引每日超过 10 亿美元的 ETF 资金流入。([AInvest][9])
+* **比特币有阶段性价格弱势表现**，受到“比特币大会效应”影响，在 8 月底跌至约 10.84 万美元，一度逼近 7 月低点。([CoinDesk][10])
+
+---
+
+### 总结一览
+
+| 主题          | 概要                              |
+| ----------- | ------------------------------- |
+| 政治加密合作      | 特朗普家族与 Crypto.com 建立数字资产财库，数额庞大 |
+| 新兴项目        | Remittix 与 Layer Brett 引爆市场关注   |
+| 政治驱动 Meme 币 | 加州州长以 Meme 币讽刺政治对抗              |
+| 衍生品动态       | 大规模期权到期引发市场情绪分化                 |
+| 市场趋势        | BTC 与 ETH 结构稳中有动，资金流向多元化\*\*    |
+
+如你希望深入了解其中某一事件（例如项目白皮书、期权数据、具体政策背景等），欢迎继续提问！
+
+[1]: https://www.reuters.com/legal/government/trump-media-cryptocom-launch-crypto-treasury-firm-via-spac-deal-2025-08-26/?utm_source=chatgpt.com "Trump Media, Crypto.com to launch crypto treasury firm via SPAC deal"
+[2]: https://apnews.com/article/cfb8da95070cad9678ff9597f1900791?utm_source=chatgpt.com "Trump family crypto empire expands with Crypto.com partnership"
+[3]: https://www.investors.com/news/trump-media-cro-6-4-billion-crypto-com-crypto-empire-metaplanet-bitcoin/?utm_source=chatgpt.com "Trump Family Expands Crypto Empire With $6.4 Billion Venture"
+[4]: https://indiatimes.com/partner/xrp-whale-backs-new-payfi-altcoin-remittix-as-bitcoin-price-expected-to-drop-below-100000-dollars-in-september-668407.html?utm_source=chatgpt.com "XRP whale backs new PayFi altcoin Remittix as bitcoin price expected to drop below $100,000 in september"
+[5]: https://indiatimes.com/partner/best-rcypto-presale-to-buy-right-now-layer-brett-nears-2m-and-5k-holders-as-fastest-growing-ico-in-2025-668399.html?utm_source=chatgpt.com "Best rcypto presale to buy right now: Layer Brett nears $2M and 5K holders as fastest-growing ICO in 2025"
+[6]: https://indiatimes.com/partner/experts-discuss-dogecoin-and-shiba-inu-price-targets-for-2025-and-say-layer-brett-667818.html?utm_source=chatgpt.com "Experts discuss Dogecoin and Shiba Inu price targets for 2025 and say Layer Brett"
+[7]: https://www.politico.com/news/2025/08/27/gavin-newsom-launching-own-memecoin-00533122?utm_source=chatgpt.com "Gavin Newsom teases he's launching his own memecoin"
+[8]: https://www.ainvest.com/news/navigating-crypto-volatility-impact-august-2025-bitcoin-ethereum-options-expiry-2508/?utm_source=chatgpt.com "Navigating Crypto Volatility: The Impact of August 2025 ..."
+[9]: https://www.ainvest.com/news/decoding-august-2025-crypto-funding-slowdown-implications-opportunities-2508/?utm_source=chatgpt.com "Decoding the August 2025 Crypto Funding Slowdown"
+[10]: https://www.coindesk.com/markets/2025/08/29/bitcoin-hammered-below-usd109k-as-conference-indicator-strikes-again?utm_source=chatgpt.com "Bitcoin Hammered Below $109K as Conference Indicator Strikes Again"
 
 ---
 

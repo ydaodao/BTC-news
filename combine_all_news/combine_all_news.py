@@ -81,7 +81,7 @@ def compare_news():
         try:
             with open(output_file, "w", encoding="utf-8") as f:
                 f.write(f"# RSS摘要与整合新闻比较分析\n\n")
-                f.write(f"**分析时间**: {os.path.basename(__file__)} 执行时间\n\n")
+                f.write(f"**分析时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
                 f.write(f"## 分析结果\n\n{final_content}\n")
             print(f"\n结果已保存到: {output_file}")
         except Exception as e:
@@ -205,7 +205,3 @@ if __name__ == "__main__":
 
     # 对比整合后的新闻与RSS摘要
     compare_news()
-
-
-
-
