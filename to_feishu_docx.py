@@ -332,7 +332,7 @@ async def write_to_docx(markdown_content=None, week_start_md='1.1', week_end_md=
     # 更新一级标题，并加颜色
     replace_block_text_by_text_and_type(document_id, "各国政策与监管变化", "一、政策与监管", "heading1", 5)
     replace_block_text_by_text_and_type(document_id, "企业与机构的活动", "二、企业与机构", "heading1", 5)
-    replace_block_text_by_text_and_type(document_id, "价格波动与市场风险", "三、市场与风险", "heading1", 5)
+    replace_block_text_by_text_and_type(document_id, "价格波动与市场风险", "三、市场与风险（仅做观察）", "heading1", 5)
     replace_block_text_by_text_and_type(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
 
     if LOCAL_DEV:

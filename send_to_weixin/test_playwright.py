@@ -187,6 +187,7 @@ with sync_playwright() as p:
                         page = active_page_and_scroll(context, edit_page_url, scroll_to_bottom=True)
                         if page:
                             scroll_page(page, -100)
+                            sleep(2)
                             # 选择文章封面
                             choose_page_cover()
                             # 选择其他选项并预览

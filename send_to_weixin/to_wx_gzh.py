@@ -556,10 +556,12 @@ def choose_other_options_and_preview():
 if __name__ == "__main__":
     # sleep(3)
     # 从您提到的两种配置计算scale
-    scale_value = calculate_icon_scale(
-        (2240, 1400), 1.5,    # 电脑1: 2240×1400 150%
-        (3840, 2160), 2.25    # 电脑2: 3840×2160 225%
-    )
+    # scale_value = calculate_icon_scale(
+    #     (2240, 1400), 1.5,    # 电脑1: 2240×1400 150%
+    #     (3840, 2160), 2.25    # 电脑2: 3840×2160 225%
+    # )
     print(f"需要的scale值: {scale_value:.2f}")
+
+
     
 
