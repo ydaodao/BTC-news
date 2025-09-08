@@ -410,7 +410,7 @@ async def main(mode="all"):
     daily_end_md = now.strftime('%m.%d')
 
     # 为摘要生成设置7天的时间范围
-    week_day_ago = now - timedelta(days=7)
+    week_day_ago = now - timedelta(days=14)
     week_start_date = week_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     week_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     week_start_md = f"{week_day_ago.month}.{week_day_ago.day}"

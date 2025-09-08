@@ -37,6 +37,44 @@ def windows_api_click(x, y):
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
+def calculate_icon_scale(pc1_resolution, pc1_scale, pc2_resolution, pc2_scale):
+    """
+    计算图标在不同电脑配置下的scale值（考虑宽高比例限制）
+    
+    Args:
+        pc1_resolution (tuple): 电脑1的分辨率 (width, height)
+        pc1_scale (float): 电脑1的系统缩放比例 (如 1.5 表示 150%)
+        pc2_resolution (tuple): 电脑2的分辨率 (width, height) 
+        pc2_scale (float): 电脑2的系统缩放比例 (如 2.25 表示 225%)
+    
+    Returns:
+        float: 需要的scale值
+    
+    Examples:
+        # 电脑1: 2240×1400 150%缩放 -> 电脑2: 3840×2160 225%缩放
+        scale = calculate_icon_scale((2240, 1400), 1.5, (3840, 2160), 2.25)
+        
+        # 电脑1: 2240×1400 150%缩放 -> 电脑2: 3840×100000000 225%缩放（极端宽高比）
+        scale = calculate_icon_scale((2240, 1400), 1.5, (3840, 100000000), 2.25)
+    """
+    # 计算电脑1的有效分辨率（考虑系统缩放）
+    pc1_effective_width = pc1_resolution[0] / pc1_scale
+    pc1_effective_height = pc1_resolution[1] / pc1_scale
+    
+    # 计算电脑2的有效分辨率（考虑系统缩放）
+    pc2_effective_width = pc2_resolution[0] / pc2_scale
+    pc2_effective_height = pc2_resolution[1] / pc2_scale
+    
+    # 计算宽度和高度的缩放比例
+    width_scale = pc2_effective_width / pc1_effective_width
+    height_scale = pc2_effective_height / pc1_effective_height
+    
+    # 对于方形图标，取较小的缩放值以避免变形
+    # 这样可以确保图标在两个方向上都能完整显示
+    scale_ratio = min(width_scale, height_scale)
+    
+    return scale_ratio
+
 def find_icon_multi_scale(image_name, position='center', scales=[0.25, 0.5, 0.75, 1.0, 1.25, 1.5]):
     """多尺度模板匹配查找图标
     
@@ -442,7 +480,7 @@ def send_text_to_window(text):
         print(f"发送文本时出错: {e}")
         return False
 
-# ----------------
+# ---------------- 微信公众号操作 ---------------- 
 
 def push_feishu_docs_2_wxgzh():
     # 通过壹伴推送到公众号
@@ -516,21 +554,12 @@ def choose_other_options_and_preview():
                 print("发送了预览")
 
 if __name__ == "__main__":
-    sleep(3)
-    # print("获得页面链接，并切换到文章编辑页面")
-    # print("滚动到封面选择位置")
-    # choose_page_cover()
-    # choose_other_options_and_preview()
-    # open_edit_page_and_get_url()
-
-        ## 我在手机上预览
-
-        ## 接下来是高级动作
-            # 我在手机上给，pushplus 发送消息
-            # pushplus告诉我可以正式发送
-
-        ## 这些可以搞，但不着急
-        # 操作可以发布，并把二维码发到我手机上
-        # 我来扫码授权
-        # pushplus告诉我授权成功
+    # sleep(3)
+    # 从您提到的两种配置计算scale
+    scale_value = calculate_icon_scale(
+        (2240, 1400), 1.5,    # 电脑1: 2240×1400 150%
+        (3840, 2160), 2.25    # 电脑2: 3840×2160 225%
+    )
+    print(f"需要的scale值: {scale_value:.2f}")
+    
 
