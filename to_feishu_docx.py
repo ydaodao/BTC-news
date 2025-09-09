@@ -16,7 +16,8 @@ load_dotenv()
 FEISHU_APP_ID = os.getenv('FEISHU_APP_ID')
 FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
-FEISHU_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
+FEISHU_WEEKLY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
+FEISHU_DAILY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-日报
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -271,18 +272,36 @@ def copy_feishu_document(title, app_id, app_secret, folder_token, original_docum
     lark.logger.info(f"Document copied successfully, document_id: {document_id}")
     return document_id
 
-async def write_to_docx(markdown_content=None, week_start_md='1.1', week_end_md='1.7'):
+async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
+    # 使用环境变量替代硬编码
+    app_id = FEISHU_APP_ID
+    app_secret = FEISHU_APP_SECRET
+    folder_token = FEISHU_DAILY_FOLDER
+
+    # 创建飞书文档
+    document_id = create_feishu_document(title, app_id, app_secret, folder_token)
+    if not document_id:
+        lark.logger.error("Failed to create Feishu document")
+        return
+    
+    # 去除内容中多余的部分
+    # 生成头图，替换标题图片
+    # 自动发起公众号
+
+
+
+async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_md='1.7'):
     """
     写入文档到飞书文档库
     """
     from llm_doubao import generate_title_and_summary_and_content
-    title, summary= generate_title_and_summary_and_content(markdown_content, LOCAL_DEV=LOCAL_DEV)
+    title, summary= generate_title_and_summary_and_content(news_content, LOCAL_DEV=LOCAL_DEV)
     title = f"加密货币周报（{week_start_md}-{week_end_md}）：{title}"
 
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
     app_secret = FEISHU_APP_SECRET
-    folder_token = FEISHU_FOLDER
+    folder_token = FEISHU_WEEKLY_FOLDER
     original_document_id = "FIqsdVXJfozn3ixLAfycCG8xnUc"
     
     # # 创建飞书文档
@@ -300,7 +319,7 @@ async def write_to_docx(markdown_content=None, week_start_md='1.1', week_end_md=
     replace_block_text_by_text_and_type(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
     
     # 预处理markdown内容
-    processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{markdown_content}")
+    processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{news_content}")
     
     # 调用convert接口将markdown转换为文档块
     try:
@@ -352,8 +371,8 @@ if __name__ == "__main__":
     except Exception as e:
         lark.logger.error(f"Failed to read markdown file: {e}")
     
-    FEISHU_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
+    FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
 
     # 修复异步函数调用
     import asyncio
-    asyncio.run(write_to_docx(markdown_content))
+    asyncio.run(write_to_weekly_docx(markdown_content))

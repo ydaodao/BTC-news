@@ -260,7 +260,7 @@ async def fetch_news_content(start_date: str, end_date: str):
     
     return True
 
-async def push_interactive_to_feishu(content=None, daily_end_md=None):
+async def push_interactive_to_feishu(content=None, title=None, summary=None, daily_end_md=None):
     """
     直接推送内容到飞书机器人（不依赖pushplus）
     """
@@ -269,8 +269,7 @@ async def push_interactive_to_feishu(content=None, daily_end_md=None):
         print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
         return
     
-    # 从内容中提取标题和主体内容
-    title, summary= generate_title_and_summary_and_content(content)
+    
     # 对内容进行JSON转义处理
     import json as json_module
     title_escaped = json_module.dumps(f"加密日报({daily_end_md})：{title}")[1:-1]  # 去掉首尾引号
@@ -416,7 +415,7 @@ async def main(mode="all"):
     week_start_md = f"{week_day_ago.month}.{week_day_ago.day}"
     week_end_md = f"{now.month}.{now.day}"
     
-    summary = None
+    news_content = None
 
     if mode in ["rss", "all"]:
         print("\n=== 执行RSS抓取任务 ===")
@@ -427,19 +426,26 @@ async def main(mode="all"):
 
     if mode in ["summary_push", "all"]:
         print("\n=== 执行摘要生成和推送任务 ===")
-        # 1. 生成摘要
-        summary = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
-        # 2. 推送消息（自动根据环境变量选择推送到微信或飞书）
+        # 1. 生成文章内容
+        news_content = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
+        # 2. 生成标题摘要
+        # 从内容中提取标题和主体内容
+        title, summary= generate_title_and_summary_and_content(news_content)
+        # 3. 推送消息（自动根据环境变量选择推送到微信或飞书）
         # await push_to_wechat(summary)
-        await push_interactive_to_feishu(summary, daily_end_md)
+        await push_interactive_to_feishu(news_content, title, summary, daily_end_md)
+        # 4. 生成飞书文档
+        from to_feishu_docx import write_to_daily_docx
+        await write_to_daily_docx(news_content, title, summary, daily_end_md)
+
     
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")
         # 1. 生成摘要（使用分块处理版本）
-        summary = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
+        news_content = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 延迟导入，避免循环依赖
-        from to_feishu_docx import write_to_docx
-        await write_to_docx(summary, week_start_md, week_end_md)
+        from to_feishu_docx import write_to_weekly_docx
+        await write_to_weekly_docx(news_content, week_start_md, week_end_md)
         
 # --- 主程序入口 ---
 if __name__ == "__main__":

@@ -8,6 +8,8 @@ from time import sleep
 import ctypes
 from ctypes import wintypes
 
+PYAUTOGUI_SCALES = [1, 0.6666666666666666, 1.5]
+
 def windows_api_click(x, y):
     """使用Windows API发送鼠标点击事件"""
     try:
@@ -37,45 +39,12 @@ def windows_api_click(x, y):
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-def calculate_icon_scale(pc1_resolution, pc1_scale, pc2_resolution, pc2_scale):
-    """
-    计算图标在不同电脑配置下的scale值（考虑宽高比例限制）
-    
-    Args:
-        pc1_resolution (tuple): 电脑1的分辨率 (width, height)
-        pc1_scale (float): 电脑1的系统缩放比例 (如 1.5 表示 150%)
-        pc2_resolution (tuple): 电脑2的分辨率 (width, height) 
-        pc2_scale (float): 电脑2的系统缩放比例 (如 2.25 表示 225%)
-    
-    Returns:
-        float: 需要的scale值
-    
-    Examples:
-        # 电脑1: 2240×1400 150%缩放 -> 电脑2: 3840×2160 225%缩放
-        scale = calculate_icon_scale((2240, 1400), 1.5, (3840, 2160), 2.25)
-        
-        # 电脑1: 2240×1400 150%缩放 -> 电脑2: 3840×100000000 225%缩放（极端宽高比）
-        scale = calculate_icon_scale((2240, 1400), 1.5, (3840, 100000000), 2.25)
-    """
-    # 计算电脑1的有效分辨率（考虑系统缩放）
-    pc1_effective_width = pc1_resolution[0] / pc1_scale
-    pc1_effective_height = pc1_resolution[1] / pc1_scale
-    
-    # 计算电脑2的有效分辨率（考虑系统缩放）
-    pc2_effective_width = pc2_resolution[0] / pc2_scale
-    pc2_effective_height = pc2_resolution[1] / pc2_scale
-    
-    # 计算宽度和高度的缩放比例
-    width_scale = pc2_effective_width / pc1_effective_width
-    height_scale = pc2_effective_height / pc1_effective_height
-    
-    # 对于方形图标，取较小的缩放值以避免变形
-    # 这样可以确保图标在两个方向上都能完整显示
-    scale_ratio = min(width_scale, height_scale)
-    
-    return scale_ratio
+# 动态计算适合的scales列表
+def get_adaptive_scales(original_scale, target_scale):
+    base_ratio = target_scale / original_scale
+    return base_ratio
 
-def find_icon_multi_scale(image_name, position='center', scales=[0.25, 0.5, 0.75, 1.0, 1.25, 1.5]):
+def find_icon_multi_scale(image_name, position='center', scales=PYAUTOGUI_SCALES):
     """多尺度模板匹配查找图标
     
     Args:
@@ -560,7 +529,9 @@ if __name__ == "__main__":
     #     (2240, 1400), 1.5,    # 电脑1: 2240×1400 150%
     #     (3840, 2160), 2.25    # 电脑2: 3840×2160 225%
     # )
-    print(f"需要的scale值: {scale_value:.2f}")
+    # print(f"需要的scale值: {scale_value:.2f}")
+
+    click_icon_with_prefix("test")
 
 
     
