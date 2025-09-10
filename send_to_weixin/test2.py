@@ -14,7 +14,7 @@ with sync_playwright() as p:
     while True:
         if refresh_page(context, "公众号"):
             if hover_icon_with_prefix("wx_content_management", 3):
-                sleep(60*60*6)
+                time.sleep(60*60*6)
             else:
                 # 计算运行时间
                 elapsed_time = time.time() - start_time
