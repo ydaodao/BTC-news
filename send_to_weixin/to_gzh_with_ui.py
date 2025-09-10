@@ -8,7 +8,10 @@ from time import sleep
 import ctypes
 from ctypes import wintypes
 
-PYAUTOGUI_SCALES = [1, 0.6666666666666666, 0.8, 1.5]
+# 0.83 = 1.2 / 1.5
+# 0.66 = 1 / 1.5    阿里云/本地1.5
+# 1.5 = 2.25 / 1.5  本地大屏/本地1.5
+PYAUTOGUI_SCALES = [1, 0.8333333333333333, 0.6666666666666666, 0.8, 1.5]
 
 def windows_api_click(x, y):
     """使用Windows API发送鼠标点击事件"""

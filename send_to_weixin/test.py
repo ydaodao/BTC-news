@@ -27,10 +27,21 @@ def test_screenshot():
 if __name__ == "__main__":
     # 等待几秒让服务启动
 
+    start_time = time.time()
+    print(f"程序开始时间：{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
+
     while True:
         success = test_screenshot()
-        if not success:
-            print("截图测试失败！")
-        time.sleep(600)
+        if success:
+            time.sleep(600)
+        else:
+            # 计算运行时间
+            elapsed_time = time.time() - start_time
+            hours = int(elapsed_time // 3600)
+            minutes = int((elapsed_time % 3600) // 60)
+            seconds = int(elapsed_time % 60)
+            print(f"截图测试失败！程序运行了：{hours}小时{minutes}分钟{seconds}秒")
+            break
+        
     
     

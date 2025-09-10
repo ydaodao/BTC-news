@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from time import sleep
 import pyperclip
-from to_wx_gzh import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix
+from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix
 
 def list_all_tabs(context):
     """列出所有打开的tab页"""
@@ -163,32 +163,33 @@ def scroll_page(page, scroll_height):
         print(f"滚动页面时出错: {e}")
         return False
 
-# 主程序
-with sync_playwright() as p:
-    browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-    context = browser.contexts[0]
+if __name__ == "__main__":
+    # 主程序
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+        context = browser.contexts[0]
 
-    #刷新飞书文档
-    target_page_title = pyperclip.paste().strip()
-    if target_page_title.startswith('加密货币'):
-        if refresh_page(context, target_page_title):
-            sleep(0.1)
-            if push_feishu_docs_2_wxgzh():
-                # 切换到已登录的公众号页面，并重置到首页
-                page = switch_to_page_and_change_url(context, "公众号", "https://mp.weixin.qq.com/")
-                # 打开文章编辑页面并获取URL
-                edit_page_url = open_edit_page_and_get_url(page)
-                page.title() # 更新context，并取消页面加载的阻塞
+        #刷新飞书文档
+        target_page_title = pyperclip.paste().strip()
+        if target_page_title.startswith('加密货币'):
+            if refresh_page(context, target_page_title):
+                sleep(0.1)
+                if push_feishu_docs_2_wxgzh():
+                    # 切换到已登录的公众号页面，并重置到首页
+                    page = switch_to_page_and_change_url(context, "公众号", "https://mp.weixin.qq.com/")
+                    # 打开文章编辑页面并获取URL
+                    edit_page_url = open_edit_page_and_get_url(page)
+                    page.title() # 更新context，并取消页面加载的阻塞
 
-                # 等待新打开的页面加载完成
-                if wait_icon_dismiss_with_prefix("chrome_page_loading", 10):
-                    if edit_page_url:
-                        # 聚焦到文章编辑页面的底部
-                        page = active_page_and_scroll(context, edit_page_url, scroll_to_bottom=True)
-                        if page:
-                            scroll_page(page, -100)
-                            sleep(2)
-                            # 选择文章封面
-                            choose_page_cover()
-                            # 选择其他选项并预览
-                            choose_other_options_and_preview()
+                    # 等待新打开的页面加载完成
+                    if wait_icon_dismiss_with_prefix("chrome_page_loading", 10):
+                        if edit_page_url:
+                            # 聚焦到文章编辑页面的底部
+                            page = active_page_and_scroll(context, edit_page_url, scroll_to_bottom=True)
+                            if page:
+                                scroll_page(page, -100)
+                                sleep(2)
+                                # 选择文章封面
+                                choose_page_cover()
+                                # 选择其他选项并预览
+                                choose_other_options_and_preview()
