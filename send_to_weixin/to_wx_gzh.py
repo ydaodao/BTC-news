@@ -531,6 +531,8 @@ if __name__ == "__main__":
     # )
     # print(f"需要的scale值: {scale_value:.2f}")
 
+    sleep(10)
+
     click_icon_with_prefix("test")
 
 
