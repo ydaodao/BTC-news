@@ -268,15 +268,23 @@ async def push_interactive_to_feishu(content=None, title=None, summary=None, dai
     if not webhook_url:
         print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
         return
-    
+    if not title:
+        print("错误：标题不能为空")
+        return
+    if not content:
+        print("错误：内容不能为空")
+        return
     
     # 对内容进行JSON转义处理
     import json as json_module
     title_escaped = json_module.dumps(f"加密日报({daily_end_md})：{title}")[1:-1]  # 去掉首尾引号
     message_content_escaped = json_module.dumps(content)[1:-1]  # 去掉首尾引号
 
-    if not title_escaped or not message_content_escaped:
-        print("错误：提取标题或内容失败")
+    if not title_escaped:
+        print("错误：提取标题失败")
+        return
+    if not message_content_escaped:
+        print("错误：提取内容失败")
         return
 
     print("开始直接推送消息到飞书机器人...")
@@ -403,7 +411,7 @@ async def main(mode="all"):
     end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     
     # 为摘要生成设置2天的时间范围
-    one_day_ago = now - timedelta(days=2)
+    one_day_ago = now - timedelta(days=1)
     daily_start_date = one_day_ago.strftime('%Y-%m-%d %H:%M:%S')
     daily_end_date = now.strftime('%Y-%m-%d %H:%M:%S')
     daily_end_md = now.strftime('%m.%d')
@@ -431,13 +439,15 @@ async def main(mode="all"):
         # 2. 生成标题摘要
         # 从内容中提取标题和主体内容
         title, summary= generate_title_and_summary_and_content(news_content)
-        # 3. 推送消息（自动根据环境变量选择推送到微信或飞书）
-        # await push_to_wechat(summary)
-        await push_interactive_to_feishu(news_content, title, summary, daily_end_md)
-        # 4. 生成飞书文档
-        from to_feishu_docx import write_to_daily_docx
-        await write_to_daily_docx(news_content, title, summary, daily_end_md)
-
+        if title:
+            # 3. 推送消息（自动根据环境变量选择推送到微信或飞书）
+            # await push_to_wechat(summary)
+            await push_interactive_to_feishu(news_content, title, summary, daily_end_md)
+            # 4. 生成飞书文档
+            from to_feishu_docx import write_to_daily_docx
+            await write_to_daily_docx(news_content, title, summary, daily_end_md)
+        else:
+            print("标题为空，不生成文档")
     
     if mode in ["summary_write", "all"]:
         print("\n=== 执行摘要写入文档任务 ===")

@@ -26,7 +26,8 @@ def test_screenshot():
 
 if __name__ == "__main__":
     # 等待几秒让服务启动
-
+    time.sleep(3)
+    
     start_time = time.time()
     print(f"程序开始时间：{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
 

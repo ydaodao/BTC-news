@@ -4,11 +4,13 @@ import requests
 import webbrowser
 from dotenv import load_dotenv
 from to_feishu_robot import push_richtext_to_feishu
+from utils.image_utils import save_text_image, merge_images
+from utils.feishu_utils import FeishuDocumentAPI
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
-from utils.feishu_utils import extract_block_content_by_type, replace_block_text_by_text_and_type
+from utils.feishu_utils import extract_block_content_by_type, replace_textblock_by_blocktype
 
 # 加载环境变量
 load_dotenv()
@@ -17,7 +19,7 @@ FEISHU_APP_ID = os.getenv('FEISHU_APP_ID')
 FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 FEISHU_WEEKLY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
-FEISHU_DAILY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-日报
+FEISHU_DAILY_FOLDER = 'MdSNf0W47lGdIidseGUceatlnsb' # BTC-日报
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -44,7 +46,6 @@ def get_tenant_access_token(app_id, app_secret):
         raise Exception(f"Failed to get tenant_access_token: {result.get('msg')}")
     
     return result['tenant_access_token']
-
 
 def convert_markdown_to_blocks(app_id, app_secret, markdown_content):
     """将 Markdown 内容转换为飞书文档块"""
@@ -94,7 +95,6 @@ def convert_markdown_to_blocks(app_id, app_secret, markdown_content):
             print(f"Failed to save blocks data: {e}")
     
     return ordered_blocks
-
 
 def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
     tenant_access_token = get_tenant_access_token(app_id, app_secret)
@@ -272,22 +272,243 @@ def copy_feishu_document(title, app_id, app_secret, folder_token, original_docum
     lark.logger.info(f"Document copied successfully, document_id: {document_id}")
     return document_id
 
+def clean_markdown_content_for_daily_docs(markdown_content):
+    """
+    检查markdown_content内容格式是否符合要求，并进行清理
+    
+    要求格式：
+    ### 一、聚类标题
+    **总结**：
+    1. 
+    2. 
+    **参考**：
+    - [原始新闻标题](url)
+    - [原始新闻标题](url)
+    ---
+    
+    清理规则：
+    1. 去掉所有的 **参考**： 及其下面的链接内容
+    2. 去掉 **总结**： 标题，但保留总结下的内容
+    """
+    import re
+    
+    # 按行分割内容
+    lines = markdown_content.split('\n')
+    cleaned_lines = []
+    skip_references = False
+    
+    for line in lines:
+        # 检查是否遇到参考部分
+        if line.strip() == '**参考**：' or line.strip() == '**参考**:':
+            skip_references = True
+            continue
+        
+        # 检查是否遇到分隔符，结束参考部分跳过
+        if line.strip() == '---':
+            skip_references = False
+            # cleaned_lines.append(line)
+            continue
+        
+        # 检查是否遇到新的聚类标题，结束参考部分跳过
+        if line.strip().startswith('###'):
+            skip_references = False
+            cleaned_lines.append(line)
+            continue
+        
+        # 跳过参考部分的内容
+        if skip_references:
+            continue
+        
+        # 去掉 **总结**： 标题，但保留后面的内容
+        if line.strip() == '**总结**：' or line.strip() == '**总结**:':
+            continue
+        
+        # 保留其他内容
+        cleaned_lines.append(line)
+    
+    cleaned_content = '\n'.join(cleaned_lines)
+    
+    # 保存响应内容到文件
+    latest_summary_cleaned = os.path.join(os.path.dirname(__file__), "latest_summary_cleaned.md")
+    try:
+        with open(latest_summary_cleaned, "w", encoding="utf-8") as f:
+            f.write(cleaned_content)
+        print(f"清理后摘要已保存到: {latest_summary_cleaned}")
+    except Exception as e:
+        print(f"保存清理后摘要失败: {e}")
+    
+    return cleaned_content
+
+def format_string_with_line_breaks(text, max_chars=13, min_chars=5):
+    """
+    按照指定规则格式化字符串换行
+    
+    Args:
+        text: 输入字符串
+        max_chars: 每行最大字符数，默认10
+        min_chars: 最小字符数，小于此数需要整合，默认5
+    
+    Returns:
+        格式化后的字符串
+    """
+    # 首先按逗号分隔
+    import re
+    
+    # 分割字符串，保留分隔符
+    parts = re.split(r'([，,])', text)
+    
+    lines = []
+    current_line = ""
+    
+    i = 0
+    while i < len(parts):
+        part = parts[i]
+        
+        # 如果是逗号分隔符，添加到当前行
+        if part in ['，', ',']:
+            current_line += part
+            i += 1
+            continue
+            
+        # 检查添加当前部分后是否超过最大字符数
+        if len(current_line + part) <= max_chars:
+            current_line += part
+        else:
+            # 如果当前行不为空，先保存当前行
+            if current_line:
+                lines.append(current_line)
+                current_line = ""
+            
+            # 处理当前部分
+            while len(part) > max_chars:
+                # 强制在第10个字后换行
+                lines.append(part[:max_chars])
+                part = part[max_chars:]
+            
+            current_line = part
+        
+        i += 1
+    
+    # 添加最后一行
+    if current_line:
+        lines.append(current_line)
+    
+    # 处理短行整合 - 修复递归问题
+    # final_lines = []
+    # i = 0
+    
+    # while i < len(lines):
+    #     current = lines[i]
+        
+    #     # 如果当前行字数小于最小字符数，尝试与下一行整合
+    #     if len(current) < min_chars and i + 1 < len(lines):
+    #         next_line = lines[i + 1]
+            
+    #         # 添加逗号连接
+    #         if not current.endswith(('，', ',')):
+    #             current += '，'
+            
+    #         combined = current + next_line
+            
+    #         # 如果整合后不超过最大字符数，则整合
+    #         if len(combined) <= max_chars:
+    #             final_lines.append(combined)
+    #             i += 2  # 跳过下一行
+    #         else:
+    #             # 如果整合后超过最大字符数，直接强制分割，避免递归
+    #             # 将combined按max_chars强制分割
+    #             while len(combined) > max_chars:
+    #                 final_lines.append(combined[:max_chars])
+    #                 combined = combined[max_chars:]
+                
+    #             # 添加剩余部分
+    #             if combined:
+    #                 final_lines.append(combined)
+                
+    #             i += 2
+    #     else:
+    #         final_lines.append(current)
+    #         i += 1
+    
+    return '\n'.join(lines)
+
 async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
     app_secret = FEISHU_APP_SECRET
     folder_token = FEISHU_DAILY_FOLDER
 
-    # 创建飞书文档
-    document_id = create_feishu_document(title, app_id, app_secret, folder_token)
-    if not document_id:
-        lark.logger.error("Failed to create Feishu document")
-        return
+    final_title = f"加密日报({date_md})：{title}"
+    final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
     
     # 去除内容中多余的部分
-    # 生成头图，替换标题图片
-    # 自动发起公众号
+    cleaned_content = clean_markdown_content_for_daily_docs(news_content)
 
+    # 生成头图，替换标题图片
+    header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
+    header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
+    header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
+    save_text_image(
+        text=final_title_for_imageheader,
+        output_path=header_text_image_path,
+        width=1050,
+        height=400,
+        line_spacing=40,
+        support_markdown=True,
+        font_size=70,
+        # font_color=(0, 0, 0),  # 黑色
+        font_color=(255, 255, 255),  # 白色
+        text_align='left',
+        vertical_align='center'
+    )
+
+    # 合并图片
+    image_configs = [
+        {'path': header_bg_image_path, 'position': 'center'},
+        {'path': header_text_image_path, 'position': 'center-right'}
+    ]
+    if merge_images(image_configs, output_path=header_image_path):
+        # 新建日报飞书文档
+        document_id = create_feishu_document(final_title, app_id, app_secret, folder_token)
+        if document_id:
+            try:
+                api = FeishuDocumentAPI()
+                image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
+                print(f"上传成功！图片文件token: {image_block_id}")
+            except Exception as e:
+                print(f"上传失败: {e}")
+        
+        # 调用convert接口将markdown转换为文档块
+        try:
+            ordered_blocks = convert_markdown_to_blocks(app_id, app_secret, cleaned_content)
+            lark.logger.info(f"Markdown converted successfully, got {len(ordered_blocks)} blocks")
+        except Exception as e:
+            lark.logger.error(f"Failed to convert markdown: {e}")
+            return
+        
+        # 插入文档块到文档中（分批处理，每次最多5个块）
+        batch_size = 10
+        
+        for i in range(0, len(ordered_blocks), batch_size):
+            batch_blocks = ordered_blocks[i:i + batch_size]
+            
+            try:
+                result = insert_blocks_to_document(document_id, batch_blocks, app_id, app_secret)
+                lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(batch_blocks)} blocks)")
+            except Exception as e:
+                lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
+                return
+        
+        docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
+        print(docs_url)
+        if LOCAL_DEV:
+            # 在浏览器打开链接
+            webbrowser.open(docs_url)
+    
+    # 发送机器人预览内容：主体消息、推送到微信公众号用，超链接（指向阿里云）
+    # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
+    # 我打开后预览消息，并可以发起正式推送
+    # 正式推送发起后，把二维截图给我，并附带再次请求二维码的链接（打开后就是二维码）
 
 
 async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_md='1.7'):
@@ -315,8 +536,8 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
         lark.logger.error("Failed to copy Feishu document")
         return
     
-    # 替换辅助内容
-    replace_block_text_by_text_and_type(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
+    # 替换辅助内容（方便手动拉取OpenAI的信息）
+    replace_textblock_by_blocktype(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
     
     # 预处理markdown内容
     processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{news_content}")
@@ -349,10 +570,10 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     lark.logger.info(f"Document URL: {docs_url}")
 
     # 更新一级标题，并加颜色
-    replace_block_text_by_text_and_type(document_id, "各国政策与监管变化", "一、政策与监管", "heading1", 5)
-    replace_block_text_by_text_and_type(document_id, "企业与机构的活动", "二、企业与机构", "heading1", 5)
-    replace_block_text_by_text_and_type(document_id, "价格波动与市场风险", "三、市场与风险（仅做观察）", "heading1", 5)
-    replace_block_text_by_text_and_type(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
+    replace_textblock_by_blocktype(document_id, "各国政策与监管变化", "一、政策与监管", "heading1", 5)
+    replace_textblock_by_blocktype(document_id, "企业与机构的活动", "二、企业与机构", "heading1", 5)
+    replace_textblock_by_blocktype(document_id, "价格波动与市场风险", "三、市场与风险（仅做观察）", "heading1", 5)
+    replace_textblock_by_blocktype(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
 
     if LOCAL_DEV:
         # 在浏览器打开链接
@@ -360,6 +581,9 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
 
 
 if __name__ == "__main__":
+
+    # ### 测试生成周报：读取本地文件并保存到飞书文档中
+
     # 读取markdown文件内容
     markdown_content = ''
     # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
@@ -371,8 +595,24 @@ if __name__ == "__main__":
     except Exception as e:
         lark.logger.error(f"Failed to read markdown file: {e}")
     
-    FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
-
-    # 修复异步函数调用
     import asyncio
-    asyncio.run(write_to_weekly_docx(markdown_content))
+    # 修复异步函数调用
+    # FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
+    # asyncio.run(write_to_weekly_docx(markdown_content))
+
+    asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
+
+    # ### 测试生成周报：从OpenAI获取内容并保存到飞书文档中
+
+
+    # 1. 测试标题分隔
+    # test_string = "机构增持与矿工抛售并存，AI支付生态初现AI支付生态，AI，AI测试，AI"
+    # result = format_string_with_line_breaks(test_string)
+    # print("原字符串:", test_string)
+    # print("格式化结果:")
+    # print(result)
+    # print("\n每行字符数:")
+    # for i, line in enumerate(result.split('\n'), 1):
+    #     print(f"第{i}行: {len(line)}字 - {line}")
+
+    # print()

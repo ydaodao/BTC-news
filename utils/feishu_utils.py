@@ -182,7 +182,145 @@ class FeishuDocumentAPI:
         self.access_token = result['tenant_access_token']
         return self.access_token
     
-    def get_all_block_ids(self, document_id, page_size=500):
+    def _upload_image_to_document(self, image_block_id, image_path):
+        """
+        上传图片到指定的飞书文档中
+        
+        Args:
+            document_id (str): 目标文档ID
+            image_path (str): 本地图片文件路径
+            
+        Returns:
+            dict: 包含上传结果的字典，包含file_token和block_id等信息
+            
+        Raises:
+            Exception: 当上传失败时抛出异常
+        """
+        import mimetypes
+        from requests_toolbelt import MultipartEncoder
+        
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"图片文件不存在: {image_path}")
+        
+        # 获取文件信息
+        file_name = os.path.basename(image_path)
+        file_size = os.path.getsize(image_path)
+        mime_type, _ = mimetypes.guess_type(image_path)
+        
+        if not mime_type or not mime_type.startswith('image/'):
+            raise ValueError(f"文件不是有效的图片格式: {image_path}")
+        
+        access_token = self.get_tenant_access_token()
+        
+        # 第一步：使用MultipartEncoder上传图片文件到飞书云盘
+        upload_url = f"{self.base_url}/drive/v1/medias/upload_all"
+        
+        # 按照官方文档示例使用MultipartEncoder
+        form = {
+            'file_name': file_name,
+            'parent_type': 'docx_image',  # 新版文档图片
+            'parent_node': image_block_id,   # 文档token
+            'size': str(file_size),
+            'file': (open(image_path, 'rb'))
+        }
+        
+        multi_form = MultipartEncoder(form)
+        headers = {
+            'Authorization': f'Bearer {access_token}'
+        }
+        headers['Content-Type'] = multi_form.content_type
+        
+        response = requests.post(upload_url, headers=headers, data=multi_form)
+        result = response.json()
+        
+        if result.get('code') != 0:
+            raise Exception(f"上传图片到块失败: {result.get('msg')} - {result}")
+        
+        file_token = result.get('data', {}).get('file_token')
+        if not file_token:
+            raise Exception("上传成功但未获取到file_token")
+        
+        print(f"图片上传到块成功，file_token: {file_token}")
+        
+        return file_token
+    
+    def insert_image_block_to_document(self, document_id, image_path, insert_position=-1, parent_block_id=None):
+        """
+        将图片插入到文档中作为图片块（按照飞书官方三步流程）
+        
+        Args:
+            document_id (str): 目标文档ID
+            file_token (str): 图片文件token
+            insert_position (int): 插入位置，默认为0（开头）
+            parent_block_id (str): 父块ID，如果为None则使用document_id作为父块
+            
+        Returns:
+            str: 插入的图片块的block_id
+            
+        Raises:
+            Exception: 当插入失败时抛出异常
+        """
+        access_token = self.get_tenant_access_token()
+        
+        # 如果没有指定父块ID，使用文档ID作为父块
+        if parent_block_id is None:
+            parent_block_id = document_id
+        
+        # 第一步：创建空的图片块
+        create_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{parent_block_id}/children"
+        
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        
+        # 创建空的图片块数据
+        create_block_data = {
+            "index": insert_position,
+            "children": [
+                {
+                    "block_type": 27,  # 图片块类型
+                    "image": {}  # 空的图片对象
+                }
+            ]
+        }
+        
+        response = requests.post(create_url, headers=headers, json=create_block_data)
+        result = response.json()
+        
+        if result.get('code') != 0:
+            raise Exception(f"创建图片块失败: {result.get('msg')} - {result}")
+        
+        # 获取创建的图片块ID
+        children = result.get('data', {}).get('children', [])
+        if not children:
+            raise Exception("创建图片块成功但未获取到block_id")
+        
+        image_block_id = children[0].get('block_id')
+        print(f"图片块创建成功，block_id: {image_block_id}")
+
+        # 第二步：上传图片
+        image_file_token = self._upload_image_to_document(image_block_id, image_path)
+        
+        # 第三步：更新图片块设置素材
+        update_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{image_block_id}"
+        
+        update_data = {
+            "replace_image": {
+                "token": image_file_token
+            }
+        }
+        
+        update_response = requests.patch(update_url, headers=headers, json=update_data)
+        update_result = update_response.json()
+        
+        if update_result.get('code') != 0:
+            raise Exception(f"设置图片块素材失败: {update_result.get('msg')} - {update_result}")
+        
+        print(f"图片插入完成，block_id: {image_block_id}")
+        return image_block_id
+    
+    def get_all_block_ids(self, document_id, filter_block_type=None, page_size=500):
         """获取文档的所有 block_id
         
         Args:
@@ -219,7 +357,13 @@ class FeishuDocumentAPI:
             # 提取当前页的所有block_id
             blocks = result.get('data', {}).get('items', [])
             for block in blocks:
-                all_block_ids.append(block.get('block_id'))
+                block_id = block.get('block_id')
+                if filter_block_type:
+                    block_type = block.get('block_type')
+                    if block_type == filter_block_type:
+                        all_block_ids.append(block_id)
+                else:
+                    all_block_ids.append(block_id)
             
             # 检查是否还有下一页
             page_token = result.get('data', {}).get('page_token')
@@ -373,13 +517,14 @@ class FeishuDocumentAPI:
             raise Exception(f"替换块内容失败: {error_msg}, 详细信息: {error_details}")
         
         return True
-
+    
+    
 
 # 便捷函数，使用环境变量中的配置
-def get_document_blocks(document_id, page_size=500):
+def get_document_blocks(document_id, filter_block_type=None, page_size=500):
     """获取文档的所有 block_id（便捷函数）"""
     api = FeishuDocumentAPI()
-    return api.get_all_block_ids(document_id, page_size)
+    return api.get_all_block_ids(document_id, filter_block_type, page_size)
 
 def find_blocks_by_text(document_id, search_text, page_size=500):
     """根据文本查找 block_id（便捷函数）"""
@@ -391,7 +536,7 @@ def find_blocks_by_text(document_id, search_text, page_size=500):
 #     api = FeishuDocumentAPI()
 #     return api.replace_block_content(document_id, block_id, new_content, block_type_name)
 
-def replace_block_text_by_text_and_type(document_id, search_text, new_content, search_block_type='text', text_color=None):
+def replace_textblock_by_blocktype(document_id, search_text, new_content, search_block_type='text', text_color=None):
     """根据文本查找并替换块内容（便捷函数）"""
     api = FeishuDocumentAPI()
     matched_blocks = api.find_block_id_by_text(document_id, search_text)
@@ -406,15 +551,26 @@ def replace_block_text_by_text_and_type(document_id, search_text, new_content, s
 # 使用示例
 if __name__ == "__main__":
     # 示例用法
-    document_id = "W1dedsLZRoQ3c8xXBsZcl48InYg"
+    document_id = "D4wBdMNVwoMstRxdWiTcZd2XnNf"
     
     try:
         # 1. 获取文档的所有 block_id
-        print("获取文档所有块ID...")
-        all_blocks = get_document_blocks(document_id)
-        print(f"文档共有 {len(all_blocks)} 个块")
+        # print("获取文档所有块ID...")
+        # all_blocks = get_document_blocks(document_id, 27)
+        # print(f"文档共有 {len(all_blocks)} 个块")
 
-        replace_block_text_by_text_and_type(document_id, "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？", "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？哈哈哈哈")
+        # 1. 上传图片
+        document_id = "D4wBdMNVwoMstRxdWiTcZd2XnNf"
+        image_path = "D:\\Study2\\BTC-news\\test\\image_utils\\merged.png"
+
+        try:
+            api = FeishuDocumentAPI()
+            image_file_token = api.insert_image_block_to_document(document_id, image_path)
+            print(f"上传成功！图片文件token: {image_file_token}")
+        except Exception as e:
+            print(f"上传失败: {e}")
+
+        # replace_block_text_by_text_and_type(document_id, "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？", "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？哈哈哈哈")
         
         # # 2. 根据文本查找特定的 block_id
         # print("\n查找包含特定文本的块...")
