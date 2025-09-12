@@ -150,6 +150,10 @@ def open_new_page(context, page_url):
     return page
 
 def active_page(context, target_page_title, target_page_url, refresh=False):
+    if not target_page_title and not target_page_url:
+        print("未提供标题或URL")
+        return None
+
     """激活指定的tab页"""
     matching_tabs, matching_tabs_by_title, matching_tabs_by_url = [], [], []
     # 查找匹配的tab页
@@ -285,7 +289,7 @@ def scroll_page(page, scroll_height):
         print(f"滚动页面时出错: {e}")
         return False
 
-def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
+def send_feishu_docs_to_wxgzh(target_page_title=None, feishu_docs_url=None):
     # 主程序
     with sync_playwright() as p:
         def begin_send(context, feishu_docs_page):
@@ -357,6 +361,6 @@ if __name__ == "__main__":
     target_page_title = "加密货币周报（8.24-9.7）：监管动态与机构持仓双线并进"
 
 
-    preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
+    preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(target_page_title, feishu_docs_url)
     print(preview_page_title)
     print(preview_page_url)

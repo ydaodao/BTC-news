@@ -6,6 +6,7 @@ from datetime import datetime
 import logging
 from functools import wraps
 from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh
+from main import main
 
 # 创建Flask应用
 app = Flask(__name__)
@@ -31,6 +32,26 @@ def index():
                     'success': True
                 }), 200
 
+@app.route('/api/main', methods=['GET'])
+def start_main():
+    try:
+        mode = request.args.get('mode', '', type=str)
+        if mode:
+            main(mode)
+            return jsonify({
+                    'success': True
+                }), 200
+        return jsonify({
+            'success': False,
+            'error': '入参为空'
+        }), 400
+    except Exception as e:
+        logger.error(f"错误: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 # 将飞书文档发送到公众号
 @app.route('/api/send_to_wx_gzh', methods=['POST'])
 def send_to_wx_gzh():
@@ -47,7 +68,7 @@ def send_to_wx_gzh():
         feishu_docx_title = data.get('feishu_docx_title', '')
         if feishu_docx_url and feishu_docx_title:
             # 在当前的浏览器中打开这个链接
-            preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_url, feishu_docx_title)
+            preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_title, feishu_docx_url)
             # preview_page_title, preview_page_url =  '百度', 'https://www.baidu.com/'
             if preview_page_url:
                 data = {
