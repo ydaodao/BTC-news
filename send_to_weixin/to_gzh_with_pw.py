@@ -15,10 +15,10 @@ except ImportError:
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-PAGELOAD_TIMEOUT = 30
+PAGELOAD_TIMEOUT = 30000
 if LOCAL_DEV:
     print("本地开发环境")
-    PAGELOAD_TIMEOUT = 10
+    PAGELOAD_TIMEOUT = 10000
 
 # def init_browser():
 #     """初始化浏览器连接"""
