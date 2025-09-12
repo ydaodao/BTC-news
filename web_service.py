@@ -24,6 +24,13 @@ def not_found(error):
 def internal_error(error):
     return jsonify({'error': 'Internal server error'}), 500
 
+# 主页 - 返回HTML
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({
+                    'success': True
+                }), 200
+
 # 将飞书文档发送到公众号
 @app.route('/api/send_to_wx_gzh', methods=['POST'])
 def send_to_wx_gzh():
