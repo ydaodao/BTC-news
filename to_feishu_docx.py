@@ -20,6 +20,9 @@ FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 FEISHU_WEEKLY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
 FEISHU_DAILY_FOLDER = 'MdSNf0W47lGdIidseGUceatlnsb' # BTC-日报
+ALI_WEBSERVICE_URL = 'http://39.107.72.186:5000'
+if LOCAL_DEV:
+    ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000'
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -504,6 +507,32 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         if LOCAL_DEV:
             # 在浏览器打开链接
             webbrowser.open(docs_url)
+        
+        # 发送请求：将飞书文档推送到公众号
+        try:
+            response = requests.post(
+                url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
+                json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
+                headers={'Content-Type': 'application/json'},
+                timeout=10
+            )
+            response.raise_for_status()
+
+            # 打印详细的响应信息
+            result = response.json()
+            print(f"飞书推送响应: {result}")
+            
+            if result.get('success'):
+                print("推送到公众号成功！")
+                result_data = result.get('data')
+                preview_page_title = result_data.get('preview_page_title')
+                preview_page_url = result_data.get('preview_page_url')
+
+                return docs_url, preview_page_title, preview_page_url
+            else:
+                print(f"推送失败: {result.get('msg', '未知错误')}")
+        except requests.exceptions.RequestException as e:
+            print(f"消息直接推送到飞书失败：{e}")
     
     # 发送机器人预览内容：主体消息、推送到微信公众号用，超链接（指向阿里云）
     # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
@@ -600,7 +629,7 @@ if __name__ == "__main__":
     # FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
     # asyncio.run(write_to_weekly_docx(markdown_content))
 
-    asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
+    # asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
 
     # ### 测试生成周报：从OpenAI获取内容并保存到飞书文档中
 
@@ -614,5 +643,26 @@ if __name__ == "__main__":
     # print("\n每行字符数:")
     # for i, line in enumerate(result.split('\n'), 1):
     #     print(f"第{i}行: {len(line)}字 - {line}")
+
+    # 2. 测试发送service
+    # try:
+    #     response = requests.post(
+    #         url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
+    #         json={"feishu_docx_title": 'final_title', "feishu_docx_url": 'docs_url'},
+    #         headers={'Content-Type': 'application/json'},
+    #         timeout=10
+    #     )
+    #     response.raise_for_status()
+
+    #     # 打印详细的响应信息
+    #     result = response.json()
+    #     print(f"飞书推送响应: {result}")
+        
+    #     if result.get('success'):
+    #         print("消息直接推送到飞书成功！")
+    #     else:
+    #         print(f"推送失败: {result.get('msg', '未知错误')}")
+    # except requests.exceptions.RequestException as e:
+    #     print(f"消息直接推送到飞书失败：{e}")
 
     # print()

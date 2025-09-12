@@ -260,7 +260,7 @@ async def fetch_news_content(start_date: str, end_date: str):
     
     return True
 
-async def push_interactive_to_feishu(content=None, title=None, summary=None, daily_end_md=None):
+async def push_interactive_to_feishu(content=None, title=None, summary=None, daily_end_md=None, docs_url=None, wx_preview_page_url=None):
     """
     直接推送内容到飞书机器人（不依赖pushplus）
     """
@@ -295,7 +295,10 @@ async def push_interactive_to_feishu(content=None, title=None, summary=None, dai
         template_content = f.read()
     
     # 替换模板中的占位符
-    data_str = template_content.replace('{title}', title_escaped).replace('{message_content}', message_content_escaped)
+    data_str = template_content.replace('{title}', title_escaped) \
+                              .replace('{message_content}', message_content_escaped) \
+                              .replace('{docs_url}', docs_url or '') \
+                              .replace('{wx_preview_page_url}', wx_preview_page_url or '')
     data = json.loads(data_str)
     
     try:
@@ -440,12 +443,14 @@ async def main(mode="all"):
         # 从内容中提取标题和主体内容
         title, summary= generate_title_and_summary_and_content(news_content)
         if title:
-            # 3. 推送消息（自动根据环境变量选择推送到微信或飞书）
-            # await push_to_wechat(summary)
-            await push_interactive_to_feishu(news_content, title, summary, daily_end_md)
-            # 4. 生成飞书文档
+            # 3. 生成飞书文档，生成公众号链接
             from to_feishu_docx import write_to_daily_docx
-            await write_to_daily_docx(news_content, title, summary, daily_end_md)
+            docs_url, preview_page_title, preview_page_url = await write_to_daily_docx(news_content, title, summary, daily_end_md)
+            if preview_page_url:
+                # 4. 推送消息（自动根据环境变量选择推送到微信或飞书）
+                # await push_to_wechat(summary)
+                await push_interactive_to_feishu(news_content, title, summary, daily_end_md, docs_url, preview_page_url)
+            
         else:
             print("标题为空，不生成文档")
     

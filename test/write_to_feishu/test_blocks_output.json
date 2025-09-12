@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "c8978528-19e7-488f-b247-9e5a9f5c0964",
+    "block_id": "d914d7b2-85f7-4560-8dcd-999122f522cf",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "一、比特币市场动态（价格、矿工行为、机构持仓与衍生品）",
+            "content": "一、美国通胀数据与比特币市场反应",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -25,13 +25,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "a526b04d-3390-46f3-b0e0-cbc99d89c427",
+    "block_id": "90a53fa6-bbdb-4a1e-a642-5a63ed318a8b",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "美国就业数据大幅修正引发比特币价格短期震荡，市场对美联储降息预期增强，长期或因流动性扩张推动价格上涨。",
+            "content": "美国8月消费者价格指数（CPI）同比上涨2.9%，环比上涨0.4%，核心CPI同比上涨3.1%，通胀数据略超预期，引发市场对美联储降息政策的担忧，比特币价格在数据公布后出现剧烈波动，从114,500美元附近回落至113,600美元左右。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -51,13 +51,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "f66681fe-57e1-495b-b62e-74fa0065f949",
+    "block_id": "659c748b-dd08-43c1-8164-bff55c21076c",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币矿工近期以2023年来创纪录速度大规模抛售BTC，反映行业对中期市场谨慎态度，同时矿工数量因微软等AI投资带动激增。",
+            "content": "尽管通胀压力存在，但失业申请人数创历史新高，市场对美联储9月降息的预期仍存，推动比特币在短期波动后反弹，反映出通胀数据与货币政策预期对加密货币市场的直接影响。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -77,13 +77,64 @@
     "parent_id": ""
   },
   {
-    "block_id": "77032aeb-f269-4cb4-b405-1c58e93c0bf7",
+    "block_id": "f392daff-380b-4c2d-8a58-cf3d2d08d224",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "二、巨鲸交易行为与市场风险",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "b22c0d71-dfa2-4986-83f9-90de43041453",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "8月企业和机构比特币储备显著增加，上市公司持仓规模扩大，交易所及多家公司为主要增持主体。",
+            "content": "监测显示，某巨鲸地址“0x5d2f4”近期增持约106万美元的比特币空头头寸，目前该空单浮亏达578万美元，清算价格为118,627.63美元，若比特币价格上涨3.7%至118,600美元，将面临强平风险。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "41e43748-de48-408b-a46a-1237375d0994",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "该巨鲸此前曾在8月11日至15日多次加仓比特币空单，同时持有25倍杠杆的以太坊空单，反映出机构投资者在市场波动中的交易策略及潜在风险。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -103,13 +154,64 @@
     "parent_id": ""
   },
   {
-    "block_id": "118fd384-0809-48fe-9979-a969056ed346",
+    "block_id": "486507ca-5b9a-4c00-9d34-804bd969fabb",
+    "block_type": 5,
+    "heading3": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "三、比特币技术面分析与价格阻力测试",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "0c8361cd-4370-4e66-aed4-d95b343242d6",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "Cboe计划于11月推出比特币与以太坊连续期货合约，引入长期连续敞口管理及资金费率机制，提升传统机构参与度。",
+            "content": "比特币当前交易价格约114,051美元，处于看涨势头中，正测试114,000-115,000美元区间阻力位，若突破且交易量配合，可能迈向120,000美元；若未能突破，短期或回调至111,000-110,000美元支撑位。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "5d44270f-008f-4278-b30f-25fc2257da1e",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "技术指标显示，RSI接近60（中性偏强），MACD呈看涨倾向，短期随机震荡指标超买，ADX显示趋势强度较弱，市场短期或面临盘整，中期趋势仍受长期移动平均线支撑。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -129,13 +231,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "d5ce3d5a-7461-42b7-9824-644e934de006",
+    "block_id": "723d50c2-82de-4ab9-b267-bc44b54a044b",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "二、稳定币与支付生态拓展",
+            "content": "四、企业增持比特币与长期资产配置趋势",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -154,13 +256,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "fbb6e66b-c927-4415-a071-642be89b719b",
+    "block_id": "137a087e-c68c-4b75-a876-c643b07e030f",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "Coinbase推出面向AI Agent的发现平台x402 Bazaar，基于开源协议x402，支持AI Agent在网站间通过稳定币进行即时小额支付，适用于“按访问付费”等场景。",
+            "content": "日本时尚品牌ANAP通过“成本平均法”持续增持比特币，从2025年4月底的51枚增至9月11日的1047.56枚，提前实现2025年8月前持有超1000枚的目标，并计划继续增持，展现企业将比特币作为长期价值存储工具的策略。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -180,13 +282,39 @@
     "parent_id": ""
   },
   {
-    "block_id": "2b2b8dcb-de11-4c70-8a8d-b7954e2816b8",
+    "block_id": "8a1e81d9-d8f4-4045-826c-9f198e25beea",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "此类企业级买盘是比特币市场的重要需求来源，其将比特币存入冷钱包长期托管，减少流通供应，反映全球企业对加密货币作为储备资产的认可，尤其在低利率环境下传统资产收益有限的背景下。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "299e427e-db54-4a81-89dc-7e391e144f48",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "三、上市公司加密货币财库建立",
+            "content": "五、特定加密货币（TRX/Tron）市场表现与价值分析",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -205,13 +333,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "621cb0e2-972b-48f6-a93d-fffc0e7917a2",
+    "block_id": "ba6cb280-37c9-4c07-8510-295993d8c111",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "纳斯达克上市公司QMMM Holdings拟建立初始规模约1亿美元的加密货币财库，投资配置侧重于比特币、以太坊、Solana等优质加密货币资产及Web3生态基础设施项目。",
+            "content": "Tron（孙宇晨旗下）通过借壳上市短期暴涨647%，但因市场情绪退潮、估值向行业水平对齐（市值与持有的TRX价值接近），随后价格下跌70%，当前走势更多取决于TRX价格波动。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -231,38 +359,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "fb1786e0-e093-4c76-8502-485b25949c07",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "四、市场参与者交易操作",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "e95d2b52-f546-4922-b7b8-bcff30b86ee2",
+    "block_id": "56340f55-10ce-479d-b9d0-f718ff3aa970",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "个人投资者“麻吉大哥”黄立成平仓HYPE、PUMP、BTC多单实现盈利，同时持有2.74万枚ETH多单（15倍杠杆），总账户余额3590万美元，单周收益221万美元，展现激进杠杆交易策略与风险控制调整。",
+            "content": "Tron的价值受多重因素影响：质押收入规模小，TRX价格依赖波场链生态竞争力（如TVL下降、稳定币净流出）及监管风险（SEC对孙宇晨及波场的诉讼未撤诉），长期面临估值与行业对齐及外部竞争压力。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -276,58 +379,7 @@
       "style": {
         "align": 1,
         "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "38a69a37-e077-4033-af60-3698f94d0784",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "五、市场负面现象（炒作割韭菜）",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "d57c14dc-2510-4210-bd5e-d41abc80236e",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "部分市场代币通过炒作（如#TRUMP、#WIFI等热点概念）收割投资者，过去一年相关割韭菜行为累计增加约13亿美元，反映加密货币市场存在投机炒作与风险。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
+        "sequence": "auto"
       }
     },
     "parent_id": ""

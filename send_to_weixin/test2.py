@@ -1,6 +1,6 @@
 import time
 from playwright.sync_api import sync_playwright
-from to_gzh_with_pw import refresh_page
+from to_gzh_with_pw import refresh_page_by_title
 from to_gzh_with_ui import find_icon_with_prefix, hover_icon_with_prefix
 
 with sync_playwright() as p:
@@ -12,8 +12,8 @@ with sync_playwright() as p:
     print(f"程序开始时间：{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
 
     while True:
-        if refresh_page(context, "公众号"):
-            if hover_icon_with_prefix("wx_content_management", 3):
+        if refresh_page_by_title(context, "公众号"):
+            if hover_icon_with_prefix("wx_content_management", max_try_times=3):
                 time.sleep(60*60*6)
             else:
                 # 计算运行时间

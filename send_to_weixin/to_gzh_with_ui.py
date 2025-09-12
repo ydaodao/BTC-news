@@ -7,6 +7,7 @@ import re
 from time import sleep
 import ctypes
 from ctypes import wintypes
+import time
 
 # 0.83 = 1.2 / 1.5
 # 0.66 = 1 / 1.5    阿里云/本地1.5
@@ -227,7 +228,7 @@ def wait_icon_dismiss_with_prefix(prefix, max_wait_seconds=10):
             return True
     return False
 
-def click_icon_with_prefix(prefix, position='center', max_try_times=20):
+def click_icon_with_prefix(prefix, position='center', max_try_times=20, duration=0.5):
     """点击最高匹配度的图片，返回点击状态
     
     Args:
@@ -247,8 +248,11 @@ def click_icon_with_prefix(prefix, position='center', max_try_times=20):
         sleep(0.2)
         image_file, best_confidence, scale, click_x, click_y = find_icon_once(prefix, position)
         if click_x:
-            pyautogui.moveTo(click_x, click_y, duration=0.5) # 平滑移动
-            pyautogui.click()
+            if duration:
+                pyautogui.moveTo(click_x, click_y, duration=duration) # 平滑移动
+                pyautogui.click()
+            else:
+                pyautogui.click(click_x, click_y)
             print(f"点击了{image_file}，匹配度: {best_confidence:.2f}，缩放：{scale}")
             return True
         else:
@@ -469,17 +473,19 @@ def push_feishu_docs_2_wxgzh():
                             return False
     return False
 
-def open_edit_page_and_get_url(page = None):
+def open_edit_page_and_get_url(feishu_docs_page=None):
     # 打开微信文章编辑页面，并获得页面链接
     if click_icon_with_prefix("wx_content_management"):
-        if click_icon_with_prefix("wx_content_draft"):
-            sleep(5)
-            if page:
-                page.title()
+        if click_icon_with_prefix("wx_content_draft"): # 点击后，页面的URL改变了
+            time.sleep(5)
+            feishu_docs_page.title() # 通过一个固定不变的页面来更新context内容
+
             if hover_icon_with_prefix("wx_content_draft_btc_zhoubao"):
                 if click_icon_with_prefix("wx_content_edit"):
                     print("打开了文章编辑页面")
-                    sleep(1) # 至少进入到了新页面中
+                    sleep(10) # 等待足够的时间
+                    feishu_docs_page.title() # 通过一个页面来更新context内容，因为有新页面打开了
+
                     # 获取当前页面的URL
                     if click_icon_with_prefix("wx_edit_url_prefix"):
                         send_hotkey("ctrl+a")
@@ -491,20 +497,28 @@ def open_edit_page_and_get_url(page = None):
                         return wx_url
     return None
 
-def choose_page_cover():
+def choose_page_cover(try_once=True):
     # 选择文章封面图片
     if hover_icon_with_prefix("wx_edit_changecover_nocover_icon"):
         if hover_icon_with_prefix("wx_edit_changecover_icon"):
-            if click_icon_with_prefix("wx_edit_changecover_frompage_icon"):
+            if click_icon_with_prefix("wx_edit_changecover_frompage_icon", duration=None):
                 if click_icon_with_prefix("wx_edit_changecover_pickimage"):
                     if click_icon_with_prefix("wx_edit_common_nextbtn"):
                         scroll_with_windows_api(-5) ## 滚动到底部出现确认按钮
                         if click_icon_with_prefix("wx_edit_common_querenbtn"):
                             print("选择了封面")
-                            return True
+                            # 有可能选择封面报错，所以再尝试一次
+                            sleep(2)
+                            if find_icon_with_prefix("wx_edit_changecover_nocover_icon", 1):
+                                if try_once:
+                                    return choose_page_cover(False)
+                                else:
+                                    return False
     return False
 
 def choose_other_options_and_preview():
+    flag_yuanchuang, flag_zanshang, flag_liuyan, flag_heji, flag_save_draft = False, False, False, False, False
+
     # 选择其它文章的选项
     if click_icon_with_prefix("wx_edit_choose_yuanchuang"):
         if click_icon_with_prefix("wx_edit_common_quedingbtn"):
@@ -520,23 +534,39 @@ def choose_other_options_and_preview():
             if click_icon_with_prefix("wx_edit_choose_heji_select_zhoubao"):
                 if click_icon_with_prefix("wx_edit_common_querenbtn"):
                     print("选择了合集")
+    # if click_icon_with_prefix("wx_edit_save_draft"):
+    #     if find_icon_with_prefix("wx_edit_save_draft_success"):
+    #         print("保存了草稿")
     if click_icon_with_prefix("wx_edit_choose_preview"):
         if click_icon_with_prefix("wx_edit_common_quedingbtn"):
-            if find_icon_with_prefix("wx_edit_choose_preview_success"):
-                print("发送了预览")
+            # if find_icon_with_prefix("wx_edit_choose_preview_success"):
+            print("发送到微信公众号预览")
+            return True
+                
+def open_preview_page(page = None):
+    page.bring_to_front()
+    if click_icon_with_prefix("wx_content_draft_btc_zhoubao"):
+        print("打开了文章编辑页面")
+        sleep(8) # 至少进入到了新页面中
+        page.title() # 更新context，并取消页面加载的阻塞
+        return True
+    return None
+
+
 
 if __name__ == "__main__":
     # sleep(3)
     # 从您提到的两种配置计算scale
-    # scale_value = calculate_icon_scale(
+    # scale_value = calculate_icon_scale(S
     #     (2240, 1400), 1.5,    # 电脑1: 2240×1400 150%
     #     (3840, 2160), 2.25    # 电脑2: 3840×2160 225%
     # )
     # print(f"需要的scale值: {scale_value:.2f}")
 
-    sleep(10)
+    sleep(3)
 
-    click_icon_with_prefix("test")
+    # click_icon_with_prefix("test")
+    print(click_icon_with_prefix("wx_edit_choose_preview_success"))
 
 
     
