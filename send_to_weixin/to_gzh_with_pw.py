@@ -1,9 +1,8 @@
 from playwright.sync_api import sync_playwright
 from time import sleep
 import pyperclip
+import os
 from dotenv import load_dotenv, find_dotenv
-# 加载环境变量 - 自动查找.env文件
-load_dotenv(find_dotenv())
 
 try:
     # 当作为模块被导入时
@@ -13,6 +12,8 @@ except ImportError:
     from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page
     pass
 
+# 加载环境变量 - 自动查找.env文件
+load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
 
 # def init_browser():
