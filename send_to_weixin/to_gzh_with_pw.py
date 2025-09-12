@@ -103,11 +103,11 @@ def refresh_page(page):
             
             # 等待页面加载完成，使用更宽松的等待策略
             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-            page.wait_for_load_state('domcontentloaded', timeout=10000)  # 10秒超时
+            page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
             
             # 尝试等待网络空闲，但设置较短的超时时间
             try:
-                page.wait_for_load_state('networkidle', timeout=5000)  # 5秒超时
+                page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
             except Exception:
                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
                 pass
@@ -128,10 +128,10 @@ def open_new_page(context, page_url):
     page.bring_to_front()
 
     # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-    page.wait_for_load_state('domcontentloaded', timeout=20000)  # 10秒超时
+    page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
     # 尝试等待网络空闲，但设置较短的超时时间
     try:
-        page.wait_for_load_state('networkidle', timeout=10000)  # 5秒超时
+        page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
     except Exception:
         # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
         pass
@@ -177,11 +177,11 @@ def active_page(context, target_page_title, target_page_url, refresh=False):
             
             # 等待页面加载完成，使用更宽松的等待策略
             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-            page.wait_for_load_state('domcontentloaded', timeout=10000)  # 10秒超时
+            page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
             
             # 尝试等待网络空闲，但设置较短的超时时间
             try:
-                page.wait_for_load_state('networkidle', timeout=5000)  # 5秒超时
+                page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
             except Exception:
                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
                 pass
@@ -203,11 +203,11 @@ def switch_to_page_and_change_url(context, target_page_title, new_url):
         page.goto(new_url)
         print(f"已改变URL为: {new_url}")
         # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-        page.wait_for_load_state('domcontentloaded', timeout=10000)  # 10秒超时
+        page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
         
         # 尝试等待网络空闲，但设置较短的超时时间
         try:
-            page.wait_for_load_state('networkidle', timeout=5000)  # 5秒超时
+            page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
         except Exception:
             # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
             pass
@@ -233,7 +233,7 @@ def scroll_bottom(page):
     if page:
         page.evaluate("window.scrollTo(0, document.body.scrollHeight);")
         # 等待滚动完成
-        page.wait_for_timeout(1000)
+        page.wait_for_timeout(5000)
         print("已滚动到页面底部")
         return True
     return None
@@ -265,7 +265,7 @@ def scroll_page(page, scroll_height):
         page.evaluate(f"window.scrollTo(0, {new_scroll_position});")
         
         # 等待滚动完成
-        page.wait_for_timeout(500)
+        page.wait_for_timeout(2000)
         
         print(f"从位置 {current_scroll} 滚动到位置 {new_scroll_position}，滚动距离: {scroll_height}")
         return True
