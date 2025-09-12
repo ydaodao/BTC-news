@@ -47,8 +47,8 @@ def send_to_wx_gzh():
         feishu_docx_title = data.get('feishu_docx_title', '')
         if feishu_docx_url and feishu_docx_title:
             # 在当前的浏览器中打开这个链接
-            # preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_url, feishu_docx_title)
-            preview_page_title, preview_page_url =  '百度', 'https://www.baidu.com/'
+            preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_url, feishu_docx_title)
+            # preview_page_title, preview_page_url =  '百度', 'https://www.baidu.com/'
             if preview_page_url:
                 data = {
                     'preview_page_title': preview_page_title,
