@@ -207,10 +207,10 @@ def find_icon_once(prefix, position='center'):
     print(f"没有找到符合前缀 '{prefix}' 的图片")
     return None, None, None, None, None
 
-def find_icon_with_prefix(prefix, max_try_times=20):
+def find_icon_with_prefix(prefix, max_try_times=20, sleep_time=0.2):
     """查找图标，返回图标文件路径、匹配度、缩放比例、点击坐标"""
     for i in range(max_try_times):
-        sleep(0.2)
+        sleep(sleep_time)
         _, _, _, click_x, click_y = find_icon_once(prefix)
         if click_x:
             return True
@@ -472,7 +472,8 @@ def push_feishu_docs_2_wxgzh():
             if click_icon_with_prefix("yiban_choose_gzh"):
                 if click_icon_with_prefix("yiban_choose_snxc"):
                     if click_icon_with_prefix("yiban_caiji_done"):
-                        if find_icon_with_prefix("yiban_caiji_success", 60):
+                        sleep_time = 0.2 if LOCAL_DEV else 0.1
+                        if find_icon_with_prefix("yiban_caiji_success", 60, sleep_time):
                             print("采集成功")
                             return True
                         else:
