@@ -15,6 +15,10 @@ except ImportError:
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
+PAGELOAD_TIMEOUT = 30
+if LOCAL_DEV:
+    print("本地开发环境")
+    PAGELOAD_TIMEOUT = 10
 
 # def init_browser():
 #     """初始化浏览器连接"""
@@ -110,11 +114,11 @@ def refresh_page(page):
             
             # 等待页面加载完成，使用更宽松的等待策略
             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-            page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
+            page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
             
             # 尝试等待网络空闲，但设置较短的超时时间
             try:
-                page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
+                page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
             except Exception:
                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
                 pass
@@ -135,10 +139,10 @@ def open_new_page(context, page_url):
     page.bring_to_front()
 
     # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-    page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
+    page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
     # 尝试等待网络空闲，但设置较短的超时时间
     try:
-        page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
+        page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
     except Exception:
         # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
         pass
@@ -184,11 +188,11 @@ def active_page(context, target_page_title, target_page_url, refresh=False):
             
             # 等待页面加载完成，使用更宽松的等待策略
             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-            page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
+            page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
             
             # 尝试等待网络空闲，但设置较短的超时时间
             try:
-                page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
+                page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
             except Exception:
                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
                 pass
@@ -210,11 +214,11 @@ def switch_to_page_and_change_url(context, target_page_title, new_url):
         page.goto(new_url)
         print(f"已改变URL为: {new_url}")
         # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-        page.wait_for_load_state('domcontentloaded', timeout=20000)  # 20秒超时
+        page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
         
         # 尝试等待网络空闲，但设置较短的超时时间
         try:
-            page.wait_for_load_state('networkidle', timeout=10000)  # 10秒超时
+            page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
         except Exception:
             # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
             pass
@@ -333,7 +337,7 @@ if __name__ == "__main__":
     feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/NUi8dqEugoIB4xxIFjWc6uJMnSe"
     # # target_page_title = pyperclip.paste().strip()
     target_page_title = "加密货币周报（8.24-9.7）：监管动态与机构持仓双线并进"
-    
+
 
     # preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
     # print(preview_page_title)
