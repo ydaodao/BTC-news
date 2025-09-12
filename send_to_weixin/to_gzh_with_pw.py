@@ -297,27 +297,45 @@ def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
                 if not LOCAL_DEV:
                     feishu_docs_page.close()
                 # 激活编辑页面
-                edit_page = active_page(context, None, edit_page_url, True)
+                edit_page = active_page(context, None, edit_page_url, False)
                 if edit_page:
                     if scroll_bottom(edit_page):
                         scroll_page(edit_page, -100)
                         sleep(2)
                         # 选择文章封面
-                        choose_page_cover()
-                        # 选择其他选项并 发送到公众号预览
-                        if choose_other_options_and_preview():
-                            if not LOCAL_DEV:
-                                edit_page.close()
-                            # 回到主页，打开编辑页面
-                            if open_preview_page(main_page):
-                                # 聚焦到文章预览页面
-                                preview_page = active_page(context, target_page_title, "https://mp.weixin.qq.com/")
-
-                                preview_page_title = preview_page.title()
-                                preview_page_url = preview_page.url
+                        if choose_page_cover():
+                            # 选择其他选项并 发送到公众号预览
+                            if choose_other_options_and_preview():
                                 if not LOCAL_DEV:
-                                    preview_page.close()
-                                return preview_page_title, preview_page_url
+                                    edit_page.close()
+                                # 回到主页，打开编辑页面
+                                if open_preview_page(main_page):
+                                    # 聚焦到文章预览页面
+                                    preview_page = active_page(context, target_page_title, "https://mp.weixin.qq.com/")
+
+                                    preview_page_title = preview_page.title()
+                                    preview_page_url = preview_page.url
+                                    if not LOCAL_DEV:
+                                        preview_page.close()
+                                    return preview_page_title, preview_page_url
+                                else:
+                                    print("打开预览页面失败")
+                                    return None, None
+                            else:
+                                print("选择其他选项并发送到公众号预览失败")
+                                return None, None
+                        else:
+                            print("选择文章封面失败")
+                            return None, None
+                    else:
+                        print("滚动到页面底部失败")
+                        return None, None
+                else:
+                    print("激活编辑页面失败")
+                    return None, None
+            else:
+                print("推送飞书文档到公众号失败")
+                return None, None
 
 
         browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
@@ -339,8 +357,6 @@ if __name__ == "__main__":
     target_page_title = "加密货币周报（8.24-9.7）：监管动态与机构持仓双线并进"
 
 
-    # preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
-    # print(preview_page_title)
-    # print(preview_page_url)
-
-    print(LOCAL_DEV)
+    preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
+    print(preview_page_title)
+    print(preview_page_url)
