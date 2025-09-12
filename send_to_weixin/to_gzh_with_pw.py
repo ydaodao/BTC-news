@@ -128,10 +128,10 @@ def open_new_page(context, page_url):
     page.bring_to_front()
 
     # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-    page.wait_for_load_state('domcontentloaded', timeout=10000)  # 10秒超时
+    page.wait_for_load_state('domcontentloaded', timeout=20000)  # 10秒超时
     # 尝试等待网络空闲，但设置较短的超时时间
     try:
-        page.wait_for_load_state('networkidle', timeout=5000)  # 5秒超时
+        page.wait_for_load_state('networkidle', timeout=10000)  # 5秒超时
     except Exception:
         # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
         pass
@@ -311,6 +311,7 @@ def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
             return begin_send(context, feishu_docs_page)
         else:
             if feishu_docs_url:
+                print(f"打开飞书文档页面: {feishu_docs_url}")
                 feishu_docs_page = open_new_page(context, feishu_docs_url)
                 if feishu_docs_page:
                     return begin_send(context, feishu_docs_page)
