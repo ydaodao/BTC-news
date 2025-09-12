@@ -1,6 +1,10 @@
 from playwright.sync_api import sync_playwright
 from time import sleep
 import pyperclip
+from dotenv import load_dotenv, find_dotenv
+# 加载环境变量 - 自动查找.env文件
+load_dotenv(find_dotenv())
+
 try:
     # 当作为模块被导入时
     from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page
@@ -8,6 +12,8 @@ except ImportError:
     # 当直接运行时
     from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page
     pass
+
+LOCAL_DEV = os.getenv('LOCAL_DEV')
 
 # def init_browser():
 #     """初始化浏览器连接"""
@@ -282,7 +288,9 @@ def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
                 # 切换到已登录的公众号页面，并重置到首页
                 main_page = switch_to_page_and_change_url(context, "公众号", "https://mp.weixin.qq.com/")
                 # 打开文章编辑页面并获取URL
-                edit_page_url = open_edit_page_and_get_url(feishu_docs_page)                
+                edit_page_url = open_edit_page_and_get_url(feishu_docs_page)
+                if not LOCAL_DEV:
+                    feishu_docs_page.close()
                 # 激活编辑页面
                 edit_page = active_page(context, None, edit_page_url, True)
                 if edit_page:
@@ -293,6 +301,8 @@ def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
                         choose_page_cover()
                         # 选择其他选项并 发送到公众号预览
                         if choose_other_options_and_preview():
+                            if not LOCAL_DEV:
+                                edit_page.close()
                             # 回到主页，打开编辑页面
                             if open_preview_page(main_page):
                                 # 聚焦到文章预览页面
@@ -300,6 +310,8 @@ def send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title=None):
 
                                 preview_page_title = preview_page.title()
                                 preview_page_url = preview_page.url
+                                if not LOCAL_DEV:
+                                    preview_page.close()
                                 return preview_page_title, preview_page_url
 
 
