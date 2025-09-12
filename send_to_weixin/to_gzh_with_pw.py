@@ -333,7 +333,10 @@ if __name__ == "__main__":
     feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/NUi8dqEugoIB4xxIFjWc6uJMnSe"
     # # target_page_title = pyperclip.paste().strip()
     target_page_title = "加密货币周报（8.24-9.7）：监管动态与机构持仓双线并进"
+    
 
-    preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
-    print(preview_page_title)
-    print(preview_page_url)
+    # preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(feishu_docs_url, target_page_title)
+    # print(preview_page_title)
+    # print(preview_page_url)
+
+    print(LOCAL_DEV)

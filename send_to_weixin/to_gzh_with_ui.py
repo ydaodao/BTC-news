@@ -504,16 +504,16 @@ def choose_page_cover(try_once=True):
             if click_icon_with_prefix("wx_edit_changecover_frompage_icon", duration=None):
                 if click_icon_with_prefix("wx_edit_changecover_pickimage"):
                     if click_icon_with_prefix("wx_edit_common_nextbtn"):
-                        scroll_with_windows_api(-5) ## 滚动到底部出现确认按钮
-                        if click_icon_with_prefix("wx_edit_common_querenbtn"):
-                            print("选择了封面")
-                            # 有可能选择封面报错，所以再尝试一次
-                            sleep(2)
-                            if find_icon_with_prefix("wx_edit_changecover_nocover_icon", 1):
-                                if try_once:
-                                    return choose_page_cover(False)
-                                else:
-                                    return False
+                        if scroll_with_windows_api(-5): ## 滚动到底部出现确认按钮
+                            if click_icon_with_prefix("wx_edit_common_querenbtn"):
+                                print("选择了封面")
+                                # 有可能选择封面报错，所以再尝试一次
+                                sleep(2)
+                                if find_icon_with_prefix("wx_edit_changecover_nocover_icon", 1):
+                                    if try_once:
+                                        return choose_page_cover(False)
+                                    else:
+                                        return False
     return False
 
 def choose_other_options_and_preview():
@@ -547,7 +547,7 @@ def open_preview_page(page = None):
     page.bring_to_front()
     if click_icon_with_prefix("wx_content_draft_btc_zhoubao"):
         print("打开了文章编辑页面")
-        sleep(8) # 至少进入到了新页面中
+        sleep(15) # 至少进入到了新页面中
         page.title() # 更新context，并取消页面加载的阻塞
         return True
     return None
