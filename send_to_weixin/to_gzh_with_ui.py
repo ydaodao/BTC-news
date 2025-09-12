@@ -8,11 +8,17 @@ from time import sleep
 import ctypes
 from ctypes import wintypes
 import time
+from dotenv import load_dotenv, find_dotenv
+
+# 加载环境变量 - 自动查找.env文件
+load_dotenv(find_dotenv())
+LOCAL_DEV = os.getenv('LOCAL_DEV')
 
 # 0.83 = 1.2 / 1.5
 # 0.66 = 1 / 1.5    阿里云/本地1.5
 # 1.5 = 2.25 / 1.5  本地大屏/本地1.5
 PYAUTOGUI_SCALES = [1, 0.8333333333333333, 0.6666666666666666, 0.8, 1.5]
+
 
 def windows_api_click(x, y):
     """使用Windows API发送鼠标点击事件"""
@@ -547,7 +553,10 @@ def open_preview_page(page = None):
     page.bring_to_front()
     if click_icon_with_prefix("wx_content_draft_btc_zhoubao"):
         print("打开了文章编辑页面")
-        sleep(15) # 至少进入到了新页面中
+        if LOCAL_DEV:
+            sleep(8) # 至少进入到了新页面中
+        else:
+            sleep(20) # 至少进入到了新页面中
         page.title() # 更新context，并取消页面加载的阻塞
         return True
     return None
