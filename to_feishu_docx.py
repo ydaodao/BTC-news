@@ -594,7 +594,7 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
             return
     
     docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
-    await push_richtext_to_feishu(title, docs_url)
+    await push_richtext_to_feishu("加密周报", title, docs_url)
 
     lark.logger.info("Markdown content inserted into document successfully!")
     lark.logger.info(f"Document URL: {docs_url}")
