@@ -482,7 +482,7 @@ def push_feishu_docs_2_wxgzh():
     return False
 
 def delete_exit_draft(feishu_docs_page=None):
-    # 打开微信文章编辑页面，并获得页面链接
+    # 删除已经存在的草稿
     if click_icon_with_prefix("wx_content_management"):
         if click_icon_with_prefix("wx_content_draft"): # 点击后，页面的URL改变了
             time.sleep(5)
@@ -607,7 +607,7 @@ if __name__ == "__main__":
     sleep(3)
 
     # click_icon_with_prefix("test")
-    print(click_icon_with_prefix("wx_edit_choose_preview_success"))
+    print(click_icon_with_prefix("wx_edit_changecover_pickimage"))
 
 
     

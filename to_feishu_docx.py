@@ -341,7 +341,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     
     return cleaned_content
 
-def format_string_with_line_breaks(text, max_chars=13, min_chars=5):
+def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     """
     按照指定规则格式化字符串换行
     
@@ -670,7 +670,7 @@ if __name__ == "__main__":
 
     # 3. 测试标题图片生成
     date_md = '09.13'
-    title = '比特币盘整蓄势，机构持仓创新高'
+    title = '比特币盘整蓄势，机构增持与宏观利好推动市场'
     final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
     # 生成头图，替换标题图片
     header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
@@ -683,7 +683,7 @@ if __name__ == "__main__":
         height=300,
         line_spacing=25,
         support_markdown=True,
-        font_size=45,
+        font_size=40,
         # font_color=(0, 0, 0),  # 黑色
         font_color=(255, 255, 255),  # 白色
         text_align='left',
