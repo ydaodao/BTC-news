@@ -341,7 +341,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     
     return cleaned_content
 
-def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
+def format_string_with_line_breaks(text, max_chars=10, min_chars=5):
     """
     按照指定规则格式化字符串换行
     
@@ -455,9 +455,9 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         output_path=header_text_image_path,
         width=480,
         height=300,
-        line_spacing=20,
+        line_spacing=18,
         support_markdown=True,
-        font_size=40,
+        font_size=38,
         # font_color=(0, 0, 0),  # 黑色
         font_color=(255, 255, 255),  # 白色
         text_align='left',

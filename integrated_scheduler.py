@@ -56,6 +56,7 @@ schedule.every().day.at("21:30").do(keep_gzh_online_task)
 
 if __name__ == "__main__":
     print("集成调度器已启动")
+    print("每天晚上9点执行截图任务")
     print("每天晚上9点半执行保持公众号在线任务")
     
     while True:
