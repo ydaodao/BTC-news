@@ -6,10 +6,10 @@ from dotenv import load_dotenv, find_dotenv
 
 try:
     # 当作为模块被导入时
-    from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page
+    from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft
 except ImportError:
     # 当直接运行时
-    from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page
+    from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft
     pass
 
 # 加载环境变量 - 自动查找.env文件
@@ -293,6 +293,7 @@ def send_feishu_docs_to_wxgzh(target_page_title=None, feishu_docs_url=None):
     # 主程序
     with sync_playwright() as p:
         def begin_send(context, feishu_docs_page):
+            # 通过壹伴将文档推送到公众号
             if push_feishu_docs_2_wxgzh():
                 # 切换到已登录的公众号页面，并重置到首页
                 main_page = switch_to_page_and_change_url(context, "公众号", "https://mp.weixin.qq.com/")
@@ -345,15 +346,21 @@ def send_feishu_docs_to_wxgzh(target_page_title=None, feishu_docs_url=None):
         browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
         context = browser.contexts[0]
 
-        feishu_docs_page = active_page(context, target_page_title, feishu_docs_url, refresh=True)
-        if feishu_docs_page:
-            return begin_send(context, feishu_docs_page)
-        else:
-            if feishu_docs_url:
-                print(f"打开飞书文档页面: {feishu_docs_url}")
-                feishu_docs_page = open_new_page(context, feishu_docs_url)
+        # 切换到已登录的公众号页面，并重置到首页
+        main_page = switch_to_page_and_change_url(context, "公众号", "https://mp.weixin.qq.com/")
+        if main_page:
+            # 删除已经存在的草稿
+            if delete_exit_draft(main_page):
+                # 打开目标飞书文档
+                feishu_docs_page = active_page(context, target_page_title, feishu_docs_url, refresh=True)
                 if feishu_docs_page:
                     return begin_send(context, feishu_docs_page)
+                else:
+                    if feishu_docs_url:
+                        print(f"打开飞书文档页面: {feishu_docs_url}")
+                        feishu_docs_page = open_new_page(context, feishu_docs_url)
+                        if feishu_docs_page:
+                            return begin_send(context, feishu_docs_page)
 
 if __name__ == "__main__":
     feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/NUi8dqEugoIB4xxIFjWc6uJMnSe"

@@ -481,6 +481,33 @@ def push_feishu_docs_2_wxgzh():
                             return False
     return False
 
+def delete_exit_draft(feishu_docs_page=None):
+    # 打开微信文章编辑页面，并获得页面链接
+    if click_icon_with_prefix("wx_content_management"):
+        if click_icon_with_prefix("wx_content_draft"): # 点击后，页面的URL改变了
+            time.sleep(5)
+            feishu_docs_page.title() # 通过一个固定不变的页面来更新context内容
+            if hover_icon_with_prefix("wx_content_draft_btc_title"):
+                if click_icon_with_prefix("wx_content_delete"):
+                    if click_icon_with_prefix("wx_edit_common_deletebtn"):
+                        print("删除了已有的草稿")
+                        return True
+                    else:
+                        print("删除草稿失败")
+                        return False
+                else:
+                    print("删除草稿失败")
+                    return False
+            else:
+                print("没有找到草稿，不需要删除")
+                return True
+        else:
+            print("没有找到【草稿箱】菜单")
+            return False
+    else:
+        print("没有【内容管理】菜单")
+        return False
+
 def open_edit_page_and_get_url(feishu_docs_page=None):
     # 打开微信文章编辑页面，并获得页面链接
     if click_icon_with_prefix("wx_content_management"):
@@ -556,7 +583,7 @@ def choose_other_options_and_preview():
                 
 def open_preview_page(page = None):
     page.bring_to_front()
-    if click_icon_with_prefix("wx_content_draft_btc_zhoubao"):
+    if click_icon_with_prefix("wx_content_draft_btc_title"):
         print("打开了文章编辑页面")
         if LOCAL_DEV:
             sleep(8) # 至少进入到了新页面中
