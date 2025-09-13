@@ -341,7 +341,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     
     return cleaned_content
 
-def format_string_with_line_breaks(text, max_chars=10, min_chars=5):
+def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     """
     按照指定规则格式化字符串换行
     
