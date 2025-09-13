@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "9e4c04b3-04e5-4869-924f-799e67cce90f",
+    "block_id": "c5b74425-f99f-4f60-93f8-71defb37868e",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "一、比特币价格盘整与技术指标分析",
+            "content": "一、比特币价格动态与技术分析",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -25,13 +25,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "d09ce82a-4df4-4050-8b44-4480a98928a1",
+    "block_id": "22281582-ce73-4f60-84e7-6bc8ffe3e553",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币价格在115,000美元附近盘整，交易区间为113,509美元至116,312美元，关键阻力位在114,000-116,000美元区间，支撑位依次为108,000美元、101,000美元及心理关口。",
+            "content": "比特币近期在115,000美元附近盘整，技术指标显示短期超买，长期存在突破关键阻力位的可能，周线图呈现倒头肩形态，预测长期目标价区间。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -51,13 +51,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "4c217343-7126-4068-8c1e-45b11af7c528",
+    "block_id": "89988e7c-d9bb-4f11-9f4f-6af9722a59d7",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "技术指标显示短期存在超买（随机振荡器），长期支撑稳固（移动平均线多头排列），周线图出现倒头肩形态，若突破可能预示170,000-360,000美元长期目标；当前市场缺乏强劲动量，需关注高交易量下对116,000美元阻力位的突破确认。",
+            "content": "4小时和1小时图表分析显示，比特币价格在116,000美元至118,000美元存在阻力，若突破将打开上行空间，否则可能回调至113,000美元附近支撑位。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -77,13 +77,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "ca2c8451-4b13-4856-9e1b-ec3954e91ddc",
+    "block_id": "05e24c8b-e23d-4409-8421-d57b57e6581a",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "4小时图显示价格在116,358美元附近遇阻，短期回调可能测试113,500-114,000美元支撑，若跌破或进一步下探112,000美元。",
+            "content": "动量指标如RSI、MACD等显示市场短期动量谨慎，长期移动平均线支撑完好，需关注成交量配合以确认突破有效性。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -103,13 +103,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "1b3a15ee-9b5b-4978-9862-a2cb2b38edeb",
+    "block_id": "4f365dae-570a-4455-bfcc-b1c361c7820e",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "二、比特币“鲨鱼”群体持仓量创历史新高",
+            "content": "二、比特币大资金持仓动态",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -128,13 +128,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "26a4b49c-e326-47a3-a8f0-a722b36223fd",
+    "block_id": "47de7953-cf58-4065-95a0-da1bc6372f5e",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币“鲨鱼”群体（大额持有者）上周增持约65,000枚比特币，过去30天累计增持约93,代表其总持仓量达365万枚，创历史新高；该群体持仓通常反映机构长期信心，历史上与价格趋势高度相关。",
+            "content": "比特币“鲨鱼”群体（大资金持有者）上周增持约65,000枚比特币，过去30天累计增持约93,000枚，总持仓量达365万枚，创历史新高。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -154,13 +154,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "6e41e939-cd86-4789-8be4-afa13ed966ce",
+    "block_id": "f30b8031-4af3-4b49-8dfa-46168f01c787",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "持仓量增长可能缓解市场短期波动，增强长期价格支撑，需关注后续链上数据对机构资金流向的验证。",
+            "content": "大资金持续增持反映市场对长期趋势的信心，此类资金动向通常被视为市场稳定性的重要支撑，可能对后续价格走势产生积极影响。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -180,13 +180,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "fa403730-dc83-4293-af6e-930ca8c7e94a",
+    "block_id": "57a4533b-ba16-46ac-a6d4-0551a2d9fd46",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "三、比特币、以太坊价格反弹及宏观驱动因素",
+            "content": "三、比特币及以太坊价格动态与宏观影响",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -205,13 +205,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "c14e6790-ca40-4d9d-a0a1-37b63a52f706",
+    "block_id": "d2e4804f-73b2-4a70-a1da-fd2e23412dee",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币突破11.6万美元，创一个多月新高，以太坊同步上涨至4500美元，主要受美联储降息预期（9月17日FOMC会议降息概率高，年内或降息3次）及AI热潮推动，美股“七巨头”走强提振市场情绪。",
+            "content": "比特币价格反弹突破11.6万美元，创一个多月新高，以太坊同步上涨至4500美元，受美国8月CPI数据符合预期及美联储降息预期推动（市场预期9月17日FOMC会议降息，年内或降息3次）。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -231,13 +231,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "9072dce5-c6c8-4a46-8aab-80745b01821f",
+    "block_id": "ca3aecc5-16a4-4f07-a08d-74eb522504c7",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "市场处于数字资产财库（DAT）周期“玩家对弈”阶段，资金加速流向大型加密资产（DAT累计持有超100万枚BTC、490万枚ETH），小型DAT或进入整合期。",
+            "content": "AI热潮重燃（如美股“七巨头”走强）及数字资产财库（DAT）周期“玩家对弈”阶段（资金加速流向大型加密资产）支撑市场情绪，Coinbase报告指出加密市场有望在2025年第四季度初延续强势。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -257,39 +257,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "a69472e5-10cc-4147-81f5-88880f8d7f87",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "分析师对第四季度走势乐观，认为流动性充裕、宏观环境有利及监管动态支持市场延续强势，历史上“九月魔咒”已被打破。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "b6b1f797-042f-42bd-893d-b5223e3e7ea7",
+    "block_id": "994e1ae6-c8d6-411b-b3c5-ba881438b3ac",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "四、2025年比特币机构采用加速及市场愿景",
+            "content": "四、比特币机构采用与市场趋势",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -308,13 +282,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "34613c25-140f-4925-8a41-5801108904e1",
+    "block_id": "0179a1d0-d8c2-436d-8853-b78d2e265b78",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "金融机构正加速入场加密货币领域，呼应中本聪“点对点电子现金”愿景，减少对传统金融中介的依赖，机构资金流入或推动比特币价格上涨15-20%。",
+            "content": "金融机构正加速入场比特币，呼应中本聪“点对点电子现金”愿景，机构资金流入被视为推动市场稳定性及价格升值的关键因素，可能引发类似2024年初现货ETF批准后的反弹行情。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -334,13 +308,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "d1b1843c-552b-4485-bda6-d2609526c580",
+    "block_id": "b1660016-34f2-4691-90fc-eca172e6f5e3",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "市场情绪偏向贪婪，恐惧与贪婪指数显示积极信号，机构采用被视为市场稳定性和价格升值的重要驱动因素，同时影响加密与股票市场相关性。",
+            "content": "机构采用趋势或增强加密货币对传统金融市场的吸引力，跨市场（如加密与股票）相关性提升，需关注宏观经济条件（如利率政策）及监管动态对机构入场的影响。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -360,63 +334,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "efc2d0e9-df53-4a6b-9bee-486d3659daab",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "DeFi代币（如Uniswap、Aave）受机构入场间接带动，流动性增强可能推动山寨币分化上涨。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "6117dac4-9b96-4b4f-b46d-a65d8ed935b0",
+    "block_id": "96825604-0014-4124-91a3-a108609be9ef",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "五、Solana（SOL）受Galaxy收购推动价格上涨 ",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "总结",
-            "text_element_style": {
-              "bold": true,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        },
-        {
-          "text_run": {
-            "content": "：",
+            "content": "五、Solana（SOL）价格动态",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -435,13 +359,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "a7f935e2-72e0-4eac-9fdd-d3cf8953337d",
+    "block_id": "cfc66d68-abd9-4dd7-95e0-4851728e153a",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "Galaxy数字资产公司从Binance、Coinbase收购逾7亿美元的Solana（SOL）代币，大规模机构收购行为对SOL价格产生短期积极影响，可能提升其市场流动性和价格。",
+            "content": "Galaxy Digital从Binance、Coinbase收购逾7亿美元的Solana（SOL）代币，推动Solana价格上涨，此类机构大额收购行为对SOL价格产生直接提振效果。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -461,13 +385,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "45ccefc2-13f3-43cc-8b23-998042c3aa26",
-    "block_type": 12,
-    "bullet": {
+    "block_id": "e5d3ddd5-8dc2-4d48-914c-e538dea28fc5",
+    "block_type": 13,
+    "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "大型机构对特定加密货币的投资动向是市场关注焦点，需关注后续SOL价格走势及资金流入持续性。",
+            "content": "机构资金对特定加密货币的集中收购是影响其短期价格波动的重要因素，需关注后续市场对SOL的资金流入及流动性变化。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -480,7 +404,8 @@
       ],
       "style": {
         "align": 1,
-        "folded": false
+        "folded": false,
+        "sequence": "auto"
       }
     },
     "parent_id": ""

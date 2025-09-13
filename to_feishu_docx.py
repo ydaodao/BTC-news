@@ -455,9 +455,9 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         output_path=header_text_image_path,
         width=480,
         height=300,
-        line_spacing=25,
+        line_spacing=20,
         support_markdown=True,
-        font_size=45,
+        font_size=40,
         # font_color=(0, 0, 0),  # 黑色
         font_color=(255, 255, 255),  # 白色
         text_align='left',
@@ -681,7 +681,7 @@ if __name__ == "__main__":
         output_path=header_text_image_path,
         width=480,
         height=300,
-        line_spacing=25,
+        line_spacing=20,
         support_markdown=True,
         font_size=40,
         # font_color=(0, 0, 0),  # 黑色
