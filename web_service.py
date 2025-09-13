@@ -33,6 +33,7 @@ def index():
                     'success': True
                 }), 200
 
+# 启动主程序
 @app.route('/api/main', methods=['GET'])
 def start_main():
     try:
