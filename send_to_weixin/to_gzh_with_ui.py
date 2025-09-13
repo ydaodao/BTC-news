@@ -488,7 +488,7 @@ def open_edit_page_and_get_url(feishu_docs_page=None):
             time.sleep(5)
             feishu_docs_page.title() # 通过一个固定不变的页面来更新context内容
 
-            if hover_icon_with_prefix("wx_content_draft_btc_zhoubao"):
+            if hover_icon_with_prefix("wx_content_draft_btc_title"):
                 if click_icon_with_prefix("wx_content_edit"):
                     print("打开了文章编辑页面")
                     sleep(10) # 等待足够的时间

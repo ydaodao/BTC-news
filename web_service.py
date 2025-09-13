@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template_string, send_file
 from flask_cors import CORS
 import json
 import os
+import asyncio
 from datetime import datetime
 import logging
 from functools import wraps
@@ -37,7 +38,7 @@ def start_main():
     try:
         mode = request.args.get('mode', '', type=str)
         if mode:
-            main(mode)
+            asyncio.run(main(mode))
             return jsonify({
                     'success': True
                 }), 200

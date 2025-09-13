@@ -506,34 +506,33 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         if LOCAL_DEV:
             # 在浏览器打开链接
             webbrowser.open(docs_url)
-            preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(docs_url, final_title)
-            return docs_url, preview_page_title, preview_page_url
-        else:
-            # 发送请求：将飞书文档推送到公众号
-            try:
-                response = requests.post(
-                    url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
-                    json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
-                    headers={'Content-Type': 'application/json'},
-                    timeout=10
-                )
-                response.raise_for_status()
+        
+        # 发送请求：将飞书文档推送到公众号
+        try:
+            response = requests.post(
+                url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
+                json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
+                headers={'Content-Type': 'application/json'},
+                proxies=None,
+                timeout=600
+            )
+            response.raise_for_status()
 
-                # 打印详细的响应信息
-                result = response.json()
-                print(f"飞书推送响应: {result}")
-                
-                if result.get('success'):
-                    print("推送到公众号成功！")
-                    result_data = result.get('data')
-                    preview_page_title = result_data.get('preview_page_title')
-                    preview_page_url = result_data.get('preview_page_url')
+            # 打印详细的响应信息
+            result = response.json()
+            print(f"飞书推送响应: {result}")
+            
+            if result.get('success'):
+                print("推送到公众号成功！")
+                result_data = result.get('data')
+                preview_page_title = result_data.get('preview_page_title')
+                preview_page_url = result_data.get('preview_page_url')
 
-                    return docs_url, preview_page_title, preview_page_url
-                else:
-                    print(f"推送失败: {result.get('msg', '未知错误')}")
-            except requests.exceptions.RequestException as e:
-                print(f"消息直接推送到飞书失败：{e}")
+                return docs_url, preview_page_title, preview_page_url
+            else:
+                print(f"推送失败: {result.get('msg', '未知错误')}")
+        except requests.exceptions.RequestException as e:
+            print(f"消息直接推送到飞书失败：{e}")
     
     # 发送机器人预览内容：主体消息、推送到微信公众号用，超链接（指向阿里云）
     # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
