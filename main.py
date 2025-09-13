@@ -450,7 +450,6 @@ async def main(mode="all"):
                 # 4. 推送消息（自动根据环境变量选择推送到微信或飞书）
                 # await push_to_wechat(summary)
                 await push_interactive_to_feishu(news_content, title, summary, daily_end_md, docs_url, preview_page_url)
-            
         else:
             print("标题为空，不生成文档")
     

@@ -134,7 +134,7 @@ def text_to_image(text, width=800, height=600, font_size=24, font_color=(0, 0, 0
     elif vertical_align == 'bottom':
         start_y = height - total_text_height - 10
     else:  # center
-        start_y = (height - total_text_height) / 2 - 15 # 使用浮点除法而不是整除
+        start_y = (height - total_text_height) / 2 - 10 # 使用浮点除法而不是整除
     
     # 绘制每一行文字
     current_y = start_y

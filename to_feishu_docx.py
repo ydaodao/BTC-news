@@ -453,11 +453,11 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     save_text_image(
         text=final_title_for_imageheader,
         output_path=header_text_image_path,
-        width=1050,
-        height=400,
-        line_spacing=40,
+        width=480,
+        height=300,
+        line_spacing=25,
         support_markdown=True,
-        font_size=70,
+        font_size=45,
         # font_color=(0, 0, 0),  # 黑色
         font_color=(255, 255, 255),  # 白色
         text_align='left',
@@ -509,6 +509,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         
         # 发送请求：将飞书文档推送到公众号
         try:
+            print(f"发送请求：将飞书文档推送到公众号，标题：{final_title}，链接：{docs_url}")
             response = requests.post(
                 url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
                 json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
@@ -618,11 +619,11 @@ if __name__ == "__main__":
     # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
     markdown_file_path = os.path.join(os.path.dirname(__file__), "latest_summary.md")
 
-    try:
-        with open(markdown_file_path, 'r', encoding='utf-8') as f:
-            markdown_content = f.read()
-    except Exception as e:
-        lark.logger.error(f"Failed to read markdown file: {e}")
+    # try:
+    #     with open(markdown_file_path, 'r', encoding='utf-8') as f:
+    #         markdown_content = f.read()
+    # except Exception as e:
+    #     lark.logger.error(f"Failed to read markdown file: {e}")
     
     import asyncio
     # 修复异步函数调用
@@ -666,3 +667,32 @@ if __name__ == "__main__":
     #     print(f"消息直接推送到飞书失败：{e}")
 
     # print()
+
+    # 3. 测试标题图片生成
+    date_md = '09.13'
+    title = '比特币盘整蓄势，机构持仓创新高'
+    final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
+    # 生成头图，替换标题图片
+    header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
+    header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
+    header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
+    save_text_image(
+        text=final_title_for_imageheader,
+        output_path=header_text_image_path,
+        width=480,
+        height=300,
+        line_spacing=25,
+        support_markdown=True,
+        font_size=45,
+        # font_color=(0, 0, 0),  # 黑色
+        font_color=(255, 255, 255),  # 白色
+        text_align='left',
+        vertical_align='center'
+    )
+
+    # 合并图片
+    image_configs = [
+        {'path': header_bg_image_path, 'position': 'center'},
+        {'path': header_text_image_path, 'position': 'center-right'}
+    ]
+    merge_images(image_configs, output_path=header_image_path)
