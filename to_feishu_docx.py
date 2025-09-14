@@ -11,7 +11,6 @@ import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
 from utils.feishu_utils import extract_block_content_by_type, replace_textblock_by_blocktype
-from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh
 
 # 加载环境变量
 load_dotenv()
