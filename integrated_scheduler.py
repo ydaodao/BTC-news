@@ -38,6 +38,7 @@ def keep_gzh_online_task():
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 任务失败: {str(e)}")
 
 def screenshot_task():
+    # 检查桌面是否还能截图的任务
     try:
         # 设置pyautogui
         pyautogui.FAILSAFE = False
