@@ -20,7 +20,7 @@ FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 FEISHU_WEEKLY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
 FEISHU_DAILY_FOLDER = 'MdSNf0W47lGdIidseGUceatlnsb' # BTC-日报
-ALI_WEBSERVICE_URL = 'http://39.107.72.186:5000' if LOCAL_DEV else 'http://127.0.0.1:5000'
+ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
 
 # 如果环境变量未设置，给出明确的错误提示
 if not FEISHU_APP_ID:
@@ -532,7 +532,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
             else:
                 print(f"推送失败: {result.get('msg', '未知错误')}")
         except requests.exceptions.RequestException as e:
-            print(f"消息直接推送到飞书失败：{e}")
+            print(f"消息推送到公众号失败：{e}")
     
     # 发送机器人预览内容：主体消息、推送到微信公众号用，超链接（指向阿里云）
     # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
