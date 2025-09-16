@@ -69,7 +69,7 @@ def check_cdp_connection():
 # 设置定时任务
 schedule.every().day.at("21:00").do(screenshot_task)
 schedule.every().day.at("21:05").do(check_cdp_connection)
-schedule.every().day.at("7:30").do(keep_gzh_online_task)
+schedule.every().day.at("07:30").do(keep_gzh_online_task)
 schedule.every().day.at("21:30").do(keep_gzh_online_task)
 
 if __name__ == "__main__":
