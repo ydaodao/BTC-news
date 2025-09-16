@@ -539,6 +539,7 @@ def choose_page_cover(try_once=True):
             if click_icon_with_prefix("wx_edit_changecover_frompage_icon", duration=None):
                 if click_icon_with_prefix("wx_edit_changecover_pickimage"):
                     if click_icon_with_prefix("wx_edit_common_nextbtn"):
+                        sleep(2)
                         scroll_with_windows_api(-5) ## 滚动到底部出现确认按钮
                         if click_icon_with_prefix("wx_edit_common_querenbtn"):
                             print("选择了封面")
