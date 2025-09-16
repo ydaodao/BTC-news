@@ -509,7 +509,21 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         # 发送请求：将飞书文档推送到公众号
         try:
             print(f"发送请求：将飞书文档推送到公众号，标题：{final_title}，链接：{docs_url}")
-            response = requests.post(
+            
+            # 创建session并配置重试机制
+            session = requests.Session()
+            retry_strategy = requests.packages.urllib3.util.retry.Retry(
+                total=3,  # 最多重试3次
+                backoff_factor=1,  # 重试间隔时间将按1, 2, 4秒递增
+                status_forcelist=[429, 500, 502, 503, 504],  # 这些状态码会触发重试
+                allowed_methods=["POST"]  # 允许POST方法重试
+            )
+            adapter = requests.adapters.HTTPAdapter(max_retries=retry_strategy)
+            session.mount("http://", adapter)
+            session.mount("https://", adapter)
+            
+            # 使用配置好的session发送请求
+            response = session.post(
                 url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
                 json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
                 headers={'Content-Type': 'application/json'},
@@ -538,6 +552,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
     # 我打开后预览消息，并可以发起正式推送
     # 正式推送发起后，把二维截图给我，并附带再次请求二维码的链接（打开后就是二维码）
+    return None, None, None
 
 
 async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_md='1.7'):

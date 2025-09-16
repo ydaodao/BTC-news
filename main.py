@@ -298,7 +298,7 @@ async def push_interactive_to_feishu(content=None, title=None, summary=None, dai
     data_str = template_content.replace('{title}', title_escaped) \
                               .replace('{message_content}', message_content_escaped) \
                               .replace('{docs_url}', docs_url or '') \
-                              .replace('{wx_preview_page_url}', wx_preview_page_url or '')
+                              .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！')
     data = json.loads(data_str)
     
     try:
