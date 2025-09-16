@@ -68,13 +68,15 @@ def check_cdp_connection():
 
 # 设置定时任务
 schedule.every().day.at("21:00").do(screenshot_task)
+schedule.every().day.at("7:30").do(keep_gzh_online_task)
 schedule.every().day.at("21:30").do(keep_gzh_online_task)
+schedule.every().day.at("21:30").do(check_cdp_connection)
 
 if __name__ == "__main__":
     print("集成调度器已启动")
     print("每天晚上9点执行截图任务")
     print("每天晚上9点5分执行CDP连接检测任务")
-    print("每天晚上9点半执行保持公众号在线任务")
+    print("每天晚上9点30分执行保持公众号在线任务")
     
     while True:
         schedule.run_pending()
