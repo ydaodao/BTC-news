@@ -3,6 +3,7 @@ from flask_cors import CORS
 import json
 import os
 import asyncio
+from playwright.sync_api import sync_playwright
 from datetime import datetime
 import logging
 from functools import wraps
@@ -32,6 +33,20 @@ def index():
     return jsonify({
                     'success': True
                 }), 200
+
+# 检查CDP连接
+@app.route('/api/check_cdp', methods=['GET'])
+def check_cdp_connection():
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+        context = browser.contexts[0]
+        page = context.pages[0]
+        print(page.title())
+        return jsonify({
+            'success': True,
+            'title': page.title()
+        })
+
 
 # 启动主程序
 @app.route('/api/main', methods=['GET'])

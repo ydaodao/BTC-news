@@ -55,7 +55,7 @@ async def push_richtext_to_feishu(card_title, text_content, text_url):
     }
     send_to_robot(message)
 
-async def push_text_to_feishu(text_content):
+def push_text_to_feishu(text_content):
     # 文本
     message = {
         "msg_type": "text",

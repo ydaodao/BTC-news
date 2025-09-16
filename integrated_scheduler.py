@@ -5,6 +5,7 @@ import sys
 import os
 import asyncio
 import pyautogui
+from playwright.sync_api import sync_playwright
 # 添加项目路径
 sys.path.append(os.path.dirname(__file__))
 from to_feishu_robot import push_text_to_feishu
@@ -26,15 +27,15 @@ def keep_gzh_online_task():
                     print("保持公众号在线成功")
                     return True
                 else:
-                    asyncio.run(push_text_to_feishu("保持公众号在线失败！未找到内容管理图标"))
+                    push_text_to_feishu("保持公众号在线失败！未找到内容管理图标")
                     print("保持公众号在线失败！未找到内容管理图标")
                     return False
             else:
-                asyncio.run(push_text_to_feishu("公众号页面刷新失败！"))
+                push_text_to_feishu("公众号页面刷新失败！")
                 print("公众号页面刷新失败！")
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 任务完成")
     except Exception as e:
-        asyncio.run(push_text_to_feishu(f"保持公众号在线任务失败！错误信息：{str(e)}"))
+        push_text_to_feishu(f"保持公众号在线任务失败！错误信息：{str(e)}")
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 任务失败: {str(e)}")
 
 def screenshot_task():
@@ -46,10 +47,24 @@ def screenshot_task():
         screenshot = pyautogui.screenshot()
         print(f"截图成功！尺寸：{screenshot.size}")
         if not screenshot:
-            asyncio.run(push_text_to_feishu("截图失败！"))
+            push_text_to_feishu("截图失败！")
     except Exception as e:
         print(f"截图失败：{e}")
         print(f"错误类型：{type(e).__name__}")
+        push_text_to_feishu(f"截图失败！错误信息：{str(e)}")
+
+def check_cdp_connection():
+    """检查CDP连接状态"""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+            context = browser.contexts[0]
+            page = context.pages[0]
+            print(page.title())
+    except Exception as e:
+        print(f"CDP连接检查失败：{e}")
+        print(f"错误类型：{type(e).__name__}")
+        push_text_to_feishu(f"CDP连接失败！错误信息：{str(e)}")
 
 # 设置定时任务
 schedule.every().day.at("21:00").do(screenshot_task)
@@ -58,6 +73,7 @@ schedule.every().day.at("21:30").do(keep_gzh_online_task)
 if __name__ == "__main__":
     print("集成调度器已启动")
     print("每天晚上9点执行截图任务")
+    print("每天晚上9点5分执行CDP连接检测任务")
     print("每天晚上9点半执行保持公众号在线任务")
     
     while True:
