@@ -1,34 +1,40 @@
-### 一、比特币短期市场情绪与价格波动
+### 一、美联储降息后加密货币市场整体动态
 **总结**：
-1. 比特币当前交易价格在116,000-117,000美元区间，市场情绪谨慎乐观，短期需关注117美元和119美元关键阻力位，若突破可能引发空头清算，而跌破110,700美元或触发28.62亿美元多单清算。
-2. 比特币ETF连续多日保持资金流入，9月17日净流入约2.92亿美元，机构需求稳定；同时市场对美联储降息预期强烈（概率96%），降息或进一步支撑风险资产，但需警惕“卖出新闻”风险。
-3. 链上数据显示交易所比特币流出减少，USDT存款增加，市场干粉充足，但资金费率中性，多空单清算风险仍存，价格走势受ETF流入和美联储利率决策影响显著。
+1. 美联储宣布将商业银行间隔夜拆借利率下调25个基点至4.00%-4.25%区间，为今年首次降息，鲍威尔强调此次举措为“风险管理”，未来或有进一步降息预期，宽松金融环境利好加密生态。
+2. 比特币对降息消息反应平淡，价格在117,000美元附近波动，过去一周上涨2%，ETF资金流入创7月以来最大值，持仓量创新高。
+3. 加密货币总市值达41022.08亿美元，比特币占有率57.0%，CoinDesk 20指数上涨2.8%，所有成分股全面走高。
+4. 日本公司Remixpoint再增持77.15枚比特币，总持有量达1350枚，机构持续增仓。
 **参考**：
-- [Binance：BTC市场情绪谨慎乐观，关注117和119美元关键阻力位](https://www.binance.com/zh-CN/square/post/09-17-2025-btc-117-119-29810498853145)
-- [Mitrade：比特币（BTC）、以太坊（ETH）保持稳定，瑞波币（XRP）下滑](https://www.mitrade.com/cn/insights/news/live-news/article-3-1130363-20250917)
-- [Mitrade：比特币价格预测：BTC在美联储决策前稳住在116,000美元以上，交易者关注突破](https://www.mitrade.com/cn/insights/news/live-news/article-3-1130125-20250917)
-- [Binance：BTC 价格波动或引发多空单清算强度变化](https://www.binance.com/cn/square/post/29804969919657)
+- [美联储降息25个基点 美国经济面临多重不确定性](https://news.qq.com/rain/a/20250917A055PY00)
+- [美联储鲍威尔发表讲话后比特币下一步会怎么走？](https://news.futunn.com/post/62265218?futusource=news_stock_stockpagebignews&ns_stock_id=80861349505860&src=6&lang=zh-cn)
+- [日本公司Remixpoint再增持77.15枚比特币，总持有量达1350枚_亿欧快讯](https://www.iyiou.com/briefing/202509181825215)
+- [加密货币总市值逾4.10万亿美元，比特币占有率为57.0% - Binance](https://www.binance.com/cn/square/post/29848806887305)
+- [CoinDesk 20 业绩更新：指数上涨2.8%，所有成分股全面走高](https://www.coindesk.com/zh/coindesk-indices/2025/09/18/coindesk-20-performance-update-index-gains-2-8-as-all-constituents-move-higher)
+---
 
-
-### 二、比特币质押相关稳定币动态
+### 二、比特币价格走势及技术分析
 **总结**：
-1. 区块链项目Botanix宣布推出stBTC，允许用户质押比特币（BTC）并获得以比特币计价的原生收益，收益来源于网络产生的BTC手续费（50%分配给质押者）。
-2. stBTC支持即时赎回，可用于借贷、交易等DeFi场景，创世金库将于9月25日开放，启动阶段预计年化收益率最高达30%，不依赖通胀或挖矿补贴，通过手续费分配实现收益。
+1. 比特币当前交易价格约117,276美元，日线图形成圆底形态，短期在118,000美元阻力位下方挣扎，成交量数据显示动能减弱。
+2. 四小时图突破后适度整理，支撑位117,000美元；小时图完成杯柄形态，可能形成牛旗整理，116,500美元为次级支撑位。
+3. 技术指标显示短期中性偏向，RSI 61，随机指标92，MACD看涨，移动平均线呈总体看涨趋势。
+4. zkBTC启动“Bitcoin Yield Boost”激励计划，推动比特币DeFi生态扩张。
 **参考**：
-- [Botanix 宣布推出stBTC - 吴说](https://www.wublock123.com/article/6/48897)
-- [Botanix 宣布推出stBTC - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-09-17/doc-infqvnxx2446489.shtml)
+- [Bitcoin 价格观察：随着势头减弱，BTC 在118000美元下方挣扎](https://news.bitcoin.com/zh/bitcoin-jiage-guanch-a-sui-zhe-shi-tou-jian-ruo-btc-zai-118000-meiyuan-xiafang-zheng-zha/)
+- [zkBTC 宣布启动“Bitcoin Yield Boost” 激励计划，三大收益板块推动比特币DeFi 生态扩张 - 比推](https://www.bitpush.news/articles/7571660)
+---
 
-
-### 三、比特币ETF资金流入情况
+### 三、比特币资金流动与机构持仓动向
 **总结**：
-比特币现货ETF连续七天保持资金流入，9月17日净流入约2.92亿美元，机构对加密货币的需求持续增加，若资金流入延续，可能进一步支撑比特币价格向8月14日创下的124,474美元历史高点突破。
+1. Hyperscale Data将比特币投资扩大至800万美元，通过挖矿及子公司公开市场购买增加持仓。
+2. 过去24小时CEX净流出7918.29枚比特币，Coinbase Pro、Bitstamp、Kraken流出较多，Binance有少量流入。
+3. 日本公司Remixpoint再增持77.15枚比特币，总持有量达1350枚。
 **参考**：
-- [Bitcoin ETF连续第七天流入，金额为2.92亿美元](https://news.bitcoin.com/zh/bitcoin-etf-lianxu-di-qi-tian-liuru-jine-wei-2-92-yi-meiyuan/)
+- [Hyperscale Data 将比特币投资扩大至800 万美元](https://www.binance.com/square/post/29851357145882)
+- [比特币提币趋势延续，过去24小时CEX净流出7918.29枚比特币 - MarsBit](https://m.marsbit.co/flash/20250918163901384231.html)
+- [日本公司Remixpoint再增持77.15枚比特币，总持有量达1350枚_亿欧快讯](https://www.iyiou.com/briefing/202509181825215)
+---
 
-
-### 四、Plasma项目介绍
-**总结**：
-1. Plasma旨在成为“稳定币的Chrome”，类比Chrome浏览器对互联网的变革，通过新型共识机制PlasmaBFT实现交易秒级终局性，提升网络稳定性。
-2. 支持完整EVM兼容性，可无缝迁移现有以太坊应用，无需代码修改；计划构建以比特币为核心的金融生态系统，发行BTC抵押型稳定币，实现零手续费转账和隐私支付模块，并与顶级DeFi协议合作扩展生态。
+### 四、比特币相关负面事件
+**总结**：美国公司Praetorian Group International首席执行官因操纵2亿美元比特币庞氏骗局认罪，涉及超9万名投资者，吸收资金2.01亿美元（含8198枚BTC），造成损失6269万美元，案件将于2026年2月3日宣判，最高面临40年监禁。
 **参考**：
-- [如何让Plasma成为稳定币基础设施的Chrome？](https://reports.tiger-research.com/p/how-plasma-becomes-the-chrome-for-chn)
+- [Praetorian Group International 首席执行官承认2 亿美元比特币庞氏骗局罪行 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-09-18/doc-infqwkcv0905142.shtml)
