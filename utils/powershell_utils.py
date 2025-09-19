@@ -49,12 +49,14 @@ def run_powershell_command(command, cwd=None, capture_output=True, timeout=None)
         logger.info(f"执行PowerShell命令: {command}")
         logger.info(f"工作目录: {cwd}")
         
-        # 执行命令
+        # 执行命令，使用 UTF-8 编码处理输出
         result = subprocess.run(
             full_command,
             cwd=cwd,
             capture_output=capture_output,
             text=True,
+            encoding='utf-8',  # 明确指定使用 UTF-8 编码
+            errors='replace',  # 对于无法解码的字符，使用替代字符
             timeout=timeout
         )
         
@@ -188,5 +190,7 @@ if __name__ == "__main__":
     print(f"git pull 结果: {result['stdout']}")
     result = git_commit("自动提交更新")
     print(f"git commit 结果: {result['commit']['stdout']}")
+    result = git_push()
+    print(f"git push 结果: {result['stdout']}")
     # git_commit("自动提交更新")
     # git_push()
