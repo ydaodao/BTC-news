@@ -187,10 +187,10 @@ if __name__ == "__main__":
     
     # 示例：执行Git操作
     result = git_pull()
-    print(f"git pull 结果: {result['stdout']}")
+    print(f"git pull 结果: {result}")
     result = git_commit("自动提交更新")
-    print(f"git commit 结果: {result['commit']['stdout']}")
+    print(f"git commit 结果: {result}")
     result = git_push()
-    print(f"git push 结果: {result['stdout']}")
+    print(f"git push 结果: {result}")
     # git_commit("自动提交更新")
     # git_push()
