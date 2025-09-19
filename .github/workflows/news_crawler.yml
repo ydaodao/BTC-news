@@ -5,11 +5,11 @@ on:
     # RSS抓取任务 (UTC时间，比北京时间晚8小时)
     - cron: '0 6,22,14 * * *'  # 对应北京时间 14:00,6:00,22:00
     
-    # 摘要生成任务
+    # 生成日报
     - cron: '10 23 * * 0,1,2,3,4'  # 对应北京时间 7:10，每周一到周五执行
     
-    # 新增：周日summary_write任务
-    - cron: '0 0 * * 0'  # 对应北京时间 8:00，每周日执行summary_write
+    # 生成周报
+    - cron: '0 0 * * 0'  # 对应北京时间 8:00，每周日执行weekly_news
   
   workflow_dispatch:  # 允许手动触发
 
@@ -50,7 +50,7 @@ jobs:
           git commit -m "Update ssr_list.db" || exit 0
           git push
   
-  news-summary:
+  daily-news:
     if: github.event.schedule == '10 23 * * 0,1,2,3,4'
     runs-on: ubuntu-latest
 
@@ -78,7 +78,7 @@ jobs:
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           ALI_API_KEY: ${{ secrets.ALI_API_KEY }}
           PYTHONUTF8: "1"
-        run: python main.py --mode summary_push
+        run: python main.py --mode daily_news
 
       # 使用 git 命令提交并推送文件
       - name: Commit and push if changed
@@ -89,8 +89,8 @@ jobs:
           git commit -m "Update latest_prompt.txt and latest_summary.md" || exit 0
           git push
 
-  # 新增：周六summary_write任务
-  summary-write:
+  # 新增：周六weekly-news任务
+  weekly-news:
     # 只在周六10:00的定时任务执行
     if: github.event.schedule == '0 0 * * 0'
     runs-on: ubuntu-latest
@@ -118,7 +118,7 @@ jobs:
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           ALI_API_KEY: ${{ secrets.ALI_API_KEY }}
           PYTHONUTF8: "1"
-        run: python main.py --mode summary_write
+        run: python main.py --mode weekly_news
 
       # 使用 git 命令提交并推送文件
       - name: Commit and push if changed
@@ -126,5 +126,5 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git add latest_summary.md latest_summary_chunks.md
-          git commit -m "Update summary files from summary_write mode" || exit 0
+          git commit -m "Update summary files from weekly_news mode" || exit 0
           git push

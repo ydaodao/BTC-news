@@ -399,7 +399,7 @@ async def main(mode="all"):
     主函数，根据模式执行不同的任务
     :param mode: 执行模式
         - "rss": 抓取RSS并获取内容
-        - "summary_push": 只执行摘要生成和推送
+        - "daily_news": 生成日报
         - "all": 执行所有步骤
     """
     if not VOLCENGINE_API_KEY:
@@ -435,8 +435,8 @@ async def main(mode="all"):
         # 2. 获取内容
         await fetch_news_content(start_date, end_date)
 
-    if mode in ["summary_push", "all"]:
-        print("\n=== 执行摘要生成和推送任务 ===")
+    if mode in ["daily_news", "all"]:
+        print("\n=== 生成日报 ===")
         # 1. 生成文章内容
         news_content = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 2. 生成标题摘要
@@ -453,8 +453,8 @@ async def main(mode="all"):
         else:
             print("标题为空，不生成文档")
     
-    if mode in ["summary_write", "all"]:
-        print("\n=== 执行摘要写入文档任务 ===")
+    if mode in ["weekly_news", "all"]:
+        print("\n=== 生成周报 ===")
         # 1. 生成摘要（使用分块处理版本）
         news_content = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 延迟导入，避免循环依赖
@@ -466,9 +466,9 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='新闻处理工具')
     parser.add_argument('--mode', 
-                      choices=['rss', 'summary_push', 'summary_write', 'all'],
+                      choices=['rss', 'daily_news', 'weekly_news', 'all'],
                       default='all',
-                      help='执行模式: rss=RSS抓取, summary_push=摘要推送, summary_write=摘要写入文档, all=全部')
+                      help='执行模式: rss=RSS抓取, daily_news=生成日报, weekly_news=生成周报, all=全部')
     args = parser.parse_args()
     
     asyncio.run(main(args.mode))

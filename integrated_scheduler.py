@@ -5,7 +5,9 @@ import sys
 import os
 import asyncio
 import pyautogui
+import utils.powershell_utils
 from playwright.sync_api import sync_playwright
+from main import main
 # 添加项目路径
 sys.path.append(os.path.dirname(__file__))
 from to_feishu_robot import push_text_to_feishu
@@ -66,19 +68,32 @@ def check_cdp_connection():
         print(f"错误类型：{type(e).__name__}")
         push_text_to_feishu(f"CDP连接失败！错误信息：{str(e)}")
 
-# 设置定时任务
-schedule.every().day.at("21:00").do(screenshot_task)
-schedule.every().day.at("21:05").do(check_cdp_connection)
-schedule.every().day.at("07:30").do(keep_gzh_online_task)
-schedule.every().day.at("21:30").do(keep_gzh_online_task)
+def run_main_task(task_name):
+    """执行定时任务"""
+    print(f"\n[{datetime.now()}] 执行任务: {task_name}")
+    asyncio.run(main(task_name))
+
+def start_local_scheduler():
+    """启动本地定时任务"""
+
+    # 设置定时任务
+    schedule.every().day.at("21:00").do(screenshot_task)
+    schedule.every().day.at("21:05").do(check_cdp_connection)
+    schedule.every().day.at("07:30").do(keep_gzh_online_task)
+    schedule.every().day.at("21:30").do(keep_gzh_online_task)
+
+
+
+    try:
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
+    except KeyboardInterrupt:
+        print("\n定时任务已停止")
+    except Exception as e:
+        print(f"定时任务运行出错：{e}")
+        push_text_to_feishu(f"定时任务运行出错！错误信息：{str(e)}")
 
 if __name__ == "__main__":
-    print("集成调度器已启动")
-    print("每天晚上9点执行截图任务")
-    print("每天晚上9点05分执行CDP连接检测任务")
-    print("每天早上7点30分执行保持公众号在线任务")
-    print("每天晚上9点30分执行保持公众号在线任务")
-    
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
+    # start_local_scheduler()
+    powershell_utils.run_powershell_command("Get-Process")
