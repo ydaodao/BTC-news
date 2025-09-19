@@ -187,6 +187,6 @@ if __name__ == "__main__":
     result = git_pull()
     print(f"git pull 结果: {result['stdout']}")
     result = git_commit("自动提交更新")
-    print(f"git commit 结果: {result['stdout']}")
+    print(f"git commit 结果: {result['commit']['stdout']}")
     # git_commit("自动提交更新")
     # git_push()
