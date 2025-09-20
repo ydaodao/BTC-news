@@ -328,7 +328,7 @@ async def push_to_wechat(content=None, feishu_mode=True):
     """
     if not content:
         # 尝试从本地文件读取内容
-        summary_file = os.path.join(os.path.dirname(__file__), "latest_summary.md")
+        summary_file = os.path.join(os.path.dirname(__file__), "files", "latest_summary.md")
         try:
             with open(summary_file, "r", encoding="utf-8") as f:
                 content = f.read()

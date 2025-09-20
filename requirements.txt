@@ -16,3 +16,4 @@ pyautogui==0.9.54
 requests_toolbelt==1.0.0
 flask==3.1.2
 flask-cors==6.0.1
+croniter==6.0.0

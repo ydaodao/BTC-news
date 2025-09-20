@@ -25,7 +25,7 @@ client = OpenAI(
 def compare_news():
     """比较新闻内容"""
     # 读取文件
-    summary_chunks_file = os.path.join(os.path.dirname(__file__), "..", "latest_summary_chunks.md")
+    summary_chunks_file = os.path.join(os.path.dirname(__file__), "..", "files", "latest_summary_chunks.md")
     combined_news_file = os.path.join(os.path.dirname(__file__), "combined_news.md")
     
     summary_chunks_content = read_file_safely(summary_chunks_file, "RSS摘要")
