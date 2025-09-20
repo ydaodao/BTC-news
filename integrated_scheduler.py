@@ -127,31 +127,15 @@ cron_scheduler = CronScheduler()
 
 def keep_gzh_online_task():
     """保持公众号在线任务"""
-    try:
-        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 执行保持公众号在线任务")
-        # 导入并执行keep_gzh_online.py的逻辑
-        from send_to_weixin.to_gzh_with_pw import active_page
-        from send_to_weixin.to_gzh_with_ui import find_icon_with_prefix
-        from playwright.sync_api import sync_playwright
-        
-        with sync_playwright() as p:
-            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-            context = browser.contexts[0]
-            if active_page(context, "公众号", "https://mp.weixin.qq.com/", refresh=True):
-                if find_icon_with_prefix("wx_content_management"):
-                    print("保持公众号在线成功")
-                    return True
-                else:
-                    push_text_to_feishu("保持公众号在线失败！未找到内容管理图标")
-                    print("保持公众号在线失败！未找到内容管理图标")
-                    return False
-            else:
-                push_text_to_feishu("公众号页面刷新失败！")
-                print("公众号页面刷新失败！")
-        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 任务完成")
-    except Exception as e:
-        push_text_to_feishu(f"保持公众号在线任务失败！错误信息：{str(e)}")
-        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 任务失败: {str(e)}")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 执行保持公众号在线任务")
+
+    from send_to_weixin.to_gzh_with_pw import keep_gzh_online
+    success, msg = keep_gzh_online()
+    if success:
+        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
+    else:
+        push_text_to_feishu(msg)
+        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
 
 def screenshot_task():
     # 检查桌面是否还能截图的任务
@@ -217,11 +201,11 @@ def setup_cron_jobs():
     # 每天7:00、12:00、21:00执行保持公众号在线任务
     cron_scheduler.add_cron_job('0 7,12,21 * * *', keep_gzh_online_task, '保持公众号在线')
 
-    # 每周一、二、三、四、五的7:30执行 日报任务
-    cron_scheduler.add_cron_job('30 7 * * 1,2,3,4,5', lambda: run_main_task("daily_news"), '日报任务')
+    # 每周一、二、三、四、五的7:00执行 日报任务
+    cron_scheduler.add_cron_job('0 7 * * 1,2,3,4,5', lambda: run_main_task("daily_news"), '日报任务')
 
-    # 每周日的7:30执行 周报任务
-    cron_scheduler.add_cron_job('30 7 * * 7', lambda: run_main_task("weekly_news"), '周报任务')
+    # 每周日的7:00执行 周报任务
+    cron_scheduler.add_cron_job('0 7 * * 7', lambda: run_main_task("weekly_news"), '周报任务')
 
 def start_cron_scheduler():
     """启动 cron 调度器"""
