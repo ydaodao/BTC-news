@@ -171,7 +171,7 @@ def run_main_task(task_name):
     result = powershell_utils.git_pull()
     if result['success']:
         asyncio.run(main(task_name))
-        result = powershell_utils.git_commit("更新最新新闻")
+        result = powershell_utils.git_commit(f"{task_name}：git commit")
         if result['success']:
             result = powershell_utils.git_push()
             if result['success']:
