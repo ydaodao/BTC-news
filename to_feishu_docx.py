@@ -5,12 +5,12 @@ import webbrowser
 from dotenv import load_dotenv
 from to_feishu_robot import push_richtext_to_feishu
 from utils.image_utils import save_text_image, merge_images
-from utils.feishu_utils import FeishuDocumentAPI
+from utils.feishu_docs_utils import FeishuDocumentAPI
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
-from utils.feishu_utils import extract_block_content_by_type, replace_textblock_by_blocktype
+from utils.feishu_docs_utils import extract_block_content_by_type, replace_textblock_by_blocktype
 
 # 加载环境变量
 load_dotenv()
@@ -116,7 +116,7 @@ def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
             "children": []
         }
         
-        # 使用 feishu_utils 中的通用函数处理块类型映射
+        # 使用 feishu_docs_utils 中的通用函数处理块类型映射
         block_content = extract_block_content_by_type(block)
         # 直接使用提取的内容，无需额外特殊处理
         if block_content['type_name'] != 'unknown':

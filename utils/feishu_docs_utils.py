@@ -518,7 +518,6 @@ class FeishuDocumentAPI:
         
         return True
     
-    
 
 # 便捷函数，使用环境变量中的配置
 def get_document_blocks(document_id, filter_block_type=None, page_size=500):

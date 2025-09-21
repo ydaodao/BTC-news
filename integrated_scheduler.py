@@ -130,7 +130,7 @@ def keep_gzh_online_task():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 执行保持公众号在线任务")
 
     from send_to_weixin.to_gzh_with_pw import keep_gzh_online
-    success, msg = keep_gzh_online()
+    success, msg, qrcode_download_url = keep_gzh_online()
     if success:
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
     else:
@@ -170,8 +170,8 @@ def run_main_task(task_name):
     print(f"\n[{datetime.now()}] 执行任务: {task_name}")
     result = powershell_utils.git_pull()
     if result['success']:
-        asyncio.run(main(task_name))
-        result = powershell_utils.git_commit(f"{task_name}：git commit")
+        # asyncio.run(main(task_name))
+        result = powershell_utils.git_commit(f"{task_name}")
         if result['success']:
             result = powershell_utils.git_push()
             if result['success']:
@@ -214,5 +214,7 @@ def start_cron_scheduler():
     cron_scheduler.start()
 
 if __name__ == "__main__":
-    start_cron_scheduler()     # 使用新的 cron 调度器
-    powershell_utils.run_powershell_command("Get-Process")
+    # start_cron_scheduler()     # 使用新的 cron 调度器
+    # powershell_utils.run_powershell_command("Get-Process")
+
+    asyncio.run(run_main_task('weekly_news'))
