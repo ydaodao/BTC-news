@@ -1,10 +1,12 @@
 import os
 import asyncio
 import requests
-from dotenv import load_dotenv
 from requests_toolbelt import MultipartEncoder
 # 加载环境变量
+from dotenv import load_dotenv
 load_dotenv()
+LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
+ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
 
 class FeishuRobotAPI:
     def __init__(self, app_id=None, app_secret=None):
@@ -192,7 +194,7 @@ def push_wxqrcode_to_robot(card_title, image_path):
                                         "behaviors": [
                                             {
                                                 "type": "open_url",
-                                                "default_url": "http://39.107.72.186/qrcode",
+                                                "default_url": f"{ALI_WEBSERVICE_URL}/qrcode",
                                                 "pc_url": "",
                                                 "ios_url": "",
                                                 "android_url": ""

@@ -13,6 +13,10 @@ import threading
 # 添加项目路径
 sys.path.append(os.path.dirname(__file__))
 from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
+# 加载环境变量
+from dotenv import load_dotenv
+load_dotenv()
+LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 
 class CronScheduler:
     """支持 cron 语法的定时任务调度器"""
@@ -217,7 +221,9 @@ def start_cron_scheduler():
     cron_scheduler.start()
 
 if __name__ == "__main__":
-    # start_cron_scheduler()     # 使用新的 cron 调度器
-    # powershell_utils.run_powershell_command("Get-Process")
-    keep_gzh_online_task()
-    # run_main_task('weekly_news')
+    if LOCAL_DEV:
+        # powershell_utils.run_powershell_command("Get-Process")
+        keep_gzh_online_task()
+        # run_main_task('weekly_news')
+    else:
+        start_cron_scheduler()     # 使用新的 cron 调度器
