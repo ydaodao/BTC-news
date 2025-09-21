@@ -170,7 +170,7 @@ def run_main_task(task_name):
     print(f"\n[{datetime.now()}] 执行任务: {task_name}")
     result = powershell_utils.git_pull()
     if result['success']:
-        # asyncio.run(main(task_name))
+        asyncio.run(main(task_name))
         result = powershell_utils.git_commit(f"{task_name}")
         if result['success']:
             result = powershell_utils.git_push()
@@ -214,7 +214,7 @@ def start_cron_scheduler():
     cron_scheduler.start()
 
 if __name__ == "__main__":
-    # start_cron_scheduler()     # 使用新的 cron 调度器
+    start_cron_scheduler()     # 使用新的 cron 调度器
     # powershell_utils.run_powershell_command("Get-Process")
 
-    asyncio.run(run_main_task('weekly_news'))
+    # run_main_task('weekly_news')
