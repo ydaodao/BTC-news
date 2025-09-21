@@ -25,1298 +25,442 @@
 
     -----
 
-    标题: 分析师：<b>比特币</b>或将重新测试12万美元关口 - BlockBeats
-真实链接: https://www.theblockbeats.info/flash/313040
-正文: BlockBeats 消息，9 月 20 日，据 Decrypt 报道，Bitbank 分析师 Yuya Hasegawa
-表示，比特币交易者可能需要一周时间完全消化美联储 9 个月来的首次降息影响。随着 FOMC 之后风险偏好持续，技术面情绪改善被视为比特币的额外利好，将使
-BTC 测试 12 万美元成为可能。如果比特币成功突破 12
-万美元，完整回调或将浮出水面。市场可能需要大约一周时间消化这一结果，然后回归正常，重新关注通胀和利率变动。  
-  
-下周，美联储主席 Jerome Powell 以及副主席兼监管主管 Michelle W. Bowman 计划于周二发表讲话。尽管本周 FOMC
-发布的修订点阵图显示 2025 年可能还有两次降息，但 Powell 并未作出任何承诺。  
-  
-交易者将密切解读 Powell 或其他 FOMC 成员每次讲话中的细微变化。展望 10 月议息会议，Decrypt 母公司 Dastan 旗下预测市场
-Myriad 的用户中，72% 预计将再降息 25 个基点，约 11% 认为美联储将维持利率不变，这将是今年倒数第二次会议。
-
-作为一名长期关注加密货币与传统金融市场联动的从业者，我认为这组信息清晰地勾勒出当前市场运行的核心逻辑：比特币的价格走势正与宏观经济政策，尤其是美联储的货币政策周期深度绑定。  
-  
-分析师对比特币冲击12万美元的预测，其核心驱动力并非来自加密货币内部的技术创新或生态发展，而是来自于外部宏观货币环境的转变——即美联储自2025年9月开启的降息周期。市场普遍将降息解读为流动性转向宽松的信号，这会降低持有无息资产比特币的机会成本，从而提振风险资产偏好。然而，关键在于“预期”与“事实”之间的博弈。从历史数据看，市场往往在预期阶段（FOMC会议前）提前反应，如5月份利率维持不变时，价格仍因“未释放更鹰派信号”而反弹至近10万美元；而当降息真正落地（如9月17日降息25个基点），反而可能出现“Buy
-the rumor, sell the news”的获利了结现象，这解释了为何需要约一周时间来消化信息。  
-  
-技术面上的“情绪改善”和“测试关键阻力位”是表象，其内核依然是宏观流动性预期。突破12万美元关口需要两个条件同时满足：一是宏观层面确认宽松周期的持续性（关注点阵图暗示的2025年后续降息路径及通胀数据），二是比特币自身需有效消化前期获利盘并吸引新的增量资金（如ETF资金流能否打破平稳状态）。若突破失败，市场将迅速回撤至关注经济基本面（就业、通胀）和利率政策的传统轨道上。  
-  
-需要注意的是，这种高度依赖宏观政策定价的模式是一把双刃剑。它让比特币获得了更广泛的机构关注，但也使其价格更容易受到单一因素（美联储官员讲话、月度CPI数据）的短期扰动，波动性结构已发生深刻变化。长期来看，比特币能否真正摆脱传统周期束缚，仍需观察其作为价值存储工具的独立叙事能否重新主导市场定价。
+    标题: 新的钱包从中心化交易所提取了价值1.1557亿美元的<b>比特币</b>
+真实链接: https://cn.cointelegraph.com/flash-news/13910603
+正文: Gate News 机器人消息，一个新建立的加密货币钱包在48小时内从多个中心化交易所执行了大量比特币提现。钱包地址
+1LVEfHXn9GDNr7DECE8iLgneDoQtryGNtb 从多个中心化交易所转移了 1,000 BTC，等值于 115.57 百万美元。
 
 
 
 -----
 
-标题: <b>比特币</b>难度创下新高，网络算力稳定在1Z以上- <b>Bitcoin</b> News
-真实链接: https://news.bitcoin.com/zh/bi-te-bi-nan-du-chuang-xia-xin-gao-wang-luo-suan-li-wen-ding-zai-1z-yi-shang/
-正文: **比特币在2025年9月19日的交易价格为$116,393，使其市场价值达到$2.31万亿，24小时交易量为$36.67亿。该加密货币的日内波动范围从$116,349到$117,888，反映了在关键阻力附近的紧密整合。**
+标题: 数据：萨尔瓦多近7 日共增持8 枚<b>BTC</b>，总持仓达6326.18 枚 - 链捕手
+真实链接: https://www.chaincatcher.com/article/2207240
+正文: ChainCatcher 消息，萨尔瓦多过去 7 日共增持 8 枚比特币，目前其比特币持仓达 6,326.18 枚，总价值达 7.32 亿美元。
 
-![play](/images/uploads/ListenArticleHeadphone.svg) Listen to article
 
-## 比特币
 
-在日线图上，[比特币](https://markets.bitcoin.com/crypto/bitcoin)自9月初以来已确认上涨趋势，强劲反弹自$107,270的支撑位，在该处形成双底结构。从那时起，价格走势稳步上升，但现在在$119,336的显著阻力区域之下滞涨。
+-----
+
+标题: 分析师称<b>比特币</b>将在全球金融重置中增长 - Binance
+真实链接: https://www.binance.com/cn/square/post/29967781817681
+正文: 据 PANews 报道，市场分析师 Jordi Visser
+表示，全球金融体系正走向“第四次转折”式的重置。无论未来宏观经济形势如何，比特币的价格和普及度都有望增长。
+
+普通民众对传统机构失去信心，这将推动人们投资比特币。比特币是一种中立、无需许可、不受政府或传统组织束缚的全球资产。
+
+
+
+-----
+
+标题: 分析师：无论未来几年乃至几十年宏观经济形势如何，<b>比特币</b>的价格和普及度都有望增长 - 比推
+真实链接: https://www.bitpush.news/articles/7572359
+正文: 比推消息， 市场分析师 Jordi Visser
+表示，随着全球金融体系走向“第四次转折”式的重置，无论未来几年乃至几十年宏观经济形势如何，比特币的价格和普及度都有望增长。普通民众已经对所有传统机构失去了信心，这应该会推动人们投资比特币——一种中立、无需许可、不受政府或传统组织束缚的全球资产。
+
+“第四次转折”指的是 William Strauss 和 Neil Howe 合著的一本书，书中描述了国家由于可预测的代际模式而出现的周期性兴衰。
+
+##### 说明: 比推所有文章只代表作者观点，不构成投资建议
+
+
+
+-----
+
+标题: 美国现货<b>比特币</b>ETF链上总持仓量突破130万枚<b>BTC</b>
+真实链接: https://cn.cointelegraph.com/flash-news/13906285
+正文: 金色财经报道，据Dune数据显示，美国现货比特币ETF链上总持仓量已突破130万枚BTC，现触及约130.7万枚BTC，占当前BTC供应量的6.56%，链上持仓价值触及约1516亿美元。
+
+
+
+-----
+
+标题: 灰度提交修订版S-1申请拟将狗狗币信托转换为GDOG ETF，强化对DOGE、<b>BTC</b>、ETH、XRP
+真实链接: https://blockchain.news/zh/flashnews/grayscale-files-amended-s-1-to-launch-dogecoin-etf-gdog-institutional-crypto-access-signal-for-doge-btc-eth-xrp-sol-ada-zh
+正文: 灰度（Grayscale）最近提交了修订后的S-1文件，将其狗狗币信托转换为ETF，代码为GDOG，这标志着加密货币领域的一个重大进展，可能为机构投资者进入像狗狗币这样的
+meme
+币打开大门。这一举措于2025年9月20日公布，突显了灰度在提供结构性加密暴露方面的扩展作用，其数字大盘基金包括主要资产如BTC、ETH、XRP、SOL和ADA。作为加密货币交易专家，这一ETF转换可能催化狗狗币的
+renewed 兴趣，影响其价格动态和各种交易对的交易量。
+
+## 对狗狗币价格和市场情绪的潜在影响
+
+像GDOG这样的狗狗币ETF的引入可能显著提升流动性，并为历史上回避波动性 meme 币的机构交易者提供便利。根据行业观察者Crypto
+King分享的文件细节，这一步骤与灰度多元化其产品超越传统大盘加密货币的策略一致。在交易方面，我们可能看到DOGE/USD和DOGE/BTC交易对的买入压力增加，因为预期在积累。历史上，类似的ETF批准，如比特币的那些，已导致短期价格飙升随后整合。交易者应监控近期低点附近的支撑位，可能在0.10美元，阻力位接近0.15美元，基于过去的市场模式。这一发展还可能提升整体市场情绪，与ETH
+ETF如何影响altcoin反弹类似，鼓励跨资产相关性。
+
+### GDOG ETF推出的交易策略
+
+对于寻求机会的交易者，考虑在ETF批准前定位狗狗币期货或现货市场。凭借灰度的记录，包括其成功的比特币和以太坊信托，GDOG可能吸引大量资金流入，可能镜像其他灰度产品推出后不久的10亿美元资产管理规模。关键指标包括狗狗币的链上指标，如最近徘徊在每天100万笔交易的交易量，以及可能信号积累的鲸鱼活动。将此与更广泛的市场指标配对；例如，如果BTC保持在60,000美元以上，它可能为DOGE提供看涨顺风。风险厌恶策略可能涉及在像Deribit这样的平台上使用期权对冲，针对批准日期附近的隐含波动率飙升。此外，进入GDOG的机构资金可能溢出到灰度数字大盘基金的相关资产，如SOL和ADA，在多资产组合中创造套利机会。（字符数：856）
+
+
+
+-----
+
+标题: 美国现货<b>比特币</b>ETF链上总持仓量突破130万枚<b>BTC</b>_亿欧快讯
+真实链接: https://www.iyiou.com/briefing/202509211825946
+正文: Verification Code will refresh in 2 sec.
+
+
+
+-----
+
+标题: 在美国交易激增的背景下，Kalshi 在预测市场交易量上超越Polymarket - CoinDesk
+真实链接: https://www.coindesk.com/zh/markets/2025/09/20/kalshi-outpaces-polymarket-in-prediction-market-volume-amid-surge-in-u-s-trading
+正文: #### Your Privacy
+
+We process your data to deliver content or advertisements and measure the
+delivery of such content or advertisements to extract insights about our
+website. We share this information with our partners on the basis of consent
+and legitimate interest. You may exercise your right to consent or object to a
+legitimate interest, based on a specific purpose below or at a partner level
+in the link under each purpose. These choices will be signaled to our vendors
+participating in the Transparency and Consent Framework. The choices you make
+regarding the purposes and vendors listed in this notice are saved and stored
+locally on your device for a maximum duration of 1 year.  
+[Privacy Policy](https://www.coindesk.com/privacy)
+
+List of IAB Vendors‎
+
+These cookies are necessary for the website to function and cannot be switched
+off in our systems. They are usually only set in response to actions made by
+you which amount to a request for services, such as setting your privacy
+preferences, logging in or filling in forms. You can set your browser to block
+or alert you about these cookies, but some parts of the site will not then
+work. These cookies do not store any personally identifiable information.
+
+These cookies allow us to count visits and traffic sources so we can measure
+and improve the performance of our site. They help us to know which pages are
+the most and least popular and see how visitors move around the site. All
+information these cookies collect is aggregated and therefore anonymous. If
+you do not allow these cookies we will not know when you have visited our
+site, and will not be able to monitor its performance.
+
+These cookies may be set through our site by our advertising partners. They
+may be used by those companies to build a profile of your interests and show
+you relevant adverts on other sites. They do not store directly personal
+information, but are based on uniquely identifying your browser and internet
+device. If you do not allow these cookies, you will experience less targeted
+advertising.
+
+These cookies enable the website to provide enhanced functionality and
+personalisation. They may be set by us or by third party providers whose
+services we have added to our pages. If you do not allow these cookies then
+some or all of these services may not function properly.
+
+Cookies, device or similar online identifiers (e.g. login-based identifiers,
+randomly assigned identifiers, network based identifiers) together with other
+information (e.g. browser type and information, language, screen size,
+supported technologies etc.) can be stored or read on your device to recognise
+it each time it connects to an app or to a website, for one or several of the
+purposes presented here.
+
+List of IAB Vendors‎ | View Illustrations 
+
+With your acceptance, your precise location (within a radius of less than 500
+metres) may be used in support of the purposes explained in this notice.
+
+List of IAB Vendors‎
+
+With your acceptance, certain characteristics specific to your device might be
+requested and used to distinguish it from other devices (such as the installed
+fonts or plugins, the resolution of your screen) in support of the purposes
+explained in this notice.
+
+List of IAB Vendors‎
+
+Your data can be used to monitor for and prevent unusual and possibly
+fraudulent activity (for example, regarding advertising, ad clicks by bots),
+and ensure systems and processes work properly and securely. It can also be
+used to correct any problems you, the publisher or the advertiser may
+encounter in the delivery of content and ads and in your interaction with
+them.
+
+List of IAB Vendors‎ | View Illustrations 
+
+Certain information (like an IP address or device capabilities) is used to
+ensure the technical compatibility of the content or advertising, and to
+facilitate the transmission of the content or ad to your device.
+
+List of IAB Vendors‎ | View Illustrations 
+
+The choices you make regarding the purposes and entities listed in this notice
+are saved and made available to those entities in the form of digital signals
+(such as a string of characters). This is necessary in order to enable both
+this service and those entities to respect such choices.
+
+List of IAB Vendors‎ | View Illustrations 
+
+Information about your activity on this service may be matched and combined
+with other information relating to you and originating from various sources
+(for instance your activity on a separate online service, your use of a
+loyalty card in-store, or your answers to a survey), in support of the
+purposes explained in this notice.
+
+List of IAB Vendors‎
+
+In support of the purposes explained in this notice, your device might be
+considered as likely linked to other devices that belong to you or your
+household (for instance because you are logged in to the same service on both
+your phone and your computer, or because you may use the same Internet
+connection on both devices).
+
+List of IAB Vendors‎
+
+Your device might be distinguished from other devices based on information it
+automatically sends when accessing the Internet (for instance, the IP address
+of your Internet connection or the type of browser you are using) in support
+of the purposes exposed in this notice.
+
+List of IAB Vendors‎
+
+
+
+-----
+
+标题: 加密过山车：美联储降息引发<b>比特币</b>和山寨币的混合波动 - Bitcoin.com News
+真实链接: https://news.bitcoin.com/zh/jiamiguoshanche-meilianchujiangxiyinfabitehexiangzaibidehunhepodong/
+正文: **加密市场在美国联邦储备局2025年首次降息后结束了动荡的一周。比特币上涨0.2%至$115,792，但未能突破$118,000，导致分析师的看法不一。**
+
+![play](/images/uploads/ListenArticleHeadphone.svg)Listen to article
+
+## 联储降息下的加密市场波动
+
+加密经济结束了又一个动荡的一周，即使美国联邦储备局在2025年首次降息。市场市值在9月19日短暂上升至接近$4.2万亿，然后在9月20日回落至$4.12万亿，因为乐观情绪似乎有所减弱。
 
 [bn_top_ad]
 
-上涨趋势仍然完好，但目前在$117,000–$118,000范围内的整合显示出不确定性。在上涨推动中，交易量适度增加，尽管最近的蜡烛图暗示在价格接近上方阻力时需谨慎。关键买入区间位于$113,500至$114,500之间，理想的止盈点位于$118,000到$119,500之间，止损设置在$111,000以下。
+比特币(BTC)在9月18日几乎达到$118,000，最终以$115,792结束本周，涨幅为0.2%。尽管降息助推这款顶级加密货币上扬，但未能突破$118,000的门槛，这[促使](https://x.com/CasiTrades/status/1968743994373849119)一位分析师建议它可能已见顶并可能回调。然而，另一个[报告](https://news.bitcoin.com/bitcoin-
+price-watch-bulls-eye-119k-as-momentum-
+wavers/)指出，如果成交量增加且价格突破$117,000水平，则有可能向$118,000–$119,000的阻力区移动，加强进一步上涨动力的乐观预期。
 
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/1_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=5af5b5c2e48bc8f0c6f546ca267c65e4e34c2764a99dbdb40292a0d51536096c)BTC/USD
-2025年9月19日1日图，数据来源于Bitstamp
+[山寨币的表现](https://markets.bitcoin.com)呈现出喜忧参半，有些获得了两位数的增长，而大多数则以亏损结束本周。ETH和XRP初步在联邦公开市场委员会(FOMC)决定后平稳过渡，但最终分别下降了3.4%和4.4%。DOGE（7.2%）和LINK（6.1%）是唯一两种市值较高的山寨币，亏损超过5%。
 
-在4小时图上，[比特币](https://markets.bitcoin.com/crypto/bitcoin)最近在$117,968处达到峰值，然后回落，形成了几个动能减弱的看跌蜡烛。这一变化伴随着明显的红色交易量激增，暗示可能的短期抛售。尽管如此，更广泛的结构仍然是支持性的，之前在$114,421附近的强劲支撑仍然存在。资产可能会重测$115,000–$115,500区间，然后恢复其更广泛的趋势。交易者关注这一区域的看涨反转蜡烛，可能找到一个有利的风险回报场景，目标是上方$117,500–$118,000，止损设置在$114,000。
+FORM是本周最大的输家，损失了42%的价值。紧随其后的是TROLL（40.3%）、PYTHIA（38.9%）、REI（36.7%）和USELESS（35.4%）。
 
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/2_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=4d1f13df0991d8061897ec7e2b2da1accf7497a7fcd3fe955ab572937316dd9a)BTC/USD
-2025年9月19日4小时图，数据来源于Bitstamp
+另一方面，BNB在9月20日创下另一个历史新高，达到$1,027.17，将其市值推升至超过$1400亿。BNB最近的飙升使其七天涨幅接近10%，成为该期表现最好的山寨币之一。AVAX是另一个高市值山寨币，实现了两位数的增长（12%），而WFLI本周收高5.8%。
 
-1小时[比特币](https://markets.bitcoin.com/crypto/bitcoin)图表显示了明显的短期下跌趋势，自$117,968高点后出现了一系列更低的高点和更低的低点。最近的价格动作触及$116,369，接触到次要支撑位。在更高时间框架的更广泛看涨结构中，这一动作似乎是修正性的。卖方交易量逐渐增加，进一步确认回调阶段。除非在$116,000附近出现强劲的看涨蜡烛，否则不建议立即长线入场。如果上升动能恢复，可以考虑在$116,000–$116,300之间紧密入场，建议退出点在$117,000–$117,500，止损在$115,700以下。
-
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/3_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=75a773b3906b2014d1b9dcfa7df183c01096d2a245f90324b80cbc7d54b83214)BTC/USD
-2025年9月19日1小时图，数据来源于Bitstamp
-
-在主要技术指标中，[振荡指标](https://news.bitcoin.com/understanding-oscillators-in-bitcoin-
-trading-a-technical-analysis-
-guide/)描绘了一幅复杂的图景。相对强弱指数（RSI）为58，反映出中性动能。随机指标处于87的超买区，暗示可能的抛售。同时，商品通道指数（CCI）为95，平均方向指数（ADX）为19，均表示非承诺立场，而奇异振荡器为3185，呈现中性偏向。值得注意的是，动量（10）发出看跌信号为4930，而移动平均线收敛与背离（MACD）为961仍然看涨。
-
-[移动平均线（MA）](https://news.bitcoin.com/unveiling-moving-averages-essential-
-tools-for-bitcoin-
-trading/)提供更明确的方向性指导，所有主要短期和长期平均线都指示看涨动能。10、20、30、50、100和200周期的指数移动平均线（EMA）和简单移动平均线（SMA）均低于当前价格，表明强劲的底层趋势支持。EMA（10）为$115,575，SMA（10）为$115,924，均显示出看涨状态。长期移动平均线如EMA（200）为$105,738和SMA（200）为$103,240，进一步强化了乐观前景。
-
-总体而言，尽管[比特币](https://markets.bitcoin.com/crypto/bitcoin)在日线时间框架上技术上仍然强势，但交易者在短期疲软迹象中仍需保持谨慎。理想的入场现在取决于较低时间框架支撑的确认，特别是靠近$115,000–$116,000范围。若在成交量的支持下突破$118,000，将使整合论失效并重新引入动能以测试新高。
-
-### **看涨结论：**
-
-[比特币](https://markets.bitcoin.com/crypto/bitcoin)保持结构性看涨姿态，所有主要移动平均线和日线图上的明确上升趋势提供了一致的支持。如果价格持稳在$115,000–$116,000支撑区上方，并在成交量确认下突破$118,000，短期内有望进一步升至$120,000及更高。
-
-### **看跌结论：**
-
-尽管日线趋势强劲，[比特币](https://markets.bitcoin.com/crypto/bitcoin)面临即时阻力压力和在较低时间框架上的动能减弱。如果未能有力地收复$117,500，并跌破$115,000，可能会引发更深的回调至$113,000区间，削弱近期反弹。
+APX成为本周最大赢家，飙升了超过1,691%。其次是CDL，上涨了超过400%，以及AVNT（192%）。
 
 
 
 -----
 
-标题: 分析：<b>比特币</b>有望重测12万美元，美联储降息影响仍待市场消化
-真实链接: https://cn.cointelegraph.com/flash-news/13880622
-正文: 金色财经报道，Bitbank 分析师指出，比特币在美联储9个月来首次降息后，可能在一周内消化影响并测试12万美元关口。CME FedWatch
-工具显示，92%交易员预计10月美联储将再次降息25个基点；Myriad
-预测市场用户中72%也持相同观点。尽管技术面看涨，但期权市场显示交易员主要在卖出权利金并设定12.5万至15万美元的上涨上限，而非进行激进方向性押注。
+标题: 大红鹰网V7.6.2 - 凤凰网汽车
+真实链接: https://auto.ifeng.com/orvy/show/lznb-KkPqu2Qo/
+正文: # 404 Not Found
+
+* * *
+
+nginx
 
 
 
 -----
 
-标题: <b>比特币</b>和以太坊的加密ETF反弹，总计3.76亿美元 - Bitcoin.com News
-真实链接: https://news.bitcoin.com/zh/bi-te-bi-he-yi-tai-fang-de-jia-mi-etf-fan-dan-zong-ji-3-76-yi-mei-yuan/
-正文: **比特币在2025年9月19日的交易价格为$116,393，使其市场价值达到$2.31万亿，24小时交易量为$36.67亿。该加密货币的日内波动范围从$116,349到$117,888，反映了在关键阻力附近的紧密整合。**
+标题: Odaily星球日报讯纳斯达克上市<b>比特币</b>矿企Bitdeer 在X 平台发布<b>比特币</b>持仓最新数据
+真实链接: https://www.binance.com/zh-CN/square/post/29941355765473
+正文: 您访问任何网站时，网站都可能在您的浏览器上存储或检索信息，大多数是以 Cookie
+的形式进行。此信息可能与您、您的偏好、您的设备相关，或者该信息被用于使网站按照您期望的方式工作。这些信息通常不会直接识别您，但它可为您提供更多个性化的
+Web 体验。您可以选择不允许使用某些类型的 Cookie。单击不同类别标题以了解更多信息并更改默认设置。但是，您应该知道，阻止某些类型的 Cookie
+可能会影响您的网站体验和我们能够提供的服务。
 
-![play](/images/uploads/ListenArticleHeadphone.svg) Listen to article
-
-## 比特币
-
-在日线图上，[比特币](https://markets.bitcoin.com/crypto/bitcoin)自9月初以来已确认上涨趋势，强劲反弹自$107,270的支撑位，在该处形成双底结构。从那时起，价格走势稳步上升，但现在在$119,336的显著阻力区域之下滞涨。
-
-[bn_top_ad]
-
-上涨趋势仍然完好，但目前在$117,000–$118,000范围内的整合显示出不确定性。在上涨推动中，交易量适度增加，尽管最近的蜡烛图暗示在价格接近上方阻力时需谨慎。关键买入区间位于$113,500至$114,500之间，理想的止盈点位于$118,000到$119,500之间，止损设置在$111,000以下。
-
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/1_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=5af5b5c2e48bc8f0c6f546ca267c65e4e34c2764a99dbdb40292a0d51536096c)BTC/USD
-2025年9月19日1日图，数据来源于Bitstamp
-
-在4小时图上，[比特币](https://markets.bitcoin.com/crypto/bitcoin)最近在$117,968处达到峰值，然后回落，形成了几个动能减弱的看跌蜡烛。这一变化伴随着明显的红色交易量激增，暗示可能的短期抛售。尽管如此，更广泛的结构仍然是支持性的，之前在$114,421附近的强劲支撑仍然存在。资产可能会重测$115,000–$115,500区间，然后恢复其更广泛的趋势。交易者关注这一区域的看涨反转蜡烛，可能找到一个有利的风险回报场景，目标是上方$117,500–$118,000，止损设置在$114,000。
-
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/2_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=4d1f13df0991d8061897ec7e2b2da1accf7497a7fcd3fe955ab572937316dd9a)BTC/USD
-2025年9月19日4小时图，数据来源于Bitstamp
-
-1小时[比特币](https://markets.bitcoin.com/crypto/bitcoin)图表显示了明显的短期下跌趋势，自$117,968高点后出现了一系列更低的高点和更低的低点。最近的价格动作触及$116,369，接触到次要支撑位。在更高时间框架的更广泛看涨结构中，这一动作似乎是修正性的。卖方交易量逐渐增加，进一步确认回调阶段。除非在$116,000附近出现强劲的看涨蜡烛，否则不建议立即长线入场。如果上升动能恢复，可以考虑在$116,000–$116,300之间紧密入场，建议退出点在$117,000–$117,500，止损在$115,700以下。
-
-![比特币价格观察：BTC能否突破$118K阻力还是面临修正？](https://static.news.bitcoin.com/wp-
-content/uploads/2025/09/3_nwmk.jpg?X-Amz-Content-Sha256=UNSIGNED-
-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
-Credential=AKIARQKIT2TMGZBKV2L6%2F20250919%2Fus-
-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250919T125630Z&X-Amz-
-SignedHeaders=host&X-Amz-Expires=600&X-Amz-
-Signature=75a773b3906b2014d1b9dcfa7df183c01096d2a245f90324b80cbc7d54b83214)BTC/USD
-2025年9月19日1小时图，数据来源于Bitstamp
-
-在主要技术指标中，[振荡指标](https://news.bitcoin.com/understanding-oscillators-in-bitcoin-
-trading-a-technical-analysis-
-guide/)描绘了一幅复杂的图景。相对强弱指数（RSI）为58，反映出中性动能。随机指标处于87的超买区，暗示可能的抛售。同时，商品通道指数（CCI）为95，平均方向指数（ADX）为19，均表示非承诺立场，而奇异振荡器为3185，呈现中性偏向。值得注意的是，动量（10）发出看跌信号为4930，而移动平均线收敛与背离（MACD）为961仍然看涨。
-
-[移动平均线（MA）](https://news.bitcoin.com/unveiling-moving-averages-essential-
-tools-for-bitcoin-
-trading/)提供更明确的方向性指导，所有主要短期和长期平均线都指示看涨动能。10、20、30、50、100和200周期的指数移动平均线（EMA）和简单移动平均线（SMA）均低于当前价格，表明强劲的底层趋势支持。EMA（10）为$115,575，SMA（10）为$115,924，均显示出看涨状态。长期移动平均线如EMA（200）为$105,738和SMA（200）为$103,240，进一步强化了乐观前景。
-
-总体而言，尽管[比特币](https://markets.bitcoin.com/crypto/bitcoin)在日线时间框架上技术上仍然强势，但交易者在短期疲软迹象中仍需保持谨慎。理想的入场现在取决于较低时间框架支撑的确认，特别是靠近$115,000–$116,000范围。若在成交量的支持下突破$118,000，将使整合论失效并重新引入动能以测试新高。
-
-### **看涨结论：**
-
-[比特币](https://markets.bitcoin.com/crypto/bitcoin)保持结构性看涨姿态，所有主要移动平均线和日线图上的明确上升趋势提供了一致的支持。如果价格持稳在$115,000–$116,000支撑区上方，并在成交量确认下突破$118,000，短期内有望进一步升至$120,000及更高。
-
-### **看跌结论：**
-
-尽管日线趋势强劲，[比特币](https://markets.bitcoin.com/crypto/bitcoin)面临即时阻力压力和在较低时间框架上的动能减弱。如果未能有力地收复$117,500，并跌破$115,000，可能会引发更深的回调至$113,000区间，削弱近期反弹。
+[更多信息](https://cookiepedia.co.uk/giving-consent-to-cookies)
 
 
 
 -----
 
-标题: <b>Bitcoin</b> 未能突破$117200，面临价格下行压力 - Binance
-真实链接: https://www.binance.com/cn/square/post/29901754781409
-正文: 据 Cointelegraph 报道，Bitcoin 未能在周五收盘价突破 $117,200，导致价格可能回落。周五有价值 $4.9
-万亿的期权到期事件增加了 Bitcoin 多头的压力。
+标题: 真钱打牌官网app - 凤凰网汽车
+真实链接: https://auto.ifeng.com/orvy/lznb/20250920593270
+正文: # 404 Not Found
 
-交易订单簿显示，$110,000 以上的买单形成价格“磁铁”。分析指出，若 Bitcoin 收盘价突破 $117,200，将有机会重新测试
-$120,000。
+* * *
 
-Crypto 投资者 Ted Pillows 预测，由于期权到期事件，Bitcoin 价格压力将持续。交易资源 TheKingfisher
-指出，订单簿流动性集中在 $110,000 至 $113,000 区间。
-
-Glassnode 观察到 FOMC 降息后，Bitcoin 的订单簿发生变化，短期内价格可能下行。
+nginx
 
 
 
 -----
 
-标题: OKX研究院｜主流资产10年表现大起底，<b>比特币</b>、黄金、美股、美债等数据真相- BlockBeats
-真实链接: https://www.theblockbeats.info/news/59685
-正文: > 文章来源：OKX
+标题: 爱游戏官网客户端手机版V6.0.8
+真实链接: https://auto.ifeng.com/orvy/lznb7703433/
+正文: # 404 Not Found
 
-![](https://image.blockbeats.cn/file_v6/20250919/4a68d580-2450-4e44-8773-cab233e84c32.png?x-oss-
-process=image/quality,q_50/format,webp)
+* * *
 
-在 2015-2025
-期间，全球金融市场走过了一段波澜壮阔的周期。从后金融危机时代的量化宽松到历史性的零利率环境，再到应对高通胀而触发的急剧紧缩周期，宏观经济的巨浪不断冲击着各类资产。在这一背景下，以
-BTC 和 ETH
-为代表的加密资产，远超标、黄金以及美国国债涨幅，完成了从极客圈试验品到进入华尔街机构资产负债表的惊人跃迁。但超额收益的背后同样伴随着极端风险——加密资产一度出现超过
-75% 的深度回撤，恢复期往往以年计，而传统资产则展现出更强的韧性。
-
-  
-
-就此，OKX 研究院以「10 年五大主流资产表现」为核心，试图回答一个关键问题：在长达 10 年的时间尺度上，将 BTC 和 ETH 与黄金、标普 500
-指数、美国国债等主流资产并置，它们各自的收益与风险的真实画像究竟如何？我们是否为加密资产的惊人回报付出了对等的、甚至超额的风险代价？为此，我们将超越单一收益率的对比，力求绘制一幅完整、客观、穿越周期的资产表现图谱。（统计数据截止
-2025 年 8 月 31 日）
-
-  
-
->
-> ![](https://image.blockbeats.cn/file_v6/20250919/ac6b40e0-6864-432e-9dbc-04c8f57a0589.png?x-oss-
-> process=image/quality,q_50/format,webp) 数据来源：8MarketCap；截至 2025 年 8
-> 月底全球主要资产市值排名，比特币已跻身前列
-
-  
-
-# 收益较量，谁是资产之王？
-
-  
-
-评估一项资产最直观的方式莫过于观察其长期的价值增长轨迹。我们假设在 2015 年 8 月 1 日向这 5 种资产投入一万美元，并追踪其到 2025 年 8
-月 1 日的累计价值变化。这一对比清晰地揭示了不同资产类别在创造财富能力上的巨大差异。
-
-  
-
-## （一）年度价格快照：关键节点的价值标尺（2015-2025 年，每年 8 月 1 日）
-
-  
-
-下表记录了从 2015 年至 2025 年，在每年的 8 月 1 日（或其后的首个交易日）五种核心资产的收盘价格。
-
-  
-
->
-> ![](https://image.blockbeats.cn/file_v6/20250919/30a78764-d5b1-429b-aef9-8bb7f7d3cba3.png?x-oss-
-> process=image/quality,q_50/format,webp) 数据来源：基于 Yahoo Finance 和
-> CoinGecko，为当日或之后首个交易日收盘价，ETF 价格为调整后收盘价
-
-  
-
-从价格快照中可以清晰地看到，比特币和以太坊经历了指数级的增长，其价格数量级在十年内发生了根本性变化。相比之下，标普 500
-展现了稳健的牛市上行轨迹，黄金则呈现出与宏观经济周期相关的波动，而美国国债的价格则清晰地反映了利率环境的变迁，在 2022-2023
-年的加息周期中明显承压。
-
-  
-
-## （二）年度巅峰时刻：捕捉每个周期的最高点
-
-  
-
-仅仅观察特定日期的价格快照，远不足以描绘资产的全貌。年内的价格波动，尤其是最高点的出现，揭示了资产的潜在爆发力以及交易者可能面临的「错失恐惧」（FOMO）。下表统计了各资产在每个年度周期内（从当年
-8 月 1 日至次年 7 月 31 日）所触及的最高价格。
-
->
-> ![](https://image.blockbeats.cn/file_v6/20250919/ab6f18d2-f22f-44c0-8372-2545ac857de0.png?x-oss-
-> process=image/quality,q_50/format,webp) 数据来源：以太坊于 2015 年 7 月 30
-> 日上线，早期数据流动性较低，或存在一定误差，其余数据基于 Yahoo Finance 每日历史数据计算
-
-  
-
-通过观察每年的价格顶点，我们可以清晰地看到资产增长的量级差异。比特币和以太坊在牛市中的价格高点呈现出惊人的跳跃，相比之下，标普 500
-和黄金的年度最高价与快照价之间的差距要小得多，反映了其更为成熟和稳定的市场特性。
-
-  
-
-## （三）财富增长模拟：一万美元的 10 年奇幻漂流
-
-  
-
-为了更直观地感受不同资产的财富创造能力，我们模拟了一个简单的实验：在 2015 年 8 月 1 日，将 10,000 美元分别买入于五种资产，并持有至
-2025 年 8 月 1
-日。下图以对数坐标展示了这笔支出的累计价值变化，这种坐标系能更好地处理数量级差异巨大的数据，避免高增长资产的曲线过于陡峭而掩盖其他资产的细节。
-
->
-> ![](https://image.blockbeats.cn/file_v6/20250919/2455651b-f41c-4bdb-9bd3-24684f9d84f4.png?x-oss-
-> process=image/quality,q_50/format,webp)数据来源：Yahoo Finance, FRED, Macrotrends
-> 等
-
-  
-
-表格显示，在 2015—2025 十年间，不同资产的增长倍数分别为：BTC 402.17 倍，10 年累计收益约为 402 万美元、ETH 1195.55
-倍，10 年累计收益约高达 1,195 万美元、黄金 3.08 倍，10 年累计收益约 3 万美元、标普 500 2.97 倍，10 年累计收益约约
-2.96 万美元、美国国债 1.26 倍，10 年累计收益仅约 1.26 万美元。
-
-![](https://image.blockbeats.cn/file_v6/20250919/7ec6f1f5-118c-4554-a7e6-fc19dd3a06e2.png?x-oss-
-process=image/quality,q_50/format,webp)
-
-其中，比特币和以太坊展现了惊人的财富增长效应，回报率远超传统资产，达到百倍甚至千倍的量级，体现出新兴技术资产在高风险下的非对称回报潜力，这在传统金融世界中是难以想象的，相较之下，标普
-500 凭借稳定的复利增长使投资翻了三倍，黄金更多发挥了保值功能，而美国国债在完整经历低利率与高利率周期后，10
-年几乎停滞，凸显出利率风险对债券资产长期表现的制约。
-
-  
-
-# 最大回撤，收益背后的风险有多高？
-
-  
-
-没有一种资产能永远领跑，回报率仅仅是故事的开端。一个成熟的交易用户更关心回报的质量——即在承担了多大风险的情况下获得了这些回报，所以理解不同资产的风险特征与理解其收益潜力同等重要。通过波动性、最大回撤和夏普比率三个核心指标，可以更全面地评估各类资产的真实「性价比」。波动性通常以标准差衡量，反映了资产价格的波动幅度。而最大回撤则衡量了资产从历史最高点到随后最低点的最大跌幅，是衡量下行风险的直观指标，直接关系到交易用户的心理承受极限和资产组合的生存能力。
-
-> ![](https://image.blockbeats.cn/file_v6/20250919/fa6a227b-3037-4b46-bded-
-> ffb47c56cbd7.png?x-oss-
-> process=image/quality,q_50/format,webp)数据来源：Bloomberg、S&P Global、Yahoo
-> Finance 等
-
-  
-
-加密资产的波动性远超传统资产。据 Digital One Agency 数据，比特币的年化标准差约为 70%-90%，而标普 500 指数仅为
-15%-20%，这种巨大的波动性直接导致了惊人的最大回撤：在过去的 10 年中，比特币和以太坊经历了多次超过 70% 的深度回撤，例如 2018
-年的熊市，BTC 价格从近 2 万美元跌至约 3 千美元，回撤幅度超过 80%。标普 500 最大的回撤发生在 2020 年 COVID-19
-疫情初期，约为-34%。历史上的 2008 年金融危机期间，回撤曾超过 50%。黄金则表现相对稳定，过去 15
-年的最大回撤约为-29%。美国国债作为避险资产，其回撤幅度最小，但受利率周期影响，在 2020 年后的加息周期中也经历了约-23%
-左右的最大回撤，打破了其「无风险」的神话。
-
-![](https://image.blockbeats.cn/file_v6/20250919/e0f17c0c-2756-4209-8a21-f88782d6b07a.png?x-oss-
-process=image/quality,q_50/format,webp)
-
-  
-
-这份数据令人警醒。比特币和以太坊的用户必须有能力承受超过 80% 甚至 90% 的资产缩水，并且需要等待超过两年～三年时间才能解套。
-
-  
-
-此外，为了综合评估风险与收益，我们还引入了夏普比率和卡玛比率。夏普比率由诺贝尔奖得主威廉·夏普提出，是国际上最经典的风险调整后收益指标。它衡量的是用户每多承担一单位的总风险（以波动率衡量），可以获得多少超越无风险利率的超额回报。夏普比率越高，说明在承担相同风险的情况下，该资产的收益表现越好，交易效率越高。
-
-  
-
-卡玛比率是另一个重要的风险调整后收益指标，但它更侧重于衡量资产的下行风险。其计算方式为年化收益率与历史最大回撤的比值。卡玛比率越高，意味着资产在承受历史上最糟糕的回撤时，其收益的「恢复能力」或「性价比」越强。该指标尤其受到注重风险控制的用户的青睐
-
-![](https://image.blockbeats.cn/file_v6/20250919/8e007e0d-7d46-485c-a6f3-f0b6ab5d3eb0.png?x-oss-
-process=image/quality,q_50/format,webp)
-
-  
-
-比特币和以太坊的雷达图形状最为「激进」。它们在年化收益率和卡玛比率两个维度上表现出无与伦比的优势，形成了两个向外的尖角，这体现了它们在过去十年中惊人的财富增长效应和强大的回撤后恢复能力。然而，这种高回报并非没有代价。在最大回撤和年化波动率两个维度上，它们的得分是所有资产中最低的，这意味着其图形在这两个方向上严重内缩，构成了明显的「短板」。这清晰地揭示了加密资产高风险、高波动的本质。值得注意的是，比特币的夏普比率表现优于以太坊，说明在风险调整后，比特币的投资效率略胜一筹。
-
-  
-
-美股（S&P
-500）的雷达图呈现出一个相对均衡的五边形，覆盖面积可观。它在所有五个维度上都没有明显的短板，也没有极端的长处。其夏普比率表现突出，仅次于比特币，显示出优秀的风险调整后收益。同时，它的年化收益率稳健，而波动率和最大回撤控制得当，远优于加密资产。这描绘出典型的「中坚力量」形象：既能提供可观的长期回报，又将风险控制在相对合理的范围内，是构建资产组合的基石。
-
-  
-
-黄金的雷达图形状偏向于风险控制维度。它在年化波动率和最大回撤方面的得分较高，说明其价格相对稳定，抗跌性强。然而，在年化收益率、夏普比率和卡玛比率这三个收益相关维度上，黄金的表现则相对平庸。这与黄金作为传统避险资产的定位完全吻合：它并非追求高增长的工具，而是在市场动荡时提供价值储存和对冲风险的功能。其图形面积较小，也反映了其较低的综合收益效率。
-
-  
-
-美国国债的雷达图是所有资产中面积最小的，其形状紧缩于中心。它在年化波动率和最大回撤两个风险维度上得分最高，表现出极强的稳定性。然而，其在所有收益相关维度上的得分都垫底。这清晰地表明，在过去十年利率下行的宏观背景下，美国国债主要扮演了资本保全和提供流动性的角色，是资产组合中的「压舱石」，而非收益引擎。其极低的风险和极低的回报构成了鲜明的对比。
-
-  
-
-# 资产间相关性，如何优化资产组合？
-
-  
-
-资产组合分散化的核心在于纳入相关性低的资产。一种资产下跌时，另一种资产可能上涨或保持稳定，从而平滑整个资产组合的波动。比特币诞生之初，其与传统金融市场几乎无相关性，被视为完美的「分散化工具」。然而，这一特性在过去十年，尤其是机构化进程加速后，发生了显著变化。
-
-  
-
-相关性系数衡量两种资产价格同向变动的程度，范围从-1（完全负相关）到+1（完全正相关）。一个有效的多元化资产组合，通常由低相关或负相关的资产构成。下表综合了多家研究机构的数据，展示了这十年间各资产间的近似相关性。
-
->
-> ![](https://image.blockbeats.cn/file_v6/20250919/a425a90b-e2e2-472b-9fd0-a721a4eb5d1c.png?x-oss-
-> process=image/quality,q_50/format,webp)数据来源：Crypto Research Report, LSEG,
-> Newhedge
-
-  
-
-**比特币 vs 标普 500：** 从独立到同步。这是十年间最重要的变化之一。2020
-年之前：加密资产与传统资产的相关性普遍较低且不稳定，常在正负之间波动，表现出较强的独立性。2020-2021
-年：疫情与货币宽松期，随着全球央行采取大规模流动性注入，所有风险资产的「水涨船高」效应显著。在此期间，比特币与标普
-500（尤其是科技股）的相关性急剧上升，一度超过 0.6，呈现出强烈的「耦合」现象。这表明，在宏观流动性驱动的市场中，比特币更像一个高 Beta
-的风险资产，而非避险工具。
-
-  
-
-**2022-2023 年：** 加息与紧缩周期，随着美联储开启激进的加息周期，风险资产普遍承压。比特币与标普 500
-的相关性依然维持在较高水平，共同下跌。然而，其与美元指数（DXY）的负相关性显著增强，比特币价格往往在美元走强时承压。2024-2025 年：ETF
-时代，美国现货比特币 ETF 的批准被视为一个结构性拐点。一方面，它加强了加密市场与传统金融体系的连接；另一方面，ETF
-带来的持续资金流入也可能成为独立于宏观情绪的定价因素，导致相关性再次发生变化。数据显示，ETF 批准后，比特币与标普 500
-的相关性有所下降，显示出一定的「去耦合」迹象。
-
-  
-
-**比特币 vs 黄金：**
-「数字黄金」叙事的挑战。尽管比特币因其固定供应量而被誉为「数字黄金」，但数据显示，它与真实黄金的避险属性和相关性并不稳定。欧洲证券和市场管理局（ESMA）的研究指出，二者之间没有明确的稳定关系，尤其在市场恐慌时，比特币往往与风险资产一同下跌，而非像黄金一样提供庇护。
-
-  
-
-**传统资产内部关系：** 黄金、美国国债与标普 500 之间经典的负相关或低相关性依然是传统资产配置的基石，为资产组合提供了重要的稳定性。
-
-  
-
-# 重大事件冲击，五大资产表现如何？
-
-  
-
-长周期内的平均数可能会掩盖关键时刻的极端表现。通过对几个重大事件进行「切片」分析，我们可以更深刻地理解各类资产的真实「应激反应」。
-
-  
-
-## （一）2020 年 3 月：COVID-19 黑天鹅事件，全球市场无差别抛售
-
-  
-
-2020 年 3 月，COVID-19 疫情引发全球金融市场恐慌，史称「黑色三月」。在这一极端流动性危机中，几乎所有资产都遭到无差别抛售。标普 500
-指数在短短 16 个交易日内即跌入熊市，创下历史最快纪录，最大回撤达到-34%。比特币同样未能幸免，价格在 3 月 12 日一天内暴跌近
-50%，从约$8,000 跌至$4,000
-以下。黄金（GLD）也未能完全幸免，短期内因用户抛售资产换取美元流动性而下跌。唯有美国国债作为最终的避风港，价格坚挺。这次事件深刻地揭示了：在极端的「去风险」阶段，相关性会趋同于
-1，比特币的「数字避险」叙事在流动性枯竭面前不堪一击。
-
-  
-
-## （二）2022 年 5 月 & 11 月：加密原生危机，LUNA&FTX 崩盘带来毁灭性打击
-
-  
-
-2022 年是加密行业的「灾难之年」。5 月，算法稳定币 TerraUSD（UST）及其姊妹代币 LUNA 的崩溃，在几天内抹去了近 500
-亿美元的市值。同年 11 月，全球第二大加密交易所 FTX 的突然破产，进一步加剧了市场的恐慌。这两次事件是典型的加密「内生性」危机。研究显示，在 FTX
-崩盘后，比特币和以太坊价格均下跌超过 20%，而 FTX
-生态系统密切相关的资产跌幅更大。然而，在这些事件中，传统金融市场黄金、标普、美债几乎未受影响，清晰地展示了加密市场与传统金融之间存在的风险隔离。这表明，加密资产不仅面临宏观经济风险，还面临着独特的、可能更具毁灭性的内部协议、平台和信任风险。
-
-  
-
-## （三）2020-2025 年：宏观政策转向周期，流动性的潮汐
-
-  
-
-美联储的货币政策是全球流动性的「总阀门」。在 2020-2021 年的大规模量化宽松和零利率政策下，充裕的流动性涌入风险资产，比特币和标普 500
-均迎来大牛市。然而，自 2022 年 3
-月美联储开启激进的加息周期以对抗通胀后，全球流动性收紧，风险资产价格应声下跌。学术研究表明，比特币价格对美联储利率决议和货币政策不确定性（MPU）的敏感度在
-2020 年后显著增强。这再次印证了比特币已深度融入宏观金融框架，其价格波动与美联储的政策预期紧密相连。
-
-  
-
-此外，研究发现，比特币市场表现出显著的「预期交易」特征。在加息决议公布前，市场往往已经消化了加息预期，比特币价格提前承压；而在降息预期强烈时，价格则会提前上涨。决议公布当日，若结果符合预期，市场反应通常不大。真正的剧烈波动来自于「利率意外」——即
-FOMC 的决定与市场通过利率期货等工具定价的预期出现偏差。
-
-  
-
-下图展示了在加息和降息事件窗口期（T-5 至 T+5 日），比特币相对于标普 500
-的平均累计超额收益（CAR）。可以看出，在降息周期中，比特币在决议公布前有显著的正向超额收益，而在加息周期中则不明显，甚至为负。这表明市场对比降息的反应更为积极和提前。
-
-![](https://image.blockbeats.cn/file_v6/20250919/2871ad7d-5a7e-4c9f-a702-07752d6951f0.png?x-oss-
-process=image/quality,q_50/format,webp)
-
-## （四）2024 年 1 月：比特币现货 ETF 获批，通往主流的里程碑
-
-  
-
-2024 年 1 月 10 日，美国证券交易委员会（SEC）正式批准首批比特币现货 ETF 上市，这被视为加密资产合法化和主流化的里程碑事件。ETF
-的推出极大地降低了传统用户接触比特币的门槛。数据显示，ETF 获批后，比特币交易量飙升，资金流入强劲。Chainalysis 的图表显示，ETF
-推出后，其日交易量在 3 月份一度接近 100 亿美元，其累计资金流入速度远超 2005 年首个黄金 ETF
-推出时的表现。这一事件不仅推动了比特币价格创下新高，更重要的是，它正在结构性地改变比特币的用户基础和市场动态，使其与传统金融体系的联系变得前所未有的紧密。
-
-  
-
-# 没有完美的资产，构建穿越周期的资产组合
-
-  
-
-BTC/ETH
-是过去十年无可争议的「增长之王」，提供了任何传统资产都无法比拟的超高回报。然而，这份回报的代价是极端的波动性与重大回撤。其与传统市场的相关性正在增强，削弱了其作为纯粹分散化工具的价值。它适合风险承受能力极高、具备长期持有信念的用户。
-
-  
-
-标普 500
-是长期资产组合的「压舱石」。它提供了优秀的、可持续的复合增长，并且在风险调整后，无论是夏普比率还是卡玛比率表现出最佳的均衡性。虽然会经历周期性回调，但其强大的恢复能力和背后实体经济的支撑，使其成为构建资产组合的绝对核心。
-
-  
-
-黄金作为一种古老的价值储存手段，其绝对收益有限，但在宏观不确定性、地缘政治风险和信用货币体系受到质疑时，仍是不可或缺的「保险单」。它在资产组合中的价值不在于进攻，而在于防守。
-
-  
-
-美国国债是传统的「安全港」地位在史无前例的加息周期中受到了严峻挑战，提醒用户「无风险」只是相对概念。尽管如此，它依然是全球流动性最好、信用等级最高的资产之一，在资产组合中提供稳定性和流动性的基础作用短期内难以被替代。
-
-  
-
-**所以，这个经典的问题也有了答案：选择定投策略，还是一次性投入策略？**
-
-  
-
-长期来看，对于高波动性资产（BTC/ETH），定投策略表现出巨大优势。通过在价格低谷时买入更多份额，定投有效平滑了成本，降低了择时风险，最终获得了非常可观的回报，且过程中的心理压力远小于一次性投入；
-
-  
-
-对于稳健增长资产（SPY），由于股市长期向上，一次性投入策略在历史上大部分时间里表现优于定投策略，因为它让资金更早、更充分地享受到了市场的复合增长。
-
-  
-
-对于低增长资产（GLD/IEF），两种策略的最终结果差异不大，都未能带来爆发性回报。结论是，定投是驾驭比特币这类高波动性资产的有效策略，而对于长期稳健增长的权益市场，尽早地一次性投入通常是更优选择。**无论你更倾向基础的定投策略、智能套利策略、还是适合短线的网格策略、亦或者高阶的信号或者冰山策略，OKX
-策略交易都能一站式满足你的需求。**
-
-  
-
-资产配置的「圣杯」并非寻找单一的最佳资产，而是深刻理解并巧妙结合不同资产的独特性格。一个稳健的资产组合，应当是利用加密资产的锐度去博取超额收益，依靠权益资产的厚度来驱动长期增长，并配置黄金与债券的稳度来抵御未知的风险。10
-年的数据告诉我们：市场永远在演进，没有永恒的赢家。真正的「资产之王」，或许并不存在于某一种具体的资产之中，而是存在于能够深刻理解并驾驭不同资产特性的、理性的交易框架之内。
-
-  
-
-免责声明：
-
-本文仅供参考。本文仅代表作者观点，不代表 OKX 立场。本文无意提供 (i) 投资建议或投资推荐； (ii) 购买、出售或持有数字资产的要约或招揽；
-(iii) 财务、会计、法律或税务建议。我们不保证该等信息的准确性、完整性或有用性。持有的数字资产（包括稳定币和
-NFTs）涉及高风险，可能会大幅波动。历史收益并不代表未来收益，过往表现亦不代表未来结果。您应该根据您的财务状况仔细考虑交易或持有数字资产是否适合您。有关您的具体情况，请咨询您的法律/税务/投资专业人士。请您自行负责了解和遵守当地的有关适用法律和法规。
-
-  
-
-> 本文来自投稿，不代表BlockBeats观点。
-
-  
-
-[点击了解律动BlockBeats 在招岗位](https://www.theblockbeats.info/news/58433)
-
-  
-
-**欢迎加入律动 BlockBeats 官方社群：**
-
-Telegram 订阅群：<https://t.me/theblockbeats>
-
-Telegram 交流群：<https://t.me/BlockBeats_App>
-
-Twitter 官方账号：<https://twitter.com/BlockBeatsAsia>
+nginx
 
 
 
 -----
 
-标题: Valour 推出<b>比特币</b>质押交易所交易产品（ETP），登陆伦敦证券交易所 - CoinDesk
-真实链接: https://www.coindesk.com/zh/markets/2025/09/19/valour-debuts-bitcoin-staking-etp-on-london-stock-exchange-in-move-outside-mainland-europe
-正文: #### Your Privacy
+标题: Gala Games 提升推荐计划以增加用户奖励 - Blockchain News
+真实链接: https://blockchain.news/news/gala-games-enhances-referral-program-to-boost-user-rewards-zh
+正文: # Gala Games 提升推荐计划以增加用户奖励
 
-We process your data to deliver content or advertisements and measure the
-delivery of such content or advertisements to extract insights about our
-website. We share this information with our partners on the basis of consent
-and legitimate interest. You may exercise your right to consent or object to a
-legitimate interest, based on a specific purpose below or at a partner level
-in the link under each purpose. These choices will be signaled to our vendors
-participating in the Transparency and Consent Framework. The choices you make
-regarding the purposes and vendors listed in this notice are saved and stored
-locally on your device for a maximum duration of 1 year.  
-[Privacy Policy](https://www.coindesk.com/privacy)
+[realtime news](/Profile/realtime-news) Sep 05, 2025 02:07
 
-List of IAB Vendors‎
+Gala Games 推出了升级版推荐系统，从两级好友扩展到五级，使用户能够随着其网络的增长赚取更多奖励。
 
-These cookies are necessary for the website to function and cannot be switched
-off in our systems. They are usually only set in response to actions made by
-you which amount to a request for services, such as setting your privacy
-preferences, logging in or filling in forms. You can set your browser to block
-or alert you about these cookies, but some parts of the site will not then
-work. These cookies do not store any personally identifiable information.
+[ ![Gala Games
+提升推荐计划以增加用户奖励](https://image.blockchain.news:443/features/7C2047CFDBC09BDC406E130AE949E8397443A003B43EBD7BE4899E8857572232.jpg)
+](https://image.blockchain.news:443/features/7C2047CFDBC09BDC406E130AE949E8397443A003B43EBD7BE4899E8857572232.jpg)
 
-These cookies allow us to count visits and traffic sources so we can measure
-and improve the performance of our site. They help us to know which pages are
-the most and least popular and see how visitors move around the site. All
-information these cookies collect is aggregated and therefore anonymous. If
-you do not allow these cookies we will not know when you have visited our
-site, and will not be able to monitor its performance.
+根据 Gala News 报道，区块链游戏平台 Gala Games 宣布提升其推荐系统，该系统于 8 月 15
+日上线。这次升级通过将推荐计划从两级连接扩展到五级，提高了用户赚取奖励的潜力。
 
-These cookies may be set through our site by our advertising partners. They
-may be used by those companies to build a profile of your interests and show
-you relevant adverts on other sites. They do not store directly personal
-information, but are based on uniquely identifying your browser and internet
-device. If you do not allow these cookies, you will experience less targeted
-advertising.
+## 扩展推荐系统详情
 
-These cookies enable the website to provide enhanced functionality and
-personalisation. They may be set by us or by third party providers whose
-services we have added to our pages. If you do not allow these cookies then
-some or all of these services may not function properly.
+新系统旨在激励用户，使他们不仅可以从直接推荐中赚取 $GALA 代币，还可以从最多五级好友的活动中赚取。这一变化显著增加了在 Gala
+生态系统中赚取的潜力，只要推荐链中的任何成员在合资格活动中消费 $GALA，奖励就会立即分发。
 
-Cookies, device or similar online identifiers (e.g. login-based identifiers,
-randomly assigned identifiers, network based identifiers) together with other
-information (e.g. browser type and information, language, screen size,
-supported technologies etc.) can be stored or read on your device to recognise
-it each time it connects to an app or to a website, for one or several of the
-purposes presented here.
+用户可以通过社交媒体、消息应用或电子邮件分享独特的推荐链接来参与。一旦新用户加入并参与合格活动，如从 Gala 商店购买商品或支付 GalaChain
+燃气费，推荐人就会获得奖励。合格活动包括像 TownStar、VOX、Mirandus 和 GalaGold 这样的热门游戏和服务。
 
-List of IAB Vendors‎ | View Illustrations 
+## 即时且可跟踪的奖励
 
-With your acceptance, your precise location (within a radius of less than 500
-metres) may be used in support of the purposes explained in this notice.
+此增强系统的一大吸引特点是奖励的即时分配。用户不必等待或手动领取奖励，它们会在网络内任何合格交易后自动记入账户。此外，参与者可以通过专用推荐仪表板监控其奖励和网络的增长，这使得跟踪推荐和收益变得更加容易。
 
-List of IAB Vendors‎
+## 对 Gala 生态系统的影响
 
-With your acceptance, certain characteristics specific to your device might be
-requested and used to distinguish it from other devices (such as the installed
-fonts or plugins, the resolution of your screen) in support of the purposes
-explained in this notice.
+这次推荐系统的扩展是 Gala Games 更广泛战略的一部分，以构建一个强大的 Web3
+社区。通过将个人网络转变为动态的奖励引擎，公司旨在促进一种连锁效应，鼓励更广泛的参与和生态系统中的参与。这一战略举措预计将增加平台的用户基础，并增强
+$GALA 代币的整体实用性和接受度。
 
-List of IAB Vendors‎
+有关更多详细信息，请访问 [Gala News](https://news.gala.com/gala-games/galas-referral-
+system-is-leveling-up/)。
 
-Your data can be used to monitor for and prevent unusual and possibly
-fraudulent activity (for example, regarding advertising, ad clicks by bots),
-and ensure systems and processes work properly and securely. It can also be
-used to correct any problems you, the publisher or the advertiser may
-encounter in the delivery of content and ads and in your interaction with
-them.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Certain information (like an IP address or device capabilities) is used to
-ensure the technical compatibility of the content or advertising, and to
-facilitate the transmission of the content or ad to your device.
-
-List of IAB Vendors‎ | View Illustrations 
-
-The choices you make regarding the purposes and entities listed in this notice
-are saved and made available to those entities in the form of digital signals
-(such as a string of characters). This is necessary in order to enable both
-this service and those entities to respect such choices.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Information about your activity on this service may be matched and combined
-with other information relating to you and originating from various sources
-(for instance your activity on a separate online service, your use of a
-loyalty card in-store, or your answers to a survey), in support of the
-purposes explained in this notice.
-
-List of IAB Vendors‎
-
-In support of the purposes explained in this notice, your device might be
-considered as likely linked to other devices that belong to you or your
-household (for instance because you are logged in to the same service on both
-your phone and your computer, or because you may use the same Internet
-connection on both devices).
-
-List of IAB Vendors‎
-
-Your device might be distinguished from other devices based on information it
-automatically sends when accessing the Internet (for instance, the IP address
-of your Internet connection or the type of browser you are using) in support
-of the purposes exposed in this notice.
-
-List of IAB Vendors‎
+ _Image source: Shutterstock_
 
 
 
 -----
 
-标题: <b>比特币</b>价格（<b>BTC</b>）新闻：涉及日本央行ETF撤资 - CoinDesk
-真实链接: https://www.coindesk.com/zh/markets/2025/09/19/bank-of-japan-s-historic-etf-unwind-sparks-market-selloff-dip-in-crypto
-正文: #### Your Privacy
+标题: 前景不明？<b>Bitcoin</b> Cash 尽管哈希率创下历史新高，但价格预测却发出了盘整信号，原因如下
+真实链接: https://tradersunion.com/zh/news/cryptocurrency-news/show/546856-bitcoin-cash-slips/
+正文: Bitcoin Cash (BCH）目前的交易价格为 596.90 美元，略低于 MA-20 的 597.40 美元，略高于 MA-50 的 580.91
+美元，远高于 MA-200 的 453.65 美元。这反映了短期卖方压力，但中长期趋势依然向上。
 
-We process your data to deliver content or advertisements and measure the
-delivery of such content or advertisements to extract insights about our
-website. We share this information with our partners on the basis of consent
-and legitimate interest. You may exercise your right to consent or object to a
-legitimate interest, based on a specific purpose below or at a partner level
-in the link under each purpose. These choices will be signaled to our vendors
-participating in the Transparency and Consent Framework. The choices you make
-regarding the purposes and vendors listed in this notice are saved and stored
-locally on your device for a maximum duration of 1 year.  
-[Privacy Policy](https://www.coindesk.com/privacy)
+24H 预测+0.88% 603.55
 
-List of IAB Vendors‎
+48H 预测-0.28% 596.60
 
-These cookies are necessary for the website to function and cannot be switched
-off in our systems. They are usually only set in response to actions made by
-you which amount to a request for services, such as setting your privacy
-preferences, logging in or filling in forms. You can set your browser to block
-or alert you about these cookies, but some parts of the site will not then
-work. These cookies do not store any personally identifiable information.
+7天预测+0.13% 599.10
 
-These cookies allow us to count visits and traffic sources so we can measure
-and improve the performance of our site. They help us to know which pages are
-the most and least popular and see how visitors move around the site. All
-information these cookies collect is aggregated and therefore anonymous. If
-you do not allow these cookies we will not know when you have visited our
-site, and will not be able to monitor its performance.
+1个月预测-1.75% 587.80
 
-These cookies may be set through our site by our advertising partners. They
-may be used by those companies to build a profile of your interests and show
-you relevant adverts on other sites. They do not store directly personal
-information, but are based on uniquely identifying your browser and internet
-device. If you do not allow these cookies, you will experience less targeted
-advertising.
+3个月预测+3.33% 618.22
 
-These cookies enable the website to provide enhanced functionality and
-personalisation. They may be set by us or by third party providers whose
-services we have added to our pages. If you do not allow these cookies then
-some or all of these services may not function properly.
+6个月预测+12.42% 672.62
 
-Cookies, device or similar online identifiers (e.g. login-based identifiers,
-randomly assigned identifiers, network based identifiers) together with other
-information (e.g. browser type and information, language, screen size,
-supported technologies etc.) can be stored or read on your device to recognise
-it each time it connects to an app or to a website, for one or several of the
-purposes presented here.
+1年预测+34.52% 804.82
 
-List of IAB Vendors‎ | View Illustrations 
+****实时价格 14:12:25
 
-With your acceptance, your precise location (within a radius of less than 500
-metres) may be used in support of the purposes explained in this notice.
+每日变化 **$598.90** ![Arrow from to Icon](/assets/src/pages/widget-price-
+prediction/img/arrow-right-gray.svg) **$ 598.3**
 
-List of IAB Vendors‎
+每周变化 **$601.60** ![Arrow from to Icon](/assets/src/pages/widget-price-
+prediction/img/arrow-right-gray.svg) **$ 598.3**
 
-With your acceptance, certain characteristics specific to your device might be
-requested and used to distinguish it from other devices (such as the installed
-fonts or plugins, the resolution of your screen) in support of the purposes
-explained in this notice.
+## Highlights
 
-List of IAB Vendors‎
+  * Bitcoin Cash (BCH）交易价格为 596.90 美元，略低于 MA-20 值 597.40 美元，高于 MA-50 值（580.91 美元）和 MA-200 值（453.65 美元），表明短期卖方压力较大，但中长期技术面呈上升趋势。
+  * 2025 年 9 月 18 日，随着机构参与的增加以及美国证券交易委员会启用加密货币现货 ETF 上市通用标准，BCH 的哈希率创下了 6.11 EH/s 的历史新高。
+  * 日线技术指标反映出混合势头--MACD 看涨，但 ADX、RSI（46）和负 BBP 显示出下行倾向--日线下跌 5.90 美元（0.98%），可能在 571.10 美元至 597.40 美元之间盘整。
 
-Your data can be used to monitor for and prevent unusual and possibly
-fraudulent activity (for example, regarding advertising, ad clicks by bots),
-and ensure systems and processes work properly and securely. It can also be
-used to correct any problems you, the publisher or the advertiser may
-encounter in the delivery of content and ads and in your interaction with
-them.
+## 随着机构资金流动和监管明朗化，矿商信心上升
 
-List of IAB Vendors‎ | View Illustrations 
+该材料由英文翻译而来。我们通讯员的原文文章在[这里](/news/cryptocurrency-news/show/546820-bitcoin-cash-
+slips/) 。
 
-Certain information (like an IP address or device capabilities) is used to
-ensure the technical compatibility of the content or advertising, and to
-facilitate the transmission of the content or ad to your device.
+Bitcoin Cash 截至 2025 年 9 月 18 日，BCH 的哈希率最近达到了 6.11 EH/s
+的历史新高，彰显了矿工的强烈信心和更高的网络安全性。机构对 BCH
+交易的参与度持续上升，使该资产成为支付和价值存储用途的一个不断增长的选择。此外，在美国证券交易委员会批准了加密货币现货 ETF 上市的通用标准后，潜在
+BCH ETF 的监管环境有所改善。
 
-List of IAB Vendors‎ | View Illustrations 
+## 波动持续，看跌震荡指标对抗看涨 MACD
 
-The choices you make regarding the purposes and entities listed in this notice
-are saved and made available to those entities in the form of digital signals
-(such as a string of characters). This is necessary in order to enable both
-this service and those entities to respect such choices.
+日线图上的动量信号喜忧参半，MACD显示出强烈的买盘兴趣，但ADX则偏向看跌，暗示着温和的下行趋势。RSI（46）和Stoch
+RSI处于中性偏弱区域，CCI偏弱，表明既无明显超卖，也无明显超买。BBP
+为负值，表明卖方目前主导盘中动能。威严震荡指标呈中性，没有确认今天的方向。日线表现为下跌 5.90 美元或
+0.98%。开盘时出现了一个小幅向下跳空缺口（594.10 美元，前收盘价为 602.80 美元），目前的价格位于今日最高价 600.60 美元和最低价
+593.50 美元之间的中间位置，表明波动幅度适中，卖方在盘中持续施压。看涨 MACD
+与看跌震荡指标之间的背离预示着不确定性，盘中价格走势确认了短期下行势头。
 
-List of IAB Vendors‎ | View Illustrations 
+## 横向盘整受青睐，上行势头依然微弱
 
-Information about your activity on this service may be matched and combined
-with other information relating to you and originating from various sources
-(for instance your activity on a separate online service, your use of a
-loyalty card in-store, or your answers to a survey), in support of the
-purposes explained in this notice.
+未来五个交易日的预期价格区间为 571.10 美元至 571.80 美元。根据周动量和趋势指标，价格持续上涨的概率非常低（低于
+20%），因此进一步下跌的可能性更大。基准情景是 BCH 在一个狭窄的区间内横向盘整。看涨的情况需要突破 MA-20 阻力位 597.40
+美元附近，可能会打开更高的空间，而失去 587.50 美元的 Kijun
+附近的支撑将面临进一步跌向周线区间下限的风险。此前有消息指出，随着美国证券交易委员会准备快速审批加密货币 ETF，包括那些基于Bitcoin Cash 的
+ETF，监管情绪成为焦点。市场参与者[对](https://tradersunion.com/news/cryptocurrency-
+news/show/540462-bitcoin-cash-
+slides/)流动性和全球政策因素的变化做出了回应，[机构对加密货币的广泛兴趣](https://tradersunion.com/news/cryptocurrency-
+news/show/540462-bitcoin-cash-slides/)也凸显了这一点。
 
-List of IAB Vendors‎
+该分析基于结合技术、链上和专家数据的专有模型。 非投资建议。 查看
 
-In support of the purposes explained in this notice, your device might be
-considered as likely linked to other devices that belong to you or your
-household (for instance because you are logged in to the same service on both
-your phone and your computer, or because you may use the same Internet
-connection on both devices).
+[ 方法论 ](https://tradersunion.com/zh/market-analysis-methodology/)
 
-List of IAB Vendors‎
-
-Your device might be distinguished from other devices based on information it
-automatically sends when accessing the Internet (for instance, the IP address
-of your Internet connection or the type of browser you are using) in support
-of the purposes exposed in this notice.
-
-List of IAB Vendors‎
+本资料可能包含第三方意见，不构成财务建议，并可能包含赞助内容。
 
 
 
 -----
 
-标题: <b>比特币BTC</b> 测试关键阻力位，日本股市下跌2.5% - Blockchain News
-真实链接: https://blockchain.news/zh/flashnews/bitcoin-btc-tests-crucial-resistance-as-japan-stocks-drop-2-5-trader-eyes-dip-buying-opportunity-zh
-正文: 作为加密货币交易者准备迎接可能成为关键交易时段的日子，知名分析师Michaël van de
-Poppe的见解突显了全球股市与比特币价格动态之间的相互作用。根据他的最新声明，日本市场下跌了2.5%，这为包括加密货币在内的更广泛金融市场的潜在波动奠定了基础。这种亚洲股市的下跌，特别是像日经指数这样的指数，往往预示着避险情绪，可能波及加密交易对。比特币作为市值领先的加密货币，目前正与关键阻力位展开激战，van
-de
-Poppe对立即突破表示谨慎，反而对买入低点表现出浓厚兴趣。这种观点强调了监控跨市场相关性的重要性，其中传统股票的疲软可能对BTC/USD和其他交易对施加压力，为交易者提供战略性入场点。
-
-## 比特币的阻力之战与交易含义
-
-在比特币持续对抗关键阻力的背景下，交易者应关注技术指标来应对潜在价格变动。Van de
-Poppe指出，BTC正处于关键时刻，鉴于来自全球股市下跌的外部压力，一次性突破阻力似乎不太可能。例如，如果日本的2.5%下跌影响美国市场开盘，比特币可能测试近期低点的支撑位，潜在回落至类似58,000至60,000美元的区域，基于类似情景中的历史模式。主要交易所的交易量在此类事件中显示出波动，山寨币的抛售增加与比特币的犹豫相关。精明的交易者可能在这些低点积累头寸，正如van
-de
-Poppe表示的对买入机会的强烈兴趣，强调在不确定性中保持耐心的策略。这种方法与更广泛的市场情绪一致，其中来自传统金融的机构资金流入可能在低点买入加剧时稳定价格。
-
-### 跨市场相关性和风险管理
-
-深入探讨加密与股市的联系，日本的2.5%下跌提醒我们全球金融的互联性有多强。像BTC和ETH这样的加密货币符号往往反映股市指数的变动，比特币价格对宏观经济线索如利率预期或地缘政治紧张作出反应。如果这种亚洲疲软外溢，交易者应警惕包括BTC/JPY在内的交易对的波动加剧，其中直接相关性可能放大变动。链上指标，如比特币的实现波动率和大户积累模式，表明阻力位以下的低点可能吸引长期持有者，潜在导致反弹。Van
-de
-Poppe对买入低点的兴趣突显了逆向策略，其中通过斐波那契回撤或移动平均线等工具识别支撑区变得至关重要。对于优化投资组合的人来说，向AI相关代币多元化可能对冲纯加密敞口，因为人工智能的进步继续影响区块链项目和市场情绪。
-
-展望未来，随着比特币阻力测试与全球市场动态同步，这个交易日充满趣味。Van de
-Poppe的分析鼓励采取谨慎方法，在不确定性中避免冲动交易。通过整合来自股市下跌的实时情绪，交易者可以在低点后突破阻力时定位潜在上涨，或利用短期回调。机构对加密货币的兴趣依然强劲，资金流入可能缓冲更深修正。最终，这种情景为风险管理提供了宝贵教训，敦促交易者设置止损并监控成交量峰值以确认趋势。随着时段展开，关注相关资产将是发现加密景观中盈利机会的关键。
-
-总结这一分析，股市信号与比特币技术设置的融合为明智交易决策创造了肥沃土壤。无论您是瞄准BTC突破还是准备如van de
-Poppe建议买入低点，保持对全球线索如日本近期下跌的敏感性都能提升策略有效性。请记住，成功交易依赖于数据驱动洞见、纪律执行以及对加密和传统领域市场心理的理解。
+标题: 加密货币总市值逾4.04万亿美元，<b>比特币</b>占有率为57.1% - Binance
+真实链接: https://www.binance.com/cn/square/post/29981516955194
+正文: 据CoinMarketCap显示，今日加密货币总市值40377.34亿美元，24小时交易量1039.86亿美元，其中[BTC](/trade/BTC_USDT?contentId=29981516955194)占有率达57.1%。
 
 
 
 -----
 
-标题: 稳定币新闻：2700亿美元市场追踪加密<b>货币</b>的增长 - CoinDesk
-真实链接: https://www.coindesk.com/zh/markets/2025/09/19/u-s-stablecoin-battle-could-be-zero-sum-game-jpmorgan
-正文: #### Your Privacy
+标题: 以太坊（ETH）流入激增，随着加密市场波动性在2025年8月回归 - Blockchain News
+真实链接: https://blockchain.news/news/0HNF3ULS2LVAT
+正文: # 以太坊（ETH）流入激增，随着加密市场波动性在2025年8月回归
 
-We process your data to deliver content or advertisements and measure the
-delivery of such content or advertisements to extract insights about our
-website. We share this information with our partners on the basis of consent
-and legitimate interest. You may exercise your right to consent or object to a
-legitimate interest, based on a specific purpose below or at a partner level
-in the link under each purpose. These choices will be signaled to our vendors
-participating in the Transparency and Consent Framework. The choices you make
-regarding the purposes and vendors listed in this notice are saved and stored
-locally on your device for a maximum duration of 1 year.  
-[Privacy Policy](https://www.coindesk.com/privacy)
+[realtime news](/Profile/realtime-news) Sep 05, 2025 08:06
 
-List of IAB Vendors‎
+2025年8月见证了显著的加密市场波动性，以太坊流入达到了40亿美元，比特币主导地位下降，而CEX代币如OKB和CRO则表现出显著的增长。
 
-These cookies are necessary for the website to function and cannot be switched
-off in our systems. They are usually only set in response to actions made by
-you which amount to a request for services, such as setting your privacy
-preferences, logging in or filling in forms. You can set your browser to block
-or alert you about these cookies, but some parts of the site will not then
-work. These cookies do not store any personally identifiable information.
+[
+![以太坊（ETH）流入激增，随着加密市场波动性在2025年8月回归](https://image.blockchain.news:443/features/FCAF30107F93017A469BDB76DCCE7D957DFC034943E2204CF5967AAF05B60663.jpg)
+](https://image.blockchain.news:443/features/FCAF30107F93017A469BDB76DCCE7D957DFC034943E2204CF5967AAF05B60663.jpg)
 
-These cookies allow us to count visits and traffic sources so we can measure
-and improve the performance of our site. They help us to know which pages are
-the most and least popular and see how visitors move around the site. All
-information these cookies collect is aggregated and therefore anonymous. If
-you do not allow these cookies we will not know when you have visited our
-site, and will not be able to monitor its performance.
+根据VanEck的数据，在2025年8月，加密货币市场经历了波动的复苏，主要表现为以太坊（ETH）的大量流入以及比特币（BTC）主导地位的下降。这个月中，以太坊交易所交易产品（ETPs）吸引了40亿美元，而比特币面临了6亿美元的流出，使BTC的市场主导地位从65%下降到57%。
 
-These cookies may be set through our site by our advertising partners. They
-may be used by those companies to build a profile of your interests and show
-you relevant adverts on other sites. They do not store directly personal
-information, but are based on uniquely identifying your browser and internet
-device. If you do not allow these cookies, you will experience less targeted
-advertising.
+## 以太坊的突出表现
 
-These cookies enable the website to provide enhanced functionality and
-personalisation. They may be set by us or by third party providers whose
-services we have added to our pages. If you do not allow these cookies then
-some or all of these services may not function properly.
+以太坊的波动性达到了近一年内的高点，受到机构采用增加和稳定币活动的推动。ETH/BTC比率反弹至0.043，这是自2024年9月以来未曾见过的水平。这部分是由于一个重要的加密鲸转移了24,000个BTC到ETH，标志着市场情绪的显著转变。
 
-Cookies, device or similar online identifiers (e.g. login-based identifiers,
-randomly assigned identifiers, network based identifiers) together with other
-information (e.g. browser type and information, language, screen size,
-supported technologies etc.) can be stored or read on your device to recognise
-it each time it connects to an app or to a website, for one or several of the
-purposes presented here.
+以太坊的链上活动激增，去中心化交易所（DEX）交易量接近总市场份额的50%。以太坊改进提案7928的引入预计将提高处理能力，可能将交易容量增加2.6倍，从而进一步提升以太坊在市场中的地位。
 
-List of IAB Vendors‎ | View Illustrations 
+## 市场变动中CEX代币的亮眼表现
 
-With your acceptance, your precise location (within a radius of less than 500
-metres) may be used in support of the purposes explained in this notice.
+中心化交易所（CEX）代币如OKB和Cronos（CRO）表现出显著增长，OKB飙升了248%，CRO增长了112%。OKX的战略升级，包括采用Polygon的悲观证明和一次性烧毁6530万个OKB代币，增强了其市场地位，与更广泛的DeFi和RWA市场保持一致。
 
-List of IAB Vendors‎
+Crypto.com与Trump Media & Technology
+Group的合作进一步提升了CRO的表现，他们宣布计划通过SPAC交易来积累CRO，从而提高其市场相关性。
 
-With your acceptance, certain characteristics specific to your device might be
-requested and used to distinguish it from other devices (such as the installed
-fonts or plugins, the resolution of your screen) in support of the purposes
-explained in this notice.
+## 监管发展与市场展望
 
-List of IAB Vendors‎
+随着加密领域的发展，监管框架正在制定中，以保障投资者并稳定生态系统。欧盟的MiCA法规和美国提议的CLARITY法案旨在提高透明度并保护投资者免受高收益产品的相关风险。
 
-Your data can be used to monitor for and prevent unusual and possibly
-fraudulent activity (for example, regarding advertising, ad clicks by bots),
-and ensure systems and processes work properly and securely. It can also be
-used to correct any problems you, the publisher or the advertiser may
-encounter in the delivery of content and ads and in your interaction with
-them.
+尽管监管取得进展，但由于CEX代币的历史波动性以及过去凯尔萨斯和FTX等交易所的灾难性失败，市场依然保持谨慎。随着加密市场的不断成熟，预计会有健全的监管保障措施，以培育更安全的投资环境。
 
-List of IAB Vendors‎ | View Illustrations 
+欲获取更多见解，请访问[VanEck](https://www.vaneck.com/us/en/blogs/digital-assets/matthew-
+sigel-vaneck-crypto-monthly-recap-for-august-2025/)上的原始来源。
 
-Certain information (like an IP address or device capabilities) is used to
-ensure the technical compatibility of the content or advertising, and to
-facilitate the transmission of the content or ad to your device.
-
-List of IAB Vendors‎ | View Illustrations 
-
-The choices you make regarding the purposes and entities listed in this notice
-are saved and made available to those entities in the form of digital signals
-(such as a string of characters). This is necessary in order to enable both
-this service and those entities to respect such choices.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Information about your activity on this service may be matched and combined
-with other information relating to you and originating from various sources
-(for instance your activity on a separate online service, your use of a
-loyalty card in-store, or your answers to a survey), in support of the
-purposes explained in this notice.
-
-List of IAB Vendors‎
-
-In support of the purposes explained in this notice, your device might be
-considered as likely linked to other devices that belong to you or your
-household (for instance because you are logged in to the same service on both
-your phone and your computer, or because you may use the same Internet
-connection on both devices).
-
-List of IAB Vendors‎
-
-Your device might be distinguished from other devices based on information it
-automatically sends when accessing the Internet (for instance, the IP address
-of your Internet connection or the type of browser you are using) in support
-of the purposes exposed in this notice.
-
-List of IAB Vendors‎
+ _Image source: Shutterstock_
 
 
 
 -----
 
-标题: Cango 本周挖矿产出149.1 枚<b>比特币</b>，总持仓量达5567.3 枚 - Binance
-真实链接: https://www.binance.com/cn/square/post/29898669962065
-正文: 据深潮TechFlow报道，9月19日，纽交所上市的[比特](/trade/BTC_USDT?contentId=29898669962065)币矿企
-Cango 在 X 平台发文表示，该公司本周挖矿产出 149.1 枚比特币。截止目前，Cango 的比特币总持仓量已达到 5567.3 枚。
-
-
-
------
-
-标题: CoinDesk 20 表现更新：指数下跌2%，几乎所有成分股均呈下跌走势
-真实链接: https://www.coindesk.com/zh/coindesk-indices/2025/09/19/coindesk-20-performance-update-index-drops-2-as-nearly-all-constituents-trade-lower
-正文: #### Your Privacy
-
-We process your data to deliver content or advertisements and measure the
-delivery of such content or advertisements to extract insights about our
-website. We share this information with our partners on the basis of consent
-and legitimate interest. You may exercise your right to consent or object to a
-legitimate interest, based on a specific purpose below or at a partner level
-in the link under each purpose. These choices will be signaled to our vendors
-participating in the Transparency and Consent Framework. The choices you make
-regarding the purposes and vendors listed in this notice are saved and stored
-locally on your device for a maximum duration of 1 year.  
-[Privacy Policy](https://www.coindesk.com/privacy)
-
-List of IAB Vendors‎
-
-These cookies are necessary for the website to function and cannot be switched
-off in our systems. They are usually only set in response to actions made by
-you which amount to a request for services, such as setting your privacy
-preferences, logging in or filling in forms. You can set your browser to block
-or alert you about these cookies, but some parts of the site will not then
-work. These cookies do not store any personally identifiable information.
-
-These cookies allow us to count visits and traffic sources so we can measure
-and improve the performance of our site. They help us to know which pages are
-the most and least popular and see how visitors move around the site. All
-information these cookies collect is aggregated and therefore anonymous. If
-you do not allow these cookies we will not know when you have visited our
-site, and will not be able to monitor its performance.
-
-These cookies may be set through our site by our advertising partners. They
-may be used by those companies to build a profile of your interests and show
-you relevant adverts on other sites. They do not store directly personal
-information, but are based on uniquely identifying your browser and internet
-device. If you do not allow these cookies, you will experience less targeted
-advertising.
-
-These cookies enable the website to provide enhanced functionality and
-personalisation. They may be set by us or by third party providers whose
-services we have added to our pages. If you do not allow these cookies then
-some or all of these services may not function properly.
-
-Cookies, device or similar online identifiers (e.g. login-based identifiers,
-randomly assigned identifiers, network based identifiers) together with other
-information (e.g. browser type and information, language, screen size,
-supported technologies etc.) can be stored or read on your device to recognise
-it each time it connects to an app or to a website, for one or several of the
-purposes presented here.
-
-List of IAB Vendors‎ | View Illustrations 
-
-With your acceptance, your precise location (within a radius of less than 500
-metres) may be used in support of the purposes explained in this notice.
-
-List of IAB Vendors‎
-
-With your acceptance, certain characteristics specific to your device might be
-requested and used to distinguish it from other devices (such as the installed
-fonts or plugins, the resolution of your screen) in support of the purposes
-explained in this notice.
-
-List of IAB Vendors‎
-
-Your data can be used to monitor for and prevent unusual and possibly
-fraudulent activity (for example, regarding advertising, ad clicks by bots),
-and ensure systems and processes work properly and securely. It can also be
-used to correct any problems you, the publisher or the advertiser may
-encounter in the delivery of content and ads and in your interaction with
-them.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Certain information (like an IP address or device capabilities) is used to
-ensure the technical compatibility of the content or advertising, and to
-facilitate the transmission of the content or ad to your device.
-
-List of IAB Vendors‎ | View Illustrations 
-
-The choices you make regarding the purposes and entities listed in this notice
-are saved and made available to those entities in the form of digital signals
-(such as a string of characters). This is necessary in order to enable both
-this service and those entities to respect such choices.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Information about your activity on this service may be matched and combined
-with other information relating to you and originating from various sources
-(for instance your activity on a separate online service, your use of a
-loyalty card in-store, or your answers to a survey), in support of the
-purposes explained in this notice.
-
-List of IAB Vendors‎
-
-In support of the purposes explained in this notice, your device might be
-considered as likely linked to other devices that belong to you or your
-household (for instance because you are logged in to the same service on both
-your phone and your computer, or because you may use the same Internet
-connection on both devices).
-
-List of IAB Vendors‎
-
-Your device might be distinguished from other devices based on information it
-automatically sends when accessing the Internet (for instance, the IP address
-of your Internet connection or the type of browser you are using) in support
-of the purposes exposed in this notice.
-
-List of IAB Vendors‎
-
-
-
------
-
-标题: Best Crypto To Buy As Saylor's Strategy Adds 525 <b>Bitcoin</b> to Company Pile | Bitget News
-真实链接: https://www.bitget.com/amp/news/detail/12560604975669
-正文: Saylor’s firm Strategy, formerly MicroStrategy, has purchased 525 Bitcoin
-worth $60 million, at an average price of $114,562. The company now holds
-638,985 BTC valued above $73 billion, cementing its position as the largest
-public company holder of the token.
-
-This move extends an acquisition program that started in August 2020, when
-Strategy became the first major firm to adopt Bitcoin as a treasury asset.
-Consequently, the question of the best crypto to buy now is gaining urgency,
-as institutional demand is setting the tone for wider market activity.
-
-## Bitcoin Accumulation Continuing Strong
-
-Strategy has been pursuing Bitcoin since its $250 million opening buy in 2020.
-The latest addition comes after the company spent $450 million on Bitcoin
-between late August and early September. While other firms like Metaplanet,
-Trump Media, and HashKey are adding Bitcoin, Strategy has been consistently
-scaling its treasury.
-
-Bitcoin has remained resilient in September, a month often associated with
-weakness in crypto prices. The token is testing resistance levels near
-$115,600 while holding firm above $111,000 support.
-
-Moreover, renewed inflows into spot Bitcoin ETFs, totaling more than $2.2
-billion, are reinforcing bullish sentiment. These dynamics suggest Bitcoin
-continues serving as the anchor for crypto investing, though new altcoins are
-also attracting capital.
-
-### Mutuum Finance 项目进展
-
-Mutuum Finance (MUTM)  处于发展的第六阶段。该代币现价为 $0.035，较首轮定价 $0.01 已经上涨
-250%。迄今为止，项目吸引了 16,370 名持有人，融资总额达 $16,000,000。
-
-第六阶段正在进行，下一阶段将开启并有价格提升，涨幅为 14.3% 至 $0.04。项目上线后，预计代币定价为 $0.06，当前持有者有望获得 400%
-潜在回报。
-
-项目以强劲的基本面为基础，Mutuum Finance
-融合了点对合约和点对点的借贷体系，赋予用户既可进行稳健，也可参与投机性借贷的选择。这一双重模式提升了效率，也为收益创造带来了多样化的机会。
-
-超额抵押措施确保了借贷业务在市场波动时的安全性，清算机制和参数框架则共同维护协议的稳健。
-
-Mutuum 还顺利通过 CertiK 安全审计，得分 90/100，进一步增加了项目可信度。团队还与 CertiK 合作推出 $50,000
-的漏洞赏金计划，根据安全漏洞严重程度进行奖励分配。此外，持币排行榜功能奖励排名前 50 的用户额外代币，进一步增强了社区凝聚力。
-
-团队还推出了大规模奖励活动，向十名用户送出总计 $100,000 等值 MUTM。每位获奖者可获得 $10,000，参与门槛仅需 $50
-投资。简单的参与流程进一步激发市场热情，吸引更多关注者。
-
-### Strong Tokenomics Attracting Interest
-
-Mutuum Finance has designed mechanisms such as borrow caps, deposit caps, and
-stable rate options to balance liquidity and reduce systemic risks. For
-example, its enhanced collateral efficiency feature allows improved borrowing
-limits for correlated assets like stablecoins.
-
-These risk management tools position Mutuum as more robust compared to many
-existing altcoins. Consequently, MUTM is emerging as one of the best cryptos
-to invest in today, supported by its rapid presale progress and structured
-framework.
-
-### Why Mutuum Stands Out Now
-
-While Bitcoin and Ethereum remain dominant, Mutuum Finance is providing
-investors with the kind of upside that established coins cannot. The project
-is growing during a period when Saylor’s firm is proving institutional
-confidence in crypto. Investors looking for the best crypto to buy are now
-considering MUTM, given its innovative model and early-stage affordability.
-
-Mutuum Finance is combining practical safeguards with incentives that reward
-both lenders and holders, all while building transparency through audits and
-dashboards. As Phase 6 races toward closure, this presale is positioning
-itself as the most compelling crypto investment opportunity linked to the
-broader momentum sparked by Bitcoin’s renewed institutional accumulation.
-
-
-
------
-
-标题: Best Crypto To Buy As Saylor's Strategy Adds 525 <b>Bitcoin</b> to Company Pile | Bitget News
-真实链接: https://www.bitget.com/news/detail/12560604975669
-正文: Saylor’s firm Strategy, formerly MicroStrategy, has purchased 525 Bitcoin
-worth $60 million, at an average price of $114,562. The company now holds
-638,985 BTC valued above $73 billion, cementing its position as the largest
-public company holder of the token.
-
-This move extends an acquisition program that started in August 2020, when
-Strategy became the first major firm to adopt Bitcoin as a treasury asset.
-Consequently, the question of the best crypto to buy now is gaining urgency,
-as institutional demand is setting the tone for wider market activity.
-
-## Bitcoin Accumulation Continuing Strong
-
-Strategy has been pursuing Bitcoin since its $250 million opening buy in 2020.
-The latest addition comes after the company spent $450 million on Bitcoin
-between late August and early September. While other firms like Metaplanet,
-Trump Media, and HashKey are adding Bitcoin, Strategy has been consistently
-scaling its treasury.
-
-Bitcoin has remained resilient in September, a month often associated with
-weakness in crypto prices. The token is testing resistance levels near
-$115,600 while holding firm above $111,000 support.
-
-Moreover, renewed inflows into spot Bitcoin ETFs, totaling more than $2.2
-billion, are reinforcing bullish sentiment. These dynamics suggest Bitcoin
-continues serving as the anchor for crypto investing, though new altcoins are
-also attracting capital.
-
-### Mutuum Finance 项目进展
-
-Mutuum Finance (MUTM)  处于发展的第六阶段。该代币现价为 $0.035，较首轮定价 $0.01 已经上涨
-250%。迄今为止，项目吸引了 16,370 名持有人，融资总额达 $16,000,000。
-
-第六阶段正在进行，下一阶段将开启并有价格提升，涨幅为 14.3% 至 $0.04。项目上线后，预计代币定价为 $0.06，当前持有者有望获得 400%
-潜在回报。
-
-项目以强劲的基本面为基础，Mutuum Finance
-融合了点对合约和点对点的借贷体系，赋予用户既可进行稳健，也可参与投机性借贷的选择。这一双重模式提升了效率，也为收益创造带来了多样化的机会。
-
-超额抵押措施确保了借贷业务在市场波动时的安全性，清算机制和参数框架则共同维护协议的稳健。
-
-Mutuum 还顺利通过 CertiK 安全审计，得分 90/100，进一步增加了项目可信度。团队还与 CertiK 合作推出 $50,000
-的漏洞赏金计划，根据安全漏洞严重程度进行奖励分配。此外，持币排行榜功能奖励排名前 50 的用户额外代币，进一步增强了社区凝聚力。
-
-团队还推出了大规模奖励活动，向十名用户送出总计 $100,000 等值 MUTM。每位获奖者可获得 $10,000，参与门槛仅需 $50
-投资。简单的参与流程进一步激发市场热情，吸引更多关注者。
-
-### Strong Tokenomics Attracting Interest
-
-Mutuum Finance has designed mechanisms such as borrow caps, deposit caps, and
-stable rate options to balance liquidity and reduce systemic risks. For
-example, its enhanced collateral efficiency feature allows improved borrowing
-limits for correlated assets like stablecoins.
-
-These risk management tools position Mutuum as more robust compared to many
-existing altcoins. Consequently, MUTM is emerging as one of the best cryptos
-to invest in today, supported by its rapid presale progress and structured
-framework.
-
-### Why Mutuum Stands Out Now
-
-While Bitcoin and Ethereum remain dominant, Mutuum Finance is providing
-investors with the kind of upside that established coins cannot. The project
-is growing during a period when Saylor’s firm is proving institutional
-confidence in crypto. Investors looking for the best crypto to buy are now
-considering MUTM, given its innovative model and early-stage affordability.
-
-Mutuum Finance is combining practical safeguards with incentives that reward
-both lenders and holders, all while building transparency through audits and
-dashboards. As Phase 6 races toward closure, this presale is positioning
-itself as the most compelling crypto investment opportunity linked to the
-broader momentum sparked by Bitcoin’s renewed institutional accumulation.
-
-
-
------
-
-标题: 波兰华沙证券交易所（GPW）正式上线首只加密<b>货币</b>ETF - 新浪财经
-真实链接: https://finance.sina.com.cn/blockchain/roll/2025-09-19/doc-infqzuwf7815203.shtml
-正文: （来源：吴说）
-
-吴说获悉，波兰华沙证券交易所（GPW）正式上线首只加密货币 ETF——Bitcoin BETA ETF。该产品通过芝商所比特币期货提供受监管的 BTC
-敞口，并对 USD/PLN 汇率进行对冲，旨在降低外汇波动风险。基金由 AgioFunds TFI 管理，市场做市商为 BOŚ 银行旗下券商。该 ETF
-于今年 6 月获波兰金融监管局批准。
-
-
-
------
-
-标题: 降息周期重启，本轮币圈「机构牛市」还能走多远？
-真实链接: https://news.futunn.com/post/62289082/with-the-restart-of-the-interest-rate-cut-cycle-how?futusource=news_topic_page&lang=zh-cn
-正文: 这个周期行情的主导力量来自机构。[$比特币 (BTC.CC)$](https://www.futunn.com/stock/BTC-CC) 、 [$以太坊
-(ETH.CC)$](https://www.futunn.com/stock/ETH-CC) 、 [$Solana
-(SOL.CC)$](https://www.futunn.com/stock/SOL-CC) 、 [$币安币
-(BNB.CC)$](https://www.futunn.com/stock/BNB-CC) 四大主流币纷纷创下新高，但只有 BTC 和
-BNB突破历史高点后继续上涨超40% 。SOL 于年初借助 Trump 发币事件完成突破，ETH 则于年中在DAT
-买盘的推动下实现重估，都还没有继续创新高。
-
-昨夜美联储降息了，投资者好奇：这轮机构主导的行情还能走多远？
-
-## 三大币种的机构配置逻辑
-
-加密资产的定位直接决定其长期价值，不同定位对应不同的机构配置逻辑。
-
-![](https://record.futunn.com/news-editor-
-imgs/20250920/public/1758320330267635115839.png?imageMogr2/quality/minsize/1/ignore-
-error/1/format/webp)[$比特币 (BTC.CC)$](https://www.futunn.com/stock/BTC-
-CC)：数字黄金的抗通胀属性
-
-定位 “数字黄金”（Digital Gold），长期逻辑与法币通胀周期强绑定。从数据看，其市值增长与 Global M2 同步，且与[$美元指数
-(USDindex.FX)$](https://www.futunn.com/stock/USDindex-FX)呈负相关，核心价值在于 “抗通胀 +
-保值升值”，是机构配置的基础标的。
-
-[$以太坊 (ETH.CC)$](https://www.futunn.com/stock/ETH-CC)：世界计算机的机构叙事红利
-
-定位 “世界计算机”（World Computer），虽然基金会主推的 “Layer2 扩容” 叙事未获资本市场认可，但凭借 10
-年零宕机的稳定系统，接住了美元稳定币、RWA、美股代币化等机构叙事的发展风口，摆脱了Web3
-叙事崩塌的影响，加上DAT的关键推力，实现了市值重估。以太坊将凭借其稳定性和安全性，成为机构级应用的结算网络。
-
-[$Solana (SOL.CC)$](https://www.futunn.com/stock/SOL-CC)：网络资本市场的活跃性优势
-
-定位 “网络资本市场”（Internet Capital Marekets），ICM即链上资产发行、交易与清算体系。在 FTX 倒闭危机后实现
-“向死而生”。年初至今占据 46% 的链上交易量，日活用户常年超 300 万，是当前最活跃的区块链网络。Solana
-将凭借其优越性能和高流动性，承接Crypto 原生链上交易生态。
-
-三者定位迥异，所以机构配置逻辑也不同。传统金融机构首先理解比特币的价值，其次会考虑基于以太坊发展其机构业务，最后可能会认可链上交易的价值。这是一条典型的路径：质疑、理解、成为。
-
-## 三大币种的机构持仓呈现梯度差异
-
-BTC、ETH 、SOL 的机构持仓数据呈现出明显的梯度差异，也反映了机构对这三个项目的认可程度和认可节奏。
-
-![制表：IOBC Capital](https://newsfile.futunn.com/public/NN-
-PersistNewsContentImage/7781/20250918/0-f434abcf2871b9a3801bb3ed3017ab6a-0-55751184d6eccb497c376780c904bb0d.webp/bigjpg?imageMogr2/quality/minsize/1/ignore-
-error/1/format/webp)制表：IOBC Capital
-
-从对比可以看到：BTC、ETH的机构持仓占流通量 > 18%；SOL 目前仅 9.5%，可能存在补足空间。
-
-## 加密概念股新动向
-
-最近一个多月，18 家SOL囤币公司陆续登场，直接推动 SOL 从 8 月低点上涨超 50%。声量较响的SOL DAT公司：
-
-![制表：IOBC Capital](https://newsfile.futunn.com/public/NN-
-PersistNewsContentImage/7781/20250918/0-f434abcf2871b9a3801bb3ed3017ab6a-1-62157dcc4252598e284108e430afe6f3.webp/bigjpg?imageMogr2/quality/minsize/1/ignore-
-error/1/format/webp)制表：IOBC Capital
-
-现有的这些 SOL囤币公司中，Multicoin Capital创始人Kyle Samani 领导的[$福沃德工业
-(FORD.US)$](https://www.futunn.com/stock/FORD-US)可能会成为 SOL DAT龙头。
-
-不同于 BTC DAT 的单纯囤币，不少SOL DAT公司会构建自己的 Solana
-Validator，使这个事情不仅限于“NAV游戏”，不再单纯坐等代币升值，而是通过
-Validator业务，持续获得现金流收入，这种策略相当于“囤币+挖矿”，既图长远，也赚当下。
-
-### 加密概念股：资本市场下注的映射
-
-加密概念股是传统资本与加密市场的新桥梁，传统金融市场对 Crypto各类业务的认可程度，也体现在加密概念股的股价表现中。
-
-制表：IOBC Capital
-
-复盘本轮涨幅突出的加密概念股，可以看到两个共同特征：
-
-1、押重注才能获得估值重估。持有 BTC 的上市公司有 189 家，但持仓价值达到其股票市值 70% 的仅30 家，持有 BTC 数量超过 1 万枚的只有
-12 家——这12 家涨幅相当可观。ETH DAT上市公司也呈现类似的规律。浅尝辄止的 DAT
-战略，只能引发股价的短期波动，无法实质性提振股票市值和流动性。
-
-2、业务协同才能放大商业价值。把单点业务变成产业链多方位布局，能够放大商业价值。比如[$Robinhood
-(HOOD.US)$](https://www.futunn.com/stock/HOOD-US)，通过布局加密货币交易、真实世界资产交易（RRE）、参与
-USDG 稳定币等业务，形成资金流转的业务闭环，股价连创新高；相反，Trump Media虽然也没少布局加密业务（持仓 BTC、申请 ETH ETF、发行
-Trump、Melania、WLFI 等币种），但业务间缺乏协同，最终市场对其股和币的反响都挺平淡。
-
-### 结尾
-
-比特币、以太坊、Solana的项目哲学，分别对应人类面对未来时的三种本能——存续、秩序、流动。
-
-编辑/joryn
-
-
-
------
-
-标题: <b>比特币</b>非流动供应创历史新高 - Binance
-真实链接: https://www.binance.com/square/post/29896203595945
-正文: 据 Cointelegraph
-报道，[比特](/trade/BTC_USDT?contentId=29896203595945)币的非流动供应达到14.3百万BTC，创历史新高。数据显示，超过72%的比特币被长期持有者持有，反映出长期持有者和鲸鱼的积累趋势。
-
-资产管理公司Fidelity预测，到2025年，长期持有者和企业财库可能锁定超过6百万BTC，占总供应量的28%。企业比特币储备和ETF发行人的持有量在2025年增长30%。
-
-鲸鱼和鲨鱼吸收了约300%的年度发行量，而交易所的[比特](/trade/BTC_USDT?contentId=29896203595945)币流出率下降到-150%，显示出对自我托管或长期投资的偏好。这标志着传统金融对比特币的采用增加。
-
-
-
------
-
-标题: <b>比特币</b>行情预测：SEC首支多资产ETP能否助推<b>BTC</b>拉盘突破12万美元？ - Crypto News
-真实链接: https://cryptonews.com/cn/news/bitcoin-price-prediction-will-secs-first-multi-asset-etp-push-btc-past-120k/
-正文: #  比特币行情预测：SEC首支多资产ETP能否助推BTC拉盘突破12万美元？
+标题: Michael Saylor称<b>比特币</b>或将变得'无聊' 机构资金进场正干掉波动性 - Crypto News
+真实链接: https://cryptonews.com/cn/news/michael-saylor-says-bitcoin-may-go-boring-as-institutional-money-kills-volatility/
+正文: #  Michael Saylor称比特币或将变得‘无聊’ 机构资金进场正在干掉波动性
 
 分享
 
@@ -1339,171 +483,749 @@ Cryptonews
 
 广告声明我们致力于为读者提供完全透明的信息。我们的一些内容包含附属链接，通过这些合作伙伴关系，我们可能会获得佣金。
 
-BTC 当前在 $117,321 附近震荡，24 小时成交量约 494 亿美元，市值高达 2.33
-万亿美元。尽管全球市场波动不断，比特币依然是机构配置里的「锚定资产」。
+MicroStrategy创始人 Michael Saylor 警告称，随着机构大规模入场，比特币可能会从一种
+肾上腺素飙升式的投资品，逐渐转变为一个“无聊”的价值储藏工具——因为 巨型机构在进场前都要求更低的波动性。
 
-美联储最新一次 降息 25 个基点（自去年 12 月以来首次），为风险资产带来了新一轮动能。更低的借贷成本通常利好
-BTC，投资者也因此更倾向于寻找传统资产之外的替代品。
+在 Coin Stories 播客
+中，Saylor把这种[转变形容为](https://www.youtube.com/watch?v=CbODA93ByS0)一种自然的成长阶段：早期的高波动性，是为了给机构级别的资金腾出空间。
 
-与此同时，加密文化再添奇招：迷因币玩家在美国国会大厦附近立起一座 12
-英尺的黄金川普手抱比特币雕像。虽然只是噱头，但也凸显了加密市场如何把政治、迷因与金融融为一体。
+这一预测出现在[比特币](https://cryptonews.com/coins/bitcoin/)于 8月创下124,100美元历史新高后，目前在
+115,500美元附近横盘震荡 的背景下。
 
-  * BTC 市值：2.33 万亿美元
-  * 当前价格：$117,321
-  * 24h 成交量：494 亿美元
+Saylor认为，当前的抛压更多来自 加密OG分散持仓，而不是对比特币失去信心。他将此类操作比作
+初创公司员工套现期权来支付生活成本，即便他们依然坚信公司长期前景。
 
-## SEC放行Grayscale首支多资产加密ETP
+![Michael Saylor Says Bitcoin May Go 'Boring' as Institutional Money Kills
+Volatility](https://cryptonews.com/wp-
+content/uploads/2025/09/image-201-180-1024x575.png)Saylor做客 _Coin Stories_
+播客｜来源： [YouTube](https://www.youtube.com/watch?v=CbODA93ByS0)
 
-美SEC[正式批准](https://x.com/vizidotcom/status/1968616652972441995) Grayscale
-的数字大盘基金（GLDC），這是美国首个多资产加密交易型产品（ETP）。該產品讓投資者一鍵打包接觸 BTC、ETH、XRP、SOL、ADA
-等主流資產，而無需自行託管錢包或開交易所賬號。
+## 从疯狂扫货到策略收敛
 
-这一操作延续了 现货比特币 ETF 的成功，同时也反映出监管层最新的上架标准——旨在简化加密基金在 纳斯达克 和 NYSE Arca 的审批流程。
+据 [Cryptonews](https://cryptonews.com/exclusives/why-corporate-bitcoin-
+treasuries-demand-is-slowing-in-2025/)报道，企业持有的比特币金库规模已创下新高，[达到
+101.1万枚BTC](https://cryptonews.com/news/bitcoin-treasuries-top-1-million-btc-
+as-firms-boost-holdings/)，市值超 1180亿美元，约占流通总量的 5%。
 
-Grayscale CEO Peter Mintzberg 表示，这次上线是加密迈向主流采用的重要里程碑。
+不过，囤币模式已与2024年的 疯狂扫货潮 大不相同。
 
-该批准进一步巩固了 比特币作为机构级加密策略「压舱石」的地位，同时也显示投资者的兴趣正在逐步扩散至各大山寨币。
+MicroStrategy 的月度买入量从2024年11月的 13.4万枚BTC，骤降至2025年8月的仅 3700枚BTC，同时公司市值相对净资产溢价也从
+3.89倍 回落至 1.44倍。
 
-**老挝押注比特币挖矿寻求****“****解债****”****出路******
+尽管Saylor的MicroStrategy放缓了加仓，但其他企业开始接力，导致其在企业BTC持仓中的份额从 76%降至64%，但整体增速依旧保持。
 
-有“东南亚电池”之称的老挝，[正考虑通过](https://x.com/BitcoinMagazine/status/1968651992764383654)
-比特币挖矿 来缓解其每年 13 亿美元水电债务。利用富余电力跑矿机，老挝有望把闲置能源转化为 全球流动性资产（BTC）。
+2025年，上市公司已向金库新增 41.5万枚BTC，已超越2024年全年新增的 32.5万枚BTC。
 
-老挝早在 2021 年就试水过比特币挖矿，但由于干旱和电网压力，2023 年叫停了新项目。如今随着债务压力加大，官方正重新评估 透过加密挖矿变现闲置能源
-的可行性。
+![Michael Saylor Says Bitcoin May Go 'Boring' as Institutional Money Kills
+Volatility](https://cryptonews.com/wp-
+content/uploads/2025/09/image-201-179-1024x345.png)来源： [Bitcoin
+Treasuries](https://bitcointreasuries.net/)
 
-这一策略与 不丹、埃塞俄比亚类似，均是把可再生能源导向加密挖矿，也进一步强化了 比特币作为「数字能源货币」 的叙事。
+仅在 7月和8月，就有 28家新的比特币金库公司 上线，合计新增 14万枚BTC 到企业持仓中。
 
-## 比特币价格前瞻 – 技术面分析
+不过，在宏观不确定性和股东更严格的风控要求下，这些公司现在单笔买入规模更小，更趋谨慎。
 
-在 4小时K线图 上，BTC 正在 上升楔形 内震荡，现报约 $117,366。
+同时，[最新报告显示](https://cryptonews.com/news/one-in-four-public-bitcoin-treasuries-
+now-trade-below-nav-k33/)，已有 四分之一的上市比特币金库公司 目前股价低于其净资产价值（NAV），平均NAV倍数已从4月的
+3.76倍 下滑至 2.8倍。
 
-  * 50日均线（SMA） 在 $116,000，200日均线 在 $113,243，形成强力支撑。
-  * $115,800 附近多次K线下影反弹，显示多头持续守住关键区间。
-  * RSI 指标 59，动能有所降温，但未进入超买区。
+一些公司如 NAKA，市值从高点暴跌 96% 后，目前仅以 0.7倍NAV 交易；而 Twenty One、Semler Scientific、The
+Smarter Web Company 等也同样出现股价低于其所持比特币价值的情况。
 
-整体来看，BTC 短线偏多头，若能突破楔形上沿，或有望开启新一轮上攻。
+## 百万美元级的比特币信用革命
 
-![](https://cryptonews.com/wp-
-content/uploads/2025/09/image-201-158-4-1024x527.jpg)
+在播客中，Michael Saylor 阐述了他对 以比特币为抵押的金融工具 改造信贷市场的愿景，直指传统固定收益市场的根本性弱点。
 
-如果 BTC 收盘站稳 $117,978 上方，有望上探 $119,287 与 $120,298，未来数周甚至可能冲击 $125K–$130K 区间。
+他形容当下的信贷环境是“收益饥荒”：瑞士银行利率为 负50个基点，而欧洲企业债收益率仅 2.5%，甚至还跑不赢货币通胀。
 
-相反，若跌破 $116,000 支撑，可能引发回调至 $114,400，甚至 $113,200。
+[MicroStrategy 已经推出了 四种不同的比特币抵押优先股产品](https://cryptonews.com/news/billionaire-
+michael-saylor-says-this-bitcoin-backed-investment-could-replace-your-
+retirement-plan/)，以覆盖不同的市场细分领域。
 
-当前盘面仍偏 谨慎看多，而从长期来看，若流动性与宏观顺风助推，BTC 有机会迈向 $500,000 超级牛市周期。
+Strike 提供 8%分红，并附带可转换为普通股的权利；而 Strife 则提供 10%的永久收益，并拥有 优先清算权。
 
-## 预售项目 Bitcoin Hyper ($HYPER)：比特币安全性 + Solana 极速性能的组合拳
+Stride 取消了惩罚性条款，带来 12.7%的有效收益，目标客户是 风险偏好更高、坚定看多比特币的投资者。
 
-[Bitcoin Hyper
-($HY](https://cryptonews.com/ext/btchyper/?transfer=1)[PER)](https://bitcoinhyper.com/zh-
-hans) 正在定位為 首个基于 Solana Virtual Machine (SVM) 的比特币原生二层。其目标是扩展 BTC 生态，实现
-闪电般低成本的智能合约、去中心化应用（dApps）、甚至迷因币发行。
+最新推出的 Stretch 属于创新产品，Saylor称其为“金库优先股（treasury preferred）”，设有
+按月浮动分红，旨在最小化久期风险和波动性。
 
-透过结合 比特币无可匹敌的安全性 与 Solana 的高性能框架，$HYPER 为全新应用场景打开大门，包括 无缝 BTC 跨链桥接 与 可扩展的 dApp
-开发。
+借助AI，MicroStrategy打造了这一 首创结构，意在与货币市场工具竞争，同时保持 比特币抵押支持 与 10%目标收益率。
+
+这些工具使公司能够通过 股权融资支付分红，而非抛售比特币。MicroStrategy每年在股权市场融资约 200亿美元，其中约 6亿美元
+用于分红，其余资金继续加码购入比特币。
+
+这种结构既能实现 杠杆扩张，又能在 零信用风险 的前提下，保持 持续囤币。
+
+## 当数字淘金热遇上华尔街现实
+
+Saylor 强调，比特币的机构化进程需要耐心，市场参与者必须逐步适应这种 颠覆性的金融科技。
+
+他将当前环境类比为 1870年的石油产业早期 —— 当时投资者还无法理解原油衍生品的应用潜力，直到煤油、汽油和石化产品出现，才彻底改变了多个行业。
+
+这位高管预测，2025—2035年 将是比特币的 “数字淘金热”黄金十年，期间会涌现大量的商业模式试验、产品创新和财富创造机会。
+
+MicroStrategy 目标是成为首家 投资级比特币金库公司，并通过系统性的评级机构教育，为所有金融工具争取信用评级。
+
+随着市场不断演进，传统金融指标已不足以评估比特币金库公司，这一点也得到了[ Sentora最新研究
+](https://cryptonews.com/news/215b-corporate-bitcoin-boom-creates-dangerous-
+game-most-wont-survive-credit-cycle-research/)的印证。
+
+Saylor 指出，许多机构投资者依然需要 比特币基础教育，同时也质疑尽管近期政策有所澄清，但比特币是否仍可能面临 监管封杀 的风险。
+
+企业集中化风险 也在浮现：上市公司正掌控着相当规模的比特币供应。分析师警告，大型金库若改变策略，可能导致 流动性下降 并加剧 波动性。
+
+不过，散户参与度依旧强劲 —— [约有
+75%的比特币ETF份额掌握在非机构投资者手中](https://cryptonews.com/exclusives/why-corporate-
+bitcoin-treasuries-demand-is-slowing-in-2025/)，散户资金流入在机构需求放缓时提供了关键支撑。
+
+比特币正逐步走向 机构主导，这可能让它相比过去的高波动时代显得更“无聊”。但在 Saylor 看来，这一演进是必要的，因为它将助力比特币实现愿景：成为
+全球金融的数字资本与结算层。
+
+
+
+-----
+
+标题: 日本上市公司Remixpoint两周内增持77枚<b>比特币</b> - Crypto News
+真实链接: https://cryptonews.com/cn/news/japan-listed-remixpoint-adds-77-bitcoins-two-weeks/
+正文: #  日本上市公司Remixpoint两周内增持77枚比特币
+
+作者
+
+Allen Li
+
+关于作者
+
+Allen从事媒体工作已有7年之久，曾在香港多家大报刊包括新传媒、香港01曾担任记者。 ...
+
+分享
+
+![](https://cryptonews.com/wp-content/themes/cryptonews/images/socials/purple-
+share.svg)
+
+![](https://cryptonews.com/wp-content/themes/cryptonews/images/logo.svg) 为什么信任
+Cryptonews
+
+Cryptonews
+已经覆盖加密货币行业超过十年，旨在为读者提供具有洞察力的信息。我们的记者和分析师在市场分析和区块链技术方面拥有丰富的经验。我们努力保持高标准的
+
+[**编辑准则**](https://cryptonews.com/cn/about-us/editorial-guidelines/)
+
+，注重事实准确性和公正报道，涵盖从加密货币和区块链项目到行业事件、产品和技术发展的各个领域。我们在行业中的持续存在，体现了我们在数字资产不断发展的世界中提供相关信息的承诺。
+
+[**了解更多关于 Cryptonews 的信息**](https://cryptonews.com/cn/about-us/)
+
+。
+
+广告声明我们致力于为读者提供完全透明的信息。我们的一些内容包含附属链接，通过这些合作伙伴关系，我们可能会获得佣金。
+
+东证标准市场上市公司 Remixpoint 于 18 日宣布，以 13.2 亿日元追加收购了约 77 枚比特币（BTC）。
+
+**此次收购分四次进行，时间区间为 8 月 28 日至 9 月 17 日：**
+
+  * 8 月 28 日：约 4.86 BTC（8,000 万日元）
+  * 9 月 12 日：约 7.62 BTC（1.3 亿日元）
+  * 9 月 16 日：约 6.46 BTC（1.1 亿日元）
+  * 9 月 17 日：约 58.21 BTC（10 亿日元）
+
+完成本次收购后，公司比特币总持有量达到 1350.26882154 BTC，平均取得单价约每枚 1503 万4043 日元。自 2024 年 11
+月首次购入约 47 亿日元的比特币以来，公司持续进行战略性增持。
+
+## 达成 1000 BTC 目标后仍持续增持
+
+Remixpoint 于 6 月 5 日设定目标，要累计持有超过 1000 枚比特币。公司利用新股认购权筹资，仅 8 天后便在 6 月中旬通过连续 4
+日的买入达成目标。
+
+本次追加收购显示公司在达标后仍坚定增持比特币的意图，并希望通过能源业务与加密业务的协同效应拓展未来发展。
+
+## 背后动因：日元贬值与业绩支撑
+
+公司扩充比特币持仓的主要目的是 对冲日元贬值风险并分散金融资产。在战略层面，比特币被定位为价值储存工具及抗通胀手段。
+
+这一策略有赖于强劲的业绩支撑，根据 8 月 14 日公布的 2026 年 3 月期第一季度财报，公司营收同比增长 50.8% 至 64.94
+亿日元，营业利润同比大增 3137.4% 至 17.41 亿日元。充裕的财务实力使得公司能够持续购入加密资产。
+
+公司加密货币投资组合并不局限于比特币，截至 6 月 15 日，还包括以太坊、索拉纳（solana）、瑞波币（xrp）和狗狗币（dogecoin）等。
+
+累计购入金额约 203 亿日元，而仅比特币持仓市值便已达约 2323.2 亿日元，突显其战略的合理性。
+
+Remixpoint 高度透明的信息披露，已成为日本上市公司持有加密资产的先例，对比特币的未来也具有风向标意义。
+
+
+
+-----
+
+标题: 数据：过去7 天超4 万枚<b>BTC</b> 流出CEX 平台 - 比推
+真实链接: https://www.bitpush.news/articles/7572391
+正文: 比推消息，据 Coinglass 最新数据显示，过去一周约有 40,213.72 枚比特币流出 CEX 平台，Coinbase Pro 过去 7 天流出
+29,604.51 枚比特币；3,675.84 枚比特币流出 Binance 交易所；1,485.41 枚比特币流出 Bybit 交易所。
+
+##### 说明: 比推所有文章只代表作者观点，不构成投资建议
+
+
+
+-----
+
+标题: 美债收益率区间震荡，<b>BTC</b>、美股与黄金齐涨：2025罕见跨资产格局与交易要点
+真实链接: https://blockchain.news/zh/flashnews/u-s-bond-yields-range-bound-while-btc-stocks-and-gold-trend-higher-in-2025-rare-cross-asset-regime-and-trading-playbook-zh
+正文: 在金融市场的不断演变中，市场分析师Mihir（社交媒体账号@RhythmicAnalyst）最近的观察突显了一个引人注目的分歧，这吸引了全球交易者的关注。根据他于2025年9月20日发布的分析，美国债券收益率表现出强劲但仍处于区间震荡模式，而比特币（BTC）、股票和黄金不仅强劲，而且呈上升趋势。这种情况引发了对传统市场相关性的质疑，促使交易者思考这是否是一种奇怪且不寻常的情况。的确如此，因为传统智慧通常将债券收益率上升与风险资产压力联系起来，但这里我们看到了脱钩现象，这要求对每个资产类别进行单独分析，以有效导航交易。
+
+## 理解债券收益率与风险资产的分歧
+
+深入探讨这一市场动态，美国债券收益率，特别是10年期国债收益率，尽管内在强劲，但一直徘徊在狭窄区间，受美联储政策和通胀预期等因素影响。根据最近交易时段的数据，这些收益率稳定在4.2%左右，波动性最小，支持位在4.0%，阻力位接近4.5%。与此同时，比特币（BTC）一直处于看涨轨道，在过去24小时内飙升至65,000美元以上，涨幅3.5%，主要交易所的交易量超过300亿美元。BTC的上升趋势与股票市场的积极情绪相关，标准普尔500指数上涨1.2%至约5,700的新高，受科技板块推动。黄金作为避险资产，也呈上升趋势，突破每盎司2,600美元，涨幅2%，反映了投资者对不确定性的对冲。这种不寻常的设置违背了传统智慧，在这种情况下，强劲的债券收益率通常会压制股票和加密货币，这表明需要转向单独分析每个市场，以制定最佳交易策略。
+
+### 比特币在市场脱钩中的交易机会
+
+对于加密货币交易者来说，这种分歧提供了引人注目的机会，尤其是在BTC交易对中。尽管债券收益率区间震荡，但BTC呈上升趋势，其关键支持位保持在62,000美元，该水平在过去一周多次测试，链上指标显示大型持有者（鲸鱼）的积累增加。根据区块链分析报告，BTC/USDT交易对的交易量在过去48小时内飙升15%，表明买家兴趣强劲。阻力位在68,000美元，突破可能预示进一步上涨至70,000美元，可能受机构资金流入推动。相比之下，纳斯达克综合指数等股票表现出韧性，上涨1.8%，这为加密投资者提供了跨市场相关性。例如，将BTC与黄金期货配对可以对冲波动性，因为黄金的上升趋势提供了平衡。交易者应监控即将发布的经济数据，如通胀报告，这些数据可能影响债券收益率并间接影响BTC的势头。通过关注单个资产行为而非过时的相关性，精明的交易者可以定位在这些运动的正确一边，利用风险资产当前的强势。
+
+扩展到更广泛的影响，黄金和股票与BTC的强势并存，突显了一个市场环境，其中传统避险资产和风险资产同时繁荣。这可能归因于全球经济的韧性，减少了衰退担忧，提升了投资者信心。例如，黄金的日交易量达到500亿美元，与BTC的飙升相关，表明在地缘政治紧张局势中的质量飞行。在股票市场，科技和金融部门引领上涨，公司报告强劲收益，通过企业采用数字资产溢出到加密情绪。然而，债券收益率的区间震荡性质警告潜在整合；突破支持位可能引入BTC的下行风险，可能测试60,000美元水平。为了领先，交易者建议使用技术指标，如相对强弱指数（RSI），BTC当前为65，表示超买但可持续条件，以及确认上升趋势的移动平均线。最终，这种不寻常的市场设置鼓励细粒度方法，分析每个资产的独特驱动因素，在传统智慧不再适用的时代发现交易优势。
+
+## 跨资产交易的战略洞见
+
+总结这一分析，很明显当前的市场分歧为战略交易提供了肥沃的土壤，特别是从加密货币角度来看。随着BTC引领上升趋势，整合实时数据如24小时价格变化和成交量指标变得至关重要。例如，BTC最近一周涨幅5%，与债券收益率的低波动形成鲜明对比，突出了多元化投资组合的机会。黄金的并行强势，本月至今现货价格上涨4%，表明BTC-
+黄金套利策略的潜力，尤其是在期货市场。股票同时提供整体风险偏好的晴雨表，与加密的相关性体现在ETF资金流动中，比特币相关基金本季度流入10亿美元。交易者应警惕转变，如债券收益率突然飙升可能压制股票和BTC。通过优先考虑单个资产分析而非
+blanket 假设，投资者可以导航这个奇怪但盈利的景观，关注具体数据点如价格高点的时戳——对于BTC，最新峰值在2025年9月20日UTC
+10:00——以及市场指标来告知决策。这种方法不仅缓解风险，而且在脱钩的市场环境中最大化回报。
+
+
+
+-----
+
+标题: <b>比特币</b>可能在下一个熊市中崩溃70%!!! 是的 - Binance
+真实链接: https://www.binance.com/zh-CN/square/post/29951060078649
+正文: # 🚨 比特币可能在下一个熊市中崩溃70%!!!
+
+是的，70%的回调是可能的。不，这不是世界末日。加密分析师本杰明·科温刚刚发出警告：比特币可能在下一个熊市中下跌70%，就像过去的周期一样 -
+2011年94%，2014年87%，2018年77%。历史表明，这并不是不可能的。
+
+如果比特币达到$250K（就像BitMEX的阿瑟·海斯预测的那样），那么70%的回调将使我们下降到$75K。仍然高于今天的价格。视角很重要。科温并没有说现在会崩溃。他说：当下一个狂热阶段开始时
+- 可能是2026年初的第四季度 - 要聪明。获利了结。历史不关心激光眼或希望。
+
+记住：顶部从来没有感觉像顶部。每个人都很狂热。每个人都认为“这次不同。”然后是回落。话虽如此，注意第四季度，做好准备，如果事情变得糟糕，你将能够在明年以便宜的价格买到$BTC！
+
+关注[@Professor Mende - Bonuz Ecosystem Founder
+](/square/profile/mende)以获取更多建议和新闻！ [#Bitcoin ](/zh-CN/square/hashtag/Bitcoin)
+[#BTC ](/zh-CN/square/hashtag/BTC) [#BitcoinPrice ](/zh-
+CN/square/hashtag/BitcoinPrice) [#BitcoinNews ](/zh-
+CN/square/hashtag/BitcoinNews) [#BitcoinUpdate ](/zh-
+CN/square/hashtag/BitcoinUpdate)
+
+
+
+-----
+
+标题: 加密<b>货币</b>市场回顾：机构需求激发对比特币和以太坊的乐观情绪 - Traders Union
+真实链接: https://tradersunion.com/zh/news/cryptocurrency-news/show/545956-crypto-market-recap-institutional-demand/
+正文: 随着比特币和以太坊逼近关键水平，加密货币市场正受到技术信号、机构需求和鲸鱼增持等复杂因素的影响。尽管波动剧烈，但这两种资产仍表现出韧性，这得益于大量资金流入交易所交易基金
+(ETF) 以及大型投资者的重新兴趣。
+
+该材料由英文翻译而来。我们通讯员的原文文章在[这里](/news/cryptocurrency-news/show/545896-crypto-
+market-recap-institutional-demand/) 。
+
+## **比特币动态**
+
+受[美联储2025年首次降息的](https://tradersunion.com/news/cryptocurrency-
+news/show/532264-fed-cuts-
+rates/)影响，[比特币](https://tradersunion.com/currencies/forecast/btc-usd/daily-
+and-
+weekly/)上周开盘上涨至近118,000美元。然而，涨势迅速减弱，价格回落至115,700美元左右。分析师指出，比特币前景中性至看涨，坚实支撑位在112,000美元，阻力位在118,000美元至119,000美元之间。短期图表显示比特币正处于盘整阶段，略呈看跌倾向，但如果在强劲成交量下果断突破117,000美元，则可能再次引发上涨势头。中性震荡指标加剧了市场不确定性，而大多数移动平均线仍处于看涨区域。
+
+![](//tradersunion.com/uploads/images/tu-news/images/68cf8435c1a1b.png)
+
+_BTC价格走势。资料来源：TradingView_
+
+机构活动也助长了乐观情绪。比特币ETF录得28亿美元流入，凸显了主要金融机构信心的增强。数据显示，机构投资者通过ETF、上市公司和政府储备，共持有约374万枚比特币，接近总供应量的五分之一。这种结构性需求增强了比特币作为可投资资产的合法性，分析师估计，如果突破阻力位，比特币创下历史新高的可能性高达70%。
+
+投资者情绪也依然强劲：链上指标显示，单日就有超过 23,000 个 BTC
+从交易所流出，表明市场存在长期积累。这与历史规律相符，在价格持续上涨之前，交易所通常会先出现提现现象。
+
+## **以太坊展望**
+
+[以太坊](https://tradersunion.com/currencies/forecast/ethusd/daily-and-
+weekly/)也反映了同样的机构支持趋势。ETH 交易价格接近 4,500 美元，面临 4,200 美元至 4,300 美元之间的关键支撑位，阻力位在
+4,600 美元。分析师警告称，如果支撑位失守，ETH 可能回落至 3,600 美元至 3,800 美元，但“鲸鱼”似乎并不担心。持有 1,000 至
+10,000 ETH 的钱包在四个月内增持了超过 818,000 ETH，这是自 2018 年以来最积极的买入活动。交易所的 ETH
+储备已降至多年低点，可能造成供应紧张。
+
+ETF 需求进一步提振了以太坊的前景。据[SoSoValue](https://sosovalue.com/assets/etf/us-eth-
+spot)称，上周现货以太坊 ETF 流入 5.56 亿美元，累计流入超过 139 亿美元。贝莱德旗下的 ETHA 目前管理着 170 亿美元的资产，而
+Grayscale 和 Fidelity 也报告了显著的增长。技术模型显示，看涨三角旗形态正在形成，暗示可能突破 4,945 美元的历史高点和 5,000
+美元的关键心理关口。
+
+## **市场正处于十字路口**
+
+所有这些发展都凸显出市场正处于十字路口。比特币和以太坊仍然受到机构投资者和鲸鱼活动的支持，但这两种资产都必须突破关键阻力位，才能确认牛市周期的下一阶段。
+
+另请阅读： [迈克尔·塞勒预测比特币将超过标准普尔 500
+指数](https://tradersunion.com/news/cryptocurrency-news/show/545368-michael-
+saylor-predicts-bitcoin-to-outpace-sp-500/)
+
+本资料可能包含第三方意见，不构成财务建议，并可能包含赞助内容。
+
+
+
+-----
+
+标题: 萨尔瓦多近7 日共增持8 枚<b>BTC</b>，总持仓达6326.18 枚 - MarsBit
+真实链接: https://m.marsbit.co/flash/20250921121004235798.html
+正文: 火星财经消息，萨尔瓦多过去 7 日共增持 8 枚比特币，目前其比特币持仓达 6,326.18 枚，总价值达 7.32 亿美元。
+
+
+
+-----
+
+标题: 以太坊价格预测：这一关键链上水平或推动价格达5000美元 - Crypto News
+真实链接: https://cryptonews.com/cn/news/ethereum-price-prediction-this-critical-onchain-level-could-unlock-a-push-to-5000/
+正文: #  以太坊价格预测：这一关键链上水平或推动价格达5000美元
+
+作者
+
+Sze Lam
+
+关于作者
+
+Sze 于香港大学经济学学士毕业，具备丰富的金融和财经编辑经验。她在各种主题上拥有20年的写作和编辑经验。 ...
+
+分享
+
+![](https://cryptonews.com/wp-content/themes/cryptonews/images/socials/purple-
+share.svg)
+
+![](https://cryptonews.com/wp-content/themes/cryptonews/images/logo.svg) 为什么信任
+Cryptonews
+
+Cryptonews
+已经覆盖加密货币行业超过十年，旨在为读者提供具有洞察力的信息。我们的记者和分析师在市场分析和区块链技术方面拥有丰富的经验。我们努力保持高标准的
+
+[**编辑准则**](https://cryptonews.com/cn/about-us/editorial-guidelines/)
+
+，注重事实准确性和公正报道，涵盖从加密货币和区块链项目到行业事件、产品和技术发展的各个领域。我们在行业中的持续存在，体现了我们在数字资产不断发展的世界中提供相关信息的承诺。
+
+[**了解更多关于 Cryptonews 的信息**](https://cryptonews.com/cn/about-us/)
+
+。
+
+广告声明我们致力于为读者提供完全透明的信息。我们的一些内容包含附属链接，通过这些合作伙伴关系，我们可能会获得佣金。
+
+![](https://cimg.co/wp-
+content/uploads/sites/11/2025/09/20142907/1754047434-ethereum-price-
+prediction-1024x655.jpg)
+
+以太坊价格接近4,471美元，过去一天小幅下跌1.14%，总市值达到5,397亿美元。尽管短期波动较大，但链上信号、ETF流入和企业资金动向表明以太坊可能正准备突破，价格有望达到5,000美元的里程碑。
+
+## 网络信号与链上强度
+
+以太坊近期价格走势复杂。一方面，验证者退出激增，超过245万ETH（价值110亿美元）等待解质押。这导致提款队列延长至约42天，引发对短期供应压力的担忧。
+
+![](https://cryptonews.com/wp-content/uploads/2025/09/image-201-184.png)
+
+然而，解质押并不总是直接转化为卖出。对于许多机构来说，这是重新平衡策略的一部分。与此同时，网络基本面正在改善。交易费用较上周上涨了35%，活跃地址增加了10%，反映出以太坊生态系统的使用量在增长。
+
+更高的网络活动提高了验证者的收益并增强了安全性，同时费用销毁减少了总体供应。企业资金也在扩大对以太坊的敞口。
 
 ![](https://cimg.co/p/no_image.svg)
 
-项目团队强调 信任与可扩展性，并通过 Consult 审计，为投资者提供坚实的信心保障。
+在过去一个月，仅企业就增加了877,800 ETH（按当前价格约40亿美元）到储备中。这种稳定的流入来自Bitming Immersion
+Tech、SharpLink Gaming和The Ether Machine等公司，凸显了以太坊作为储备资产的日益增长的地位。
 
-市场热度正在迅速升温 —— 预售金额已突破 1680 万美元，剩余配额有限。当前阶段，HYPER 代币售价仅
-$0.012945，但随着预售进程推进，价格将持续上调。
+## ETF和企业资金支持推动以太坊达5000美元的前景
 
-投资者可通过 [官方 Bitcoin Hyper 官网](https://cryptonews.com/cn/ext/btchyper-
-cn/?transfer=1)，使用加密货币或银行卡参与抢购。
+以太坊在过去两个月表现优于加密市场整体，涨幅超过21%，在去中心化应用中保持主导地位。根据DeFiLlama的数据，以太坊（包括其二层网络）控制了64.5%的总锁仓价值，远超Solana的9%。
 
-[如何购买Bitcoin Hyper](https://cryptonews.com/cn/cryptocurrency/how-to-buy-
-bitcoin-hyper/)
+现货以太坊ETF也为机构提供了强大的顺风助力。这些基金的管理资产规模现已达到247亿美元，仅上周四就录得2.13亿美元的净流入。这些产品为机构提供了一个受监管的渠道来获得以太坊敞口，进一步巩固了以太坊在传统金融中的角色。
+
+交易所余额持续减少，过去两个月有269万ETH被提取，导致可用供应量达到五年低点。流动ETH的减少不仅缓解了卖压，还表明持续的积累行为。综合来看，供应减少、机构流入和企业储备正在为以太坊的下一轮上涨奠定基础。
+
+## 以太坊（ETH/USD）技术路线图：迈向5000美元
+
+[从技术角度看](https://x.com/forex_arslan/status/1969364608054886452)，[以太坊价格预测](https://cryptonews.com/price-
+predictions/ethereum-price-
+prediction/)呈中性，ETH目前在一个对称三角形内盘整，阻力位在4,566美元附近，支撑位在4,440美元。动能指标表现不一：相对强弱指数（RSI）接近41，指向超卖状态，而K线形态暗示看跌压力。
+
+![](https://cimg.co/p/no_image.svg)**以太坊价格图表 – 来源：TradingView**
+
+在4,566美元上方出现看涨吞没K线形态可能迅速扭转市场情绪，为价格进一步上涨至4,670美元、4,775美元乃至最终达到5,000美元打开道路。
+
+交易者的关键区间在4,440美元至4,566美元之间。持续守住这一区间有利于价格继续上行，预测显示未来几周可能突破至5,000美元至5,200美元。然而，如果价格跌破4,350美元，可能会将以太坊拉回至4,238美元甚至4,108美元，直到新的需求出现。
+
+尽管短期需谨慎，但大局仍具建设性。以太坊结合日益增长的机构资金流入、供应量减少以及网络活动的韧性，表明一旦当前压力缓解，通往5,000美元的道路将越来越可实现。
+
+## 新预售项目：Bitcoin Hyper ($HYPER)结合BTC的安全性与Solana的速度
+
+[Bitcoin Hyper ($HYPER)](https://cryptonews.com/cn/ext/btchyper-
+cn/?transfer=1)定位为首个原生比特币Layer
+2，由Solana虚拟机（SVM）驱动。其目标是通过启用闪电般的低成本智能合约、去中心化应用乃至meme币创建，来扩展BTC生态系统。
+
+通过将BTC无与伦比的安全性与Solana的高性能框架相结合，该项目为全新用例打开了大门，包括无缝BTC桥接和可扩展的dApp开发。
+
+![](https://cimg.co/p/no_image.svg)
+
+团队高度重视信任与可扩展性，该项目由Consult审计，以赋予投资者对其基础的信心。
+
+势头正在迅速积累。预售已突破1720万美元，仅剩有限配额可用。在今天的阶段，HYPER代币价格仅为0.012945美元——但随着预售推进，这一数字将增加。
+
+你可以使用加密货币或银行卡在[Bitcoin Hyper官方网站](https://cryptonews.com/cn/ext/btchyper-
+cn/?transfer=1)购买HYPER代币。
+
+[点击这里进入预售页面](https://cryptonews.com/cn/ext/btchyper-cn/?transfer=1)
 
 
 
 -----
 
-标题: Treasury 公司增持111 枚<b>BTC</b>，总持仓量达1111 枚
-真实链接: https://www.binance.com/cn/square/post/29896219858201
-正文: 据 ChainCatcher 报道，[比特](/trade/BTC_USDT?contentId=29896219858201)币财库公司 Treasury
-宣布增持 111 枚 BTC，总持仓量达到 1111 枚比特币。该公司由 Winklevoss Capital 和 Nakamoto
-支持，目前在全球比特币财库公司持仓量排名中位列第 43 位。
+标题: 某新建地址近两日从OKX提取1000枚<b>比特币</b>，价值1.1557亿美元 - BlockBeats
+真实链接: https://www.theblockbeats.info/flash/313148
+正文: BlockBeats 消息，9 月 21 日，据 Onchain Lens 监测，一个新创建的钱包在过去两天内从 OKX 中提取了 1,000 枚
+BTC，价值 1.1557 亿美元。
+
+从链上行为来看，这是一个典型的高净值投资者或机构正在执行的大额资产积累策略。新创建地址在短时间内从交易所提取大量比特币，通常意味着这些资金正从热钱包转向冷存储，以减少交易所的托管风险并作长期持有准备。这种操作常见于机构投资者、基金或高净值个人在配置资产时的做法，尤其是在市场波动或宏观不确定性增加时，投资者更倾向于将资产转移到自我托管的钱包中。  
+  
+结合相关历史数据，可以观察到几个关键模式：首先，这类提取行为频繁发生在OKX和Binance等主流交易所，表明这些平台是大型投资者常用的流动性入口；其次，操作往往集中在新地址上，这可能是为了增强隐私性和资金隔离，避免地址关联被追踪；此外，类似操作不仅限于比特币，也涉及以太坊和SOL等主流资产，甚至包括TRUMP这类Meme币，说明策略可能覆盖多资产配置。  
+  
+从时间跨度看，这类大额提取自2024年底至2025年第三季度持续发生，且单笔规模常达数千万至超亿美元，反映出累积趋势的持续性。值得注意的是，部分提取与特定事件相关（如TRUMP晚宴VIP资格），但更多是纯粹的资产转移，可能预示着对底层资产价值的长期看好或对交易所风险的规避。  
+  
+若从市场影响角度分析，大额提现通常减少交易所的可用供应量，可能加剧市场供需紧张，尤其在比特币减半后供应增长放缓的背景下，这类行为可能为价格提供潜在支撑。然而，也需警惕这些地址是否属于同一实体，若集中控制大量比特币，可能增加市场操纵风险。总之，这是市场成熟度提升的体现，表明机构级参与者正采用更专业的资金管理策略。
 
 
 
 -----
 
-标题: 加密货币总市值逾4.07万亿美元，<b>比特币</b>占有率为57.1% - Binance
-真实链接: https://www.binance.com/zh-CN/square/post/09-19-2025-4-07-57-1-29893043351946
-正文: 据CoinMarketCap显示，今日加密货币总市值40660.03亿美元，24小时交易量1465.83亿美元，其中[BTC](/trade/BTC_USDT?contentId=29893043351946)占有率达57.1%。
+标题: HTX DeepThink：美联储9月来降息带动山寨币轮动，但政策路径仍存分歧 - BlockBeats
+真实链接: https://www.theblockbeats.info/flash/313149
+正文: BlockBeats 消息，9 月 21 日，HTX DeepThink 专栏作者、HTX Research 研究员 Chloe (@ChloeTalk1)
+指出，美联储 9 月 17 日下调联邦基金利率 25 个基点至 4%-4.25%，为九个月来首次降息。主席鲍威尔强调政策需在通胀与就业间取舍，并暗示 10
+月、12 月或继续降息，但理事间仍存在分歧。
+
+  
+
+消息推动风险资产走强：BTC 维持在 11.7 万美元附近，期权市场看涨情绪浓厚；ETH 稳定于 4,500 美元上方，长期持有者继续提币储存。资金开始从
+BTC 轮动至山寨币，Solana 涨至 244 美元，去中心化交易所日成交额达 25 亿美元，BNB 突破 1,000 美元关口，BSC
+链上总锁仓量周内增近 10%。
+
+  
+
+市场预期宽松周期延续，但若通胀反弹或就业恶化，短期反弹或面临「卖消息」风险。
 
 
 
 -----
 
-标题: 【比特日报】巨鲸资金流入完全缺席！<b>比特币</b>11.7万高位盘整，这一水平决定下一轮大行情 - 网易
-真实链接: https://www.163.com/dy/article/K9QSRSFR05566YXG.html
-正文: FX168财经报社(亚太)讯 周五(9月19日)亚洲交易时段，比特币继续在11.7万美元上方高位盘整，在美联储宣布降息后，比特币依然处于微妙平衡之中，其中
-115,200 美元这一关口被视为决定下一步走势的关键。
+标题: 某新建地址近两日从OKX 提取1000 枚<b>比特币</b>，价值1.1557 亿美元 - 深潮TechFlow
+真实链接: https://www.techflowpost.com/newsletter/detail_99293.html
+正文: ___7x24h_ _快讯_
 
-比特币目前维持在约117,500美元附近，两周内上涨约6.1%。不过，来自币安的最新数据显示，比特币当前的价格走势主要受到散户投资者支撑，而“大户”（鲸鱼）明显缺席。
+某新建地址近两日从 OKX 提取 1000 枚比特币，价值 ...
 
-Glassnode 在 9 月 18 日报告称，衍生品市场与链上数据表明，比特币市场正处于等待下一轮方向性突破的状态。
+深潮 TechFlow 消息，9 月 21 日，据链上分析师 Onchain Lens（@OnchainLens）监测，一个新创建的钱包在过去两天内从
+OKX 中提取了 1,000 枚 BTC，价值 1.1557 亿美元。
 
-目前价格高于比特币流通量中 95% 的成本基准价 115,200 美元。这一水平代表着需求端动能的关键支撑线。如果未能守住该点位，价格可能回落至
-105,500 至 115,200 美元区间，从而加剧卖压。
+_2025.09.21_ _13:14:28_
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0919%2Fdfd94981j00t2sxl000c9d0016o00nwg.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+______
 
-（来源：glassnode）
 
-目前的仓位状况揭示出脆弱的市场结构：多头最大痛点在 112,700 美元，空头最大痛点在 121,600
-美元。这一窄幅区间显示，比特币正处在一个两难境地：若下跌恐引发多头踩踏，若突破则可能触发空头回补行情。
 
-比特币期权未平仓量已创纪录地达到 500,000 BTC，其中 9 月 26 日将迎来比特币历史上最大规模的期权到期日。合约的执行价分布从 95,000
-美元的看跌期权到 140,000 美元的看涨期权不等，最大痛点位于 110,000 美元，或在到期前对价格形成“引力”。
+-----
 
-期权仓位显示，低于现货价的看跌期权持续被卖出，而高于现货价的看涨期权买入力度增强。
+标题: <b>比特币</b>价格已连续135天收于10万美元上方 - Mitrade
+真实链接: https://www.mitrade.com/cn/insights/news/live-news/article-3-1138341-20250920
+正文: 在美联储降息的大背景下，美元的任何反弹可能都是短暂的，分析师持续看好欧元、日元表现。
 
-这种结构迫使做市商在双向提供流动性，可能在下跌时起到缓冲作用，同时通过对冲操作在上涨时推升行情。
+美联储降息巩固了比特币的牛市基础，其价格有望在四季度再创历史新高。
 
-现货市场的累积成交量差数据显示，各大交易所仍有轻微的负向偏差，表明尽管降息释放了积极信号，市场情绪依然谨慎。然而，永续合约市场已从极端抛售转向均衡状态，反映出买盘流入的回归，抵消了8月持续的卖压。
+尽管美股可能出现技术性调整，但摩根大通表示任何回调都是买入机会。
 
-创纪录的期权仓位、永续合约趋稳，以及比特币站稳关键成本基准价位，三者结合显示市场正等待下一次重大方向确认。比特币能否守住 115,200
-美元，将决定其在美联储议息后的下一轮大行情。
+日本央行行长并未给出市场希望的转向信号，日元汇率重回148。
 
-**巨鲸缺席**
+美中领导人会谈在即，黄金释放短期调整信号；警惕实际负利率，黄金中期仍是「易涨难跌」
 
-根据CryptoQuant 撰稿人 Arab Chain 的一篇 Quicktake
-帖子，比特币正徘徊在117,500美元附近，主要受到散户投资者的积极流入支撑。值得注意的是，大额鲸鱼资金流入完全缺席，显示出当前市场更多是由个人投资者推动，而非大额钱包。
 
-数据显示，0 至 0.001 BTC 的流入约为 97,000 枚比特币。同样，0.001 至 0.01 BTC 区间的流入接近 719,000 枚比特币。
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0919%2Feb10546fj00t2sxl00092d000tu00gog.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+-----
 
-（来源：binance）
+标题: <b>比特币</b>核心PR #9049：移除重复输入检查的验证风险，<b>BTC</b>交易者需关注 - Blockchain News
+真实链接: https://blockchain.news/zh/flashnews/bitcoin-core-pr
+正文: 在加密货币交易的动态世界中，理解比特币核心开发的细微差别可以为交易者提供关键洞见，以抓住市场波动机会。Samson
+Mow最近的一条推文强调了区块链开发中的一个关键教训：即使是善意的努力也可能带来重大风险。Mow引用道：“最大的危险是一个才华横溢、资金充足、善意的开发者，试图做一些好事。”他指向比特币核心拉取请求#9049。该PR名为“从CheckTransaction中移除可复制的重复输入检查”，旨在通过在初始预中继区块验证阶段跳过资源密集型检查来优化区块验证。虽然旨在提高效率，但它突显了看似有益的变化如何引入漏洞，可能影响比特币的网络安全，并进而影响其市场表现。
 
-这种分布表明，比特币当前的上涨行情主要由散户推动。这些投资者进行大量小额交易，确认了个人投资者正在塑造市场动态。
+## 探索PR #9049对比特币交易的影响
 
-Arab Chain
-补充称，这些数据揭示，大部分资金流入集中在小额和中等规模交易中，反映出散户在比特币交易中的主导地位。虽然这些资金规模有限，但帮助市场在当前水平保持平衡。
+深入探讨PR
+#9049，这个2015年的提案旨在简化比特币的交易验证过程，这对维护区块链完整性至关重要。然而，正如历史所示，这种优化无意中创建了一个漏洞，可能允许重复交易输入，导致比特币供应潜在的通胀bug。根据比特币开发者的报告，这个问题在2018年通过CVE-2018-17144被发现并修补，防止了任何利用。对于交易者来说，此类事件至关重要，因为它们影响市场情绪和波动性。当漏洞新闻浮出水面时，比特币价格往往经历剧烈波动；例如，类似过去的披露导致临时下跌，随后随着信心恢复而反弹。监控链上指标的交易者可能在这些时期观察到交易量增加或鲸鱼活动变化，表明如果解决方案提升机构信任，则可能有长期仓位的进入点。
 
-需要强调的是，在当前市场反弹中几乎没有出现鲸鱼压力。尤其是没有观察到超过100 BTC的大额资金流入，这降低了短期内出现剧烈回调的可能性。
+从交易角度来看，像PR
+#9049这样的比特币开发历史提醒我们协议的稳健性却也脆弱。目前的市场指标，在没有实时数据的情况下，表明比特币徘徊在关键支撑位附近，通常受开发新闻影响。从历史上看，在2018年修补后，BTC经历了稳定阶段，交易量激增，随着投资者重新评估风险。今天，随着比特币市值超过1万亿美元，此类故事强化了加密投资组合中多元化和风险管理的重要性。交易者可以关注主要交易所的BTC/USD对，其中2023-2024年围绕60000美元的阻力位已被多次测试，与积极的开发更新相关。此外，来自Glassnode等来源的链上数据往往显示漏洞修复后活跃地址激增，表明网络活动恢复，可能推动价格向上势头。
 
-总体来看，目前市场状况显示比特币正处于一种均衡状态，主要得益于散户参与度的提升。这种局面为市场稳步冲击12万美元这一关键阻力位提供了机会。
+### 比特币开发风险中的交易策略
 
-不过，仍需密切关注鲸鱼动向，因为其一旦突然入场，可能迅速改变市场方向，触发类似以往市场高点的快速回调。
+为了应对这些与开发相关的风险，精明的交易者将技术分析与来自比特币GitHub仓库活动的根本洞见相结合。例如，监控拉取请求及其合并可以预判市场反应；安全导向PR的突然涌入可能预示即将到来的波动性，如果情绪转为看跌，则提供做空机会。在没有实时数据的情况下，考虑历史模式：在2018年事件中，根据当时交易所记录，比特币的24小时交易量激增超过20%，在BTC/ETH和BTC/USDT对中创造套利机会。机构资金流动，通过像BlackRock这样的ETF流入跟踪，往往在解决漏洞后增加，推动价格上涨。长期持有者可能将这些视为买入低点，50000美元水平的支撑证明了其弹性。此外，更广泛的市场影响与山寨币相关；一个安全的比特币网络提升了对整个加密生态系统的信心，可能同时提升像ETH或SOL这样的代币。
 
-**专家对BTC走势看法不一**
+最终，Samson
+Mow的警告鼓励交易者保持对比特币技术基础的了解，因为它们直接影响交易机会。通过将开发意识与市场分析相结合，投资者可以更好地预测趋势，例如由增强协议效率驱动的潜在反弹。对于优化策略的人，关注像哈希率稳定性这样的指标——在2018年后保持在约50
+EH/s的强劲水平——以及交易量相关性，可以产生盈利洞见。随着比特币继续成熟，像PR
+#9049这样的事件提醒我们，创新伴随着风险，但也为精明的交易者从随之而来的市场动态中获利提供了机会。
 
-比特币当前交易价格约比历史最高点低5.4%，有迹象表明这可能是新一轮上涨的前兆。例如，BTC
-最近突破了中期持有者的盈亏平衡点，降低了短期内大规模抛售的风险。
 
-再加上美联储下调利率25个基点等利好消息，或将为加密市场注入新的动力。在此背景下，加密企业家 Arthur Hayes 再次重申了其 100 万美元的
-BTC 大胆预测。
 
-不过，“黄金多头”彼得·希夫则认为，BTC 在本轮市场周期中可能已经见顶。
+-----
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0919%2F86f41ff3j00t2sxl0007hd000lf00gog.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+标题: 投行Jefferies：资本从投机性资产转向驱动实际应用的代币，不要只关注<b>BTC</b> | BlockWeeks
+真实链接: https://blockweeks.com/newsflash/170517.html
+正文: # 投行Jefferies：资本从投机性资产转向驱动实际应用的代币，不要只关注BTC | BlockWeeks
 
-（来源：tradingview）
+BlockWeeks
+9月21日消息，据CoinDesk报道，美国投行Jefferies在最近一份针对大型机构投资者的客户问答报告中指出，加密货币就像互联网繁荣的早期一样，仍处于“1996年阶段”，还有更大的增长空间。许多公司正在积极制定投资策略，并确定如何在代币、ETF、数字资产财库公司（DAT）和有风险敞口的上市公司之间分配资金。
+
+Jefferies分析师指出，过多关注比特币价格会分散人们对区块链技术在各个行业颠覆潜力的注意力，而旗下客户已经开始考虑通过交易所交易基金 (ETF)
+和数字资产财库管理(DAT)公司来投资该行业，而他们给出的建议与1996年互联网时代的投资策略相呼应，即：要有选择性，注重持久效用。随着资本从投机性资产转向驱动实际应用的代币，预计巨大的分化将持续下去。Jefferies建议，应该像分析早期科技初创企业那样分析代币，优先考虑“采用、开发、使用和用例”，而不是某些区块链的短暂收入高峰。
+
+
+
+-----
+
+标题: 数据，全网<b>BTC</b> 合约未平仓量达835.23 亿美元- ChainCatcher
+真实链接: https://www.chaincatcher.com/article/2207303
+正文: ChainCatcher 消息，据 Coinglass 数据，全网 BTC 合约未平仓量达到 72.22 万枚（约合 835.23 亿美元），24
+小时跌幅达 1.16%。其中，CME 以 14.86 万枚 BTC（约合 171.82 亿美元）居首，占比 20.57%，24 小时跌幅 0.24%；币安以
+12.61 万枚 BTC（约合 145.85 亿美元）位列第二，占比 17.46%，24 小时跌幅 1.03%。
+
+
+
+-----
+
+标题: 未来二十年<b>比特币</b>或将以年均近29%的速度升值；OKX CEO Star：因监管顾虑未上线类似 ...
+真实链接: https://www.bitpush.news/articles/7572445
+正文: 比推周末重点新闻回顾：
+
+**【美国投行 Jefferies：加密市场处于「互联网1996年阶段」，机构投资者不应只关注BTC】**
+
+比推消息，美国投行 Jefferies 在一份面向大型机构投资者的报告中表示，目前加密货币的发展阶段类似于 1996 年的互联网，仍具备广阔增长空间。
+
+分析师指出，市场若过度关注比特币价格，可能会忽视区块链技术在各行业的颠覆潜力。目前部分机构已开始通过 ETF
+和数字资产财库管理（DAT）公司进行布局。Jefferies 建议投资者借鉴互联网早期的投资策略，即注重项目的持久效用与选择性。
+
+Jefferies 通过将当前的加密货币市场与「1996
+年」进行类比，描绘了一幅早期互联网时代华尔街的强大而具体的图景——这暗示着加密货币的下一轮增长才刚刚开始。
+
+**【 Michael Saylor：未来二十年比特币或将以年均近 29%的速度升值】**
+
+比推消息，据CoinDesk报道，Strategy执行主席Michael
+Saylor在最新播客采访中表示，比特币近期价格走势平淡，这是强势的表现，而不是弱势，市场正处于盘整阶段，长期持有者正在出售部分持仓，而机构投资者则在为更大的配置做准备，波动性正在消退是一个非常好的迹象。未来二十年比特币或将以年均近
+29%的速度升值”。
+
+**【 OKX CEO Star：因监管顾虑未上线类似Hyperliquid产品，希望该行业获得清晰监管框架】**
+
+比推消息，OKX CEO Star 在 X 发文表示，「Hyperliquid
+证明了链上永续合约业务即便在员工极少的情况下也能取得巨大成功。如今，更多竞争者如 Aster 正在进入这一领域。OKX Web3 自 2023
+年以来也一直在测试类似产品，但由于监管方面的顾虑，我们选择未上线主网。
+
+在链上永续合约增长的同时，我们也不能忘记 2023 年 CFTC 对 Deridex
+的执法行动。监管执法格局已经发生根本性转变，望行业能尽快获得迫切需要的监管清晰度。」
+
+**【周大福创始人长孙郑志刚成立 ALMAD Group，将进行数字及虚拟资产投资】**
+
+比推消息， 新世界发展前行政总裁、周大福创始人郑裕彤长孙郑志刚去年起陆续卸任多家家族企业职务，目前已宣布成立上合发展控股(ALMAD
+Group)，该综合性企业集团将致力于 Web 3
+金融创新，将探索数字资产、现实世界资产(RWA)代币化等领域投资，并且还将探索区块链技术和沉浸式数字体验在不同产业的应用方案。
+
+**【下周将有PARTI、NIL、MBG等代币大额解锁】**
+
+比推消息，据Token Unlocks数据显示，PARTI、NIL、MBG等代币将于下周（以下均为北京时间）迎来大额解锁，其中：
+
+Particle Network（PARTI）将于9月25日下午6点解锁约1.82亿枚代币，与现流通量的比例为78.44%，价值约3400万美元；
+
+Nillion（NIL）将于9月24日晚上9点解锁约6512万枚代币，与现流通量的比例为33.37%，价值约2140万美元；
+
+MBG By Multibank Group（MBG）将于9月22日晚上8点解锁约1584万枚代币，与现流通量的比例为13.60%，价值约1770万美元；
+
+SPACE ID（ID）将于9月22日上午8点解锁约7265万枚代币，与现流通量的比例为6.30%，价值约1290万美元；
+
+Sahara AI（SAHARA）将于9月26日晚上8点解锁约1.34亿枚代币，与现流通量的比例为6.08%，价值约1140万美元；
+
+Venom（VENOM）将于9月25日下午4点解锁约5926万枚代币，与现流通量的比例为2.28%，价值约860万美元；
+
+AltLayer（ALT）将于9月25日下午6点解锁约2.4亿枚代币，与现流通量的比例为5.67%，价值约810万美元；
+
+SOON（SOON）将于9月23日下午4点30分解锁约1521万枚代币，与现流通量的比例为4.74%，价值约530万美元。
+
+**【Vitalik：低风险 DeFi 或成以太坊核心收入引擎，类比谷歌搜索业务模式】**
+
+比推消息，Vitalik 在社交平台发布长文表示，以太坊社区长期面临应用营收与生态目标间的矛盾：高收益应用（如
+NFT、Memecoin）往往与基础价值目标脱节，而非金融应用虽符合愿景却难以支撑 5000 亿美元经济体量。
+
+Vitalik 指出，低风险 DeFi（支付、储蓄、合成资产及超额抵押借贷）可类比谷歌搜索业务，成为以太坊核心收入来源。此类应用既通过高交易手续费和 ETH
+抵押需求支撑经济生态，又符合全球普惠金融的价值观，避免传统广告模式的数据垄断伦理问题。
+
+Vitalik 称，当前监管环境趋严及协议安全性提升为低风险 DeFi
+创造发展条件。其未来可能演进至非足额抵押借贷、预测市场对冲及多元化稳定价值资产（如一篮子货币、通胀挂钩代币）等方向，与以太坊实验性应用形成协同效应。
+
+* * *
+
+Twitter：<https://twitter.com/BitpushNewsCN>
+
+比推 TG 交流群：<https://t.me/BitPushCommunity>
+
+比推 TG 订阅： <https://t.me/bitpush>
+
+##### 说明: 比推所有文章只代表作者观点，不构成投资建议
+
+
+
+-----
+
+标题: 数据：ASTER、AVNT 的币安24 小时合约成交额均已突破35 亿美元且超越<b>BTC</b> - ChainCatcher
+真实链接: https://www.chaincatcher.com/article/2207314
+正文: ChainCatcher 消息，据 Coinglass 最新数据显示，ASTER、AVNT 的币安 24 小时合约成交量均超越 BTC，目前 ASTER
+的币安 24 小时合约成交量约为 43.14 亿美元（141.42%），AVNT 的币安 24 小时合约成交量约为 35.16
+亿美元（+283.28%），而 BTC 的币安 24 小时合约成交量约为 34.06 亿美元（38.3%）。
+
+
+
+-----
+
+标题: Michael Saylor 再次发布<b>比特币</b>Tracker 信息，下周或将披露增持数据
+真实链接: https://m.techflowpost.com/newsletter/detail_99322.html
+正文: ___7x24h_ _快讯_
+
+Michael Saylor 再次发布比特币 Tracker 信息，下周...
+
+深潮 TechFlow 消息，9 月 21 日，Michael Saylor 在 X 平台再次发布比特币 Tracker 信息，根据此前情况，通常
+Strategy 公司会在他发布比特币 Tracker 信息后的第二天披露比特币增持数据。
+
+_2025.09.21_ _20:23:52_
+
+______
+
+
+
+-----
+
+标题: Jefferies：加密市场仍处于“互联网1996年阶段”，机构投资者不应只关注<b>BTC</b> - Odaily
+真实链接: https://www.odaily.news/zh-CN/newsflash/449168
+正文: Odaily星球日报讯 美国投行 Jefferies 在一份面向大型机构投资者的报告中表示，加密货币的发展阶段类似于 1996
+年的互联网，仍具备广阔增长空间。分析师指出，市场若过度关注比特币价格，可能会忽视区块链技术在各行业的颠覆潜力。目前部分机构已开始通过 ETF
+和数字资产财库管理（DAT）公司进行布局。Jefferies 建议投资者借鉴互联网早期的投资策略，即注重项目的持久效用与选择性。（CoinDesk）
+
+
+
+-----
+
+标题: <b>BTC</b> 衍生品周报：期货活跃，期权主导，$115K 如同家一样稳固 - Bitcoin.com News
+真实链接: https://news.bitcoin.com/zh/btc-yanshengpin-zhoubao-qihuo-huoyue-qiquan-zhudao-115k-rutongjia-yiyang-wengu/
+正文: **周日，9月21日，比特币的衍生品市场在期货和期权方面显示出大量仓位——总期货未平仓合约接近835.6亿美元，期权交易者略微偏向看涨——价格在每比特币114,696至117,851美元的七天范围内震荡。**
+
+![play](/images/uploads/ListenArticleHeadphone.svg) Listen to article
+
+## 比特币的835.6亿期货堆叠与偏向看涨的期权在季度末相遇
+
+[比特币（BTC）](https://markets.bitcoin.com/crypto/bitcoin)在过去一周内在一个窄幅的3,155美元范围内波动，表面平静但底下却忙于仓位调整。现货报价持续围绕在115,000美元中段，期限结构反映这种平衡：没有蜂拥而至，但规模不小，因为交易者准备迎接九月和季度末的最后一周。
+
+[bn_top_ad]
+
+在期货方面，根据[coinglass.com的统计数据](https://www.coinglass.com/BitcoinOpenInterest)，总未平仓合约（OI）约为835.6亿美元，远高于以太坊在本周末的OI，即[645.7亿美元](https://news.bitcoin.com/ethereum-
+futures-stack-up-options-flow-
+eyes-4k-floor-6k-dream/)。这是自春季以来看到的上端区域，匹配着OI图表上的高峰条，而价格线紧贴同一高度。其构建广泛，不仅仅是单一场地效应，并且保持永久资金讨论活跃而不过分极端。
+
+![BTC Derivatives Week: Futures Heavy, Calls in Charge as $115K Acts Like
+Home](https://static.news.bitcoin.com/wp-
+content/uploads/2025/09/screenshot-2025-09-21-at-9-13-07-am_nwmk-
+scaled.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-
+SHA256&X-Amz-Credential=AKIARQKIT2TMGZBKV2L6%2F20250921%2Fus-
+east-1%2Fs3%2Faws4_request&X-Amz-Date=20250921T153241Z&X-Amz-
+SignedHeaders=host&X-Amz-Expires=600&X-Amz-
+Signature=2aed7427c3dd30338c731e4042fcdb507892c2ae7ce6a99458ca5328496dc805)根据coinglass.com的统计数据，比特币期货未平仓合约。
+
+场地份额说明了一切。[CME](https://news.bitcoin.com/cme-unleashing-xrp-options-
+after-16b-futures-rally-signals-strong-institutional-
+demand/)以约171.9亿美元的OI（20.57%）领先，提醒我们传统资金并没有离开竞技场。Binance以14.59亿美元（17.46%）紧随其后，然后是[Bybit](https://news.bitcoin.com/bybit-
+to-accept-dfsa-approved-tokenized-money-market-fund-as-
+collateral/)的10.23亿美元（12.24%），和OKX的4.60亿美元（5.5%）。Gate显示86.8亿美元（10.38%），而Bitget为61.5亿美元（7.36%），MEXC为30.9亿美元（3.69%），WhiteBIT为25.2亿美元（3.01%），Kucoin和BingX则更小，分别为6.7032亿美元（0.8%）和5.0439亿美元（0.6%）。
+
+日内变化相对平稳而非戏剧化。CME的OI日内下降约0.12%；Binance下降0.90%；Bybit下降1.51%。相对的，KuCoin上涨0.80%，一些中等规模平台录得部分增长。净净：仓位稳定，轮换而非全面去风险。
+
+[Coinglass数据](https://www.coinglass.com/options)显示，期权是乐观倾斜的地方。在各个场馆中，认购期权占OI的59.92%（263,276.82
+BTC），而认沽期权占40.08%（176,130.99 BTC）。过去24小时的成交量也反映了这一比例——60.48%的认购期权（4,777.91
+BTC）对39.52%的认沽期权（3,122.52 BTC）——表明交易者在为上涨风险敞口付费同时保持谨慎。
+
+![BTC Derivatives Week: Futures Heavy, Calls in Charge as $115K Acts Like
+Home](https://static.news.bitcoin.com/wp-
+content/uploads/2025/09/screenshot-2025-09-21-at-9-16-08-ammaxpain_nwmk.png?X-Amz-
+Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
+Credential=AKIARQKIT2TMGZBKV2L6%2F20250921%2Fus-
+east-1%2Fs3%2Faws4_request&X-Amz-Date=20250921T153241Z&X-Amz-
+SignedHeaders=host&X-Amz-Expires=600&X-Amz-
+Signature=63dee5eef13e0fbc9e7f7f0d25c042ea981a241c17598681a060c04b149b9401)根据coinglass.com的统计数据，Deribit的最大痛苦点。最大痛苦点是使期权合约（无论是认购还是认沽）大面积失效导致期权持有人遭受最大经济损失的价位。它常常在期权到期时成为价格行为的磁铁，因为做市商通常会围绕这个水平进行对冲。
+
+最大痛苦点靠近价格行为。[Deribit](https://news.bitcoin.com/coinbase-finalizes-deribit-
+acquisition-to-lead-global-crypto-derivatives-
+market/)的短期系列集中在115,000美元附近，9月26日星期五到期时有一波下降至110,000美元的趋势，然后在十月初返回至115,000美元中段。该趋势显示，随着到期日期临近，在115,000美元附近可能发生经典的压针风险，特别是如果现货不发生大幅波动。
+
+期权变化揭示了交易者在两侧进行对冲。2025年9月26日，最大开仓包括95,000 BTC的认沽期权，约10,166 BTC，和108,000
+BTC的认沽期权，约7,770 BTC。在上涨方面，有一个140,000 BTC的认购期权在同一天到期，约9,974 BTC。
+
+放眼未来，2025年12月合约中还有一个140,000 BTC的认购期权，接近9,693 BTC，还有一个200,000 BTC的认购期权，约8,471
+BTC。简而言之，交易者在覆盖下行风险的同时也在押注年终可能达到更高的价格。
+
+短期流动性照亮了未来的一周。最繁忙的24小时成交量集中在110,000–121,000 BTC的认购期权范围内（611.1 BTC至401.6
+BTC，23–24日到期），并有一个显著的108,000 BTC认沽期权（215.9
+BTC）。如果现货保持区间波动，这些价位将成为吸引点；如果波动，它们将成为绊脚点。
+
+底线：随着期货OI的高度和期权倾向于看涨，比特币似乎在115,000美元附近徘徊，直到到期逼迫决策。季度末可能会加速推进；否则，压针和伽马效应将悄然主导方向。
+
+
+
+-----
+
+标题: Michael Saylor发布<b>比特币</b>Tracker信息，或暗示再次增持<b>BTC</b> - BlockBeats
+真实链接: https://www.theblockbeats.info/flash/313180
+正文: BlockBeats 消息，9 月 21 日，Strategy 创始人 Michael Saylor 再次发布比特币 Tracker
+相关信息。并表示，「橙色圆点位于右上方。」
+
+  
+
+根据此前规律，Strategy 总是在相关消息发布之后的第二天披露增持比特币信息。
+
+
+
+-----
+
+标题: 杜兰特投资650美元，仅9年，血赚180倍 - 网易
+真实链接: https://www.163.com/dy/article/KA0AHRA60549M4MB.html
+正文: NBA超级巨星[凯文杜兰特](https://ent.163.com/keywords/5/e/51ef6587675c51707279/1.html)，最近在节目中表示，自己曾在2016年的时候，投资了加密货币[比特币](https://ent.163.com/keywords/6/d/6bd472795e01/1.html)。只是非常遗憾的是，他忘记了登录密码，曾多次输入错误密码，导致账号被锁。
+
+![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0921%2Fba91e642j00t2xjhg002qd0012w00pxm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+  
+
+不少球迷媒体都好奇，凯文杜兰特如今已经成为亿万富翁，当初投资了比特币多少钱，会不会投入了上万美元，现在从中获利上亿美元，要知道现在比特币已经单价高达11万美元。首先，我们要知道比特币是虚拟货币，我们国内是不允许公开买卖和拥有的，我们要明白这一点。其次就是2016年时，比特币的价格是430-960美元之间一枚。
+
+![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0921%2Fbd51a621j00t2xjhg005ad0010o019tm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+  
+
+据最新报道称，休斯顿火箭球星杜兰特，最近已经找回了自己的比特币账号。据说他在2016年的时候，买了650美元的比特币，现在他从比特币中，获得了11.7万美元的收入。也就是650美元暴涨180倍，只用了9年的时间，太不可思议了。
+
+**“NBA球星凯文杜兰特在2016年投资了比特币，但直到本周他的比特币基地账户才被锁定。BTC当时是650美元，现在是11.7万美元，增长了180倍。”**
+
+![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0921%2Fdd9d03d9j00t2xjhg003nd0012w00pwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+  
+
+原来，凯文杜兰特只买了一个比特币。我们都好奇，以凯文杜兰特的身价，当时年薪已经上千万美元，应该至少买上百个或者上千个比特币的。结果，他只买了一个。
+
+不过，比特币基地首席执行官Brian
+Armstrong，很快转发了有关凯文杜兰特找回比特币账号的帖子。毕竟，没有比NBA超级巨星为他们做宣传，更靠谱了。不过，我们之前也有听过，有个别NBA球员，希望球队以虚拟货币的方式，发放工资。
+
+![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0921%2F4a83d716j00t2xjhg001pd000jg00cpm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+  
+
+**“我们已经解决了这个问题。帐户恢复完成！”**
+
+根据美媒统计，凯文杜兰特目前的净资产，已经高达3亿美元。而且，他已经拥有35家企业的股份，并投资了至少80家公司。除了风险资本和媒体投资，凯文杜兰特还投资了体育公司。2020年的时候购买了美国职业足球大联盟费城联盟的少数股权。
+
+![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0921%2F0540247ej00t2xjhg001ed000u000k0m.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+  
+
+此外，他还购买了美国职业棒球大联盟Pickleball和NWSL Gotham
+FC的股份。2025年的时候，他还投资了卡塔尔体育投资公司(QSI)，这是法国足球队巴黎圣日耳曼的所有权集团。
+
+声明：个人原创，仅供参考
 
 特别声明：以上内容(如有图片或视频亦包括在内)为自媒体平台“网易号”用户上传并发布，本平台仅提供信息存储服务。
 
@@ -1515,366 +1237,192 @@ and only provides information storage services.
 
 -----
 
-标题: Solana 联合创始人警告：如果开发者未能在2030年前采取行动，<b>比特币</b>将面临量子风险
-真实链接: https://news.bitcoin.com/zh/solana-lianhe-chuangshiren-jinggao-ruguo-kaifazhe-weineng-zai-2030-nianqian-caiqu-xingdong-bitebi-jiang-mianlin-liangzi-fengxian/
-正文: **Solana 联合创始人 Anatoly Yakovenko 在 2025 年的 All-In 峰会上警告称，量子计算的快速进步可能迫使比特币在
-2030 年之前迁移到新的加密技术，否则将面临安全失败的风险。**
+标题: 数据：过去7天超4万枚<b>BTC</b>流出CEX平台 - PANews
+真实链接: https://www.panewslab.com/zh/articles/c3ace6ad-3e77-419a-a395-afaa71aba6d6
+正文: PANews 9月21日消息，据Coinglass最新数据显示，过去一周约有40,213.72枚比特币流出CEX平台，Coinbase
+Pro过去7天流出29,604.51枚比特币；3,675.84枚比特币流出Binance交易所；1,485.41枚比特币流出Bybit交易所。
+
+
+
+-----
+
+标题: 萨尔瓦多近7日共增持8枚<b>BTC</b>，总持仓达6326.18枚 - PANews
+真实链接: https://www.panewslab.com/zh/articles/6d48e078-d27f-4cf1-b52d-43a43e436b67
+正文: PANews 9月21日消息，萨尔瓦多过去7日共增持8枚比特币，目前其比特币持仓达6,326.18枚，总价值达7.32亿美元。
+
+
+
+-----
+
+标题: Michael Saylor：未来二十年<b>比特币</b>或将以年均近29% 的速度升值 - 深潮TechFlow
+真实链接: https://m.techflowpost.com/newsletter/detail_99313.html
+正文: 深潮 TechFlow 消息，9 月 21 日，据 CoinDesk 报道，Strategy 执行主席 Michael Saylor
+在最新播客采访中表示，比特币近期价格走势平淡，这是强势的表现，而不是弱势，市场正处于盘整阶段，长期持有者正在出售部分持仓，而机构投资者则在为更大的配置做准备，波动性正在消退是一个非常好的迹象。展望未来，Michael
+Saylor 将比特币财库公司的崛起比作石化行业的早期，在混乱但变革的十年中，多种产品、商业模式和财富不断涌现，他预测未来二十年比特币将以每年平均近 29%
+的速度升值，从而推动新型信贷和股权工具的出现。
+
+
+
+-----
+
+标题: 不丹政府持有加密资产近9.82亿美元：以<b>BTC</b>为主、ETH仅占0.073% - Blockchain News
+真实链接: https://blockchain.news/zh/flashnews/bhutan-government-crypto-holdings-update-982m-in-btc-0-073-in-eth-trading-implications-for-btc-and-eth-zh
+正文: 不丹皇家政府已成为加密货币领域的重要参与者，据报道其持有价值9.82亿美元的数字资产。这一消息突显了机构和政府采用加密货币的趋势，特别是比特币（BTC），它主导了他们的投资组合。其中绝大多数资金分配给了BTC，而以太坊（ETH）仅占0.073%，价值71.7万美元。这种分配强调了不丹对BTC作为价值储存的战略重点，在全球经济不确定性中尤为突出。随着加密货币市场的演变，此类政府持有可能影响市场情绪，如果更多国家效仿，或推动BTC价格上涨。交易者应密切关注这一发展，因为它可能预示着更多机构资金流入BTC，从而影响交易量和价格稳定性。
+
+## 不丹加密持有：BTC主导的深入分析
+
+深入探讨不丹的加密投资组合，其对BTC的强调显而易见，将其定位为数字资产策略的核心。根据最近的分析，这种分配反映了对BTC稳定性和数字黄金角色的偏好，尤其在地缘政治紧张和通胀担忧持续的背景下。对于交易者来说，这一消息出现在BTC在6万美元关键支撑位附近波动、潜在阻力位在6.5万美元的时刻，基于2025年9月的历史数据。ETH的微小暴露，仅71.7万美元，表明对山寨币的谨慎态度，可能由于ETH与网络升级和DeFi生态相关的波动性。这种不平衡可能在BTC/ETH交易对中创造机会，交易者可利用相对强度指标，显示BTC在上季度优于ETH
+15%，据链上指标。类似公告往往与交易量增加相关，BTC现货交易量在类似时期飙升20%，为日内交易者提供波动高峰时的入场点。
+
+### 市场影响与BTC和ETH交易策略
+
+从交易角度看，不丹的巨额BTC持有可能增强正面市场情绪，如果与机构兴趣上升相关，或推动BTC创下新高。最近市场指标，包括2025年9月底BTC期货未平仓量上涨5%，表明势头正在积聚，交易者可通过在50日移动平均线上方的多头头寸加以利用。相反，ETH的微小分配可能对ETH价格施压，目前支撑位在2500美元，阻力位在2800美元，基于主要交易所的时间戳数据。交易者应注意跨市场相关性，例如股市科技板块反弹如何影响AI相关代币，这些往往与ETH同步，因为其智能合约主导地位。例如，如果不丹策略激发亚太地区类似行动，我们可能看到BTC
+ETF流入增加，推动24小时交易量超过500亿美元。风险管理至关重要；在入场点下方5%设置止损可缓解下行风险。这一发展强调了BTC的长期持有吸引力，而ETH交易者可能探索低配资产的套利机会。
+
+展望未来，政府认可如不丹的加密持有对加密货币市场的更广泛影响深远，可能加速主流采用。这可能导致BTC市场流动性增加，链上数据显示此类公告后活跃地址上涨10%。对于股市相关性，交易者应注意这如何与全球股票趋势挂钩，加密货币往往作为对标普500等指数下跌的对冲。在AI领域，虽然未直接相关，但ETH在驱动AI
+dApp中的作用可能在情绪改善时间接受益。为优化交易，关注技术指标如BTC
+RSI水平超过70的超买信号，并监控鲸鱼交易以获取早期预警。最终，不丹的加密立场为多元化投资组合提供宝贵见解，将传统金融与数字资产结合以提升回报。
+
+总之，这一政府加密持有不仅验证了BTC的机构可行性，还提供了可操作的交易见解。没有即时实时价格数据变化，但叙事驱动了对BTC的看涨展望，鼓励交易者评估交易量趋势和情绪指标以做出明智决策。随着市场消化这一信息，预期潜在波动，精明投资者可通过自律策略转化为盈利机会。
+
+
+
+-----
+
+标题: 过去7天超4万枚<b>BTC</b>流出CEX平台 - 亿欧
+真实链接: https://www.iyiou.com/briefing/202509211826019
+正文: Verification Code will refresh in 2 sec.
+
+
+
+-----
+
+标题: 币安上ASTER合约24小时成交额超越<b>BTC</b> - Mitrade
+真实链接: https://www.mitrade.com/cn/insights/news/live-news/article-3-1139089-20250921
+正文: 史上最大规模“三巫日”来袭，美股回调在即？日本央行维持利率不变，日元汇率巨震；美元指数3连跌>>
+
+美中领导人会谈在即，黄金释放短期调整信号；警惕实际负利率，黄金中期仍是「易涨难跌」
+
+日本央行行长并未给出市场希望的转向信号，日元汇率重回148。
+
+尽管美股可能出现技术性调整，但摩根大通表示任何回调都是买入机会。
+
+市场聚焦美中领导人自6月以来首次直接接触，双方将于华盛顿时间周五上午9时（台湾时间晚上9时）的通话，议题包括TikTok的未来，以及美中之间的关税休战协议。美中贸易战趋向缓和或为联准会降息提供支撑，加之辉达斥资50亿美元入股英特尔，美股在科技股持续火热，小型股指数罗素2000时隔近4年再创收市新高。一系列因素似乎表明，市场短期乐观情绪保持良好，黄金的避险属性或迎来挑战，投资者需警惕金价短期内进一步调整可能。
+
+
+
+-----
+
+标题: <b>比特币</b>价格观察：紧密区间信号显示即将突破或崩溃 - Bitcoin.com News
+真实链接: https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-jin-mi-qu-jian-xin-hao-xian-shi-ji-jiang-tu-po-huo-beng-kui/
+正文: **2025年9月21日，比特币交易价格为115,733美元，总市值达2.30万亿美元，24小时交易量为192.4亿美元。当天的价格走势保持在115,426美元至116,154美元之间的窄幅盘整区间内，反映出在多个时间框架内动能减弱的背景下的盘整趋势。**
 
 ![play](/images/uploads/ListenArticleHeadphone.svg) Listen to article
 
-## Yakovenko：关注苹果和谷歌的信号，是时候强化比特币了
+## 比特币
 
-Yakovenko 是一名受过训练的工程师，[在 All-In
-峰会上表示](https://www.youtube.com/watch?v=KV_qe_YAGoQ)，“在五年内出现量子突破的机会是
-50/50——这意味着可以运行 Shor
-算法”，这可能危及现有的用于保护比特币网络交易的签名方案。“我们应该将比特币迁移到抗量子的签名方案，”他补充说，一个实际信号将是[谷歌](https://news.bitcoin.com/google-
-launches-ai-payments-protocol-with-crypto-and-stablecoin-
-integration/)和苹果部署量子安全堆栈，之后“是时候迁移了。”
+从日内角度来看，1小时[比特币](https://markets.bitcoin.com/crypto/bitcoin)图表显示出横盘趋势，略有看跌倾向，特征为小实体K线和此前涨幅后的成交量下降。在115,400美元支撑和116,200美元阻力之间的价格动作显示出一种不确定的区域，没有明确的方向性倾斜。
 
 [bn_top_ad]
 
-他的言论是在关于加密货币下一个时代的广泛采访中发表的，他将[量子计算](https://news.bitcoin.com/can-the-sec-
-protect-bitcoin-quantum-defense-plan-sparks-
-criticism/)既视为对当今原始技术的生存威胁，也是一种类似于人工智能的潜在经济催化剂。对于该领域的专业人士，他表示，风险应当引起规划；对于公众而言，成功的量子系统可能成为“像人工智能一样的大财富创造者。”
+关键阻力位上方缺乏后续动力进一步表明市场信心的缺乏。除非比特币以可持续的成交量突破116,200美元，否则建议交易者避免入场或等到115,400美元以下的崩盘确认后再进行空头布局。
 
-Yakovenko 强调，比特币的韧性源于简单性——工作量证明是“优雅与简单性的杰作”。但他认为，这种力量并不排除在能够运行 Shor
-算法的量子机器出现时，需要更换易受攻击的签名。核心网络可能在利害关系者协调的情况下经历一次过渡。
+![比特币价格观察：窄幅波动信号预示即将突破或崩盘](https://static.news.bitcoin.com/wp-
+content/uploads/2025/09/bitstamp_btc_usd-sun_21_sep_07_56_25_nwmk.jpg?X-Amz-
+Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
+Credential=AKIARQKIT2TMGZBKV2L6%2F20250921%2Fus-
+east-1%2Fs3%2Faws4_request&X-Amz-Date=20250921T123040Z&X-Amz-
+SignedHeaders=host&X-Amz-Expires=600&X-Amz-
+Signature=4f14366f74cea1d010cbfdd12592ba9f6b664e562ae4ad896242cea60c096dcb)2025年9月21日，通过Bitstamp提供的BTC/USD
+1小时图表。
 
-他描述了一种合理的迁移触发因素：主要平台向数十亿设备转移量子抗性加密技术。如果苹果和谷歌采取行动，钱包和节点软件可能会跟随采用后量子方案，由标准机构审查，减少用户和开发者的升级负担。
+4小时图也反映出这种谨慎态度，因为[比特币](https://markets.bitcoin.com/crypto/bitcoin)继续从其近期局部高点117,968美元进行回调。价格结构打印了一系列较低的高点，并且K线现在显示明显的拒绝，接近116,000美元的中位。未能收复该水平可能引发进一步的下行压力，特别是在确认为115,400美元以下的收盘情况下。如果价格在反弹尝试中继续下降，则买家兴趣的减少可能进一步显示。下一个关键支撑位在114,400美元附近，而117,000美元以上的动能突破可能消除近期的下行风险。
 
-除了量子风险之外，Yakovenko
-还讨论了稳定币和代币化国债，预测互联网可能成为美国债务的最大持有者之一，因为与美元挂钩的代币在公共区块链上激增。他将[Solana](https://news.bitcoin.com/nasdaq-
-listed-brera-holdings-stock-surges-280-after-pivot-to-solana-based-crypto-
-strategy/)描绘为一个为低延迟市场构建的执行层，受监管的现有企业可能通过运行节点，作为对链上结算的接口进行整合。
+![比特币价格观察：窄幅波动信号预示即将突破或崩盘](https://static.news.bitcoin.com/wp-
+content/uploads/2025/09/bitstamp_btc_usd-sun_21_sep_07_56_19_nwmk.jpg?X-Amz-
+Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
+Credential=AKIARQKIT2TMGZBKV2L6%2F20250921%2Fus-
+east-1%2Fs3%2Faws4_request&X-Amz-Date=20250921T123040Z&X-Amz-
+SignedHeaders=host&X-Amz-Expires=600&X-Amz-
+Signature=ad8f5c611476c1cfe9606de1bafe3fd1905f696b87517bfabd6e1d8c7c43cda1)2025年9月21日，通过Bitstamp提供的BTC/USD
+4小时图表。
 
-访谈中还触及到[去中心化金融 (DeFi)](https://news.bitcoin.com/unlocking-the-future-your-fun-
-guide-to-decentralized-finance-and-web3/)、[现实资产
-(RWA)](https://news.bitcoin.com/30-billion-benchmark-reached-rwas-reshape-
-markets-at-lightning-speed/)和创作者经济，但 Yakovenko 仍然回到量子时间线：如果在 2030
-年之前出现可信的突破，他说，比特币的升级路径应已在进行中，以保护[比特币
-(BTC)](https://markets.bitcoin.com/crypto/bitcoin)持有者，并维护协议的结算保证。
+在日线图上，[比特币](https://markets.bitcoin.com/crypto/bitcoin)显示出潜在反转的迹象，在形成107,270美元的宏观低点后上升到118,626美元的近期高点。虽然一系列更高的低点指向建设性的长期结构，但在117,000美元至118,000美元区域附近形成的可能双顶引发担忧。最近绿K线上的成交量也有所减少，这表明看涨趋势在减弱。若日线能收于118,000美元以上，将验证突破；但若未能持稳在115,000美元之上，可能预示短期顶部及更深的回撤。
+
+![比特币价格观察：窄幅波动信号预示即将突破或崩盘](https://static.news.bitcoin.com/wp-
+content/uploads/2025/09/bitstamp_btc_usd-sun_21_sep_07_56_12_nwmk.jpg?X-Amz-
+Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
+Credential=AKIARQKIT2TMGZBKV2L6%2F20250921%2Fus-
+east-1%2Fs3%2Faws4_request&X-Amz-Date=20250921T123040Z&X-Amz-
+SignedHeaders=host&X-Amz-Expires=600&X-Amz-
+Signature=cb806d443ab71948557573c2fedc39c485624fc0a839ad78387098d10ccefd51)2025年9月21日，通过Bitstamp提供的BTC/USD日线图表。
+
+技术指标显示出复杂的局面。诸如相对强弱指数（RSI）处于55，随机指标处于71，商品通道指数（CCI）为54，平均趋向指数（ADX）为18，而超绝指标为3,157，均显示中性立场。不过，动能指标显示出一个看跌倾向，信号为负；同时，移动平均收敛散度（MACD）水平为851显示出相反的看涨信号。这种分歧反映出更广泛市场的不确定性和缺乏强劲动能。
+
+[移动平均线](https://news.bitcoin.com/unveiling-moving-averages-essential-tools-
+for-bitcoin-
+trading/)显示出向看涨倾斜，特别是较长周期。10、20、30、50、100和200期的指数移动平均线（EMA）均伴随正面信号，只有10期简单移动平均线（SMA）在116,040美元显示出看跌迹象。这表明即使短期价格动作仍处于区间震荡，但从宏观角度来看，支撑仍然稳固。在未来的交易中，比特币似乎在突破确认和更深修正之间徘徊，115,000美元至117,000美元的区间成了方向动能的关键战场。
+
+### **牛市预测：**
+
+如果比特币突破并在强劲成交量下收于118,000美元以上，牛市动能可能会恢复，潜在上涨目标为120,000美元和122,500美元。长期移动平均线和MACD买入信号支持趋势的进一步延续，前提是关键阻力位被明确突破。
+
+### **熊市预测：**
+
+特别在成交量增加的情况下，持续跌破115,000美元将确认突破失败，并打开通往更深支撑区的道路，目标可能是114,400美元，甚至112,000美元。时间框架内动能减弱，加上反弹时成交量下降，显示出市场的谨慎，并且在多头未能夺回更高地盘之前，倾向于看跌倾向。
 
 
 
 -----
 
-标题: 都迎降息利好，挖矿股为什么涨不过屯币股？
-真实链接: https://news.futunn.com/en/post/62352766
-正文: 靴子终于落地，万众瞩目的美联储会议宣布降息25个基点。这也是美联储时隔9个月后再度启动宽松周期。
+标题: Michael Saylor发布<b>比特币</b>Tracker信息，或暗示再次增持<b>BTC</b> - Binance
+真实链接: https://www.binance.com/zh-CN/square/post/29986807801281
+正文: BlockBeats 消息，9 月 21 日，Strategy 创始人 Michael Saylor 再次发布比特币 Tracker
+相关信息。并表示，「橙色圆点位于右上方。」
 
-宽松周期来了，资金也会向股市、加密货币等资产流入。这不消息释放后，大部分资产都在上涨。其中，把挖矿股和屯币股的上涨放在一起很值得观察。
-
-这两类资产的上涨逻辑都是受益美联储降息-加密货币上涨-
-币值收益增加。不过，屯币股的上涨要明显好于挖矿股的上涨。降息后首个交易日，屯币股龙头Strategy上涨5.89%。而挖矿股新贵灿谷只上涨了2.9%。
-
-![](https://record.futunn.com/news-editor-
-imgs/20250920/public/17583491159821943239150.png?imageMogr2/quality/minsize/1/ignore-
-error/1/format/webp)实际上，如果拉长周期来看，两者的上涨趋势差距更大。
-
-从2020年Strategy通过自有资金和各类融资手段大规模配置比特币后，其市值涨了20倍。而同期最大的挖矿股MARA市值只涨了8倍。市值规模更是相差甚远，前者逼近千亿，后者不到70亿。
-
-逻辑都是受益加密货币上涨，为什么两类资产的差距这么大？
-
-本文持有以下观点：
-
-1、屯币股具有模式优势。挖矿股因为有重资产的矿机成本，模式像传统制造业，需要择时卖币回本。而屯币股融资买币，类似金融生意，可长期持有，收获利益最大化。
-
-2、屯币股更容易实现规模化。最大的屯币股Strategy持有约62.9万枚比特币，最大的挖矿股Mara只持有5万枚。逻辑是，MARA获币是靠挖，产能有限。而Strategy屯币靠的是融资能力，只要融资能力在线，屯币速度极快。
-
-3、屯币股有风险。一是监管风险，屯币股是将加密货币的风险，通过资本市场的合规渠道，转嫁给了公开市场投资者，目前已有监管跟进。二是业务风险，屯币股高度依赖资产上涨与高杠杆的运营特征，很容易在币市下降时，发生融资能力丧失-
-被迫减持-价格下跌的循环。
-
-/ 01 /
-
-屯币股跑赢挖矿股
-
-瑞·达利奥说过自己的投资圣杯就是资产配置：就像爱因斯坦在发现E = mc²时的感觉一样，我发现如果我拥有几个互不相关的回报流，就能实现风险与收益的兼得。
-
-所谓的资产配置，本质是顺应时代浪潮，去选择能成为大多数人命运对冲工具的资产。
-
-之前，机构和个人的资产配置池是股票、债券、地产，黄金等传统资产。
-
-但混乱即变化，全球通胀压力上升后，加密货币被视为抵御通胀的工具，在加上监管的绿灯与机构增持的推波助澜，加密货币已经从一个边缘化的投机资产转变成不可被忽视的常规配置资产。
-
-自2020年的低点到现在，比特币价格涨超23倍。
-
-加密货币价格上涨的潜力，让它成了很多机构甚至上市公司的配置资产，甚至由此延伸出了一个屯币股的新生意。
-
-屯币股的商业模式是，上市公司通过发行股票、优先股、期权、认股权证等金融手段筹集资金，去买加密货币，赚币值上涨的收益。典型代表是Strategy。
-
-持币公司因为押注比值长期上涨，很少卖出比特币，其比特币收益通过利润表中的“数字资产未实现收益”体现。不过这个科目相当于账面浮盈，只是展示了公司比特币持仓的市场价值相对于成本的增长，不是真金白银的收益。
-
-与屯币股一样压制币值上涨的还有挖矿股，两者也被常常拿来比较。
-
-挖矿股顾名思义挖矿股的收入主要来自挖矿的数量和均价。既公司自己投资购买矿机、建设矿场（或租赁场地）、支付电费，并将所有挖矿所得纳入囊中。部分公司也会通过租赁矿机、算力来获得收入。
-
-两者相比，屯币股类似传统贸易商，低买高卖赚比值差价。挖矿股类似已完成垂直一体化的商业综合体，业务环节覆盖上下游。
-
-在大部分传统行业，垂直一体化公司往往比中间商赚差价获得更高的估值。但在加密货币这门生意中完全相反。
-
-最大的屯币股Strategy自2020年通过自有资金和各类融资手段大规模配置成比特币，市值涨了20倍。而同期最大的挖矿股MARA市值只涨了8倍。市值规模更是相差甚远，前者逼近千亿，后者不到70亿。
-
-看似有模式优势的挖矿股，涨幅、市值规模却远远落后屯币股。这种反差说明不能用传统生意的视角去看待屯币股和挖矿股的区别。
-
-/ 02 /
-
-币市战场：制造公司打不过金融公司
-
-屯币股和挖矿股受到资本市场追逐，本质是投资人形成了加密货币长期上涨的共识，认为押注屯币股/挖矿股就能分享到币市上涨的红利。
-
-因此，投资人投挖矿股/屯币股的逻辑是，除了看重这门生意当下的利润，更看重的是未来价值。
-
-而如果在币市长期上涨共识确立的基础上，挖矿股收益跟不上屯币股。这里面的逻辑要从两门生意的本质说起。
-
-屯币股用自有矿机挖矿，承担全部收益、成本、风险，更类似制造生意。挖矿股先募资后买币，币值规模扩大后，既能低成本股权融资，还能质押获取新资金，这种加杠杆模式更类似金融生意。
-
-而在币市竞争中，类似金融逻辑的屯币股至少有长期持有和规模化两大优势。
-
-从加密货币持有的角度看，挖矿股因为有重资产的矿机成本，模式像传统制造业，需要择时卖币回本。比如，2024年6月，MARA就卖出了1000枚BTC，主要目的就是为了弥补经营成本。
-
-当然，在币市上涨时，企业获取资金的方式很多，不一定非要靠卖币弥补经营成本。MARA、灿谷这些行业前二的屯币股近期已经明确了“开采并持有”策略：其挖出的比特币主要用于储备，而非立即出售。
-
-在都走屯币路径的情况下，竞争核心就是规模化，比拼谁能获得更多的比特币。但说起规模化，Strategy有明显优势。
-
-截止今年7月，屯币股龙头Strategy持有约62.9万枚比特币。而挖矿股算力最高的Mara只持有5万枚，挖矿股算力规模第二灿谷更是只持有4240枚。
-
-从整个行业看，买入也是比开采更高效或币手段。Bitcoin
-Archive发布数据显示，机构今年买入690710枚大饼，而同期仅开采出109072枚，仅机构买入量就是产出的6倍。
-
-两者的规模化差距也不难理解，MARA获币的方式是靠算力挖掘，每年能拿到的比特币有限，并且币价上涨，吸引越来越多的挖矿企业入局，挖矿股获取比特币的难度也在持续上升。
-
-相比之下，Strategy屯币靠的是融资能力，今年上半年，Strategy融资产生的现金流金额高达145亿美元。只要融资能力在线，屯币股的规模化屯币速度自然会比挖矿股快得多。
-
-而对屯币股/挖矿股最朴素的估值逻辑就是手中持有加密货币的规模，Strategy的屯币速度和规模优势，决定了它的涨幅速度和市值规模要高于挖矿股龙头。
-
-/ 03 /
-
-不要赚最后一个铜板
-
-在币市上涨的基础上，屯币股有诸多优势，那它是不是投资人获取超额收益的最佳资产呢？要慎重。
-
-市场对屯币股已经有所担忧。之前大部分时间，Strategy与比特币价格同涨同跌，但目前两者已经有分化趋势。今年，比特币虽已上涨26%，但Strategy股价起起伏伏，并没有回到2024年11月的高点。
-
-虽然股价有所下滑，但Strategy作为持有比特币最多的屯币股，享受一定溢价，市值大概是持有比特币价值的1.5倍左右。
-
-而很多持有非主流代币的公司市值已跌破其资产净值。典型的例子是Hyperion DeFi，公司市值曾经一度只有持有币值的一半。
-
-Strategy的股价开始跟不上比特币的币价，是因为其风险越来越大，其中既有监管风险也有业务风险。
-
-月初，监管已打出第一枪，纳斯达克将要求部分公司在通过增发新股来购买加密资产前，必须事先获得股东的正式批准，并且需要在第一时间向市场进行披露。
-
-对头部屯币股来说，这一监管要求的影响相对有限。毕竟，它们囤积比特币的数量、买入路径等信息，在区块链上都有迹可循，透明度较高。受影响更大的，是那些规模小、流动性差、透明度低，且容易被市场操控的代币屯币股。
-
-但长期来看，即使屯比特币的头部屯币股依然有很大的监管和业务风险。
-
-屯币已经成了美股的新玩法，在特朗普放宽加密货币监管后，Strategy珠玉在前的情况下，很多业绩差、市值小的个股已经把屯币推股价当作市值增长的捷径。
-
-据加密货币咨询公司Architect
-Partners统计，2025年已有124家美国上市公司宣布计划筹集超过1330亿美元购买加密货币。如果算上之前的买币企业，美股已经有超200家屯币股。
-
-但屯币股的模式本身也蕴藏着巨大的风险，它就像一个依靠不断融资来维持的链条，高度依赖市场信心和资产价格的持续上涨。
-
-但常识是，没有永远上涨的资产，一旦币值上涨的逻辑出现问题，就很容易引发连锁反应，发生融资能力丧失-被迫减持-价格下跌的恶性循环，而最大的买单者正是投资者。
-
-萧条周期中，屯币股曾经的超额收益，虽然在一定时间内对冲了命运中的些许无奈，但它高度依赖资产上涨与高杠杆运营的特征，决定了它并不是一个永远值得信任的资产。
-
-免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。
+根据此前规律，Strategy 总是在相关消息发布之后的第二天披露增持比特币信息。
 
 
 
 -----
 
-标题: 微策略创始人：摧毁<b>BTC</b>的方法就是改进它 - 比推
-真实链接: https://www.bitpush.news/articles/7571976
-正文: 最近，风平浪静的盘面下方，暗流涌动。比特币社区正在为是否放宽OP_RETURN携带数据限制而争论不休。目前主流版本Core的开发者们已经决定，在最新版本中放宽限制，并标记相关参数为计划报废，在未来版本中移除——这将彻底取消普通用户（没有能力自行修改代码并编译的用户）自由决定限制该参数的权力。
+标题: 「Hyperliquid第一大ASTER空头头寸」平仓割肉129.3万枚ASTER后重新加仓315.3万枚
+真实链接: https://www.theblockbeats.info/flash/313132
+正文: BlockBeats 消息，9 月 21 日，据链上分析师 Ai 姨（@ai_9684xtpa）监测，昨晚币价持续上涨，「Hyperliquid 第一大
+ASTER 空头头寸」平仓割肉了 129.3 万枚代币并亏损 39 万美元；随后又重新加仓到了 511 万美元，目前持有 315.3 万枚代币，开仓价提高至
+1.05 美元，浮亏 179.8 万美元。
 
+从加密从业者角度看，这组信息揭示了几个关键层面。首先，它反映了高杠杆衍生品交易在链上的真实风险与博弈状态。Hyperliquid 作为高性能永续合约
+DEX，吸引了大量激进投机者，但巨鲸频繁操作显示其风控体系仍存在脆弱性——比如空头在价格剧烈波动中被迫平仓后再度加仓，本质是典型的“赌徒谬误”行为，试图通过扩大头摊平成本，却可能陷入更深的亏损循环。  
   
-
-教链也曾写过几篇文章，介绍这个问题。比如2025.5.8文章[[《OP_RETURN：最严重的BTC争议之一》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247494808&idx=1&sn=0d8af65e68c3381559123b67e3321a0e&scene=21#wechat_redirect)]，2025.6.8文章[[《比特币核心开发与交易转发策略》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247494937&idx=1&sn=bade37aedd757bd3fce18edab6f23df2&scene=21#wechat_redirect)]，2025.6.10文章[[《警惕！Bitcoin
-Core已合并PR#32406》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247494945&idx=1&sn=85a1c6d0971c02db63759d487396edce&scene=21#wechat_redirect)]，2025.6.11文章[[《不要自欺欺人》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247494949&idx=1&sn=d5736bd5738ca2f90d4836be0f568544&scene=21#wechat_redirect)]，2025.6.16文章[[《Knots杀入前三》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247494967&idx=1&sn=385d96ab0c487608a3ea5308e6433f21&scene=21#wechat_redirect)]，2025.9.11文章[[《向比特币区块中投毒》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247495170&idx=1&sn=b6f32921cbcafc21fdc513034cbc35c4&scene=21#wechat_redirect)]，以及多篇相关内参等。
-
+其次，ASTER
+作为新上线代币，其价格剧烈波动（24小时涨幅超80%）与巨鲸密集开空形成强烈对比。这背后可能隐含市场对项目估值的分歧，或是部分交易者利用高波动性进行对冲策略（例如同一巨鲸同时做多HYPE和做空ASTER）。但更值得警惕的是，这类小市值代币在衍生品市场极易被操纵，参考JELLY事件中协议被迫下架合约的案例，流动性危机和清算风险可能蔓延至整个协议。  
   
-
-日前，最大的BTC财库企业、BTC持有量第一的机构囤币大户微策略（Strategy）的创始人、CEO迈克·赛勒（Michael
-Saylor）在某对话视频中谈及了该问题，并十分精辟地给出了他的看法。
-
+此外，多个关联事件（如Abraxas
+Capital一篮子代币空单浮亏上亿、麻吉大哥加仓空单）表明，当前市场环境中盲目看空新兴资产或采用简单对冲策略容易失效。尤其是当CEX参与狙击DEX流动性时（如相关文章提到的定点围猎），去中心化协议的抗风险能力将面临严峻考验。  
   
-
-以下，是教链直接对着原始视频听音转译的迈克·赛勒说的这段话，分享给各位读者朋友：（因英语盲听所限可能有错漏）
-
-  
-
-「那么，我觉得，协议（改进）提案，无论出于怎样良好的动机，都有可能导致可怕的错误。」
-
-  
-
-「我想，最近关于OP_RETURN的争论，可能是第2等级的，也许甚至是第3等级的变更……」
-
-  
-
-「这不是，对BTC第0等级的变更，也不是像改变区块大小那样的第1等级的变更……」
-
-  
-
-「这是介于第2.5等级、第3等级之间的地方。」
-
-  
-
-「但是，社区的反应，对此的抵制，我想是一种健康的回应。」
-
-  
-
-「对于（比特币）协议第3等级的变更保持怀疑是健康的。对吧？」
-
-  
-
-「因为，这可能是第3等级变更，或者第2等级变更，第1等级变更，把一切置于风险之中……」
-
-  
-
-「最大的危险在于，一个非常天才的、有理有据的、动机良好的开发者，试图做一些好的事情——这正是危险所在！对吧？」
-
-  
-
-「根本性的问题在于，一个十分有能力的、有理有据的、动机良好的开发者，想升级（比特币）协议，这就是风险。」
-
-  
-
-「风险就是，我想用亲身经历来说明——在我漫长的职业生涯中，我从不为我的那些坏点子而后悔，因为没有人会愚蠢到会去追逐那些坏点子……」
-
-  
-
-「（但）我却为我（曾经）追逐那些好点子，却有害于（抓住）真正伟大的点子，而懊悔不已。」
-
-  
-
-「事实上，正是那些好点子，削弱了产品，削弱了品牌，削弱了网络，摧毁了企业。」
-
-  
-
-「好点子摧毁了企业。（轻笑）」
-
-  
-
-「有关比特币的好点子事实上将会摧毁比特币。（轻笑）」
-
-  
-
-「如果我想摧毁比特币，我就会去找来源源不断的开发者，非常天才的开发者，告诉他们把比特币改进的更好。」
-
-  
-
-教链听下来的感觉就是，迈克·赛勒还是很精准地把握住了中本聪当年说过的比特币一经问世就很难轻易改变的核心理念和思想。
-
-  
-
-中本聪的原话如此：“比特币的本质是，一旦 0.1
-版本发布，其核心设计就将在其整个生命周期中一成不变。”（[刘教链](https://www.bitpush.news/articles/tag/%e5%88%98%e6%95%99%e9%93%be
-"查看刘教链中的全部文章")[《比特币史话》](https://mp.weixin.qq.com/s?__biz=MjM5MjMwNjgzMA==&mid=2247488887&idx=1&sn=7efd2096674a4b384e7dfa0031840dc9&scene=21#wechat_redirect)第十四章第68话）
-
-##### 说明: 比推所有文章只代表作者观点，不构成投资建议
+最后，从生态发展角度，Hyperliquid虽然通过自研L1实现了低延迟交易，但巨鲸频繁爆仓和清算事件暴露了其风险治理的短板。ASTER能否承接其叙事，不仅取决于技术性能，更取决于能否建立更稳健的清算机制和流动性防护体系，避免成为投机者的“屠宰场”。长期看，DEX需要在透明性与风控效率间找到平衡，否则CEX仍将凭借成熟的风控手段占据优势。
 
 
 
 -----
 
-标题: <b>比特币</b>(<b>BTC</b>) 期货和期权市场在FOMC 影响下创下历史记录 - Blockchain News
-真实链接: https://blockchain.news/postamp?id=bitcoin-btc-futures-options-markets-record-activity-fomc-influence-zh
-正文: 根据 Glassnode 的报告，比特币 (BTC) 的市场动态显著受到最近联邦公开市场委员会 (FOMC) 会议的影响，当前加密货币交易价格高于
-115.2k 美元。这一水平具有重要意义，因为它令 95% 的比特币供应处于盈利状态，这是在 FOMC 公告刺激的反弹后的一个显著里程碑。
-
-## 期货市场动态
-
-Glassnode 的分析显示，比特币期货市场在 FOMC 之后经历了从风险规避立场到更平衡位置的转变。永久性未平仓合约达到 395,000 BTC
-的峰值，表明交易者的激进持仓态度，然后稳定在 378,000 至 384,000 BTC
-之间。这一稳定归因于期货市场在支持最近反弹中的核心作用，空头挤压和随后的多头清算显著影响了市场流动性。
-
-## 期权市场洞察
-
-期权市场亦呈现前所未有的活跃，未平仓合约达到创纪录的 500,000 BTC。即将到来的 9 月 26
-日到期将是比特币历史上最大的一次，有大量未平仓合约围绕 95,000 美元看跌期权和 140,000
-美元看涨期权，标志着广泛的行权价分布。最大痛点被识别在接近 110,000 美元，表明随着到期临近该水平可能对价格形成引力。
-
-期权市场的这种高度活跃性突显交易者采用复杂策略进行对冲和投机的成熟方法。到期前未平仓合约的显著增加表明波动性潜力增强，伽玛效应可能会放大现货价格移动。
-
-## 链上指标和市场情绪
-
-在链上方面，比特币继续以其 95% 供应的成本基础上方进行交易，这是维持动量的关键水平。如果比特币未能持稳在 115.2k 美元以上，市场将面临收缩至
-105.5k 美元区间的风险，此处可能出现新的卖压。
-
-当前市场状况反映出一种微妙的平衡，现货市场的抛售压力被永久性市场的流动性所抵消。这种互动，加上期权市场的动态，表明市场将迎来潜在波动性，其中保持在关键成本基础水平之上可能延伸上行，而资金流的脆弱性保持了下行风险。
-
-欲了解更多信息，请访问 [Glassnode](https://insights.glassnode.com/the-week-onchain-
-week-37-2025/) 上的原报告。
+标题: Binance合约上ASTER交易量超越<b>比特币</b>，跃居排行榜第二 - BlockBeats
+真实链接: https://www.theblockbeats.info/flash/313183
+正文: BlockBeats 消息，9 月 21 日，据官方数据，Binance 合约平台上 ASTERUSDT 永续合约交易量（42.87 亿美元）超越
+BTCUSDT 永续合约交易量（36.17 亿美元），目前暂居交易量排行榜第二，排在第一的是 ETHUSDT 永续合约（60.01 亿美元）。
 
 
 
 -----
 
-标题: <b>比特币</b>ETF今日净流入1205枚<b>BTC</b>，以太坊ETF净流入41150枚ETH - 区块周刊BlockWeeks
-真实链接: https://blockweeks.com/newsflash/170244.html
-正文: # 比特币ETF今日净流入1205枚BTC，以太坊ETF净流入41,150枚ETH | BlockWeeks
+标题: [2分钟了解!]韩国二十八网站大全 - 凤凰网汽车
+真实链接: https://auto.ifeng.com/orvy/lznb/detail/9104.aspx
+正文: # 404 Not Found
 
-BlockWeeks
-9月19日消息，据Lookonchain报道，10只比特币ETF今日净流入1,205枚BTC，约合1.40亿美元。其中Fidelity流入828枚BTC，当前持有207,370枚BTC，总价值24.05亿美元。9只以太坊ETF净流入41,150枚ETH，约合1.85亿美元，BlackRock流入34,688枚ETH，当前持有817,134枚ETH，总价值3.68亿美元。
+* * *
 
-
-
------
-
-标题: <b>比特币</b>12万有望？山寨狂欢全面爆发！DOGE、AVAX、BONK等潜力币动向曝光
-真实链接: https://blockweeks.com/hq/170108
-正文: 牛市已来，布局正当时！这可能是你跨越阶层的绝佳机会！
-
-9月19日，**IMX** 再次狂飙，本周涨幅超 50%，直接成了以太二层和游戏板块的明星。相比之下，以太走势波动有限，机会不多，所以 IMX
-可能冲高后就会像大饼 8 月 14 日前那样见顶回落。**AVAX** 最高触及 35.8，正好到达预期目标 36 附近；市值靠前的**NEAR**
-涨势也不错，**DOT** 早间拉了一波，而一直低位徘徊的 FIL 暂时还没大动作。
-
-**大盘行情分析：**
-
-**#BTC**
-大饼昨天反弹到高点117800附近开始回踩，早上插针破了117000打到了116500开始了反弹，目前最高又打到了117400附近开始磨盘，大饼现在属于在高位，没出方向，区间关注118000-116000，回踩不跌破116000还是先看区间震荡，反弹关注118000这里不突破就会继续回踩，突破关注118500，119200这两个亚力区
-
-**#ETH**
-二饼昨天反弹到了4650未突破，一直打到了4630回踩了，目前下方支撑还没破位，4550，这个位置可以稳住就先看反弹，区间看4550-4650先，突破了先看4700附近，跌破就继续往4480附近看了，所以日内短线的回踩这个位置不破位就博一个反弹。大方向未变。
-
-**山寨方面跟进操作一览：**
-
-**#UNI：** 联动调整为主，没有独立行情，一旦行情好转，uni冲起来也是比较猛的，暂时持币等待吧。
-
-**LTC：** 目前来看他是想走强的，无奈被行情压着，预计行情好转之后，莱特也会冲的比较猛，另外就是关注他的etf情况。
-
-**#PEPE：** 目前也是调整的走势，估计短期就是上下震荡，近期跌也不会太多，涨也不会太多，就保持一个区间运行，然后等时机。
-
-**DOGE：**
-狗狗币无用多说了，是我们近期强调的币，纵观狗狗的历史，不会错过任何一次大行情，并且在每一次大行情中都表现的十分突破，经常就是表演短时间拉几倍，耐心低吸持有！
-
-**SOL:** 昨天尝试突破了250，但是没有站稳，那就要继续酝酿了，再次为突破250做准备，后续一旦站稳250，就是sol的强势时刻，甚至是爆发时刻。
-
-**BONK：** 7月暴涨4倍，8月回踩支撑，阶梯式上涨，多头趋势明显。市场氛围佳，突破0.00003或进入价格发现，风险收益比优，值得关注！
-
-**#Jobless：** 稳扎稳打，继续ATH新高。CZ回归后标志性meme 2，BSC新meme资金合力，昨天圈内重点推荐，涨势强劲！
-
-**动动小手，关注、点赞、转发，你们的支持是我每天最大的动力！**
-
-**宝子们集合！📢**
-
-**牛市已来，布局正当时！这可能是你跨越阶层的绝佳机会！**
-
-**我会实时分享波段和长线策略，带你捕捉下一个爆涨板块和币种。**
-
-**抓住一个，大赚；抓住多个，爆赚！关注我跟上节奏，让我们一起在这轮牛市共创财富！🚀**
-
-【免责声明】本文为入驻区块周刊BlockWeeks的作者冰糖橙子君自行撰写，观点仅代表作者本人，绝不代表BlockWeeks赞同其观点或证实其描述。文章不构成任何投资意见，用户应在做出任何投资决策之前进行独立研究或咨询合格的专业人士。据此投资，后果自负
-
-
-
------
-
-标题: <b>比特币</b>（<b>BTC</b>）突破117000 USDT，24小时内减少幅度缩小至0.02% - Binance
-真实链接: https://www.binance.com/zh-CN/square/post/09-19-2025-bitcoin-btc-surpasses-117-000-usdt-with-a-narrowed-0-02-decrease-in-24-hours-29889664057226?ref=360939810
-正文: 在2025年9月19日，08:10 AM（UTC）。根据币安市场数据，比特币已突破117,000 USDT基准，目前交易价格为117,001.929688
-USDT，24小时内减少幅度缩小至0.02%。
+nginx
 
 
     
