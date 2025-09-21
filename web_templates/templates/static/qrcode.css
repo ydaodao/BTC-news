@@ -1,0 +1,106 @@
+/* 二维码页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.qrcode-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+.qrcode-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.refresh-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.refresh-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.refresh-btn:active {
+    transform: translateY(0);
+}
+
+.info {
+    color: #666;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info p {
+    margin: 8px 0;
+}
+
+.timestamp {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#error-msg {
+    color: #dc3545;
+    padding: 20px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .refresh-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+}

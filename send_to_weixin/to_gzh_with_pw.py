@@ -435,7 +435,52 @@ def operate_element(page, css_selector, operation='click', text_content=None, ti
                     return img_src
             else:
                 return img_src
+
+        elif operation == 'get_image_screenshot':
+            # 检查是否是img元素
+            tag_name = element.evaluate("el => el.tagName.toLowerCase()")
+            if tag_name != 'img':
+                print(f"元素不是img标签，而是: {tag_name}")
+                return None
+            
+            # 如果指定了下载路径，则截图保存图片元素
+            if download_path:
+                try:
+                    import os
+                    
+                    # 确保下载目录存在
+                    os.makedirs(os.path.dirname(download_path), exist_ok=True)
+                    
+                    # 等待图片加载完成
+                    element.wait_for_element_state("stable")
+                    
+                    # 截图保存图片元素（获取浏览器中实际显示的图片）
+                    element.screenshot(path=download_path)
+                    
+                    print(f"图片已截图保存到: {download_path}")
+                    return download_path
+                    
+                except Exception as e:
+                    print(f"截图保存图片失败: {e}")
+                    # 如果截图失败，回退到获取src属性
+                    img_src = element.get_attribute('src')
+                    if img_src:
+                        img_src = convert_relative_url_to_absolute(page, img_src)
+                        print(f"回退到图片URL: {img_src}")
+                        return img_src
+                    return None
+            else:
+                # 如果没有指定下载路径，返回图片URL
+                img_src = element.get_attribute('src')
+                if not img_src:
+                    print("图片元素没有src属性")
+                    return None
                 
+                # 转换为绝对URL
+                img_src = convert_relative_url_to_absolute(page, img_src)
+                print(f"图片URL: {img_src}")
+                return img_src
+
         elif operation == 'hover':
             element.hover()
             print(f"已悬停在元素: {css_selector}")
@@ -487,6 +532,8 @@ def keep_gzh_online():
 
             # 公众号页面 或者 微信公众平台页面
             page = active_page(context, "公众号", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
+            if not page:
+                page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
             
             if page.title() == "公众号":
                 # 内容管理菜单
@@ -495,22 +542,39 @@ def keep_gzh_online():
                     if operate_element(page, '#js_level2_title > li > ul > li:nth-child(1) > a', 'click'):
                         return True, "保持公众号在线成功", None
             elif page.title() == "微信公众平台":
-                # 如果二维码过期了，二维码刷新按钮
-                refresh_qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > div.login__type__container__scan__info > div > div > div > p:nth-child(1)'
-                if find_element_by_css(page, refresh_qrcode_selector):
-                    print(f"找到刷新二维码按钮: {refresh_qrcode_selector}")
-                    operate_element(page, refresh_qrcode_selector, 'click')
+                # # 如果二维码过期了，二维码刷新按钮
+                # refresh_qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > div.login__type__container__scan__info > div > div > div > p:nth-child(1)'
+                # if find_element_by_css(page, refresh_qrcode_selector):
+                #     print(f"找到刷新二维码按钮: {refresh_qrcode_selector}")
+                #     operate_element(page, refresh_qrcode_selector, 'click')
                 # 下载二维码图片
-                qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
-                qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
-                print(f"二维码下载路径: {qrcode_download_url}")
-                operate_element(page, qrcode_selector, 'get_image', download_path=qrcode_download_url)
-                return False, "需扫描二维码登录", qrcode_download_url
+                qrcode_download_url, qr_img_src = download_qrcode_image(page)
+                return False, "已获取登录二维码", qrcode_download_url
                     
             else:
                 return False, "没有找到公众号页面！", None
     except Exception as e:
         return False, f"保持公众号在线任务失败！错误信息：{str(e)}", None
+
+def download_qrcode_image(page=None):
+    """下载登录二维码图片"""
+    def get_qrcode_image(page):
+        if not page:
+            return None, None
+        qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
+        qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
+        print(f"二维码下载路径: {qrcode_download_url}")
+        qr_img_src = operate_element(page, qrcode_selector, 'get_image_screenshot', download_path=qrcode_download_url)
+        return qrcode_download_url, qr_img_src
+
+    if page:
+        return get_qrcode_image(page)
+    else:
+        with sync_playwright() as p:
+            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+            context = browser.contexts[0]
+            page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
+            return get_qrcode_image(page)
 
 
 def send_feishu_docs_to_wxgzh(target_page_title=None, feishu_docs_url=None):
@@ -596,4 +660,4 @@ if __name__ == "__main__":
     # print(preview_page_title)
     # print(preview_page_url)
 
-    print(keep_gzh_online())
+    print(download_qrcode_image())

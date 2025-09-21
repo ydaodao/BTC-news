@@ -7,11 +7,16 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime
 import logging
 from functools import wraps
-from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh
+from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh, download_qrcode_image
 from main import main
+from web_templates.template_manager import template_manager
 
-# 创建Flask应用
-app = Flask(__name__)
+# 配置静态文件目录
+current_dir = os.path.dirname(os.path.abspath(__file__))
+static_folder = os.path.join(current_dir, 'web_templates', 'templates', 'static')
+
+# 创建Flask应用，配置静态文件
+app = Flask(__name__, static_folder=static_folder, static_url_path='/static')
 CORS(app)  # 允许跨域请求
 
 # 配置日志
@@ -108,6 +113,46 @@ def send_to_wx_gzh():
         }), 400
     except Exception as e:
         logger.error(f"错误: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+# 公众号登录二维码页面 - 返回HTML页面显示二维码
+@app.route('/qrcode', methods=['GET'])
+def qrcode_page():
+    try:
+        # 使用模板管理器渲染页面
+        html_content = template_manager.get_qrcode_page()
+        return html_content
+    except Exception as e:
+        logger.error(f"渲染二维码页面失败: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': '页面加载失败'
+        }), 500
+
+# 返回公众号登录二维码图片的API接口
+@app.route('/api/qrcode', methods=['GET'])
+def get_qrcode_image():
+    try:
+        # 构建二维码图片路径
+        # current_dir = os.path.dirname(os.path.abspath(__file__))
+        # qrcode_path = os.path.join(current_dir, 'send_to_weixin', 'qrcode.jpg')
+        qrcode_path, qrcode_url = download_qrcode_image()
+        
+        # 检查文件是否存在
+        if not os.path.exists(qrcode_path):
+            return jsonify({
+                'success': False,
+                'error': '二维码图片不存在'
+            }), 404
+        
+        # 返回图片文件
+        return send_file(qrcode_path, mimetype='image/jpeg')
+        
+    except Exception as e:
+        logger.error(f"获取二维码图片失败: {str(e)}")
         return jsonify({
             'success': False,
             'error': str(e)

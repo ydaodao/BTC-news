@@ -127,7 +127,7 @@ def push_text_to_robot(text_content):
     }
     send_to_robot(message)
 
-def push_image_to_robot(card_title, image_path):
+def push_wxqrcode_to_robot(card_title, image_path):
     api = FeishuRobotAPI()
     # 图片
     message = {
@@ -146,48 +146,32 @@ def push_image_to_robot(card_title, image_path):
                 "padding": "12px 12px 20px 12px",
                 "elements": [
                     {
-                        "tag": "img",
-                        "img_key": api.upload_image_for_message(image_path),
-                        "preview": True,
-                        "transparent": False,
-                        "scale_type": "crop_center",
-                        # "size": "16:5",
-                        "alt": {
-                            "tag": "plain_text",
-                            "content": ""
-                        },
-                        "corner_radius": "8px"
-                    },
-                    {
-                        "tag": "hr"
-                    },
-                    {
                         "tag": "column_set",
+                        "flex_mode": "stretch",
                         "horizontal_spacing": "8px",
                         "horizontal_align": "left",
                         "columns": [
                             {
                                 "tag": "column",
-                                "width": "weighted",
+                                "width": "140px",
                                 "elements": [
                                     {
-                                        "tag": "button",
-                                        "text": {
+                                        "tag": "img",
+                                        "img_key": api.upload_image_for_message(image_path),
+                                        "preview": True,
+                                        "transparent": False,
+                                        "scale_type": "crop_center",
+                                        # "size": "16:5",
+                                        "alt": {
                                             "tag": "plain_text",
-                                            "content": "待定"
+                                            "content": ""
                                         },
-                                        "type": "primary",
-                                        "width": "fill",
-                                        "size": "medium",
-                                        "margin": "0px 0px 0px 0px"
+                                        "corner_radius": "8px"
                                     }
                                 ],
-                                "direction": "horizontal",
-                                "horizontal_spacing": "8px",
                                 "vertical_spacing": "8px",
                                 "horizontal_align": "left",
-                                "vertical_align": "top",
-                                "weight": 1
+                                "vertical_align": "top"
                             },
                             {
                                 "tag": "column",
@@ -197,13 +181,27 @@ def push_image_to_robot(card_title, image_path):
                                         "tag": "button",
                                         "text": {
                                             "tag": "plain_text",
-                                            "content": "待定"
+                                            "content": "请求登录二维码",
+                                            "i18n_content": {
+                                                "en_us": "View Tutorial"
+                                            }
                                         },
                                         "type": "default",
-                                        "width": "fill",
-                                        "size": "medium"
+                                        "width": "default",
+                                        "size": "medium",
+                                        "behaviors": [
+                                            {
+                                                "type": "open_url",
+                                                "default_url": "http://39.107.72.186/qrcode",
+                                                "pc_url": "",
+                                                "ios_url": "",
+                                                "android_url": ""
+                                            }
+                                        ]
                                     }
                                 ],
+                                "direction": "horizontal",
+                                "horizontal_spacing": "8px",
                                 "vertical_spacing": "8px",
                                 "horizontal_align": "left",
                                 "vertical_align": "top",

@@ -12,7 +12,7 @@ from croniter import croniter
 import threading
 # 添加项目路径
 sys.path.append(os.path.dirname(__file__))
-from utils.feishu_robot_utils import push_text_to_robot, push_image_to_robot
+from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
 
 class CronScheduler:
     """支持 cron 语法的定时任务调度器"""
@@ -135,7 +135,7 @@ def keep_gzh_online_task():
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
     else:
         if qrcode_download_url:
-            push_image_to_robot("保持公众号在线失败！", qrcode_download_url)
+            push_wxqrcode_to_robot("需重新登录公众号！", qrcode_download_url)
         else:
             push_text_to_robot(msg)
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
@@ -217,7 +217,7 @@ def start_cron_scheduler():
     cron_scheduler.start()
 
 if __name__ == "__main__":
-    start_cron_scheduler()     # 使用新的 cron 调度器
+    # start_cron_scheduler()     # 使用新的 cron 调度器
     # powershell_utils.run_powershell_command("Get-Process")
-
+    keep_gzh_online_task()
     # run_main_task('weekly_news')
