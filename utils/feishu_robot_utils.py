@@ -96,7 +96,7 @@ def send_to_robot(message):
 
 # ------------------------- 以上为基础方法 ----------------------------
 
-async def push_richtext_to_feishu(card_title, text_content, text_url):
+def push_richtext_to_robot(card_title, text_content, text_url):
     # 富文本
     message = {
         "msg_type": "post",
@@ -117,7 +117,7 @@ async def push_richtext_to_feishu(card_title, text_content, text_url):
     }
     send_to_robot(message)
 
-def push_text_to_feishu(text_content):
+def push_text_to_robot(text_content):
     # 文本
     message = {
         "msg_type": "text",
@@ -127,7 +127,7 @@ def push_text_to_feishu(text_content):
     }
     send_to_robot(message)
 
-def push_image_to_feishu(card_title, image_path):
+def push_image_to_robot(card_title, image_path):
     api = FeishuRobotAPI()
     # 图片
     message = {

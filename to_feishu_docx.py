@@ -3,7 +3,7 @@ import os
 import requests
 import webbrowser
 from dotenv import load_dotenv
-from to_feishu_robot import push_richtext_to_feishu
+from utils.feishu_robot_utils import push_richtext_to_robot
 from utils.image_utils import save_text_image, merge_images
 from utils.feishu_docs_utils import FeishuDocumentAPI
 
@@ -608,7 +608,7 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
             return
     
     docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
-    await push_richtext_to_feishu("加密周报", title, docs_url)
+    push_richtext_to_robot("加密周报", title, docs_url)
 
     lark.logger.info("Markdown content inserted into document successfully!")
     lark.logger.info(f"Document URL: {docs_url}")

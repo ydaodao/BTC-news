@@ -12,7 +12,7 @@ from croniter import croniter
 import threading
 # 添加项目路径
 sys.path.append(os.path.dirname(__file__))
-from to_feishu_robot import push_text_to_feishu
+from utils.feishu_robot_utils import push_text_to_robot, push_image_to_robot
 
 class CronScheduler:
     """支持 cron 语法的定时任务调度器"""
@@ -55,7 +55,7 @@ class CronScheduler:
             
         except Exception as e:
             print(f"添加 cron 任务失败: {e}")
-            push_text_to_feishu(f"添加 cron 任务失败: {e}")
+            push_text_to_robot(f"添加 cron 任务失败: {e}")
     
     def remove_job(self, job_name):
         """移除指定名称的任务"""
@@ -96,7 +96,7 @@ class CronScheduler:
                 except Exception as e:
                     error_msg = f"执行 cron 任务 {job['job_name']} 失败: {e}"
                     print(error_msg)
-                    push_text_to_feishu(error_msg)
+                    push_text_to_robot(error_msg)
                 
                 # 计算下次执行时间
                 job['next_run'] = job['cron_iter'].get_next(datetime)
@@ -116,7 +116,7 @@ class CronScheduler:
         except Exception as e:
             error_msg = f"Cron 调度器运行出错: {e}"
             print(error_msg)
-            push_text_to_feishu(error_msg)
+            push_text_to_robot(error_msg)
     
     def stop(self):
         """停止调度器"""
@@ -134,7 +134,10 @@ def keep_gzh_online_task():
     if success:
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
     else:
-        push_text_to_feishu(msg)
+        if qrcode_download_url:
+            push_image_to_robot("保持公众号在线失败！", qrcode_download_url)
+        else:
+            push_text_to_robot(msg)
         print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}")
 
 def screenshot_task():
@@ -146,11 +149,11 @@ def screenshot_task():
         screenshot = pyautogui.screenshot()
         print(f"截图成功！尺寸：{screenshot.size}")
         if not screenshot:
-            push_text_to_feishu("截图失败！")
+            push_text_to_robot("截图失败！")
     except Exception as e:
         print(f"截图失败：{e}")
         print(f"错误类型：{type(e).__name__}")
-        push_text_to_feishu(f"截图失败！错误信息：{str(e)}")
+        push_text_to_robot(f"截图失败！错误信息：{str(e)}")
 
 def check_cdp_connection():
     """检查CDP连接状态"""
@@ -163,7 +166,7 @@ def check_cdp_connection():
     except Exception as e:
         print(f"CDP连接检查失败：{e}")
         print(f"错误类型：{type(e).__name__}")
-        push_text_to_feishu(f"CDP连接失败！错误信息：{str(e)}")
+        push_text_to_robot(f"CDP连接失败！错误信息：{str(e)}")
 
 def run_main_task(task_name):
     """执行主定时任务"""
@@ -177,13 +180,13 @@ def run_main_task(task_name):
             if result['success']:
                 print("git push 成功")
             else:
-                push_text_to_feishu(f"git push 失败！错误信息：{result['stderr']}")
+                push_text_to_robot(f"git push 失败！错误信息：{result['stderr']}")
                 print(f"git push 失败！错误信息：{result['stderr']}")
         else:
-            push_text_to_feishu(f"git commit 失败！错误信息：{result['stderr']}")
+            push_text_to_robot(f"git commit 失败！错误信息：{result['stderr']}")
             print(f"git commit 失败！错误信息：{result['stderr']}")
     else:
-        push_text_to_feishu(f"git pull 失败！错误信息：{result['stderr']}")
+        push_text_to_robot(f"git pull 失败！错误信息：{result['stderr']}")
         print(f"git pull 失败！错误信息：{result['stderr']}")
 
 def setup_cron_jobs():

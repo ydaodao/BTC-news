@@ -496,16 +496,16 @@ def keep_gzh_online():
                         return True, "保持公众号在线成功", None
             elif page.title() == "微信公众平台":
                 # 如果二维码过期了，二维码刷新按钮
-                    refresh_qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > div.login__type__container__scan__info > div > div > div > p:nth-child(1)'
-                    if find_element_by_css(page, refresh_qrcode_selector):
-                        print(f"找到刷新二维码按钮: {refresh_qrcode_selector}")
-                        operate_element(page, refresh_qrcode_selector, 'click')
-                    # 下载二维码图片
-                    qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
-                    qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
-                    print(f"二维码下载路径: {qrcode_download_url}")
-                    operate_element(page, qrcode_selector, 'get_image', download_path=qrcode_download_url)
-                    return False, "需扫描二维码登录", qrcode_download_url
+                refresh_qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > div.login__type__container__scan__info > div > div > div > p:nth-child(1)'
+                if find_element_by_css(page, refresh_qrcode_selector):
+                    print(f"找到刷新二维码按钮: {refresh_qrcode_selector}")
+                    operate_element(page, refresh_qrcode_selector, 'click')
+                # 下载二维码图片
+                qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
+                qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
+                print(f"二维码下载路径: {qrcode_download_url}")
+                operate_element(page, qrcode_selector, 'get_image', download_path=qrcode_download_url)
+                return False, "需扫描二维码登录", qrcode_download_url
                     
             else:
                 return False, "没有找到公众号页面！", None
