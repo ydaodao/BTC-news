@@ -522,6 +522,9 @@ def operate_element(page, css_selector, operation='click', text_content=None, ti
 
 
 # --------------  操作页面元素 ↑↑↑ -----------------
+content_management_selector = '#js_index_menu > ul > li.weui-desktop-menu__item.weui-desktop-menu_create.menu-fold > span'
+draft_selector = '#js_level2_title > li > ul > li:nth-child(1) > a'
+
 
 def keep_gzh_online():
     """保持公众号在线"""
@@ -531,15 +534,15 @@ def keep_gzh_online():
             context = browser.contexts[0]
 
             # 公众号页面 或者 微信公众平台页面
-            page = active_page(context, "公众号", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
+            page = active_page(context, "公众号", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
             if not page:
-                page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
+                page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
             
             if page.title() == "公众号":
                 # 内容管理菜单
-                if operate_element(page, '#js_index_menu > ul > li.weui-desktop-menu__item.weui-desktop-menu_create.menu-fold > span', 'click'):
+                if operate_element(page, content_management_selector):
                     # 草稿箱
-                    if operate_element(page, '#js_level2_title > li > ul > li:nth-child(1) > a', 'click'):
+                    if operate_element(page, draft_selector):
                         return True, "保持公众号在线成功", None
             elif page.title() == "微信公众平台":
                 # # 如果二维码过期了，二维码刷新按钮
@@ -561,6 +564,7 @@ def download_qrcode_image(page=None):
     def get_qrcode_image(page):
         if not page:
             return None, None
+
         qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
         qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
         print(f"二维码下载路径: {qrcode_download_url}")
@@ -573,7 +577,7 @@ def download_qrcode_image(page=None):
         with sync_playwright() as p:
             browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
             context = browser.contexts[0]
-            page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", refresh=True, new_url="https://mp.weixin.qq.com/")
+            page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
             return get_qrcode_image(page)
 
 
