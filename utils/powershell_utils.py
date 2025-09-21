@@ -141,6 +141,7 @@ def git_commit(message, repo_path=None, add_all=True):
         add_result = run_powershell_command("git add -A", cwd=repo_path)
         results['add'] = add_result
         if not add_result['success']:
+            results['success'] = add_result['success']
             return results
     
     # 处理提交信息中的引号，避免命令行解析错误
@@ -150,6 +151,7 @@ def git_commit(message, repo_path=None, add_all=True):
     commit_result = run_powershell_command(commit_command, cwd=repo_path)
     results['commit'] = commit_result
     
+    results['success'] = commit_result['success']
     return results
 
 def git_push(repo_path=None, remote='origin', branch='main'):
