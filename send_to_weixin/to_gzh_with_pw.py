@@ -7,21 +7,16 @@ from dotenv import load_dotenv, find_dotenv
 try:
     # 当作为模块被导入时
     from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-    from .play_write_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom
+    from .play_write_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
 except ImportError:
     # 当直接运行时
     from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-    from play_write_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom
+    from play_write_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
     pass
-
 
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-PAGELOAD_TIMEOUT = 30000
-if LOCAL_DEV:
-    print("本地开发环境")
-    PAGELOAD_TIMEOUT = 10000
 
 
 

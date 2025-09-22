@@ -484,7 +484,7 @@ def push_feishu_docs_2_wxgzh():
 def delete_exit_draft(feishu_docs_page=None):
     time.sleep(5)
     feishu_docs_page.title() # 通过一个固定不变的页面来更新context内容
-    if hover_icon_with_prefix("wx_content_draft_btc_title"):
+    if hover_icon_with_prefix("wx_content_draft_btc_title", max_try_times=3):
         if click_icon_with_prefix("wx_content_delete"):
             if click_icon_with_prefix("wx_edit_common_deletebtn"):
                 print("删除了已有的草稿")
