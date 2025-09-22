@@ -508,7 +508,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         
         # 发送请求：将飞书文档推送到公众号
         try:
-            print(f"发送请求{ALI_WEBSERVICE_URL}：将飞书文档推送到公众号，标题：{final_title}，链接：{docs_url}")
+            print(f"发送请求{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh：将飞书文档推送到公众号。标题：{final_title}，链接：{docs_url}")
             
             # 创建session并配置重试机制
             session = requests.Session()
