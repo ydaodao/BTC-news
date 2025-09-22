@@ -78,48 +78,21 @@ def text_to_image(text, width=800, height=600, font_size=24, font_color=(0, 0, 0
             if font_path and os.path.exists(font_path):
                 return ImageFont.truetype(font_path, size)
             else:
-                # 尝试使用系统默认字体
+                # 使用Windows系统字体
                 try:
-                    import platform
+                    if bold:
+                        candidate_font_path = "C:/Windows/Fonts/msyhbd.ttc"  # 微软雅黑粗体
+                    else:
+                        candidate_font_path = "C:/Windows/Fonts/msyh.ttc"    # 微软雅黑
                     
-                    system = platform.system()
-                    
-                    if system == "Windows":
-                        # Windows字体路径
-                        if bold:
-                            return ImageFont.truetype("C:/Windows/Fonts/msyhbd.ttc", size)  # 微软雅黑粗体
-                        else:
-                            return ImageFont.truetype("C:/Windows/Fonts/msyh.ttc", size)
-                    elif system == "Linux":
-                        # Linux (Ubuntu)字体路径
-                        font_paths = []
-                        if bold:
-                            font_paths = [
-                                "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-                                "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
-                                "/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf"
-                            ]
-                        else:
-                            font_paths = [
-                                "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-                                "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-                                "/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf"
-                            ]
-                        
-                        for font_path in font_paths:
-                            if os.path.exists(font_path):
-                                return ImageFont.truetype(font_path, size)
-                    
-                    # 如果没有找到合适的字体，使用默认字体
-                    return ImageFont.load_default()
-                except:
-                    try:
-                        # 备用字体
-                        font_name = "arialbd.ttf" if bold else "arial.ttf"
-                        return ImageFont.truetype(font_name, size)
-                    except:
-                        # 使用PIL默认字体
+                    if os.path.exists(candidate_font_path):
+                        return ImageFont.truetype(candidate_font_path, size)
+                    else:
+                        # 如果指定字体不存在，使用默认字体
                         return ImageFont.load_default()
+                except:
+                    # 使用PIL默认字体
+                    return ImageFont.load_default()
         except Exception as e:
             print(f"字体加载失败，使用默认字体: {e}")
             return ImageFont.load_default()
