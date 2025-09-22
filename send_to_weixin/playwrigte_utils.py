@@ -510,3 +510,9 @@ def operate_element(page, css_selector, operation='click', text_content=None, ti
         return None
 
 # --------------  操作页面元素 ↑↑↑ -----------------
+
+if __name__ == '__main__':
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+        context = browser.contexts[0]
+        page = active_page(context, "公众号", None, refresh=False, new_url=None)
