@@ -243,7 +243,7 @@ class FeishuDocumentAPI:
         print(f"图片上传到块成功，file_token: {file_token}")
         
         return file_token
-    
+
     def insert_image_block_to_document(self, document_id, image_path, insert_position=-1, parent_block_id=None):
         """
         将图片插入到文档中作为图片块（按照飞书官方三步流程）
@@ -320,6 +320,12 @@ class FeishuDocumentAPI:
         print(f"图片插入完成，block_id: {image_block_id}")
         return image_block_id
     
+    def generate_xxx_block():
+        print(111)
+
+    def insert_blocks_to_document(self, document_id, blocks):
+        print(222)
+
     def get_all_block_ids(self, document_id, filter_block_type=None, page_size=500):
         """获取文档的所有 block_id
         

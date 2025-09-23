@@ -260,7 +260,7 @@ async def fetch_news_content(start_date: str, end_date: str):
     
     return True
 
-async def push_interactive_to_feishu(content=None, title=None, summary=None, daily_end_md=None, docs_url=None, wx_preview_page_url=None):
+async def push_daily_news_to_feishu(content=None, title=None, summary=None, daily_end_md=None, docs_url=None, wx_preview_page_url=None):
     """
     直接推送内容到飞书机器人（不依赖pushplus）
     """
@@ -441,7 +441,7 @@ async def main(mode="all"):
         news_content = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
         # 2. 生成标题摘要
         # 从内容中提取标题和主体内容
-        title, summary= generate_title_and_summary_and_content(news_content)
+        title, summary = generate_title_and_summary_and_content(news_content)
         if title:
             # 3. 生成飞书文档，生成公众号链接
             from to_feishu_docx import write_to_daily_docx
@@ -449,7 +449,7 @@ async def main(mode="all"):
             if preview_page_url:
                 # 4. 推送消息（自动根据环境变量选择推送到微信或飞书）
                 # await push_to_wechat(summary)
-                await push_interactive_to_feishu(news_content, title, summary, daily_end_md, docs_url, preview_page_url)
+                await push_daily_news_to_feishu(news_content, title, summary, daily_end_md, docs_url, preview_page_url)
         else:
             print("标题为空，不生成文档")
     
