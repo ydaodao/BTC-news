@@ -1,12 +1,78 @@
 import os
 import asyncio
+import json
 import requests
 from requests_toolbelt import MultipartEncoder
+from urllib.parse import quote, quote_plus, urlencode  # 添加URL编码支持
 # 加载环境变量
 from dotenv import load_dotenv
 load_dotenv()
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
+
+def url_encode_parameter(param_value, encoding='utf-8'):
+    """
+    对URL参数进行编码的通用方法
+    
+    Args:
+        param_value: 需要编码的参数值（字符串或数字）
+        encoding: 编码格式，默认utf-8
+        
+    Returns:
+        str: 编码后的参数字符串
+    """
+    if param_value is None:
+        return ''
+    
+    # 转换为字符串
+    param_str = str(param_value)
+    
+    # 使用quote_plus进行编码，空格会被编码为+
+    encoded = quote_plus(param_str, encoding=encoding)
+    
+    return encoded
+
+def build_url_with_params(base_url, params_dict=None, **kwargs):
+    """
+    构建带参数的URL，自动对参数进行编码
+    
+    Args:
+        base_url: 基础URL
+        params_dict: 参数字典
+        **kwargs: 额外的参数
+        
+    Returns:
+        str: 完整的URL字符串
+    """
+    if not base_url:
+        return ''
+    
+    # 合并参数
+    all_params = {}
+    if params_dict:
+        all_params.update(params_dict)
+    if kwargs:
+        all_params.update(kwargs)
+    
+    # 如果没有参数，返回基础URL
+    if not all_params:
+        return base_url
+    
+    # 构建查询字符串
+    query_parts = []
+    for key, value in all_params.items():
+        if value is not None:  # 跳过None值
+            encoded_key = url_encode_parameter(key)
+            encoded_value = url_encode_parameter(value)
+            query_parts.append(f"{encoded_key}={encoded_value}")
+    
+    query_string = '&'.join(query_parts)
+    
+    # 组合URL
+    separator = '&' if '?' in base_url else '?'
+    full_url = f"{base_url}{separator}{query_string}"
+    
+    return full_url
 
 class FeishuRobotAPI:
     def __init__(self, app_id=None, app_secret=None):
@@ -97,27 +163,6 @@ def send_to_robot(message):
         print(f"消息直接推送到飞书失败：{e}")
 
 # ------------------------- 以上为基础方法 ----------------------------
-
-def push_richtext_to_robot(card_title, text_content, text_url):
-    # 富文本
-    message = {
-        "msg_type": "post",
-        "content": {
-            "post": {
-                "zh_cn": {
-                    "title": card_title,
-                    "content": [
-                        [{
-                            "tag": "a",
-                            "text": text_content,
-                            "href": text_url
-                        }]
-                    ]
-                }
-            }
-        }
-    }
-    send_to_robot(message)
 
 def push_text_to_robot(text_content):
     # 文本
@@ -230,9 +275,55 @@ def push_wxqrcode_to_robot(card_title, image_path):
     }
     send_to_robot(message)
 
+def push_origin_weekly_news_to_robot(card_title, docs_title, docs_url):
+    # 构建推送终版到公众号的URL
+    push_url = build_url_with_params(
+        f"{ALI_WEBSERVICE_URL}/api/push_final_weekly_news_and_push_robot",
+        feishu_docx_url=docs_url
+    )
+    
+    # 推送周报到机器人
+    message = {
+        "msg_type": "post",
+        "content": {
+            "post": {
+                "zh_cn": {
+                    "title": card_title,
+                    "content": [
+                        [{
+                            "tag": "a",
+                            "text": docs_title,
+                            "href": docs_url
+                        },{
+                            "tag": "a",
+                            "text": "-> 推送终版到公众号",
+                            "href": push_url
+                        }]
+                    ]
+                }
+            }
+        }
+    }
+    send_to_robot(message)
+
+def push_final_weekly_news_to_robot(docs_url, wx_preview_page_url):
+    # 读取飞书消息模板
+    template_path = os.path.join(os.path.dirname(__file__), '..', 'send_to_weixin', 'templates', 'final_weekly_news_template.json')
+    with open(template_path, 'r', encoding='utf-8') as f:
+        template_content = f.read()
+    
+    # 替换模板中的占位符
+    data_str = template_content.replace('{title}', '周报推送到公众号成功！') \
+                              .replace('{docs_url}', docs_url or '') \
+                              .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！')
+
+    data = json.loads(data_str)
+    send_to_robot(data)
+
 if __name__ == "__main__":
     # asyncio.run(push_richtext_to_feishu("这是一条测试消息"))
-    # api = FeishuRobotAPI()
+    api = FeishuRobotAPI()
+    push_origin_weekly_news_to_robot('加密周报', '加密日报(09.22)：比特币盘整与机构布局凸显长期趋势', 'https://bj058omdwg.feishu.cn/docx/JN9od2Pt8okjF4x0cKscbNT9nWe')
     # image_key = api.upload_image_for_message('D:/Study2/BTC-news/send_to_weixin/qrcode.jpg')
     # print(image_key)
-    push_image_to_feishu("测试图片", 'D:/Study2/BTC-news/send_to_weixin/qrcode.jpg')
+    # push_image_to_feishu("测试图片", 'D:/Study2/BTC-news/send_to_weixin/qrcode.jpg')

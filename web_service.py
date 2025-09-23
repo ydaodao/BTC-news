@@ -3,6 +3,8 @@ from flask_cors import CORS
 import json
 import os
 import asyncio
+import time
+import threading
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 import logging
@@ -10,6 +12,11 @@ from functools import wraps
 from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh, download_qrcode_image
 from main import main
 from web_templates.template_manager import template_manager
+# 加载环境变量
+from dotenv import load_dotenv
+load_dotenv()
+LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
+ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
 
 # 配置静态文件目录
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -20,8 +27,8 @@ app = Flask(__name__, static_folder=static_folder, static_url_path='/static')
 CORS(app)  # 允许跨域请求
 
 # 配置日志
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger('web_service')
 
 # 错误处理
 @app.errorhandler(404)
@@ -75,8 +82,8 @@ def start_main():
         }), 500
 
 # 将飞书文档发送到公众号
-@app.route('/api/send_to_wx_gzh', methods=['POST'])
-def send_to_wx_gzh():
+@app.route('/api/push_daily_news', methods=['POST'])
+def push_daily_news():
     try:
         # 获取JSON数据
         data = request.get_json()
@@ -91,7 +98,6 @@ def send_to_wx_gzh():
         if feishu_docx_url and feishu_docx_title:
             # 在当前的浏览器中打开这个链接
             preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_title, feishu_docx_url)
-            # preview_page_title, preview_page_url =  '百度', 'https://www.baidu.com/'
             if preview_page_url:
                 data = {
                     'preview_page_title': preview_page_title,
@@ -117,6 +123,40 @@ def send_to_wx_gzh():
             'success': False,
             'error': str(e)
         }), 500
+
+@app.route('/api/push_final_weekly_news_and_push_robot', methods=['GET'])
+def push_final_weekly_news_and_push_robot():
+    feishu_docx_url = request.args.get('feishu_docx_url', '')
+    # 定义后台推送函数
+    def background_push(feishu_docx_url):
+        try:
+            if LOCAL_DEV:
+                preview_page_title = '加密货币周报（9.7-9.21）：全球监管推进与机构持续加码'
+                preview_page_url = 'https://mp.weixin.qq.com/s/1D6SeMRtDDTkOBW2jsldsg'
+                time.sleep(10)
+            else:
+                preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(None, feishu_docx_url)
+            
+            if preview_page_url:
+                # 推送消息到飞书机器人
+                from utils.feishu_robot_utils import push_final_weekly_news_to_robot
+                push_final_weekly_news_to_robot(feishu_docx_url, preview_page_url)
+                logger.info(f"后台推送成功: {preview_page_url}")
+            else:
+                logger.error("微信公众号推送失败")
+        except Exception as e:
+            logger.error(f"后台推送异常: {str(e)}")
+    
+    # 启动后台线程
+    thread = threading.Thread(target=background_push, args=(feishu_docx_url,))
+    thread.start()
+    
+    # 立即返回成功响应
+    return jsonify({
+        'success': True,
+        'message': '任务已提交，正在后台处理'
+    }), 200
+
 
 # 公众号登录二维码页面 - 返回HTML页面显示二维码
 @app.route('/qrcode', methods=['GET'])

@@ -3,7 +3,7 @@ import os
 import requests
 import webbrowser
 from dotenv import load_dotenv
-from utils.feishu_robot_utils import push_richtext_to_robot
+from utils.feishu_robot_utils import push_origin_weekly_news_to_robot
 from utils.image_utils import save_text_image, merge_images
 from utils.feishu_docs_utils import FeishuDocumentAPI
 
@@ -508,7 +508,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         
         # 发送请求：将飞书文档推送到公众号
         try:
-            print(f"发送请求{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh：将飞书文档推送到公众号。标题：{final_title}，链接：{docs_url}")
+            print(f"发送请求{ALI_WEBSERVICE_URL}/api/push_daily_news。{final_title}，链接：{docs_url}")
             
             # 创建session并配置重试机制
             session = requests.Session()
@@ -524,7 +524,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
             
             # 使用配置好的session发送请求
             response = session.post(
-                url=f'{ALI_WEBSERVICE_URL}/api/send_to_wx_gzh', 
+                url=f'{ALI_WEBSERVICE_URL}/api/push_daily_news', 
                 json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
                 headers={'Content-Type': 'application/json'},
                 proxies=None,
@@ -608,7 +608,7 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
             return
     
     docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
-    push_richtext_to_robot("加密周报", title, docs_url)
+    push_origin_weekly_news_to_robot("加密周报", title, docs_url)
 
     lark.logger.info("Markdown content inserted into document successfully!")
     lark.logger.info(f"Document URL: {docs_url}")

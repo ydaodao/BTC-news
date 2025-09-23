@@ -290,7 +290,7 @@ async def push_interactive_to_feishu(content=None, title=None, summary=None, dai
     print("开始直接推送消息到飞书机器人...")
     # 飞书机器人富文本消息格式
     # 读取飞书消息模板
-    template_path = os.path.join(os.path.dirname(__file__), 'config','feishu_interactive_template.json')
+    template_path = os.path.join(os.path.dirname(__file__), 'send_to_weixin', 'templates', 'daily_news_template.json')
     with open(template_path, 'r', encoding='utf-8') as f:
         template_content = f.read()
     

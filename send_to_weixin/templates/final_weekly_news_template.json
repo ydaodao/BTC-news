@@ -1,0 +1,95 @@
+{
+    "msg_type": "interactive",
+    "card": {
+        "schema": "2.0",
+        "config": {
+            "update_multi": true,
+            "style": {
+                "text_size": {
+                    "normal_v2": {
+                        "default": "normal",
+                        "pc": "normal",
+                        "mobile": "heading"
+                    }
+                }
+            }
+        },
+        "body": {
+            "direction": "vertical",
+            "horizontal_spacing": "8px",
+            "vertical_spacing": "20px",
+            "horizontal_align": "left",
+            "vertical_align": "top",
+            "padding": "12px 12px 12px 12px",
+            "elements": [
+                {
+                    "tag": "column_set",
+                    "columns": [
+                        {
+                            "tag": "column",
+                            "width": "auto",
+                            "elements": [
+                                {
+                                    "tag": "button",
+                                    "text": {
+                                        "tag": "plain_text",
+                                        "content": "公众号预览链接"
+                                    },
+                                    "type": "primary",
+                                    "width": "default",
+                                    "size": "medium",
+                                    "behaviors": [
+                                    {
+                                        "type": "open_url",
+                                        "default_url": "{wx_preview_page_url}",
+                                        "pc_url": "",
+                                        "ios_url": "",
+                                        "android_url": ""
+                                    }
+                                ]
+                                },
+                                {
+                                    "tag": "button",
+                                    "text": {
+                                        "tag": "plain_text",
+                                        "content": "飞书文档"
+                                    },
+                                    "type": "primary",
+                                    "width": "default",
+                                    "size": "medium",
+                                    "behaviors": [
+                                    {
+                                        "type": "open_url",
+                                        "default_url": "{docs_url}",
+                                        "pc_url": "",
+                                        "ios_url": "",
+                                        "android_url": ""
+                                    }
+                                ]
+                                }
+                            ],
+                            "direction": "horizontal",
+                            "vertical_align": "top"
+                        }
+                    ]
+                }
+            ]
+        },
+        "header": {
+            "title": {
+                "tag": "plain_text",
+                "content": "{title}"
+            },
+            "subtitle": {
+                "tag": "plain_text",
+                "content": ""
+            },
+            "template": "blue",
+            "icon": {
+                "tag": "standard_icon",
+                "token": "submit-feedback_outlined"
+            },
+            "padding": "12px 12px 12px 12px"
+        }
+    }
+}
