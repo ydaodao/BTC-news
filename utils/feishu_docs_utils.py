@@ -55,9 +55,37 @@ BLOCK_TYPE_MAPPING = {
     47: 'agenda_item_content', # 议程项内容块
     48: 'link_preview',  # 链接预览块
 }
+TEXT_COLOR_MAPPING = {
+    1: '红色',
+    2: '橙色',
+    3: '黄色',
+    4: '绿色',
+    5: '蓝色',
+    6: '紫色',
+    7: '灰色'
+}
+BACKGROUND_COLOR_MAPPING = {
+    1: '浅红色',
+    2: '浅橙色',
+    3: '浅黄色',
+    4: '浅绿色',
+    5: '浅蓝色',
+    6: '浅紫色',
+    7: '中灰色',
+    8: '红色',
+    9: '橙色',
+    10: '黄色',
+    11: '绿色',
+    12: '蓝色',
+    13: '紫色',
+    14: '灰色',
+    15: '浅灰色'
+}
 
 # 反向映射：从字符串类型到数值类型
 BLOCK_TYPE_REVERSE_MAPPING = {v: k for k, v in BLOCK_TYPE_MAPPING.items()}
+TEXT_COLOR_REVERSE_MAPPING = {v: k for k, v in TEXT_COLOR_MAPPING.items()}
+BACKGROUND_COLOR_REVERSE_MAPPING = {v: k for k, v in BACKGROUND_COLOR_MAPPING.items()}
 
 def get_block_type_name(block_type_num):
     """根据数值获取块类型名称
@@ -80,6 +108,28 @@ def get_block_type_number(block_type_name):
         int: 块类型数值，如果未找到返回 None
     """
     return BLOCK_TYPE_REVERSE_MAPPING.get(block_type_name)
+
+def get_text_color_number(text_color_name):
+    """根据文本颜色名称获取数值
+    
+    Args:
+        text_color_name (str): 文本颜色名称
+        
+    Returns:
+        int: 文本颜色数值，如果未找到返回 None
+    """
+    return TEXT_COLOR_REVERSE_MAPPING.get(text_color_name)
+
+def get_background_color_number(background_color_name):
+    """根据背景颜色名称获取数值
+    
+    Args:
+        background_color_name (str): 背景颜色名称
+        
+    Returns:
+        int: 背景颜色数值，如果未找到返回 None
+    """
+    return BACKGROUND_COLOR_REVERSE_MAPPING.get(background_color_name)
 
 def extract_block_content_by_type(block):
     """根据块类型提取块的内容数据
@@ -147,6 +197,33 @@ def create_block_data(block_type_name, content):
         block_data[block_type_name] = content
     
     return block_data
+
+def create_text_block(text, bold=False, italic=False, underline=False, strikethrough=False, inline_code=False, background_color=None, text_color=None, link=''):
+    data = {
+        'block_type': get_block_type_number('text'),
+        'text': {
+            'elements': [
+                {
+                    'text_run': {
+                        'content': text,
+                        'text_element_style': {
+                            'bold': bold,
+                            'italic': italic,
+                            'strikethrough': strikethrough,
+                            'underline': underline,
+                            'inline_code': inline_code,
+                            'background_color': get_background_color_number(background_color) if background_color else None,
+                            'text_color': get_text_color_number(text_color) if text_color else None,
+                            'link': {
+                                "url": link
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+    return data
 
 class FeishuDocumentAPI:
     def __init__(self, app_id=None, app_secret=None):
@@ -319,12 +396,42 @@ class FeishuDocumentAPI:
         
         print(f"图片插入完成，block_id: {image_block_id}")
         return image_block_id
-    
-    def generate_xxx_block():
-        print(111)
 
-    def insert_blocks_to_document(self, document_id, blocks):
-        print(222)
+    def insert_blocks_to_document(self, document_id, blocks=None, parent_block_id=None):
+        if not blocks:
+            return None
+
+        access_token = self.get_tenant_access_token()
+        # 如果没有指定父块ID，使用文档ID作为父块
+        if parent_block_id is None:
+            parent_block_id = document_id
+
+        create_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{parent_block_id}/children"
+        
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        
+        # 创建块数据
+        block_data = {
+            'children': blocks,
+            'index': -1
+        }
+        
+        response = requests.post(create_url, headers=headers, json=block_data)
+        result = response.json()
+        
+        if result.get('code') != 0:
+            raise Exception(f"创建块失败: {result.get('msg')} - {result}")
+        
+        # 获取创建的块ID
+        children = result.get('data', {}).get('children', [])
+        if not children:
+            raise Exception("创建块成功但未获取到block_id")
+        
+        block_id = children[0].get('block_id')
+        print(f"块创建成功，block_id: {block_id}")
 
     def get_all_block_ids(self, document_id, filter_block_type=None, page_size=500):
         """获取文档的所有 block_id
@@ -565,15 +672,15 @@ if __name__ == "__main__":
         # print(f"文档共有 {len(all_blocks)} 个块")
 
         # 1. 上传图片
-        document_id = "D4wBdMNVwoMstRxdWiTcZd2XnNf"
-        image_path = "D:\\Study2\\BTC-news\\test\\image_utils\\merged.png"
+        # document_id = "D4wBdMNVwoMstRxdWiTcZd2XnNf"
+        # image_path = "D:\\Study2\\BTC-news\\test\\image_utils\\merged.png"
 
-        try:
-            api = FeishuDocumentAPI()
-            image_file_token = api.insert_image_block_to_document(document_id, image_path)
-            print(f"上传成功！图片文件token: {image_file_token}")
-        except Exception as e:
-            print(f"上传失败: {e}")
+        # try:
+        #     api = FeishuDocumentAPI()
+        #     image_file_token = api.insert_image_block_to_document(document_id, image_path)
+        #     print(f"上传成功！图片文件token: {image_file_token}")
+        # except Exception as e:
+        #     print(f"上传失败: {e}")
 
         # replace_block_text_by_text_and_type(document_id, "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？", "最近8.22 ~ 8.25之间，加密货币领域有什么热点新闻？哈哈哈哈")
         
@@ -598,6 +705,18 @@ if __name__ == "__main__":
         #         first_block['block_type_name']
         #     )
         #     print(f"替换结果: {'成功' if success else '失败'}")
+
+        # # 4. 创建块
+        try:
+            api = FeishuDocumentAPI()
+            blocks = [
+                create_text_block('测试'),
+                create_text_block('测试2'),
+            ]
+            image_file_token = api.insert_blocks_to_document('PA1Rdu4zEo9im1xGcmCcuGydnFd', blocks)
+            print(f"上传成功！图片文件token: {image_file_token}")
+        except Exception as e:
+            print(f"上传失败: {e}")
             
     except Exception as e:
         print(f"操作失败: {e}")
