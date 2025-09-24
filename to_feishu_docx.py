@@ -300,7 +300,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     
     for line in lines:
         # 检查是否遇到参考部分
-        if line.strip() == '**参考**：' or line.strip() == '**参考**:':
+        if line.strip() == '**参考**：' or line.strip() == '**参考**:' or line.strip() == '**参考**':
             skip_references = True
             continue
         
