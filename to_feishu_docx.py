@@ -10,7 +10,9 @@ from utils.feishu_docs_utils import FeishuDocumentAPI
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
-from utils.feishu_docs_utils import extract_block_content_by_type, replace_textblock_by_blocktype
+from utils.date_utils import days_between
+from datetime import date
+from utils.feishu_docs_utils import extract_block_content_by_type, replace_textblock_by_blocktype, create_text_block, create_callout_block, wrapper_block_for_desc
 
 # 加载环境变量
 load_dotenv()
@@ -474,8 +476,21 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         if document_id:
             try:
                 api = FeishuDocumentAPI()
+                print(f"上传头图：{header_image_path}")
                 image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
                 print(f"上传成功！图片文件token: {image_block_id}")
+
+                print(f"创建倒计时高亮块")
+                data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 —— {days_between(date.today(), date(2035, 12, 31))}天'), 'block_id1')
+                callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
+                # 创建块数据
+                blocks = {
+                    'children_id': [callout['block_id']],
+                    'index': -1,
+                    'descendants': [callout, data1]
+                }
+                block_ids = api.insert_descendant_blocks_to_document(document_id, blocks)
+                print(f"创建成功")
             except Exception as e:
                 print(f"上传失败: {e}")
         
