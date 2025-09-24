@@ -55,7 +55,7 @@ BLOCK_TYPE_MAPPING = {
     47: 'agenda_item_content', # 议程项内容块
     48: 'link_preview',  # 链接预览块
 }
-TEXT_COLOR_MAPPING = {
+FONT_COLOR_MAPPING = {
     1: '红色',
     2: '橙色',
     3: '黄色',
@@ -81,11 +81,40 @@ BACKGROUND_COLOR_MAPPING = {
     14: '灰色',
     15: '浅灰色'
 }
+CALLOUT_BACKGROUND_COLOR_MAPPING = {
+    1: '浅红色',
+    2: '浅橙色',
+    3: '浅黄色',
+    4: '浅绿色',
+    5: '浅蓝色',
+    6: '浅紫色',
+    7: '中灰色',
+    8: '中红色',
+    9: '中橙色',
+    10: '中黄色',
+    11: '中绿色',
+    12: '中蓝色',
+    13: '中紫色',
+    14: '灰色',
+    15: '浅灰色'
+}
+CALLOUT_BORDER_COLOR_MAPPING = {
+    1: '红色',
+    2: '橙色',
+    3: '黄色',
+    4: '绿色',
+    5: '蓝色',
+    6: '紫色',
+    7: '灰色'
+}
+
 
 # 反向映射：从字符串类型到数值类型
 BLOCK_TYPE_REVERSE_MAPPING = {v: k for k, v in BLOCK_TYPE_MAPPING.items()}
-TEXT_COLOR_REVERSE_MAPPING = {v: k for k, v in TEXT_COLOR_MAPPING.items()}
+FONT_COLOR_REVERSE_MAPPING = {v: k for k, v in FONT_COLOR_MAPPING.items()}
 BACKGROUND_COLOR_REVERSE_MAPPING = {v: k for k, v in BACKGROUND_COLOR_MAPPING.items()}
+CALLOUT_BACKGROUND_COLOR_REVERSE_MAPPING = {v: k for k, v in CALLOUT_BACKGROUND_COLOR_MAPPING.items()}
+CALLOUT_BORDER_COLOR_REVERSE_MAPPING = {v: k for k, v in CALLOUT_BORDER_COLOR_MAPPING.items()}
 
 def get_block_type_name(block_type_num):
     """根据数值获取块类型名称
@@ -109,7 +138,7 @@ def get_block_type_number(block_type_name):
     """
     return BLOCK_TYPE_REVERSE_MAPPING.get(block_type_name)
 
-def get_text_color_number(text_color_name):
+def get_font_color_number(text_color_name):
     """根据文本颜色名称获取数值
     
     Args:
@@ -118,7 +147,7 @@ def get_text_color_number(text_color_name):
     Returns:
         int: 文本颜色数值，如果未找到返回 None
     """
-    return TEXT_COLOR_REVERSE_MAPPING.get(text_color_name)
+    return FONT_COLOR_REVERSE_MAPPING.get(text_color_name)
 
 def get_background_color_number(background_color_name):
     """根据背景颜色名称获取数值
@@ -130,6 +159,28 @@ def get_background_color_number(background_color_name):
         int: 背景颜色数值，如果未找到返回 None
     """
     return BACKGROUND_COLOR_REVERSE_MAPPING.get(background_color_name)
+
+def get_callout_background_color_number(callout_background_color_name):
+    """根据callout背景颜色名称获取数值
+    
+    Args:
+        callout_background_color_name (str): callout背景颜色名称
+        
+    Returns:
+        int: callout背景颜色数值，如果未找到返回 None
+    """
+    return CALLOUT_BACKGROUND_COLOR_REVERSE_MAPPING.get(callout_background_color_name)
+
+def get_callout_border_color_number(callout_border_color_name):
+    """根据callout边框颜色名称获取数值
+    
+    Args:
+        callout_border_color_name (str): callout边框颜色名称
+        
+    Returns:
+        int: callout边框颜色数值，如果未找到返回 None
+    """
+    return CALLOUT_BORDER_COLOR_REVERSE_MAPPING.get(callout_border_color_name)
 
 def extract_block_content_by_type(block):
     """根据块类型提取块的内容数据
@@ -176,27 +227,17 @@ def extract_block_content_by_type(block):
             'content': content
         }
 
-def create_block_data(block_type_name, content):
-    """根据块类型名称和内容创建块数据
-    
-    Args:
-        block_type_name (str): 块类型名称
-        content (dict): 块内容
-        
-    Returns:
-        dict: 创建的块数据
+def wrapper_block_for_desc(block, block_id, children=[]):
     """
-    block_data = {
-        'block_type': get_block_type_number(block_type_name)
-    }
-    
-    if block_type_name in ['divider', 'quote_container']:
-        # 这些类型不需要额外内容
-        pass
-    else:
-        block_data[block_type_name] = content
-    
-    return block_data
+    包装块数据，添加 block_id 和 children 字段
+    """
+    if not block:
+        raise ValueError("block 不能为空")
+    if not block_id:
+        raise ValueError("block_id 不能为空")
+    block['block_id'] = block_id
+    block['children'] = children
+    return block
 
 def create_text_block(text, bold=False, italic=False, underline=False, strikethrough=False, inline_code=False, background_color=None, text_color=None, link=''):
     data = {
@@ -213,7 +254,7 @@ def create_text_block(text, bold=False, italic=False, underline=False, strikethr
                             'underline': underline,
                             'inline_code': inline_code,
                             'background_color': get_background_color_number(background_color) if background_color else None,
-                            'text_color': get_text_color_number(text_color) if text_color else None,
+                            'text_color': get_font_color_number(text_color) if text_color else None,
                             'link': {
                                 "url": link
                             }
@@ -222,6 +263,18 @@ def create_text_block(text, bold=False, italic=False, underline=False, strikethr
                 }
             ]
         }
+    }
+    return data
+
+def create_callout_block(background_color='浅橙色', border_color='橙色', text_color=None, emoji_id='gift'):
+    data = {
+        'block_type': get_block_type_number('callout'),
+            'callout': {
+                'background_color': get_callout_background_color_number(background_color) if background_color else None,
+                'border_color': get_callout_border_color_number(border_color) if border_color else None,
+                'text_color': get_font_color_number(text_color) if text_color else None,
+                'emoji_id': emoji_id,
+            }
     }
     return data
 
@@ -430,8 +483,38 @@ class FeishuDocumentAPI:
         if not children:
             raise Exception("创建块成功但未获取到block_id")
         
-        block_id = children[0].get('block_id')
-        print(f"块创建成功，block_id: {block_id}")
+        block_ids = [child.get('block_id') for child in children]
+        print(f"块创建成功，block_id: {block_ids}")
+
+    def insert_descendant_blocks_to_document(self, document_id, blocks, parent_block_id):
+        if not blocks:
+            return None
+
+        access_token = self.get_tenant_access_token()
+        # 如果没有指定父块ID，使用文档ID作为父块
+        if parent_block_id is None:
+            parent_block_id = document_id
+
+        create_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{parent_block_id}/descendant"
+        
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        
+        response = requests.post(create_url, headers=headers, json=blocks)
+        result = response.json()
+        
+        if result.get('code') != 0:
+            raise Exception(f"创建块失败: {result.get('msg')} - {result}")
+        
+        # 获取创建的块ID
+        children = result.get('data', {}).get('children', [])
+        if not children:
+            raise Exception("创建块成功但未获取到block_id")
+        
+        block_ids = [child.get('block_id') for child in children]
+        print(f"块创建成功，block_id: {block_ids}")
 
     def get_all_block_ids(self, document_id, filter_block_type=None, page_size=500):
         """获取文档的所有 block_id
@@ -713,8 +796,30 @@ if __name__ == "__main__":
                 create_text_block('测试'),
                 create_text_block('测试2'),
             ]
-            image_file_token = api.insert_blocks_to_document('PA1Rdu4zEo9im1xGcmCcuGydnFd', blocks)
-            print(f"上传成功！图片文件token: {image_file_token}")
+            # blocks = [
+            #     {
+            #         'block_type': get_block_type_number('callout'),
+            #         'callout': {
+            #             'background_color': 1,
+            #             'border_color': 1,
+            #             'text_color': 1
+            #         }
+            #     }
+            # ]
+            # image_file_token = api.insert_blocks_to_document('PA1Rdu4zEo9im1xGcmCcuGydnFd', blocks)
+
+            data1 = wrapper_block_for_desc(create_text_block('测试1'), 'block_id1')
+            data2 = wrapper_block_for_desc(create_text_block('测试2'), 'block_id2')
+            
+            callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id'], data2['block_id']])
+            # 创建块数据
+            blocks = {
+                'children_id': [callout['block_id']],
+                'index': -1,
+                'descendants': [callout, data1, data2]
+            }
+            image_file_token = api.insert_descendant_blocks_to_document('PA1Rdu4zEo9im1xGcmCcuGydnFd', blocks)
+            print(f"上传成功！")
         except Exception as e:
             print(f"上传失败: {e}")
             
