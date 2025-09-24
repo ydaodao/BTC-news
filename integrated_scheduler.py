@@ -206,7 +206,7 @@ def setup_cron_jobs():
     cron_scheduler.add_cron_job('5 21 * * *', check_cdp_connection, 'CDP连接检查')
     
     # 每天7:00、12:00、21:00执行保持公众号在线任务
-    cron_scheduler.add_cron_job('0 7,12,21 * * *', keep_gzh_online_task, '保持公众号在线')
+    cron_scheduler.add_cron_job('0 6,12,19 * * *', keep_gzh_online_task, '保持公众号在线')
 
     # 每周一、二、三、四、五的7:00执行 日报任务
     cron_scheduler.add_cron_job('0 7 * * 1,2,3,4,5', lambda: run_main_task("daily_news"), '日报任务')
