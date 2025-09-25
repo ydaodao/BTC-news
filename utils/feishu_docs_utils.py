@@ -486,7 +486,7 @@ class FeishuDocumentAPI:
         block_ids = [child.get('block_id') for child in children]
         print(f"块创建成功，block_id: {block_ids}")
 
-    def insert_descendant_blocks_to_document(self, document_id, blocks, parent_block_id):
+    def insert_descendant_blocks_to_document(self, document_id, blocks, parent_block_id=None):
         if not blocks:
             return None
 
