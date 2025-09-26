@@ -162,17 +162,33 @@ def screenshot_task():
         push_text_to_robot(f"截图失败！错误信息：{str(e)}")
 
 def check_cdp_connection():
-    """检查CDP连接状态"""
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-            context = browser.contexts[0]
-            page = context.pages[0]
-            print(page.title())
-    except Exception as e:
-        print(f"CDP连接检查失败：{e}")
-        print(f"错误类型：{type(e).__name__}")
-        push_text_to_robot(f"CDP连接失败！错误信息：{str(e)}")
+    """检查CDP连接状态，带重试机制"""
+    max_retries = 3  # 最大重试次数
+    retry_delay = 5  # 重试间隔（秒）
+    
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"CDP连接尝试 {attempt}/{max_retries}")
+            with sync_playwright() as p:
+                browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+                context = browser.contexts[0]
+                page = context.pages[0]
+                title = page.title()
+                print(f"CDP连接成功，页面标题: {title}")
+                return True  # 连接成功，返回
+        except Exception as e:
+            print(f"CDP连接尝试 {attempt} 失败：{e}")
+            print(f"错误类型：{type(e).__name__}")
+            
+            if attempt < max_retries:
+                print(f"等待 {retry_delay} 秒后重试...")
+                time.sleep(retry_delay)
+            else:
+                # 所有重试都失败了，发送通知
+                error_msg = f"CDP连接失败（已重试{max_retries}次）！错误信息：{str(e)}"
+                push_text_to_robot(error_msg)
+                print(f"所有重试均失败: {error_msg}")
+                return False
 
 def run_main_task(task_name):
     """执行主定时任务"""
@@ -228,5 +244,4 @@ if __name__ == "__main__":
         keep_gzh_online_task()
         # run_main_task('weekly_news')
     else:
-        # start_cron_scheduler()     # 使用新的 cron 调度器
-        check_cdp_connection()
+        start_cron_scheduler()     # 使用新的 cron 调度器
