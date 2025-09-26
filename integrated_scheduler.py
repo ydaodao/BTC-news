@@ -228,4 +228,5 @@ if __name__ == "__main__":
         keep_gzh_online_task()
         # run_main_task('weekly_news')
     else:
-        start_cron_scheduler()     # 使用新的 cron 调度器
+        # start_cron_scheduler()     # 使用新的 cron 调度器
+        check_cdp_connection()
