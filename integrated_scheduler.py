@@ -102,6 +102,8 @@ class CronScheduler:
                     print(error_msg)
                     push_text_to_robot(error_msg)
                 
+                # 修改这里：重新创建croniter对象，使用当前时间作为基准
+                job['cron_iter'] = croniter(job['cron_expression'], datetime.now())
                 # 计算下次执行时间
                 job['next_run'] = job['cron_iter'].get_next(datetime)
                 print(f"任务 {job['job_name']} 下次执行时间: {job['next_run'].strftime('%Y-%m-%d %H:%M:%S')}")
