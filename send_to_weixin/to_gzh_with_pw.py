@@ -146,8 +146,9 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
                 # 激活编辑页面
                 edit_page = active_page(context, None, edit_page_url, False)
                 if edit_page:
+                    
                     if scroll_bottom(edit_page):
-                        scroll_page(edit_page, -100)
+                        scroll_page(edit_page, -260)
                         sleep(2)
                         # 选择文章封面
                         if choose_page_cover():
@@ -189,7 +190,7 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
         context = browser.contexts[0]
 
         # 切换到已登录的公众号页面，并重置到首页
-        main_page = active_page(context, "公众号", None, new_url="https://mp.weixin.qq.com/")
+        main_page = active_page(context, "公众号", None, new_url="https://mp.weixin.qq.com/", close_other_tabs=not LOCAL_DEV)
         if main_page:
             # 内容管理菜单
             if operate_element(main_page, content_management_selector):
@@ -209,13 +210,26 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
                                     return begin_send(context, feishu_docs_page)
 
 if __name__ == "__main__":
-    feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/JN9od2Pt8okjF4x0cKscbNT9nWe"
+    # feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/JN9od2Pt8okjF4x0cKscbNT9nWe"
     # # # target_page_title = pyperclip.paste().strip()
     # target_page_title = "加密货币周报（8.24-9.7）：监管动态与机构持仓双线并进"
 
 
-    preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(None, feishu_docs_url)
+    # preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(None, feishu_docs_url)
     # print(preview_page_title)
     # print(preview_page_url)
 
-    print(download_qrcode_image())
+    # print(download_qrcode_image())
+
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+        context = browser.contexts[0]
+        url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000653&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=290169244&lang=zh_CN&timestamp=1759103380922'
+        main_page = active_page(context, None, url)
+
+        # content_management_selector = '#js_cover_area > div.js_cover_preview_new.select-cover__preview.first_appmsg_cover'
+        # operate_element(main_page, content_management_selector, 'scroll_into_view')
+
+        if scroll_bottom(main_page):
+            scroll_page(main_page, -250)
+

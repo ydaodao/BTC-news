@@ -109,7 +109,7 @@ def open_new_page(context, page_url):
     print(f"页面加载完成: {page.title()}")
     return page
 
-def active_page(context, target_page_title, target_page_url, refresh=False, new_url=None):
+def active_page(context, target_page_title, target_page_url, refresh=False, new_url=None, close_other_tabs=False):
     if not target_page_title and not target_page_url:
         print("未提供标题或URL")
         return None
@@ -142,6 +142,15 @@ def active_page(context, target_page_title, target_page_url, refresh=False, new_
             print(f"未找到URL包含'{target_page_url}'的tab页")
             return None
     
+    # 是否关闭其它tab页
+    if close_other_tabs and len(matching_tabs) > 1:
+        for index, tab in enumerate(matching_tabs):
+            if index == 0:
+                continue
+            if close_other_tabs:
+                tab['page'].close()
+    
+    # 激活第一个tab页
     page = matching_tabs[0]['page']
     page.bring_to_front()
     print(f"已激活tab页: {page.title()}: {page.url}")
@@ -515,4 +524,5 @@ if __name__ == '__main__':
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
         context = browser.contexts[0]
-        page = active_page(context, "公众号", None, refresh=False, new_url=None)
+        # page = active_page(context, "公众号", None, refresh=False, new_url=None)
+

@@ -12,6 +12,7 @@ from functools import wraps
 from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh, download_qrcode_image
 from main import main
 from web_templates.template_manager import template_manager
+import utils.powershell_utils as powershell_utils
 # 加载环境变量
 from dotenv import load_dotenv
 load_dotenv()
@@ -65,15 +66,32 @@ def check_cdp_connection():
 def start_main():
     try:
         mode = request.args.get('mode', '', type=str)
-        if mode:
+
+        result = powershell_utils.git_pull()
+        if result['success']:
             asyncio.run(main(mode))
+            result = powershell_utils.git_commit(f"{mode}")
+            if result['success']:
+                result = powershell_utils.git_push()
+                if result['success']:
+                    return jsonify({
+                        'success': True
+                    }), 200
+                else:
+                    return jsonify({
+                            'success': False,
+                            'error': f"git push 失败！错误信息：{result['stderr']}"
+                        }), 400
+            else:
+                return jsonify({
+                        'success': False,
+                        'error': f"git commit 失败！错误信息：{result['stderr']}"
+                    }), 400
+        else:
             return jsonify({
-                    'success': True
-                }), 200
-        return jsonify({
-            'success': False,
-            'error': '入参为空'
-        }), 400
+                        'success': False,
+                        'error': f"git pull 失败！错误信息：{result['stderr']}"
+                    }), 400
     except Exception as e:
         logger.error(f"错误: {str(e)}")
         return jsonify({
