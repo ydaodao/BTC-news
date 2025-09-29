@@ -64,14 +64,14 @@
                                     "width": "default",
                                     "size": "medium",
                                     "behaviors": [
-                                    {
-                                        "type": "open_url",
-                                        "default_url": "{wx_preview_page_url}",
-                                        "pc_url": "",
-                                        "ios_url": "",
-                                        "android_url": ""
-                                    }
-                                ]
+                                        {
+                                            "type": "open_url",
+                                            "default_url": "{wx_preview_page_url}",
+                                            "pc_url": "",
+                                            "ios_url": "",
+                                            "android_url": ""
+                                        }
+                                    ]
                                 },
                                 {
                                     "tag": "button",
@@ -83,14 +83,33 @@
                                     "width": "default",
                                     "size": "medium",
                                     "behaviors": [
-                                    {
-                                        "type": "open_url",
-                                        "default_url": "{docs_url}",
-                                        "pc_url": "",
-                                        "ios_url": "",
-                                        "android_url": ""
-                                    }
-                                ]
+                                        {
+                                            "type": "open_url",
+                                            "default_url": "{docs_url}",
+                                            "pc_url": "",
+                                            "ios_url": "",
+                                            "android_url": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "button",
+                                    "text": {
+                                        "tag": "plain_text",
+                                        "content": "重新生成日报"
+                                    },
+                                    "type": "primary",
+                                    "width": "default",
+                                    "size": "medium",
+                                    "behaviors": [
+                                        {
+                                            "type": "open_url",
+                                            "default_url": "{regenerate_daily_url}",
+                                            "pc_url": "",
+                                            "ios_url": "",
+                                            "android_url": ""
+                                        }
+                                    ]
                                 }
                             ],
                             "direction": "horizontal",

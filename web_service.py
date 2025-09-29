@@ -5,6 +5,7 @@ import os
 import asyncio
 import time
 import threading
+from integrated_scheduler import run_main_task
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 import logging
@@ -64,40 +65,17 @@ def check_cdp_connection():
 # 启动主程序
 @app.route('/api/main', methods=['GET'])
 def start_main():
-    try:
-        mode = request.args.get('mode', '', type=str)
+    mode = request.args.get('mode', '', type=str)
 
-        result = powershell_utils.git_pull()
-        if result['success']:
-            asyncio.run(main(mode))
-            result = powershell_utils.git_commit(f"{mode}")
-            if result['success']:
-                result = powershell_utils.git_push()
-                if result['success']:
-                    return jsonify({
-                        'success': True
-                    }), 200
-                else:
-                    return jsonify({
-                            'success': False,
-                            'error': f"git push 失败！错误信息：{result['stderr']}"
-                        }), 400
-            else:
-                return jsonify({
-                        'success': False,
-                        'error': f"git commit 失败！错误信息：{result['stderr']}"
-                    }), 400
-        else:
-            return jsonify({
-                        'success': False,
-                        'error': f"git pull 失败！错误信息：{result['stderr']}"
-                    }), 400
-    except Exception as e:
-        logger.error(f"错误: {str(e)}")
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
+    # 启动后台线程
+    thread = threading.Thread(target=run_main_task, args=(mode,))
+    thread.start()
+
+    # 立即返回成功响应
+    return jsonify({
+        'success': True,
+        'message': f'/api/main?mode={mode} 任务已提交，正在后台处理'
+    }), 200
 
 # 将飞书文档发送到公众号
 @app.route('/api/push_daily_news', methods=['POST'])
@@ -148,11 +126,10 @@ def push_final_weekly_news_and_push_robot():
     def background_push(feishu_docx_url):
         try:
             if LOCAL_DEV:
-                preview_page_title = '加密货币周报（9.7-9.21）：全球监管推进与机构持续加码'
                 preview_page_url = 'https://mp.weixin.qq.com/s/1D6SeMRtDDTkOBW2jsldsg'
                 time.sleep(10)
             else:
-                preview_page_title, preview_page_url = send_feishu_docs_to_wxgzh(None, feishu_docx_url)
+                _, preview_page_url = send_feishu_docs_to_wxgzh(None, feishu_docx_url)
             
             if preview_page_url:
                 # 推送消息到飞书机器人
@@ -171,9 +148,8 @@ def push_final_weekly_news_and_push_robot():
     # 立即返回成功响应
     return jsonify({
         'success': True,
-        'message': '任务已提交，正在后台处理'
+        'message': f'/api/push_final_weekly_news_and_push_robot?feishu_docx_url={feishu_docx_url} 任务已提交，正在后台处理'
     }), 200
-
 
 # 公众号登录二维码页面 - 返回HTML页面显示二维码
 @app.route('/qrcode', methods=['GET'])

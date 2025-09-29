@@ -8,9 +8,8 @@ from openai import OpenAI  # 火山引擎的客户端基于 OpenAI 库
 from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
+import utils.feishu_robot_utils as feishu_robot_utils  # 新增：飞书机器人工具
 from dotenv import load_dotenv
-from llm_ali import generate_title_and_summary
-import my_utils
 from llm_doubao import generate_news_summary, generate_news_summary_chunked, generate_title_and_summary_and_content
 
 # 加载环境变量
@@ -24,6 +23,7 @@ RSS_URL = "https://www.google.com.hk/alerts/feeds/08373742189599090702/148167071
 VOLCENGINE_API_KEY = os.getenv('VOLCENGINE_API_KEY')
 PUSHPLUS_TOKEN = os.getenv('PUSHPLUS_TOKEN')
 LOCAL_DEV = os.getenv('LOCAL_DEV')
+ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
 
 # 如果环境变量未设置，给出明确的错误提示
 if not VOLCENGINE_API_KEY:
@@ -264,10 +264,6 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
     """
     直接推送内容到飞书机器人（不依赖pushplus）
     """
-    webhook_url = os.getenv('FEISHU_WEBHOOK_URL')
-    if not webhook_url:
-        print("错误：请设置 FEISHU_WEBHOOK_URL 环境变量或传入webhook_url参数")
-        return
     if not title:
         print("错误：标题不能为空")
         return
@@ -287,8 +283,7 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
         print("错误：提取内容失败")
         return
 
-    print("开始直接推送消息到飞书机器人...")
-    # 飞书机器人富文本消息格式
+    print("开始推送消息到飞书机器人...")
     # 读取飞书消息模板
     template_path = os.path.join(os.path.dirname(__file__), 'send_to_weixin', 'templates', 'daily_news_template.json')
     with open(template_path, 'r', encoding='utf-8') as f:
@@ -298,28 +293,10 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
     data_str = template_content.replace('{title}', title_escaped) \
                               .replace('{message_content}', message_content_escaped) \
                               .replace('{docs_url}', docs_url or '') \
-                              .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！')
+                              .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！') \
+                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/api/main?mode=daily_news" or '')
     data = json.loads(data_str)
-    
-    try:
-        response = requests.post(
-            webhook_url, 
-            json=data,
-            headers={'Content-Type': 'application/json'},
-            timeout=10
-        )
-        response.raise_for_status()
-
-        # 打印详细的响应信息
-        result = response.json()
-        print(f"飞书推送响应: {result}")
-        
-        if result.get('StatusCode') == 0:
-            print("消息直接推送到飞书成功！")
-        else:
-            print(f"推送失败: {result.get('msg', '未知错误')}")
-    except requests.exceptions.RequestException as e:
-        print(f"消息直接推送到飞书失败：{e}")
+    feishu_robot_utils.send_to_robot(data)
 
 async def push_to_wechat(content=None, feishu_mode=True):
     """

@@ -4,7 +4,7 @@ import sys
 from datetime import datetime
 from dotenv import load_dotenv
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from my_utils import read_file_safely
+from utils.common_utils import read_file_safely
 
 # 加载环境变量
 load_dotenv()

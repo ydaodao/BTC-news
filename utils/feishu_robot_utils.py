@@ -156,11 +156,11 @@ def send_to_robot(message):
         print(f"飞书推送响应: {result}")
         
         if result.get('StatusCode') == 0:
-            print("消息直接推送到飞书成功！")
+            print("消息推送到飞书成功！")
         else:
             print(f"推送失败: {result.get('msg', '未知错误')}")
     except requests.exceptions.RequestException as e:
-        print(f"消息直接推送到飞书失败：{e}")
+        print(f"消息推送到飞书失败：{e}")
 
 # ------------------------- 以上为基础方法 ----------------------------
 

@@ -59,39 +59,6 @@ def find_tabs_by_url(context, url_keyword):
             continue
     return matching_pages
 
-# def refresh_page_by_title(context, target_page_title):
-#     """刷新页面并等待页面刷新完成，返回True"""
-#     # 查找匹配的tab页
-#     page = active_page(context, target_page_title, None, refresh=True)        
-#     return refresh_page(page)
-
-# def refresh_page(page):
-#     if page:
-#         try:
-#             print(f"刷新页面: {page.title()}, {page.url}")
-#             # 刷新页面
-#             page.reload()
-            
-#             # 等待页面加载完成，使用更宽松的等待策略
-#             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-#             page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
-            
-#             # 尝试等待网络空闲，但设置较短的超时时间
-#             try:
-#                 page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
-#             except Exception:
-#                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
-#                 pass
-            
-#             print(f"页面刷新完成: {page.title()}")
-#             return True
-#         except Exception as e:
-#             print(f"页面刷新失败: {e}")
-#             return False
-#     else:
-#         print("页面不存在")
-#         return False
-
 def open_new_page(context, page_url):
     """打开新页面"""
     page = context.new_page()

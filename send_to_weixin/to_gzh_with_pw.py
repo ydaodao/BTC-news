@@ -1,19 +1,24 @@
 from playwright.sync_api import sync_playwright
 from time import sleep
-import pyperclip
+import sys
 import os
 import re
 from dotenv import load_dotenv, find_dotenv
 
-try:
-    # 当作为模块被导入时
-    from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-    from .playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
-except ImportError:
-    # 当直接运行时
-    from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-    from playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
-    pass
+# 添加项目路径
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from send_to_weixin.to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
+from send_to_weixin.playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
+
+# try:
+#     # 当作为模块被导入时
+#     from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
+#     from .playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
+# except ImportError:
+#     # 当直接运行时
+#     from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
+#     from playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
+#     pass
 
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
@@ -224,12 +229,12 @@ if __name__ == "__main__":
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
         context = browser.contexts[0]
-        url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000653&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=290169244&lang=zh_CN&timestamp=1759103380922'
-        main_page = active_page(context, None, url)
+        # url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000653&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=290169244&lang=zh_CN&timestamp=1759103380922'
+        # main_page = active_page(context, None, url)
 
         # content_management_selector = '#js_cover_area > div.js_cover_preview_new.select-cover__preview.first_appmsg_cover'
         # operate_element(main_page, content_management_selector, 'scroll_into_view')
 
-        if scroll_bottom(main_page):
-            scroll_page(main_page, -250)
+        # if scroll_bottom(main_page):
+        #     scroll_page(main_page, -250)
 

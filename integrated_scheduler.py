@@ -10,8 +10,6 @@ from playwright.sync_api import sync_playwright
 from main import main
 from croniter import croniter
 import threading
-# 添加项目路径
-sys.path.append(os.path.dirname(__file__))
 from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
 # 加载环境变量
 from dotenv import load_dotenv

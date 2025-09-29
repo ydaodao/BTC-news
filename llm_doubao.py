@@ -1,6 +1,6 @@
 import os
 from openai import OpenAI
-import my_utils
+import utils.common_utils as common_utils
 import lark
 from llm_ali import generate_title_and_summary
 
@@ -29,7 +29,7 @@ async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_
         f"正文: {n['content']}" 
         for n in processed_news
     ])
-    print(f"大模型API的Prompt长度（{my_utils.string_to_bytes(all_content)}KB）...")
+    print(f"大模型API的Prompt长度（{common_utils.string_to_bytes(all_content)}KB）...")
 
     prompt_text = f"""你是一名资深的新闻编辑，请对以下新闻进行处理。你的任务是：
 
@@ -147,7 +147,7 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_ne
             f"正文: {n['content']}" 
             for n in chunk
         ])
-        print(f"处理第 {i+1}/{len(chunks)} 块内容（{my_utils.string_to_bytes(chunk_content)}KB）...")
+        print(f"处理第 {i+1}/{len(chunks)} 块内容（{common_utils.string_to_bytes(chunk_content)}KB）...")
         
         prompt_text = f"""你是一名资深的新闻编辑，请对以下BTC和加密货币新闻进行分析和总结（第{i+1}部分，共{len(chunks)}部分）：
 
@@ -213,7 +213,7 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_ne
 			（同上结构）
         """
         if LOCAL_DEV:
-            my_utils.copy_to_clipboard(final_prompt)
+            common_utils.copy_to_clipboard(final_prompt)
         
         try:
             response = client.chat.completions.create(
