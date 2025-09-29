@@ -112,10 +112,9 @@ def push_daily_news():
                 'error': '请求体不能为空'
             }), 400
         feishu_docx_url = data.get('feishu_docx_url', '')
-        feishu_docx_title = data.get('feishu_docx_title', '')
-        if feishu_docx_url and feishu_docx_title:
+        if feishu_docx_url:
             # 在当前的浏览器中打开这个链接
-            preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(feishu_docx_title, feishu_docx_url)
+            preview_page_title, preview_page_url =  send_feishu_docs_to_wxgzh(None, feishu_docx_url)
             if preview_page_url:
                 data = {
                     'preview_page_title': preview_page_title,
