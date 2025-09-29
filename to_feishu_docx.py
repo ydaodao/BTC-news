@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from utils.feishu_robot_utils import push_origin_weekly_news_to_robot
 from utils.image_utils import save_text_image, merge_images
 from utils.feishu_docs_utils import FeishuDocumentAPI
+import re
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
@@ -302,7 +303,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     
     for line in lines:
         # 检查是否遇到参考部分
-        if line.strip() == '**参考**：' or line.strip() == '**参考**:' or line.strip() == '**参考**':
+        if re.match(r'^\*\*参考\*\*.*?', line.strip()):
             skip_references = True
             continue
         
@@ -485,7 +486,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
                 between_years = between_days // 365
                 end_this_year = date(date.today().year, 12, 31)
                 
-                data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有{between_years}年{days_between(date.today(), end_this_year)}天）'), 'block_id1')
+                data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {days_between(date.today(), end_this_year)} 天）'), 'block_id1')
                 callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
                 # 创建块数据
                 blocks = {

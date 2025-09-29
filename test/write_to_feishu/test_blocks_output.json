@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "ee26f010-0c00-42ff-8e4b-83cfafa0a7f6",
+    "block_id": "cf66a2b1-051d-4fda-9ec4-af5bf8398bee",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "一、比特币价格走势与关键点位分析",
+            "content": "一、比特币市场动态及机构动向",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -25,13 +25,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "8f57b426-74c1-4e56-ad8a-093521f8966a",
+    "block_id": "4a29844f-3b21-42d7-a341-1ded843641c0",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币近期在11.7万美元附近高位盘整，面临117200美元等关键阻力位压力，技术面显示短期存在回调风险，但长期趋势仍偏看涨，分析师预测其可能在消化美联储降息影响后重新测试12万美元关口。",
+            "content": "Michael Saylor持续增持比特币，发布比特币Tracker信息并强调“始终积累比特币”，Strategy公司或于次日披露增持数据，其投资组合价值约700.1亿美元，累计持有约639,835 BTC。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -51,13 +51,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "7934b4ca-8352-44cb-a1c0-c8c04819ada9",
+    "block_id": "92d032d9-5c01-4e43-93a5-cec63f52700e",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "市场关注比特币在115200美元等关键成本基准位的支撑情况，若跌破可能引发卖压至105500-115200美元区间，而突破117000美元后或进一步冲击118500美元、119200美元等阻力位。",
+            "content": "比特币价格突破110000美元，技术分析显示短期支撑位在109400-109575美元，阻力位约109750美元，10月降息预期或为市场带来推动，若突破阻力位目标看向110000-111000美元。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -77,13 +77,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "290f1553-afe8-43dc-9888-2b3199989296",
+    "block_id": "b67e39b5-6900-44b7-b6eb-f6ece3349b48",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "期货期权市场表现活跃，未平仓合约创历史纪录，9月26日期权到期将对价格形成潜在引力，市场情绪受散户资金支撑但需警惕巨鲸动向影响。",
+            "content": "以太坊和比特币现货ETF上周出现资金大幅流出，分别流出7.956亿美元和9.025亿美元，为产品推出以来最剧烈周度流出；富达、贝莱德等机构旗下ETF受冲击，IBIT在比特币ETF中表现相对韧性。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -103,13 +103,39 @@
     "parent_id": ""
   },
   {
-    "block_id": "4614e2c7-b134-4086-a64b-4dbd3ffad8d2",
+    "block_id": "30dca215-6c73-443d-8136-a560cde0a69f",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "NYDIG指出比特币财库公司常用的“mNAV”指标存在误导性，未考虑运营业务或其他资产，且可能含未满足转换条件的可转债，建议从行业报告中删除。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "cee1a0a5-610c-444d-8a59-3499faa8a289",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "二、美联储政策与市场流动性影响",
+            "content": "二．比特币与黄金的投资价值比较及市场争论",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -128,13 +154,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "328e6389-ea86-46fd-858c-f1ccd7c636e8",
+    "block_id": "330fe459-b386-4353-862b-704315a9b735",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "美联储重启降息周期，释放宽松信号，市场流动性增加，推动风险资产（包括比特币）反弹；FOMC会议后，比特币期货未平仓合约达378,000-384,000 BTC，期权市场未平仓合约创500,000 BTC，反映市场对流动性敏感。",
+            "content": "经济学家Peter Schiff对比特币与黄金的投资价值争论，认为Michael Saylor的公司Strategy投资比特币虽账面收益（约47%）高于黄金（约30%），但出售比特币可能导致市场崩盘，而黄金市场深度更安全，可轻松出售615亿美元黄金且不影响价格。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -154,13 +180,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "4a8062f7-e10a-4ece-8355-d3ae324877f8",
+    "block_id": "6488df38-2aac-4f55-89ee-42a62d9a58a0",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "机构资金持续流入比特币，微策略（Strategy）增持525枚比特币，总持仓达638,985枚；Treasury公司增持111枚，总持仓1111枚，显示机构对长期持有信心。",
+            "content": "德意志银行预测到2030年比特币或与黄金共同作为美联储储备资产，黄金市场价值约25万亿美元，比特币仅2.3万亿美元，若比特币上涨以匹配黄金角色或将重写金融历史；特朗普政府已批准美国战略比特币储备，市场关注其是否开始购买比特币。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -180,13 +206,26 @@
     "parent_id": ""
   },
   {
-    "block_id": "145afa0b-ddcb-4196-b076-afe5239ea13a",
-    "block_type": 13,
-    "ordered": {
+    "block_id": "0c59f330-b404-43c3-a4f0-dba02a78c62a",
+    "block_type": 2,
+    "parent_id": "",
+    "text": {
       "elements": [
         {
           "text_run": {
-            "content": "市场对美联储后续政策预期分化，10月降息概率高，CME FedWatch工具显示92%交易员预计10月降息25个基点，Myriad预测市场72%用户持相同观点。",
+            "content": "参考",
+            "text_element_style": {
+              "bold": true,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        {
+          "text_run": {
+            "content": "；",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -199,20 +238,102 @@
       ],
       "style": {
         "align": 1,
-        "folded": false,
-        "sequence": "auto"
+        "folded": false
+      }
+    }
+  },
+  {
+    "block_id": "ea19e185-d0fb-4758-b7f3-262cc0c068ad",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "Peter Schiff：若Strategy 投资黄金而非比特币，或将获得更安全的账面利润 - 链捕手",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.chaincatcher.com%2Farticle%2F2209144"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
       }
     },
     "parent_id": ""
   },
   {
-    "block_id": "c0523d66-fb5a-4155-aaa7-041b13383654",
+    "block_id": "bdb71662-0534-4af8-b11c-b5fd9444d43d",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "Peter Schiff: 若Strategy投资黄金而非比特币可能获得更安全的账面利润 - MarsBit",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fm.marsbit.co%2Fflash%2F20250928232901022925.html"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "6e461b39-eaa7-4181-b70f-e4a8ca4d0ff6",
+    "block_type": 12,
+    "bullet": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "比特币与黄金：25万亿美联储地震即将来临 - Binance",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "link": {
+                "url": "https%3A%2F%2Fwww.binance.com%2Fzh-CN%2Fsquare%2Fpost%2F30254122011194"
+              },
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "77ec03be-d37f-415d-b872-cacbde91b89d",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "三、加密ETF与金融产品创新",
+            "content": "三．比特币市场情绪分化及用户入场行为分析",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -231,13 +352,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "974f943d-7f8f-471a-9b5a-1c590904fc9e",
+    "block_id": "d8335471-c1f7-4920-bc04-e294fa49c10e",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "加密ETF资金流入显著，10只比特币ETF今日净流入1205枚BTC（约1.40亿美元），以太坊ETF净流入41,150枚ETH（约185亿美元），Fidelity等机构持续增持。",
+            "content": "新加密货币持有者中仅55%首次投资选择比特币，37%通过山寨币入场，反映市场成熟及多元化参与，部分用户因山寨币“便宜”或社区氛围选择非比特币入场，比特币不再是唯一入场选择。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -257,13 +378,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "66374e71-a299-4b21-8141-caed4e168cd0",
+    "block_id": "19fa853f-edf5-4b90-8980-50a23c431a30",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "新产品推出加速，Valour在伦敦证券交易所推出比特币质押ETP，波兰华沙证券交易所上线首只加密货币ETF（Bitcoin BETA ETF），通过对冲汇率波动提供合规敞口。",
+            "content": "市场情绪分化，交易员在110000美元卖出BTC看涨期权、109000美元买入看跌期权，对Q4乐观预期存疑，临近周末波动率压缩，多位交易员在ETH看涨期权和BTC看跌期权上获利了结。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -283,13 +404,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "ddc31cfc-e82f-41ef-becb-15c0717b72d4",
+    "block_id": "46772c07-d171-47c1-afd0-036a1b85449c",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "金融产品多样化推动加密资产流动性，ETF成为机构参与加密市场的重要渠道，资产规模突破2700亿美元，反映市场对合规产品的需求增长。",
+            "content": "Samson Mow断言比特币主权国家采用即将迎来临界点，美国正推进预算中立的比特币收购计划，预计拉丁美洲将出现重要政策举措，国家层面“FOMO”或推动比特币价格上涨。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -309,13 +430,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "f97cd639-a675-475e-b940-c1f25b05f656",
+    "block_id": "52b16e66-d179-4d4a-b509-1c442274037b",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "四、比特币技术指标与市场结构",
+            "content": "四．稳定币市场动态及比特币财库公司指标争议",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -334,13 +455,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "7dadc0aa-c2f9-4fee-a9f2-18bdceea6ab9",
+    "block_id": "6657644f-67c6-4d93-b70f-c6a372bda024",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币网络难度创历史新高，网络算力稳定在1Z以上，反映矿工对长期持有的信心；非流动供应达1430万BTC，占总供应量72%，长期持有者和机构积累趋势明显。",
+            "content": "Wormhole联合创始人指出Tether和Circle通过持有支撑其币的美国国债收益“印钞”却未让持币人分享收益；新兴平台如M⁰和Agora正尝试让稳定币底层收益直接流向应用或用户，而非集中于发行方。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -360,399 +481,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "9f14988f-db7f-464b-a957-07cfabcdcdc4",
+    "block_id": "161b9193-1160-46b6-89b1-914eefc35661",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "期货市场永久性未平仓合约稳定于378,000-384,000 BTC，期权市场未平仓合约500,000 BTC，9月26日期权到期涉及行权价分布广泛，最大痛点在110,000美元，短期价格波动或受此影响。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "1fddd684-7b6f-4758-9d1c-82595eadffcc",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "链上数据显示，比特币95%流通供应处于盈利状态，价格高于成本基准位115,200美元，市场流动性支撑短期价格稳定，但需警惕回调风险。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "fe2c1ff3-da22-4d1d-8324-037c33fa9fd2",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "五、主流资产长期表现对比分析",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "98f1b996-29e3-4372-90cd-47230fc79e81",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "OKX研究院数据显示，2015-2025年比特币累计收益达402.17倍（1万美元投资增值至402万美元)，远超黄金（3.08倍）、标普500（2.97倍）、美国国债（1.26倍），但波动性和最大回撤显著高于传统资产。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "ae7cc3c7-75bb-4a12-aced-f4a7dbcae025",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "比特币年化标准差约70%-90%，最大回撤超80%，而标普500最大回撤约34%，黄金约29%，美国国债约23%，风险调整后收益（夏普比率、卡玛比率）比特币表现优于传统资产但波动剧烈。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "268098e8-1802-45c4-a08a-f561a48d1a9a",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "机构配置逻辑分化：比特币作为“数字黄金”抗通胀，以太坊依托“世界计算机”定位承接机构叙事，Solana凭借高流动性成为链上交易核心，反映不同资产的长期价值锚点差异。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "ae793e54-d679-4454-a533-c9f2ec10bb11",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "六、挖矿行业与矿企动态",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "599d002e-b10e-48c0-a9d5-a6e701968a7e",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "矿企Cango本周挖矿产出149.1枚比特币，总持仓量达5567.3枚，显示挖矿业务稳步扩张；而挖矿股（如MARA）表现不及屯币股（如Strategy），因挖矿依赖算力产出，币价上涨难度大且成本高，机构更倾向通过融资快速增持比特币。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "ad8d5f6e-2e8f-447f-8845-edcfa0ee15f7",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "行业趋势显示，机构买入量（690710枚）远超挖矿产出（109072枚），囤币股通过股权融资规模化囤币，市值增长速度显著高于挖矿股，反映金融属性对加密资产价格的驱动作用更强。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "4e4d95ee-80d4-47a1-a3b2-64e9c9dbcba1",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "七、山寨币市场与潜力币种分析",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "f6691191-7652-4cf3-9481-0d9bce08c162",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "山寨币市场随比特币高位震荡呈现分化，IMX、AVAX、NEAR等表现活跃，IMX本周涨幅超50%，AVAX最高触及35.8美元，DOGE、BONK等 meme币受市场情绪推动，短期波动较大。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "6178aee8-4f94-48ff-ac0b-b2046ff12fd1",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "市场关注DOGE、AVAX、BONK等币种的突破机会，DOGE因历史行情表现被认为可能在牛市中短期拉涨数倍，AVAX突破250美元阻力位但需站稳以确认趋势，BONK在0.00003美元附近或进入价格发现阶段。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "de26b952-0aad-441f-bc8b-93acb08fdd9d",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "山寨币行情与比特币相关性增强，需警惕随比特币回调而同步下跌的风险，建议关注流动性和资金流入情况。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "14d3891f-0710-4072-9367-536538897970",
-    "block_type": 5,
-    "heading3": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "八、比特币协议改进争议",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "a6556fe4-c563-4f9d-b4e0-84c3f703a99c",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "微策略创始人迈克·赛勒认为，比特币协议第2等级及以上的改进（如放宽OP_RETURN限制）可能对网络稳定性造成风险，强调对协议核心设计变更需保持谨慎，避免因“好点子”破坏比特币去中心化本质。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "1"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "b0dabf81-7501-496c-860d-fb00f7726ee7",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "社区对协议改进的讨论集中在非核心功能调整（如数据携带限制），开发者与用户对“升级”与“不变”的争议持续，反映比特币作为去中心化系统对协议变更的保守态度。",
+            "content": "NYDIG全球研究主管认为比特币财库公司常用的“mNAV”指标（市值除以持有的加密货币）具有误导性，未考虑运营业务或其他资产，且可能含未满足转换条件的可转债，建议删除该指标以避免错误评估公司价值。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
