@@ -484,7 +484,7 @@ def push_feishu_docs_2_wxgzh():
 def delete_exit_draft(feishu_docs_page=None):
     time.sleep(5)
     feishu_docs_page.title() # 通过一个固定不变的页面来更新context内容
-    if hover_icon_with_prefix("wx_content_draft_btc_title", max_try_times=3):
+    while hover_icon_with_prefix("wx_content_draft_btc_title", max_try_times=3):
         if click_icon_with_prefix("wx_content_delete"):
             if click_icon_with_prefix("wx_edit_common_deletebtn"):
                 print("删除了已有的草稿")
@@ -495,9 +495,9 @@ def delete_exit_draft(feishu_docs_page=None):
         else:
             print("删除草稿失败")
             return False
-    else:
-        print("没有找到草稿，不需要删除")
-        return True
+    
+    print("没有找到草稿，不需要删除")
+    return True
 
 def open_edit_page_and_get_url(feishu_docs_page=None):
     # 打开微信文章编辑页面，并获得页面链接
