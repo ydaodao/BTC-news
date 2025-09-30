@@ -335,7 +335,7 @@ class FeishuBlockAPI:
 
         if LOCAL_DEV:
             # 保存处理后的markdown内容到同级目录
-            processed_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary_processed.md")
+            processed_file_path = os.path.join(os.path.dirname(__file__), "..", "test", "write_to_feishu", "test_latest_summary_processed.md")
             try:
                 with open(processed_file_path, 'w', encoding='utf-8') as f:
                     f.write(processed_content)
@@ -400,7 +400,7 @@ class FeishuBlockAPI:
             return ordered_blocks
         except Exception as e:
             lark.logger.error(f"Failed to convert markdown: {e}")
-            return []
+            raise e
 
     def _upload_image_to_document(self, image_block_id, image_path):
         """
@@ -541,40 +541,45 @@ class FeishuBlockAPI:
         return image_block_id
 
     def insert_blocks_to_document(self, document_id, blocks=None, parent_block_id=None):
-        if not blocks:
-            return None
+        try:
+            if not blocks:
+                return None
 
-        access_token = self.get_tenant_access_token()
-        # 如果没有指定父块ID，使用文档ID作为父块
-        if parent_block_id is None:
-            parent_block_id = document_id
+            access_token = self.get_tenant_access_token()
+            # 如果没有指定父块ID，使用文档ID作为父块
+            if parent_block_id is None:
+                parent_block_id = document_id
 
-        create_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{parent_block_id}/children"
-        
-        headers = {
-            "Authorization": f"Bearer {access_token}",
-            "Content-Type": "application/json; charset=utf-8"
-        }
-        
-        # 创建块数据
-        block_data = {
-            'children': blocks,
-            'index': -1
-        }
-        
-        response = requests.post(create_url, headers=headers, json=block_data)
-        result = response.json()
-        
-        if result.get('code') != 0:
-            raise Exception(f"创建块失败: {result.get('msg')} - {result}")
-        
-        # 获取创建的块ID
-        children = result.get('data', {}).get('children', [])
-        if not children:
-            raise Exception("创建块成功但未获取到block_id")
-        
-        block_ids = [child.get('block_id') for child in children]
-        print(f"块创建成功，block_id: {block_ids}")
+            create_url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks/{parent_block_id}/children"
+            
+            headers = {
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json; charset=utf-8"
+            }
+            
+            # 创建块数据
+            block_data = {
+                'children': blocks,
+                'index': -1
+            }
+            
+            response = requests.post(create_url, headers=headers, json=block_data)
+            result = response.json()
+            
+            if result.get('code') != 0:
+                raise Exception(f"创建块失败: {result.get('msg')} - {result}")
+            
+            # 获取创建的块ID
+            children = result.get('data', {}).get('children', [])
+            if not children:
+                raise Exception("创建块成功但未获取到block_id")
+            
+            block_ids = [child.get('block_id') for child in children]
+            lark.logger.info(f"Blocks inserted successfully, block_ids: {block_ids}")
+            return block_ids
+        except Exception as e:
+            lark.logger.error(f"Failed to insert blocks: {e}")
+            raise e
 
     def insert_descendant_blocks_to_document(self, document_id, blocks, parent_block_id=None):
         if not blocks:

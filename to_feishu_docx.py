@@ -33,82 +33,6 @@ if not FEISHU_APP_SECRET:
     raise ValueError("请设置 FEISHU_APP_SECRET 环境变量")
 
 
-def get_tenant_access_token(app_id, app_secret):
-    """获取 tenant_access_token"""
-    url = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
-    headers = {
-        "Content-Type": "application/json; charset=utf-8"
-    }
-    data = {
-        "app_id": app_id,
-        "app_secret": app_secret
-    }
-    
-    response = requests.post(url, headers=headers, json=data)
-    result = response.json()
-    
-    if result.get('code') != 0:
-        raise Exception(f"Failed to get tenant_access_token: {result.get('msg')}")
-    
-    return result['tenant_access_token']
-
-def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
-    tenant_access_token = get_tenant_access_token(app_id, app_secret)
-    
-    # 为每个块生成临时ID并构建 descendants 数组
-    children_ids = []
-    descendants = []
-    
-    # 按照 ordered_blocks 的顺序处理
-    for i, block in enumerate(ordered_blocks):
-        temp_id = f"temp_block_{i:03d}"  # 使用三位数字确保排序
-        children_ids.append(temp_id)
-        
-        # 构建 descendant 对象
-        descendant = {
-            "block_id": temp_id,
-            "block_type": block.get('block_type'),
-            "children": []
-        }
-        
-        # 使用 feishu_block_utils 中的通用函数处理块类型映射
-        block_content = extract_block_content_by_type(block)
-        # 直接使用提取的内容，无需额外特殊处理
-        if block_content['type_name'] != 'unknown':
-            descendant[block_content['type_name']] = block_content['content']
-        else:
-            # 对于未知类型，直接复制所有字段（除了 block_id）
-            for key, value in block.items():
-                if key not in ['block_id', 'block_type', 'children', 'parent_id']:
-                    descendant[key] = value
-        
-        descendants.append(descendant)
-    
-    # 调用创建嵌套块接口 - 批量插入所有块
-    url = f"https://open.feishu.cn/open-apis/docx/v1/documents/{document_id}/blocks/{document_id}/descendant?document_revision_id=-1"
-    headers = {
-        "Authorization": f"Bearer {tenant_access_token}",
-        "Content-Type": "application/json; charset=utf-8"
-    }
-    
-    # 批量插入所有块，保持 children_id 和 descendants 的顺序一致
-    data = {
-        "index": -1,
-        "children_id": children_ids,  # 所有子块ID的列表
-        "descendants": descendants    # 所有后代块的列表
-    }
-    
-    response = requests.post(url, headers=headers, json=data)
-    result = response.json()
-    
-    if result.get('code') != 0:
-        raise Exception(f"Batch insert blocks failed: {result.get('msg')} - {result}")
-    
-    print(f"Successfully inserted {len(children_ids)} blocks in batch")
-    
-    return True
-
-
 def clean_markdown_content_for_daily_docs(markdown_content):
     """
     检查markdown_content内容格式是否符合要求，并进行清理
@@ -268,20 +192,7 @@ def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     
     return '\n'.join(lines)
 
-
-async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
-    # 使用环境变量替代硬编码
-    app_id = FEISHU_APP_ID
-    app_secret = FEISHU_APP_SECRET
-    folder_token = FEISHU_DAILY_FOLDER
-
-    final_title = f"加密日报({date_md})：{title}"
-    final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
-    
-    # 去除内容中多余的部分
-    cleaned_content = clean_markdown_content_for_daily_docs(news_content)
-
-    # 生成头图，替换标题图片
+def create_header_image():
     header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
     header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
     header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
@@ -305,101 +216,122 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         {'path': header_text_image_path, 'position': 'center-right'}
     ]
     if merge_images(image_configs, output_path=header_image_path):
-        # 新建日报飞书文档
-        document_id = create_feishu_document(final_title, app_id, app_secret, folder_token)
-        if document_id:
-            try:
-                api = FeishuBlockAPI()
-                print(f"上传头图：{header_image_path}")
-                image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
-                print(f"上传成功！图片文件token: {image_block_id}")
+        return header_image_path
+    else:
+        return None
 
-                print(f"创建倒计时高亮块")
-                between_days = days_between(date.today(), date(2035, 1, 1))
-                between_years = between_days // 365
-                end_this_year = date(date.today().year, 12, 31)
-                
-                data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {days_between(date.today(), end_this_year)} 天）'), 'block_id1')
-                callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
-                # 创建块数据
-                blocks = {
-                    'children_id': [callout['block_id']],
-                    'index': -1,
-                    'descendants': [callout, data1]
-                }
-                block_ids = api.insert_descendant_blocks_to_document(document_id, blocks)
-                print(f"创建成功")
-            except Exception as e:
-                print(f"上传失败: {e}")
-        
-        # 调用convert接口将markdown转换为文档块
-        ordered_blocks = api.convert_markdown_to_blocks(cleaned_content)
-        
-        # 插入文档块到文档中（分批处理，每次最多5个块）
-        batch_size = 10
-        
-        for i in range(0, len(ordered_blocks), batch_size):
-            batch_blocks = ordered_blocks[i:i + batch_size]
-            
-            try:
-                result = insert_blocks_to_document(document_id, batch_blocks, app_id, app_secret)
-                lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(batch_blocks)} blocks)")
-            except Exception as e:
-                lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
-                return
-        
-        docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
-        print(docs_url)
-        if LOCAL_DEV:
-            # 在浏览器打开链接
-            webbrowser.open(docs_url)
-        
-        # 发送请求：将飞书文档推送到公众号
+async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
+    # 使用环境变量替代硬编码
+    app_id = FEISHU_APP_ID
+    app_secret = FEISHU_APP_SECRET
+    folder_token = FEISHU_DAILY_FOLDER
+
+    final_title = f"加密日报({date_md})：{title}"
+    final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
+    
+    # 去除内容中多余的部分
+    cleaned_content = clean_markdown_content_for_daily_docs(news_content)
+
+    # 生成头图，替换标题图片
+    header_image_path = create_header_image()
+    if not header_image_path:
+        print("创建头图失败")
+        return
+    
+    # 新建日报飞书文档
+    api = FeishuBlockAPI()
+    document_id = create_feishu_document(final_title, app_id, app_secret, folder_token)
+    if document_id:
         try:
-            print(f"发送请求{ALI_WEBSERVICE_URL}/api/push_daily_news。{final_title}，链接：{docs_url}")
-            
-            # 创建session并配置重试机制
-            session = requests.Session()
-            retry_strategy = requests.packages.urllib3.util.retry.Retry(
-                total=3,  # 最多重试3次
-                backoff_factor=1,  # 重试间隔时间将按1, 2, 4秒递增
-                status_forcelist=[429, 500, 502, 503, 504],  # 这些状态码会触发重试
-                allowed_methods=["POST"]  # 允许POST方法重试
-            )
-            adapter = requests.adapters.HTTPAdapter(max_retries=retry_strategy)
-            session.mount("http://", adapter)
-            session.mount("https://", adapter)
-            
-            # 使用配置好的session发送请求
-            response = session.post(
-                url=f'{ALI_WEBSERVICE_URL}/api/push_daily_news', 
-                json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
-                headers={'Content-Type': 'application/json'},
-                proxies=None,
-                timeout=600
-            )
-            response.raise_for_status()
+            print(f"上传头图：{header_image_path}")
+            image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
+            print(f"上传成功！图片文件token: {image_block_id}")
 
-            # 打印详细的响应信息
-            result = response.json()
-            print(f"飞书推送响应: {result}")
+            print(f"创建倒计时高亮块")
+            between_days = days_between(date.today(), date(2035, 1, 1))
+            between_years = between_days // 365
+            end_this_year = date(date.today().year, 12, 31)
             
-            if result.get('success'):
-                print("推送到公众号成功！")
-                result_data = result.get('data')
-                preview_page_title = result_data.get('preview_page_title')
-                preview_page_url = result_data.get('preview_page_url')
+            data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {days_between(date.today(), end_this_year)} 天）'), 'block_id1')
+            callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
+            # 创建块数据
+            blocks = {
+                'children_id': [callout['block_id']],
+                'index': -1,
+                'descendants': [callout, data1]
+            }
+            block_ids = api.insert_descendant_blocks_to_document(document_id, blocks)
+            print(f"创建成功")
+        except Exception as e:
+            print(f"上传失败: {e}")
+    
+    # 调用convert接口将markdown转换为文档块
+    ordered_blocks = api.convert_markdown_to_blocks(cleaned_content)
+    
+    # 插入文档块到文档中（分批处理）
+    batch_size = 10
+    
+    for i in range(0, len(ordered_blocks), batch_size):
+        batch_blocks = ordered_blocks[i:i + batch_size]
+        
+        try:
+            block_ids = api.insert_blocks_to_document(document_id, batch_blocks)
+            lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(block_ids)} blocks)")
+        except Exception as e:
+            lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
+            return
+    
+    docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
+    lark.logger.info(f"创建的飞书文档链接：{docs_url}")
+    if LOCAL_DEV:
+        # 在浏览器打开链接
+        webbrowser.open(docs_url)
+    
+    # 发送请求：将飞书文档推送到公众号
+    try:
+        lark.logger.info(f"发送请求{ALI_WEBSERVICE_URL}/api/push_daily_news。{final_title}，链接：{docs_url}")
+        
+        # 创建session并配置重试机制
+        session = requests.Session()
+        retry_strategy = requests.packages.urllib3.util.retry.Retry(
+            total=3,  # 最多重试3次
+            backoff_factor=1,  # 重试间隔时间将按1, 2, 4秒递增
+            status_forcelist=[429, 500, 502, 503, 504],  # 这些状态码会触发重试
+            allowed_methods=["POST"]  # 允许POST方法重试
+        )
+        adapter = requests.adapters.HTTPAdapter(max_retries=retry_strategy)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+        
+        # 使用配置好的session发送请求
+        response = session.post(
+            url=f'{ALI_WEBSERVICE_URL}/api/push_daily_news', 
+            json={"feishu_docx_title": final_title, "feishu_docx_url": docs_url},
+            headers={'Content-Type': 'application/json'},
+            proxies=None,
+            timeout=600
+        )
+        response.raise_for_status()
 
-                return docs_url, preview_page_title, preview_page_url
-            else:
-                print(f"推送失败: {result.get('msg', '未知错误')}")
-        except requests.exceptions.RequestException as e:
-            print(f"消息推送到公众号失败：{e}")
+        # 打印详细的响应信息
+        result = response.json()
+        print(f"飞书推送响应: {result}")
+        
+        if result.get('success'):
+            print("推送到公众号成功！")
+            result_data = result.get('data')
+            preview_page_title = result_data.get('preview_page_title')
+            preview_page_url = result_data.get('preview_page_url')
+
+            return docs_url, preview_page_title, preview_page_url
+        else:
+            print(f"推送失败: {result.get('msg', '未知错误')}")
+    except requests.exceptions.RequestException as e:
+        print(f"消息推送到公众号失败：{e}")
     
     # 发送机器人预览内容：主体消息、推送到微信公众号用，超链接（指向阿里云）
     # 阿里云将文档推送到公众号后，返回公众号链接 至飞书消息、以及正式推送的超链接
     # 我打开后预览消息，并可以发起正式推送
-    # 正式推送发起后，把二维截图给我，并附带再次请求二维码的链接（打开后就是二维码）
     return None, None, None
 
 async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_md='1.7'):
@@ -426,39 +358,31 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     replace_textblock_by_blocktype(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
     
     # 调用convert接口将markdown转换为文档块
-    try:
-        api = FeishuBlockAPI()
-        ordered_blocks = api.convert_markdown_to_blocks(f"{summary}\n---\n{news_content}")
-        lark.logger.info(f"Markdown converted successfully, got {len(ordered_blocks)} blocks")
-    except Exception as e:
-        lark.logger.error(f"Failed to convert markdown: {e}")
-        return
+    api = FeishuBlockAPI()
+    ordered_blocks = api.convert_markdown_to_blocks(f"{summary}\n---\n{news_content}")
     
     # 插入文档块到文档中（分批处理，每次最多5个块）
     batch_size = 10
-    
     for i in range(0, len(ordered_blocks), batch_size):
         batch_blocks = ordered_blocks[i:i + batch_size]
-        
         try:
-            result = insert_blocks_to_document(document_id, batch_blocks, app_id, app_secret)
-            lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(batch_blocks)} blocks)")
+            block_ids = api.insert_blocks_to_document(document_id, batch_blocks)
+            lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(block_ids)} blocks)")
         except Exception as e:
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
             return
-    
-    docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
-    push_origin_weekly_news_to_robot("加密周报", title, docs_url)
-
-    lark.logger.info("Markdown content inserted into document successfully!")
-    lark.logger.info(f"Document URL: {docs_url}")
-
     # 更新一级标题，并加颜色
     replace_textblock_by_blocktype(document_id, "各国政策与监管变化", "一、政策与监管", "heading1", 5)
     replace_textblock_by_blocktype(document_id, "企业与机构的活动", "二、企业与机构", "heading1", 5)
     replace_textblock_by_blocktype(document_id, "价格波动与市场风险", "三、市场与风险（仅做观察）", "heading1", 5)
     replace_textblock_by_blocktype(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
 
+    # 推送飞书消息
+    docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
+    push_origin_weekly_news_to_robot("加密周报", title, docs_url)
+
+    lark.logger.info("Markdown content inserted into document successfully!")
+    lark.logger.info(f"Document URL: {docs_url}")
     if LOCAL_DEV:
         # 在浏览器打开链接
         webbrowser.open(docs_url)
