@@ -9,21 +9,11 @@ from dotenv import load_dotenv, find_dotenv
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from send_to_weixin.to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
 from send_to_weixin.playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
-
-# try:
-#     # 当作为模块被导入时
-#     from .to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-#     from .playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
-# except ImportError:
-#     # 当直接运行时
-#     from to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, wait_icon_dismiss_with_prefix, open_preview_page, delete_exit_draft, find_icon_with_prefix
-#     from playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
-#     pass
+from utils.common_utils import clean_zero_width_chars
 
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-
 
 
 content_management_selector = '#js_index_menu > ul > li.weui-desktop-menu__item.weui-desktop-menu_create.menu-fold > span'
@@ -82,57 +72,6 @@ def download_qrcode_image(page=None):
             context = browser.contexts[0]
             page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
             return get_qrcode_image(page)
-
-def clean_zero_width_chars(text):
-    """
-    清理字符串中的零宽字符和其他不可见Unicode字符
-    
-    Args:
-        text: 需要清理的字符串
-        
-    Returns:
-        str: 清理后的字符串
-    """
-    if not text:
-        return text
-    
-    # 定义需要清理的零宽字符范围
-    zero_width_chars = [
-        '\u200b',  # 零宽空格
-        '\u200c',  # 零宽非连接符
-        '\u200d',  # 零宽连接符
-        '\ufeff',  # 零宽非断空格 (BOM)
-        '\u2060',  # 零宽非断空格
-        '\u2061',  # 函数应用
-        '\u2062',  # 不可见乘号
-        '\u2063',  # 不可见分隔符
-        '\u2064',  # 不可见加号
-        '\u206a',  # 不可见乘号
-        '\u206b',  # 不可见分隔符
-        '\u206c',  # 不可见分隔符
-        '\u206d',  # 不可见分隔符
-        '\u206e',  # 不可见分隔符
-        '\u206f',  # 不可见分隔符
-        '\u202a',  # 左到右嵌入
-        '\u202b',  # 右到左嵌入
-        '\u202c',  # 弹出方向格式化
-        '\u202d',  # 左到右重写
-        '\u202e',  # 右到左重写
-    ]
-    
-    # 清理零宽字符
-    for char in zero_width_chars:
-        text = text.replace(char, '')
-    
-    # 清理其他常见的不可见字符
-    # 清理控制字符（除了换行、回车、制表符）
-    cleaned_text = ''.join(char for char in text if ord(char) >= 32 or char in '\n\r\t')
-    
-    # 去除前后空格和多余的空格
-    cleaned_text = cleaned_text.strip()
-    cleaned_text = re.sub(r'\s+', ' ', cleaned_text)
-    
-    return cleaned_text
 
 def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
     # 主程序
@@ -213,6 +152,7 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
                                 feishu_docs_page = open_new_page(context, feishu_docs_url)
                                 if feishu_docs_page:
                                     return begin_send(context, feishu_docs_page)
+        return None, None
 
 if __name__ == "__main__":
     # feishu_docs_url = "https://bj058omdwg.feishu.cn/docx/JN9od2Pt8okjF4x0cKscbNT9nWe"

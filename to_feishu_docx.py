@@ -5,7 +5,7 @@ import webbrowser
 from dotenv import load_dotenv
 from utils.feishu_robot_utils import push_origin_weekly_news_to_robot
 from utils.image_utils import save_text_image, merge_images
-from utils.feishu_docs_utils import FeishuDocumentAPI
+from utils.feishu_block_utils import FeishuBlockAPI
 import re
 
 import lark_oapi as lark
@@ -13,7 +13,8 @@ from lark_oapi.api.docx.v1 import *
 from lark_oapi.api.drive.v1 import *
 from utils.date_utils import days_between
 from datetime import date
-from utils.feishu_docs_utils import extract_block_content_by_type, replace_textblock_by_blocktype, create_text_block, create_callout_block, wrapper_block_for_desc
+from utils.feishu_block_utils import extract_block_content_by_type, replace_textblock_by_blocktype, create_text_block, create_callout_block, wrapper_block_for_desc
+from utils.feishu_docs_utils import create_feishu_document, copy_feishu_document
 
 # 加载环境变量
 load_dotenv()
@@ -51,55 +52,6 @@ def get_tenant_access_token(app_id, app_secret):
     
     return result['tenant_access_token']
 
-def convert_markdown_to_blocks(app_id, app_secret, markdown_content):
-    """将 Markdown 内容转换为飞书文档块"""
-    # 获取 tenant_access_token
-    tenant_access_token = get_tenant_access_token(app_id, app_secret)
-    
-    # 调用转换接口
-    url = "https://open.feishu.cn/open-apis/docx/v1/documents/blocks/convert"
-    headers = {
-        "Authorization": f"Bearer {tenant_access_token}",
-        "Content-Type": "application/json; charset=utf-8"
-    }
-    
-    data = {
-        "content_type": "markdown",
-        "content": markdown_content
-    }
-    
-    response = requests.post(url, headers=headers, json=data)
-    result = response.json()
-    
-    if result.get('code') != 0:
-        raise Exception(f"Convert failed: {result.get('msg')}")
-    
-    # 获取原始blocks和排序ID列表
-    original_blocks = result['data']['blocks']
-    first_level_block_ids = result['data']['first_level_block_ids']
-    
-    # 创建block_id到block的映射
-    block_map = {block['block_id']: block for block in original_blocks}
-    
-    # 按照first_level_block_ids的顺序重新排序blocks
-    ordered_blocks = []
-    for block_id in first_level_block_ids:
-        if block_id in block_map:
-            ordered_blocks.append(block_map[block_id])
-    
-    if LOCAL_DEV:
-        # 将result['data']内容写入到test目录下的文件中
-        output_file = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_blocks_output.json")
-
-        try:
-            with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(ordered_blocks, f, indent=2, ensure_ascii=False)
-            print(f"Blocks data saved to: {output_file}")
-        except Exception as e:
-            print(f"Failed to save blocks data: {e}")
-    
-    return ordered_blocks
-
 def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
     tenant_access_token = get_tenant_access_token(app_id, app_secret)
     
@@ -119,7 +71,7 @@ def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
             "children": []
         }
         
-        # 使用 feishu_docs_utils 中的通用函数处理块类型映射
+        # 使用 feishu_block_utils 中的通用函数处理块类型映射
         block_content = extract_block_content_by_type(block)
         # 直接使用提取的内容，无需额外特殊处理
         if block_content['type_name'] != 'unknown':
@@ -156,125 +108,6 @@ def insert_blocks_to_document(document_id, ordered_blocks, app_id, app_secret):
     
     return True
 
-def preprocess_markdown_content(content):
-    """预处理Markdown内容，将链接文本中的$符号替换为HTML实体"""
-    # 先提取所有链接，替换其中的$符号，然后放回原文
-    import re
-    
-    def replace_dollar_in_links(content):
-        def replace_dollars_in_match(match):
-            link_text = match.group(1)
-            link_url = match.group(2)
-            # 替换链接文本中的所有$符号
-            processed_text = link_text.replace('$', '&#36;')
-            return f'[{processed_text}]({link_url})'
-        
-        # 匹配所有Markdown链接格式并替换其中的$符号
-        processed_content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', replace_dollars_in_match, content)
-        return processed_content
-    
-    processed_content = replace_dollar_in_links(content)
-
-    if LOCAL_DEV:
-        # 保存处理后的markdown内容到同级目录
-        processed_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary_processed.md")
-        try:
-            with open(processed_file_path, 'w', encoding='utf-8') as f:
-                f.write(processed_content)
-            lark.logger.info(f"Processed markdown saved to: {processed_file_path}")
-        except Exception as e:
-            lark.logger.error(f"Failed to save processed markdown: {e}")
-            return
-
-    return processed_content
-
-def create_feishu_document(title, app_id, app_secret, folder_token):
-    """
-    创建飞书文档
-    
-    Args:
-        title (str): 文档标题
-        app_id (str): 飞书应用ID
-        app_secret (str): 飞书应用密钥
-        folder_token (str): 飞书文件夹token
-    
-    Returns:
-        str: 文档ID，如果创建失败返回None
-    """
-    # 创建client
-    client = lark.Client.builder() \
-        .app_id(app_id) \
-        .app_secret(app_secret) \
-        .log_level(lark.LogLevel.DEBUG) \
-        .build()
-
-    # 构造请求对象
-    request: CreateDocumentRequest = CreateDocumentRequest.builder() \
-        .request_body(CreateDocumentRequestBody.builder()
-            .folder_token(folder_token)
-            .title(title)
-            .build()) \
-        .build()
-
-    # 发起请求 - 创建文档
-    response: CreateDocumentResponse = client.docx.v1.document.create(request)
-
-    # 处理失败返回
-    if not response.success():
-        lark.logger.error(
-            f"client.docx.v1.document.create failed, code: {response.code}, msg: {response.msg}, log_id: {response.get_log_id()}, resp: \n{json.dumps(json.loads(response.raw.content), indent=4, ensure_ascii=False)}")
-        return None
-
-    # 获取文档ID
-    document_id = response.data.document.document_id
-    lark.logger.info(f"Document created successfully, document_id: {document_id}")
-    return document_id
-
-def copy_feishu_document(title, app_id, app_secret, folder_token, original_document_id):
-    """
-    复制飞书文档
-    
-    Args:
-        title (str): 新文档标题
-        app_id (str): 飞书应用ID
-        app_secret (str): 飞书应用密钥
-        folder_token (str): 飞书文件夹token
-        original_document_id (str): 原始文档ID
-    
-    Returns:
-        str: 新文档ID，如果复制失败返回None
-    """
-    # 创建client
-    client = lark.Client.builder() \
-        .app_id(app_id) \
-        .app_secret(app_secret) \
-        .log_level(lark.LogLevel.DEBUG) \
-        .build()
-
-    # 构造请求对象
-    request: CopyFileRequest = CopyFileRequest.builder() \
-        .file_token(original_document_id) \
-        .user_id_type("open_id") \
-        .request_body(CopyFileRequestBody.builder()
-            .name(title)
-            .type("docx")
-            .folder_token(folder_token)
-            .build()) \
-        .build()
-
-    # 发起请求
-    response: CopyFileResponse = client.drive.v1.file.copy(request)
-
-    # 处理失败返回
-    if not response.success():
-        lark.logger.error(
-            f"client.drive.v1.file.copy failed, code: {response.code}, msg: {response.msg}, log_id: {response.get_log_id()}, resp: \n{json.dumps(json.loads(response.raw.content), indent=4, ensure_ascii=False)}")
-        return
-
-    # 获取文档ID
-    document_id = response.data.file.token
-    lark.logger.info(f"Document copied successfully, document_id: {document_id}")
-    return document_id
 
 def clean_markdown_content_for_daily_docs(markdown_content):
     """
@@ -436,6 +269,7 @@ def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     
     return '\n'.join(lines)
 
+
 async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
@@ -476,7 +310,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         document_id = create_feishu_document(final_title, app_id, app_secret, folder_token)
         if document_id:
             try:
-                api = FeishuDocumentAPI()
+                api = FeishuBlockAPI()
                 print(f"上传头图：{header_image_path}")
                 image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
                 print(f"上传成功！图片文件token: {image_block_id}")
@@ -500,12 +334,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
                 print(f"上传失败: {e}")
         
         # 调用convert接口将markdown转换为文档块
-        try:
-            ordered_blocks = convert_markdown_to_blocks(app_id, app_secret, cleaned_content)
-            lark.logger.info(f"Markdown converted successfully, got {len(ordered_blocks)} blocks")
-        except Exception as e:
-            lark.logger.error(f"Failed to convert markdown: {e}")
-            return
+        ordered_blocks = api.convert_markdown_to_blocks(cleaned_content)
         
         # 插入文档块到文档中（分批处理，每次最多5个块）
         batch_size = 10
@@ -574,7 +403,6 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     # 正式推送发起后，把二维截图给我，并附带再次请求二维码的链接（打开后就是二维码）
     return None, None, None
 
-
 async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_md='1.7'):
     """
     写入文档到飞书文档库
@@ -589,11 +417,6 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     folder_token = FEISHU_WEEKLY_FOLDER
     original_document_id = "FIqsdVXJfozn3ixLAfycCG8xnUc"
     
-    # # 创建飞书文档
-    # document_id = create_feishu_document(title, app_id, app_secret, folder_token)
-    # if not document_id:
-    #     lark.logger.error("Failed to create Feishu document")
-    #     return
     # 复制飞书文档
     document_id = copy_feishu_document(title, app_id, app_secret, folder_token, original_document_id)
     if not document_id:
@@ -603,12 +426,10 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     # 替换辅助内容（方便手动拉取OpenAI的信息）
     replace_textblock_by_blocktype(document_id, "最近01.01 ~ 01.01之间，加密货币领域有什么热点新闻？", f"最近{week_start_md} ~ {week_end_md}之间，加密货币领域有什么热点新闻？")
     
-    # 预处理markdown内容
-    processed_markdown_content = preprocess_markdown_content(f"{summary}\n---\n{news_content}")
-    
     # 调用convert接口将markdown转换为文档块
     try:
-        ordered_blocks = convert_markdown_to_blocks(app_id, app_secret, processed_markdown_content)
+        api = FeishuBlockAPI()
+        ordered_blocks = api.convert_markdown_to_blocks(f"{summary}\n---\n{news_content}")
         lark.logger.info(f"Markdown converted successfully, got {len(ordered_blocks)} blocks")
     except Exception as e:
         lark.logger.error(f"Failed to convert markdown: {e}")
@@ -642,7 +463,6 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     if LOCAL_DEV:
         # 在浏览器打开链接
         webbrowser.open(docs_url)
-
 
 if __name__ == "__main__":
 
