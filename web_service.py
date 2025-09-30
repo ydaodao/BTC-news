@@ -61,7 +61,6 @@ def check_cdp_connection():
             'title': page.title()
         })
 
-
 # 启动主程序
 @app.route('/api/main', methods=['GET'])
 def start_main():

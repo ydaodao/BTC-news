@@ -465,6 +465,10 @@ def send_text_to_window(text):
 
 # ---------------- 微信公众号操作 ---------------- 
 
+def bring_chrome_to_front():
+    pyautogui.moveTo(150, 20, duration=0.5) # 平滑移动
+    pyautogui.click()
+
 def push_feishu_docs_2_wxgzh():
     # 通过壹伴推送到公众号
     if click_icon_with_prefix("yiban_icon"):
@@ -599,7 +603,8 @@ if __name__ == "__main__":
     sleep(3)
 
     # click_icon_with_prefix("test")
-    print(click_icon_with_prefix("wx_edit_changecover_pickimage"))
+    # print(click_icon_with_prefix("wx_edit_changecover_pickimage"))
+    bring_chrome_to_front()
 
 
     

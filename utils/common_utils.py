@@ -1,5 +1,6 @@
 import pyperclip
 import os
+import re
 
 def string_to_bytes(string):
     # 计算字符串的字节数，以K为单位显示

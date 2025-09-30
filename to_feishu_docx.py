@@ -127,7 +127,6 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     1. 去掉所有的 **参考**： 及其下面的链接内容
     2. 去掉 **总结**： 标题，但保留总结下的内容
     """
-    import re
     
     # 按行分割内容
     lines = markdown_content.split('\n')
