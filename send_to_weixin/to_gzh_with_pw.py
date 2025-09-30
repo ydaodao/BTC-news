@@ -69,6 +69,9 @@ def download_qrcode_image(page=None):
             return get_qrcode_image(page)
 
 def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
+    #  Bring Chrome to front
+    bring_chrome_to_front()
+    
     # 主程序
     with sync_playwright() as p:
         def begin_send(context, feishu_docs_page):
@@ -131,8 +134,6 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
         # 切换到已登录的公众号页面，并重置到首页
         main_page = active_page(context, "公众号", None, new_url="https://mp.weixin.qq.com/", close_other_tabs=not LOCAL_DEV)
         if main_page:
-            #  Bring Chrome to front
-            bring_chrome_to_front()
             # 内容管理菜单
             if operate_element(main_page, content_management_selector):
                 # 草稿箱
