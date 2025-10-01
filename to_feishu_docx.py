@@ -192,12 +192,12 @@ def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     
     return '\n'.join(lines)
 
-def create_header_image():
+def create_header_image(text):
     header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
     header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
     header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
     save_text_image(
-        text=final_title_for_imageheader,
+        text=text,
         output_path=header_text_image_path,
         width=480,
         height=300,
@@ -233,7 +233,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     cleaned_content = clean_markdown_content_for_daily_docs(news_content)
 
     # 生成头图，替换标题图片
-    header_image_path = create_header_image()
+    header_image_path = create_header_image(final_title_for_imageheader)
     if not header_image_path:
         print("创建头图失败")
         return
