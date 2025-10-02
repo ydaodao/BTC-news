@@ -192,7 +192,7 @@ def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     
     return '\n'.join(lines)
 
-def create_header_image(text):
+def create_header_image(text, type='daily'):
     header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
     header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
     header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
@@ -204,11 +204,10 @@ def create_header_image(text):
         line_spacing=18,
         support_markdown=True,
         font_size=38,
-        # font_color=(0, 0, 0),  # 黑色
-        font_color=(255, 255, 255),  # 白色
+        font_color=(255, 255, 255) if type == 'daily' else (212,180,91),
         text_align='left',
         vertical_align='center'
-    )
+    )       
 
     # 合并图片
     image_configs = [
@@ -449,27 +448,4 @@ if __name__ == "__main__":
     date_md = '09.13'
     title = '比特币盘整蓄势，机构增持与宏观利好推动市场'
     final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
-    # 生成头图，替换标题图片
-    header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
-    header_bg_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_background.png")
-    header_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header.png")
-    save_text_image(
-        text=final_title_for_imageheader,
-        output_path=header_text_image_path,
-        width=480,
-        height=300,
-        line_spacing=20,
-        support_markdown=True,
-        font_size=40,
-        # font_color=(0, 0, 0),  # 黑色
-        font_color=(255, 255, 255),  # 白色
-        text_align='left',
-        vertical_align='center'
-    )
-
-    # 合并图片
-    image_configs = [
-        {'path': header_bg_image_path, 'position': 'center'},
-        {'path': header_text_image_path, 'position': 'center-right'}
-    ]
-    merge_images(image_configs, output_path=header_image_path)
+    create_header_image(final_title_for_imageheader, type='daily')
