@@ -7,6 +7,7 @@ from utils.feishu_robot_utils import push_origin_weekly_news_to_robot
 from utils.image_utils import save_text_image, merge_images
 from utils.feishu_block_utils import FeishuBlockAPI
 import re
+import time
 
 import lark_oapi as lark
 from lark_oapi.api.docx.v1 import *
@@ -272,9 +273,9 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     
     for i in range(0, len(ordered_blocks), batch_size):
         batch_blocks = ordered_blocks[i:i + batch_size]
-        
         try:
             block_ids = api.insert_blocks_to_document(document_id, batch_blocks)
+            time.sleep(0.5)
             lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(block_ids)} blocks)")
         except Exception as e:
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
@@ -366,6 +367,7 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
         batch_blocks = ordered_blocks[i:i + batch_size]
         try:
             block_ids = api.insert_blocks_to_document(document_id, batch_blocks)
+            time.sleep(0.5)
             lark.logger.info(f"Batch {i//batch_size + 1} inserted successfully ({len(block_ids)} blocks)")
         except Exception as e:
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
@@ -395,16 +397,16 @@ if __name__ == "__main__":
     # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
     markdown_file_path = os.path.join(os.path.dirname(__file__), "files", "latest_summary.md")
 
-    # try:
-    #     with open(markdown_file_path, 'r', encoding='utf-8') as f:
-    #         markdown_content = f.read()
-    # except Exception as e:
-    #     lark.logger.error(f"Failed to read markdown file: {e}")
+    try:
+        with open(markdown_file_path, 'r', encoding='utf-8') as f:
+            markdown_content = f.read()
+    except Exception as e:
+        lark.logger.error(f"Failed to read markdown file: {e}")
     
     import asyncio
     # 修复异步函数调用
-    # FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
-    # asyncio.run(write_to_weekly_docx(markdown_content))
+    FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
+    asyncio.run(write_to_weekly_docx(markdown_content))
 
     # asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
 
