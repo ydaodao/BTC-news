@@ -204,7 +204,7 @@ def scroll_page(page, scroll_height):
 
 # --------------  操作页面元素↓↓↓ -----------------
 
-def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wait_for_visible=True):
+def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wait_for_visible=True, hover=False):
     """
     通过CSS选择器查找页面元素
     
@@ -214,6 +214,7 @@ def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wa
         css_selector: CSS选择器字符串
         timeout: 等待超时时间（毫秒），默认10秒
         wait_for_visible: 是否等待元素可见，默认True
+        hover: 是否在找到元素后将鼠标悬停在元素上，默认False
     
     Returns:
         element: 找到的元素对象，如果未找到返回None
@@ -230,6 +231,12 @@ def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wa
         
         if element:
             print(f"成功找到元素: {css_selector_name} ({css_selector})")
+            
+            # 如果需要悬停，则将鼠标移动到元素上
+            if hover:
+                element.hover()
+                print(f"已将鼠标悬停在元素上: {css_selector_name} ({css_selector})")
+                
             return element
         else:
             print(f"未找到元素: {css_selector_name} ({css_selector})")

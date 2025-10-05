@@ -8,7 +8,7 @@ from dotenv import load_dotenv, find_dotenv
 # 添加项目路径
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from send_to_weixin.to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, bring_chrome_to_front, open_preview_page, delete_exit_draft, find_icon_with_prefix
-from send_to_weixin.playwright_utils import active_page, operate_element, scroll_page, scroll_bottom, open_new_page
+from send_to_weixin.playwright_utils import active_page, operate_element, scroll_page, scroll_bottom, open_new_page, find_element_by_css
 from utils.common_utils import clean_zero_width_chars
 
 # 加载环境变量 - 自动查找.env文件
@@ -168,10 +168,13 @@ if __name__ == "__main__":
         with sync_playwright() as p:
             browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
             context = browser.contexts[0]
-            url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000710&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=765013786&lang=zh_CN&timestamp=1759670218437'
+            url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000714&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=765013786&lang=zh_CN&timestamp=1759673655143'
             main_page = active_page(context, None, url)
 
-            wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div > span'
-            operate_element(main_page, 'test', wx_edit_changecover_pickimage)
+            wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div'
+            operate_element(main_page, 'test', wx_edit_changecover_pickimage, 'hover')
+            sleep(1)
+            operate_element(main_page, 'test', wx_edit_changecover_pickimage, 'click')
+            # find_element_by_css(main_page, '选择封面', wx_edit_changecover_pickimage, hover=True)
     test_page_operation()
 
