@@ -204,7 +204,7 @@ def scroll_page(page, scroll_height):
 
 # --------------  操作页面元素↓↓↓ -----------------
 
-def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wait_for_visible=True, hover=False):
+def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wait_for_visible=True):
     """
     通过CSS选择器查找页面元素
     
@@ -230,20 +230,14 @@ def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wa
             element = page.wait_for_selector(css_selector, timeout=timeout, state='attached')
         
         if element:
-            print(f"成功找到元素: {css_selector_name} ({css_selector})")
-            
-            # 如果需要悬停，则将鼠标移动到元素上
-            if hover:
-                element.hover()
-                print(f"已将鼠标悬停在元素上: {css_selector_name} ({css_selector})")
-                
+            print(f"成功找到元素: {css_selector_name}")                
             return element
         else:
-            print(f"未找到元素: {css_selector_name} ({css_selector})")
+            print(f"未找到元素: {css_selector_name}")
             return None
             
     except Exception as e:
-        print(f"查找元素失败 {css_selector_name} ({css_selector}): {e}")
+        print(f"查找元素失败: {css_selector_name}: {e}")
         return None
 
 def convert_relative_url_to_absolute(page, relative_url):
@@ -322,12 +316,11 @@ def operate_element(page, css_selector_name, css_selector, operation='click', te
         if not element:
             return None
         
-        print(f"对元素 {css_selector_name} ({css_selector}) 执行操作: {operation}")
-        
+        print(f"对元素 {css_selector_name} 执行操作: {operation}")
         # 根据操作类型执行相应操作
         if operation == 'click':
             element.click()
-            print(f"已点击元素: {css_selector}")
+            print(f"已点击元素: {css_selector_name}")
             return True
             
         elif operation == 'get_text':
@@ -455,22 +448,22 @@ def operate_element(page, css_selector_name, css_selector, operation='click', te
 
         elif operation == 'hover':
             element.hover()
-            print(f"已悬停在元素: {css_selector}")
+            print(f"已悬停在元素: {css_selector_name}")
             return True
             
         elif operation == 'double_click':
             element.dblclick()
-            print(f"已双击元素: {css_selector}")
+            print(f"已双击元素: {css_selector_name}")
             return True
             
         elif operation == 'right_click':
             element.click(button='right')
-            print(f"已右键点击元素: {css_selector}")
+            print(f"已右键点击元素: {css_selector_name}")
             return True
             
         elif operation == 'scroll_into_view':
             element.scroll_into_view_if_needed()
-            print(f"已滚动到元素可见位置: {css_selector}")
+            print(f"已滚动到元素可见位置: {css_selector_name}")
             return True
             
         elif operation == 'is_visible':
@@ -488,7 +481,7 @@ def operate_element(page, css_selector_name, css_selector, operation='click', te
             return None
             
     except Exception as e:
-        print(f"操作元素失败 {css_selector_name} ({css_selector}) ({operation}): {e}")
+        print(f"操作元素失败 {css_selector_name} ({operation}): {e}")
         return None
 
 # --------------  操作页面元素 ↑↑↑ -----------------
