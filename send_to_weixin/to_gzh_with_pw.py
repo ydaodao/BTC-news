@@ -88,12 +88,11 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
                 # 激活编辑页面
                 edit_page = active_page(context, None, edit_page_url, False)
                 if edit_page:
-                    
                     if scroll_bottom(edit_page):
                         scroll_page(edit_page, -260)
                         sleep(2)
                         # 选择文章封面
-                        if choose_page_cover():
+                        if choose_page_cover(edit_page):
                             # 选择其他选项并 发送到公众号预览
                             if choose_other_options_and_preview():
                                 if not LOCAL_DEV:
@@ -164,15 +163,15 @@ if __name__ == "__main__":
 
     # print(download_qrcode_image())
 
-    with sync_playwright() as p:
-        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-        context = browser.contexts[0]
-        # url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000653&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=290169244&lang=zh_CN&timestamp=1759103380922'
-        # main_page = active_page(context, None, url)
+    ## 测试对指定页面的操作
+    def test_page_operation():
+        with sync_playwright() as p:
+            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+            context = browser.contexts[0]
+            url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=77&appmsgid=100000710&isMul=1&replaceScene=0&isSend=0&isFreePublish=0&token=765013786&lang=zh_CN&timestamp=1759670218437'
+            main_page = active_page(context, None, url)
 
-        # content_management_selector = '#js_cover_area > div.js_cover_preview_new.select-cover__preview.first_appmsg_cover'
-        # operate_element(main_page, content_management_selector, 'scroll_into_view')
-
-        # if scroll_bottom(main_page):
-        #     scroll_page(main_page, -250)
+            wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div > span'
+            operate_element(main_page, wx_edit_changecover_pickimage)
+    test_page_operation()
 

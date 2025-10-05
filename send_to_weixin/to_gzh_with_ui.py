@@ -4,11 +4,15 @@ import cv2
 import numpy as np
 import os
 import re
+import sys
 from time import sleep
 import ctypes
 from ctypes import wintypes
 import time
 from dotenv import load_dotenv, find_dotenv
+# 添加项目路径
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from send_to_weixin.playwright_utils import operate_element
 
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
@@ -527,12 +531,13 @@ def open_edit_page_and_get_url(feishu_docs_page=None):
                         return wx_url
     return None
 
-def choose_page_cover(try_once=True):
+def choose_page_cover(edit_page=None, try_once=True):
     # 选择文章封面图片
     if hover_icon_with_prefix("wx_edit_changecover_nocover_icon"):
         if hover_icon_with_prefix("wx_edit_changecover_icon"):
             if click_icon_with_prefix("wx_edit_changecover_frompage_icon", duration=None):
-                if click_icon_with_prefix("wx_edit_changecover_pickimage"):
+                wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div > span'
+                if operate_element(edit_page, wx_edit_changecover_pickimage):
                     if click_icon_with_prefix("wx_edit_common_nextbtn"):
                         sleep(2)
                         scroll_with_windows_api(-5) ## 滚动到底部出现确认按钮
@@ -543,7 +548,7 @@ def choose_page_cover(try_once=True):
                             # 如果没有选上，则再试一次
                             if find_icon_with_prefix("wx_edit_changecover_nocover_icon", max_try_times=1):
                                 if try_once:
-                                    return choose_page_cover(False)
+                                    return choose_page_cover(edit_page, False)
                                 else:
                                     return False
                             else:
