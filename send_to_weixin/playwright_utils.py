@@ -7,10 +7,7 @@ from dotenv import load_dotenv, find_dotenv
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-PAGELOAD_TIMEOUT = 30000
-if LOCAL_DEV:
-    print("本地开发环境")
-    PAGELOAD_TIMEOUT = 10000
+PAGELOAD_TIMEOUT = 40000 if not LOCAL_DEV else 10000
 
 def list_all_tabs(context):
     """列出所有打开的tab页"""
