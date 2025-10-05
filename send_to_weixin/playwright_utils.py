@@ -207,12 +207,13 @@ def scroll_page(page, scroll_height):
 
 # --------------  操作页面元素↓↓↓ -----------------
 
-def find_element_by_css(page, css_selector, timeout=10000, wait_for_visible=True):
+def find_element_by_css(page, css_selector_name, css_selector, timeout=10000, wait_for_visible=True):
     """
     通过CSS选择器查找页面元素
     
     Args:
         page: Playwright页面对象
+        css_selector_name: 元素名称，用于日志输出
         css_selector: CSS选择器字符串
         timeout: 等待超时时间（毫秒），默认10秒
         wait_for_visible: 是否等待元素可见，默认True
@@ -221,7 +222,7 @@ def find_element_by_css(page, css_selector, timeout=10000, wait_for_visible=True
         element: 找到的元素对象，如果未找到返回None
     """
     try:
-        print(f"正在查找元素: {css_selector}")
+        print(f"正在查找元素: {css_selector_name} ({css_selector})")
         
         if wait_for_visible:
             # 等待元素可见
@@ -231,14 +232,14 @@ def find_element_by_css(page, css_selector, timeout=10000, wait_for_visible=True
             element = page.wait_for_selector(css_selector, timeout=timeout, state='attached')
         
         if element:
-            print(f"成功找到元素: {css_selector}")
+            print(f"成功找到元素: {css_selector_name} ({css_selector})")
             return element
         else:
-            print(f"未找到元素: {css_selector}")
+            print(f"未找到元素: {css_selector_name} ({css_selector})")
             return None
             
     except Exception as e:
-        print(f"查找元素失败 {css_selector}: {e}")
+        print(f"查找元素失败 {css_selector_name} ({css_selector}): {e}")
         return None
 
 def convert_relative_url_to_absolute(page, relative_url):
@@ -276,12 +277,13 @@ def convert_relative_url_to_absolute(page, relative_url):
         print(f"转换相对路径: {relative_url} -> {absolute_url}")
         return absolute_url
 
-def operate_element(page, css_selector, operation='click', text_content=None, timeout=10000, wait_for_visible=True, download_path=None):
+def operate_element(page, css_selector_name, css_selector, operation='click', text_content=None, timeout=10000, wait_for_visible=True, download_path=None):
     """
     对页面元素执行各种操作
     
     Args:
         page: Playwright页面对象
+        css_selector_name: 元素名称，用于日志输出
         css_selector: CSS选择器字符串
         operation: 操作类型，支持：
             - 'click': 点击元素
@@ -312,11 +314,11 @@ def operate_element(page, css_selector, operation='click', text_content=None, ti
     """
     try:
         # 查找元素
-        element = find_element_by_css(page, css_selector, timeout, wait_for_visible)
+        element = find_element_by_css(page, css_selector_name, css_selector, timeout, wait_for_visible)
         if not element:
             return None
         
-        print(f"对元素 {css_selector} 执行操作: {operation}")
+        print(f"对元素 {css_selector_name} ({css_selector}) 执行操作: {operation}")
         
         # 根据操作类型执行相应操作
         if operation == 'click':
@@ -482,7 +484,7 @@ def operate_element(page, css_selector, operation='click', text_content=None, ti
             return None
             
     except Exception as e:
-        print(f"操作元素失败 {css_selector} ({operation}): {e}")
+        print(f"操作元素失败 {css_selector_name} ({css_selector}) ({operation}): {e}")
         return None
 
 # --------------  操作页面元素 ↑↑↑ -----------------

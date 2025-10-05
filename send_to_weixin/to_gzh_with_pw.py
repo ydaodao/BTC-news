@@ -8,7 +8,7 @@ from dotenv import load_dotenv, find_dotenv
 # 添加项目路径
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from send_to_weixin.to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, bring_chrome_to_front, open_preview_page, delete_exit_draft, find_icon_with_prefix
-from send_to_weixin.playwright_utils import active_page, operate_element, find_element_by_css, scroll_page, scroll_bottom, open_new_page
+from send_to_weixin.playwright_utils import active_page, operate_element, scroll_page, scroll_bottom, open_new_page
 from utils.common_utils import clean_zero_width_chars
 
 # 加载环境变量 - 自动查找.env文件
@@ -33,9 +33,9 @@ def keep_gzh_online():
             
             if page.title() == "公众号":
                 # 内容管理菜单
-                if operate_element(page, content_management_selector):
+                if operate_element(page, '内容管理', content_management_selector):
                     # 草稿箱
-                    if operate_element(page, draft_selector):
+                    if operate_element(page, '草稿箱', draft_selector):
                         return True, "保持公众号在线成功", None
             elif page.title() == "微信公众平台":
                 # 下载二维码图片
@@ -56,7 +56,7 @@ def download_qrcode_image(page=None):
         qrcode_selector = '#header > div.banner > div > div > div.login__type__container.login__type__container__scan > img'
         qrcode_download_url = os.path.join(os.path.dirname(__file__), "qrcode.jpg")
         print(f"二维码下载路径: {qrcode_download_url}")
-        qr_img_src = operate_element(page, qrcode_selector, 'get_image_screenshot', download_path=qrcode_download_url)
+        qr_img_src = operate_element(page, '登录二维码', qrcode_selector, 'get_image_screenshot', download_path=qrcode_download_url)
         return qrcode_download_url, qr_img_src
 
     if page:
@@ -134,9 +134,9 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
         main_page = active_page(context, "公众号", None, new_url="https://mp.weixin.qq.com/", close_other_tabs=not LOCAL_DEV)
         if main_page:
             # 内容管理菜单
-            if operate_element(main_page, content_management_selector):
+            if operate_element(main_page, '内容管理', content_management_selector):
                 # 草稿箱
-                if operate_element(main_page, draft_selector):
+                if operate_element(main_page, '草稿箱', draft_selector):
                     # 删除已经存在的草稿
                     if delete_exit_draft(main_page):
                         # 打开目标飞书文档
@@ -172,6 +172,6 @@ if __name__ == "__main__":
             main_page = active_page(context, None, url)
 
             wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div > span'
-            operate_element(main_page, wx_edit_changecover_pickimage)
+            operate_element(main_page, 'test', wx_edit_changecover_pickimage)
     test_page_operation()
 

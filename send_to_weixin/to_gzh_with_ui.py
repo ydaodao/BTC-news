@@ -537,7 +537,7 @@ def choose_page_cover(edit_page=None, try_once=True):
         if hover_icon_with_prefix("wx_edit_changecover_icon"):
             if click_icon_with_prefix("wx_edit_changecover_frompage_icon", duration=None):
                 wx_edit_changecover_pickimage = '#vue_app > mp-image-product-dialog > div > div.weui-desktop-dialog__wrp.weui-desktop-dialog_img-picker > div > div.weui-desktop-dialog__bd > div.img_crop_panel > div > ul > li:nth-child(1) > div > span'
-                if operate_element(edit_page, wx_edit_changecover_pickimage):
+                if operate_element(edit_page, '选择封面图片', wx_edit_changecover_pickimage):
                     if click_icon_with_prefix("wx_edit_common_nextbtn"):
                         sleep(2)
                         scroll_with_windows_api(-5) ## 滚动到底部出现确认按钮
