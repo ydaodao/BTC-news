@@ -102,96 +102,114 @@ def clean_markdown_content_for_daily_docs(markdown_content):
 
 def format_string_with_line_breaks(text, max_chars=11, min_chars=5):
     """
-    按照指定规则格式化字符串换行
+    按照指定规则格式化字符串换行，智能处理中英文混合情况
     
     Args:
         text: 输入字符串
-        max_chars: 每行最大字符数，默认10
+        max_chars: 每行最大字符数，默认11
         min_chars: 最小字符数，小于此数需要整合，默认5
     
     Returns:
         格式化后的字符串
     """
-    # 首先按逗号分隔
     import re
     
-    # 分割字符串，保留分隔符
-    parts = re.split(r'([，,])', text)
+    # 特殊处理：对于常见的英文缩写，将其视为与后面的中文词组成一个整体
+    text = re.sub(r'(ETF|BTC|NFT|DeFi|DAO|DEX|CEX)(\s*)(?=[\u4e00-\u9fff])', r'\1', text)
     
-    lines = []
-    current_line = ""
+    # 将文本视为一个整体，按最大宽度进行分割
+    result_lines = []
+    remaining_text = text
     
-    i = 0
-    while i < len(parts):
-        part = parts[i]
+    while remaining_text:
+        # 计算当前可以放入一行的最佳切分点
+        best_cut_point = find_best_cut_point(remaining_text, max_chars)
         
-        # 如果是逗号分隔符，添加到当前行
-        if part in ['，', ',']:
-            current_line += part
-            i += 1
-            continue
-            
-        # 检查添加当前部分后是否超过最大字符数
-        if len(current_line + part) <= max_chars:
-            current_line += part
+        if best_cut_point > 0:
+            result_lines.append(remaining_text[:best_cut_point])
+            remaining_text = remaining_text[best_cut_point:]
         else:
-            # 如果当前行不为空，先保存当前行
-            if current_line:
-                lines.append(current_line)
-                current_line = ""
-            
-            # 处理当前部分
-            while len(part) > max_chars:
-                # 强制在第10个字后换行
-                lines.append(part[:max_chars])
-                part = part[max_chars:]
-            
-            current_line = part
+            # 如果找不到合适的切分点，强制切分
+            result_lines.append(remaining_text[:max_chars])
+            remaining_text = remaining_text[max_chars:]
+    
+    return '\n'.join(result_lines)
+
+def find_best_cut_point(text, max_width):
+    """
+    找到最佳的切分点，使得切分后的文本不超过最大宽度
+    优先在标点符号后切分，其次在词语边界切分
+    """
+    if not text:
+        return 0
         
-        i += 1
+    # 计算文本的实际显示宽度
+    def get_width(s):
+        return sum(1.0 if '\u4e00' <= c <= '\u9fff' else 0.5 for c in s)
     
-    # 添加最后一行
-    if current_line:
-        lines.append(current_line)
+    # 如果整个文本宽度不超过最大宽度，直接返回全部
+    if get_width(text) <= max_width:
+        return len(text)
     
-    # 处理短行整合 - 修复递归问题
-    # final_lines = []
-    # i = 0
+    # 寻找最佳切分点
+    best_point = 0
+    current_width = 0
     
-    # while i < len(lines):
-    #     current = lines[i]
+    # 标点符号优先级
+    punctuation = ['。', '！', '？', '；', '，', '.', '!', '?', ';', ',']
+    
+    # 首先尝试在标点符号处切分
+    for i in range(len(text)):
+        char = text[i]
+        char_width = 1.0 if '\u4e00' <= char <= '\u9fff' else 0.5
         
-    #     # 如果当前行字数小于最小字符数，尝试与下一行整合
-    #     if len(current) < min_chars and i + 1 < len(lines):
-    #         next_line = lines[i + 1]
+        if current_width + char_width <= max_width:
+            current_width += char_width
             
-    #         # 添加逗号连接
-    #         if not current.endswith(('，', ',')):
-    #             current += '，'
-            
-    #         combined = current + next_line
-            
-    #         # 如果整合后不超过最大字符数，则整合
-    #         if len(combined) <= max_chars:
-    #             final_lines.append(combined)
-    #             i += 2  # 跳过下一行
-    #         else:
-    #             # 如果整合后超过最大字符数，直接强制分割，避免递归
-    #             # 将combined按max_chars强制分割
-    #             while len(combined) > max_chars:
-    #                 final_lines.append(combined[:max_chars])
-    #                 combined = combined[max_chars:]
-                
-    #             # 添加剩余部分
-    #             if combined:
-    #                 final_lines.append(combined)
-                
-    #             i += 2
-    #     else:
-    #         final_lines.append(current)
-    #         i += 1
+            # 如果当前字符是标点符号，记录为潜在切分点
+            if char in punctuation:
+                best_point = i + 1  # 包含标点符号
+        else:
+            break
     
-    return '\n'.join(lines)
+    # 如果没有找到标点符号切分点，尝试在词语边界切分
+    if best_point == 0:
+        # 英文单词和中文词语的边界
+        for i in range(len(text) - 1):
+            if i >= max_width:
+                break
+                
+            char = text[i]
+            next_char = text[i + 1]
+            
+            # 英文和中文的边界
+            is_boundary = (('\u4e00' <= char <= '\u9fff' and not '\u4e00' <= next_char <= '\u9fff') or
+                          (not '\u4e00' <= char <= '\u9fff' and '\u4e00' <= next_char <= '\u9fff'))
+            
+            char_width = 1.0 if '\u4e00' <= char <= '\u9fff' else 0.5
+            
+            if current_width + char_width <= max_width:
+                current_width += char_width
+                
+                if is_boundary:
+                    best_point = i + 1
+            else:
+                break
+    
+    # 如果仍然没有找到合适的切分点，就在最大宽度处切分
+    if best_point == 0:
+        # 计算最大宽度对应的字符位置
+        i = 0
+        width = 0
+        while i < len(text):
+            char_width = 1.0 if '\u4e00' <= text[i] <= '\u9fff' else 0.5
+            if width + char_width > max_width:
+                break
+            width += char_width
+            i += 1
+        best_point = i
+    
+    return best_point
 
 def create_header_image(text, type='daily'):
     header_text_image_path = os.path.join(os.path.dirname(__file__), "feishu_docs", "daily_header_text.png")
@@ -391,22 +409,22 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
 if __name__ == "__main__":
 
     # ### 测试生成周报：读取本地文件并保存到飞书文档中
+    def test_write_to_weekly_docx():
+        # 读取markdown文件内容
+        markdown_content = ''
+        # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
+        markdown_file_path = os.path.join(os.path.dirname(__file__), "files", "latest_summary.md")
 
-    # 读取markdown文件内容
-    markdown_content = ''
-    # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
-    markdown_file_path = os.path.join(os.path.dirname(__file__), "files", "latest_summary.md")
-
-    try:
-        with open(markdown_file_path, 'r', encoding='utf-8') as f:
-            markdown_content = f.read()
-    except Exception as e:
-        lark.logger.error(f"Failed to read markdown file: {e}")
-    
-    import asyncio
-    # 修复异步函数调用
-    FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
-    asyncio.run(write_to_weekly_docx(markdown_content))
+        try:
+            with open(markdown_file_path, 'r', encoding='utf-8') as f:
+                markdown_content = f.read()
+        except Exception as e:
+            lark.logger.error(f"Failed to read markdown file: {e}")
+        
+        import asyncio
+        # 修复异步函数调用
+        FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
+        asyncio.run(write_to_weekly_docx(markdown_content))
 
     # asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
 
@@ -447,7 +465,9 @@ if __name__ == "__main__":
     # print()
 
     # 3. 测试标题图片生成
-    date_md = '09.13'
-    title = '比特币盘整蓄势，机构增持与宏观利好推动市场'
-    final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
-    create_header_image(final_title_for_imageheader, type='daily')
+    def test_create_header_image():
+        date_md = '09.13'
+        title = '比特币突破12.5万美元，ETF资金流入与宏观避险需求推动上涨'
+        final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
+        create_header_image(final_title_for_imageheader, type='daily')
+    test_create_header_image()
