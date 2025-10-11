@@ -65,6 +65,13 @@ def check_cdp_connection():
 @app.route('/api/main', methods=['GET'])
 def start_main():
     mode = request.args.get('mode', '', type=str)
+    ymd_hm = request.args.get('ymd_hm', '', type=str)
+    now_ymd_hm = datetime.now().strftime('%Y-%m-%d %H:%M')
+    if ymd_hm and ymd_hm != now_ymd_hm:
+        return jsonify({
+            'success': False,
+            'error': '入参时间与当前时间不一致'
+        }), 400
 
     # 启动后台线程
     thread = threading.Thread(target=run_main_task, args=(mode,))

@@ -290,11 +290,12 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
         template_content = f.read()
     
     # 替换模板中的占位符
+    now_ymd_hm = datetime.now().strftime('%Y-%m-%d %H:%M')
     data_str = template_content.replace('{title}', title_escaped) \
                               .replace('{message_content}', message_content_escaped) \
                               .replace('{docs_url}', docs_url or '') \
                               .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！') \
-                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/api/main?mode=daily_news" or '')
+                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/api/main?mode=daily_news&ymd_hm={now_ymd_hm}" or '')
     data = json.loads(data_str)
     feishu_robot_utils.send_to_robot(data)
 
