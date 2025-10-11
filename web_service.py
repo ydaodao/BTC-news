@@ -65,18 +65,6 @@ def check_cdp_connection():
 @app.route('/api/main', methods=['GET'])
 def start_main():
     mode = request.args.get('mode', '', type=str)
-    ymd_hm = request.args.get('ymd_hm', '', type=str)
-    now_ymd_hm = datetime.now().strftime('%Y-%m-%d %H:%M')
-    if not ymd_hm:
-        return jsonify({
-            'success': False,
-            'error': '入参时间不能为空'
-        }), 400
-    if ymd_hm and ymd_hm != now_ymd_hm:
-        return jsonify({
-            'success': False,
-            'error': '入参时间与当前时间不一致'
-        }), 400
 
     # 启动后台线程
     thread = threading.Thread(target=run_main_task, args=(mode,))
@@ -162,20 +150,6 @@ def push_final_weekly_news_and_push_robot():
         'message': f'/api/push_final_weekly_news_and_push_robot?feishu_docx_url={feishu_docx_url} 任务已提交，正在后台处理'
     }), 200
 
-# 公众号登录二维码页面 - 返回HTML页面显示二维码
-@app.route('/qrcode', methods=['GET'])
-def qrcode_page():
-    try:
-        # 使用模板管理器渲染页面
-        html_content = template_manager.get_qrcode_page()
-        return html_content
-    except Exception as e:
-        logger.error(f"渲染二维码页面失败: {str(e)}")
-        return jsonify({
-            'success': False,
-            'error': '页面加载失败'
-        }), 500
-
 # 返回公众号登录二维码图片的API接口
 @app.route('/api/qrcode', methods=['GET'])
 def get_qrcode_image():
@@ -200,6 +174,36 @@ def get_qrcode_image():
         return jsonify({
             'success': False,
             'error': str(e)
+        }), 500
+
+# -------------------------以下都是页面-----------------------------
+
+# 公众号登录二维码页面 - 返回HTML页面显示二维码
+@app.route('/qrcode', methods=['GET'])
+def qrcode_page():
+    try:
+        # 使用模板管理器渲染Vue页面
+        html_content = template_manager.get_qrcode_page()
+        return html_content
+    except Exception as e:
+        logger.error(f"渲染二维码页面失败: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': '页面加载失败'
+        }), 500
+
+# 重新生成日报页面 - 返回HTML页面显示二维码
+@app.route('/regenerate_daily_news', methods=['GET'])
+def regenerate_daily_news_page():
+    try:
+        # 使用模板管理器渲染Vue页面
+        html_content = template_manager.get_regenerate_daily_news_page()
+        return html_content
+    except Exception as e:
+        logger.error(f"渲染重新生成日报页面失败: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': '页面加载失败'
         }), 500
 
 if __name__ == '__main__':

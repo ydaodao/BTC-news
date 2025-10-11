@@ -67,19 +67,22 @@ class TemplateManager:
         """获取二维码页面HTML"""
         return self.render_template('qrcode.html', **kwargs)
 
-# 创建全局模板管理器实例
-template_manager = TemplateManager()
+    def get_regenerate_daily_news_page(self, **kwargs):
+        """获取重新生成日报页面HTML"""
+        return self.render_template('regenerate_daily_news.html', **kwargs)
 
-# 模板配置
+# 在TEMPLATE_CONFIG中添加
 TEMPLATE_CONFIG = {
     'qrcode': {
         'template': 'qrcode.html',
         'description': '二维码显示页面',
         'variables': ['timestamp']
     },
-    'qrcode_with_css': {
-        'template': 'qrcode_with_css.html', 
-        'description': '带外部CSS的二维码页面',
+    'regenerate_daily_news': {
+        'template': 'regenerate_daily_news.html',
+        'description': '重新生成日报页面',
         'variables': ['timestamp']
-    }
+    },
 }
+
+template_manager = TemplateManager()

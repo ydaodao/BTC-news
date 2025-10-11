@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重新生成日报</title>
+    <link rel="stylesheet" href="/static/css/qrcode.css">
+    <!-- 引入Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <button class="refresh-btn" @click="regenerateDailyNews">
+                {{ isSuccess ? '已发送' : '🔄 重新生成日报' }}
+            </button>
+            
+            <div class="timestamp">
+                页面加载时间: {{ currentTime }}
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/regenerate_daily_news.js"></script>
+</body>
+</html>
