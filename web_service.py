@@ -67,6 +67,11 @@ def start_main():
     mode = request.args.get('mode', '', type=str)
     ymd_hm = request.args.get('ymd_hm', '', type=str)
     now_ymd_hm = datetime.now().strftime('%Y-%m-%d %H:%M')
+    if not ymd_hm:
+        return jsonify({
+            'success': False,
+            'error': '入参时间不能为空'
+        }), 400
     if ymd_hm and ymd_hm != now_ymd_hm:
         return jsonify({
             'success': False,
