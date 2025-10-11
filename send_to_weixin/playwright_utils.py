@@ -319,6 +319,13 @@ def operate_element(page, css_selector_name, css_selector, operation='click', te
         print(f"对元素 {css_selector_name} 执行操作: {operation}")
         # 根据操作类型执行相应操作
         if operation == 'click':
+            element.hover()
+            sleep(0.5)
+            element.click()
+            print(f"已点击元素: {css_selector_name}")
+            return True
+        
+        elif operation == 'click_only':
             element.click()
             print(f"已点击元素: {css_selector_name}")
             return True
