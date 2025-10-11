@@ -25,1154 +25,7 @@
 
     -----
 
-    标题: <b>比特币</b>（<b>BTC</b>）“超级周期正在展开”的三个迹象 - Cointelegraph中文
-真实链接: https://cn.cointelegraph.com/news/three-signs-the-bitcoin-supercycle-is-unfolding
-正文: **关键要点：**
-
-  * 强劲的ETF资金流入和所有比特币投资者群体的持续积累表明，本轮上涨行情刚刚开始。
-
-  * 现货比特币ETF一周内净流入22亿美元，创下历史第二高。
-
-  * 罕见的积累圆筒形态显示本周期比特币目标价为45万-50万美元。
-
-比特币（BTC）在周四交易剧烈波动，美联储主席Jerome Powell于2025年堪萨斯城社区银行研究会议发言前，市场情绪陷入不确定。
-
-不过，分析师表示，除宏观因素外，链上和技术面指标均显示比特币“超级周期”才刚刚开始。
-
-## **现货ETF流入带来“持久顺风”**
-
-比特币自10.8万美元低点反弹后，展现出强劲的多头动能。累计上涨超16%，并于周日创下历史新高，突破12.6万美元。
-
-据Glassnode数据显示，现货比特币ETF投资者的强劲需求推动了比特币的反弹，上周录得22亿美元净流入。
-
-链上数据提供方在最新的《Week On-chain》报告中指出：
-
-> “这种重新的机构参与吸收了可用的现货供应并加强了整体市场流动性。”
-
-![](https://s3.cointelegraph.com/uploads/2025-10/0199c9a7-a17d-7a9c-a21c-0d5df73939c9)
-_现货比特币ETF净流量。来源：Glassnode_
-
-这些资金流入与2024年11月6日至12月16日期间类似，当时吸引了57亿美元资金，并推动比特币从6.7万美元上涨至10.8万美元，涨幅达60%。
-
-现货ETF的创纪录资金流入显示出强劲的机构需求，而季节性因素也助推了当前的看涨氛围。
-
-Glassnode表示，历史上第四季度一直是比特币表现最强的季度，“通常与风险偏好回升和投资组合再平衡同步”，并补充：
-
-> “10月和11月的持续ETF流入可能提供持久的顺风，增强信心并支持价格到年底。”
-
-## **“更具内生性”的比特币积累**
-
-支撑风险偏好的还有比特币鲸鱼，他们在价格上涨阶段仍在持续增持。据Glassnode数据显示，比特币积累趋势得分（Accumulation Trend
-Score, ATS）正接近1（见下图），表明大户投资者正积极积累。
-
-该指标反映链上主动积累比特币实体的相对规模。
-
-这一变化与7月观察到的积累模式相似，当时比特币从6月低于10万美元的水平上涨至8月14日的前高点12.45万美元。
-
-![Bitcoin Price, Markets, Price Analysis, Tech Analysis, Market Analysis,
-Bitcoin ETF,
-ETF](https://s3.cointelegraph.com/uploads/2025-10/0199c9c5-c8c0-70d7-9415-47a7af5af2dd)
-_比特币积累趋势得分。来源：Glassnode_
-
-此外，过去数周，持有10枚至1000枚比特币的小型至中型实体的买入力度也在持续回升。
-
-Glassnode补充道：
-
-> “中层持有者之间的一致性指向一个更有机的积累阶段，为正在进行的反弹增加结构深度和弹性。”
-
-![](https://s3.cointelegraph.com/uploads/2025-10/0199c9a7-b839-7592-b936-e5aa9c1cad54)
-_按群体划分的比特币积累趋势得分。来源：Glassnode_
-
-## **一张比特币价格图指向50万美元**
-
-比特币价格走势在月线级别形成了一种少见但可靠的形态，即Jesse Livermore积累圆筒形态。据分析师Merlijn The
-Trader认为，这显示比特币超级周期正在“展开”。
-
-Jesse Livermore积累圆筒形态是一种技术分析形态，资产价格在窄幅区间震荡，形成“圆筒”结构，意味着强势资金在突破前持续积累。
-
-Merlijn The Trader指出，比特币/美元目前正进入“第8阶段，即垂直疯狂阶段”，如图所示。
-
-第7阶段积累结束后，比特币有望进入第8和第9阶段，价格目标分别为45万美元和50万美元。
-
-该分析师表示：“比特币的超级周期正在展开。”
-
-![](https://s3.cointelegraph.com/uploads/2025-10/0199c9b1-44a5-7c40-9f16-81041ea6b473)
-_BTC/USD月度图表。来源：Merlijn The Trader_
-
-分析师Bitcoinsensus同样指出，比特币正在重演过去两年第四季度的走势，比特币/美元每次都突破扩张三角形形态，引发大幅拉升。
-
-> “我们是否即将看到另一个垂直阶段？”
-
-据Cointelegraph报道，多重因素表明比特币仍有上涨空间，杯柄形态预示比特币价格或将升至30万美元。
-
-相关推荐：[比特币跌破12万美元，悲观数据引发BTC价格下跌10%预警](https://cn.cointelegraph.com/news/bitcoin-
-drops-under-120k-bearish-data-sparks-10-btc-price-warning
-"https://cn.cointelegraph.com/news/bitcoin-drops-under-120k-bearish-data-
-sparks-10-btc-price-warning")
-
-
-
------
-
-标题: 贵金属交易已“过热”！分析师：为<b>比特币</b>第四季度飙升做好准备吧 - 黄金网
-真实链接: http://gold.cnfol.com/jinshizhibo/20251010/31695524.shtml
-正文: FX168财经报社(亚太)讯 分析人士指出，贵金属价格在2025年创下历史新高，使得比特币(BTC)相对被低估，这为比特币在第四季度强劲反弹奠定了基础。
-
-受美元贬值影响，贵金属价格飙升，黄金价格触及4000美元/盎司，白银价格也创下45年来的新高，超过50美元/盎司。
-
-然而，贵金属的涨势可能正在减弱，这为投资者转向比特币等另类价值存储资产以及代币化的现实世界资产(Real World Assets，RWA)铺平道路。
-
-教育公司Coin Bureau的创始人Nic Puckrin表示，今年迄今为止，黄金价格已上涨逾50%，加上高盛(Goldman
-Sachs)预测到2026年底将达到4900美元/盎司，这表明黄金交易“过热”。
-
-Puckrin表示：“今年迄今为止，金价已上涨逾50%，现在人们的注意力或许会转向其他持有类似观点的替代资产。这些替代资产包括其他金属和大宗商品、代币化实体资产以及比特币，这些资产相对于黄金的价值仍然被低估。”
-
-![](http://caiji.3g.cnfol.com/colect/202510/10/20251010912258.png)
-
-(黄金价格走势图 来源：TradingView)
-
-Puckrin补充说，这些资产都可以作为对冲法定货币通胀和地缘政治不确定性的工具。
-
-比特币在10月份创下超过126,000美元的历史新高，贵金属价格也出现历史性的飙升。与此同时，投资者对美元的信心正在丧失，美元正面临1973年以来最糟糕的一年。
-
-**比特币有望从美元贬值中受益**
-
-“Kobeissi
-Letter”的市场分析师周日撰文称：“美元目前正走向自1973年以来表现最差的一年，年初至今已下跌逾10%。自2000年以来，美元的购买力已下降了40%。”
-
-美元的贬值引发资金同时流入价值储藏型资产和风险资产的现象，而这两类资产通常呈反向走势。通常情况下，当股票等风险资产下跌时，避险及价值储藏资产的价值会上升，反之亦然。
-
-![](http://caiji.3g.cnfol.com/colect/202510/10/20251010455016.png)
-
-(比特币价格飙升 图片来源：TradingView)
-
-分析师表示，这表明投资者正在为“新货币政策时代”重新定价资产，在这个时代，通胀将进一步上升，政府将通过进一步贬值货币来为运营提供资金，从而导致所有资产价格上涨。
-
-投资公司Bitwise首席投资官Matt Hougan表示，由于货币持续贬值，比特币价格有望在第四季度飙升，因为投资者试图通过大量购买避险资产来保住财富。
-
-![](http://hs.cnfol.com/uk/Imgs/GoldNet/wehjy.jpg)
-
-实用的黄金投资指南，分享精品投资理财诀窍，带你走上财富增值之路！股市暴跌人人都亏了，黄金投资我却赚钱了！支持贵金属1秒查行情，菜单栏点击“金饰”“黄金”“白银”等关键词便可知晓即时行情报价。亲，你关注金价波动吗？你想抄底黄金吗？
-
-
-
------
-
-标题: 每日数字<b>货币</b>动态汇总（2025-10-10）-市场参考-金十数据
-真实链接: https://xnews.jin10.com/details/194853
-正文: **1\. 知情人士：加密货币听证会预计将在美国政府停摆期间继续进行**
-
-据Blockworks报道，周三，美国参议院又一次否决了为联邦政府提供资金以结束持续九天停摆的两项计划，加密货币政策议程也因预算未确定而处于搁置状态，不过华盛顿内部人士觉得势头还没完全消失。众议院因停摆暂停工作，参议院还在就预算和加密货币相关问题开会。
-两名知情人士透露，参议院银行委员会即便要在停摆时开听证会，也要推进加密货币市场结构政策，领导层希望本月底完成《负责任金融创新法案》的修订。7月众议院通过了《金融透明法案》，之后参议院银行委员会和农业委员会各自制定法案，之后会合并到一起。银行委员会共和党人上月公布了修订版，民主党人给出希望立法包含的原则清单。农业委员会草案还没公布，完成可能要更久。停摆期间，和国会合作的机构人员大多被解雇，新现货加密货币ETF在停摆结束前可能无法获批。不过发行方称，政府恢复后新产品会很快获批，且停摆后他们没收到SEC消息。
-
-**2\. 道富银行：预测到2028年，机构比特币和加密货币持仓将翻倍**
-
-道富银行表示，预计到2028年，大多数机构的比特币和加密货币持有量将翻倍。
-
-**3\. 德意志银行：各国央行或在2030年前将比特币与黄金纳入关键储备**
-
-据彭博社报道，Deutsche
-Bank（德意志银行）称央行或在2030年前将比特币与黄金纳入关键储备。研究指出，央行在2008年金融危机后转为黄金净买方，目前全球央行持有黄金逾3.6万吨；美元在全球储备占比由2000年的60%降至2025年的41%，推动黄金与比特币ETF在6月分别录得50亿美元与47亿美元净流入。报告称数字资产应与法币“互补”，并强调比特币不会取代美元；JPMorgan另估算稳定币到2027年或带来1.4万亿美元新增美元需求。
-
-**4\. 新加坡拟推迟落实巴塞尔加密资产资本金新规至2027年**
-
-新加坡金管局已发布一份咨询总结，表明将推迟实施基于巴塞尔银行监管委员会加密资产监管标准的银行资本金新规。新加坡原计划于2026年1月1日起落实巴塞尔加密资产资本金新规，现拟延后至2027年1月1日或更迟实施，同时要求已持有加密资产风险敞口或拟持有加密资产风险敞口的银行在新规最终落实之前，必须就其加密资产风险敞口的适当审慎处理方式告知新加坡金管局并保持沟通。据悉，巴塞尔加密资产资本金新规对拟采用该规则之地的银行而言十分重要，因为它规定了银行必须为其加密资产风险敞口持有多少监管资本金。
-
-**5\. Tom Lee：预测市场结合代币化资产将创造金融"炼金术"**
-
-Fundstrat联合创始人兼以太坊财库公司BitMine董事长Tom
-Lee表示，预测市场不仅是"金融娱乐"，更是揭示"人群智慧"的重要工具。他以2024年美国大选为例，指出Polymarket准确预测特朗普胜出，证明了此类市场的严肃性和实用性。Lee预测，当预测市场与代币化股票和现实世界资产(RWA)结合时，将创造"炼金术"，使金融系统更具流动性，便于资本筹集。
-
-**6\. Coinbase在美国推出内置DEX交易，暂不向纽约开放**
-
-据The
-Block报道，Coinbase在美国推出内置DEX交易，暂不向纽约开放。用户可在App内通过集成的1inch与0x流动性池进行链上非托管代币交换，并在传统上线前交易Base网络原生代币。
-
-**7\. 分析：日本新首相或将推动加密经济，完善区块链法规**
-
-据Cointelegraph报道，日本新当选首相高市早苗或出台更“精细”监管政策，推动加密货币经济发展，日本有望成全球加密货币企业汇聚中心。她于周六当选自民党领袖，10月15日就职后将成为日本首位女首相。专家称，在她领导下，日本或对区块链等技术实验更开放，同时保持严格监管。Brickken总法律顾问表示，其当选或对数字资产认知和管理产生重大影响，她支持“技术主权”，政府或积极推动数字经济发展，加强日本在加密货币领域对法律确定性的承诺，引发外界关注。此外，高市早苗政府或使日本金融厅对代币分类更明确，目前该厅将代币分为支付代币、证券和实用代币，各有不同监管要求。
-
-**8\. 加密公司CipherOwl完成1500万美元种子轮融资，Coinbase Ventures等参投**
-
-据《财富》杂志报道，加密货币合规初创公司CipherOwl宣布完成1500万美元种子轮融资，由General Catalyst和Flourish
-Ventures共同领投，Coinbase Ventures及Enlight
-Capital等机构参与投资。该公司由前Coinbase工程师联合创立，专注于利用人工智能技术为金融机构提供链上交易监控与合规分析服务。其客户包括多家加密货币交易所及执法部门，主要通过AI系统自动生成可疑活动分析报告以提升审查效率。
-
-**9\. 以太坊开发者发布Kohaku路线图，以为钱包带来隐私和安全**
-
-据Cointelegraph报道，以太坊开发者公布新路线图Kohaku，旨在通过模块化框架提升钱包隐私与安全性。该项目由以太坊基金会协调员Nicolas
-Consigny在博客中宣布，计划构建一套隐私与安全基础组件。Kohaku核心是打造软件开发工具包（SDK）及参考钱包，展示工具实际效果。首版将以基于Ambire钱包的浏览器扩展形式呈现，面向高级用户。Kohaku正与Ambire、Railgun等知名团队携手开发，且为开源项目，开发者可通过GitHub贡献代码。其主要目标是减少钱包对可追踪交易的中心化服务的依赖，包含隐私收发等功能，还计划利用工具增加社交恢复选项。长远来看，团队致力于将钱包安全性提升至设备层面，创建原生以太坊浏览器，保障用户安全交互。
-
-**10\. Coinbase与Mastercard正就收购伦敦稳定币基础设施公司BVNK进行高级谈判**
-
-据《财富》杂志报道，Coinbase与Mastercard正就收购伦敦稳定币基础设施公司BVNK进行高级谈判，价格区间约15亿至25亿美元。目前Coinbase更具优势，但交易尚未最终敲定。若达成，将成为迄今最大稳定币并购案。BVNK成立于2021年，面向企业提供稳定币交易、跨境支付与资金管理等服务，2024年12月获5000万美元融资，估值约7.5亿美元，投资方包括Haun
-Ventures、Coinbase Ventures、Tiger
-Global，近期还有Visa与Citi的风投参与。Stripe今年以11亿美元收购Bridge。BVNK、Mastercard与Coinbase均未置评。
-
-**11\. “比特币耶稣”Roger Ver与美国司法部达成暂缓起诉协议，拟缴约4800万美元了结税案**
-
-据纽约时报报道，比特币早期投资者Roger Ver（“Bitcoin
-Jesus，比特币耶稣”）与美国司法部达成暂缓起诉（DPA）协议，拟支付约4800万美元以了结其被指控的税务欺诈与逃税案件；若履行条款，指控将被撤销。Ver于2024年被控未缴约4800万美元加密资产相关税款，并在今年聘请曾为Trump辩护的律师团队与游说机构；另据文件，他向Roger
-Stone支付60万美元寻求相关税则变更。案件尚未提交法院，细节仍可能调整。 原文链接
-
-**12\. CleanSpark CEO：美国战略比特币储备计划继续增持BTC**
-
-美国比特币矿企CleanSpark CEO Matthew Schultz
-10月8日在X发推表示，他当晚和美国财政部长Bessent和美国参议院银行委员会主席Tim
-Scott共进晚餐并讨论了市场结构法案，美联储主席候选人以及美国战略比特币储备等话题。Matthew
-Schultz文中透露，美国持有约170亿美元的比特币，“不会出售”，并计划继续增持。
-
-**13\. 欧盟推动欧元稳定币以抗衡美元主导地位**
-
-欧洲稳定机制（ESM）总干事Pierre
-Gramegna表示，欧盟应推动以欧元计价的稳定币发展，以减少对美元稳定币的依赖，并支持本土金融创新。他强调，稳定币和代币化资产将成为欧洲金融体系的重要组成部分。欧元集团主席Paschal
-Donohoe认为，尽管数字欧元（CBDC）仍具潜力，但私营部门发行的欧元稳定币同样必要。欧洲央行官员Piero
-Cipollone指出，数字欧元预计在2029年前不会推出。在美国通过GENIUS法案后，美元稳定币快速增长，促使欧盟调整立场，开始积极推动欧元稳定币，以应对美元在全球数字金融领域的主导地位。
-
-**14\. Deribit：超53亿美元BTC和ETH期权即将到期，BTC最大痛点价为11.7万美元**
-
-据Deribit数据显示，超过53亿美元的加密货币期权将于明日到期。其中，BTC期权名义价值达43亿美元，Put/Call比为1.12，最大痛点价为11.7万美元；ETH期权名义价值为9.4亿美元，Put/Call比为0.9，最大痛点价为4430美元。当前BTC交易者在11万美元看跌期权和12万美元看涨期权之间分歧明显，而ETH资金流则更偏向看涨。
-
-**15\. 韩国国内稳定币日交易量萎缩至2000亿韩元，去年年底曾达1万亿韩元**
-
-韩国国内稳定币交易陷入低迷，今年6月日均交易量已降至2000亿韩元级别。
-根据10日国会立法调查处向国会企划财政委员会所属国民力量党议员朴成勋提交的资料显示，以今年6月为基准，韩国国内稳定币日均交易量经统计为2380亿韩元。该数据由韩国银行汇总国内5大虚拟资产交易所（Upbit、Bithumb、Korbit、Coinone、Gopax）内美元稳定币（USDT、USDC、USDS）的交易金额得出。
-韩国国内稳定币的日均交易量从去年7月的1741亿韩元开始逐步增长，10月达到3041亿韩元，11月增至6381亿韩元，12月更是飙升至1.229万亿韩元。
-
-**16\. 卢森堡一家主权财富基金已将其1%的资产投资于比特币ETF**
-
-据CoinDesk报道，卢森堡金融中心发展署代表称，卢森堡一家主权财富基金已将其1%的资产投资于比特币ETF，成为欧元区首个采取此类举措的国家级基金。卢森堡财政大臣Gilles
-Roth在众议院提交2026年预算时透露，卢森堡的跨代际主权财富基金（FSIL）已将其1%的资产投资于比特币。卢森堡金融署代表通信负责人Jonathan
-Westhead表示，此次投资是对FSIL新投资政策的实践，该政策2025年7月获政府批准，旨在彰显卢森堡在数字金融领域的领先地位。FSIL于2014年设立，目前持有7.3亿美元资产，多投高品质债券。修订框架后，FSIL除继续投资股债市场，还可将最高15%的资产配置于另类投资，包括私募股权、房地产及加密资产。为规避风险，比特币投资通过精选ETF进行。
-
-
-
------
-
-标题: 数据显示&quot;真实流动性&quot;涌现，<b>比特币</b>（<b>BTC</b>）向区间高点反弹 - Cointelegraph中文
-真实链接: https://cn.cointelegraph.com/news/bitcoin-rebounds-toward-range-high-as-data-highlights-real-liquidity
-正文: **要点：**
-
-BTC价格在周二从历史最高点大幅回调后已稳定在12万美元以上。随着买家重新入场，现货和衍生品市场正趋于更平衡的状态，为下一轮上涨行情奠定更坚实基础。
-
-![Cryptocurrencies, Bitcoin Price, Markets, Cryptocurrency Exchange, Price
-Analysis, Criptonoticias, Market
-Analysis](https://s3.cointelegraph.com/uploads/2025-10/0199c4a3-b5b4-7bed-8cca-81e359e48900)_BTC四小时图表。来源：_
-_Cointelegraph/TradingView_
-
-根据CryptoQuant数据，衍生品市场的中期趋势已明显转变。净接收方交易量（比较卖单和买单的指标）已从极度看跌的-4亿美元恢复至中性水平，这标志着"买卖压力主导地位之间出现了真正的转变"。
-
-![Cryptocurrencies, Bitcoin Price, Markets, Cryptocurrency Exchange, Price
-Analysis, Criptonoticias, Market
-Analysis](https://s3.cointelegraph.com/uploads/2025-10/0199c4b8-2c2a-700c-b98c-196e0b150cdf)_BTC净接收方交易量。来源：CryptoQuant_
-
-BTC在4月回调期间也曾出现类似转变，随后为期13周内51%的新一轮上涨趋势铺平了道路。然而，分析师警告指出，如果买入压力加速过快，突然转为强烈正值可能暗示市场过热。
-
-同样，Alphractal首席执行官Joao
-Wedson指出，买/卖压力差值仍然稳定保持正值。Wedson强调："这类指标能将您带入全新层次，显著提高决策准确性"，他特别指出，近几个月来，在市场情绪看似最疲软时坚持买入一直是有回报的策略。
-
-![Cryptocurrencies, Bitcoin Price, Markets, Cryptocurrency Exchange, Price
-Analysis, Criptonoticias, Market
-Analysis](https://s3.cointelegraph.com/uploads/2025-10/0199c4ba-7d9f-70d8-82dc-3413a52f6c29)_BTC买/卖压力差值。来源：Joao
-Wedson/X_
-
-与此同时，Swissblock分析公司指出，虽然BTC在接近12.6万美元历史新高后出现短期获利了结，但这种行为"是受控的，而非恐慌驱动"。
-
-该分析平台表示，若价格维持在12万至12.1万美元以上，将确认这是一个"健康的冷却阶段"，为需求重新增强和下一波上涨行情创造条件。
-
-## **自7月以来最强劲的买入浪潮验证了"真实流动性"**
-
-币安数据强化了持续买入动能的市场态势。自10月初以来，BTC价格已从11.7万美元攀升至12.4万美元，净买入压力（vol_delta）在多个交易日突破5亿美元大关，这表明买入交易量超过卖出交易量的差额达到了这一显著水平。
-
-不平衡比率（imbalance_pct）攀升至0.23，显示买单较卖单高出约23%，同时Z值上升至0.79，表明日常买入活动明显高于平均水平。
-
-![Cryptocurrencies, Bitcoin Price, Markets, Cryptocurrency Exchange, Price
-Analysis, Criptonoticias, Market
-Analysis](https://s3.cointelegraph.com/uploads/2025-10/0199c4a7-a2f7-7755-a67f-63b57976b691)_币安BTC买方压力。来源:
-CryptoQuant_
-
-业内分析师指出，这些数据指标不仅反映短期投资热情；更标志着机构投资者和"巨鲸"级别参与者的明显回归。日交易量已达到自7月以来的最高水平，有力证明BTC当前的价格上涨是建立在真实流动性基础上，而非短暂的投机行为。
-
-尽管最近几个交易日的交易量差值出现小幅下降，但更广泛的市场指标（如稳定的波动率和中型持币者持续积累行为）表明市场信心依然十分强劲。
-
-这种市场行为与9月份的疲软表现形成鲜明对比，并进一步强化了市场观点：任何向12万美元区域的价格回调很可能会成为战略性积累的良机，而非更深层次调整的开端。
-
-相关推荐：[110亿美元比特币巨鲸在两个月后携3.6亿美元BTC转移回归](https://cn.cointelegraph.com/news/11b-bitcoin-
-whale-returns-360m-btc-transfer
-"https://cn.cointelegraph.com/news/11b-bitcoin-whale-returns-360m-btc-
-transfer")
-
-本文不包含任何投资建议或推荐。任何投资和交易行为均涉及风险，读者应自行研究后再做决定。
-
-
-
------
-
-标题: 澳大利亚Monochrome现货<b>比特币</b>ETF的<b>BTC</b>持仓升至1076枚_亿欧快讯
-真实链接: https://www.iyiou.com/briefing/202510101832459
-正文: Verification Code will refresh in 2 sec.
-
-
-
------
-
-标题: 贵金属交易已“过热”！分析师：为<b>比特币</b>第四季度飙升做好准备吧 - FX168财经
-真实链接: https://www.fx168news.com/article/%E9%BB%84%E9%87%91-952299
-正文: [FX168财经](https://www.fx168news.com/)报社(亚太)讯
-分析人士指出，[贵金属](https://www.fx168news.com/info/001005)价格在2025年创下历史新高，使得[比特币](https://www.fx168news.com/quote/BINBTC)(BTC)相对被低估，这为比特币在第四季度强劲反弹奠定了基础。
-
-受美元贬值影响，贵金属价格飙升，黄金价格触及4000美元/盎司，白银价格也创下45年来的新高，超过50美元/盎司。
-
-**然而，贵金属的涨势可能正在减弱，这为投资者转向比特币等另类价值存储资产以及代币化的现实世界资产(Real World
-Assets，RWA)铺平道路。**
-
-**部分归因于投资者获利了结，[现货黄金](https://www.fx168news.com/quote/FEAUUS)周四(10月9日)收盘暴跌65.53美元，跌幅1.62%，报3976.04美元/盎司。**
-
-教育公司Coin Bureau的创始人Nic Puckrin表示，今年迄今为止，黄金价格已上涨逾50%，加上高盛(Goldman
-Sachs)预测到2026年底将达到4900美元/盎司，这表明黄金交易“过热”。
-
-**Puckrin表示：“今年迄今为止，金价已上涨逾50%，现在人们的注意力或许会转向其他持有类似观点的替代资产。这些替代资产包括其他金属和[大宗商品](https://www.fx168news.com/info/001006)、代币化实体资产以及[比特币](https://www.fx168news.com/quote/BINBTC)，这些资产相对于黄金的价值仍然被低估。”**
-
-(黄金价格走势图 来源：TradingView)
-
-**Puckrin补充说，这些资产都可以作为对冲法定货币通胀和地缘政治不确定性的工具。**
-
-比特币在10月份创下超过126,000美元的历史新高，[贵金属](https://www.fx168news.com/info/001005)价格也出现历史性的飙升。与此同时，投资者对美元的信心正在丧失，美元正面临1973年以来最糟糕的一年。
-
-**比特币有望从美元贬值中受益**
-
-“Kobeissi
-Letter”的市场分析师周日撰文称：“美元目前正走向自1973年以来表现最差的一年，年初至今已下跌逾10%。自2000年以来，美元的购买力已下降了40%。”
-
-美元的贬值引发资金同时流入价值储藏型资产和风险资产的现象，而这两类资产通常呈反向走势。通常情况下，当股票等风险资产下跌时，避险及价值储藏资产的价值会上升，反之亦然。
-
-([比特币](https://www.fx168news.com/quote/BINBTC)价格飙升 图片来源：TradingView)
-
-分析师表示，这表明投资者正在为“新货币政策时代”重新定价资产，在这个时代，通胀将进一步上升，政府将通过进一步贬值货币来为运营提供资金，从而导致所有资产价格上涨。
-
-**投资公司Bitwise首席投资官Matt
-Hougan表示，由于货币持续贬值，比特币价格有望在第四季度飙升，因为投资者试图通过大量购买避险资产来保住财富。**
-
-
-
------
-
-标题: <b>比特币</b>价格预测：分析师警告称，<b>BTC</b> 的看涨势头还有100 天就会消退 - FinanceFeeds
-真实链接: https://financefeeds.com/zh-CN/bitcoin-price-prediction-analysts-warn-btc-has-100-days-before-bullish-momentum-fades/
-正文: 分析人士认为 [比特币 ](https://financefeeds.com/zh-CN/technical-analysis-bitcoin-
-consolidates-pullback-near-122000/) 目前处于紧张状态，预计该资产的下一个重大走势将在 105
-天内出现，之后市场方向才会确定。
-
-据最近的一项 [Tony Severino
-的分析](https://x.com/tonythebullcmt/status/1975740078195450301?s=46)，比特币未能突破布林带技术指标标记的阻力区，达到了他所说的“创纪录的紧张程度”。
-
-布林带使用三个水平来确定市场状态 - 上带，往往充当阻力位；下带，充当支撑催化剂；中带，在图表上在支撑位和阻力位之间交替。
-
-![IMG 7853](https://financefeeds.com/wp-
-content/uploads/2025/10/IMG_7853.jpeg)来源：X
-
-根据塞韦里诺的分析，比特币在测试图表上轨后形成了与前两次类似的分形形态。
-
-从历史上看，在过去两次比特币交易进入较高周线区间时，平均需要 95 天（介于 84 至 105 天之间）才能发生重大变动。
-
-> 用塞韦里诺的话来说：  
-> “根据过去的局部整合范围，可能需要长达 100 多天的时间才能实现有效突破（或者如果 BTC 暴跌，则崩溃）。”
-
-这位分析师声称，比特币的下一步涨跌走势将在很大程度上取决于接下来的几根蜡烛图。他认为，无论朝哪个方向，都将伴随剧烈波动，这对交易者来说是一个警示。
-
-> 他补充说：  
-> “从这种挤压式布局中扩张可能会导致假动作。我们可能在最近的这次动作中就看到过这种情况。我们也可能会看到另一个从这里向下假动作，然后最终向上起飞。”
-
-另一位加密货币分析师，也就是众所周知的 Rekt Capital，表示比特币的下一个重大结果可能是价格大幅上涨。
-
-他的分析还指出了市场中的分形模式，并与 2017 年和 2021 年的价格走势相关联。
-
-他几个月来一直追踪的图表显示，与 2017 年和 2021 年的市场周期类似，修正阶段似乎已经结束，资产现已进入他所说的“发现阶段”。
-
-![IMG 7854]()来源：X
-
-发现阶段代表着市场中代币不断创下历史新高的阶段。在这种情况下，他的预测目标超过了图表上备受期待的136,000万至140,000万美元区间。
-
-## **市场是否一致？**
-
-市场投资者似乎对比特币的潜在涨势持乐观态度。机构投资者——一群以大额买卖订单影响价格走势而闻名的群体——仍然主要看涨。
-
-根据 SoSoValue 的最新数据，机构投资者在过去一周的交易中购买了价值约 2.5 亿美元的比特币。
-
-进一步分析表明，大部分流入资金来自 [贝莱德，尤其是其交易所交易基金 (ETF) 达到了 80,000 BTC 的新里程碑，代表着 4
-亿美元的新资本流入。](https://financefeeds.com/zh-CN/blackrocks-bitcoin-etf-
-surpasses-800000/)
-
-机构投资者如此大量的流入表明市场信心十足，并可能减少比特币的可用供应量，造成稀缺性，从而推动价格随着时间的推移而上涨。
-
-在现货市场，投资者也在积极购买比特币。据 CoinGlass 称，现货交易所净流量记录了价值 209
-亿美元的比特币大宗购买，这进一步增加了与机构情绪相符的购买压力。
-
-同样，用于确定投资者是买入还是卖出的累积/分布（A/D）指标显示购买活动持续激增。
-
-A/D指标显示，投资者买入量整体持续上升，全市场总买入量达到12.9亿。
-
-这些不同细分市场的综合积累表明，投资者仍然普遍看好比特币，并且很有可能有更多的流动性继续流入市场。
-
-## **势头逐渐消退**
-
-市场势头强劲，正如 16% 的飙升所表明的那样 [交易量达到73.3亿美元。](https://financefeeds.com/zh-CN/what-
-is-trading-volume-in-
-crypto/#:~:text=Trading%20volume%20calculation%20involves%20summing,provide%20a%20comprehensive%20market%20picture.)
-
-如此大规模的流动性增加通常意味着资产的当前趋势可能会继续朝着同一方向发展。
-
-然而，在撰写本文时，比特币已呈现轻微下行走势，流动性小幅下降 0.57%，表明看跌压力可能暂时占主导地位。
-
-不过，这种下跌可能只是短期的调整阶段，之后资产价格可能会再次走高——尤其是在市场整体看涨情绪持续增长的情况下。
-
-## **常见问题解答 (FAQs)**
-
-**1\. 100天窗口期对比特币来说意味着什么？**  
-100 天窗口是指分析师认为比特币必须确认其下一个主要价格方向（要么是看涨突破，要么是下行修正）的预计时间。
-
-**2\. 这一预测背后的分析师是谁？**  
-该分析来自 Tony Severino，他强调了比特币的“创纪录的紧张程度”，以及 Rekt Capital，他们将当前的市场模式与 2017 年和
-2021 年的前几个周期进行了比较。
-
-**3\. 本次分析使用了什么技术指标？**  
-布林带指标是关键工具。它衡量市场波动性，并帮助识别潜在的阻力位和支撑位。
-
-**4\. 机构投资者如何影响比特币的价格？**  
-以贝莱德等公司为首的机构投资者通过 ETF 和直接购买向比特币注入了数十亿美元的资金，增加了比特币的稀缺性并提振了长期看涨情绪。
-
-**5\. 分析师对比特币的价格目标是什么？**  
-Rekt Capital 预测，如果看涨趋势持续下去，比特币在发现阶段可能会突破 136,000 美元至 140,000 美元的区间。
-
-
-
------
-
-标题: 2025 8家最佳<b>比特币</b>Keno赌场推荐 - Crypto News
-真实链接: https://cryptonews.com/cn/cryptocurrency/best-bitcoin-keno-casinos/
-正文: #  2025 年8家最佳比特币Keno赌场推荐
-
-分享
-
-![](https://cryptonews.com/wp-content/themes/cryptonews/images/socials/purple-
-share.svg)
-
-![Best Bitcoin Keno Casinos](https://cimg.co/news/112228/273098/best-bitcoin-
-keno-casinos.jpg)
-
-寻找使用比特币在线玩Keno？找到最受欢迎的Keno赌场可能有些挑战，那么该如何入手呢？
-
-在这个指南中，我们将评估2025 年最佳的比特币Keno赌场。我们根据奖金、游戏类型、公平投注限制、支付时间等方面对顶级比特币Keno网站进行排名。
-
-## 顶级比特币Keno赌场网站
-
-  
-以下是2025 年最佳比特币Keno赌场：
-
-  1. [**Mega Dice**](https://cryptonews.com/ext/megadice/?transfer=1) – 这家最近推出的加密赌场拥有出色的桌面游戏和体育博彩选择，还有独特的游戏类别。它还提供200%的首次存款奖金。
-  2. [**Lucky Block**](https://cryptonews.com/ext/lucky-block-casino/?transfer=1) – 这家受欢迎的Keno赌场提供来自行业最佳软件提供商的数千款游戏。除了是全球最佳比特币Keno赌场外，该平台还提供桌面游戏、老虎机、真人荷官、视频扑克等。
-  3. [**BC.Game**](https://cryptonews.com/ext/bcgame/?transfer=1) – 以加密为中心的Keno赌场，[提供快速的支付](https://cryptonews.com/news/best-instant-withdrawal-bitcoin-casinos/)、各种各样的游戏和慷慨的四阶段欢迎奖金。这是最适合可验证公平性Keno游戏的平台之一。
-  4. [**Cloudbet**](https://cryptonews.com/ext/cloudbet/?transfer=1) – 成立时间较长的赌场兼体育博彩公司，提供Keno和其他流行游戏。这家比特币Keno赌场网站还提供高达5 BTC的100%匹配存款奖金。
-  5. [**Metaspins**](https://cryptonews.com/ext/metaspins/?transfer=1) – 顶级赌场平台，为新玩家提供高达1 BTC的100%欢迎奖金。除了Keno变体，这家赌场还提供视频扑克、桌面游戏和老虎机。
-  6. [**Wild.io**](https://cryptonews.com/ext/wildio/?transfer=1) – 赌场提供VIP Keno，此外还有游戏秀、刮刮卡、老虎机和桌面游戏。新的Keno玩家可以领取高达10 BTC的大额欢迎奖金。
-  7. [**Fairspin**](https://cryptonews.com/ext/fairspin/?transfer=1) – 提供超过6,400款游戏，包括众多Keno变体。价值高达45万美元的四部分欢迎套餐。
-  8. [**mBit**](https://cryptonews.com/ext/mbit/?transfer=1) – 设立时间较长的在线赌场，提供三项匹配存款奖金和300次无风险旋转。以其多样化的Keno游戏而受欢迎，同时还提供视频扑克、老虎机、桌面游戏等。
-
-## 全面评测最佳比特币Keno网站
-
->
-> 最佳比特币Keno网站拥有丰厚的奖金、各种各样的游戏、快速的支付速度和合理的存款限制。然而，并非所有比特币Keno赌场都是一样的，因此玩家在继续之前应该进行自己的研究。
-
-以下是对最佳比特币Keno赌场的评测：
-
-### 1\. Mega Dice – 最佳整体最近推出的Keno赌场
-
-[Mega Dice](https://cryptonews.com/ext/mega-
-dice/?transfer=1)以其流畅的界面和引人入胜的绿色和黑色配色方案呈现出一种吸引人的在线赌博体验。用户完全探索该平台后，很有可能会发现它非常令人愉快，并有可能成为他们的首选比特币赌场。
-
-由MIBS B.V.运营，Mega
-Dice是一家知名的Keno赌场和体育博彩公司，吸引了来自世界各地的成千上万的玩家。该平台持有库拉索博彩管理局颁发的牌照，并支持比特币以外的各种加密货币，如USDT、ETH、LTC、XRP、DOGE、ADA、TRX和BCH。虽然Mega
-Dice提供多个游戏类别，包括Keno，但其主要关注点似乎是体育博彩，为爱好者提供了众多选择。
-
-![Keno Games On Mega Dice Casino](https://cimg.co/p/no_image.svg)
-
-Mega
-Dice是第一家通过Telegram向客户提供经过许可的赌博的在线赌场。这是一项出色的市场策略，因为Telegram是一款受欢迎的应用程序，特别是在加密货币爱好者中间。这消除了创建账户或下载其他应用程序的需要
-– 现有的Telegram用户[可以通过该应用程序免费访问Mega Dice
-KYC](https://bs_c22ac4a3.cryptonewsdom.care/?referrer=https%3A%2F%2Fcryptonews.com%2Fcn%2Fcryptocurrency%2Fbest-
-bitcoin-keno-casinos%2F&transfer=1)，只需进行一次加密存款即可开始游戏。
-
-![Mega Dice Telegram Casino Bot](https://cimg.co/p/no_image.svg)
-
-我们还注意到，Mega Dice赌场的Keno游戏数量相对较低，比很多竞争对手都少。然而，这可能仅仅是因为它是一个新平台的原因。截至目前，Mega
-Dice上可用的Keno游戏包括《Magical keno》、《Jungle keno》、《Banana keno》等。
-
-目前，Mega Dice提供的促销活动只有一个：欢迎奖金，为玩家提供高达1
-BTC的令人印象深刻的200%奖金，附带50次免费旋转。凭借24/7响应迅速的客户支持团队和用户友好的导航，Mega
-Dice是寻找卓越Keno赌场的赌博爱好者的极佳选择。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-高达1 BTC的200%欢迎奖金 | 40倍 | 4 | $1 | 5-10分钟  
-  
-**优点**
-
-  * Telegram集成
-  * 声望良好的游戏提供商
-  * 经过许可的实体
-  * 广泛的体育博彩
-  * VPN友好
-
-**缺点**
-
-###  2\. Lucky Block – 2023年高质量比特币Keno赌场
-
-寻找2023年最佳比特币Keno赌场的玩家可能会喜欢[Lucky Block](https://cryptonews.com/ext/lucky-
-block-casino/?transfer=1)。其赌场库包括七种不同的Keno游戏。例如，足球迷可能会喜欢Keno
-Goal，它包括一个由连续数字组成的80个单元的场地。Keno Goal的目标是预测获胜数字并在网格上标记它们。游戏最多吸引20个数字。
-
-Lucky Block的另一种受欢迎的[变体是Keno
-Rush](https://spribe.co/games/keno)。在这个快速版本中，使用了一个40个数字的网格。每个玩家可以选择最多10个数字，并在高、中或低三个风险模式之间进行选择。其他比特币Keno游戏包括Jungle、Banana、Rainbow和Magical。此外，Lucky
-Block还提供了来自Scribe的Keno。
-
-![Lucky Block Casino Featured Games](https://cimg.co/p/no_image.svg)
-
-后者是可验证公平的，提供了97%的回报率，这是[游戏支付的比例](https://www.gamblingcommission.gov.uk/public-
-and-players/guide/return-to-player-how-much-gaming-machines-payout)。Lucky
-Block赌场还拥有30个游戏节目、近200个桌面游戏、数千个老虎机、数百名真人荷官和大奖游戏。与此同时，体育博彩平台提供了多个市场和投注选项。
-
-此外，该网站已完全优化以在手机和平板电脑上使用加密货币进行Keno游戏。在Lucky
-Block，Keno玩家无需输入敏感信息或完成KYC流程。认为这是最佳比特币Keno赌场的玩家只需输入电子邮件地址和密码即可注册帐户。
-
-作为空间内[最佳的分散式赌博站之一](https://cryptonews.com/news/best-decentralized-gambling-
-sites/)，Lucky Block还接受多种其他加密货币。
-
-这包括比特币现金、狗狗币、泰达币、以太坊、波场、卡尔达诺、BNB、瑞波、莱特币和其本地货币LBLOCK。后者是2022年达到10亿美元市值的最快加密货币，并可用作在赌场的支付。该平台还支持电汇、信用卡或Google/Apple
-Pay。
-
-然而，法定货币支付需要KYC。最低存款为0.0001
-BTC或1美元。在注册时，存款至少20欧元的新玩家可以领取高达10,000欧元的200%匹配存款奖金。欢迎奖金还附带50次免费旋转。回头客将发现额外的福利，包括每周存款重装、带免费旋转的竞赛等。
-
-尽管如此，Lucky
-Block的一个潜在劣势是，美国和英国玩家需要使用VPN服务来绕过[地理限制](https://www.theguardian.com/business/2022/oct/01/uk-
-gambling-safeguards-no-match-for-online-bookie-stake-com)。此外，某些游戏在所有地区都不可用。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-首次存款可匹配200%高达10,000欧元 | 每6倍投注释放10%的奖金 | 7 | 0.0001 BTC/$1 | 即时的  
-  
-**优点**
-
-  * 我们的研究表明，这是2023年最佳比特币Keno赌场
-  * 新玩家可以领取高达10,000欧元的200%匹配奖金
-  * 各种比特币Keno游戏可供玩家选择
-  * 提供可验证公平性的Keno游戏
-  * 通过实时聊天提供24/7客户支持
-  * 无需KYC或个人信息即可玩
-
-**缺点**
-
-###  3\. BC.Game – 以加密货币为中心的Keno赌场，快速支付
-
-[BC.Game](https://cryptonews.com/ext/bcgame/?transfer=1)
-
-成立于2017年，是最快支付的顶级加密Keno网站之一。支付时间可以达到5分钟。支持该赌场的一些软件提供商包括Play’nGo、Mascot、Evoplay和Celeta
-Gaming。该平台还提供自己的“BC Originals”。
-
-这包括多种Keno变体，以保持玩家的娱乐。这里的Keno游戏是可验证公平的，赌场显示所有游戏的庄家优势。一些比特币Keno游戏的RPT为99%。[考虑到平均RTP为85%到90%](https://austgamingcouncil.org.au/responsible-
-gambling/understanding-responsible-gambling/understanding-
-odds)，这是很高的。BC.Game的热门Keno变体包括法国、俄罗斯、多人游戏、Amaterasu和VIP。
-
-![BC.Game Casino Dashboard](https://cimg.co/p/no_image.svg)
-
-VIP和法国Keno游戏的最大赢取金额为100倍。而BC Originals版本高达1,000倍。其他Keno选项包括Keno
-Goal、Firefly、Banana、Rainbow、Halloween和Jungle。该平台还包括老虎机、真人荷官、桌面游戏、特色购买和体育博彩。BC.Game还拥有一些[最好的比特币赌场奖金](https://cryptonews.com/news/best-
-bitcoin-casino-bonuses/)。
-
-新玩家可以领取慷慨的欢迎套餐：前四次存款分别最多匹配270%、300%、330%和360%。值得注意的是，这家赌场用其本地代币BCD（BC
-Dollar）支付奖金资金，这对一些玩家来说可能是一个负面因素。
-
-此外，投注要求令人困惑。这是因为在游戏过程中每获得150点，奖金就会释放出小部分。BC.Game还是最适合社交玩家的最佳比特币Keno赌场之一。通过其实时聊天框，玩家可以讨论他们的胜利、失败和赌博故事。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-前四次存款分别最多匹配270%、300%、330%和360% | 投注数量 x 1% x 20% = 奖金解锁金额 | 12 | $30 | 5-10分钟  
-  
-**优点**
-
-  * 最快支付的比特币Keno网站之一
-  * 新玩家慷慨的欢迎套餐
-  * 多种可验证公平的比特币Keno游戏选择
-  * 一些Keno游戏的RPT为99%
-  * 社区为基础的平台，带有实时社交功能
-
-**缺点**
-
-###  4\. Cloudbet –成立时间较长的赌场，提供高达5 BTC的100%奖金
-
-[Cloudbet](https://cryptonews.com/ext/cloudbet/?transfer=1)
-
-成立于2013年，如今在全球已经[拥有超过30万名玩家注册](https://www.cloudbet.com/en/lp-
-review#:~:text=Cloudbet%20offers%20the%20leading%20bitcoin,300%2C000%20users%20around%20the%20globe.)。因此，这是考虑的Keno玩家的一个成熟平台。该平台提供了标准版本的比特币Keno，具有36个数字的网格。这具有97%的RTP和最大赢取金额为10,000美元。这是由可验证公平软件开发商Scribe提供的。
-
-事实上，Cloudbet是此列表中[最好的Scribe赌场之一](https://cryptonews.com/news/best-spribe-
-casino-sites/)。其他可验证公平的Scribe游戏包括Mines、Dice、Hi-Lo和Mini
-Roulette。此外，Cloudbet还是[最佳的崩溃赌博网站之一](https://cryptonews.com/news/best-crash-
-gambling-sites/)。
-
-![Provably Fair Games On Cloudbet](https://cimg.co/p/no_image.svg)
-
-赌场库包括Triple
-Cash或Crash，尽管该游戏的RTP略低于Keno，为96%。该平台还设有老虎机、桌面游戏、虚拟游戏、真人荷官和体育博彩。Cloudbet是奖金最丰富的加密Keno网站之一。新玩家在资金账户时可以领取高达5
-BTC的100%匹配存款奖金。
-
-投注条件如下：每次玩家在游戏过程中赚取150点时，将会增加0.0001 BTC的奖金到Keno玩家的账户。最低存款为0.001
-BTC。除了比特币，Cloudbet还支持其他30种加密货币。这包括[以太坊](https://coinmarketcap.com/currencies/ethereum/)、狗狗币、莱特币和达世币等。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-首次存款最多匹配5 BTC的100% | 在玩家在游戏过程中赚取150点时，将会释放0.0001BTC的奖金 | 1 | 0.001 BTC | 几乎瞬时  
-  
-**优点**
-
-  * 自2013年以来成立时间较长的比特币Keno赌场
-  * 首次存款最多匹配5 BTC的100%
-  * 几乎瞬时的提款
-  * 从Scribe提供的可验证公平游戏选择
-
-**缺点**
-
-[Metaspins](https://cryptonews.com/ext/metaspins/?transfer=1)
-
-是最适合赚取返水的比特币Keno赌场。这使得赌场的部分利润返还给玩家。Metaspins提供的返水率在10%到60%之间。玩家在Metaspins玩Keno时会自动升级，升级越高，他们就能够索取更多。
-
-此外，每次升级时，玩家可以旋转Metaspins轮来赢取加密奖励。最低赌注为0.20美元，只有真钱投注才算数。Metaspins提供了Scribe版本的Keno。另一个热门游戏是Super
-Keno，它与原始版本相似。但是，如果第一个球是赢家，所赢金额将乘以四倍。
-
-![Metaspins Casino Signup Page](https://cimg.co/p/no_image.svg)
-
-也可以玩免费的比特币Keno；每个版本都可以在演示模式下使用。赌场库还包括桌面游戏、视频扑克、老虎机和其他各种游戏。例如，该赌场还有自己的彩票：MetaLotto的奖池为价值2万美元的BTC代币。喜欢这家赌场吗？Metaspins为新玩家提供高达1
-BTC的100%匹配存款奖金。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-首次存款最多可匹配1 BTC的100% | 25x | 4 | 无 | 瞬时  
-  
-**优点**
-
-  * 索取高达1 BTC的100%匹配存款奖金
-  * 最适合返水的加密Keno网站之一
-  * 没有最低存款限制
-  * 提供Super Keno，有4倍赢钱的潜力
-
-**缺点**
-
-###  6\. Wild.io – 拥有VIP Keno和高达10 BTC欢迎奖金的比特币赌场
-
-[Wild.io](https://cryptonews.com/ext/wildio/?transfer=1)
-
-是一家成立于2022年的新比特币赌场网站。该平台提供了来自Smartsoft的VIP
-Keno。这个变种与传统版本一样有80个数字。赌场只有一个版本的比特币Keno。不过，其库还提供了一系列老虎机、桌面游戏、刮刮卡、游戏节目、视频扑克和真人荷官。
-
-玩家还将找到像Cappadocia、JetX3、SpaceXY和Bear Rum这样的奖池游戏和技能游戏。对于新玩家，Wild-
-io将分别匹配前四笔存款，比例分别为150%、200%、125%和150%。
-
-![Wild.io Casino Crypto Deposit](https://cimg.co/p/no_image.svg)
-
-值得注意的是，每个阶段提供的匹配奖金取决于玩家存款的金额。例如，如果玩家的第一笔存款是10美元，它只会匹配110%，而不是150%。
-
-在四笔匹配存款奖金中可以索取的最大金额为10
-BTC。这个奖金的前两个阶段还包括免费旋转，分别为500和300。请注意，玩家必须在可以提取任何赢利之前对奖金金额进行40倍的投注。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-前四笔存款最多可匹配625% – 上限为10 BTC | 40x | 1 | 0.0002 BTC | 最多10分钟  
-  
-**优点**
-
-  * 分四次存款的10 BTC欢迎奖金
-  * 通过实时聊天提供全天候客户支持
-  * 技能游戏和可证明的公平性
-  * 最低存款只需0.0002 BTC
-
-**缺点**
-
-###  7\. Fairspin – 超过6,400款游戏，包括众多Keno变种
-
-Fairspin是众多比特币Keno站点中游戏种类最丰富的之一。Fairspin拥有超过6,400款游戏，其中包括近20款Keno游戏。喜欢Keno的玩家可能会喜欢即时赢得游戏，其中包括Keno
-5/80、10/80和20/80。每个游戏的规则都一样，除了玩家选择的数字数量不同。
-
-其他Keno游戏由Scribe、Triple PG、Marcot Gaming、Exugi、Evoplay、Caleta
-Gaming和Smartsoft支持。其中的标题包括Banana、Jungle、Goal、Russian、French、Neon、Amaterasu和经典Keno。在悬停在每个游戏上时，玩家会看到三个条形图。单击此处以查看关键统计信息。
-
-![Popular Games On Fairspin Casino](https://cimg.co/p/no_image.svg)
-
-这包括RTP、最大赢取、下注数量和游戏已播放的次数。该平台还包括卡牌游戏、奖池、比赛和体育博彩。此外，这也是[最佳比特币老虎机站点之一](https://cryptonews.com/news/best-
-bitcoin-slots-sites/)，因为有数千款可供选择。
-
-Fairspin的欢迎套餐包括四个最高$450,000的匹配存款奖金。然而，其缺点是60倍的投注要求，这对许多赌场玩家来说是高且难以实现的。玩家需要在提款之前下注超过2,700万美元，如果他们索取了最高奖金。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-前四笔存款最多可匹配450%。总奖金上限为$450,000 | 60x | 18 | $20 | 10-20分钟  
-  
-**优点**
-
-  * 最高价值450,000美元的巨大欢迎套餐
-  * 18种Keno变体可供玩家选择
-  * 赌场主办奖金丰厚的比赛
-  * 超过6,400款赌场游戏
-
-**缺点**
-
-###  8\. mBit – 历史悠久的赌场，提供三项匹配存款奖金
-
-[mBit](https://cryptonews.com/ext/mbit/?transfer=1)
-
-赌场也是使用比特币玩Keno的最受欢迎的场所之一。它支持许多变种，包括Russian、French、Amatureasu、Xmas Keno
-Cat、VIP以及我们之前提到的Super
-Keno。在mBit，还有成千上万的其他赌场游戏可供玩家选择。其中包括老虎机、视频扑克、桌面游戏、奖池、骰子和奖金购买。
-
-首次注册时，玩家可以索取巨大的欢迎套餐。mBit提供三项匹配存款奖金：75%最高1 BTC，100%最高1.5 BTC，125%最高1.5
-BTC。每笔存款提供的免费旋转分别为75、100和125。请注意，奖金金额必须下注40倍。
-
-![mBit Casino Crypto Deposit](https://cimg.co/p/no_image.svg)
-
-与mBit注册的一个好处是其忠诚计划。这包括每日返现、比蒂测验、奖金、星期一免费旋转和独家活动。这个比特币Keno站点还主持mBit赛车比赛，这是一个每四小时进行一次的快节奏老虎机比赛。
-
-**新玩家奖金** | **投注条件** | **Keno游戏数量** | **最低存款** | **支付时间**  
----|---|---|---|---  
-前三笔存款最多可匹配300%最高4 BTC，并附带300次免费旋转 | 40倍 | 9 | 0.002 BTC | 即时  
-  
-**优点**
-
-  * 价值高达4 BTC的三项匹配存款奖金
-  * 欢迎套餐附带300次免费旋转
-  * VIP忠诚计划提供各种福利
-  * 数千款赌场游戏可供选择
-
-**缺点**
-
-##  如何选择最佳比特币Keno赌场网站
-
-  
-选择最佳比特币Keno赌场网站的重要方面包括游戏多样性、奖金、快速支付以及确保平台安全可靠。
-
-阅读以下内容，了解在选择2023年最佳比特币Keno网站时的一些关键考虑因素。
-
-### 安全平台
-
-寻找最佳加密Keno网站的玩家应确保平台是安全的。通过这样做，玩家可以在不担心是否能收到奖金的情况下参与Keno赌博。
-
-这就是为什么我们喜欢Lucky Block的原因，因为该平台拥有库拉索博彩监控局的博彩牌照。此外，Lucky
-Block使用SSL加密协议来保护玩家数据的隐私。
-
-不仅如此，Lucky Block可以在外部进行存款。这意味着玩家可以安全地从私人钱包中存款。
-
-### 匿名性
-
-使用像Lucky Block、Mega Dice和BC.Game这样的以加密货币为中心的平台，玩家无需完成KYC流程。
-
-  * 要开设帐户，玩家只需提供电子邮件、用户名和密码。
-  * 这意味着不需要个人信息或KYC文件。
-
-就像区块链网络一样，这使玩家可以匿名地使用比特币进行Keno赌博。相比之下，常规在线赌场要求提供许多个人信息，包括政府颁发的身份证。
-
-### 快速支付
-
-接受比特币和[最佳另类币种](https://cryptonews.com/news/best-
-altcoins/)的赌场通常提供超快的支付速度。速度可能取决于各自的区块链。Lucky
-Block、BC.Game和Cloudbet为玩家提供几乎即时的支付。
-
-例如，在Lucky Block，比特币支[付可能需要大约10分钟](https://www.exodus.com/news/how-long-does-a-
-bitcoin-transaction-
-take/)才能到账。与此同时，狗狗币、瑞波币和[BNB](https://coinmarketcap.com/currencies/bnb/)交易在大多数情况下都可以在一分钟内完成。
-
-相比之下，使用常规在线赌场时，信用卡和电汇需要数个工作日。
-
-### 比特币Keno多样性
-
-最佳比特币Keno赌场提供多种游戏变体。这在Lucky Block和BC.Game中是事实，玩家可以从由各种软件开发商支持的多个Keno标题中进行选择。
-
-对于每个支持的Keno游戏，玩家可以看到RTP和最大的胜利。玩家还可以寻找提供免费比特币Keno的赌场，以进行无风险的娱乐。例如，Lucky
-Block、BC.Game和Cloudbet都提供Keno的演示版本。
-
-![Keno Game Variants](https://cimg.co/p/no_image.svg)
-
-玩家还将在这些赌场找到许多其他赌博游戏，如轮盘、21点和百家乐。此外，还有桌上牌类游戏，如牌九、骰宝、青少年派和Pirate 21。
-
-### 奖金和福利
-
-加密赌场的主要吸引力之一是提供的奖金。毕竟，比特币Keno赌场市场庞大。因此，许多平台竞相提供最佳的欢迎奖金。这通常是一笔匹配存款奖金，有时还包括特定老虎机的免费旋转。
-
-许多赌场还设有各种福利的VIP计划，如返现、免费旋转和回水。许多Keno赌场网站还会为现有玩家定期推出促销活动，如每周存款重置。
-
-### 用户友好的布局
-
-许多玩家喜欢随时随地玩他们最喜欢的Keno游戏。因此，最佳的比特币Keno赌场是适应性的，可以在所有设备上享受相同的高质量体验。
-
-如果赌场易于导航，并且注册迅速简单，那就更有利。
-
-## 比特币Keno：运作原理
-
-> 比特币Keno是经典游戏的在线版本，玩家用BTC代币而不是法定货币来支付赌注。玩家选择一定数量的数字，并尽可能多地与抽取的数字匹配——这类似于彩票。
-
-Keno的基本概念是从一个表中选择数字，并在其上下注，希望它们被抽取。与彩票游戏一样，玩家正确匹配的数字越多，奖金越高。
-
-  * 大多数Keno游戏都有一个包含多达80个数字的网格，并允许玩家选择最多10个数字。
-  * 然而，还有许多其他具有不同规则的变体。
-  * 例如，在Keno Rush中，玩家可以从40个网格中选择最多10个数字。
-  * 在Scribe版本中，玩家必须从36个网格中选择最多10个数字。
-  * BC.Game提供的Keno Goal允许玩家选择最多20个数字。
-
-## 比特币Keno赌场奖金
-
-  
-继续阅读，了解2023年提供的最佳比特币Keno赌场奖金：
-
-### 匹配存款
-
-许多我们今天审查的顶级比特币Keno站点提供匹配存款奖金。
-
-例如：
-
-  * Lucky Block将首次存款与最高€10,000的价值相匹配，匹配率为200%
-  * BC.Game提供最多1,260%的四个匹配存款奖金
-  * Cloudbet通过将新玩家的首次存款与5 BTC的价值相匹配，欢迎他们的加入
-
-这为玩家提供了免费资金以便开始。尽管如此，玩家应该研究与奖金相关的任何投注要求，并确保他们充分了解这些要求。
-
-### 无风险旋转
-
-尽管两者并无直接关联，但许多比特币Keno站点都提供免费旋转奖金。免费旋转有时作为欢迎套餐的一部分提供。
-
-![Free Spin Bonus](https://cimg.co/p/no_image.svg)
-
-例如，Lucky Block玩家在注册时会获得50次免费旋转。通常，赌场还为现有玩家提供免费旋转奖金。例如，Lucky
-Block每周为所有注册用户提供一次存款重新加载。
-
-### VIP计划福利
-
-一些赌场在玩家使用比特币玩Keno时提供积分。这使玩家可以攀登VIP阶梯。
-
-VIP地位越高，他们将获得的奖金和福利就越多。这可能包括现金返还、回扣和独家优惠。
-
-### 无存款奖金
-
-如今很难找到无存款奖金。尽管如此，这为玩家提供了注册奖金资金，他们无需进行存款即可领取。
-
-我们今天审查的比特币Keno赌场都不提供无存款奖金。这主要是因为它们是基于加密的，交易是匿名的。因此，监管谁已经领取了奖金将是困难的。
-
-### 如何使用比特币玩Keno
-
-以下是使用比特币玩Keno的概述：
-
-  * 选择值得信赖的赌场：第一步是选择最佳的比特币Keno赌场，并注册一个账户。在像Lucky Block这样的加密焦点的赌场，这仅涉及输入电子邮件、用户名和密码。
-  * 选择Keno游戏：所有Keno游戏都有类似的规则，但网格的大小和可以选择的数字数量会有所不同。传统上，Keno有80个数字，玩家选择其中的10个。可证明公平的变体通常包括一个36个数字的网格。
-  * 选择一些数字：接下来，玩家需要选择他们认为将被抽中的数字。此外，也可以随机选择数字。
-  * 开始游戏：下注并开始玩Keno。一些赌场接受低至$0.20的Keno游戏赌注。玩家匹配的数字越多，赢得的奖金就越多。
-
-玩家在继续之前应该检查每个Keno游戏的RTP和风险水平。当然，玩家应该负责任地进行赌博。此外，如果赌场提供免费的比特币Keno，玩家可以在不冒任何风险的情况下玩得开心。
-
-## 总结
-
-  
-这就结束了关于最佳比特币Keno赌场的指南，我们发现Mega Dice是玩比特币Keno的最佳地方。
-
-它的欢迎优惠是慷慨的200%匹配存款奖金，附带50次免费旋转。此外，支付是即时的，而且没有KYC要求，因此注册迅速简便。
-
-不仅如此，Mega Dice支持各种Keno游戏，确保玩家始终得到娱乐。
-
-## 问与答
-
-#### 我可以在哪里玩加密 keno?
-
-您可以在Mega Dice、Lucky Block、BC.Game和Cloudbet等比特币赌场玩多种Keno游戏，并享有慷慨的欢迎奖金。
-
-#### 在哪里玩加密Keno最好？
-
-综合考虑，Mega Dice可能是玩加密Keno的最佳选择。它拥有众多游戏、慷慨的200%欢迎奖金，并可通过Telegram访问。
-
- _**免责声明：上文为广告性文章，不属于Cryptonews.com的编辑内容。**_
-
-
-
------
-
-标题: 高调换仓以太坊的<b>比特币</b>OG加仓<b>BTC</b>空单，现浮亏366万美元 - MarsBit
-真实链接: https://m.marsbit.co/flash/20251010083401444455.html
-正文: 火星财经消息，据 Trader T 监测，昨日以太坊 ETF 流出 845 万美元。其中，BlackRock 的 $ETHA 逆势流入 3938
-万美元；Fidelity 的 $FETH 流出 3026 万美元；Bitwise 的 $ETHW 流出 807 万美元；21Shares 的 $TETH
-流出 259 万美元；Invesco 的 $QETH 流出 216 万美元；Van Eck 的 $ETHV 流出 475 万美元；Franklin 的
-$EZET 及 Grayscale 的 $ETHE 和 ETH Mini 均无资金流动。</p>
-
-
-
------
-
-标题: 某远古地址加码做空<b>比特币</b>至3600枚<b>BTC</b>，未实现亏损366万美元 - PANews
-真实链接: https://www.panewslab.com/zh/articles/f3961416-7d50-4200-8712-c8b88210590f
-正文: PANews 10月10日消息，据Lookonchain报道，某“Bitcoin
-OG”已将做空头寸增至3600枚BTC，名义规模约4.38亿美元，当前未实现亏损约366万美元，清算价为139,900美元。
-
-其此前在Hyperliquid以6倍杠杆做空3477枚BTC（清算价140,660美元），并向Binance存入5000万美元USDC，向Hyperliquid存入8000万美元USDC用于开仓。
-
-
-
------
-
-标题: 据报道，Roger Ver 接近与美国税务局达成和解 - CoinDesk
-真实链接: https://www.coindesk.com/zh/policy/2025/10/09/bitcoin-jesus-to-settle-u-s-tax-fraud-charges-nyt
-正文: #### Your Privacy
-
-We process your data to deliver content or advertisements and measure the
-delivery of such content or advertisements to extract insights about our
-website. We share this information with our partners on the basis of consent
-and legitimate interest. You may exercise your right to consent or object to a
-legitimate interest, based on a specific purpose below or at a partner level
-in the link under each purpose. These choices will be signaled to our vendors
-participating in the Transparency and Consent Framework. The choices you make
-regarding the purposes and vendors listed in this notice are saved and stored
-locally on your device for a maximum duration of 1 year.  
-[Privacy Policy](https://www.coindesk.com/privacy)
-
-List of IAB Vendors‎
-
-These cookies are set by a range of social media services that we have added
-to the site to enable you to share our content with your friends and networks.
-They are capable of tracking your browser across other sites and building up a
-profile of your interests. This may impact the content and messages you see on
-other websites you visit. If you do not allow these cookies you may not be
-able to use or see these sharing tools.
-
-These cookies are necessary for the website to function and cannot be switched
-off in our systems. They are usually only set in response to actions made by
-you which amount to a request for services, such as setting your privacy
-preferences, logging in or filling in forms. You can set your browser to block
-or alert you about these cookies, but some parts of the site will not then
-work. These cookies do not store any personally identifiable information.
-
-These cookies allow us to count visits and traffic sources so we can measure
-and improve the performance of our site. They help us to know which pages are
-the most and least popular and see how visitors move around the site. All
-information these cookies collect is aggregated and therefore anonymous. If
-you do not allow these cookies we will not know when you have visited our
-site, and will not be able to monitor its performance.
-
-These cookies may be set through our site by our advertising partners. They
-may be used by those companies to build a profile of your interests and show
-you relevant adverts on other sites. They do not store directly personal
-information, but are based on uniquely identifying your browser and internet
-device. If you do not allow these cookies, you will experience less targeted
-advertising.
-
-These cookies enable the website to provide enhanced functionality and
-personalisation. They may be set by us or by third party providers whose
-services we have added to our pages. If you do not allow these cookies then
-some or all of these services may not function properly.
-
-Cookies, device or similar online identifiers (e.g. login-based identifiers,
-randomly assigned identifiers, network based identifiers) together with other
-information (e.g. browser type and information, language, screen size,
-supported technologies etc.) can be stored or read on your device to recognise
-it each time it connects to an app or to a website, for one or several of the
-purposes presented here.
-
-List of IAB Vendors‎ | View Illustrations 
-
-With your acceptance, your precise location (within a radius of less than 500
-metres) may be used in support of the purposes explained in this notice.
-
-List of IAB Vendors‎
-
-With your acceptance, certain characteristics specific to your device might be
-requested and used to distinguish it from other devices (such as the installed
-fonts or plugins, the resolution of your screen) in support of the purposes
-explained in this notice.
-
-List of IAB Vendors‎
-
-Your data can be used to monitor for and prevent unusual and possibly
-fraudulent activity (for example, regarding advertising, ad clicks by bots),
-and ensure systems and processes work properly and securely. It can also be
-used to correct any problems you, the publisher or the advertiser may
-encounter in the delivery of content and ads and in your interaction with
-them.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Certain information (like an IP address or device capabilities) is used to
-ensure the technical compatibility of the content or advertising, and to
-facilitate the transmission of the content or ad to your device.
-
-List of IAB Vendors‎ | View Illustrations 
-
-The choices you make regarding the purposes and entities listed in this notice
-are saved and made available to those entities in the form of digital signals
-(such as a string of characters). This is necessary in order to enable both
-this service and those entities to respect such choices.
-
-List of IAB Vendors‎ | View Illustrations 
-
-Information about your activity on this service may be matched and combined
-with other information relating to you and originating from various sources
-(for instance your activity on a separate online service, your use of a
-loyalty card in-store, or your answers to a survey), in support of the
-purposes explained in this notice.
-
-List of IAB Vendors‎
-
-In support of the purposes explained in this notice, your device might be
-considered as likely linked to other devices that belong to you or your
-household (for instance because you are logged in to the same service on both
-your phone and your computer, or because you may use the same Internet
-connection on both devices).
-
-List of IAB Vendors‎
-
-Your device might be distinguished from other devices based on information it
-automatically sends when accessing the Internet (for instance, the IP address
-of your Internet connection or the type of browser you are using) in support
-of the purposes exposed in this notice.
-
-List of IAB Vendors‎
-
-
-
------
-
-标题: 日本上市公司Remixpoint增持3.22枚<b>比特币</b>，总持仓升至1374.68枚 - Odaily
-真实链接: https://www.odaily.news/zh-CN/newsflash/451504
-正文: Odaily星球日报讯 据 BitcoinTreasuries.NET 监测，日本上市公司 Remixpoint (3825.T) 增持 3.22
-比特币，目前持有总量为 1,374.68 枚。
-
-
-
------
-
-标题: <b>BTC</b>突破121000美元 - Mitrade
-真实链接: https://www.mitrade.com/cn/insights/news/live-news/article-3-1183904-20251010
-正文: [![华尔街机构首次向SEC申请莱特币ETF，LTC价格应声大涨10%！](https://resource.mistorebox.com/insights/cms_uploads/img/download/dfab02d0b1c8608494c69a09b763f5cc.jpg)](https://www.mitrade.com/cn/insights/crypto-
-analysis/more/tradingkey-LTCUSD-202410161554)
-
-作者 Block Tao
-
-2024 年 10 月 16 日
-
-资管理公司Canary Capital Group向向SEC申请莱特币现货ETF，刺激其原生代币LTC大涨10%，但上涨行情能否延续呢？
-
-5月21日，美元兑港元（USD/HKD）突破7.83，创一年多新高。
-
-高市早苗意外胜选后，市场对日本央行加息预期大幅削减。若日本政府不发出干预信号，日元汇率可能会跌至155。
-
-美国政府停摆持续到第8天，贵金属全线走高，黄金突破4000关口至历史高位4059美元，白银逼近2011年4月25日高位49.8044美元，钯金一度大涨10%。不过，以哈非常接近达停火协议，加之美联储9月会议纪录显示官员对后续降息幅度及速度持不同看法，金价受累重挫近60美元回落至4020美元下方整理。
-值得留意的是，若美国政府停摆持续到月底，届时在缺乏通胀、失业率和消费者支出数据支撑下，预计货币政策不确定性上升，恐对黄金、美股构成打压。
-
-周五（10月10日）凌晨以色列政府批准加沙停火协议，根据谈判斡旋方宣布的相关内容，协议将促成战争结束、以色列被扣押人员与巴勒斯坦囚犯获释及人道主义救援物资进入加沙地带。特朗普称争取前往埃及出席协议签署仪式。随着地缘局势降温，黄金自历史高位4059美元重挫逾百美元至3944美元，失守4000大关；白银在冲破50美元关口后同样大幅回落，几乎回吐日内5%全部涨幅。美元则突破99.0-99.2关键阻力，录得连续四日上涨。
-
-
-
------
-
-标题: <b>比特币</b>人寿保险公司Meanwhile 融资8200 万美元以对抗通胀型储蓄的激增需求| Bitget News
-真实链接: https://www.bitget.com/zh-CN/amp/news/detail/12560605007431
-正文: > ﻿﻿比特币人寿保险公司 Meanwhile 完成 8200 万美元融资，由 Bain Capital Crypto 与 Haun Ventures
-> 领投，旨在全球推广以比特币计价的人寿保险、年金和储蓄产品，应对通胀型储蓄需求激增。
-
-  
-
-**撰文：XZ**
-
-  
-
-比特币人寿保险公司 Meanwhile，宣布融资 8200 万美元以对抗通胀型储蓄的激增需求。本轮融资由顶级全球投资者 Bain Capital
-Crypto 与 Haun Ventures 共同领投，Pantera Capital 参投，此外还有 Apollo、Northwestern Mutual
-Future Ventures 和 Stillmark 的参与。
-
-  
-
-这笔资金将通过机构合作伙伴，加速向全球提供以比特币（BTC）计价的人寿保险、年金、储蓄和保险债券产品，保护全球保单持有人免受通胀和货币风险的影响。
-
-  
-
-Meanwhile 受全球一流金融监管机构——百慕大金融管理局（Bermuda Monetary Authority）监管，并以全球领先的价值储存资产
-BTC 提供储蓄与保障产品。
-
-  
-
-受个人与机构对比特币计价的储蓄及企业财资产品保护需求激增驱动，Meanwhile 的比特币管理资产（AUM）增长已超过 200%。
-
-  
-
-介绍视频：
-
-  
-
-Meanwhile 今日宣布，已新增筹集的 8200
-万美元资金，以满足希望保护家庭的个人，以及希望向其客户提供与比特币挂钩的储蓄、退休与人寿保险产品的成熟金融机构的快速增长需求。
-
-  
-
-Meanwhile 的创新产品将传统人寿保险与年金的安全性和可预期收益，与比特币这一稀缺、抗通胀、面向长期价值保存的资产相结合。Meanwhile
-的方案为全球保单持有人提供了进行长期财务规划、对冲通胀与安全财富传承的有力工具。
-
-  
-
-本轮融资有来自加密原生与传统金融机构的支持，显示比特币正日益被接受为主流金融产品的基础。这笔融资使 Meanwhile 在 2025 年的总融资达到
-1.22 亿美元，此前该公司于今年早些时候完成由 Framework Ventures 与 Fulgur Ventures 共同领投的 4000 万美元 A
-轮融资。
-
-  
-
-Meanwhile 进入下一阶段，基于一系列重塑保险与比特币资本市场的突破：
-
-  
-
-  * 全球首家以比特币计价的人寿保险公司。
-  * 在百慕大获得首张长期保险牌照，树立全球先例。
-  * 首份经审计的比特币财务报表，确立信任与透明。
-  * 首批比特币人寿保险产品，变革约占全球 GDP 约 3% 的行业。
-  * 通过审慎放贷与私募信贷赚取比特币，使 Meanwhile 成为全球规模最大的长久期比特币出借方之一（期限超过六个月）。
-
-  
-
-「人寿保险公司一直以来都提供让金融市场运转的稳定长期资本。」Meanwhile 首席执行官 Zac Townsend
-表示，「我们正把这一角色带入比特币——帮助家庭以 BTC
-进行储蓄与财富保护，同时为机构提供新的收益途径，并推出合规、易于规模化的比特币指数化产品。本次融资让我们得以在有效模式上继续构建，并与全球合作伙伴共同扩张。」
-
-  
-
-比特币需要的不仅是短期投机，而是由真实经济活动支撑的可靠长久期解决方案。Meanwhile
-提供比特币计价的储蓄与保障，使家庭与机构可以依赖，同时通过审慎的私募信贷与对高质量交易对手的长期放贷来产生可持续收益。自第一天起，Meanwhile
-即以信任为基础，作为持牌、审慎监管的保险载体运营，满足与全球最成熟保险公司相当的偿付能力与准备金标准。
-
-  
-
-「在 Haun Ventures，我们的论点是，比特币经济需要的不只是交易平台和
-DATs——它需要资本市场的核心构件。正如美国经济建立在保险、养老金与按揭之上，比特币经济同样需要其自身的长久期金融产品。Meanwhile
-是这一品类的先行者，我们相信它将解锁比特币计价市场的新一波创新。」Haun Ventures 合伙人 Chris Ahn 表示。
-
-  
-
-「Meanwhile 正在打造简单、合规且持久的产品，让比特币对个人与机构都真正实用。」Bain Capital Crypto 合伙人 Stefan
-Cohen 表示，「我们很高兴支持该团队在规模化过程中，与成熟保险公司合作，将与比特币挂钩的储蓄与退休产品推向市场——以机构级的安全性、并在全球范围内。」
-
-  
-
-**关于 Meanwhile Incorporated**
-
-  
-
-Meanwhile 的使命是让任何人在任何地方都能进行跨世代的储蓄、保障与财富积累。Meanwhile Incorporated 是 Meanwhile
-Insurance Bitcoin (Bermuda) Limited
-的母公司，后者是全球首家完全以比特币计价并获得牌照的长期保险公司。所有保费、保单价值与理赔均以比特币（BTC）计量与管理。公司由金融科技企业家 Zac
-Townsend 与 Max Gasner 共同创立，并获得包括 Sam Altman 在内的既有投资者支持。
-
-
-
------
-
-标题: <b>比特币</b>价格反弹遇到看跌均线配置，关键ETF暗示风险偏好转向保守 - CoinDesk
+    标题: <b>比特币</b>价格反弹遇到看跌均线配置，关键ETF暗示风险偏好转向保守 - CoinDesk
 真实链接: https://www.coindesk.com/zh/markets/2025/10/10/bitcoin-bounce-meets-bearish-ma-signals-risk-off-hints-from-key-etfs
 正文: **_本文为CoinDesk分析师兼特许市场技术师Omkar Godbole的分析文章。_**
 
@@ -2681,6 +1534,893 @@ of your Internet connection or the type of browser you are using) in support
 of the purposes exposed in this notice.
 
 List of IAB Vendors‎
+
+
+
+-----
+
+标题: 特朗普宣布对中国征收100%关税后，<b>比特币</b>（<b>BTC</b>）暴跌至10.2万美元
+真实链接: https://cn.cointelegraph.com/news/trump100-tariffs-china-bitcoin-plummets-110k
+正文: 美国总统唐纳德·特朗普周五宣布对中国征收100%关税，在撰写本文时，比特币（BTC）价格暴跌至11万美元以下。
+
+特朗普表示，征收关税是为了回应中国试图对稀土矿物实施出口限制，这些矿物对制造计算机芯片至关重要。特朗普在Truth Social上写道：
+
+>
+> "刚刚得知，中国在贸易方面采取了极其激进的立场，向世界发出了极其敌对的信函，声明他们将从2025年11月1日起，对他们制造的几乎所有产品实施大规模出口管制。"
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199d00b-bfd9-7cf6-b022-73b1a49cd55f)_来源：唐纳德·特朗普_  
+
+特朗普4月首次宣布关税措施时震撼了加密货币市场，并引发了对经济衰退的担忧。
+
+## 比特币跌至10.2万美元，创3个月新低
+
+特朗普宣布后不久，币安交易所的比特币BTC/USDT期货交易对跌至10.2万美元的低点，这是自6月下旬BTC跌破10万美元以来未见的低位。
+
+Coinbase的比特币现货价格触及日内低点10.7万美元，而CoinGlass的数据显示，过去24小时内加密货币市场总计94亿美元的仓位被清算，其中71.5亿美元为杠杆多头仓位。
+
+![China, United States, Donald
+Trump](https://s3.cointelegraph.com/uploads/2025-10/0199d02a-ae0a-7bf7-b99a-31ad81857cb3)
+_加密货币市场总清算量。来源：CoinGlass_  
+
+更广泛的加密货币市场也遭受重创，以太坊（ETH）在Coinbase跌至3500美元，SOL在币安期货交易对中跌破140美元。Hyblock
+Capital的分析师表示：
+
+> "大多数山寨币的全球2倍杠杆完全被清空。"
+
+![China, United States, Donald
+Trump](https://s3.cointelegraph.com/uploads/2025-10/0199d035-235f-76ee-977d-01c4f2699fda)_全球综合加密货币交易所订单簿。来源：Hyblock_  
+
+## 关税压力与芯片获取
+
+稀土元素对半导体生产至关重要。通过威胁收紧对关键材料的获取，中国给全球硬件供应链带来压力，包括人工智能、高性能计算和加密货币挖矿基础设施。
+
+与此同时，美国针对中国科技出口和投资的措施是减少对外国制造业依赖的更广泛推动的一部分。
+
+关税公告后，更广泛的加密货币市场转为下跌，以太坊（ETH）和Solana（SOL）与比特币一同扩大跌幅，在撰写本文时分别下跌12%和14%。
+
+在撰写本文时，全球加密货币市值为3.64万亿美元，过去24小时下跌11.80%。
+
+相关推荐：[赵长鹏（CZ）的谷歌账户遭"政府支持的"黑客盯上](https://cn.cointelegraph.com/news/zhao-google-
+government-backed-hackers "赵长鹏（CZ）的谷歌账户遭")
+
+
+
+-----
+
+标题: 高管表示，受特朗普关税担忧影响，<b>比特币</b>（<b>BTC</b>）价格可能会出现“一些波动” - Cointelegraph中文
+真实链接: https://cn.cointelegraph.com/news/bitcoin-price-uncertainty-donald-trump-tariffs-china-analysts
+正文: 据Swan Bitcoin首席执行官Cory
+Klippsten表示，比特币价格波动尚未结束。此前，受美国总统特朗普宣布对中国进口商品征收100%关税影响，比特币周五一度跌至102000美元。
+
+Klippsten周五对Cointelegraph表示，如果整体避险氛围持续，比特币短期内可能会受拖累，直到找到支撑并再次与宏观环境脱钩。
+
+Klippsten认为，比特币持有者在未来几天应预期市场将持续波动。Klippsten说：“宏观因素引发的下跌通常会清洗杠杆交易者和意志不坚定者，为下一轮上涨奠定基础。”
+
+## 加密市场蒸发80亿美元
+
+CoinGlass数据显示，过去24小时，比特币多头头寸被清算约21.9亿美元，整个加密市场多头清算总额达到80.2亿美元。
+
+Klippsten补充道：“眼下市场略显恐慌，属于典型宏观震荡。特朗普与中国互相抛出关税威胁，导致股市走低。交易者纷纷降低风险敞口。”
+
+Cointelegraph市场负责人Ray Salmond表示，杠杆交易者“完全措手不及”，特朗普关税消息“让加密市场剧烈震荡”。
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199d06a-562f-7306-8ef4-0c2c873da518)
+_比特币略有回暖，发文时交易价格为113,270美元。来源： CoinMarketCap_
+
+Salmond解释，Coinbase交易所“BTC/USD”交易对最低跌至107000美元，Binance永续合约“BTC/USDT”则暴跌至102000美元，这种价格错位充分反映了连续清算的严重性，止损单被大量触发。
+
+Salmond指出，Hyblock清算热力图显示，“几乎所有下行多头流动性已被吸收，目前仅剩102000至97000美元区间存在清算密集区。”
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199d06c-3632-726e-8ee2-510b20e31040)
+_比特币清算热图，7天回顾。来源 Hyblock_
+
+事实上，比特币在特朗普关税宣布后出现急跌并非首次。4月，特朗普首次宣布关税时就曾让加密市场剧烈震荡，引发衰退担忧。
+
+2月1日，特朗普签署行政命令，对中国、加拿大、墨西哥商品征收进口关税，比特币跌破10万美元。
+
+## **比特币分析师依然乐观**
+
+尽管市场短期承压，但分析师普遍保持乐观态度。
+
+多位比特币分析师认为，近期价格下跌或带来买入机会。
+
+Bitwise投资高级投资策略师Juan Leon在X平台发文称，“比特币被整体市场拖累时，往往是买入BTC的最佳时机。”
+
+Bitwise投资首席投资官Matt
+Hougan则提醒其85900名X平台关注者注意市场参与者的典型行为。他指出，许多人口头上表示会在价格回调时买入比特币，但真正发生时往往犹豫，因为“市场当时不会让你感觉良好”。
+
+Hougan表示，低位买入通常发生在市场情绪低点，记录相关数字有助于投资者保持纪律性。
+
+相关推荐：[210 万 Discord
+用户的身份信息照片可能在大规模泄露中被曝光](https://cn.cointelegraph.com/news/2-1m-discord-users-
+deleted-id-photos-may-be-exposed-in-massive-leak
+"https://cn.cointelegraph.com/news/2-1m-discord-users-deleted-id-photos-may-
+be-exposed-in-massive-leak")
+
+
+
+-----
+
+标题: 经济学家表示，如果历史重演，<b>比特币</b>（<b>BTC</b>）下跌后7天内或将反弹高达21%
+真实链接: https://cn.cointelegraph.com/news/bitcoin-price-crash-trump-tariffs-history-repeats-economist
+正文: 经济学家表示，如果10月的历史趋势延续，比特币价格未来七天内可能最高回升21%。
+
+经济学家Timothy Peterson周五在X平台发文称，“10月跌幅超过5%的情况极为罕见。过去10年仅出现过4次。”
+
+他称，这些情况分别发生在2017年、2018年、2019年和2021年10月。每次下跌后的一周，比特币分别上涨16%、4%和21%。唯一的例外是2021年，该加密资产又下跌了3%。
+
+由于历史上10月回报强劲，该月份常被称为“Uptober”。
+
+![加密货币，比特币价格](https://s3.cointelegraph.com/uploads/2025-10/0199d0dd-
+dd61-7094-9305-62b2902a986e) _自2013年以来，十月的平均回报率为20.14%。来源：CoinGlass_
+
+率为20.10%，仅次于11月，11月平均涨幅为46.02%。
+
+## **如果历史重演，比特币或飙升至124000美元**
+
+Peterson发布评论前，比特币周五因美国总统特朗普宣布对中国加征100%关税而暴跌至102000美元。
+
+根据CoinMarketCap数据，发稿时，比特币已小幅回升至112468美元。周一，比特币刚刚创下125100美元的历史新高。
+
+![加密货币，比特币价格](https://s3.cointelegraph.com/uploads/2025-10/0199d0da-82a2-7163-9936-b90be6d9c6af)
+_在发布时，比特币交易价格为111,700美元。来源：CoinMarketCap_
+
+如果历史重演，比特币复制2019年10月的21%最大反弹幅度，那么从周五的低点102000美元计算，类似的涨幅将在一周内将该加密货币推至约124000美元，接近最新历史高点。
+
+## **比特币支持者强调10月仍处于早期阶段**
+
+多位比特币支持者对上涨趋势依然充满信心。
+
+Jan3创始人Samson Mow周五在X平台发文称：“Uptober还剩下21天。”MN Trading Capital创始人Michael van de
+Poppe则认为：“当前周期的底部已经出现。”
+
+他补充说：“史上最大规模的清算潮引发的崩盘。COVID-19期间形成了上一周期的底部。”
+
+部分分析师则持更长远观点。The Bitcoin
+Libertarian表示：“几年后，比特币可能会在几小时内从100万美元跌至80万美元，届时我们将讨论清算金额创新高。”
+
+他说：“让历史重演吧。”
+
+相关推荐：[210 万 Discord
+用户的身份信息照片可能在大规模泄露中被曝光](https://cn.cointelegraph.com/news/2-1m-discord-users-
+deleted-id-photos-may-be-exposed-in-massive-leak
+"https://cn.cointelegraph.com/news/2-1m-discord-users-deleted-id-photos-may-
+be-exposed-in-massive-leak")
+
+
+
+-----
+
+标题: Strategy 持仓市值本周已蒸发超80 亿美元，Michael Saylor 称<b>BTC</b> 不会被征收关税 - 链捕手
+真实链接: https://www.chaincatcher.com/article/2211823
+正文: ChainCatcher 消息，尽管加密市场动荡导致 Strategy（MicroStrategy）的比特币持仓市值本周已蒸发超 80 亿美元（从周二的超
+800 亿美元高位降至约 719.3 亿美元），但该公司比特币持仓仍浮盈超 245 亿美元，迄今收益率为 51.91%。
+
+目前 Strategy 持有 640,031 枚比特币，总投入约 473.5 亿美元，平均价格约为 73,983 美元，其创始人兼执行主席 Michael
+Saylor 在 X 平台发文称，比特币不会被征收关税。
+
+
+
+-----
+
+标题: <b>比特币</b>牛市尚未开始，桑森·毛表示，尽管对即将到来的涨势持乐观态度。 - <b>Bitcoin</b> News
+真实链接: https://news.bitcoin.com/zh/bi-te-bi-niu-shi-shang-wei-kai-shi-sang-sen-mao-biao-shi-jin-guan-dui-ji-jiang-dao-lai-de-zhang-shi-chi-le-guan-tai-du/
+正文: **阿根廷领先的加密货币交易所Lemon在其B轮融资中筹集了2000万美元，因为该国吸引了国际资本的兴趣。Lemon的创始人兼首席执行官Marcelo
+Cavazzoli宣布，他的下一个目标是在整个拉丁美洲开始运营。**
+
+![play](/images/uploads/ListenArticleHeadphone.svg) Listen to article
+
+## 总部位于阿根廷的加密交易所Lemon在B轮融资中筹集了2000万美元
+
+越来越多的国际公司转向阿根廷投资于数字资产行业。位于阿根廷的领先加密货币交易所Lemon已[完成](https://x.com/lemonapp_ar/status/1976008475508650343)其B轮融资，筹集2000万美元以支持其在拉丁美洲的扩张计划。
+
+[bn_top_ad]
+
+这一轮融资由两家总部位于美国的基金F-Prime和ParaFi领投，这表明国际投资者对该地区加密生态系统增长的积极看法。
+
+DRW Venture Capital、Endeavor Catalyst、VanEck VC、Persea VC、Alumni
+Ventures、Lambda Class以及Aave的创始人Stani
+Kulechov也参与了这一轮融资，Lemon称这是过去3年中该地区加密公司首次进行的大规模融资。
+
+该交易所服务超过500万用户，将利用这些资金扩大其在拉丁美洲的影响力，计划在哥伦比亚、墨西哥和智利开始运营，并回归巴西等市场。
+
+公司在秘鲁[取得了](https://news.bitcoin.com/lemon-pioneers-fiat-crypto-
+interoperability-services-in-
+peru/)显著增长，获取了超过一百万客户，并且在一年内发行了超过15万张信用卡，展示了其快速适应新合规环境的能力。
+
+Lemon的创始人兼首席执行官Marcelo Cavazzoli反映了这一举措的重要性以及它可能会如何帮助该地区的未来客户。
+
+他说：
+
+> 我们将成为这片大陆上分布最广泛的加密平台，这使我们准备好将互联网的未来带给数以百万计的拉丁美洲人民。
+
+正值阿根廷恢复其作为投资资本可行目的地的可见性之际，Lemon的融资轮被宣布。另一家专注于稳定币汇款和支付的阿根廷钱包Takenos最近也在一轮[完成](https://takenos.com/notas-
+medios/takenos-announces-5m-seed-round)的融资中筹集了500万美元，强调了这些解决方案对国际投资者的重要性。
+
+
+
+-----
+
+标题: <b>比特币</b>跌破12万美元：特朗普关税威胁重创加密市场
+真实链接: https://www.bihainews.com/bhn-info/Crypto/20251010284.html
+正文: 美国总统特朗普再度威胁要提高对中国进口商品的关税，这一言论迅速在全球金融市场掀起波澜，加密市场成为首当其冲的冲击目标。
+
+作为数字资产的领头羊，比特币（BTC）价格首当其冲，不仅大幅下跌，更跌破12万美元这一关键支撑位，随之而来的是整个加密市场的抛售狂潮与大规模清算事件，市场恐慌情绪瞬间升温。​
+
+时间回到特朗普发表关税威胁声明之前，比特币的交易价格还稳定在12.1万美元上方，市场虽有小幅波动，但整体处于相对平稳的状态。然而，随着特朗普关税威胁言论的公布，市场情绪急转直下，比特币价格犹如断了线的风筝般迅速跳水，短短时间内便跌破12万美元整数关口。
+
+更令人担忧的是，价格在跌破支撑位后并未止跌企稳，反而陷入持续波动之中，多次尝试反弹却始终未能重新站稳12万美元，显示出市场对这一关键价位的信心已受到严重冲击。
+
+事实上，比特币此次下跌并非偶然，而是特朗普关税威胁引发的 “新一轮贸易战担忧”
+在加密市场的直接体现。长期以来，加密货币因价格波动剧烈、受宏观经济影响明显，被视为典型的高风险资产，对宏观经济层面的不确定性尤为敏感。
+
+特朗普的关税威胁可能打破当前全球贸易格局的平衡，引发贸易摩擦升级，进而影响全球经济稳定，这种潜在风险瞬间点燃了加密市场投资者的恐慌情绪，使得大量投资者选择避险离场，成为推动比特币价格下跌的核心原因。​
+
+比特币价格的承压下跌，迅速传导至整个加密市场，引发连锁反应。大量交易员为避免进一步损失，纷纷选择紧急出售手中持有的比特币，这种抛售行为如同多米诺骨牌，迅速蔓延至其他主流加密货币。
+
+以太坊（ETH）作为第二大加密货币，价格应声下跌，跌破4200美元关口，在短短几小时内跌幅就超过3%；Solana（SOL）与狗狗币（DOGE）也未能幸免，跌幅均超过2%。
+
+一时间，整个加密市场陷入大范围低迷，无论是头部币种还是中小币种，普遍出现不同程度的下跌，投资者为应对持续升温的市场不确定性，纷纷选择撤出头寸，市场流动性进一步收紧。​
+
+价格的断崖式下跌，直接引爆了加密市场的大规模清算潮。根据加密数据平台 CoinGlass
+的统计数据显示，在特朗普发表关税威胁讲话后的短短一小时内，加密市场就有超过4.2亿美元的多头仓位被强制清算。
+
+其中，比特币和以太坊成为清算的重灾区，比特币多头清算金额达到7300万美元，以太坊更是高达1.75亿美元，两者合计占据了短期清算总额的绝大部分，足见这两大主流币种受冲击之严重。
+
+若将时间维度拉长至24小时，整个加密市场的清算总额更是攀升至8.95亿美元，涵盖了多头与空头仓位，且由于价格整体呈下跌趋势，多头仓位成为清算的主力，大量投资者因未能及时追加保证金而被迫平仓，进一步加剧了市场的波动幅度。​
+
+不过，在市场陷入恐慌性抛售的同时，机构投资者却展现出与普通投资者截然不同的操作策略，成为市场中一道特殊的风景线。他们在比特币价格下跌期间并未跟随抛售，反而持续增持，近期比特币
+ETF 的资金流入数据便是最直接的证明。
+
+这一现象清晰地凸显出加密市场的投资分化：普通投资者往往受短期市场情绪驱动，在面临不确定性时倾向于快速出逃以规避风险；而机构投资者则更注重加密资产的长期配置价值，他们认为短期关税威胁引发的波动并不会改变加密货币行业的长期发展趋势，因此选择在价格下跌时逆势布局。
+
+这种差异化操作不仅体现出机构投资者对市场的理性判断，也间接反映出加密行业对专业投资机构的吸引力并未因短期波动而减弱，反而在逐步增强。​
+
+深入来看，特朗普的关税威胁带来的影响远不止于加密价格的短期下跌，更重要的是它再次放大了市场的不确定性。比特币价格在跌破12万美元后，始终处于震荡整理状态，既没有出现大幅反弹，也未进一步深度下跌。
+
+市场担忧关税政策若最终落地，可能引发中美贸易摩擦升级，进而影响全球供应链的稳定，导致全球经济增速放缓，而这些宏观经济风险都会直接作用于加密货币这类高风险资产，使其持续承压。​
+
+
+
+-----
+
+标题: 昨日12 倍杠杆做空3.3 亿美元ETH 的<b>比特币</b>OG 获利超1.6 亿美元 - 吴说
+真实链接: https://www.wublock123.com/article/6/50058
+正文: 星期六 2025-10-11
+
+吴说获悉，据 Lookonchain 监测，一位比特币 OG 在 30 小时内通过平仓大部分 BTC 和 ETH 空头头寸，获利超过 1.6
+亿美元。目前该账户仅剩 821.6 枚 BTC（约 9200 万美元）的空头头寸。此前，该比特币 OG 以 3000 万美元 12 倍杠杆做空
+ETH，价值约 3.3 亿美元。
+
+______________________________________
+
+
+
+-----
+
+标题: 美股重演“四月暴跌”，纳指跌超3%半年最惨，美债黄金拉升，铜油加密<b>货币</b>跳水 - 华尔街见闻
+真实链接: https://wallstreetcn.com/articles/3756939
+正文: 标普收跌近3%；芯片指数跌超6%，AMD跌近8%，高通跌超7%；特斯拉跌超5%，英伟达跌近5%；稀土矿股USA Rare
+Earth盘中涨超20%；中概指数跌超6%，阿里百度跌超8%。十年期美债收益率跳水超10个基点。期金一度涨近2%，连涨八周。盘中美油和纽铜跌超5%。比特币一度闪跌超10%，以太坊曾跌超20%。
+
+受特朗普关税威胁影响，周五盘中，美股大盘重演半年前的“四月暴跌”，高风险资产加密货币和两大经济风向标原油和铜跳水，美债和黄金交易价拉升。
+
+> **美股早盘**
+> ，三大美股指集体转跌，午盘纳指跌幅扩大超3%，尾盘标普跌近3%。芯片股领跌，而在[中国商务部公布](https://wallstreetcn.com/articles/3756865)对稀土相关物项和技术的出口管制决定后，在美上市稀土矿股逆市大涨。比特币等加密货币追随美股大跌。
+>
+> ![](https://wpimg-wscn.awtmt.com/b0dda203-23de-4c3e-b363-c9e5a38f4c63.jpeg)
+>
+> 主要美股指周五早盘齐转跌，后持续下行，尾盘刷新日低
+>
+>
+> 美国原油和铜期货自美股早盘起加速下跌，美股盘中分别跌超4%和5%。避险需求升温，美股早盘，周四回落的黄金刷新日高，未继续跌离纪录高位；美债价格跳涨，十年期美债收益率盘中跳水超10个基点。
+>
+> **美股盘后** ，芯片设计软件巨头Cadence和Synopsys盘后分别跌超4%和3%，稀土矿股USA Rare
+> Earth进一步走高。美油盘中跌幅扩大到5%以上，纽铜曾跌近6%。美债收益率进一步下行。两大加密货币比特币和以太坊“闪跌”，盘中均曾两位数大跌。
+
+**三大美股指齐创一个月新低，标普和纳指创半年最大日跌幅，抹平前四日涨幅、全周转跌，道指两个月来首次五连跌。AMD、高通等芯片股领跌。阿里等中概股同样重挫。USA
+Rare Earth等稀土矿股盘中曾两位数大涨。**
+
+> **美股基准股指** ：
+>
+>   *
+> 标普500指数收跌2.71%，创4月10日以来最大跌幅，报6552.51点，刷新9月10日以来低位。道指收跌878.82点，跌幅1.90%，创5月21日以来最大跌幅，报45479.60点，刷新9月5日以来低位。纳指收跌3.56%，创4月4日以来最大跌幅，报22204.43点，刷新9月12日以来低位。
+>   *
+> 本周主要美股指均在上周反弹后回落，标普累跌2.43%，道指累跌2.73%，纳指累跌2.53%，分别创5月23日以来、8月1日以来和4月17日以来最差单周表现。
+>   *
+> 罗素2000指数收跌3.01%，报2394.595点，本周累跌3.29%。纳斯达克100指数收跌876.431点，跌幅3.49%，报24221.745点，本周累跌2.27%。纳斯达克科技市值加权指数收跌4.11%，报2197.2688点，本周累跌2.85%。
+>
+
+>
+> ![](https://wpimg-wscn.awtmt.com/68e8ecf8-e123-407f-ac54-10fa79af1588.jpeg)
+>
+> 因周五重挫，主要美股指本周集体累跌
+>
+>   * 恐慌指数VIX收涨31.65%，报21.63点，本周累涨29.91%，周五北京时间23点00分之前大致持平，随后飙涨。
+>
+
+>
+> **![](https://wpimg-
+> wscn.awtmt.com/07985387-9eac-4e58-85e6-5c11a76fa161.jpeg)**
+>
+> 衡量美股波动的“恐慌指数”VIX自8月初以来首次涨破20点
+>
+> **美股行业ETF：**
+>
+>   * 各行业ETF周五几乎全军覆没，半导体行业ETF跌超6%领跌，光伏、油气业ETF跌超5%，AI和机器人行业ETF跌超4%。
+>
+
+>
+> **![](https://wpimg-wscn.awtmt.com/7984fdea-
+> da9b-4bb8-a3e9-7fa4ad9226c3.png)**
+>
+> **科技七巨头：**
+>
+>   * 美国科技股七巨头（Magnificent 7）指数跌3.68%，报195.06点，本周累跌2.69%。
+>   *
+> 特斯拉收跌近5.1%，本周累跌3.8%；亚马逊收跌约5%，本周累跌逾1.4%；英伟达收跌约4.9%，本周累跌约2.4%；Meta收跌近3.9%，本周累跌逾0.7%；苹果收跌3.45%，本周累跌近5%；微软收跌约2.2%；本周累跌约1.2%；Alphabet收跌近2%，本周累跌逾3.6%。
+>
+
+>
+> **芯片股** ：
+>
+>   * 费城半导体指数收跌6.32%，报6407.602点，本周累跌2.68%。
+>   * AMD收跌7.7%，高通收跌7.3%，台积电美股跌6.4%，博通跌5.9%，美光科技跌约5.6%。
+>
+
+>
+> **稀土和关键矿物股** ：
+>
+>   * USA Rare Earth（USAR）盘中涨超20%，收涨近5%，盘后曾涨超10%。MP Materials（MP）、NioCorp
+> Developments（NB）、Energy Fuels（UUUU）盘中均涨超10%，分别收涨8.4%、5.6%和近3.3%。
+>   * Critical Metals（CRML）早盘曾涨近31%，收涨1.8%，盘后涨超9%。Ucore Rare
+> Metals（UURAF）盘中涨近17%，收涨8.4%。
+>
+
+>
+> **![](https://wpimg-
+> wscn.awtmt.com/78842056-8718-4f5e-a53e-997b2e3297c6.jpeg)**
+>
+> 高盛追踪全球稀土矿类股的指数周五大涨10%
+>
+> **中概股** ：
+>
+>   * 纳斯达克金龙中国指数收跌6.10%，报8018.79点，本周累跌8.37%。
+>   * 文远知行收跌约15%，蔚来跌约10%，小马智行跌近9%，阿里、百度、小鹏汽车跌超8%，京东和腾讯粉单跌超6%。
+>
+
+>
+> **其他个股** ：
+>
+>   * 媒体称强生洽购后，生物医药公司Protagonist Therapeutics（PTGX）收涨29.8%。
+>   * 第一财季营收同比大增84%的AI数据中心公司Applied Digital（APLD）收涨约16%。
+>   * 公布四季度EPS盈利指引逊于预期后，牛仔品牌李维斯（LEVI）收跌近12.6%。
+>
+
+**泛欧股指跌超1%至本月内低位，科技板块跌超3%，汽车板块一周跌超9%。**
+
+> 泛欧股指：欧洲斯托克600指数收跌1.25%，报564.16点，刷新9月30日以来低位，本周累跌1.10%。
+>
+> 斯托克600各板块：
+>
+>   *
+> 科技板块收跌超3%，成分股中，荷兰上市的欧洲最高市值芯片股ASML收跌4.2%，德国英飞凌跌超3%；受原油和工业金属下跌影响，油气和基础资源板块均跌超2%。
+>   *
+> 汽车板块跌超2%，成分股中，Stellantis跌7.26%，法拉利、雷诺、宝马跌超2%。汽车板块本周累跌逾9%。因周四公布令投资者失望的长期财务目标后大跌15.4%，法拉利累跌约19.4%。
+>
+
+>
+> 主要欧洲国家股指周五齐跌。意股跌近2%，和英法西股均两连跌，两日收创历史新高的德股回落超1%。
+>
+> ![](https://wpimg-wscn.awtmt.com/be30ccd8-a1c1-47dd-a425-39bcb7b0e6a6.png)
+>
+> 本周各国股指齐跌，连涨两周的德英意西股和连涨四周法股均回落。
+>
+> ![](https://wpimg-wscn.awtmt.com/eb12a33e-a432-4874-98ed-4ad31b2d5149.png)
+
+**市场关注特朗普言论，欧美国债价格齐涨，十年期美债收益率跳水超10个基点至三周新低。**
+
+> 欧债：
+>
+>   *
+> 欧洲收益率追随美债在美股早盘时加速下行。到债市尾盘，英国10年期基准国债收益率约为4.67%，日内降7个基点；基准10年期德国国债收益率约为2.64%，日内降约6个基点。
+>   * 因周五下行，本周欧债收益率连降两周，10年期英债收益率累计降约2个基点，10年期德债收益率累计降约6个基点。
+>
+
+>
+> 美债：
+>
+>   *
+> 美国10年期基准国债收益率在美股早盘降幅扩大，美股盘后下破4.04%，刷新上周五所创的9月18日以来低位，到债市尾盘时约为4.03%，日内降约11个基点，在周四反弹后回落，本周累计降约9个基点。
+>   *
+> 对利率前景更敏感的2年期美债收益率在美股盘后曾下测3.50%，刷新9月17日以来低位，到债市尾盘时约为3.50%，日内降约8个基点，在连升两日后回落，本周累计降约9个基点，和10年期美债收益率均连降两周。
+>
+
+>
+> ![](https://wpimg-wscn.awtmt.com/840566e5-2f43-42ce-b348-da20a04495ae.jpeg)
+>
+> 美债收益率周五全线下行，全周因此齐降
+
+**关注特朗普言论，美元指数刷新日低，日元扭转五连跌，反弹超1%；比特币一度闪跌超10%，以太坊曾跌超20%。**
+
+> **美元** ：
+>
+>   * ICE美元指数（DXY）周五全天保持跌势，美股盘后刷新日低至98.813，日内跌逾0.7%，，跌离周四刷新的8月1日以来高位。
+>   *
+> 到周五汇市尾盘，美元指数处于98.80上方，日内跌近0.7%，本周累涨近1.2%；彭博美元现货指数日内跌逾0.2%，本周累涨近1.1%，和美元指数均止步四连涨、本周在上周回落后反弹、最近四周第三周累涨。
+>
+
+>
+> **![](https://wpimg-
+> wscn.awtmt.com/f67200fe-6a7c-401e-98cc-57e76066031d.jpeg)**
+>
+> 部分得益于日元在高市早苗当选自民党党首后本周前四日持续走软，美元指数周四创8月1日以来新高
+>
+> **非美货币** ：
+>
+>   *
+> 五连跌的日元反弹，全周因市场启动“高市早苗交易”而累计大跌。美元兑日元在周五亚市早盘曾涨至153.27，刷新八个月高位，后很快转跌，汇市尾盘跌破151.20，日内跌逾1.2%，本周还累涨约2.5%。
+>   *
+> 离岸人民币（CNH）兑美元在欧股早盘涨至7.1240，刷新10月1日以来高位，美股早盘迅速转跌，美股盘后刷新日低至7.1495，较日高回落255点，北京时间10月11日4点59分，离岸人民币兑美元报7.1453元，较周四纽约尾盘跌72点，本周累跌126点，在上周反弹后回落。
+>
+
+>
+> **加密货币** ：
+>
+>   *
+> 比特币（BTC）在美股盘初涨破11.25万美元刷新日高，后持续下行，美股盘后曾跌破10.46万美元、刷新6月下旬以来低位，较日高跌约1.8万美元、跌约15%。
+>
+
+>
+> ![](https://wpimg-wscn.awtmt.com/5664ddb8-2723-46c6-8d7a-91622f8c5594.jpeg)
+>
+> 比特币创6月以来最差单周表现
+>
+>   * 以太坊（ETH）在美股盘初涨破4390美元刷新日高，美股盘后曾跌破3470美元，刷新8月初以来低位，较日高跌超20%。
+>
+
+**市场关注特朗普言论，黄金刷新日高，期金涨近2%，连涨八周。纽铜收跌超4%至一周低位，美股盘后，一度跌近6%。伦钴涨超2%，自刚果宣布出口配额制以来五日涨超20%。**
+
+> **黄金** ：
+>
+>   *
+> 美股早盘，黄金盘中拉升，美股早盘尾声刷新日高时，纽约黄金期货涨至4038.6美元，日内涨近1.7%，现货黄金涨至4022.92美元，日内涨近1.2%。
+>   * COMEX
+> 12月黄金期货收涨0.7%，报4000.4美元/盎司，尽管周四跌2.4%创8月11日以来最大日跌幅，本周仍累涨逾2.3%，连涨八周。周五尾盘，现货黄金报4017.79美元，日内涨约1%，本周累涨约3.4%。
+>
+
+>
+> ![](https://wpimg-wscn.awtmt.com/6431fb34-a6cb-4c01-b6ad-2018d9f54a66.jpeg)
+>
+> 现货黄金周五反弹、收复4000美元关口，连涨八周
+>
+> **白银** ：
+>
+>   * COMEX
+> 12月白银期货在美股盘前刷新日高至48.62美元，日内涨3.1%，美股午盘曾短线转跌，收涨0.19%，报47.247美元/盎司，因周四大幅回落近3.8%，本周累跌1.5%，终结五周连涨。
+>
+
+>
+> **铜** ：
+>
+>   * 周四收创去年5月以来新高的LME期铜收跌3.22%，报10518美元/吨，创10月2日以来新低，本周累跌1.85%。
+>   * 周四刷新7月30日以来高位COMEX
+> 12月期铜收跌4.47%，报4.894美元/磅，刷新10月1日以来收盘低位，在连涨两周后本周累跌4.2%，美股盘后刷新日低至4.822美元，日内跌近5.9%。
+>
+
+>
+> **伦钴** ：
+>
+>   * LME期钴收涨860美元，涨2.05%，报42725美元/吨，本周累涨22.07%。
+>
+
+**原油收创五个月新低，并创三个多月最大日跌。美股盘后，美油盘中跌幅扩大到5%以上。**
+
+> **原油** ：
+>
+>   * 原油连续两日收跌，创5月7日以来新低，并创6月24日以来最大跌幅。WTI
+> 11月原油期货收跌4.24%，报58.90美元/桶，本周累跌超3.25%；布伦特12月原油期货收跌近3.82%，报62.73美元/桶，本周累跌约2.79%。
+>   * 美股盘后刷新日低时，美国WTI原油跌至58.22美元，较周四收盘跌逾5.3%，布伦特原油跌至62美元，较周四收盘跌4.9%。
+>   *
+> 因周五大跌，原油全周的反弹势头逆转，连跌两周。本周跌幅不及遭到OPEC+增产预期和美国原油库存增加冲击的上周。上周美油累跌约7.4%，布油累跌约8.1%，均创6月27日以来最大周跌幅。
+>
+
+>
+> **![](https://wpimg-
+> wscn.awtmt.com/0ed4525b-c104-424b-9cd4-80e2a8ead7d0.jpeg)**
+>
+> 美油自5月初以来首次跌破60美元
+>
+> **汽油和天然气** ：
+>
+>   * NYMEX 11月汽油期货收跌3.3%，报1.8204美元/加仑，两连跌，本周累跌约2.2%，连跌两周；NYMEX
+> 11月天然气期货收跌约5%，报3.1060美元/百万英热单位，三连跌，本周累跌约6.6%，在上周扭转三周连跌后回落。
+>
+
+风险提示及免责条款
+
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。用户应考虑本文中的任何意见、观点或结论是否符合其特定状况。据此投资，责任自负。
+
+
+
+-----
+
+标题: <b>比特币</b>（<b>BTC</b>）可能跌至11.8万美元，但期货重置意味着回调不会持续太久 - Cointelegraph中文
+真实链接: https://cn.cointelegraph.com/news/bitcoin-drop-118k-likely-futures-reset-means-dip-wont-last
+正文: **要点:**
+
+BTC从其12.6万美元的历史高点下跌了3.7%，未来几天可能回到11.8万美元水平，但数据显示，长期在该水平以下交易的情况可能不会持续太久。
+
+## BTC**可能先跌至11.8万美元**
+
+根据Cointelegraph Markets
+Pro和TradingView的数据显示，BTC价格周五交易在12.13万美元，在过去24小时内出现温和回调。
+
+虽然宏观设置仍然看涨，但分析师们一致认为，BTC/USD货币对可能会先跌向11.8万-12万美元，然后再恢复上升趋势。
+
+分析师Stockmoney Lizards指出："这就是我们所说的两边都在震荡洗盘。"他补充道，BTC创下新的历史高点后，这种价格走势是正常的。
+
+"这次回调应该很快就会结束，大约在11.8万-11.9万美元，然后走高，"该分析师进一步表示。
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199cdfb-
+ada5-7772-ab47-f716e435a6bd)_BTC/USD四小时图表。来源：Stockmoney Lizards_
+
+另一位分析师Ted Pillows在周五的X平台帖子中表示："看起来$BTC想要重新测试11.8万-12万美元支撑位。"
+
+该分析师指出，在这个水平上交易所有强劲的买单，表明BTC/USD货币对可能会向该水平回调。
+
+> "之后，如果买家介入，预计将出现反弹。"
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199cdfb-b640-7409-95af-a0913d0d6b2e)_BTC/USD日线图表。来源：Ted
+Pillows_
+
+同时，Glassnode的成本基础分布热图显示了11.7万美元附近的支撑位，约190,000枚BTC最后是在该价位被购入的。
+
+MN Capital创始人Michael van de Poppe持不同观点，他认为BTC在周四纽约交易晚盘闪跌至11.97万美元后已经完成了回调。
+
+> "它已准备好继续创造新的历史高点。"
+
+同样，AlphaBTC表示，价格现在已经清除了下侧流动性，一直到11.8万美元，交易者目前正关注12.6万美元以上的流动性。
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199ce00-26e6-7f20-9657-8de81ee751ad)_来源：AlphaBTC_
+
+## BTC**期货未平仓合约下降41亿美元**
+
+根据CoinGlass的数据显示，随着BTC价格从12.6万美元跌至11.97万美元，BTC期货未平仓合约（OI）减少了41亿美元。
+
+这可以被视为一次健康的市场重置，因为它反映了过度杠杆头寸的清算，减轻了市场的过度乐观情绪。
+
+链上数据提供商Glassnode表示，虽然未平仓合约从历史高点略有下降，但"由于多空双方都被剧烈价格波动所影响，未平仓合约仍然处于高位"，并补充道：
+
+> "市场正在经历杠杆重置，波动性正在冲刷掉双方的过度持仓。"
+
+![](https://s3.cointelegraph.com/uploads/2025-10/0199cdfb-
+cce8-7f2c-8ca4-182f77c037e4)_BTC期货未平仓合约。来源：Glassnode_
+
+高未平仓合约通常表明过度杠杆交易，这可能会放大波动性。当轻微的价格下跌触发大量清算时，它会清除投机性头寸，从而稳定市场。
+
+相关推荐：[分析显示：比特币（BTC）距"暴涨行情"还剩100天，否则牛市或将终结](https://cn.cointelegraph.com/news/bitcoin-
+has-100-days-parabolic-or-end-its-bull-market-analysis
+"https://cn.cointelegraph.com/news/bitcoin-has-100-days-parabolic-or-end-its-
+bull-market-analysis")
+
+本文不包含任何投资建议或推荐。任何投资和交易行为均涉及风险，读者应自行研究后再做决定。
+
+  
+
+
+
+-----
+
+标题: 昨日12倍杠杆做空3.3亿美元ETH的<b>比特币</b>OG获利超1.6亿美元，已平仓大部分<b>BTC</b>和ETH空头头寸
+真实链接: https://www.panewslab.com/zh/articles/6414bc64-d72e-41f1-ae45-1a4823bcfa34
+正文: AI智搜
+
+整合站内所有资讯，项目介绍、热点解析、文章总结，有问必答！
+
+
+
+-----
+
+标题: 某<b>比特币</b>巨鲸在Hyperliquid上平掉<b>BTC</b>和ETH空单，仅一天获利约1.9至2亿美元 - 新浪财经
+真实链接: https://finance.sina.com.cn/blockchain/roll/2025-10-11/doc-inftnpwv5279711.shtml?cre=tianyi&mod=pchp&loc=32&r=0&rfunc=15&tj=cxvertical_pc_hp&tr=12
+正文: [专题：特朗普关税血洗币圈！加密货币集体暴跌，162万人爆仓](https://finance.sina.com.cn/zt_d/subject-1760146814)
+
+来源：吴说
+
+吴说获悉，据 MLM 监测，某比特币巨鲸在 Hyperliquid 上平掉 90% 的 BTC 空单并全平 ETH 空单，仅用一天获利约 1.9 至 2
+亿美元。值得注意的是，该巨鲸在市场下跌前数分钟又建立价值九位数的 BTC 与 ETH 空头头寸。这只是其在 Hyperliquid
+上的公开仓位，其在中心化交易所或其他平台的操作仍未知，该账户或在当日行情中发挥了关键作用。
+
+责任编辑：赵思远
+
+
+
+-----
+
+标题: <b>比特币</b>大跌超8%，全球逾164万人爆仓 - 新浪财经
+真实链接: https://finance.sina.com.cn/jjxw/2025-10-11/doc-inftnpww7523591.shtml
+正文: >
+> 炒股就看[金麒麟分析师研报](https://finance.sina.com.cn/stock/reportch/jinqilin.shtml)，权威，专业，及时，全面，助您挖掘潜力主题机会！
+
+10月11日，加密货币全线大跌，比特币一度向下跌破110000美元，跌幅达9%。截至界面新闻发稿，比特币报111933美元，下跌了8.08%。
+
+Coinglass数据显示，过去24小时，全球共164.4万人爆仓，爆仓总金额192.16亿美元。
+
+据证券时报报道，美国总统特朗普威胁大幅提高关税，令投资者担心国际贸易紧张局势恶化。特朗普周五威胁将大幅提高关税，以反制他国实施更严格的稀土矿物出口管制措施，并表示将大幅提高关税，令投资者担心大国之间的贸易关系将会继续恶化。
+
+2025年以来，比特币价格经历多次震荡，在年初9.5万美元关口附近波动上涨。2025年4月，比特币一度下跌至8万美元下方，随后连月上行，接连突破10万、11万、12万美元等多个整数关口，持续刷新历史最高价格。
+
+据了解，比特币价格此前的上涨势头有多方面因素支撑：机构投资者的资金流入以及比特币与全球金融体系日益紧密的关联性等。
+
+加密资产管理公司Maple首席执行官兼联合创始人Sid Powell表示，比特币涨势能否持续，很大程度上取决于宏观经济状况及贸易领域的任何新动向。
+
+德银预测，在去美元化加速与避险需求激增的背景下，到2030年，比特币与黄金可能共同成为央行储备资产的重要组成。当前全球央行美元储备份额已降至41%，而黄金储备突破3.6万吨。近来金价已站上4000美元，比特币也逼近历史高点，两者ETF均获创纪录资金流入。
+
+近期，Bitwise发布了比特币的最新预测，预计到2035年价格目标为130万美元，主要受机构需求和比特币（BTC）有限供应驱动。该报告作为Bitwise“长期资本市场假设”的一部分发布，预计未来十年比特币（BTC）年复合增长率为28.3%，大幅超过股票（6.2%）、债券（4.0%）和黄金（3.8%）等传统资产。
+
+同时，Bitwise还提供多种情景。认为在乐观情况下，比特币可能达到39.4%年复合增长率；悲观情景则可能下探至2%年复合增长率。
+
+新浪声明：此消息系转载自新浪合作媒体，新浪网登载此文出于传递更多信息之目的，并不意味着赞同其观点或证实其描述。文章内容仅供参考，不构成投资建议。投资者据此操作，风险自担。
+
+责任编辑：高佳
+
+
+
+-----
+
+标题: <b>比特币</b>跌破11万美元，加密市场暴跌引发逾60亿美元强制平仓潮 - FX168财经
+真实链接: https://www.fx168news.com/article/%E6%AF%94%E7%89%B9%E5%B8%81-952687
+正文: ## 加密货币市场暴跌与强制平仓概况
+
+根据 www.Todayusstock.com
+报道，周五全球[加密货币](https://www.fx168news.com/info/001008)市场经历自今年4月初以来最大规模的下跌，**[美股](https://www.fx168news.com/info/001003/001003001)盘后加剧跌幅**，一小时内超过**60亿美元[持仓](https://www.fx168news.com/data/position/goldETF)被强制平仓**。这一轮抛售潮主要集中在美国时间周五下午的约四小时内，显示市场流动性紧张与衍生品交易压力剧增。
+
+市场分析指出，此次下跌反映了投资者对风险资产的不确定性预期上升，以及对下行保护需求的激增。衍生品市场的杠杆效应使得暴跌放大，进一步推动市场抛压。
+
+作为全球最大加密货币，[比特币](https://www.fx168news.com/quote/BINBTC)（BTC.CC）日内跌幅达**13.5%**
+，一度失守11万美元关口，最低触及105,930美元，随后略有回升。本周初，比特币曾创下约126,250美元历史新高，但此次调整显示短期涨势遇阻。
+
+[以太坊](https://www.fx168news.com/quote/BINETH)（ETH.CC）受冲击更大，盘中一度暴跌逾**17%**
+，周内累计下跌14.80%，主力[期货](http://www.99qh.com/)合约DCR报3879美元，一度触及3850美元低点。
+
+加密货币 | 日内跌幅 | 本周累计跌幅 | 最低价  
+---|---|---|---  
+比特币 (BTC) | -13.5% | -7.37% | $105,930  
+以太坊 (ETH) | -17% | -14.80% | $3850  
+  
+## 小市值代币受冲击更大
+
+规模较小、流动性较差的代币受到的冲击尤为显著。瑞波币（XRP.CC）和[狗狗币](https://www.fx168news.com/quote/BINDOG)（DOGE.CC）盘中暴跌逾30%，显示在市场恐慌环境下，低流动性资产波动加剧。
+
+代币 | 日内跌幅  
+---|---  
+瑞波币 (XRP) | -30%以上  
+狗狗币 (DOGE) | -30%以上  
+  
+## 期货市场表现及风险提示
+
+CME[比特币](https://www.fx168news.com/quote/BINBTC)期货主力合约周五收盘较周四下跌5.94%，报11.6万美元以下，本周累计下跌7.37%。CME[以太币](https://www.fx168news.com/quote/BINETH)[期货](http://www.99qh.com/)DCR主力合约重挫11.29%，显示衍生品市场受抛售压力影响显著。业内人士指出，衍生品市场杠杆效应显著，投资者需警惕风险集中导致的强制平仓连锁反应。
+
+## 编辑总结
+
+本轮[加密货币](https://www.fx168news.com/info/001008)市场暴跌显示市场情绪高度脆弱。比特币、以太坊及小市值代币均出现大幅回调，衍生品市场杠杆放大了风险释放速度。短期来看，市场可能继续震荡，投资者应关注价格关键支撑位及流动性风险，合理控制仓位与杠杆，规避潜在系统性风险。
+
+## 常见问题解答
+
+> **Q1：本轮加密货币暴跌的核心原因是什么？** A1：主要是市场恐慌情绪集中释放，加之美股盘后跳水、衍生品强制平仓，造成资金快速外流，引发大规模抛售。
+>
+> **Q2：为何小市值代币跌幅更大？** A2：小市值代币流动性不足，市场承压时容易被放大抛售，跌幅常大于主流币种。
+>
+> **Q3：比特币跌破11万美元意味着长期趋势逆转吗？** A3：短期回调不代表长期趋势逆转，但显示市场短期情绪紧张，需关注支撑位与市场情绪恢复情况。
+>
+> **Q4：期货合约下跌会对现货市场造成何种影响？** A4：期货市场下跌可能引发连锁平仓，推动现货市场价格下行，加大短期波动。
+>
+> **Q5：投资者应如何应对加密货币市场剧烈波动？** A5：建议控制仓位和杠杆，分散投资，关注流动性和风险管理，同时密切留意市场关键支撑位及政策环境。
+
+来源：今日美股网
+
+1\. 欢迎转载，转载时请标明来源为FX168财经。商业性转载需事先获得授权，请发邮件至：media@fx168group.com。
+
+2\. 所有内容仅供参考，不代表FX168财经立场。我们提供的交易数据及资讯等不构成投资建议和依据，据此操作风险自负。
+
+
+
+-----
+
+标题: 数据：全网SOL 合约总持仓跌破100 亿美元 - 链捕手
+真实链接: https://www.chaincatcher.com/article/2211776
+正文: ChainCatcher 消息，全网 SOL 合约总持仓降至 5,093.13 万枚，持仓规模跌破 100 亿美元，现报 94.62 亿美元，24 小时跌幅
+36.41%，其中芝商所（CME）SOL 合约持仓 879.74 万枚（16.34 亿美元），24 小时跌幅 19.97%；币安 SOL 合约持仓
+1,914.82 万枚（17 亿美元），24 小时跌幅 36.75%。
+
+此外，目前全网比特币合约总持仓降至 62.51 万枚 BTC，持仓规模降至 701.63 亿美元（昨日为 904.48 亿美元），24 小时跌幅
+22.23%，其中芝商所（CME）比特币合约持仓 15.02 万枚 BTC（168.41 亿美元），24 小时跌幅 7.73%；币安比特币合约持仓
+10.51 万枚 BTC（118.07 亿美元），24 小时跌幅 25.92%。
+
+
+
+-----
+
+标题: <b>比特币</b>OG巨鲸加仓做空<b>BTC</b>和ETH，总仓位已超11亿美元 - Odaily
+真实链接: https://www.odaily.news/zh-CN/newsflash/451735
+正文: Odaily星球日报讯 据 Lookonchain 监测，比特币远古巨鲸加仓做空 BTC 和 ETH，总仓位已超过 11 亿美元。
+
+· 10 倍杠杆做空 6,189 枚 BTC，约 7.529 亿美元，强平价格：130,810 美元
+
+· 12 倍杠杆做空 81,203 枚 ETH，约 3.531 亿美元，强平价格：4,589.3 美元
+
+
+
+-----
+
+标题: 深夜全球股市闪崩！<b>比特币</b>暴跌近7%，发生了什么？ - 富途资讯
+真实链接: https://news.futunn.com/post/63145163/global-stock-markets-flash-crash-in-the-bitcoin-plunges-nearly
+正文: 富途资讯综合自券商中国、e公司
+
+10月10日，欧美股市集体大跌，美国总统特朗普周五威胁将大幅提高关税。
+
+美股三大指数集体收跌， [$道琼斯指数 (.DJI.US)$](https://www.futunn.com/stock/.DJI-US) 跌1.9%，
+[$纳斯达克综合指数 (.IXIC.US)$](https://www.futunn.com/stock/.IXIC-US)
+跌3.56%，[$标普500指数 (.SPX.US)$](https://www.futunn.com/stock/.SPX-
+US)跌2.71%。纳指、标普500指数创4月以来最大单日跌幅。
+
+![](https://record.futunn.com/news-editor-
+imgs/20251011/public/17601638204038985738388.png?imageMogr2/quality/minsize/1/ignore-
+error/1/format/webp)道指本周累计下跌2.73%；纳指累计下跌2.53%；标普500指数累计下跌2.43%。
+
+明星科技股普跌，[$博通 (AVGO.US)$](https://www.futunn.com/stock/AVGO-US)跌近6%，[$特斯拉
+(TSLA.US)$](https://www.futunn.com/stock/TSLA-US)跌超5%，[$亚马逊
+(AMZN.US)$](https://www.futunn.com/stock/AMZN-US)跌近5%，[$英伟达
+(NVDA.US)$](https://www.futunn.com/stock/NVDA-US)跌超4%， [$苹果
+(AAPL.US)$](https://www.futunn.com/stock/AAPL-US) 、 [$Meta Platforms
+(META.US)$](https://www.futunn.com/stock/META-US) 跌超3%，[$微软
+(MSFT.US)$](https://www.futunn.com/stock/MSFT-US)、 [$谷歌-A
+(GOOGL.US)$](https://www.futunn.com/stock/GOOGL-US) 跌超2%。
+
+[$纳斯达克中国金龙指数 (.HXC.US)$](https://www.futunn.com/stock/.HXC-
+US)收跌6.1%，本周累计下跌8.37%，热门中概股普跌，[$蔚来
+(NIO.US)$](https://www.futunn.com/stock/NIO-US)、 [$金山云
+(KC.US)$](https://www.futunn.com/stock/KC-US) 跌超10%，[$哔哩哔哩
+(BILI.US)$](https://www.futunn.com/stock/BILI-US)跌超9%，[$百度
+(BIDU.US)$](https://www.futunn.com/stock/BIDU-US)、[$阿里巴巴
+(BABA.US)$](https://www.futunn.com/stock/BABA-US)、[$小鹏汽车
+(XPEV.US)$](https://www.futunn.com/stock/XPEV-US)跌超8%， [$京东
+(JD.US)$](https://www.futunn.com/stock/JD-US) 跌超6%。
+
+富时 [$A50指数主连 (2510) (CNmain.SG)$](https://www.futunn.com/stock/CNmain-SG)
+期指连续夜盘收跌4.26%。
+
+隔夜欧洲主要股指集体收跌，欧洲斯托克50指数跌1.69%，[$英国富时100指数
+(.FTSE.GB)$](https://www.futunn.com/stock/.FTSE-GB)跌0.86%，[$法国CAC40指数
+(.CAC.FR)$](https://www.futunn.com/stock/.CAC-FR)跌1.53%， [$德国DAX指数
+(.GDAXI)$](https://www.futunn.com/stock/.GDAXI-GI?search_track_info=)
+跌1.50%，富时[$意大利MIB指数 (.FTMIB.IT)$](https://www.futunn.com/stock/.FTMIB-
+IT)跌1.74%。
+
+加密货币全线大跌，[$比特币 (BTC.CC)$](https://www.futunn.com/stock/BTC-
+CC)一度向下跌破110000美元，跌幅达9%。
+
+国际金价走高，COMEX黄金期货 [$黄金主连 (2512)
+(GCmain.US)$](https://www.futunn.com/stock/GCmain-US)
+收涨1.58%，报4035.5美元/盎司，本周累计上涨3.15%；COMEX白银期货 [$白银主连 (2512)
+(SImain.US)$](https://www.futunn.com/stock/SImain-US)
+收涨0.76%，报47.515美元/盎司，本周累计下跌0.95%。
+
+国际油价大跌， [$WTI原油主连 (2511) (CLmain.US)$](https://www.futunn.com/stock/CLmain-US)
+收跌5.32%，报58.24美元/桶，本周累计下跌4.04%。 [$布伦特原油(现金)主连 (2512)
+(BZmain.US)$](https://www.futunn.com/stock/BZmain-US)
+收跌4.68%，报62.17美元/桶，本周累计下跌3.39%。
+
+美国总统特朗普威胁大幅提高关税，令投资者担心国际贸易紧张局势恶化。
+
+## 为何下跌？
+
+分析人士指出，美国滥用关税“大棒”是导致加密货币市场此次暴跌的主要原因。此外，美国联邦政府“停摆”持续、美联储官员释放谨慎宽松信号等，也对加密货币市场带来影响。
+
+据媒体报道，特朗普周五威胁将大幅提高关税，以反制他国实施更严格的稀土矿物出口管制措施，并表示将大幅提高关税，令投资者担心大国之间的贸易关系将会继续恶化。
+
+特朗普在其社交媒体平台Truth
+Social上表示：“作为美国总统，我将被迫采取财政手段反制他们的行动。我们正在测算的政策选项之一，是对进入美国的产品大幅提高关税。同样处于严肃考虑范围内的反制措施还有许多。”
+
+近日，世界贸易组织（WTO）发布《全球贸易展望与统计》报告指出，受人工智能（AI）相关产品需求增长、北美在关税上调前的进口激增及新兴经济体间贸易活跃推动，2025年上半年全球货物贸易超出预期。世贸组织据此将2025年全球货物贸易增长预测上调至2.4%，高于8月时的0.9%。但是受全球经济复苏乏力和美国关税政策等因素影响，2026年全球货物贸易增长预期大幅下调至0.5%，较8月预测的1.8%显著降低。
+
+报告指出，随着全球经济放缓和新关税生效，2026年贸易动能料将减弱。世贸组织预计，全球货物贸易量将从2024年的2.8%放缓至2026年的0.5%。报告指出，库存积压、政策不确定性和贸易限制扩散是主要下行风险。
+
+受货物贸易和生产的关联影响，服务贸易也将间接受到关税冲击。报告预测，2025年全球服务出口增速将从2024年的6.8%降至4.6%，2026年进一步降至4.4%。
+
+## 美国政府停摆进入第十天
+
+美国政府关门危机的持续，也打击了市场情绪。据央视新闻报道，美国联邦政府“停摆”10月10日进入第十天。白宫管理和预算办公室主任沃特在社交媒体上宣布，联邦政府裁员已经开始。沃特在社媒上发布的消息只有一句话，未透露裁员具体人数、具体部门。据美国媒体报道，此次针对联邦雇员的裁员可能人数多、影响广。国土安全部、卫生与公共服务部、财政部等均有裁员计划。
+
+此外，多位美联储高层近日在公开讲话中传递出“有条件降息”的信号，显示决策者在应对经济放缓与通胀压力之间保持微妙平衡。
+
+圣路易斯联储主席穆萨勒姆本周五表示，他支持上个月实施的25个基点的降息，称此举是“为应对劳动力市场疲软而采取的保险措施”。他同时强调，货币政策仍需保持谨慎，防止过度宽松导致通胀风险反弹。穆萨勒姆指出，目前通胀中约有10%的上升来自关税影响，预计这一因素将在明年下半年逐步消退。他补充称，如果就业市场继续恶化，不排除进一步降息的可能性，但“宽松空间有限”。
+
+同日，美联储理事沃勒在接受采访时也表示支持继续降息，但强调“应当谨慎行事”。他指出，美国劳动力市场可能正在流失岗位，而国内生产总值（GDP）仍保持强劲增长，经济信号出现分化。“要么劳动力市场回暖以匹配GDP增速，要么经济增长回落以适应就业放缓，”沃勒说，“无论哪种情况，都将影响货币政策方向。”
+
+在9月的政策会议上，美联储自2024年12月以来首次下调基准利率25个基点，并在点阵图中暗示年内或再降两次。沃勒表示，他对这一节奏感到满意，但反对更大幅度的调整。他的新任同僚、由特朗普总统任命的理事米兰，则主张一次性降息50个基点，并希望到年底累计降息1.25个百分点。
+
+据悉，沃勒目前也是五位美联储主席候选人之一。美国财政部长贝森特近期与沃勒进行了长时间会面，并将在完成第二轮面试后向特朗普递交最终候选名单。贝森特在挑选人选时，强调候选人需对货币政策保持开放思维，并具备丰富的经济学、监管及机构管理经验。
+
+截至最新，据CME“美联储观察”：美联储10月维持利率不变的概率为1.7%，降息25个基点的概率为98.3%。美联储12月维持利率不变概率为0.1%，累计降息25个基点的概率为8.1%，累计降息50个基点的概率为91.7%。
+
+编辑/Rocky
+
+
+
+-----
+
+标题: 数据：<b>比特币</b>OG 巨鲸已平仓大部分空单，30 小时内获利超1.6 亿美元 - 链捕手
+真实链接: https://www.chaincatcher.com/article/2211766
+正文: ChainCatcher 消息，据 LookonChain 监测，此前做空 BTC、ETH 的比特币 OG 巨鲸已平仓大部分空单，30 小时内获利超 1.6
+亿美元。目前其仍持有 821.6 枚 BTC（价值 9,200 万美元）空单。
+
+
+
+-----
+
+标题: <b>BTC</b>（<b>Bitcoin</b>）24小时下跌7.92%
+真实链接: https://cn.cointelegraph.com/flash-news/14628763
+正文: Gate News Bot 消息，10月11日，据CoinMarketCap行情，截至发稿时，BTC（Bitcoin）现报 11.21万美元，24
+小时内下跌7.92%，最高触及 12.62万美元，最低回落至 10.46万美元，24 小时交易量达 1546.67亿美元。当前市值约为
+2.24万亿美元，较昨日减少1923.03亿美元。
+
+Bitcoin是一个创新的支付网络和一种新型货币。Bitcoin使用点对点技术运作，无需中央机构或银行管理；交易处理和比特币发行由网络集体执行。Bitcoin是开源的；其设计是公开的，没有人拥有或控制Bitcoin，每个人都可以参与。通过其许多独特的属性，Bitcoin允许令人兴奋的用途，这是以前任何支付系统都无法覆盖的。
+
+BTC近期重要消息：
+
+1️⃣ BTC价格大幅波动
+
+BTC价格在过去24小时内经历了显著波动。价格从突破114000 USDT开始，随后快速下跌至105000 USDT以下，之后又反弹至110000
+USDT上方。这种剧烈的价格波动反映了市场的高度不确定性和投资者情绪的快速变化。
+
+2️⃣ 做空巨鲸获利
+
+一位BTC和ETH的做空巨鲸在过去24小时内获利7233万美元，并将6000万美元USDC提回Arbitrum。这一大规模的做空盈利可能进一步加剧了市场的下行压力，同时也反映出部分大型投资者对短期市场走势持悲观态度。
+
+3️⃣ 交易量激增
+
+BTC
+24小时交易量达到1546.67亿美元，相较于其当前市值，交易活跃度显著提高。这表明在价格剧烈波动期间，市场参与度大幅上升，可能有大量投资者在进行头寸调整或寻求套利机会。
+
+从技术面来看，BTC价格在短期内突破多个整数关口位，显示出较强的波动性。市场似乎正在寻找新的平衡点，投资者应密切关注关键支撑位和阻力位的表现。
+
+此消息不作为投资建议，投资需注意市场波动风险。
+
+
+
+-----
+
+标题: 某<b>比特币</b>巨鲸在Hyperliquid 上平掉<b>BTC</b> 和ETH 空单 - 网易
+真实链接: https://www.163.com/dy/article/KBIUF8IR05568W0A.html
+正文: 来源：市场资讯
+
+（来源：吴说）
+
+吴说获悉，据 MLM 监测，某比特币巨鲸在 Hyperliquid 上平掉 90% 的 BTC 空单并全平 ETH 空单，仅用一天获利约 1.9 至 2
+亿美元。值得注意的是，该巨鲸在市场下跌前数分钟又建立价值九位数的 BTC 与 ETH 空头头寸。这只是其在 Hyperliquid
+上的公开仓位，其在中心化交易所或其他平台的操作仍未知，该账户或在当日行情中发挥了关键作用。
+
+特别声明：以上内容(如有图片或视频亦包括在内)为自媒体平台“网易号”用户上传并发布，本平台仅提供信息存储服务。
+
+Notice: The content above (including the pictures and videos if any) is
+uploaded and posted by a user of NetEase Hao, which is a social media platform
+and only provides information storage services.
+
+
+
+-----
+
+标题: 某<b>比特币</b>巨鲸在Hyperliquid 上平掉<b>BTC</b> 和ETH 空单，仅一天获利约1.9 至2 亿美元 - 吴说
+真实链接: https://www.wublock123.com/article/6/50046
+正文: 星期六 2025-10-11
+
+吴说获悉，据 MLM 监测，某比特币巨鲸在 Hyperliquid 上平掉 90% 的 BTC 空单并全平 ETH 空单，仅用一天获利约 1.9 至 2
+亿美元。值得注意的是，该巨鲸在市场下跌前数分钟又建立价值九位数的 BTC 与 ETH 空头头寸。这只是其在 Hyperliquid
+上的公开仓位，其在中心化交易所或其他平台的操作仍未知，该账户或在当日行情中发挥了关键作用。
+
+______________________________________
 
 
     
