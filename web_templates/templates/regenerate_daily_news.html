@@ -11,13 +11,28 @@
 <body>
     <div id="app">
         <div class="container">
-            <button class="refresh-btn" @click="regenerateDailyNews">
-                {{ isSuccess ? '已发送' : '🔄 重新生成日报' }}
-            </button>
+            <!-- 移动端显示自动执行提示 -->
+            <div v-if="isMobile" class="mobile-info">
+                <h2>📱 移动端访问</h2>
+                <p>{{ isSuccess ? '✅ 日报重新生成完成！' : '🔄 正在自动重新生成日报...' }}</p>
+            </div>
+            
+            <!-- PC端显示按钮 -->
+            <div v-else>
+                <h2>💻 PC端访问</h2>
+                <button class="refresh-btn" @click="regenerateDailyNews" :disabled="isSuccess">
+                    {{ isSuccess ? '✅ 已发送' : '🔄 重新生成日报' }}
+                </button>
+            </div>
             
             <div class="timestamp">
                 页面加载时间: {{ currentTime }}
             </div>
+            
+            <!-- 通用刷新按钮 -->
+            <button class="refresh-btn secondary" @click="reloadPage" style="margin-top: 10px;">
+                🔄 刷新页面
+            </button>
         </div>
     </div>
 

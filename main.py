@@ -295,7 +295,7 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
                               .replace('{message_content}', message_content_escaped) \
                               .replace('{docs_url}', docs_url or '') \
                               .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！') \
-                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/api/main?mode=daily_news&ymd_hm={now_ymd_hm}" or '')
+                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/regenerate_daily_news" or '')
     data = json.loads(data_str)
     feishu_robot_utils.send_to_robot(data)
 
