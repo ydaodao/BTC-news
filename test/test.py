@@ -15,6 +15,9 @@ import re
 
 # print(week_start_md)
 
-print(re.match(r'^\*\*参考\*\*.*?', '**参考**；'))
-print(re.match(r'^\*\*参考\*\*.*?', '**参考**；；；；'))
-print(re.match(r'^\*\*参考\*\*.*?', '**参考**'))
+# print(re.match(r'^\*\*参考\*\*.*?', '**参考**；'))
+# print(re.match(r'^\*\*参考\*\*.*?', '**参考**；；；；'))
+# print(re.match(r'^\*\*参考\*\*.*?', '**参考**'))
+
+print([1,2,3,4][1:])
+

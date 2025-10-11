@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from utils.feishu_robot_utils import push_origin_weekly_news_to_robot
 from utils.image_utils import save_text_image, merge_images
 from utils.feishu_block_utils import FeishuBlockAPI
+from utils.feishu_docs_utils import FeishuDocsAPI
 import re
 import time
 
@@ -25,6 +26,7 @@ FEISHU_APP_SECRET = os.getenv('FEISHU_APP_SECRET')
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 FEISHU_WEEKLY_FOLDER = 'I1nifXLCllLAu8dpnzTcHUGyngx' # BTC-周报
 FEISHU_DAILY_FOLDER = 'MdSNf0W47lGdIidseGUceatlnsb' # BTC-日报
+FEISHU_REFERENCE_DOCS_ID = 'MugEdoDduoEBZfxC5TocV65Nnhb' # 参考文章的地址
 ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
 
 # 如果环境变量未设置，给出明确的错误提示
@@ -288,7 +290,6 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     
     # 插入文档块到文档中（分批处理）
     batch_size = 10
-    
     for i in range(0, len(ordered_blocks), batch_size):
         batch_blocks = ordered_blocks[i:i + batch_size]
         try:
@@ -298,6 +299,12 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         except Exception as e:
             lark.logger.error(f"Failed to insert batch {i//batch_size + 1}: {e}")
             return
+    
+    # 插入引用的文章
+    api_docs = FeishuDocsAPI()
+    blocks_for_desendent = api_docs.get_all_document_blocks_for_desendent(FEISHU_REFERENCE_DOCS_ID)
+    block_ids = api.insert_descendant_blocks_to_document(document_id, blocks_for_desendent)
+    lark.logger.info(f"插入的引用文章块ID：{len(block_ids)}")
     
     docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
     lark.logger.info(f"创建的飞书文档链接：{docs_url}")
@@ -396,6 +403,12 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
     replace_textblock_by_blocktype(document_id, "价格波动与市场风险", "三、市场与风险（仅做观察）", "heading1", 5)
     replace_textblock_by_blocktype(document_id, "其它相关事件", "四、其它动态", "heading1", 5)
 
+    # 插入引用的文章
+    api_docs = FeishuDocsAPI()
+    blocks_for_desendent = api_docs.get_all_document_blocks_for_desendent(FEISHU_REFERENCE_DOCS_ID)
+    block_ids = api.insert_descendant_blocks_to_document(document_id, blocks_for_desendent)
+    lark.logger.info(f"插入的引用文章块ID：{len(block_ids)}")
+
     # 推送飞书消息
     docs_url = f"https://bj058omdwg.feishu.cn/docx/{document_id}"
     push_origin_weekly_news_to_robot("加密周报", title, docs_url)
@@ -409,7 +422,7 @@ async def write_to_weekly_docx(news_content=None, week_start_md='1.1', week_end_
 if __name__ == "__main__":
 
     # ### 测试生成周报：读取本地文件并保存到飞书文档中
-    def test_write_to_weekly_docx():
+    def test_write_to_docx():
         # 读取markdown文件内容
         markdown_content = ''
         # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
@@ -422,9 +435,15 @@ if __name__ == "__main__":
             lark.logger.error(f"Failed to read markdown file: {e}")
         
         import asyncio
-        # 修复异步函数调用
-        FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
-        asyncio.run(write_to_weekly_docx(markdown_content))
+        global FEISHU_WEEKLY_FOLDER
+        # FEISHU_WEEKLY_FOLDER = 'RS3DfGQETlGxpXdK3ZdcJHaVnRg' # 周报TEST文件夹
+        # asyncio.run(write_to_weekly_docx(markdown_content))
+
+        global FEISHU_DAILY_FOLDER
+        FEISHU_DAILY_FOLDER = 'GqokfczlBl8lZLdwqJGcjw4inMc' # 日报TEST文件夹
+        asyncio.run(write_to_daily_docx(markdown_content, title='比特币震荡盘整与机构持续吸筹', date_md='09.13'))
+    test_write_to_docx()
+
 
     # asyncio.run(write_to_daily_docx(markdown_content, "机构增持与矿工抛售并存，AI支付生态初现"))
 
@@ -465,9 +484,9 @@ if __name__ == "__main__":
     # print()
 
     # 3. 测试标题图片生成
-    def test_create_header_image():
-        date_md = '09.13'
-        title = '比特币突破12.5万美元，ETF资金流入与宏观避险需求推动上涨'
-        final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
-        create_header_image(final_title_for_imageheader, type='daily')
-    test_create_header_image()
+    # def test_create_header_image():
+    #     date_md = '09.13'
+    #     title = '比特币突破12.5万美元，ETF资金流入与宏观避险需求推动上涨'
+    #     final_title_for_imageheader = f"**加密日报({date_md})**\n{format_string_with_line_breaks(title)}"
+    #     create_header_image(final_title_for_imageheader, type='daily')
+    # test_create_header_image()

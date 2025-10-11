@@ -42,7 +42,83 @@ class FeishuDocsAPI:
             raise Exception(f"获取 tenant_access_token 失败: {result.get('msg')}")
         
         self.access_token = result['tenant_access_token']
-        return self.access_token
+        return self.access_token    
+    
+    def get_document_blocks(self, document_id, page_size=500, page_token=None):
+        """
+        获取飞书文档的所有块
+        
+        Args:
+            document_id (str): 文档ID
+            page_size (int, optional): 分页大小，默认500，最大值500
+            page_token (str, optional): 分页标记，第一次请求不填
+            
+        Returns:
+            dict: 包含文档块信息的字典
+        """
+        url = f"{self.base_url}/docx/v1/documents/{document_id}/blocks"
+        
+        headers = {
+            "Authorization": f"Bearer {self.get_tenant_access_token()}",
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        
+        params = {
+            "page_size": page_size
+        }
+        
+        if page_token:
+            params["page_token"] = page_token
+            
+        response = requests.get(url, headers=headers, params=params)
+        result = response.json()
+        
+        if result.get('code') != 0:
+            error_msg = result.get('msg', '未知错误')
+            error_code = result.get('code', 'unknown')
+            raise Exception(f"获取文档块失败: 错误码 {error_code}, 错误信息: {error_msg}")
+        
+        return result.get('data', {})
+    
+    def get_all_document_blocks(self, document_id):
+        """
+        获取文档的所有块，自动处理分页
+        
+        Args:
+            document_id (str): 文档ID
+            
+        Returns:
+            list: 包含所有文档块的列表
+        """
+        all_blocks = []
+        page_token = None
+        has_more = True
+        
+        while has_more:
+            result = self.get_document_blocks(document_id, page_token=page_token)
+            
+            if 'items' in result:
+                all_blocks.extend(result['items'])
+                
+            # 检查是否有更多页
+            has_more = result.get('has_more', False)
+            page_token = result.get('page_token')
+            
+            if not page_token and has_more:
+                raise Exception("分页标记缺失，但服务器表示还有更多数据")
+                
+        return all_blocks
+
+    def get_all_document_blocks_for_desendent(self, document_id):
+        """
+        获取目标文档的内容，并转换为可以插入到新文档的格式
+        """
+        orgin_blocks = self.get_all_document_blocks(document_id)
+        return {
+            'children_id': orgin_blocks[0]['children'],
+            'index': -1,
+            'descendants': orgin_blocks[1:]
+        }
 
 
 def create_feishu_document(title, app_id, app_secret, folder_token):
@@ -132,3 +208,23 @@ def copy_feishu_document(title, app_id, app_secret, folder_token, original_docum
     document_id = response.data.file.token
     lark.logger.info(f"Document copied successfully, document_id: {document_id}")
     return document_id
+
+if __name__ == "__main__":
+    # 示例用法
+    api = FeishuDocsAPI()
+    blocks = api.get_all_document_blocks("XAMRdFnl9omqkAxstxdcM2jXnBh")
+    
+    import pyperclip, json
+    pyperclip.copy(json.dumps(blocks, indent=4, ensure_ascii=False))
+    print("已将文档块复制到剪贴板")
+
+    from feishu_block_utils import FeishuBlockAPI
+    api2 = FeishuBlockAPI()
+
+    blocks2 = {
+        'children_id': blocks[0]['children'],
+        'index': -1,
+        'descendants': blocks[1:]
+    }
+    pyperclip.copy(json.dumps(blocks2, indent=4, ensure_ascii=False))
+    image_file_token = api2.insert_descendant_blocks_to_document('PA1Rdu4zEo9im1xGcmCcuGydnFd', blocks2)

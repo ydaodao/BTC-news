@@ -609,7 +609,8 @@ class FeishuBlockAPI:
             raise Exception("创建块成功但未获取到block_id")
         
         block_ids = [child.get('block_id') for child in children]
-        print(f"块创建成功，block_id: {block_ids}")
+        lark.logger.info(f"Blocks inserted successfully, block_ids: {block_ids}")
+        return block_ids
 
     def get_all_block_ids(self, document_id, filter_block_type=None, page_size=500):
         """获取文档的所有 block_id
