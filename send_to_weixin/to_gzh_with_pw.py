@@ -1,8 +1,11 @@
+# 顶部导入区域（module top-level）
 from playwright.sync_api import sync_playwright
+from playwright.async_api import async_playwright
 from time import sleep
 import sys
 import os
 import re
+import asyncio
 from dotenv import load_dotenv, find_dotenv
 
 # 添加项目路径
@@ -62,11 +65,14 @@ def download_qrcode_image(page=None):
     if page:
         return get_qrcode_image(page)
     else:
-        with sync_playwright() as p:
-            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-            context = browser.contexts[0]
-            page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
-            return get_qrcode_image(page)
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+                context = browser.contexts[0]
+                page = active_page(context, "微信公众平台", "https://mp.weixin.qq.com/", new_url="https://mp.weixin.qq.com/")
+                return get_qrcode_image(page)
+        except Exception as e:
+            return None, f"下载登录二维码图片失败！错误信息：{str(e)}"
 
 def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
     #  Bring Chrome to front
