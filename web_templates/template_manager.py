@@ -62,6 +62,9 @@ class TemplateManager:
         template_path = os.path.join(self.template_dir, template_name)
         return os.path.exists(template_path)
 
+    def get_test_element_plus_page(self, **kwargs):
+        """获取测试Element Plus页面HTML"""
+        return self.render_template('test_element_plus.html', **kwargs)
     
     def get_qrcode_page(self, **kwargs):
         """获取二维码页面HTML"""

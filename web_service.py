@@ -178,6 +178,20 @@ def get_qrcode_image():
 
 # -------------------------以下都是页面-----------------------------
 
+# 测试页面
+@app.route('/test_element_plus', methods=['GET'])
+def test_element_plus_page():
+    try:
+        # 使用模板管理器渲染Vue页面
+        html_content = template_manager.get_test_element_plus_page()
+        return html_content
+    except Exception as e:
+        logger.error(f"渲染测试页面失败: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': '页面加载失败'
+        }), 500
+
 # 公众号登录二维码页面 - 返回HTML页面显示二维码
 @app.route('/qrcode', methods=['GET'])
 def qrcode_page():
@@ -206,10 +220,26 @@ def regenerate_daily_news_page():
             'error': '页面加载失败'
         }), 500
 
-if __name__ == '__main__':
+# 模块主入口（if __name__ == "__main__":）
+if __name__ == "__main__":
     # 开发环境配置
-    app.run(
-        host='0.0.0.0',  # 允许外部访问
-        port=5000,       # 端口号
-        debug=True       # 开启调试模式
-    )
+    if LOCAL_DEV:
+        try:
+            from livereload import Server
+            # 用 livereload 包裹 WSGI 应用
+            server = Server(app.wsgi_app)
+
+            # 监听模板与静态资源目录
+            server.watch(r"d:\Study2\BTC-news\web_templates\templates\*.html")
+            server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\css\*.css")
+            server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\js\*.js")
+            
+            server.serve(host="127.0.0.1", port=5000, debug=True)
+        except ImportError:
+            app.run(host="127.0.0.1", port=5000, debug=True)
+    else:
+        app.run(
+            host='0.0.0.0',  # 允许外部访问
+            port=5000,       # 端口号
+            debug=True       # 开启调试模式
+        )
