@@ -58,7 +58,7 @@
                                     "tag": "button",
                                     "text": {
                                         "tag": "plain_text",
-                                        "content": "公众号预览链接"
+                                        "content": "{now_md} 公众号预览"
                                     },
                                     "type": "primary",
                                     "width": "default",
