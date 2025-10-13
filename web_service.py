@@ -157,16 +157,19 @@ def push_final_weekly_news_and_push_robot():
 @app.route('/api/qrcode', methods=['GET'])
 def get_qrcode_image():
     try:
-        qrcode_path, qrcode_url = download_qrcode_image()
-        # threading.Thread(target=download_qrcode_image).start()
+        result = powershell_utils.git_pull()
+        if result['success']:
+            qrcode_path, qrcode_url = download_qrcode_image()
+            # 路径健壮性校验，避免 NoneType 传入 send_file
+            if not qrcode_path or not isinstance(qrcode_path, (str, bytes, os.PathLike)) or not os.path.exists(qrcode_path):
+                return jsonify({
+                    'success': False,
+                    'error': '二维码图片不存在或生成失败'
+                }), 500
 
-        # 路径健壮性校验，避免 NoneType 传入 send_file
-        if not qrcode_path or not isinstance(qrcode_path, (str, bytes, os.PathLike)) or not os.path.exists(qrcode_path):
-            return jsonify({
-                'success': False,
-                'error': '二维码图片不存在或生成失败'
-            }), 500
-
+            result = powershell_utils.git_commit(f"Add qrcode image")
+            if result['success']:
+                result = powershell_utils.git_push()
         # 返回图片文件
         return send_file(qrcode_path, mimetype='image/jpeg')
 
