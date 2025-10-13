@@ -1,4 +1,5 @@
 // 二维码页面Vue应用
+// qrcode.js 中启用 Element Plus
 const { createApp, ref, onMounted } = Vue;
 
 const app = createApp({
@@ -73,5 +74,6 @@ const app = createApp({
         };
     }
 });
-
+// 在挂载前启用Element Plus（CDN模式）
+app.use(ElementPlus);
 app.mount('#app');

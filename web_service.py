@@ -1,3 +1,4 @@
+# 顶部导入区域（module top-level）
 from flask import Flask, request, jsonify, render_template_string, send_file
 from flask_cors import CORS
 import json
@@ -5,6 +6,7 @@ import os
 import asyncio
 import time
 import threading
+import sys
 from integrated_scheduler import run_main_task
 from playwright.sync_api import sync_playwright
 from datetime import datetime
@@ -14,6 +16,7 @@ from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh, download_qr
 from main import main
 from web_templates.template_manager import template_manager
 import utils.powershell_utils as powershell_utils
+from concurrent.futures import ThreadPoolExecutor
 # 加载环境变量
 from dotenv import load_dotenv
 load_dotenv()
@@ -154,21 +157,19 @@ def push_final_weekly_news_and_push_robot():
 @app.route('/api/qrcode', methods=['GET'])
 def get_qrcode_image():
     try:
-        # 构建二维码图片路径
-        # current_dir = os.path.dirname(os.path.abspath(__file__))
-        # qrcode_path = os.path.join(current_dir, 'send_to_weixin', 'qrcode.jpg')
         qrcode_path, qrcode_url = download_qrcode_image()
-        
-        # 检查文件是否存在
-        if not os.path.exists(qrcode_path):
+        # threading.Thread(target=download_qrcode_image).start()
+
+        # 路径健壮性校验，避免 NoneType 传入 send_file
+        if not qrcode_path or not isinstance(qrcode_path, (str, bytes, os.PathLike)) or not os.path.exists(qrcode_path):
             return jsonify({
                 'success': False,
-                'error': '二维码图片不存在'
-            }), 404
-        
+                'error': '二维码图片不存在或生成失败'
+            }), 500
+
         # 返回图片文件
         return send_file(qrcode_path, mimetype='image/jpeg')
-        
+
     except Exception as e:
         logger.error(f"获取二维码图片失败: {str(e)}")
         return jsonify({
@@ -223,7 +224,7 @@ def regenerate_daily_news_page():
 # 模块主入口（if __name__ == "__main__":）
 if __name__ == "__main__":
     # 开发环境配置
-    if LOCAL_DEV:
+    if not LOCAL_DEV:
         try:
             from livereload import Server
             # 用 livereload 包裹 WSGI 应用
