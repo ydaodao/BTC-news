@@ -136,7 +136,7 @@ def git_commit(message, repo_path=None, add_all=True):
         dict: 执行结果
     """
     results = {}
-    
+    repo_path = repo_path or PROJECT_ROOT
     if add_all:
         add_result = run_powershell_command("git add -A", cwd=repo_path)
         results['add'] = add_result
@@ -168,6 +168,25 @@ def git_push(repo_path=None, remote='origin', branch='main'):
     """
     command = f"git push {remote} {branch}"
     return run_powershell_command(command, cwd=repo_path)
+
+def git_commit_and_push(message, repo_path=None, add_all=True, remote='origin', branch='main'):
+    """
+    执行git commit和git push命令
+    
+    参数:
+        message (str): 提交信息
+        repo_path (str, optional): Git仓库路径，默认为None（当前目录）
+        add_all (bool, optional): 是否先执行git add -A，默认为True
+        remote (str, optional): 远程仓库名称，默认为'origin'
+        branch (str, optional): 分支名称，默认为'main'
+    
+    返回:
+        dict: 执行结果
+    """
+    results = git_commit(message, repo_path, add_all)
+    if results['success']:
+        results.update(git_push(repo_path, remote, branch))
+    return results
 
 def git_status(repo_path=None):
     """

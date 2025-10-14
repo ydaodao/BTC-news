@@ -194,17 +194,12 @@ def run_main_task(task_name):
     result = powershell_utils.git_pull()
     if result['success']:
         asyncio.run(main(task_name))
-        result = powershell_utils.git_commit(f"{task_name}")
+        result = powershell_utils.git_commit_and_push(f"{task_name}")
         if result['success']:
-            result = powershell_utils.git_push()
-            if result['success']:
-                print("git push 成功")
-            else:
-                push_text_to_robot(f"git push 失败！错误信息：{result['stderr']}")
-                print(f"git push 失败！错误信息：{result['stderr']}")
+            print("git commit and push 成功")
         else:
-            push_text_to_robot(f"git commit 失败！错误信息：{result['stderr']}")
-            print(f"git commit 失败！错误信息：{result['stderr']}")
+            push_text_to_robot(f"git commit and push 失败！错误信息：{result['stderr']}")
+            print(f"git commit and push 失败！错误信息：{result['stderr']}")
     else:
         push_text_to_robot(f"git pull 失败！错误信息：{result['stderr']}")
         print(f"git pull 失败！错误信息：{result['stderr']}")

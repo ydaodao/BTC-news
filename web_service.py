@@ -171,9 +171,7 @@ def get_qrcode_image():
                         'error': '二维码图片不存在或生成失败'
                     }), 500
 
-                result = powershell_utils.git_commit(f"Add qrcode image")
-                if result['success']:
-                    result = powershell_utils.git_push()
+                powershell_utils.git_commit_and_push(f"Add qrcode image")
             # 返回图片文件
             return send_file(qrcode_path, mimetype='image/jpeg')
     except Exception as e:
