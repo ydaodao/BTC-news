@@ -83,7 +83,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
             continue
         
         # 去掉 **总结**： 标题，但保留后面的内容
-        if line.strip() == '**总结**：' or line.strip() == '**总结**:':
+        if re.match(r'^\*\*总结.*?', line.strip()):
             continue
         
         # 保留其他内容
