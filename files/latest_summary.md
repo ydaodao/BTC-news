@@ -1,54 +1,44 @@
-### 一、比特币价格走势与技术分析
+### 一、比特币价格走势及技术分析
 **总结**：
-1. 比特币短线价格波动明显，跌破关键支撑位如11.3万美元关口，以太坊同步下跌，市场抛压显著，技术性回调压力显现。
-2. 技术面分析显示，比特币面临颈线压制与50日EMA等阻力位，短期需关注11万美元附近支撑及市场信心恢复情况，若支撑稳固或有望震荡调整后重启上行。
+1. 比特币近期在$112,000附近陷入区间震荡，价格波动在$110,456至$113,537之间，短期面临$111,800-$112,000支撑与$114,800阻力位考验。
+2. 技术面显示，若11万美元支撑位失守，可能下探10万美元及以下目标，包括50周EMA、1.618斐波那契回调线（约10万-10.3万美元）及MVRV均值回归水平（约9.65万美元）。
+3. 短期动量偏向看跌，RSI、MACD等指标中性或显示看跌力量，市场等待方向性催化剂，需关注突破或跌破关键支撑后的走势。
+4. 机构对年底价格预测分歧，部分看涨至25万美元，部分认为当前处于牛市周期中的短期降温阶段，需清除过度杠杆与过热估值。
 **参考**：
-- [比特币再次插针二次探底？底部在哪里？反弹很弱，恐还由下跌空间！ #投資#比特币 #btc #crypto](https://www.binance.com/zh-CN/square/post/31027686907561)
-- [加密市场短线走低比特币跌破11.3万美元以太币跌破4100美元 - FX168财经](https://www.fx168news.com/article/%E6%AF%94%E7%89%B9%E5%B8%81-953639)
+- [比特币价格观察：随着多头和空头准备下一步行动，市场停滞在11.2万美元](https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-sui-zhe-duo-tou-he-kong-tou-zhun-bei-xia-yi-bu-xing-dong-shi-chang-ting-zhi-zai-11-2-wan-mei-yuan/)
+- [如果比特币（BTC）11万美元支撑位失守，其价格可能跌至何处？](https://cn.cointelegraph.com/news/how-low-can-bitcoin-price-go-if-dollar110k-btc-support-fails)
+- [贸易阴霾遇上鸽派鲍威尔，科技股拖累标普纳指转跌，黄金两日新高，银油铜加密货币回落](https://wallstreetcn.com/articles/3757142)
+- [Powell's Dovish Tone Fails to Lift Crypto Market as Bitcoin Slips Under $112K](https://cryptonews.com/cn/news/crypto-market-turns-bearish-as-bitcoin-dips-below-113k-ai-tokens-rise/)
 
+---
 
-### 二、宏观经济因素对加密市场的影响
+### 二、其他加密货币动态
 **总结**：
-1. 美联储政策信号（如鲍威尔讲话）、美国政府停摆及美中贸易紧张局势（如关税威胁）抑制市场风险偏好，导致比特币等风险资产短线承压，反弹受限。
-2. 尽管短期受宏观压力影响，但市场关注美联储降息预期、机构资金流动及政策放松前景，认为或为比特币长期积累提供有利窗口。
+1. 加密鲸鱼开始大举做空XRP，押注其进一步下跌，同时DOGE也受市场回调压力，价格表现疲软，市场热点快速转移至新项目。
+2. 曾在LUNA/UST崩盘期间做空比特币获利516万美元的“聪明钱”，近期斥资约1201万美元买入2879枚泰达黄金（XAUt），成交均价4168美元。
 **参考**：
-- [美联储发出多维什信号,比特币略有上升,尽管它每天仍在走弱 - VOI](https://voi.id/zh/amp/524115)
-- [岁月回响：美国此前政府停摆恰逢比特币熊市底部 - CoinDesk](https://www.coindesk.com/zh/markets/2025/10/15/blast-from-the-past-previous-u-s-government-shutdown-aligned-with-bitcoin-s-bear-market-bottom)
-- [比特币价格预测：在美中贸易紧张局势和持续的政府停摆中，BTC反弹受限 - Mitrade](https://www.mitrade.com/cn/insights/news/live-news/article-5-1196014-20251015)
+- [鲸鱼重仓做空XRP 和DOGE 待鲍威尔重磅发言](https://cryptonews.com/cn/news/crypto-whales-heavily-short-xrp-and-doge-ahead-of-powells-pivotal-speech/)
+- [LUNA/UST崩盘时曾做空BTC赚516万美元的聪明钱再出手，8小时内买入2879枚XAUt](https://www.odaily.news/zh-CN/newsflash/452406)
 
+---
 
-### 三、机构与市场参与者动态
+### 三、上市公司加密货币投资及持仓动态
 **总结**：
-1. 比特币期权市场显示交易者仍持看涨立场，机构资金流动及永续合约市场动态成为关注焦点，但部分投资者在清算后追高操作导致本金损失，反映市场情绪波动。
-2. 比特币ETF资金流出激增，机构或在价格反弹时获利了结，需关注机构资金动向对市场流动性及信心的影响。
+1. 美股上市公司Zeta Network Group完成2.31亿美元定向增发，融资全部以比特币（BTC）或1:1锚定的SolvBTC支付，所得资金将增强资产负债表和数字资产金库。
+2. 韩国上市公司Parataxis Holdings在市场回调期间增持比特币至超150枚，并计划收购1150台ASIC矿机建立垂直整合的BTC收益平台。
+3.联众(06899)附属公司投资比特币和增加以太坊持仓，推动区块链技术与游戏娱乐产业融合，股价曾大涨37%（后涨幅收窄至25.42%）。
 **参考**：
-- [WLFI顾问ogle清算后追高看多BTC，本金再度腰斩 - Bitget](https://www.bitget.com/zh-CN/news/detail/12560605015730)
-- [观点：比特币期权市场显示交易者仍持看涨立场 - Bitget](https://www.bitget.com/zh-CN/news/detail/12560605015690)
-- [比特币ETF流出激增3.26亿美元！因机构投资获利了结？加密货币新闻 - ICOBench.com](https://icobench.com/zh/news/bitcoin-etf-outflows-institutions-look-for-profit-booking-after-btc-price-bounce-back/)
+- [Zeta Network Group 完成2.31亿美元融资](https://finance.sina.com.cn/blockchain/roll/2025-10-15/doc-inftyrui3369783.shtml)
+- [上市公司Parataxis披露比特币持仓已逾150枚](https://www.bitget.com/zh-CN/news/detail/12560605015918)
+- [联众(06899)曾涨37% 附属投资比特币和增加以太坊持仓](http://www.aastocks.com/sc/mobile/news.aspx?newsid=IC4614726&newstype=61&newssource=INFOCAST)
+- [上市公司Zeta Network达成以BTC或SolvBTC支付的约2.3亿美元证券购买协议](https://m.marsbit.co/flash/20251015194501668383.html)
 
+---
 
-### 四、监管与政府行动
+### 四、市场事件及宏观因素对加密货币的影响
 **总结**：
-1. 美国政府计划没收柬埔寨太子集团持有的12.7万枚比特币，价值约141亿美元，美国政府比特币总持有量将达32.4万枚，成为最大实体持有者。
-2. 此次没收涉及加密货币欺诈案件，反映监管机构对加密市场的严格执法态度，可能对市场产生短期情绪影响。
+1. 美联储主席鲍威尔发表鸽派讲话，暗示可能停止缩减资产负债表（QT）并年内或有一次降息，但未能有效提振加密市场，比特币仍受贸易担忧、科技股下跌等因素拖累。
+2. 美中贸易紧张局势重燃，科技股及大盘下跌，风险资产情绪恶化，加密货币随股市回落，比特币一度跌破11万美元，以太坊、XRP等主流币跌幅超3%。
 **参考**：
-- [没收柬埔寨太子集团陈志12.7 万枚的BTC 后，美国政府 BTC 持有量将达32.4 万枚 - 深潮](https://m.techflowpost.com/newsletter/detail_101873.html)
-
-
-### 五、上市公司加密货币布局
-**总结**：
-1. 多家上市公司通过增持比特币或募资布局加密领域，如Remixpoint增持2.85枚BTC，总持仓达1381.83枚；Matador增持5枚BTC并募资1亿美元。
-2. 联众游戏宣布联营公司投资比特币和以太坊，启动加密货币纳入资产负债表的战略计划，但因公告乌龙导致股票短暂停牌，复盘后涨幅收窄。
-3. 传统企业探索区块链技术与游戏、娱乐产业融合，布局RWA代币化等，反映行业对加密技术的兴趣及融合趋势。
-**参考**：
-- [上市公司Remixpoint 增持2.85 枚BTC，总持仓升至1381.83 枚](https://www.chaincatcher.com/article/2212753)
-- [上市公司Matador 增持5 枚BTC 并进行1 亿美元募资 - 比推](https://www.bitpush.news/articles/7579461)
-- [联众游戏刚宣布加码币圈，股票因乌龙停牌，复盘后涨幅收窄 - 南方+](https://www.nfnews.com/content/Ko7DaBbYye.html)
-
-
-### 六、山寨币市场分析与投资建议
-**总结**：
-1. 部分投资者在比特币波动中转向山寨币，如SOL被视为可能接力BNB，LTC等待ETF通过，认为其存在反弹机会。
-2. 分析师建议关注以太坊技术面支撑（3900美元附近）与比特币做空目标（11.58万-12万美元颈线位），同时推荐隐私币ZEC、CRV等。
-**参考**：
-- [美联储大放水？比特币、以太坊还要大跌？SOL、LTC大机会来了！暴跌过后](https://blockweeks.com/hq/176396)
+- [贸易阴霾遇上鸽派鲍威尔，科技股拖累标普纳指转跌，黄金两日新高，银油铜加密货币回落](https://wallstreetcn.com/articles/3757142)
+- [Powell's Dovish Tone Fails to Lift Crypto Market as Bitcoin Slips Under $112K](https://cryptonews.com/cn/news/crypto-market-turns-bearish-as-bitcoin-dips-below-113k-ai-tokens-rise/)
