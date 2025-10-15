@@ -228,7 +228,7 @@ def regenerate_daily_news_page():
 # 模块主入口（if __name__ == "__main__":）
 if __name__ == "__main__":
     # 开发环境配置
-    if not LOCAL_DEV:
+    if LOCAL_DEV:
         try:
             from livereload import Server
             # 用 livereload 包裹 WSGI 应用
