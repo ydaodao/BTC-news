@@ -5,6 +5,7 @@ import os
 import asyncio
 from crawl4ai import AsyncWebCrawler
 from openai import OpenAI  # 火山引擎的客户端基于 OpenAI 库
+from utils import date_utils
 from web_crawler import multi_cralwer
 import sqlite3  # 新增：用于数据库操作
 from datetime import datetime, timezone, timedelta # 新增：用于处理时区
@@ -291,12 +292,15 @@ async def push_daily_news_to_feishu(content=None, title=None, summary=None, dail
     
     # 替换模板中的占位符
     now_md = datetime.now().strftime('%m.%d')
+    weekday = date_utils.get_weekday()
     data_str = template_content.replace('{title}', title_escaped) \
                               .replace('{message_content}', message_content_escaped) \
                               .replace('{now_md}', now_md or '') \
+                              .replace('{weekday}', weekday or '') \
                               .replace('{docs_url}', docs_url or '') \
-                              .replace('{wx_preview_page_url}', wx_preview_page_url or '推送公众号失败！') \
-                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/regenerate_daily_news" or '')
+                              .replace('{wx_preview_page_url}', wx_preview_page_url or '') \
+                              .replace('{regenerate_daily_url}', f"{ALI_WEBSERVICE_URL}/regenerate_daily_news" or '') \
+                              .replace('{push_daily_url}', f"{ALI_WEBSERVICE_URL}/push_daily_news?feishu_docx_url={docs_url}" or '')
     data = json.loads(data_str)
     feishu_robot_utils.send_to_robot(data)
 

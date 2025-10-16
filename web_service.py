@@ -211,7 +211,7 @@ def qrcode_page():
             'error': '页面加载失败'
         }), 500
 
-# 重新生成日报页面 - 返回HTML页面显示二维码
+# 重新生成日报页面
 @app.route('/regenerate_daily_news', methods=['GET'])
 def regenerate_daily_news_page():
     try:

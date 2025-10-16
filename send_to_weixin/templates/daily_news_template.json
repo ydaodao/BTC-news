@@ -58,7 +58,7 @@
                                     "tag": "button",
                                     "text": {
                                         "tag": "plain_text",
-                                        "content": "{now_md} 公众号预览"
+                                        "content": "{now_md} {weekday} 公众号预览"
                                     },
                                     "type": "primary",
                                     "width": "default",
@@ -105,6 +105,25 @@
                                         {
                                             "type": "open_url",
                                             "default_url": "{regenerate_daily_url}",
+                                            "pc_url": "",
+                                            "ios_url": "",
+                                            "android_url": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "button",
+                                    "text": {
+                                        "tag": "plain_text",
+                                        "content": "重新推送公众号"
+                                    },
+                                    "type": "primary",
+                                    "width": "default",
+                                    "size": "medium",
+                                    "behaviors": [
+                                        {
+                                            "type": "open_url",
+                                            "default_url": "{push_daily_url}",
                                             "pc_url": "",
                                             "ios_url": "",
                                             "android_url": ""
