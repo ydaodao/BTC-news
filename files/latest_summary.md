@@ -1,46 +1,30 @@
-### 一、比特币价格走势与技术分析  
-**总结**：  
-1. 比特币价格在经历波动后重回关键趋势线（如短期持有者成本价、50日EMA），技术面显示支撑与阻力并存，分析师认为15万美元目标仍具可能性。  
-2. 比特币价格曾因外部事件（如贸易战升级预期）跌至112,000美元以下，技术指标（RSI、MACD）显示短期看跌动能增强，但长期仍受机构需求和宏观预期支撑。  
-3. 投资机构（如Strategy）在市场高位增持比特币，平均成本较高，反映对长期价值的信心，但也面临短期价格波动风险。  
-
-**参考**：  
-- [比特币价格重回关键趋势线，交易员称15 万美元目标仍有望实现 - Cointelegraph中文](https://cn.cointelegraph.com/news/bitcoin-price-reclaims-key-level-traders-say-150k-btc-in-play)  
-- [比特币价格预测：<b>BTC</b>跌至112,000美元以下，因美中贸易战升级，鲍威尔讲话在即 - Mitrade](https://www.mitrade.com/cn/insights/news/live-news/article-3-1193141-20251014)  
-- [Strategy上周增持220枚<b>BTC</b>，均价123,561美元 - Crypto News](https://cryptonews.com/cn/news/strategy-adds-220-btc-misses-buy-the-dip/)  
-
-
-### 二、外部事件与宏观因素对加密市场的影响  
-**总结**：  
-1. 美中贸易战升级（如关税威胁）引发市场风险规避情绪，导致比特币及主流加密货币价格大幅波动，24小时内清算规模超190亿美元。  
-2. 美联储主席鲍威尔讲话预期影响市场对降息节奏的判断，货币政策宽松预期支撑风险资产（如黄金）上涨，而比特币短期受流动性收紧担忧承压。  
-3. 比特币资金费率从极端负值（恐慌情绪）快速回升至中性区间，反映市场情绪逆转，机构资金（如矿商MARA Holdings）入场推动未平仓合约修复。  
-
-**参考**：  
-- [比特币价格预测：<b>BTC</b>跌至112,000美元以下，因美中贸易战升级，鲍威尔讲话在即 - Mitrade](https://www.mitrade.com/cn/insights/news/live-news/article-3-1193141-20251014)  
-- [从黄金狂飙到<b>比特币</b>下跌：鲍威尔今夜演讲或改写全球风险情绪 - 富途资讯](https://news.futunn.com/post/63227724/from-the-surge-in-gold-to-the-decline-in-bitcoin)  
--[<b>BTC</b>资金费率从恐慌到贪婪：XBIT还原市场逆转关键48小时 - 中华网](https://mtz.china.com/toutiaos/20251014/1014197178.html)  
+### 一、比特币价格波动与技术面分析
+**总结**：
+1. 比特币当前在$112,000-$114,500区间震荡，短期呈现熊旗形态，若跌破$111,500支撑位，目标下看$109,000-$108,000。
+2. 技术指标显示短期动量偏空，10、20、30、50周期EMA/SMA均位于现价上方，200周期EMA/SMA仍高于现价，反映长期上行趋势与短期修正并存。
+3. 宏观因素（贸易担忧、美联储鸽派讲话）压制市场情绪，比特币一度跌破11万美元，需关注关键支撑位和方向性催化剂。
+**参考**：
+- [比特币价格观察：市场在$112K陷入停滞，牛市与熊市准备下一步行动](https://news.bitcoin.com/bitcoin-price-observation-market-stalls-at-112k-as-bulls-bears-prepare-next-move/)
+- [如果比特币（BTC）11万美元支撑位失守，其价格可能跌至何处？](https://cn.cointelegraph.com/news/how-low-can-bitcoin-price-go-if-dollar110k-btc-support-fails)
+- [贸易阴霾遇上鸽派鲍威尔，科技股拖累标普纳指转跌，黄金两日新高，银油铜加密货币回落](https://wallstreetcn.com/articles/3757142)
 
 
-### 三、企业/机构加密货币投资与战略布局  
-**总结**：  
-1. 联众国际控股（06899.HK）附属公司AGAE启动加密货币资产配置战略，投资比特币和以太坊，计划拓展区块链支付、RWA代币化及游戏娱乐产业融合。  
-2. 投资机构（如Strategy）通过发行永续优先股筹集资金增持比特币，尽管平均成本高于市场短期低点，但长期持仓目标明确，账面浮盈显著。  
-3. 部分企业（如Metaplanet）因比特币持仓价值高于企业市值，凸显加密货币在资产负债表中的重要性。  
-
-**参考**：  
-- [联众(06899.HK)：附属已投资<b>比特币</b>及增加以太坊持仓 - 网易](https://www.163.com/dy/article/KBRNG9HD05198ETO.html)  
-- [联众(06899.HK)：附属AGAE(AGAE.US)战略性投资加密<b>货币</b>推动区块链技术与集团业务融合 - AASTOCKS](http://www.aastocks.com/sc/usq/news/comment.aspx?source=AAFN&id=NOW.1476486&catg=1)  
-- [联众国际控股：附属公司AGAE投资<b>比特币</b>和以太坊 - 同花顺](https://m.10jqka.com.cn/20251014/c671719354.shtml)  
-- [Strategy上周增持220枚<b>BTC</b>，均价123,561美元 - Crypto News](https://cryptonews.com/cn/news/strategy-adds-220-btc-misses-buy-the-dip/)  
-- [Metaplanet 的企业价值低于<b>比特币</b>持有量 - FinanceFeeds](https://financefeeds.com/zh-CN/metaplanets-enterprise-value-falls-below-bitcoin-holdings/)  
+### 二、加密货币市场情绪与机构/大户动向
+**总结**：
+1. 加密市场情绪紧张，主流币普跌，比特币回调约2.62%，以太坊跌3.68%，XRP跌4.17%，BNB暴跌10.26%，市场热点转向新项目。
+2. 鲸鱼大举做空XRP和DOGE，押注其进一步下跌，而“聪明钱”在LUNA/UST崩盘期间做空比特币获利后，近期买入2879枚XAUt。
+3. 市场等待美联储主席鲍威尔发言，政策信号可能加剧或缓解加密市场波动。
+**参考**：
+- [LUNA/UST崩盘时曾做空BTC赚516万美元的聪明钱再出手，8小时内买入2879枚XAUt](https://www.odaily.news/zh-CN/newsflash/452406)
+- [鲸鱼重仓做空XRP 和DOGE 待鲍威尔重磅发言](https://cryptonews.com/cn/news/crypto-whales-heavily-short-xrp-and-doge-ahead-of-powells-pivotal-speech/)
 
 
-### 四、比特币衍生品市场动态  
-**总结**：  
-1. 比特币资金费率从极端负值（-0.2045%）快速回升至中性区间，反映市场恐慌情绪缓解，未平仓合约规模在清算后逐步修复。  
-2. 机构资金流动影响衍生品市场，如大额交易占比上升、散户交易比例下降，显示机构主导市场情绪逆转。  
-3. 部分鲸鱼（如OG钱包）在市场波动中做空比特币，加剧短期价格压力，但机构增持行为支撑市场稳定性。  
-
-**参考**：  
-- [<b>BTC</b>资金费率从恐慌到贪婪：XBIT还原市场逆转关键48小时 - 中华网](https://mtz.china.com/toutiaos/20251014/1014197178.html)
+### 三、上市公司投资加密货币动态
+**总结**：
+1. 美股上市公司Zeta Network Group完成2.31亿美元定向增发，融资以比特币或SolvBTC支付，用于增强资产负债表和数字资产金库。
+2. 联众(06899)附属公司投资比特币和增加以太坊持仓，推动区块链技术与游戏、娱乐产业融合，股价曾涨37%。
+3. 韩国上市公司Parataxis Holdings增持比特币至150枚以上，计划收购1150台ASIC矿机，建立垂直整合的BTC收益平台。
+**参考**：
+- [Zeta Network Group 完成2.31 亿美元融资，将接受比特币或SolvBTC 交付](https://finance.sina.com.cn/blockchain/roll/2025-10-15/doc-inftyrui3369783.shtml)
+- [联众(06899)曾涨37% 附属投资比特币和增加以太坊持仓](http://www.aastocks.com/sc/mobile/news.aspx?newsid=IC4614726&newstype=61&newssource=INFOCAST)
+- [上市公司Parataxis 披露比特币持仓已逾150 枚| Bitget 资讯](https://www.bitget.com/zh-CN/news/detail/12560605015918)
