@@ -8,21 +8,21 @@ const app = createApp({
         const isMobile = ref(false);
 
         // 检测是否为移动端设备
-        const detectMobile = () => {
-            const userAgent = navigator.userAgent.toLowerCase();
-            const mobileKeywords = ['mobile', 'android', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
+        // const detectMobile = () => {
+        //     const userAgent = navigator.userAgent.toLowerCase();
+        //     const mobileKeywords = ['mobile', 'android', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
             
-            // 检查用户代理字符串
-            const isMobileUA = mobileKeywords.some(keyword => userAgent.includes(keyword));
+        //     // 检查用户代理字符串
+        //     const isMobileUA = mobileKeywords.some(keyword => userAgent.includes(keyword));
             
-            // 检查屏幕宽度
-            const isMobileScreen = window.innerWidth <= 768;
+        //     // 检查屏幕宽度
+        //     const isMobileScreen = window.innerWidth <= 768;
             
-            // 检查触摸支持
-            const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        //     // 检查触摸支持
+        //     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
             
-            return isMobileUA || (isMobileScreen && isTouchDevice);
-        };
+        //     return isMobileUA || (isMobileScreen && isTouchDevice);
+        // };
 
         const regenerateDailyNews = () => {
             // 发送GET请求到服务器
@@ -52,13 +52,13 @@ const app = createApp({
 
         onMounted(() => {
             // 检测设备类型
-            isMobile.value = detectMobile();
+            // isMobile.value = detectMobile();
             
-            // 如果是移动端，自动执行regenerateDailyNews
-            if (isMobile.value) {
-                console.log('检测到移动端设备，自动执行重新生成日报');
-                regenerateDailyNews();
-            }
+            // // 如果是移动端，自动执行regenerateDailyNews
+            // if (isMobile.value) {
+            //     console.log('检测到移动端设备，自动执行重新生成日报');
+            //     regenerateDailyNews();
+            // }
             
             // 添加键盘快捷键支持（主要用于PC端）
             document.addEventListener('keydown', (event) => {
