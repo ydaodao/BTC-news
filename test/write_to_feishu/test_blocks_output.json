@@ -1,12 +1,12 @@
 [
   {
-    "block_id": "6b909bfa-6c61-4dd2-8982-8004661bb45a",
+    "block_id": "9cff3e2d-8c26-4a69-a2f0-956b4dff60fa",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "一、比特币价格波动与技术分析",
+            "content": "一、比特币市场价格与情绪分析",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -25,13 +25,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "0a5a37b5-d54f-4c24-b206-c3e187566f90",
+    "block_id": "3d6d6521-1d78-42a3-b003-5281ca82a10c",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "比特币近期在12万美元附近震荡，经历回调后在121,000-124,000美元区间盘整，市场进入整合期，短期动能停滞。",
+            "content": "比特币价格在美联储政策决议前小幅回落至114,414.02美元，24小时内下跌0.79%，市场情绪谨慎，多空比例为71比29。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -51,13 +51,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "8beda9ec-b3a7-4615-8747-a7c520804f26",
+    "block_id": "83fa8385-ca83-41d8-a196-6af19828fad7",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "技术面显示关键支撑位在113,000-115,000美元，阻力位在124,000-126,000美元，4小时图和1小时图成交量低迷，多空分歧明显，短期需关注突破方向。",
+            "content": "美联储预计降息25个基点，但市场表现谨慎，加密货币市场整体波动，杠杆押注增加可能引发价格快速波动，同时存在获利回吐风险。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -77,13 +77,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "b1252768-8fe3-4a22-b54c-2f53e446b2c5",
+    "block_id": "b970e7ca-f6bd-47c0-94aa-c98577ecb1da",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "市场情绪受宏观经济和资金流向影响，美元走强及机构提币动态加剧短期波动，长期趋势仍依赖机构需求与政策环境。",
+            "content": "比特币期货未平仓合约增长至276.2亿美元，资金费率转为正，期权市场显示看涨偏好，认购期权占比64%，需关注116,000美元清算水平。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -103,13 +103,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "a7100383-5e9f-41c8-a562-91bb5af9efab",
+    "block_id": "09e51dc6-491b-4491-9095-db73f55aadba",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "二、机构资金流入与比特币供应动态",
+            "content": "二、其他加密货币动态",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -128,13 +128,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "babf736d-b026-4f3f-a87a-45080691cb2b",
+    "block_id": "b4834910-cde9-464f-b81a-a2a46a99ca68",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "美国比特币现货ETF持续吸金，每季度约100亿美元，推动机构资产管理规模突破100亿美元，市场筹码供不应求。",
+            "content": "比特币现金（BCH）价格面临下行趋势，当前交易价格为56美元，涨幅1.16%，整体处于挑战下行趋势的状态。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -154,65 +154,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "0d04d46e-5dd8-4f6a-9153-61794c768b6e",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "机构持有比特币趋势显著，美国财库公司、Exodus Movement等机构金库规模增长，累计持有近95万枚BTC，长期持有意愿增强。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "69938dc7-db6b-4be2-92a6-4b0a35108d86",
-    "block_type": 13,
-    "ordered": {
-      "elements": [
-        {
-          "text_run": {
-            "content": "资金从中心化交易所（CEX）持续净流出，过去24小时CEX净流出14,484.1枚BTC，Coinbase Pro、Binance等平台为主要流出方，反映用户倾向长期持有或转入托管机构。",
-            "text_element_style": {
-              "bold": false,
-              "inline_code": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false
-            }
-          }
-        }
-      ],
-      "style": {
-        "align": 1,
-        "folded": false,
-        "sequence": "auto"
-      }
-    },
-    "parent_id": ""
-  },
-  {
-    "block_id": "4885bcb2-4102-4969-91d1-e5fd445e43db",
+    "block_id": "c58c030e-0ed5-4b54-98f4-b4ae127dcbe5",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "三、比特币周期讨论与宏观驱动因素",
+            "content": "三、加密货币ETF资金流向",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -231,13 +179,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "d278f573-139a-42ae-8e2c-9bc206fd75ec",
+    "block_id": "774f9faa-1f5a-4f1c-bc3a-3f095bee353b",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "分析师Arthur Hayes认为比特币“四年周期”已失效，当前周期由货币政策（如美联储降息预期）主导，而非减半事件，强调中美货币政策对市场的影响。",
+            "content": "美国比特币ETF今日净流入1,458枚BTC，其中贝莱德流入567枚BTC，目前贝莱德持有805,807枚BTC。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -257,13 +205,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "11c6ea5b-ed96-492a-8ebb-e7b8bec5d03c",
+    "block_id": "787a1526-16aa-4acd-b63d-4a50a1df3a6d",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "摩根大通警告美国股市崩盘风险，可能通过风险偏好传导至加密市场，比特币作为风险资产需关注宏观经济波动的潜在冲击。",
+            "content": "美国以太坊ETF今日净流入27,066枚ETH，其中贝莱德流入17,238枚ETH，目前贝莱德持有4,010,286枚ETH。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -283,13 +231,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "906bf8cc-a8f8-458a-b01b-a7c3bf2eda94",
+    "block_id": "5471e87b-5488-4091-bb95-ed0f7c8dd29c",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "四、比特币政策推动与支付业务扩展",
+            "content": "四、加密货币政策与安全技术",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -308,13 +256,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "92ae7db0-4a3a-4025-a573-1b533851820e",
+    "block_id": "6d36bed8-e071-43a4-a4da-0abf6226f2e5",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "Jack Dorsey与Lummis推动比特币小额交易免税政策，Block公司同步扩展比特币支付业务，旨在降低交易成本，促进比特币在日常支付场景的应用。",
+            "content": "特朗普提出利用加密货币解决美国国债危机的设想，引发市场关注，但经济学家质疑其可行性，认为加密市场规模不足且可能引发流动性危机。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -334,13 +282,39 @@
     "parent_id": ""
   },
   {
-    "block_id": "336475b0-fdf5-4b8f-bac5-440e79b3487d",
+    "block_id": "6bb6d041-3730-4847-83ca-62f2bdbab9d1",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "XBIT Wallet作为去中心化web3钱包，采用零知识证明、分布式冷钱包网络、助记词+多签技术及“情绪熔断”机制等安全技术，降低爆仓率和被盗风险。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "da81a91a-39f0-4dd1-8178-31df0f41b133",
     "block_type": 5,
     "heading3": {
       "elements": [
         {
           "text_run": {
-            "content": "五、宏观经济与避险资产",
+            "content": "五、比特币矿工转型与AI布局",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -359,13 +333,13 @@
     "parent_id": ""
   },
   {
-    "block_id": "e1551e53-7bd2-4492-a0c8-041b9941017d",
+    "block_id": "1caf5465-af66-4c22-99f0-073830bb628a",
     "block_type": 13,
     "ordered": {
       "elements": [
         {
           "text_run": {
-            "content": "黄金价格创历史新高，反映市场对法定货币信心下降，投资者转向避险资产；比特币在此背景下展现类似避险资产属性，成为对冲政府债务和通胀的工具。",
+            "content": "比特币矿工正加速向AI领域转型，利用其为比特币挖矿构建的庞大能源基础设施，为下一波AI数据中心提供动力。",
             "text_element_style": {
               "bold": false,
               "inline_code": false,
@@ -380,6 +354,32 @@
         "align": 1,
         "folded": false,
         "sequence": "1"
+      }
+    },
+    "parent_id": ""
+  },
+  {
+    "block_id": "adebf639-a50c-40ca-b428-a92c8a0aa9c3",
+    "block_type": 13,
+    "ordered": {
+      "elements": [
+        {
+          "text_run": {
+            "content": "行业转型受AI投资增加、融资成本降低、新公司结构（如分拆能源业务）推动，部分矿工已发行零息可转换债券或运营GPU云平台。",
+            "text_element_style": {
+              "bold": false,
+              "inline_code": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        }
+      ],
+      "style": {
+        "align": 1,
+        "folded": false,
+        "sequence": "auto"
       }
     },
     "parent_id": ""

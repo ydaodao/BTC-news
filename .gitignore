@@ -9,7 +9,7 @@ __pycache__/
 
 # 数据库
 *.backup.db
-# *.db
+*.db
 # *.sqlite3
 
 # VS Code

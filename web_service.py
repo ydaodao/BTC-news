@@ -1,6 +1,7 @@
 # 顶部导入区域（module top-level）
 from flask import Flask, request, jsonify, render_template_string, send_file
 from flask_cors import CORS
+import sqlite3
 import json
 import os
 import asyncio
@@ -22,6 +23,7 @@ from dotenv import load_dotenv
 load_dotenv()
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 ALI_WEBSERVICE_URL = 'http://127.0.0.1:5000' if LOCAL_DEV else 'http://39.107.72.186:5000'
+DB_PATH = "ssr_list_new.db"
 
 # 配置静态文件目录
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -50,6 +52,41 @@ def index():
     return jsonify({
                     'success': True
                 }), 200
+
+@app.route("/api/execute_sql", methods=["POST"])
+def execute_sql():
+    def run_sql(sql, params=None):
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        if params is None:
+            params = []
+        cur.execute(sql, params)
+        first_word = sql.strip().split()[0].lower()
+        if first_word == "select":
+            rows = cur.fetchall()
+            result = [dict(row) for row in rows]
+        else:
+            conn.commit()
+            result = {
+                "rows_affected": cur.rowcount,
+                "last_row_id": cur.lastrowid if cur.rowcount > 0 else None
+            }
+        cur.close()
+        conn.close()
+        return result
+
+    data = request.get_json()
+    sql = data.get("sql")
+    params = data.get("params") or []
+    if not sql:
+        return jsonify({"error": "SQL is required"}), 400
+    try:
+        result = run_sql(sql, params)
+        return jsonify({"success": True, "result": result})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
 
 # 检查CDP连接
 @app.route('/api/check_cdp', methods=['GET'])
@@ -229,19 +266,25 @@ def regenerate_daily_news_page():
 if __name__ == "__main__":
     # 开发环境配置
     if LOCAL_DEV:
-        try:
-            from livereload import Server
-            # 用 livereload 包裹 WSGI 应用
-            server = Server(app.wsgi_app)
+        # try:
+        #     from livereload import Server
+        #     # 用 livereload 包裹 WSGI 应用
+        #     server = Server(app.wsgi_app)
 
-            # 监听模板与静态资源目录
-            server.watch(r"d:\Study2\BTC-news\web_templates\templates\*.html")
-            server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\css\*.css")
-            server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\js\*.js")
+        #     # 监听模板与静态资源目录
+        #     server.watch(r"d:\Study2\BTC-news\web_templates\templates\*.html")
+        #     server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\css\*.css")
+        #     server.watch(r"d:\Study2\BTC-news\web_templates\templates\static\js\*.js")
             
-            server.serve(host="127.0.0.1", port=5000, debug=True)
-        except ImportError:
-            app.run(host="127.0.0.1", port=5000, debug=True)
+        #     server.serve(host="127.0.0.1", port=5000, debug=True)
+        # except ImportError:
+        #     app.run(host="127.0.0.1", port=5000, debug=True)
+        
+        app.run(
+            host='0.0.0.0',  # 允许外部访问
+            port=5000,       # 端口号
+            debug=True       # 开启调试模式
+        )
     else:
         app.run(
             host='0.0.0.0',  # 允许外部访问

@@ -3,6 +3,7 @@ from openai import OpenAI
 import utils.common_utils as common_utils
 import lark
 from llm_ali import generate_title_and_summary
+from db_management import fetch_news_by_content_updated
 
 
 DOUBAO_MODEL_FLASH = "doubao-seed-1-6-flash-250715"
@@ -11,11 +12,11 @@ DOUBAO_MODEL_THINKING = "doubao-seed-1-6-thinking-250715"
 # VOLCENGINE_API_KEY, LOCAL_DEV等需要在调用时传入或从配置文件读取
 LOCAL_DEV = os.getenv('LOCAL_DEV') == 'true'
 
-async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY):
+async def generate_news_summary(start_date: str, end_date: str, VOLCENGINE_API_KEY):
     """
     生成新闻摘要并调用大模型处理
     """
-    processed_news = fetch_news_with_content(start_date, end_date)
+    processed_news = fetch_news_by_content_updated(start_date, end_date)
     if not processed_news:
         print("没有找到包含正文内容的新闻。")
         return None
@@ -116,11 +117,11 @@ async def generate_news_summary(start_date: str, end_date: str, fetch_news_with_
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
 
-async def generate_news_summary_chunked(start_date: str, end_date: str, fetch_news_with_content, VOLCENGINE_API_KEY):
+async def generate_news_summary_chunked(start_date: str, end_date: str, VOLCENGINE_API_KEY):
     """
     生成新闻摘要（分块处理版本，用于处理大量内容）
     """
-    processed_news = fetch_news_with_content(start_date, end_date)
+    processed_news = fetch_news_by_content_updated(start_date, end_date)
     if not processed_news:
         print("没有找到包含正文内容的新闻。")
         return None

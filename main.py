@@ -12,6 +12,7 @@ from datetime import datetime, timezone, timedelta # 新增：用于处理时区
 import utils.feishu_robot_utils as feishu_robot_utils  # 新增：飞书机器人工具
 from dotenv import load_dotenv
 from llm_doubao import generate_news_summary, generate_news_summary_chunked, generate_title_and_summary_and_content
+from db_management import open_or_create_db, save_to_db, fetch_news_by_published, update_news_content
 
 # 加载环境变量
 load_dotenv()
@@ -40,167 +41,10 @@ if os.getenv('LOCAL_DEV'):  # 本地开发环境标志
         'https': 'http://127.0.0.1:7890'
     }
 
-# --- 数据库函数 ---
-def open_or_create_db():
-    """
-    连接到 SQLite 数据库，创建带自增主键的表
-    """
-    # 使用项目根目录的相对路径
-    db_path = os.path.join(os.path.dirname(__file__), 'ssr_list.db')
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    
-    # 创建新表，添加 id 自增主键，link 设为唯一索引
-    create_table_sql = '''
-    CREATE TABLE IF NOT EXISTS ssr_list (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        link TEXT UNIQUE,
-        real_url TEXT,
-        title TEXT,
-        summary TEXT,
-        published TEXT,
-        updated TEXT,
-        content TEXT,
-        content_updated TEXT
-    )
-    '''
-    cursor.execute(create_table_sql)
-    
-    # 为已存在的表添加content_updated字段（如果不存在）
-    try:
-        cursor.execute('ALTER TABLE ssr_list ADD COLUMN content_updated TEXT')
-        conn.commit()
-    except sqlite3.OperationalError:
-        # 字段已存在，忽略错误
-        pass
-    
-    # 分别创建每个索引
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_published ON ssr_list(published)')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_link ON ssr_list(link)')
-    
-    conn.commit()
-    return conn, cursor
-
-def save_to_db(conn, cursor, entry):
-    """
-    将单个新闻条目存储到数据库中。
-    使用 INSERT OR IGNORE 处理重复的 link。
-    """
-    try:
-        # 定义东八区时区对象
-        local_timezone = timezone(timedelta(hours=8))
-        
-        # 将原始的 UTC 时间字符串转换为 datetime 对象
-        published_dt_utc = datetime.fromisoformat(entry.published.replace('Z', '+00:00'))
-        updated_dt_utc = datetime.fromisoformat(entry.updated.replace('Z', '+00:00'))
-        
-        # 将 UTC 时间转换为东八区时间
-        published_dt_local = published_dt_utc.astimezone(local_timezone)
-        updated_dt_local = updated_dt_utc.astimezone(local_timezone)
-        
-        # 格式化为所需的字符串格式
-        formatted_published = published_dt_local.strftime('%Y-%m-%d %H:%M:%S')
-        formatted_updated = updated_dt_local.strftime('%Y-%m-%d %H:%M:%S')
-    except (ValueError, AttributeError) as e:
-        print(f"日期格式转换失败，使用原始字符串。错误: {e}")
-        formatted_published = entry.published
-        formatted_updated = entry.updated
-
-    # 使用 INSERT OR IGNORE 来处理重复的 link
-    insert_sql = """
-    INSERT OR IGNORE INTO ssr_list 
-    (link, title, summary, published, updated) 
-    VALUES (?, ?, ?, ?, ?)
-    """
-    data = (entry.link, entry.title, entry.summary, formatted_published, formatted_updated)
-    cursor.execute(insert_sql, data)
-    
-    if cursor.rowcount == 0:
-        print(f"新闻已存在: {entry.title}")
-    else:
-        print(f"新闻已保存 (ID: {cursor.lastrowid}): {entry.title}")
-    
-    conn.commit()
-
-def fetch_news_by_date_range(start_date: str, end_date: str):
-    """
-    从数据库中读取指定日期范围的新闻数据。
-    :param start_date: 开始日期字符串 (格式: 'YYYY-MM-DD HH:MM:SS')
-    :param end_date: 结束日期字符串 (格式: 'YYYY-MM-DD HH:MM:SS')
-    :return: 包含新闻链接和标题的列表，例如 [{'link': '...', 'title': '...'}]
-    """
-    conn = None
-    try:
-        conn = sqlite3.connect('ssr_list.db')
-        cursor = conn.cursor()
-        query = "SELECT id, link, title FROM ssr_list WHERE published BETWEEN ? AND ? AND (content IS NULL OR content = '') ORDER BY id ASC"
-        cursor.execute(query, (start_date, end_date))
-        
-        results = cursor.fetchall()
-        news_list = [{"id": row[0], "link": row[1], "title": row[2]} for row in results]
-        return news_list
-    except sqlite3.Error as e:
-        print(f"数据库查询失败: {e}")
-        return []
-    finally:
-        if conn:
-            conn.close()
-
-def fetch_news_with_content(start_date: str, end_date: str):
-    """
-    从数据库中读取指定日期范围的新闻数据，包括正文内容
-    """
-    conn = None
-    try:
-        conn = sqlite3.connect('ssr_list.db')
-        cursor = conn.cursor()
-        query = """
-            SELECT link, real_url, title, content 
-            FROM ssr_list 
-            WHERE content_updated BETWEEN ? AND ?
-            AND content IS NOT NULL
-            ORDER BY id ASC
-        """
-        cursor.execute(query, (start_date, end_date))
-        
-        results = cursor.fetchall()
-        news_list = [{
-            "link": row[0],
-            "real_url": row[1],
-            "title": row[2], 
-            "content": row[3]
-        } for row in results]
-        return news_list
-    except sqlite3.Error as e:
-        print(f"数据库查询失败: {e}")
-        return []
-    finally:
-        if conn:
-            conn.close()
-
-def update_news_content(conn, cursor, link: str, content: str, real_url: str):
-    """
-    更新指定新闻链接的正文内容和真实URL
-    返回：被更新记录的id
-    """
-    # 获取当前UTC北京时区时间
-    beijing_tz = timezone(timedelta(hours=8))
-    current_time = datetime.now(beijing_tz).strftime('%Y-%m-%d %H:%M:%S')
-    
-    update_sql = "UPDATE ssr_list SET content = ?, real_url = ?, content_updated = ? WHERE link = ?"
-    cursor.execute(update_sql, (content, real_url, current_time, link))
-    conn.commit()
-    
-    # 查询被更新记录的id
-    query_id_sql = "SELECT id FROM ssr_list WHERE link = ?"
-    cursor.execute(query_id_sql, (link,))
-    result = cursor.fetchone()
-    return result[0] if result else None
-
 async def fetch_rss_news():
     """从 RSS 源抓取新闻并存储到数据库"""
     print("开始抓取谷歌快讯...")
-    conn, cursor = open_or_create_db()
+    open_or_create_db()
     
     try:
         # 根据环境决定是否使用代理
@@ -213,7 +57,7 @@ async def fetch_rss_news():
             return 0
             
         for entry in feed.entries:
-            save_to_db(conn, cursor, entry)
+            save_to_db(entry)
         
         print(f"成功抓取 {len(feed.entries)} 条新闻并存入数据库。")
         return len(feed.entries)
@@ -221,16 +65,13 @@ async def fetch_rss_news():
     except Exception as e:
         print(f"抓取RSS源或数据库操作失败：{e}")
         return 0
-    finally:
-        cursor.close()
-        conn.close()
 
 async def fetch_news_content(start_date: str, end_date: str):
     """
     处理指定时间范围内的新闻正文
     """
     print("开始从数据库中读取新闻...")
-    news_list = fetch_news_by_date_range(start_date, end_date)
+    news_list = fetch_news_by_published(start_date, end_date)
     
     if not news_list:
         print("指定日期范围内没有找到新闻。")
@@ -239,25 +80,20 @@ async def fetch_news_content(start_date: str, end_date: str):
     print(f"成功从数据库中读取 {len(news_list)} 条新闻。")
 
     print("开始异步提取新闻正文...")
-    conn, cursor = open_or_create_db()
-    try:
-        for item in news_list:
-            print(f"正在处理新闻：{item['id']} {item['title']}")
-            result = await multi_cralwer(item['link'])
-            if result:
-                md_text, real_url = result
-                # 无论是否抓取到内容，只要有 real_url 就更新数据库
-                news_id = update_news_content(conn, cursor, item['link'], md_text, real_url)
-                if md_text:
-                    print(f"已更新新闻内容：(ID: {news_id}) Title：{item['title']}")
-                if real_url:
-                    print(f"已更新真实URL：(ID: {news_id}) Real_URL：{real_url}")
+    for item in news_list:
+        print(f"正在处理新闻：{item['id']} {item['title']}")
+        result = await multi_cralwer(item['link'])
+        if result:
+            md_text, real_url = result
+            # 无论是否抓取到内容，只要有 real_url 就更新数据库
+            news_id = update_news_content(item['link'], md_text, real_url)
+            if md_text:
+                print(f"已更新新闻内容：(ID: {news_id}) Title：{item['title']}")
+            if real_url:
+                print(f"已更新真实URL：(ID: {news_id}) Real_URL：{real_url}")
 
-            else:
-                print(f"无法抓取新闻内容：{item['id']} {item['title']}")
-    finally:
-        cursor.close()
-        conn.close()
+        else:
+            print(f"无法抓取新闻内容：{item['id']} {item['title']}")
     
     return True
 
@@ -421,7 +257,7 @@ async def main(mode="all"):
     if mode in ["daily_news", "all"]:
         print("\n=== 生成日报 ===")
         # 1. 生成文章内容
-        news_content = await generate_news_summary(daily_start_date, daily_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
+        news_content = await generate_news_summary(daily_start_date, daily_end_date, VOLCENGINE_API_KEY)
         # 2. 生成标题摘要
         # 从内容中提取标题和主体内容
         title, summary = generate_title_and_summary_and_content(news_content)
@@ -439,7 +275,7 @@ async def main(mode="all"):
     if mode in ["weekly_news", "all"]:
         print("\n=== 生成周报 ===")
         # 1. 生成摘要（使用分块处理版本）
-        news_content = await generate_news_summary_chunked(week_start_date, week_end_date, fetch_news_with_content, VOLCENGINE_API_KEY)
+        news_content = await generate_news_summary_chunked(week_start_date, week_end_date, VOLCENGINE_API_KEY)
         # 延迟导入，避免循环依赖
         from to_feishu_docx import write_to_weekly_docx
         await write_to_weekly_docx(news_content, week_start_md, week_end_md)
