@@ -1,28 +1,45 @@
-### 一、比特币相关的政治与法律事件  
-#### **总结**：  
-1. 格鲁吉亚领导人伊万尼什维利因十年前拒绝比特币投资而错失潜在巨额财富，后试图通过非法手段（如绑架、监禁、威胁等）追回前顾问巴奇亚什维利持有的比特币，涉及腐败、法律纠纷及对加密货币认知不足。  
-2. 伊万尼什维利以贷款名义让巴奇亚什维利挖矿获利后，指控其盗窃比特币，通过WhatsApp发送威胁文件，要求交出60%的比特币，否则面临11年监禁及债务每月增加5%的惩罚。  
-3. 事件反映部分政治人物对新兴加密货币的忽视，以及试图通过非正规手段干预加密资产的问题。  
+### 一、机构交易与资产转换动态
+**总结**：
+1. Jump Crypto将大量SOL换仓为BTC，向OTC平台存入110万枚SOL，并将2.05亿美元SOL转入Galaxy Digital，同时收到2455枚BTC。
+2. SpaceX再次转移281枚比特币，目前持有约8285枚BTC，为全球第四大私人企业比特币持有方。
+**参考**：
+- [Jump Crypto疑似正将大量SOL换仓为BTC，已向OTC平台存入110万枚SOL](https://www.mitrade.com/cn/insights/news/live-news/article-3-1233594-20251031)
+- [Jump Crypto将2.05亿美元SOL转入Galaxy Digital，并收到2455枚BTC](https://www.odaily.news/zh-CN/newsflash/454711)
+- [SpaceX 于本周三再次转移281 枚比特币目前持有约8,285 枚BTC](https://finance.sina.com.cn/blockchain/roll/2025-10-30/doc-infvsyze7532513.shtml)
 
-#### **参考**：  
-- [格鲁吉亚的“影子统治者”正试图追回价值10亿美元的比特币财富](https://www.coindesk.com/zh/opinion/2025/10/29/georgia-s-shadow-ruler-is-trying-to-claw-back-a-bitcoin-fortune-worth-usd1b)  
+---
 
+### 二、加密ETF资金流动数据
+**总结**：
+1. Bitcoin、Ether ETF遭遇大量资金外流，而Solana表现亮眼，市场资金流向出现分化。
+2. 10支比特币ETF单日净流出3693枚BTC（约3.99亿美元），9支以太坊ETF净流入5135枚ETH（约1951万美元），ETF资金流动呈现明显差异。
+**参考**：
+- [Bitcoin, Ether ETF遭遇大量资金外流，而Solana表现亮眼](https://news.bitcoin.com/zh/bitcoin-ether-etf-zaoyu-daliang-jin-zi-wai-liu-er-solana-biaoxian-liangyan/)
+- [10支比特币ETF单日净流出3693枚BTC，9支以太坊ETF净流入5135枚ETH](https://www.odaily.news/zh-CN/newsflash/454707)
 
-### 二、比特币市场动态与技术分析  
-#### **总结**：  
-1. 比特币当前价格为$113,171，市值$2.25万亿，24小时交易量$671.7亿，处于$112,249-$116,041区间波动（日内）。  
-2. 技术面分析显示，日线图上从高位$126,272下跌后反弹，当前在$113,000-$114,000区间整合；4小时和1小时图短期动量偏弱，技术指标（RSI、MACD等）多处于中性，等待突破关键阻力位$114,500或支撑位$112,000。  
-3. 多时间框架情绪矛盾，宏观呈现修正反弹，中期动量不足，短期犹豫不决，需突破信号后确定方向。  
+---
 
-#### **参考**：  
-- [比特币价格观察：区间波动且焦躁不安——BTC等待突破](https://news.bitcoin.com/zh/bi-te-bi-ji-ge-guan-cha-qu-jian-bo-dong-qie-jiao-zao-bu-an-btc-deng-dai-tu-po/)  
+### 三、金融机构支持加密相关产品
+**总结**：
+1. 北欧最大银行Nordea宣布允许客户交易与比特币锚定的合成ETP产品，该产品由CoinShares开发，面向寻求另类资产敞口的成熟投资者，反映欧洲加密监管环境成熟及市场需求增长。
+**参考**：
+- [北欧银行Nordea允许客户交易与比特币锚定的合成ETP](https://www.odaily.news/zh-CN/newsflash/454708)
+- [北欧最大银行Nordea 宣布将允许客户交易BTC ETP产品](https://finance.sina.com.cn/blockchain/roll/2025-10-30/doc-infvsyzf9258266.shtml)
 
+---
 
-### 三、比特币机构资金流动与市场动态  
-#### **总结**：  
-1. 某比特币OG巨鲸近期向Kraken交易所存入200枚BTC，价值约2252万美元，过去两周累计存入5,803枚BTC，价值6.496亿美元，显示机构大额资金向交易所调动。  
-2. 比特币和以太坊ETF今日分别净流入1458枚BTC（约1.674亿美元）和27,066枚ETH（约1.11亿美元），其中BlackRock的ETF持仓量显著增加，反映机构通过ETF持续流入加密货币市场。  
+### 四、上市公司市场动态
+**总结**：
+1. Core Scientific股价因90亿美元的CoreWeave合并被拒上涨5%，市场对其后续发展产生波动。
+2. 研究机构Bernstein给予SharpLink Gaming“跑赢大盘”评级，并设定2026年底目标价24美元，较当前股价约有75%上涨空间。
+**参考**：
+- [Core Scientific 股价上涨5%，因90 亿美元的CoreWeave 合并被拒](https://www.coindesk.com/zh/markets/2025/10/30/core-scientific-stock-gains-5-after-usd9b-coreweave-merger-rejected)
+- [Bernstein给予SharpLink“跑赢大盘”评级并看涨75%](https://www.odaily.news/zh-CN/newsflash/454709)
 
-#### **参考**：  
-- [某比特币OG巨鲸再次向Kraken存入200枚BTC，价值2252万美元](https://blockweeks.com/newsflash/180453.html)  
-- [比特币ETF今日净流入1458枚BTC，以太坊ETF净流入27066枚ETH | BlockWeeks](https://blockweeks.com/newsflash/180304.html)
+---
+
+### 五、执法行动与加密犯罪相关新闻
+**总结**：
+1. 警方通过卧底行动追回价值70万美元的比特币矿机，涉及加密犯罪相关执法事件。
+**参考**：
+- [Crypto与尸体：卧底行动追回了价值70万美元的比特币矿机](https://news.bitcoin.com/zh/crypto-yu-shi-ti-wo-di-xing-dong-zhui-hui-liao-jia-zhi-70wan-mei-yuan-de-bi-te-bi-kuang-ji-zu-zhi-liao-jia-zhi-75wan-mei-yuan-de-leng-dong-huo-ji-dao-qie-an/)
