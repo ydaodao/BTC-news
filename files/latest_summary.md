@@ -1,48 +1,33 @@
-### 一、比特币价格预测与周期分析  
+### 一、比特币价格下跌及市场回调  
 **总结**：  
-1. 分析师Tom Lee维持年底比特币价格预测，认为其可能在15-20万美元区间，以太坊或达7000美元。  
-2. 基于6个链上指标（如Factored终端价格、代币价值提升等）综合分析，比特币当前周期潜在顶点可能在16.8万-26.7万美元之间。  
-3. 尽管10月比特币价格下跌4.5%，但分析师认为其基本面依然强劲，第四季度通常为比特币表现较好的季度，短期或有反弹。  
+1. 比特币价格持续下跌，跌破关键技术支撑位（如10.6万美元），创6月以来新低，较历史高点下跌近20%，市场避险情绪升温及AI估值担忧是主要驱动因素。  
+2. 价格暴跌引发大量强制平仓，多头平仓占比超90%，10月10日以来杠杆驱动抛售逐步消除，但市场流动性清淡，未平仓合约量下降。  
+3. 长期持有者获利了结（传统钱包转移比特币），机构资金流出现象存在，但比特币在100,000美元以上的支撑显示韧性，技术面或进一步测试10万-10.1万美元区间，下看9.4万-8.5万美元。  
 
 **参考**：  
-- [Tom Lee仍维持年底BTC 15-20万美元，ETH 7000美元的预测](https://www.bitget.com/zh-CN/news/detail/12560605045275)  
-- [比特币本轮周期顶点在哪里？六指标显示可能在16.8万-26.7万之间](https://news.futunn.com/post/64257600/where-is-the-peak-of-btc-s-current-cycle-six)  
-- [分析师：比特币基本面依然强劲，十月下跌后或将反弹](https://www.chaincatcher.com/article/2217041)  
+- [比特币跌至6月以来新低避险情绪冲击加密货币](https://news.futunn.com/post/64365023)  
+- [比特币、以太坊、索拉纳交易员因价格暴跌5-10%被强制平仓超10亿美元](https://www.coindesk.com/zh/markets/2025/11/04/bitcoin-ether-solana-traders-liquidated-for-over-usd1b-as-prices-dump-5-10)  
+- [传统钱包推动比特币11月回调](https://news.bitcoin.com/zh/chuantong-qianbao-tuidong-bitebi-11yue-huitiao/)  
+- [甲骨文信用违约互换飙升，比特币失守10万美元关口前最后支撑位](https://finance.sina.com.cn/stock/usstock/c/2025-11-04/doc-infwfyak9877333.shtml)  
+- [比特币11月跌势加剧AI估值担忧提振避险偏好](https://news.futunn.com/post/64368592)  
+- [比特币恐回测10万美元关口、风险资产压力加剧](https://news.futunn.com/post/64357221/bitcoin-may-retest-the-100000-mark-as-pressure-on-risk)  
 
 
-### 二、比特币ETF资金流向  
+### 二、矿企及相关公司比特币动态  
 **总结**：  
-1. 今日（11月3日）美国10只比特币ETF净流出1987枚BTC（约2.14亿美元），其中贝莱德流出1362枚BTC；同期9只以太坊ETF净流出21022枚ETH（约7820万美元），贝莱德流出9980枚ETH。  
-2. 上周（美东时间10月27日至10月31日）美国比特币现货ETF单周净流出7.99亿美元，12只ETF无一净流入，贝莱德IBIT净流出4.03亿美元居首；同期美国现货比特币ETF交易量达250亿美元。  
+1. 矿企运营数据亮眼，MARA Q3净利润创历史新高，营收同比增长92%，挖矿产出2144枚BTC，持有约53,250枚BTC；Riot 10月产出437枚BTC，销售400枚，持有19,324枚BTC，算力稳定。  
+2. 部分公司因债务或市场变化处置比特币，如Sequans出售部分持仓以削减债务，Strategy转移2.27万枚BTC（价值24.5亿美元），反映市场对“代理买比特币”股票的信心下降。  
 
 **参考**：  
-- [比特币ETF今日净流出1987枚BTC，以太坊ETF同期净流出21022枚ETH | BlockWeeks](https://www.blockweeks.com/newsflash/182079.html)  
-- [数据：比特币现货ETF上周净流出7.99亿美元](https://www.chaincatcher.com/article/2216932)  
-- [上周美国现货比特币ETF净流出8.02亿美元，交易量达250亿美元](https://www.bitget.com/zh-CN/news/detail/12560605045134)  
+- [MARA Holdings 在2025 年第三季度实现1.23 亿美元净利润，创历史新高](https://finance.sina.com.cn/blockchain/roll/2025-11-05/doc-infwhksi0075919.shtml)  
+- [Riot Platforms 10 月产出437 枚比特币](https://finance.sina.com.cn/blockchain/roll/2025-11-04/doc-infwhekp5054085.shtml)  
+- [Sequans (SQNS)：出售部分比特币持仓](https://www.coindesk.com/zh/markets/2025/11/04/bitcoin-treasury-bubble-comes-full-circle-as-sequans-unloads-btc-to-cut-debt)  
+- [24亿美金比特币突然转移！背后真相太扎心…](https://www.binance.com/zh-CN/square/post/31933526997618)  
 
 
-### 三、机构对比特币的增持与需求  
+### 三、其他加密货币市场表现  
 **总结**：  
-1. 公司Strategy在10月27日至11月2日期间以约11.48万美元/枚的价格增持397枚比特币，总价约4560万美元；2025年初至今，其比特币收益率达26.1%，截至11月2日累计持有641205枚比特币，总成本约474.9亿美元。  
+1. HBAR因技术性抛售及ETF热度减退导致价格下跌4.2%，报0.173美元。  
 
 **参考**：  
-- [购买狂潮永不停歇：策略收购397比特币](https://news.bitcoin.com/zh/goumai-kuangchao-yongbutingxie-celue-shougou-397-bitebi/)  
-
-
-### 四、比特币价格走势分析  
-**总结**：  
-1. 比特币当前处于盘整阶段，价格在10.7万-11.5万美元区间波动，支撑位约10.7万美元，压力位约11.5万美元。  
-2. 市场存在多空分歧：乐观派认为休息后或继续上涨，年底或明年可能冲击13万-20万美元；谨慎派担忧若跌破10.7万美元支撑位，或下探9.5万美元。  
-3. 操作建议：普通投资者可采用定投策略，使用闲钱投资，避免杠杆。  
-
-**参考**：  
-- [BTC走势分析| 幣安廣場上的老仙er X spacedogeNet](https://www.binance.com/zh-TC/square/post/31883227976530)  
-
-
-### 五、其他市场与比特币市场对比  
-**总结**：  
-1. 尽管美国股市在人工智能热潮推动下持续上涨，但比特币机构需求出现降温迹象，贝莱德现货比特币ETF单周净流入量从此前的1万BTC以上降至不足600 BTC，反映机构对加密货币的热情减弱。  
-2. 市场流动性向科技、基础设施板块倾斜，与比特币ETF资金流入下滑形成对比，凸显比特币与传统市场的分化。  
-
-**参考**：  
-- [其他市场牛市高歌猛进，机构对比特币需求却趋于降温](https://finance.sina.com.cn/stock/usstock/c/2025-11-03/doc-infwczkz5249930.shtml)
+- [HBAR因技术性抛售导致ETF热度减退，下跌4.2%，报0.173美元](https://www.coindesk.com/zh/markets/2025/11/04/hbar-drops-4-2-to-usd0-173-as-etf-buzz-fades-on-technical-selling)
