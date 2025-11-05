@@ -1,33 +1,40 @@
-### 一、比特币价格下跌及市场回调  
+### 一、比特币市场波动与机构观点  
 **总结**：  
-1. 比特币价格持续下跌，跌破关键技术支撑位（如10.6万美元），创6月以来新低，较历史高点下跌近20%，市场避险情绪升温及AI估值担忧是主要驱动因素。  
-2. 价格暴跌引发大量强制平仓，多头平仓占比超90%，10月10日以来杠杆驱动抛售逐步消除，但市场流动性清淡，未平仓合约量下降。  
-3. 长期持有者获利了结（传统钱包转移比特币），机构资金流出现象存在，但比特币在100,000美元以上的支撑显示韧性，技术面或进一步测试10万-10.1万美元区间，下看9.4万-8.5万美元。  
+1. 银河研究主管在比特币价格暴跌后放弃看涨观点，反映机构对市场短期信心不足。  
+2. 比特币遭遇巨鲸抛售，价格震荡并跌破关键支撑位，相关加密股票（如Coinbase、Riot等）同步下跌，市场情绪偏向谨慎。  
+3. 以太坊因代币网络协议遭黑客攻击，价格一度暴跌9%，引发DeFi板块恐慌，数字资产相关股票普遍承压。  
 
 **参考**：  
-- [比特币跌至6月以来新低避险情绪冲击加密货币](https://news.futunn.com/post/64365023)  
-- [比特币、以太坊、索拉纳交易员因价格暴跌5-10%被强制平仓超10亿美元](https://www.coindesk.com/zh/markets/2025/11/04/bitcoin-ether-solana-traders-liquidated-for-over-usd1b-as-prices-dump-5-10)  
-- [传统钱包推动比特币11月回调](https://news.bitcoin.com/zh/chuantong-qianbao-tuidong-bitebi-11yue-huitiao/)  
-- [甲骨文信用违约互换飙升，比特币失守10万美元关口前最后支撑位](https://finance.sina.com.cn/stock/usstock/c/2025-11-04/doc-infwfyak9877333.shtml)  
-- [比特币11月跌势加剧AI估值担忧提振避险偏好](https://news.futunn.com/post/64368592)  
-- [比特币恐回测10万美元关口、风险资产压力加剧](https://news.futunn.com/post/64357221/bitcoin-may-retest-the-100000-mark-as-pressure-on-risk)  
+- [银河研究主管在周二暴跌后放弃看涨比特币的观点 - CoinDesk](https://www.coindesk.com/zh/markets/2025/11/05/galaxy-s-research-chief-capitulates-on-bullish-bitcoin-call-after-tuesday-s-plunge)  
+- [比特币BTC 在巨鲸抛售450 亿后震荡；COIN下跌| NAI 500](https://nai500.com/zh-hans/blog/2025/11/btc-450-coin-riot/)  
+- [代币网络协议遭黑客攻击，以太坊一度暴跌 9%；加密板块全线下挫，BTC跌破10.8万美元 - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
 
 
-### 二、矿企及相关公司比特币动态  
+### 二、比特币相关融资与矿企动态  
 **总结**：  
-1. 矿企运营数据亮眼，MARA Q3净利润创历史新高，营收同比增长92%，挖矿产出2144枚BTC，持有约53,250枚BTC；Riot 10月产出437枚BTC，销售400枚，持有19,324枚BTC，算力稳定。  
-2. 部分公司因债务或市场变化处置比特币，如Sequans出售部分持仓以削减债务，Strategy转移2.27万枚BTC（价值24.5亿美元），反映市场对“代理买比特币”股票的信心下降。  
+1. 日本上市公司Metaplanet完成1亿美元以比特币为担保的融资，资金将用于追加购买比特币、业务扩展及股票回购，其比特币持仓占比约3%。  
+2. 比特币借贷平台Lava宣布完成2亿美元融资，Anthony Pompliano等机构参投，进一步推动借贷领域资金流入。  
+3. 纳斯达克上市矿企BitFuFu披露10月挖矿产出253枚BTC，比特币持仓降至1953枚，总算力环比下降15.3%，反映矿企运营数据变化。  
 
 **参考**：  
-- [MARA Holdings 在2025 年第三季度实现1.23 亿美元净利润，创历史新高](https://finance.sina.com.cn/blockchain/roll/2025-11-05/doc-infwhksi0075919.shtml)  
-- [Riot Platforms 10 月产出437 枚比特币](https://finance.sina.com.cn/blockchain/roll/2025-11-04/doc-infwhekp5054085.shtml)  
-- [Sequans (SQNS)：出售部分比特币持仓](https://www.coindesk.com/zh/markets/2025/11/04/bitcoin-treasury-bubble-comes-full-circle-as-sequans-unloads-btc-to-cut-debt)  
-- [24亿美金比特币突然转移！背后真相太扎心…](https://www.binance.com/zh-CN/square/post/31933526997618)  
+- [Metaplanet 完成1 亿美元比特币担保融资 - Binance](https://www.binance.com/zh-CN/square/post/11-05-2025-metaplanet-1-31969184974617)  
+- [纳指涨0.46%；比特币借贷平台Lava宣布完成2亿美元融资；代币网络协议遭黑客攻击，以太坊一度暴跌 9% - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
+- [BitFuFu：10月挖矿产出253枚BTC，比特币持仓降至1953枚- Odaily](https://www.odaily.news/zh-CN/newsflash/455480)  
 
 
-### 三、其他加密货币市场表现  
+### 三、比特币ETF资金流动  
 **总结**：  
-1. HBAR因技术性抛售及ETF热度减退导致价格下跌4.2%，报0.173美元。  
+1. 今日美国比特币ETF净流出5057枚BTC，以太坊ETF同步净流出12408枚ETH，反映市场对ETF产品的资金态度转向谨慎，流动性承压。  
 
 **参考**：  
-- [HBAR因技术性抛售导致ETF热度减退，下跌4.2%，报0.173美元](https://www.coindesk.com/zh/markets/2025/11/04/hbar-drops-4-2-to-usd0-173-as-etf-buzz-fades-on-technical-selling)
+- [今日美国比特币ETF 净流出5057 枚BTC - 比推](https://www.bitpush.news/articles/7585068)  
+
+
+### 四、其他市场动态（托管服务、娱乐关联）  
+**总结**：  
+1. 渣打银行计划明年1月在香港推出比特币和以太坊托管服务，扩大其数字资产托管业务至亚洲市场。  
+2. 辛普森一家剧情中出现与Worldcoin标志相似的无限符号，引发市场对Worldcoin概念的联想和讨论，涉及加密市场的娱乐化关联。  
+
+**参考**：  
+- [纳指涨0.46%；比特币借贷平台Lava宣布完成2亿美元融资；代币网络协议遭黑客攻击，以太坊一度暴跌 9% - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
+- [突发消息：辛普森一家可能透露了下一个重要的加密线索… - Binance](https://www.binance.com/zh-CN/square/post/31970156780425)
