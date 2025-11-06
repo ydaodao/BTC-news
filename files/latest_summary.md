@@ -1,40 +1,25 @@
-### 一、比特币市场波动与机构观点  
+### 一、比特币价格与技术分析  
 **总结**：  
-1. 银河研究主管在比特币价格暴跌后放弃看涨观点，反映机构对市场短期信心不足。  
-2. 比特币遭遇巨鲸抛售，价格震荡并跌破关键支撑位，相关加密股票（如Coinbase、Riot等）同步下跌，市场情绪偏向谨慎。  
-3. 以太坊因代币网络协议遭黑客攻击，价格一度暴跌9%，引发DeFi板块恐慌，数字资产相关股票普遍承压。  
-
+1. 比特币当前交易价约102,848美元，市值2.05万亿美元，24小时交易量598.5亿美元，日内波动区间102,349-104,412美元，处于区间整合状态，买家力量相对疲软。  
+2. 技术面显示短期趋势偏弱：4小时图处于下降通道，关键支撑位在101,000美元，阻力位在106,000美元，需成交量确认方向；日线图中所有主要移动平均线（EMA/SMA）均高于当前价格，RSI（36）、随机指标（22）等动能指标中性偏下，商品通道指数（CCI）-153显示潜在上涨信号但整体动能向下。  
+3. 关键支撑位为98,000美元，若跌破可能下探92,000-94,000美元；若收复108,000-110,000美元，或表明短期看涨趋势转变。  
 **参考**：  
-- [银河研究主管在周二暴跌后放弃看涨比特币的观点 - CoinDesk](https://www.coindesk.com/zh/markets/2025/11/05/galaxy-s-research-chief-capitulates-on-bullish-bitcoin-call-after-tuesday-s-plunge)  
-- [比特币BTC 在巨鲸抛售450 亿后震荡；COIN下跌| NAI 500](https://nai500.com/zh-hans/blog/2025/11/btc-450-coin-riot/)  
-- [代币网络协议遭黑客攻击，以太坊一度暴跌 9%；加密板块全线下挫，BTC跌破10.8万美元 - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
+- [比特币价格观察：在多头和空头对峙时，区间交易持续](https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-zai-duo-tou-he-kong-tou-dui-zhi-shi-qu-jian-jiao-yi-chi-xu/)  
 
 
-### 二、比特币相关融资与矿企动态  
+### 二、比特币相关企业业务扩展与资本运作  
 **总结**：  
-1. 日本上市公司Metaplanet完成1亿美元以比特币为担保的融资，资金将用于追加购买比特币、业务扩展及股票回购，其比特币持仓占比约3%。  
-2. 比特币借贷平台Lava宣布完成2亿美元融资，Anthony Pompliano等机构参投，进一步推动借贷领域资金流入。  
-3. 纳斯达克上市矿企BitFuFu披露10月挖矿产出253枚BTC，比特币持仓降至1953枚，总算力环比下降15.3%，反映矿企运营数据变化。  
-
+1. AriyaX推出代币化航空投资框架AXPT，结合区块链透明性与机构级航空金融，使投资者通过合规资产支持代币参与私人飞机租赁和包机运营收益，基于专用SPV治理确保透明与监管合规。  
+2. Cango（CANG）计划强化比特币挖矿业务，并拓展至人工智能高性能计算市场，以技术扩展提升业务布局。  
+3. 某公司努力筹集约1.6亿美元，扩大比特币相关优先股发行规模，通过资本运作支持比特币相关业务发展。  
 **参考**：  
-- [Metaplanet 完成1 亿美元比特币担保融资 - Binance](https://www.binance.com/zh-CN/square/post/11-05-2025-metaplanet-1-31969184974617)  
-- [纳指涨0.46%；比特币借贷平台Lava宣布完成2亿美元融资；代币网络协议遭黑客攻击，以太坊一度暴跌 9% - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
-- [BitFuFu：10月挖矿产出253枚BTC，比特币持仓降至1953枚- Odaily](https://www.odaily.news/zh-CN/newsflash/455480)  
+- [比特币在ETF资金流出和政策不确定性中持有关键支持](https://news.bitcoin.com/zh/bitcoin-zai-etf-zi-jin-liu-chu-he-zheng-ce-bu-que-ding-xing-zhong-chi-you-guan-jian-zhi-chi/)  
+- [Cango（CANG） 计划强化比特币挖矿业务，进军人工智能高性能计算市场](https://www.coindesk.com/zh/business/2025/11/06/cango-eyes-strengthening-of-bitcoin-mining-operations-entry-into-ai-hpc-market)  
+- [努力筹集1.6亿美元，扩大比特币相关优先股发行规模](https://www.coindesk.com/zh/markets/2025/11/06/strive-to-raise-roughly-usd160-million-after-upsizing-preferred-stock-offering)  
 
 
-### 三、比特币ETF资金流动  
+### 三、市场参与者交易行为  
 **总结**：  
-1. 今日美国比特币ETF净流出5057枚BTC，以太坊ETF同步净流出12408枚ETH，反映市场对ETF产品的资金态度转向谨慎，流动性承压。  
-
+1. 交易员James Wynn开设40倍杠杆比特币多单“蚂蚁仓”，持仓10.82361枚BTC，持仓价值约111.9万美元，清算价为66,905.7美元，显示高杠杆交易操作。  
 **参考**：  
-- [今日美国比特币ETF 净流出5057 枚BTC - 比推](https://www.bitpush.news/articles/7585068)  
-
-
-### 四、其他市场动态（托管服务、娱乐关联）  
-**总结**：  
-1. 渣打银行计划明年1月在香港推出比特币和以太坊托管服务，扩大其数字资产托管业务至亚洲市场。  
-2. 辛普森一家剧情中出现与Worldcoin标志相似的无限符号，引发市场对Worldcoin概念的联想和讨论，涉及加密市场的娱乐化关联。  
-
-**参考**：  
-- [纳指涨0.46%；比特币借贷平台Lava宣布完成2亿美元融资；代币网络协议遭黑客攻击，以太坊一度暴跌 9% - fx168](https://www.fx168news.com/article/%E5%8C%BA%E5%9D%97%E9%93%BE-962454)  
-- [突发消息：辛普森一家可能透露了下一个重要的加密线索… - Binance](https://www.binance.com/zh-CN/square/post/31970156780425)
+- [James Wynn开设40倍杠杆比特币多单“蚂蚁仓”](https://www.odaily.news/zh-CN/newsflash/455676)
