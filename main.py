@@ -12,7 +12,8 @@ from datetime import datetime, timezone, timedelta # 新增：用于处理时区
 import utils.feishu_robot_utils as feishu_robot_utils  # 新增：飞书机器人工具
 from dotenv import load_dotenv
 from llm_doubao import generate_news_summary, generate_news_summary_chunked, generate_title_and_summary_and_content
-from db_management import open_or_create_db, save_to_db, fetch_news_by_published, update_news_content
+from db_management import open_or_create_rss_db, save_rss, fetch_news_by_published, update_news_content
+from ahr999.ahr_web_crawler import save_ahr999_2_db
 
 # 加载环境变量
 load_dotenv()
@@ -44,7 +45,7 @@ if os.getenv('LOCAL_DEV'):  # 本地开发环境标志
 async def fetch_rss_news():
     """从 RSS 源抓取新闻并存储到数据库"""
     print("开始抓取谷歌快讯...")
-    open_or_create_db()
+    open_or_create_rss_db()
     
     try:
         # 根据环境决定是否使用代理
@@ -57,7 +58,7 @@ async def fetch_rss_news():
             return 0
             
         for entry in feed.entries:
-            save_to_db(entry)
+            save_rss(entry)
         
         print(f"成功抓取 {len(feed.entries)} 条新闻并存入数据库。")
         return len(feed.entries)
@@ -253,6 +254,8 @@ async def main(mode="all"):
         await fetch_rss_news()
         # 2. 获取内容
         await fetch_news_content(start_date, end_date)
+        # 3. 更新ahr999
+        await save_ahr999_2_db()
 
     if mode in ["daily_news", "all"]:
         print("\n=== 生成日报 ===")

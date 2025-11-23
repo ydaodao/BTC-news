@@ -17,6 +17,7 @@ from utils.date_utils import days_between
 from datetime import date
 from utils.feishu_block_utils import extract_block_content_by_type, replace_textblock_by_blocktype, create_text_block, create_callout_block, wrapper_block_for_desc
 from utils.feishu_docs_utils import create_feishu_document, copy_feishu_document
+from ahr999.ahr_web_crawler import fetch_ahr999
 
 # 加载环境变量
 load_dotenv()
@@ -240,6 +241,8 @@ def create_header_image(text, type='daily'):
     else:
         return None
 
+
+
 async def write_to_daily_docx(news_content=None, title=None, summary=None, date_md=None):
     # 使用环境变量替代硬编码
     app_id = FEISHU_APP_ID
@@ -263,24 +266,40 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
     document_id = create_feishu_document(final_title, app_id, app_secret, folder_token)
     if document_id:
         try:
+            # 价格高亮块
+            print(f"创建价格高亮块")
+            _, ahr999, btc_price, _, _ = fetch_ahr999()
+            data0 = wrapper_block_for_desc(create_text_block(f'AHR999：{ahr999}；价格：{btc_price}'), 'block_id0')
+            callout0 = wrapper_block_for_desc(create_callout_block(), 'callout_id00', children=[data0['block_id']])
+            # 创建块数据
+            blocks0 = {
+                'children_id': [callout0['block_id']],
+                'index': -1,
+                'descendants': [callout0, data0]
+            }
+            block_ids0 = api.insert_descendant_blocks_to_document(document_id, blocks0)
+            print(f"创建成功")
+
+            # 上传头图
             print(f"上传头图：{header_image_path}")
             image_block_id = api.insert_image_block_to_document(document_id, header_image_path)
             print(f"上传成功！图片文件token: {image_block_id}")
 
+            # 倒计时高亮块
             print(f"创建倒计时高亮块")
             between_days = days_between(date.today(), date(2035, 1, 1))
             between_years = between_days // 365
             end_this_year = date(date.today().year, 12, 31)
             
             data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {days_between(date.today(), end_this_year)} 天）'), 'block_id1')
-            callout = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
+            callout1 = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
             # 创建块数据
-            blocks = {
-                'children_id': [callout['block_id']],
+            blocks1 = {
+                'children_id': [callout1['block_id']],
                 'index': -1,
-                'descendants': [callout, data1]
+                'descendants': [callout1, data1]
             }
-            block_ids = api.insert_descendant_blocks_to_document(document_id, blocks)
+            block_ids1 = api.insert_descendant_blocks_to_document(document_id, blocks1)
             print(f"创建成功")
         except Exception as e:
             print(f"上传失败: {e}")

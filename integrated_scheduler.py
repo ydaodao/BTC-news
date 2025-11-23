@@ -11,6 +11,7 @@ from main import main
 from croniter import croniter
 import threading
 from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
+
 # 加载环境变量
 from dotenv import load_dotenv
 load_dotenv()
@@ -129,6 +130,8 @@ class CronScheduler:
 # 创建全局 cron 调度器实例
 cron_scheduler = CronScheduler()
 
+# ------------ 任务设置 ------------------
+
 def keep_gzh_online_task():
     """保持公众号在线任务"""
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 执行保持公众号在线任务")
@@ -203,6 +206,8 @@ def run_main_task(task_name):
     else:
         push_text_to_robot(f"git pull 失败！错误信息：{result['stderr']}")
         print(f"git pull 失败！错误信息：{result['stderr']}")
+
+# ------------ 任务结束 ------------------
 
 def setup_cron_jobs():
     """设置 cron 定时任务"""

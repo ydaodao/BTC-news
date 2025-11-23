@@ -5,7 +5,7 @@ import os
 import asyncio
 from crawl4ai import AsyncWebCrawler
 from openai import OpenAI  # 火山引擎的客户端基于 OpenAI 库
-from web_crawler import multi_cralwer
+from ahr999 import multi_cralwer
 
 # --- 配置部分 ---
 # 替换为您的谷歌快讯RSS源链接

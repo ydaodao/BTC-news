@@ -21,7 +21,7 @@ def _exec_remote_sql(sql, params=None):
     except Exception as e:
         raise RuntimeError(f"Remote SQL failed: {e}")
 
-def open_or_create_db():
+def open_or_create_rss_db():
     """
     通过远程接口执行建表与索引创建
     """
@@ -47,7 +47,7 @@ def open_or_create_db():
     # 返回远程执行成功的标记
     return True
 
-def save_to_db(entry):
+def save_rss(entry):
     """
     将单个新闻条目存储到数据库中。
     使用 INSERT OR IGNORE 处理重复的 link。
@@ -157,5 +157,68 @@ def update_news_content(link: str, content: str, real_url: str):
         print(f"远程更新或查询失败: {e}")
         return None
 
+# ------------------------- ahr999 ---------------------------
+def drop_ahr999_db():
+    create_table_sql = '''
+    DROP TABLE IF EXISTS ahr999_list
+    '''
+    _exec_remote_sql(create_table_sql)
+
+def create_ahr999_db():
+    """
+    通过远程接口执行建表与索引创建
+    """
+    create_table_sql = '''
+    CREATE TABLE IF NOT EXISTS ahr999_list (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        ymd TEXT UNIQUE,
+        ahr999 REAL NOT NULL,
+        price REAL NOT NULL,
+        basis_200 REAL NOT NULL,
+        exp_growth_val REAL NOT NULL
+    )
+    '''
+    _exec_remote_sql(create_table_sql)
+
+    # 分别创建每个索引
+    _exec_remote_sql('CREATE INDEX IF NOT EXISTS idx_ymd ON ahr999_list(ymd)')
+
+    # 返回远程执行成功的标记
+    return True
+
+def save_ahr999(ymd: str, ahr999: float, price: float, basis_200: float, exp_growth_val: float):
+    insert_sql = """
+    INSERT INTO ahr999_list (ymd, ahr999, price, basis_200, exp_growth_val)
+    VALUES (?, ?, ?, ?, ?)
+    ON CONFLICT(ymd) DO UPDATE SET
+        ahr999 = excluded.ahr999,
+        price = excluded.price,
+        basis_200 = excluded.basis_200,
+        exp_growth_val = excluded.exp_growth_val;
+    """
+    params = [ymd, ahr999, price, basis_200, exp_growth_val]
+    try:
+        result = _exec_remote_sql(insert_sql, params)
+        rows_affected = result.get("rows_affected", 0) if isinstance(result, dict) else 0
+        last_row_id = result.get("last_row_id") if isinstance(result, dict) else None
+    except Exception as e:
+        print(f"远程插入失败: {e}")
+        return
+
+def fetch_ahr999_by_ymd(ymd: str):
+    query = ("SELECT ymd, ahr999, price, basis_200, exp_growth_val FROM ahr999_list WHERE ymd = ?")
+    try:
+        result = _exec_remote_sql(query, [ymd])
+        if isinstance(result, list):
+            row = result[0]
+            return row.get("ymd"), row.get("ahr999"), row.get("price"), row.get("basis_200"), row.get("exp_growth_val")
+        return []
+    except Exception as e:
+        print(f"数据库查询失败: {e}")
+        return []
+
+# ------------------------- ahr999 ---------------------------
+
 if __name__ == '__main__':
-    open_or_create_db()
+    create_ahr999_db()
+    # drop_ahr999_db()
