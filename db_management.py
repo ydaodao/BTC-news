@@ -212,10 +212,10 @@ def fetch_ahr999_by_ymd(ymd: str):
         if isinstance(result, list):
             row = result[0]
             return row.get("ymd"), row.get("ahr999"), row.get("price"), row.get("basis_200"), row.get("exp_growth_val")
-        return []
+        return None, None, None, None, None
     except Exception as e:
         print(f"数据库查询失败: {e}")
-        return []
+        return None, None, None, None, None
 
 # ------------------------- ahr999 ---------------------------
 

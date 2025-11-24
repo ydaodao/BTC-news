@@ -51,7 +51,7 @@ async def fetch_table_row_by_date(url, target_date):
                 if is_empty(cell_texts[0]):
                     continue
 
-                # 检查目标日期是否在第一列
+                # 检查目标日期是否在第一列，或者就取第一行不为空的数据
                 if cell_texts and (not target_date or cell_texts[0] == target_date):
                     ahr999 = convert_to_float(cell_texts[1])
                     btc_price = convert_to_float(cell_texts[2])
