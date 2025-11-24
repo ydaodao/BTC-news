@@ -17,7 +17,7 @@ from utils.date_utils import days_between
 from datetime import date
 from utils.feishu_block_utils import extract_block_content_by_type, replace_textblock_by_blocktype, create_text_block, create_callout_block, wrapper_block_for_desc
 from utils.feishu_docs_utils import create_feishu_document, copy_feishu_document
-from ahr999.ahr_web_crawler import fetch_ahr999
+from ahr999.ahr_web_crawler import fetch_ahr999_data
 
 # 加载环境变量
 load_dotenv()
@@ -268,7 +268,7 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         try:
             # 价格高亮块
             print(f"创建价格高亮块")
-            _, ahr999, btc_price, _, _ = fetch_ahr999()
+            _, ahr999, btc_price, _, _ = fetch_ahr999_data()
             data0 = wrapper_block_for_desc(create_text_block(f'AHR999：{ahr999}；价格：{btc_price}'), 'block_id0')
             callout0 = wrapper_block_for_desc(create_callout_block(), 'callout_id00', children=[data0['block_id']])
             # 创建块数据

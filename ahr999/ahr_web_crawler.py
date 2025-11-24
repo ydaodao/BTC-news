@@ -18,7 +18,7 @@ def is_empty(text):
         return True
     return False
 
-async def fetch_table_row_by_date(url, target_date):
+async def crawler_table_row_by_date(url, target_date):
     """
     从指定页面抓取表格数据，并提取目标日期的行。
     :param url: 页面 URL
@@ -64,14 +64,14 @@ async def fetch_table_row_by_date(url, target_date):
 
             print(f"未找到目标日期 {target_date} 的数据")
             await browser.close()
-            return None
+            return None, None, None, None, None
 
         except Exception as e:
             print(f"抓取失败: {e}")
             await browser.close()
-            return None
+            return None, None, None, None, None
 
-async def fetch_ahr999_data(target_date=None):
+async def crawler_ahr999_data(target_date=None):
     """
     从 AHR999 页面抓取目标日期的价格数据。
     :param target_date: 目标日期，例如 '2025/11/18'
@@ -80,31 +80,31 @@ async def fetch_ahr999_data(target_date=None):
     url = "https://www.coinglass.com/zh/pro/i/ahr999"
     # if not target_date:
     #     target_date = datetime.now().strftime("%Y/%m/%d")
-    return await fetch_table_row_by_date(url, target_date)
+    return await crawler_table_row_by_date(url, target_date)
 
-async def save_ahr999_2_db():
+async def save_ahr999_data():
     create_ahr999_db()
     """
     保存ahr999数据到数据库
     """
-    ymd, ahr999, price, basis_200, exp_growth_val = await fetch_ahr999_data()
+    ymd, ahr999, price, basis_200, exp_growth_val = await crawler_ahr999_data()
     if ymd:
         save_ahr999(ymd, ahr999, price, basis_200, exp_growth_val)
 
-def fetch_ahr999(ymd=None):
+def fetch_ahr999_data(ymd=None):
     """
     获取ahr999数据
     """
-    if not ymd:
-        ymd = datetime.now().strftime("%Y/%m/%d")
+    # if not ymd:
+    #     ymd = datetime.now().strftime("%Y/%m/%d")
     return fetch_ahr999_by_ymd(ymd)
 
 
 if __name__ == "__main__":
     # 测试抓取逻辑
     # target_date = "2025/11/21"
-    result = asyncio.run(fetch_ahr999_data())
-    # result = asyncio.run(save_ahr999_2_db())
+    # result = asyncio.run(fetch_ahr999_data())
+    result = asyncio.run(save_ahr999_data())
 
     # result = fetch_ahr999_data()
     print(result)

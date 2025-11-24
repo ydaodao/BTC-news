@@ -206,9 +206,13 @@ def save_ahr999(ymd: str, ahr999: float, price: float, basis_200: float, exp_gro
         return
 
 def fetch_ahr999_by_ymd(ymd: str):
-    query = ("SELECT ymd, ahr999, price, basis_200, exp_growth_val FROM ahr999_list WHERE ymd = ?")
+    query = "SELECT ymd, ahr999, price, basis_200, exp_growth_val FROM ahr999_list WHERE ymd = ?"
+    params = [ymd]
+    if not ymd:
+        query = "SELECT ymd, ahr999, price, basis_200, exp_growth_val FROM ahr999_list ORDER BY ymd DESC LIMIT 1"
+        params = []
     try:
-        result = _exec_remote_sql(query, [ymd])
+        result = _exec_remote_sql(query, params)
         if isinstance(result, list):
             row = result[0]
             return row.get("ymd"), row.get("ahr999"), row.get("price"), row.get("basis_200"), row.get("exp_growth_val")
