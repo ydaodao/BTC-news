@@ -13,7 +13,7 @@ import utils.feishu_robot_utils as feishu_robot_utils  # 新增：飞书机器�
 from dotenv import load_dotenv
 from llm_doubao import generate_news_summary, generate_news_summary_chunked, generate_title_and_summary_and_content
 from db_management import open_or_create_rss_db, save_rss, fetch_news_by_published, update_news_content
-from ahr999.ahr_web_crawler import save_ahr999_data
+from ahr999.ahr_web_crawler import crawler_and_save_ahr999_data
 
 # 加载环境变量
 load_dotenv()
@@ -255,7 +255,7 @@ async def main(mode="all"):
         # 2. 获取内容
         await fetch_news_content(start_date, end_date)
         # 3. 更新ahr999
-        await save_ahr999_data()
+        await crawler_and_save_ahr999_data()
 
     if mode in ["daily_news", "all"]:
         print("\n=== 生成日报 ===")

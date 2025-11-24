@@ -37,7 +37,13 @@ async def crawler_table_row_by_date(url, target_date):
             # 打开目标页面
             await page.goto(url, timeout=60000)
             await page.wait_for_load_state("domcontentloaded")
-            print("页面加载完成")
+            # 尝试等待网络空闲，但设置较短的超时时间
+            try:
+                await page.wait_for_load_state('networkidle', timeout=20000)  # 10秒超时
+            except Exception:
+                # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
+                pass
+            print("AHR999 页面加载完成")
 
             # 等待表格加载完成（根据页面实际情况调整选择器）
             await page.wait_for_selector("table", timeout=10000)
@@ -83,7 +89,7 @@ async def crawler_ahr999_data(target_date=None):
     #     target_date = datetime.now().strftime("%Y/%m/%d")
     return await crawler_table_row_by_date(url, target_date)
 
-async def save_ahr999_data():
+async def crawler_and_save_ahr999_data():
     create_ahr999_db()
     """
     保存ahr999数据到数据库
@@ -104,8 +110,9 @@ def fetch_ahr999_data(ymd=None):
 if __name__ == "__main__":
     # 测试抓取逻辑
     # target_date = "2025/11/21"
+    result = asyncio.run(crawler_ahr999_data())
+    # result = asyncio.run(crawler_and_save_ahr999_data())
     # result = asyncio.run(fetch_ahr999_data())
-    result = asyncio.run(save_ahr999_data())
 
     # result = fetch_ahr999_data()
     print(result)
