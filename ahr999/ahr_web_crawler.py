@@ -48,6 +48,7 @@ async def crawler_table_row_by_date(url, target_date):
                 # 提取每一行的单元格内容
                 cells = await row.query_selector_all("td")
                 cell_texts = [await cell.inner_text() for cell in cells]
+                print(cell_texts)
                 if is_empty(cell_texts[0]):
                     continue
 
