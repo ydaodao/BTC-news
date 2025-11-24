@@ -12,6 +12,12 @@ def convert_to_float(text):
         return None
     return float(text.strip().replace('$', '').replace(',', ''))
 
+def is_empty(text):
+    """将文本转换为浮点数，处理可能的空格、$和逗号"""
+    if not text or text.isspace() or text == '\xa0':
+        return True
+    return False
+
 async def fetch_table_row_by_date(url, target_date):
     """
     从指定页面抓取表格数据，并提取目标日期的行。
@@ -42,9 +48,11 @@ async def fetch_table_row_by_date(url, target_date):
                 # 提取每一行的单元格内容
                 cells = await row.query_selector_all("td")
                 cell_texts = [await cell.inner_text() for cell in cells]
-                
+                if is_empty(cell_texts[0]):
+                    continue
+
                 # 检查目标日期是否在第一列
-                if cell_texts and cell_texts[0] == target_date:
+                if cell_texts and (not target_date or cell_texts[0] == target_date):
                     ahr999 = convert_to_float(cell_texts[1])
                     btc_price = convert_to_float(cell_texts[2])
                     basis_200 = convert_to_float(cell_texts[3])
@@ -70,8 +78,8 @@ async def fetch_ahr999_data(target_date=None):
     :return: 包含目标日期价格数据的字典，或 None 如果未找到
     """
     url = "https://www.coinglass.com/zh/pro/i/ahr999"
-    if not target_date:
-        target_date = datetime.now().strftime("%Y/%m/%d")
+    # if not target_date:
+    #     target_date = datetime.now().strftime("%Y/%m/%d")
     return await fetch_table_row_by_date(url, target_date)
 
 async def save_ahr999_2_db():
@@ -95,7 +103,8 @@ def fetch_ahr999(ymd=None):
 if __name__ == "__main__":
     # 测试抓取逻辑
     # target_date = "2025/11/21"
-    result = asyncio.run(save_ahr999_2_db())
+    result = asyncio.run(fetch_ahr999_data())
+    # result = asyncio.run(save_ahr999_2_db())
 
     # result = fetch_ahr999_data()
-    # print(result)
+    print(result)
