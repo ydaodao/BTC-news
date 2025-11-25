@@ -2,10 +2,10 @@ import asyncio
 import sys, os
 from datetime import datetime
 from playwright.async_api import async_playwright
-from ahr999_utils import forecast_price
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from db_management import create_ahr999_db, save_ahr999, fetch_ahr999_by_ymd
+from ahr999.ahr999_utils import forecast_price
 
 def convert_to_float(text):
     """将文本转换为浮点数，处理可能的空格、$和逗号"""
