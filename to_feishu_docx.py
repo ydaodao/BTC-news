@@ -268,8 +268,8 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
         try:
             # 价格高亮块
             print(f"创建价格高亮块")
-            _, ahr999, btc_price, _, _ = fetch_ahr999_data()
-            data0 = wrapper_block_for_desc(create_text_block(f'AHR999：{ahr999}；价格：{btc_price}'), 'block_id0')
+            _, ahr999, btc_price, _, _, ahr999_new, _ = fetch_ahr999_data()
+            data0 = wrapper_block_for_desc(create_text_block(f'价格 {btc_price}；AHR999 {ahr999}；AHR999\' {ahr999_new}'), 'block_id0')
             callout0 = wrapper_block_for_desc(create_callout_block(), 'callout_id00', children=[data0['block_id']])
             # 创建块数据
             blocks0 = {

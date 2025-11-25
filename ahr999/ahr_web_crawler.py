@@ -2,6 +2,7 @@ import asyncio
 import sys, os
 from datetime import datetime
 from playwright.async_api import async_playwright
+from ahr999_utils import forecast_price
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from db_management import create_ahr999_db, save_ahr999, fetch_ahr999_by_ymd
@@ -63,11 +64,11 @@ async def crawler_table_row_by_date(url, target_date):
                     ahr999 = convert_to_float(cell_texts[1])
                     btc_price = convert_to_float(cell_texts[2])
                     basis_200 = convert_to_float(cell_texts[3])
-                    exp_growth_valuation = btc_price**2 / ahr999 / basis_200
+                    exp_growth_val = btc_price**2 / ahr999 / basis_200
 
                     # 返回目标行数据
                     await browser.close()
-                    return cell_texts[0], round(ahr999, 4), int(btc_price), int(basis_200), int(exp_growth_valuation)
+                    return cell_texts[0], ahr999, btc_price, basis_200, exp_growth_val
 
             print(f"未找到目标日期 {target_date} 的数据")
             await browser.close()
@@ -102,9 +103,22 @@ def fetch_ahr999_data(ymd=None):
     """
     获取ahr999数据
     """
-    # if not ymd:
-    #     ymd = datetime.now().strftime("%Y/%m/%d")
-    return fetch_ahr999_by_ymd(ymd)
+    ahr999_data = fetch_ahr999_by_ymd(ymd)
+    if not ahr999_data:
+        return None
+    
+    date_str = ahr999_data.get("ymd")
+    date_obj = datetime.strptime(date_str, "%Y/%m/%d")
+
+    ahr999 = ahr999_data.get("ahr999")
+    btc_price = ahr999_data.get("price")
+    basis_200 = ahr999_data.get("basis_200")
+    exp_growth_val = ahr999_data.get("exp_growth_val")
+
+    exp_growth_val_new = forecast_price(year=date_obj.year, month=date_obj.month, day=date_obj.day, version='new')
+    ahr999_new = btc_price**2 / basis_200 / exp_growth_val_new
+
+    return date_str, round(ahr999, 2), int(btc_price), int(basis_200), int(exp_growth_val), round(ahr999_new, 2), int(exp_growth_val_new)
 
 
 if __name__ == "__main__":
