@@ -1,17 +1,54 @@
-### 一、比特币市场策略与风险应对（以MSTR为核心）
+### 一、比特币价格波动及市场情绪
 **总结**：
-1. Strategy（MSTR）在比特币市场波动背景下调整策略，通过设立美元储备、减缓比特币购买速度等措施应对潜在熊市，以保障流动性、降低债务风险，并为长期运营做准备。
-2. 设立美元储备旨在应对优先股股息及存量债务利息支付需求，减缓比特币购买速度以避免在市场低迷时被迫抛售资产，同时公司下修全年财测，调整比特币价格预期及盈利目标。
-**参考**：
-- [CryptoQuant：Strategy 设立14.4 亿美元储备应对潜在比特币熊市 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-12-04/doc-infzqtxk0645505.shtml)
-- [比特币飞轮失效，Strategy如何解套？ - PANews](https://www.panewslab.com/zh/articles/3f421355-810e-4adb-950a-1c50c1ceba35)
-- [CryptoQuant ： Strategy 设立美元储备表明其正为可能到来的熊市做准备 - Odaily](https://www.odaily.news/zh-CN/newsflash/459301)
-- [Strategy 减缓 Bitcoin 购买速度以应对熊市 - Binance](https://www.binance.com/zh-CN/square/post/12-03-2025-strategy-bitcoin-33233623267154)
-- [Cryptoquant 分析师指出策略比特币积累计划中的结构性转变 - Bitcoin.com News](https://news.bitcoin.com/zh/cryptoquant-fenxishi-zhichu-celue-bitebi-jilei-jihuazhong-de-jiegouxing-zhuanbian/)
-- [迈克尔·塞勒称，对Strategy 的质疑就像质疑核能一样 - Yellow.com](https://yellow.com/zh/news/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E5%A1%9E%E5%8B%92%E7%A7%B0%EF%BC%8C%E5%AF%B9-strategy-%E7%9A%84%E8%B4%A8%E7%96%91%E5%B0%B1%E5%83%8F%E8%B4%A8%E7%96%91%E6%A0%B7%E8%83%BD%E4%B8%80%E6%A0%B7)
+1. 比特币价格回落至9万美元附近，导致MSTR、Galaxy Digital、CleanSpark等加密相关股票下跌4%-7%。
+2. 市场分析认为加密市场在年底前或处于盘整阶段，而非快速反弹；同时有观点指出流动性扩张与美联储降息预期可能推动牛市开始。
 
-### 二、机构态度转变与支持
+**参考**：
+- [比特币回落至9万美元，导致加密货币相关股票下跌。 - 富途资讯](https://news.futunn.com/post/65859058/bitcoin-slips-back-to-90k-sending-crypto-stocks-lower)
+- [真正的牛市现在才开始! - Binance](https://www.binance.com/zh-CN/square/post/33301502328714)
+
+
+### 二、机构资金与ETF动态
 **总结**：
-1. 贝莱德CEO Larry Fink转变对加密货币的态度，承认此前反对比特币的观点错误，认为比特币是“恐惧资产”，并表示贝莱德积极拥抱比特币，管理全球最大比特币ETF。
-2. 嘉信理财、先锋集团等机构扩展比特币交易服务，增强市场对加密货币的可访问性，为机构投资者参与比特币市场提供便利。
+1. 美国现货比特币ETF连续五个交易日净流入2.88亿美元，贝莱德iShares Bitcoin Trust资金流入居首，ETF合计持有约136万枚BTC（占流通总量6.9%），资金外流源于套利策略，非机构退出，本轮周期新增资金超7300亿美元。
+2. 摩根大通分析称比特币短期走势关键在于MicroStrategy（MSTR）是否维持企业价值/持币市值比高于1以避免抛售，MSTR已建立14.4亿美元储备，中期理论估值约17万美元。
+
+**参考**：
+- [美国现货比特币ETF连续五日净流入2.88亿美元，贝莱德iShares Bitcoin Trust资金流入居首 - 比特财经](https://tradersunion.com/zh/news/cryptocurrency-news/show/1017069-bitcoin-slides-1-13percent-today-to/)
+- [摩根大通：比特币短期关键在Strategy 抛售风险，中期理论估值约17万美元 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-12-05/doc-infzukxu8141966.shtml)
+
+
+### 三、监管政策与风险警示
+**总结**：
+1. 俄罗斯第二大银行VTB将提供现货加密货币交易，成为该国首家，针对合格投资者，此前俄罗斯因规避西方制裁转向加密货币。
+2. 中国七大金融协会联合发布风险提示，禁止任何形式虚拟货币及RWA代币发行、交易和融资，专家指出人民币稳定币无优势。
+3. 国际货币基金组织（IMF）警告稳定币可能引发“货币替代”，削弱央行政策效力，当前97%稳定币与美元挂钩，美国财政部长认为稳定币需求助于国债融资。
+
+**参考**：
+- [俄罗斯VTB银行将成为该国首家提供现货加密货币交易的银行 - CoinDesk](https://www.coindesk.com/zh/business/2025/12/05/russian-banking-giant-vtb-to-become-country-s-first-to-offer-spot-crypto-trading-report)
+- [中国七大金融协会发布关于防范涉虚拟货币等非法活动的风险提示 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-12-05/doc-infzukxy6422502.shtml)
+
+
+### 四、L1代币表现与市场对比
+**总结**：
+1. L1代币总市值约0.83万亿美元，占加密货币总资本81%，市值增长主要由货币溢价驱动，营收下降但估值上升，调整后市销率从2021年40倍升至2025年536倍。
+2. L1代币自2022年12月以来跑输比特币，仅XRP和SOL小幅跑赢，SOL因生态增长显著但仍跑输预期，市场对L1货币溢价信心减弱，未来或被比特币蚕食市场份额。
+
+**参考**：
+- [L1代币为何涨不赢BTC？-腾讯新闻](https://news.qq.com/rain/a/20251205A06COT00)
+
+
+### 五、宏观经济与美联储政策影响
+**总结**：
+1. 币安研究院和Nexo报告显示，12月FOMC会议（12月10日）降息预期升温，流动性激增推动比特币突破94,000美元，周度收涨1.3%；美国财政部一般账户回落及股市风险偏好回升，机构驱动因素加强（如Vanguard开放加密ETF）。
+2. 链上指标显示市场拐点而非顶部，ETF资金流虽有净流出但交易所余额向低位回落支撑市场。
+
+**参考**：
+- [流动性激增与12月美联储降息预期将比特币推至关键十字路口：分析师](https://yellow.com/zh/news/%E6%B5%81%E5%8A%A8%E6%80%A7%E6%BF%80%E5%A2%9E%E4%B8%8E12%E6%9C%88%E7%BE%8E%E8%81%94%E5%82%A8%E9%99%8D%E6%81%AF%E9%A2%84%E6%9C%9F-%E5%B0%86%E6%AF%94%E7%89%B9%E5%B8%81%E6%8E%A8%E8%87%B3%E5%85%B3%E9%94%AE%E5%8D%81%E5%AD%97%E8%B7%AF%E5%8F%A3%EF%BC%9A%E5%88%86%E6%9E%90%E5%B8%88)
+
+
+### 六、矿企运营动态
+**总结**：
+1. 矿企BitFuFu 11月产出231 BTC，以平均10.7万美元出售205 BTC用于支付供应商及控制风险，月底持币1764 BTC，期间放缓第三方算力采购以应对价格波动。
+
 **参考**
