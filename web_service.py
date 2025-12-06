@@ -12,6 +12,7 @@ from integrated_scheduler import run_main_task
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 import logging
+import pythoncom
 from functools import wraps
 from send_to_weixin.to_gzh_with_pw import send_feishu_docs_to_wxgzh, download_qrcode_image
 from main import main
@@ -104,6 +105,7 @@ def start_main():
 # 将飞书文档发送到公众号
 @app.route('/api/push_daily_news', methods=['POST'])
 def push_daily_news():
+    pythoncom.CoInitialize()
     try:
         # 获取JSON数据
         data = request.get_json()
@@ -142,12 +144,15 @@ def push_daily_news():
             'success': False,
             'error': str(e)
         }), 500
+    finally:
+        pythoncom.CoUninitialize()
 
 @app.route('/api/push_final_weekly_news_and_push_robot', methods=['GET'])
 def push_final_weekly_news_and_push_robot():
     feishu_docx_url = request.args.get('feishu_docx_url', '')
     # 定义后台推送函数
     def background_push(feishu_docx_url):
+        pythoncom.CoInitialize()
         try:
             if LOCAL_DEV:
                 preview_page_url = 'https://mp.weixin.qq.com/s/1D6SeMRtDDTkOBW2jsldsg'
@@ -164,6 +169,8 @@ def push_final_weekly_news_and_push_robot():
                 logger.error("微信公众号推送失败")
         except Exception as e:
             logger.error(f"后台推送异常: {str(e)}")
+        finally:
+            pythoncom.CoUninitialize()
     
     # 启动后台线程
     thread = threading.Thread(target=background_push, args=(feishu_docx_url,))
