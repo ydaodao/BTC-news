@@ -1,54 +1,30 @@
-### 一、比特币价格波动及市场情绪
+### 一、加密货币市场整体下跌及价格动态
 **总结**：
-1. 比特币价格回落至9万美元附近，导致MSTR、Galaxy Digital、CleanSpark等加密相关股票下跌4%-7%。
-2. 市场分析认为加密市场在年底前或处于盘整阶段，而非快速反弹；同时有观点指出流动性扩张与美联储降息预期可能推动牛市开始。
+1. 比特币期货及现货价格同步下跌，主力合约（CME）较前一日收盘跌3.68%，报89425美元，现货价格跌破90,000美元关键关口，市场整体承压。
+2. 空头清算规模扩大，24小时内比特币清算金额超2亿美元，部分主流加密货币（如HBAR）随市场同步下跌，成交量激增47%，技术面显示面临关键支撑位考验。
+3. 市场情绪偏空，技术指标显示比特币在90,000-88,000美元区间寻求支撑，若跌破可能引发更深回调，同时机构资金流向出现分化，部分资金转向索拉纳、XRP等山寨币ETF。
 
 **参考**：
-- [比特币回落至9万美元，导致加密货币相关股票下跌。 - 富途资讯](https://news.futunn.com/post/65859058/bitcoin-slips-back-to-90k-sending-crypto-stocks-lower)
-- [真正的牛市现在才开始! - Binance](https://www.binance.com/zh-CN/square/post/33301502328714)
+- [CME比特币期货BTC主力合约较周四纽约尾盘跌3.68%，报89425美元](https://wap.eastmoney.com/a/202512063584250367.html)
+- [主要加密货币下跌；比特币跌破90,000美元](https://news.futunn.com/post/65865524/top-cryptocurrencies-fall-bitcoin-drops-below-90000)
+- [比特币损失90K，空头在清算中堆积超过2亿美元- Bitcoin News](https://news.bitcoin.com/zh/bi-te-bi-sun-shi-90k-kong-tou-zai-qing-suan-zhong-dui-ji-chao-guo-2-yi-mei-yuan/)
+- [HBAR 伴随加密市场整体下跌及成交量激增同步下跌](https://www.coindesk.com/zh/markets/2025/12/05/hedera-drops-alongside-broader-crypto-market-amid-volume-spike)
+- [BTC 死守9万！今晚不破9.27万，空军就要砸盘了！ - Binance](https://www.binance.com/zh-CN/square/post/33302990673129)
 
 
-### 二、机构资金与ETF动态
+### 二、比特币持有者MARA的财务风险分析
 **总结**：
-1. 美国现货比特币ETF连续五个交易日净流入2.88亿美元，贝莱德iShares Bitcoin Trust资金流入居首，ETF合计持有约136万枚BTC（占流通总量6.9%），资金外流源于套利策略，非机构退出，本轮周期新增资金超7300亿美元。
-2. 摩根大通分析称比特币短期走势关键在于MicroStrategy（MSTR）是否维持企业价值/持币市值比高于1以避免抛售，MSTR已建立14.4亿美元储备，中期理论估值约17万美元。
+1. 矿业公司MARA因33亿美元可转换债券债务，其企业价值（mNAV）达1.59，显著高于比特币最大持有者MSTR（mNAV 1.14），交易溢价更高，财务风险更大。
+2. 比特币价格下跌导致MARA股价从低点反弹30%后遇阻，空头兴趣异常高，市场担忧其债务结构与比特币价值关联模糊，股价波动加剧。
 
 **参考**：
-- [美国现货比特币ETF连续五日净流入2.88亿美元，贝莱德iShares Bitcoin Trust资金流入居首 - 比特财经](https://tradersunion.com/zh/news/cryptocurrency-news/show/1017069-bitcoin-slides-1-13percent-today-to/)
-- [摩根大通：比特币短期关键在Strategy 抛售风险，中期理论估值约17万美元 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-12-05/doc-infzukxu8141966.shtml)
+- [Forgetting MSTR，Vaneck 的Sigel 表示，MARA 的麻烦更大。 - Bitcoin News](https://news.bitcoin.com/zh/forgetting-mstr-vaneck-de-sigel-biao-shi-mara-de-ma-fan-geng-da/)
 
 
-### 三、监管政策与风险警示
+### 三、传统金融机构Schwab计划进入加密交易市场
 **总结**：
-1. 俄罗斯第二大银行VTB将提供现货加密货币交易，成为该国首家，针对合格投资者，此前俄罗斯因规避西方制裁转向加密货币。
-2. 中国七大金融协会联合发布风险提示，禁止任何形式虚拟货币及RWA代币发行、交易和融资，专家指出人民币稳定币无优势。
-3. 国际货币基金组织（IMF）警告稳定币可能引发“货币替代”，削弱央行政策效力，当前97%稳定币与美元挂钩，美国财政部长认为稳定币需求助于国债融资。
+1. 美国传统金融机构Charles Schwab计划2026年中期推出现货比特币和以太坊免佣金交易，支持直接钱包转账，利用其多元化收入来源（如客户现金利息、咨询费等）补贴加密业务。
+2. 其零佣金模式可能与Coinbase等加密交易所展开费用战，推动零售加密交易成本下降，同时将影响Coinbase的零售交易抽成收入，加速传统金融机构对加密市场的渗透。
 
 **参考**：
-- [俄罗斯VTB银行将成为该国首家提供现货加密货币交易的银行 - CoinDesk](https://www.coindesk.com/zh/business/2025/12/05/russian-banking-giant-vtb-to-become-country-s-first-to-offer-spot-crypto-trading-report)
-- [中国七大金融协会发布关于防范涉虚拟货币等非法活动的风险提示 - 新浪财经](https://finance.sina.com.cn/blockchain/roll/2025-12-05/doc-infzukxy6422502.shtml)
-
-
-### 四、L1代币表现与市场对比
-**总结**：
-1. L1代币总市值约0.83万亿美元，占加密货币总资本81%，市值增长主要由货币溢价驱动，营收下降但估值上升，调整后市销率从2021年40倍升至2025年536倍。
-2. L1代币自2022年12月以来跑输比特币，仅XRP和SOL小幅跑赢，SOL因生态增长显著但仍跑输预期，市场对L1货币溢价信心减弱，未来或被比特币蚕食市场份额。
-
-**参考**：
-- [L1代币为何涨不赢BTC？-腾讯新闻](https://news.qq.com/rain/a/20251205A06COT00)
-
-
-### 五、宏观经济与美联储政策影响
-**总结**：
-1. 币安研究院和Nexo报告显示，12月FOMC会议（12月10日）降息预期升温，流动性激增推动比特币突破94,000美元，周度收涨1.3%；美国财政部一般账户回落及股市风险偏好回升，机构驱动因素加强（如Vanguard开放加密ETF）。
-2. 链上指标显示市场拐点而非顶部，ETF资金流虽有净流出但交易所余额向低位回落支撑市场。
-
-**参考**：
-- [流动性激增与12月美联储降息预期将比特币推至关键十字路口：分析师](https://yellow.com/zh/news/%E6%B5%81%E5%8A%A8%E6%80%A7%E6%BF%80%E5%A2%9E%E4%B8%8E12%E6%9C%88%E7%BE%8E%E8%81%94%E5%82%A8%E9%99%8D%E6%81%AF%E9%A2%84%E6%9C%9F-%E5%B0%86%E6%AF%94%E7%89%B9%E5%B8%81%E6%8E%A8%E8%87%B3%E5%85%B3%E9%94%AE%E5%8D%81%E5%AD%97%E8%B7%AF%E5%8F%A3%EF%BC%9A%E5%88%86%E6%9E%90%E5%B8%88)
-
-
-### 六、矿企运营动态
-**总结**：
-1. 矿企BitFuFu 11月产出231 BTC，以平均10.7万美元出售205 BTC用于支付供应商及控制风险，月底持币1764 BTC，期间放缓第三方算力采购以应对价格波动。
-
-**参考**
+- [Schwab SCHW 加密计划将COIN 置于2026 年目标 - NAI500](https://nai500.com/zh-hans/blog/2025/12/schwab-schw-coin-2026/)
