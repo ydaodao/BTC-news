@@ -1,30 +1,43 @@
-### 一、加密货币市场整体下跌及价格动态
+### 一、比特币价格下跌及期货市场动态
 **总结**：
-1. 比特币期货及现货价格同步下跌，主力合约（CME）较前一日收盘跌3.68%，报89425美元，现货价格跌破90,000美元关键关口，市场整体承压。
-2. 空头清算规模扩大，24小时内比特币清算金额超2亿美元，部分主流加密货币（如HBAR）随市场同步下跌，成交量激增47%，技术面显示面临关键支撑位考验。
-3. 市场情绪偏空，技术指标显示比特币在90,000-88,000美元区间寻求支撑，若跌破可能引发更深回调，同时机构资金流向出现分化，部分资金转向索拉纳、XRP等山寨币ETF。
-
+1. 比特币价格跌破90,000美元关口，CME比特币期货主力合约周五（12月5日）纽约尾盘下跌3.68%，报89425美元，本周累计下跌1.80%。
+2. 比特币空头清算堆积超过2亿美元，市场情绪混杂，资金从比特币ETF转向索拉纳和XRP ETF，机构层面显示做空兴趣较高。
 **参考**：
-- [CME比特币期货BTC主力合约较周四纽约尾盘跌3.68%，报89425美元](https://wap.eastmoney.com/a/202512063584250367.html)
-- [主要加密货币下跌；比特币跌破90,000美元](https://news.futunn.com/post/65865524/top-cryptocurrencies-fall-bitcoin-drops-below-90000)
 - [比特币损失90K，空头在清算中堆积超过2亿美元- Bitcoin News](https://news.bitcoin.com/zh/bi-te-bi-sun-shi-90k-kong-tou-zai-qing-suan-zhong-dui-ji-chao-guo-2-yi-mei-yuan/)
-- [HBAR 伴随加密市场整体下跌及成交量激增同步下跌](https://www.coindesk.com/zh/markets/2025/12/05/hedera-drops-alongside-broader-crypto-market-amid-volume-spike)
-- [BTC 死守9万！今晚不破9.27万，空军就要砸盘了！ - Binance](https://www.binance.com/zh-CN/square/post/33302990673129)
+- [CME比特币期货BTC主力合约较周四纽约尾盘跌3.68%，报89425美元 - 东方财富](https://wap.eastmoney.com/a/202512063584250367.html)
+- [CME比特币期货BTC主力合约较周四纽约尾盘跌3.68%，报89425美元 - 网易](https://www.163.com/dy/article/KG2VFOKG0512B07B.html)
 
+---
 
-### 二、比特币持有者MARA的财务风险分析
+### 二、主要加密公司（MARA、MSTR）财务风险分析
 **总结**：
-1. 矿业公司MARA因33亿美元可转换债券债务，其企业价值（mNAV）达1.59，显著高于比特币最大持有者MSTR（mNAV 1.14），交易溢价更高，财务风险更大。
-2. 比特币价格下跌导致MARA股价从低点反弹30%后遇阻，空头兴趣异常高，市场担忧其债务结构与比特币价值关联模糊，股价波动加剧。
-
+1. Vaneck分析师认为MARA Holdings的财务风险大于Strategy（MSTR），MARA因33亿美元可转换债券导致企业价值（mNAV）达1.59，高于MSTR的1.14，债务结构更复杂，股价与比特币价值关联模糊，风险更高。
+2. 尽管MSTR和MARA均为比特币主要持有者，但MARA的高债务和高mNAV使其成为更具风险的选择，市场指标显示MARA面临更大金融崩溃风险。
 **参考**：
 - [Forgetting MSTR，Vaneck 的Sigel 表示，MARA 的麻烦更大。 - Bitcoin News](https://news.bitcoin.com/zh/forgetting-mstr-vaneck-de-sigel-biao-shi-mara-de-ma-fan-geng-da/)
 
+---
 
-### 三、传统金融机构Schwab计划进入加密交易市场
+### 三、传统金融机构（Schwab）加密市场布局及竞争影响
 **总结**：
-1. 美国传统金融机构Charles Schwab计划2026年中期推出现货比特币和以太坊免佣金交易，支持直接钱包转账，利用其多元化收入来源（如客户现金利息、咨询费等）补贴加密业务。
-2. 其零佣金模式可能与Coinbase等加密交易所展开费用战，推动零售加密交易成本下降，同时将影响Coinbase的零售交易抽成收入，加速传统金融机构对加密市场的渗透。
-
+1. 查尔斯·施瓦布（Schwab）计划2026年中期推出现货比特币和以太坊免佣金交易，支持直接钱包转账，消除用户在券商与加密交易所间切换的摩擦。
+2. 其低费用模式（接近现货比特币ETF经济模型）可能威胁Coinbase等加密交易所的零售业务，Coinbase依赖交易抽成的商业模式面临竞争压力。
 **参考**：
-- [Schwab SCHW 加密计划将COIN 置于2026 年目标 - NAI500](https://nai500.com/zh-hans/blog/2025/12/schwab-schw-coin-2026/)
+- [Schwab SCHW 加密计划将COIN置于2026年目标 - NAI500](https://nai500.com/zh-hans/blog/2025/12/05/schw-coin-2026/)
+
+---
+
+### 四、其他加密货币（HBAR）价格波动及技术面分析
+**总结**：
+1. HBAR伴随整体加密市场下跌，成交量激增47%至5221万代币，价格跌破0.1380美元支撑位，测试0.1354美元关键支撑，技术指标显示超卖但下行动能仍存，短期受技术面抛售主导。
+**参考**：
+- [HBAR 伴随加密市场整体下跌及成交量激增同步下跌 - CoinDesk](https://www.coindesk.com/zh/markets/2025/12/05/hedera-drops-alongside-broader-crypto-market-amid-volume-spike)
+
+---
+
+### 五、比特币市场情绪及技术面关键点位分析
+**总结**：
+1. 比特币在90,000美元附近震荡，1小时图显示MACD水下死叉、量能萎缩，关键支撑位在90,000-88,000美元区间，若跌破可能触发更深调整；上方压力位92,700美元，需突破该位置确认反弹信号。
+2. 市场预测若比特币不破92,700美元关键位，空军可能砸盘，建议关注技术面突破方向以判断下行动能。
+**参考**：
+- [BTC死守9万！今晚不破9.27万，空军就要砸盘了！ - Binance](https://www.binance.com/zh-CN/square/post/33302990673129)
