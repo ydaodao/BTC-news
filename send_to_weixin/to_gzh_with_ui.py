@@ -473,6 +473,11 @@ def bring_chrome_to_front():
     pyautogui.moveTo(150, 20, duration=0.5) # 平滑移动
     pyautogui.click()
 
+def active_chrome_window():
+    # 激活 Chrome 窗口
+    pyautogui.moveTo(150, 20, duration=0.5) # 平滑移动
+    pyautogui.click()
+
 def push_feishu_docs_2_wxgzh():
     # 通过壹伴推送到公众号
     if click_icon_with_prefix("yiban_icon"):

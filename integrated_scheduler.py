@@ -11,6 +11,7 @@ from main import main
 from croniter import croniter
 import threading
 from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
+from send_to_weixin.to_gzh_with_win32 import activate_chrome_window
 
 # 加载环境变量
 from dotenv import load_dotenv
@@ -163,6 +164,7 @@ def screenshot_task():
         push_text_to_robot(f"截图失败！错误信息：{str(e)}")
 
 def check_cdp_connection():
+    activate_chrome_window("Chrome")
     """检查CDP连接状态，带重试机制"""
     max_retries = 3  # 最大重试次数
     retry_delay = 5  # 重试间隔（秒）
@@ -221,8 +223,8 @@ def setup_cron_jobs():
     # 每天21:05执行CDP连接检查
     cron_scheduler.add_cron_job('5 21 * * *', check_cdp_connection, 'CDP连接检查')
     
-    # 每天7:00、12:00、21:00执行保持公众号在线任务
-    cron_scheduler.add_cron_job('0 6,12,22 * * *', keep_gzh_online_task, '保持公众号在线')
+    # 执行保持公众号在线任务
+    cron_scheduler.add_cron_job('0 6,12,18,22 * * *', keep_gzh_online_task, '保持公众号在线')
 
     # 每周一、二、三、四、五的7:00执行 日报任务
     cron_scheduler.add_cron_job('0 7 * * 1,2,3,4,5,6,7', lambda: run_main_task("daily_news"), '日报任务')

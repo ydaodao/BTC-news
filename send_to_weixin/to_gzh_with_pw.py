@@ -12,6 +12,7 @@ from dotenv import load_dotenv, find_dotenv
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from send_to_weixin.to_gzh_with_ui import push_feishu_docs_2_wxgzh, open_edit_page_and_get_url, choose_page_cover, choose_other_options_and_preview, bring_chrome_to_front, open_preview_page, delete_exit_draft, find_icon_with_prefix
 from send_to_weixin.playwright_utils import active_page, list_all_tabs, operate_element, scroll_page, scroll_bottom, open_new_page, find_element_by_css
+from send_to_weixin.to_gzh_with_win32 import activate_chrome_window
 from utils.common_utils import clean_zero_width_chars
 
 # 加载环境变量 - 自动查找.env文件
@@ -23,6 +24,7 @@ content_management_selector = '#js_index_menu > ul > li.weui-desktop-menu__item.
 draft_selector = '#js_level2_title > li > ul > li:nth-child(1) > a'
 
 def keep_gzh_online():
+    activate_chrome_window("Chrome")
     """保持公众号在线"""
     try:        
         with sync_playwright() as p:
@@ -62,6 +64,7 @@ def download_qrcode_image(page=None):
         qr_img_src = operate_element(page, '登录二维码', qrcode_selector, 'get_image_screenshot', download_path=qrcode_download_url)
         return qrcode_download_url, qr_img_src
 
+    activate_chrome_window("Chrome")
     if page:
         return get_qrcode_image(page)
     else:
@@ -76,7 +79,7 @@ def download_qrcode_image(page=None):
 
 def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
     #  Bring Chrome to front
-    bring_chrome_to_front()
+    activate_chrome_window("Chrome")
     
     # 主程序
     with sync_playwright() as p:
@@ -135,6 +138,7 @@ def send_feishu_docs_to_wxgzh(feishu_docs_title=None, feishu_docs_url=None):
 
         browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
         context = browser.contexts[0]
+        context.set_default_navigation_timeout(60000)
 
         # 切换到已登录的公众号页面，并重置到首页
         main_page = active_page(context, "公众号", None, new_url="https://mp.weixin.qq.com/", close_other_tabs=not LOCAL_DEV)

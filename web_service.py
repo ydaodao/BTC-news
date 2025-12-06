@@ -87,25 +87,10 @@ def execute_sql():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 
-
-# 检查CDP连接
-@app.route('/api/check_cdp', methods=['GET'])
-def check_cdp_connection():
-    with sync_playwright() as p:
-        browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-        context = browser.contexts[0]
-        page = context.pages[0]
-        print(page.title())
-        return jsonify({
-            'success': True,
-            'title': page.title()
-        })
-
 # 启动主程序
 @app.route('/api/main', methods=['GET'])
 def start_main():
     mode = request.args.get('mode', '', type=str)
-
     # 启动后台线程
     thread = threading.Thread(target=run_main_task, args=(mode,))
     thread.start()

@@ -7,7 +7,7 @@ from dotenv import load_dotenv, find_dotenv
 # 加载环境变量 - 自动查找.env文件
 load_dotenv(find_dotenv())
 LOCAL_DEV = os.getenv('LOCAL_DEV')
-PAGELOAD_TIMEOUT = 40000 if not LOCAL_DEV else 10000
+PAGELOAD_TIMEOUT = 60000 if not LOCAL_DEV else 10000
 
 def list_all_tabs(context):
     """列出所有打开的tab页"""
@@ -125,11 +125,11 @@ def active_page(context, target_page_title, target_page_url, refresh=False, new_
             
             # 等待页面加载完成，使用更宽松的等待策略
             # 先等待 domcontentloaded，然后等待较短时间的 networkidle
-            page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)  # 20秒超时
+            page.wait_for_load_state('domcontentloaded', timeout=PAGELOAD_TIMEOUT)
             
             # 尝试等待网络空闲，但设置较短的超时时间
             try:
-                page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)  # 10秒超时
+                page.wait_for_load_state('networkidle', timeout=PAGELOAD_TIMEOUT)
             except Exception:
                 # 如果网络空闲等待超时，继续执行，因为DOM已经加载完成
                 pass
