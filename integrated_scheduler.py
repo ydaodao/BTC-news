@@ -11,7 +11,7 @@ from main import main
 from croniter import croniter
 import threading
 from utils.feishu_robot_utils import push_text_to_robot, push_wxqrcode_to_robot
-from send_to_weixin.to_gzh_with_win32 import activate_chrome_window
+from send_to_weixin.chrome_wakeup_helper import connect_cdp_with_wakeup
 
 # 加载环境变量
 from dotenv import load_dotenv
@@ -164,34 +164,14 @@ def screenshot_task():
         push_text_to_robot(f"截图失败！错误信息：{str(e)}")
 
 def check_cdp_connection():
-    activate_chrome_window("Chrome")
-    """检查CDP连接状态，带重试机制"""
-    max_retries = 3  # 最大重试次数
-    retry_delay = 5  # 重试间隔（秒）
-    
-    for attempt in range(1, max_retries + 1):
-        try:
-            print(f"CDP连接尝试 {attempt}/{max_retries}")
-            with sync_playwright() as p:
-                browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-                context = browser.contexts[0]
-                page = context.pages[0]
-                title = page.title()
-                print(f"CDP连接成功，页面标题: {title}")
-                return True  # 连接成功，返回
-        except Exception as e:
-            print(f"CDP连接尝试 {attempt} 失败：{e}")
-            print(f"错误类型：{type(e).__name__}")
+    try:
+        browser = connect_cdp_with_wakeup()
+        if browser:
+            return True  # 连接成功，返回
+    except Exception as e:
+        push_text_to_robot(f"CDP连接失败！错误信息：{str(e)}")
+        return False
             
-            if attempt < max_retries:
-                print(f"等待 {retry_delay} 秒后重试...")
-                time.sleep(retry_delay)
-            else:
-                # 所有重试都失败了，发送通知
-                error_msg = f"CDP连接失败（已重试{max_retries}次）！错误信息：{str(e)}"
-                push_text_to_robot(error_msg)
-                print(f"所有重试均失败: {error_msg}")
-                return False
 
 def run_main_task(task_name):
     """执行主定时任务"""
@@ -230,7 +210,7 @@ def setup_cron_jobs():
     cron_scheduler.add_cron_job('0 7 * * 1,2,3,4,5,6,7', lambda: run_main_task("daily_news"), '日报任务')
 
     # 每周日的7:00执行 周报任务
-    cron_scheduler.add_cron_job('0 7 * * 7', lambda: run_main_task("weekly_news"), '周报任务')
+    # cron_scheduler.add_cron_job('0 7 * * 7', lambda: run_main_task("weekly_news"), '周报任务')
 
 def start_cron_scheduler():
     """启动 cron 调度器"""
