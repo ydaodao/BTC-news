@@ -1,56 +1,42 @@
-### 一、比特币价格动态与波动风险  
+### 一、比特币价格走势与周期分析  
 **总结**：  
-1. 比特币价格近期在88,000-91,000美元区间波动，多次尝试突破90,000美元关键心理价位但未果，呈现“更低的高点”走势，显示上涨动能不足。  
-2. 若比特币跌破87,000美元，主流中心化交易所（CEX）累计多单清算强度将达4.91亿美元；此前突破91,000美元时，空单清算强度曾受关注，市场对价格波动的风险敏感。  
+1. 比特币近期从80537美元反弹至接近92000美元，短期呈现反弹迹象，但日线图仍处于看跌趋势，关键支撑位在87000美元附近，阻力区间为92500-94000美元，多空观点存在分歧。  
+2. Bernstein分析认为，比特币周期已打破4年模式，进入延长牛市周期，预计2026年价格目标15万美元，2027年周期峰值达20万美元，长期2033年目标100万美元。  
 
 **参考**：  
-- [数据：BTC 突破91000 美元](https://www.chaincatcher.com/article/2227122)  
-- [数据：BTC 突破90000 美元](https://www.chaincatcher.com/article/2227119)  
-- [若比特币跌破8.7万美元，主流CEX累计多单清算强度将达4.91亿](https://www.bitget.com/zh-CN/news/detail/12560605100553)  
-- [比特币价格观察：多头在低于90K美元时失速，而空头摩拳擦掌](https://news.bitcoin.com/zh/bi-te-bi-ji-ge-guan-cha-duo-tou-zai-di-yu-90k-mei-yuan-shi-shi-su-er-kong-tou-mo-quan-ca-zhang/)  
+- [比特币价格观察：$87K 到$92K —— 没有人预见到的反弹？](https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-87k-dao-92k-mei-you-ren-yu-jian-dao-de-fan-dan/)  
+- [观点：比特币周期已打破4 年模式，周期峰值或达20 万美元](https://www.odaily.news/zh-CN/newsflash/459822)  
 
 
-### 二、比特币机构与企业动态  
+### 二、上市公司增持比特币动态  
 **总结**：  
-1. 多数公开持有比特币的企业存在隐性债务问题，73%的公司背负债务，39%的公司债务超过比特币当前价值，部分公司甚至通过借贷直接购买比特币，财务风险较高。  
-2. 企业比特币持有者Strategy公司今年已增持超20万枚比特币，总持有量达65万枚，买入均价约74,436美元；其CEO表示公司美元储备可支撑至少21个月无需出售比特币，以应对市场波动。  
+1. 上周全球上市公司（不含挖矿企业）净买入比特币9.6889亿美元，其中Strategy（原MicroStrategy）以9.627亿美元增持10624枚比特币，平均价格90615美元，总持仓达660624枚，总成本493.5亿美元，平均成本74696美元。  
+2. 其他公司如香港Prenetics以63万美元购买7枚比特币，日本ANAP以556万美元增持54.5126枚，当前统计的上市公司合计持有比特币904570枚，占流通市值4.53%。  
 
 **参考**：  
-- [CoinTab 揭露企业持有比特币背后的隐性债务](https://tradersunion.com/zh/news/cryptocurrency-news/show/1032650-hidden-liabilities-behind/)  
-- [Strategy 今年增持超20 万枚比特币，总持有量达65 万枚](https://www.binance.com/zh-CN/square/post/12-07-2025-strategy-20-65-33374317448074)  
-- [Strategy公司CEO解释$MSTR股票与比特币价格关联性](https://www.binance.com/zh-CN/square/post/12-07-2025-strategy-ceo-mstr-33385993248426)  
+- [上周全球上市公司净买入BTC 96889万美元, Strategy 花费96270万美元购买10624枚BTC。](https://www.odaily.news/zh-CN/newsflash/459816)  
+- [上周交易日全球上市公司（不含挖矿企业）净买入比特币9.6889 亿美元](https://finance.sina.com.cn/blockchain/roll/2025-12-08/doc-inhacaaz2231209.shtml)  
+- [660624 BTC及更多：Strategy的最新巨额购买引发加密观察者的关注](https://news.bitcoin.com/zh/660624-btc-ji-geng-duo-strategy-de-zui-xin-ju-e-gou-mai-yin-fa-jia-mi-guan-cha-zhe-de-guan-zhu/)  
+- [上周，该策略买入了近10亿美元的比特币，Saylor's Company重新开始大规模购买。](https://news.futunn.com/post/65921269/strategy-bought-nearly-1b-in-bitcoin-last-week-as-saylor)  
 
 
-### 三、比特币能源与价值讨论  
+### 三、加密行业监管与运营动态  
 **总结**：  
-1. NVIDIA CEO黄仁勋认为，比特币正在将过剩能源转化并存储为一种新的货币形式，具有可携带、可运输的特性，强调其能源转化与价值存储的创新意义。  
+1. 币安宣布全球运营主体从开曼转移至阿布扎比全球市场（ADGM），获得完整监管授权，三家实体（Nest Exchange Services、Nest Clearing and Custody、Nest Trading）自2026年1月5日起提供服务。  
+2. 币安确认一名员工利用内部信息在社交媒体发布内容谋取私利（内幕交易），已停职并配合司法调查，悬赏10万美元举报奖励并发放给首批举报人。  
+3. 阿根廷央行拟解除银行加密业务禁令，允许银行在新监管框架下开展加密交易与托管，旨在将民间加密活动纳入合规体系。  
+4. 美国特朗普政府最新国家安全战略未提及加密货币与区块链，核心聚焦AI、量子计算等领域。  
 
 **参考**：  
-- [NVIDIA CEO黄仁勋谈比特币转化过剩能源为新货币形式](https://www.binance.com/zh-CN/square/post/12-07-2025-nvidia-ceo-33376160102514)  
+- [特朗普国家安全战略未提及加密货币与区块链](https://www.wublock123.com/article/6/53163)  
+- [币安宣布其全球运营将全面转移至阿布扎比全球市场（ADGM）](https://www.wublock123.com/article/6/53163)  
+- [币安：确认一名员工利用内部信息在社交媒体发布内容谋取私利](https://www.wublock123.com/article/6/53163)  
+- [阿根廷央行拟解除银行加密禁令，允许开展加密交易与托管](https://www.wublock123.com/article/6/53163)  
 
 
-### 四、以太坊链上动态  
-**总结**：  
-1. 自2021年伦敦硬分叉以来，以太坊通过EIP-1559机制销毁约610万枚ETH，价值约180亿美元，但网络年通胀率仍为0.80%，供应量因权益证明（PoS）模型缓慢上升，通缩效果有限。  
-2. 近期Fusaka升级扩展了区块容量，主要降低了第二层（L2）交易成本，而Blob费用成为最大的ETH焚烧来源，单独销毁1,492,094 ETH。  
-
-**参考**：  
-- [Ethereum已燃烧价值180亿美元的代币，清除600万ETH，但供应量仍在增加](https://news.bitcoin.com/zh/ethereum-yi-ranshao-jiazhi-180-yi-meiyuan-de-daibi-qingchu-600wan-eth-dan-gongyingliang-rengzai-zengjia/)  
-
-
-### 五、比特币衍生品市场动态  
-**总结**：  
-1. 比特币期货未平仓合约（OI）在主要交易所（如Binance、CME）普遍下滑，反映交易员在12月初减少风险敞口，市场对“圣诞行情”预期减弱，长期杠杆需求下降。  
-2. 期权市场买权未平仓合约占比64.16%，但最大痛苦水平（如Deribit的90,000美元）显示现货价格可能维持低位，短期市场情绪矛盾。  
+### 四、加密市场整体表现  
+**总结**  
+- CoinDesk 20指数当日上涨3.3%，报2934.99点（+93.38点），所有成分股均呈上涨走势，领涨者为NEAR（+6.5%）和AAVE（+6.4%），落后者为DOT（+1.0%）和HBAR（+1.0%）。  
 
 **参考**：  
-- [没有圣诞涨势？比特币衍生品市场暗示寒冷的十二月](https://news.bitcoin.com/zh/mei-you-sheng-dan-zhang-shi-bi-te-bi-yan-sheng-pin-shi-chang-an-shi-han-leng-de-shi-er-yue/)  
-
-
-### 六、比特币技术分析与市场情绪  
-**总结**：  
-1. 比特币技术面呈现“更低的高点”形态，价格在88,500-90,000美元区间横盘，10、20、50、100、200周期EMA均偏空，RSI、MACD等震荡指标中性，显示趋势犹豫，缺乏明确方向。  
-2. 市场情绪偏向谨慎，多头未能突破95,000美元阻力位，空头在88,000美元下方形成压力，短期需关注关键支撑位88,500美元的有效性。  
-
-**参考**：  
-- [比特币价格观察：多头在低于90K美元时失速，而空头摩拳擦掌](https://news.bitcoin.com/zh/bi-te-bi-ji-ge-guan-cha-duo-tou-zai-di-yu-90k-mei-yuan-shi-shi-su-er-kong-tou-mo-quan-ca-zhang/)
+- [CoinDesk 20表现更新：指数上涨3.3%，所有成分股均上涨](https://www.coindesk.com/zh/coindesk-indices/2025/12/08/coindesk-20-performance-update-index-gains-3-3-as-all-constituents-trade-higher)
