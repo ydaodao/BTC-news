@@ -1,42 +1,48 @@
-### 一、比特币价格走势与周期分析  
+### 一、比特币价格波动、市场预测及ETF动态  
 **总结**：  
-1. 比特币近期从80537美元反弹至接近92000美元，短期呈现反弹迹象，但日线图仍处于看跌趋势，关键支撑位在87000美元附近，阻力区间为92500-94000美元，多空观点存在分歧。  
-2. Bernstein分析认为，比特币周期已打破4年模式，进入延长牛市周期，预计2026年价格目标15万美元，2027年周期峰值达20万美元，长期2033年目标100万美元。  
+1. 比特币价格近期波动显著并突破关键价位，如突破92000美元，部分时间站上94000美元，受美联储降息预期等因素影响。  
+2. 美国现货比特币ETF平均成本价接近8.3万美元，市场关注其支撑位能否守住，BlackRock和Fidelity的成本价略低于此。  
+3. 渣打银行下调比特币2025年预测至10万美元，长期目标推迟至2030年，反映市场对短期走势的谨慎态度。  
+4. 美国商品期货交易委员会（CFTC）启动数字资产试点计划，允许比特币、以太坊及USDC作为衍生品交易抵押品，将加密货币更深推入金融体系基础设施。  
 
 **参考**：  
-- [比特币价格观察：$87K 到$92K —— 没有人预见到的反弹？](https://news.bitcoin.com/zh/bi-te-bi-jia-ge-guan-cha-87k-dao-92k-mei-you-ren-yu-jian-dao-de-fan-dan/)  
-- [观点：比特币周期已打破4 年模式，周期峰值或达20 万美元](https://www.odaily.news/zh-CN/newsflash/459822)  
+- [比特币突破92000美元| Bitget 资讯](https://www.bitget.com/zh-CN/news/detail/12560605103539)  
+- [比特币价格新闻：比特币重新站上94,000美元](https://www.coindesk.com/zh/markets/2025/12/09/bitcoin-surges-to-usd94k-one-day-ahead-of-expected-fed-rate-cut)  
+- [美国现货比特币ETF平均成本价接近8.3万美元](https://www.chaincatcher.com/article/2227725)  
+- [渣打银行下调比特币2025年预测至10万美元，长期目标推迟至2030年](https://news.qq.com/rain/a/20251209A07TJ300)  
+- [美CFTC启动数字资产试点计划，允许BTC、ETH及USDC作为抵押品](https://news.qq.com/rain/a/20251209A021B700)  
 
 
-### 二、上市公司增持比特币动态  
+### 二、比特币相关公司上市及业务进展  
 **总结**：  
-1. 上周全球上市公司（不含挖矿企业）净买入比特币9.6889亿美元，其中Strategy（原MicroStrategy）以9.627亿美元增持10624枚比特币，平均价格90615美元，总持仓达660624枚，总成本493.5亿美元，平均成本74696美元。  
-2. 其他公司如香港Prenetics以63万美元购买7枚比特币，日本ANAP以556万美元增持54.5126枚，当前统计的上市公司合计持有比特币904570枚，占流通市值4.53%。  
+1. 比特币储备公司Twenty One Capital通过SPAC合并在纽交所上市，首日盘初股价下跌24%，上市前数日转移45亿美元比特币引发市场对抛售压力的担忧（创始人存在约15亿美元未实现亏损）。  
+2. 纽交所上市公司Hyperscale Data披露其比特币库规模约7500万美元，占公司市值83%，计划通过DCA定投策略逐步完成1亿美元比特币目标。  
+3. Roxom推出全球首个完全以比特币计价和结算的证券交易所，允许投资者直接用BTC买卖比特币资产持有公司股票，分阶段上线并计划覆盖全球相关公司。  
+4. 迈克尔·塞勒在中东推介比特币，呼吁将中东打造为比特币超级大国，提及美国银行开始支持比特币业务及信用工具（如摩根大通、花旗等）。  
 
 **参考**：  
-- [上周全球上市公司净买入BTC 96889万美元, Strategy 花费96270万美元购买10624枚BTC。](https://www.odaily.news/zh-CN/newsflash/459816)  
-- [上周交易日全球上市公司（不含挖矿企业）净买入比特币9.6889 亿美元](https://finance.sina.com.cn/blockchain/roll/2025-12-08/doc-inhacaaz2231209.shtml)  
-- [660624 BTC及更多：Strategy的最新巨额购买引发加密观察者的关注](https://news.bitcoin.com/zh/660624-btc-ji-geng-duo-strategy-de-zui-xin-ju-e-gou-mai-yin-fa-jia-mi-guan-cha-zhe-de-guan-zhu/)  
-- [上周，该策略买入了近10亿美元的比特币，Saylor's Company重新开始大规模购买。](https://news.futunn.com/post/65921269/strategy-bought-nearly-1b-in-bitcoin-last-week-as-saylor)  
+- [比特币公司Twenty One Capital首日交易股价下跌24% | Bitget 资讯](https://www.bitget.com/zh-CN/news/detail/12560605103542)  
+- [Twenty One Capital在纽交所上市前数日转移45亿美元比特币，引发市场担忧](https://yellow.com/zh/news/twenty-one-capital-%E5%9C%A8%E7%BA%BD%E4%BA%A4%E6%89%80%E4%B8%8A%E5%B8%81%E5%89%8D%E6%95%B0%E6%97%A5%E8%BD%AC%E7%A7%BB-45-%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AF%94%E7%89%B9%E5%B8%81%EF%BC%8C%E5%BC%95%E5%8F%91%E5%B8%81%E5%9C%BA%E6%8B%85%EF%BC%8C%E5%BC%95%E5%8F%91%E5%B8%81%E5%9C%BA%E6%8B%85%EF%BC%89)  
+- [Hyperscale Data披露其比特币库规模约7500万美元，约占公司市值83%](https://finance.sina.com.cn/blockchain/roll/2025-12-09/doc-inhaffac0765005.shtml)  
+- [Roxom推出全球首个比特币计价证券交易所](https://www.binance.com/en/square/post/33487350187457)  
+- [迈克尔·塞勒将比特币推介带到中东](https://www.coindesk.com/zh/markets/2025/12/09/saylor-jpm-citi-and-schwab-are-starting-issue-credit-lines-backed-by-bitcoin)  
 
 
-### 三、加密行业监管与运营动态  
+### 三、监管政策与金融市场基础设施发展  
 **总结**：  
-1. 币安宣布全球运营主体从开曼转移至阿布扎比全球市场（ADGM），获得完整监管授权，三家实体（Nest Exchange Services、Nest Clearing and Custody、Nest Trading）自2026年1月5日起提供服务。  
-2. 币安确认一名员工利用内部信息在社交媒体发布内容谋取私利（内幕交易），已停职并配合司法调查，悬赏10万美元举报奖励并发放给首批举报人。  
-3. 阿根廷央行拟解除银行加密业务禁令，允许银行在新监管框架下开展加密交易与托管，旨在将民间加密活动纳入合规体系。  
-4. 美国特朗普政府最新国家安全战略未提及加密货币与区块链，核心聚焦AI、量子计算等领域。  
+1. 美国商品期货交易委员会（CFTC）启动数字资产试点计划，允许比特币、以太坊及USDC作为衍生品交易抵押品，明确适用于期货经纪商等机构，要求资产隔离、报告和监控，标志加密货币进一步融入金融体系。  
+2. Bitwise十大加密指数基金正式在NYSE Arca以ETF形式挂牌交易，涵盖比特币至波卡等十大主流加密资产，此前因SEC审查延迟。  
 
 **参考**：  
-- [特朗普国家安全战略未提及加密货币与区块链](https://www.wublock123.com/article/6/53163)  
-- [币安宣布其全球运营将全面转移至阿布扎比全球市场（ADGM）](https://www.wublock123.com/article/6/53163)  
-- [币安：确认一名员工利用内部信息在社交媒体发布内容谋取私利](https://www.wublock123.com/article/6/53163)  
-- [阿根廷央行拟解除银行加密禁令，允许开展加密交易与托管](https://www.wublock123.com/article/6/53163)  
+- [美CFTC启动数字资产试点计划，允许BTC、ETH及USDC作为抵押品](https://news.qq.com/rain/a/20251209A021B700)  
+- [Bitwise十大加密指数基金正式挂牌交易](https://www.bitget.com/zh-CN/news/detail/12560605103441)  
 
 
-### 四、加密市场整体表现  
-**总结**  
-- CoinDesk 20指数当日上涨3.3%，报2934.99点（+93.38点），所有成分股均呈上涨走势，领涨者为NEAR（+6.5%）和AAVE（+6.4%），落后者为DOT（+1.0%）和HBAR（+1.0%）。  
+### 四、以太坊及山寨币行情分析  
+**总结**：  
+1. 以太坊短期呈现三角形态，支撑位在3000美元附近，分析师认为突破后大概率向上突破，最后一次上车多单机会临近。  
+2. 山寨币中，Solana生态DEX币种WET因市占率高、流通市值低被分析认为有上涨空间；MERL短期偏空被建议做空，回测0.2区间；STABLE因市值高且解锁压力大被建议长线做空。  
+3. 其他币种如Solana涨3.1%，XRP涨1.4%，比特币涨2.3%，市场整体受美联储政策预期影响波动。  
 
 **参考**：  
-- [CoinDesk 20表现更新：指数上涨3.3%，所有成分股均上涨](https://www.coindesk.com/zh/coindesk-indices/2025/12/08/coindesk-20-performance-update-index-gains-3-3-as-all-constituents-trade-higher)
+- [12月9日：BTC、ETH、WET 、MERL 、STABLE行情分析-区块周刊BlockWeeks](https://blockweeks.com/hq/191935)
