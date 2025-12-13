@@ -1,41 +1,36 @@
-### 一、巨鲸交易行为及市场影响
+### 一、机构对加密货币的态度与配置建议  
 **总结**：  
-1. 不同巨鲸（如“1011内幕巨鲸”“BTC OG内幕巨鲸”“1011short巨鲸”）持有大量加密货币多单，仓位价值及浮亏情况，其中巨鲸抛售BTC导致市场阻力位承压，流动性问题显现。  
-2. Alameda Research转移194861枚SOL（约2550万美元）至Bitgo Custody及Coinbase Prime，可能影响SOL市场流动性和情绪。  
+1. 部分机构对加密货币持谨慎或负面态度，如先锋集团高管将比特币比作“数字拉布布”，认为其缺乏长期投资价值，仅作为投机性藏品。  
+2. 部分资产管理公司建议投资者适度配置比特币以对冲风险，如巴西最大资产管理公司Itáu建议将投资组合的1%-3%投入比特币，以应对外汇波动和市场冲击。  
+3. 以Strategy（MSTR）为代表的加密持仓公司虽在纳斯达克100指数调整中保留席位，但因比特币持仓占比过高，面临MSCI可能排除的监管风险争议。  
+
 **参考**：  
-- [「BTC OG内幕巨鲸」加仓ETH多单至5.4亿美元，浮亏扩大至超2000万美元](https://www.bitget.com/zh-CN/news/detail/12560605108962)  
-- [“1011内幕巨鲸”的BTC、ETH和SOL多单仓位价值已超6.6亿美元](https://www.bitget.com/zh-CN/news/detail/12560605108975)  
-- [比特币行情：巨鲸12月抛售34亿美元BTC在92,000美受阻](https://cryptonews.com/cn/bitcoin-news/bitcoin-whales-unload-3-4b-in-december-btc-stalls-at-92k-resistance-glassnode/)  
-- [持有约6.17 亿美元多头仓位的1011short 巨鲸，目前浮亏超1250 万美元](https://www.bitget.com/zh-CN/news/detail/12560605108871)  
-- [阿拉米达转移194861枚SOL（约2550万美元）](https://blockchain.news/zh/flashnews/alameda-research-moves-194-861-sol-usd-25-5m-88-877-sol-deposited-to-coinbase-prime-arkham-traced-on-chain-flows-zh)  
+- [先锋集团高管称比特币为“数字拉布布”，即使公司开启了ETF交易通道](https://www.coindesk.com/zh/business/2025/12/13/vanguard-exec-likens-bitcoin-to-digital-labubu-even-as-firm-opens-etf-trading-access)  
+- [巴西最大资产管理公司建议投资者将最多3%的资金投入比特币，以对冲外汇风险和市场冲击](https://www.coindesk.com/zh/business/2025/12/13/brazil-s-largest-asset-manager-recommends-investors-put-up-to-3-of-their-money-in-bitcoin-to-hedge-against-fx-market-shocks)  
+- [Strategy 公司保住 Nasdaq 100 指数位置，面临 MSCI 排除风险](https://www.binance.com/zh-CN/square/post/12-13-2025-strategy-nasdaq-100-msci-33658786087762)  
+- [Strategy 继续保留在纳斯达克100 指数中](https://www.binance.com/zh-CN/square/post/12-13-2025-strategy-100-33653561915618)  
 
 
-### 二、比特币价格走势与市场分析
+### 二、稳定币发展与应用  
 **总结**：  
-1. 比特币近期价格波动，受AI忧虑、宏观因素及巨鲸抛售影响，跌破9万美元，后突破92500美元，面临关键阻力位。  
-2. 分析师认为比特币形成熊旗形态，目标价7.6万美元，或因流动性枯竭、稳定币流入减少等因素面临回调压力；另有观点认为技术面偏乐观，或迎来突破。  
+1. 稳定币市场规模持续扩张，Tether USDT流通供应量超1850亿美元，业务覆盖贷款（规模超140亿美元）、投资、挖矿等领域，成为最大CeFi贷款机构。  
+2. 稳定币在实际应用场景中逐步渗透，阿联酋最大燃油零售商ADNOC宣布将开始接受稳定币支付，进一步推动稳定币落地。  
+
 **参考**：  
-- [受人工智能忧虑拖累，纳斯达克及加密货币股票下跌，比特币跌破9万美元](https://www.coindesk.com/zh/markets/2025/12/12/bitcoin-plunges-below-usd90k-as-ai-worries-drag-nasdaq-crypto-stocks-down)  
-- [BTC突破92500美元| Bitget 资讯](https://www.bitget.com/zh-CN/news/detail/12560605108834)  
-- [推动比特币从120，000美元降至90，000美元的3个宏观因素港美股资讯](https://www.hstong.com/news/detail/25121223000114876)  
-- [分析：熊市信号显现，预计比特币或跌至7.6 万美元](https://www.chaincatcher.com/article/2228892)  
-- [CWG Markets外汇:比特币或迎来突破时刻](https://finance.sina.com.cn/money/future/roll/2025-12-12/doc-inhapwfc7101478.shtml)  
+- [Tether USDT 流通量超1850 亿美元，成为最大CeFi 贷款机构](https://www.binance.com/zh-CN/square/post/33660321119345)  
+- [星球晚讯丨12 月13 日](https://www.odaily.news/zh-CN/newsflash/460569)（阿联酋ADNOC将开始接受稳定币支付）  
 
 
-### 三、稳定币监管风险
+### 三、公链技术升级及市场影响  
 **总结**：  
-1. 印度央行副行长多次表示稳定币对货币政策和货币替代构成风险，可能导致信贷成本上升、削弱新兴经济体关键资本流动措施，在交易型经济中的作用有限。  
+Solana通过升级Firedancer客户端提升交易处理能力，主网上线后推动SOL价格上涨约5%，接近140美元，显示公链技术升级对市场情绪和代币价格的积极影响。  
+
 **参考**：  
-- [印度央行副行长：稳定币可能导致信贷成本上升...](https://wap.cj.sina.cn/7x24/4552363)  
-- [印度央行副行长：稳定币将削弱新兴经济体关键资本流动措施的作用...](https://wap.cj.sina.cn/7x24/4552362)  
-- [印度央行副行长：稳定币对货币政策和货币替代构成风险...](https://wap.cj.sina.cn/7x24/4552359)  
-- [印度央行副行长：稳定币在交易型经济中的作用极为有限...](https://wap.cj.sina.cn/7x24/4552351)  
+- [Firedancer 客户端在主网上线后Solana 上涨5%](https://yellow.com/zh/news/firedancer-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%9C%A8%E4%B8%BB%E7%BD%91%E4%B8%8A%E7%BA%BF%E5%90%8E-solana-%E4%B8%8A%E6%B6%A8-5)  
 
 
-### 四、机构动态与行业人物观点
-**总结**  
-1. Tom Lee作为资深金融策略师，在Fundstrat和BitMine的职位及对加密市场的看法，包括对以太坊的乐观预期及公司战略调整。  
-2. Tom Lee分析Strategy公司建立14亿美元现金储备，可避免BTC下跌时被迫减持，应对市场波动。  
-**参考**：  
-- [Tom Lee：Strategy 建立14 亿美元现金储备可避免BTC 跌时被迫减持](https://www.chaincatcher.com/article/2229050)  
-- [最具影响力人物：Tom Lee](https://www.coindesk.com/zh/business/2025/12/12/most-influential-tom-lee)
+### 四、宏观政策对加密市场的影响  
+**总结**：  
+日本央行加息可能不会引发加密市场避险情绪（历史上曾导致比特币价格下跌），原因包括投机者日元净多头头寸反应有限、日本国债收益率持续攀升，且美联储近期流动性措施缓解了市场担忧。  
+
+**参考**
