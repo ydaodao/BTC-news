@@ -62,11 +62,12 @@ async def generate_news_summary(start_date: str, end_date: str, VOLCENGINE_API_K
     {all_content}
     """
 
-    # 保存 prompt 到文件
-    parent_folder_path = os.path.join(os.path.dirname(__file__), "proccess_files")
+    # 创建文件夹
+    parent_folder_path = os.path.join(os.path.dirname(__file__), "process_files")
     os.makedirs(parent_folder_path, exist_ok=True)
 
-    prompt_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_prompt.txt")
+    # 保存 prompt 到文件
+    prompt_file = os.path.join(os.path.dirname(__file__), "process_files", "latest_prompt.txt")
     try:
         with open(prompt_file, "w", encoding="utf-8") as f:
             f.write(prompt_text)
@@ -98,7 +99,7 @@ async def generate_news_summary(start_date: str, end_date: str, VOLCENGINE_API_K
         summary_content = response.choices[0].message.content
 
         # 保存响应内容到文件
-        summary_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary.md")
+        summary_file = os.path.join(os.path.dirname(__file__), "process_files", "latest_summary.md")
         try:
             with open(summary_file, "w", encoding="utf-8") as f:
                 f.write(summary_content)
@@ -230,7 +231,7 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, VOLCENGI
             final_summary = response.choices[0].message.content
             
             # 保存最终摘要
-            summary_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary.md")
+            summary_file = os.path.join(os.path.dirname(__file__), "process_files", "latest_summary.md")
             try:
                 with open(summary_file, "w", encoding="utf-8") as f:
                     f.write(final_summary)
@@ -239,7 +240,7 @@ async def generate_news_summary_chunked(start_date: str, end_date: str, VOLCENGI
                 print(f"保存摘要失败: {e}")
             
             # 同时保存合并前的分块摘要（用于调试）
-            chunks_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary_chunks.md")
+            chunks_file = os.path.join(os.path.dirname(__file__), "process_files", "latest_summary_chunks.md")
             try:
                 with open(chunks_file, "w", encoding="utf-8") as f:
                     f.write("\n\n=== 分块摘要合集 ===\n\n")
@@ -265,7 +266,7 @@ def generate_title_and_summary_and_content(content=None, LOCAL_DEV=False):
     """
     if not content and LOCAL_DEV:
         # 尝试从本地文件读取内容
-        summary_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary.md")
+        summary_file = os.path.join(os.path.dirname(__file__), "process_files", "latest_summary.md")
         try:
             with open(summary_file, "r", encoding="utf-8") as f:
                 content = f.read()
@@ -286,6 +287,14 @@ def generate_title_and_summary_and_content(content=None, LOCAL_DEV=False):
     # message_content = f"{summary}\n---\n{content}"
     return title, summary
 
-if __name__ == "main":
-    parent_folder_path = os.path.join(os.path.dirname(__file__), "proccess_files")
+if __name__ == "__main__":
+    # 原代码 + 打印路径
+    parent_folder_path = os.path.join(os.path.dirname(__file__), "process_files_test")
+    print(f"文件夹实际创建路径：{parent_folder_path}")  # 关键：打印路径
     os.makedirs(parent_folder_path, exist_ok=True)
+
+    # 额外验证：检查路径是否存在
+    if os.path.exists(parent_folder_path):
+        print(f"文件夹已存在：{parent_folder_path}")
+    else:
+        print("文件夹创建失败！")
