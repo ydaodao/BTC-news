@@ -17,6 +17,7 @@ proccess_files/
 backup/
 feishu_docs/daily_header_text.png
 feishu_docs/daily_header.png
+send_to_weixin/qrcode.jpg
 
 # VS Code
 .vscode/

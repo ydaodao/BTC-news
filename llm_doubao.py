@@ -63,6 +63,9 @@ async def generate_news_summary(start_date: str, end_date: str, VOLCENGINE_API_K
     """
 
     # 保存 prompt 到文件
+    parent_folder_path = os.path.join(os.path.dirname(__file__), "proccess_files")
+    os.makedirs(parent_folder_path, exist_ok=True)
+
     prompt_file = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_prompt.txt")
     try:
         with open(prompt_file, "w", encoding="utf-8") as f:
@@ -282,3 +285,7 @@ def generate_title_and_summary_and_content(content=None, LOCAL_DEV=False):
     
     # message_content = f"{summary}\n---\n{content}"
     return title, summary
+
+if __name__ == "main":
+    parent_folder_path = os.path.join(os.path.dirname(__file__), "proccess_files")
+    os.makedirs(parent_folder_path, exist_ok=True)
