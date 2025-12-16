@@ -93,7 +93,7 @@ def clean_markdown_content_for_daily_docs(markdown_content):
     cleaned_content = '\n'.join(cleaned_lines)
     
     # 保存响应内容到文件
-    latest_summary_cleaned = os.path.join(os.path.dirname(__file__), "files", "latest_summary_cleaned.md")
+    latest_summary_cleaned = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary_cleaned.md")
     try:
         with open(latest_summary_cleaned, "w", encoding="utf-8") as f:
             f.write(cleaned_content)
@@ -445,7 +445,7 @@ if __name__ == "__main__":
         # 读取markdown文件内容
         markdown_content = ''
         # markdown_file_path = os.path.join(os.path.dirname(__file__), "test", "write_to_feishu", "test_latest_summary.md")
-        markdown_file_path = os.path.join(os.path.dirname(__file__), "files", "latest_summary.md")
+        markdown_file_path = os.path.join(os.path.dirname(__file__), "proccess_files", "latest_summary.md")
 
         try:
             with open(markdown_file_path, 'r', encoding='utf-8') as f:
