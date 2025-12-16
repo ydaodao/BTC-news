@@ -12,5 +12,10 @@ __pycache__/
 *.db
 # *.sqlite3
 
+# 过程文件
+proccess_files/
+backup/
+
+
 # VS Code
 .vscode/
