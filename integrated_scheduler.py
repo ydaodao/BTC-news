@@ -221,7 +221,7 @@ def start_cron_scheduler():
 if __name__ == "__main__":
     if LOCAL_DEV:
         # powershell_utils.run_powershell_command("Get-Process")
-        keep_gzh_online_task()
-        # run_main_task('weekly_news')
+        # keep_gzh_online_task()
+        run_main_task('daily_news')
     else:
         start_cron_scheduler()     # 使用新的 cron 调度器
