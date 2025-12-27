@@ -176,18 +176,7 @@ def check_cdp_connection():
 def run_main_task(task_name):
     """执行主定时任务"""
     print(f"\n[{datetime.now()}] 执行任务: {task_name}")
-    result = powershell_utils.git_pull()
-    if result['success']:
-        asyncio.run(main(task_name))
-        result = powershell_utils.git_commit_and_push(f"{task_name}")
-        if result['success']:
-            print("git commit and push 成功")
-        else:
-            push_text_to_robot(f"git commit and push 失败！错误信息：{result['stderr']}")
-            print(f"git commit and push 失败！错误信息：{result['stderr']}")
-    else:
-        push_text_to_robot(f"git pull 失败！错误信息：{result['stderr']}")
-        print(f"git pull 失败！错误信息：{result['stderr']}")
+    asyncio.run(main(task_name))
 
 # ------------ 任务结束 ------------------
 
