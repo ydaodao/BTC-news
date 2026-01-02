@@ -288,10 +288,10 @@ async def write_to_daily_docx(news_content=None, title=None, summary=None, date_
             # 倒计时高亮块
             print(f"创建倒计时高亮块")
             between_days = days_between(date.today(), date(2035, 1, 1))
-            between_years = between_days // 365
-            end_this_year = date(date.today().year, 12, 31)
+            between_years = 2035 - date.today().year - 1
+            between_days_this_year = (date(date.today().year, 12, 31) - date.today()).days
             
-            data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {days_between(date.today(), end_this_year)} 天）'), 'block_id1')
+            data1 = wrapper_block_for_desc(create_text_block(f'十年倒计时 — {between_days}天（距离2035年还有 {between_years} 年 {between_days_this_year} 天）'), 'block_id1')
             callout1 = wrapper_block_for_desc(create_callout_block(), 'callout_id11', children=[data1['block_id']])
             # 创建块数据
             blocks1 = {
